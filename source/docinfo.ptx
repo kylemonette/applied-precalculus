@@ -30,7 +30,7 @@
     \newcommand{\sbr}[1]{\left\{ #1 \right\}}
     \newcommand{\cbr}[1]{\left[ #1 \right]}
     \newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
-\newcommand{\markcell}[2]{%
+    \newcommand{\markcell}[2]{%
     \tikz[remember picture, baseline=(#1.base)] \node[inner sep=0pt] (#1) {#2};%
     }
   </macros>

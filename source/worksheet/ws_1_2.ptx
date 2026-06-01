@@ -54,7 +54,7 @@ ytick={-8,-6,-4,-2,2,4,6,8},
 minor tick={},
 xlabel=\(x\), ylabel=\(y\),
 samples=250]
-\addplot[domain=-2:2,thick] {x^3};
+\addplot[domain=-2:2] {x^3};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
@@ -115,7 +115,7 @@ ytick={5,10,15,20,25},
 minor tick={},
 xlabel=\(p\), ylabel=\(C\),
 samples=250]
-\addplot[domain=0:20,thick] {1.2*x};
+\addplot[domain=0:20] {1.2*x};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
@@ -146,7 +146,7 @@ ytick={-10,-8,...,12},
 minor tick={},
 xlabel=\(x\), ylabel=\(f(x)\),
 samples=250]
-\addplot[domain=-3:5 ,thick] {-(x+2)*(x-1)*(x-4)};
+\addplot[domain=-3:5 ] {-(x+2)*(x-1)*(x-4)};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
@@ -194,7 +194,7 @@ ytick={-10,-8,...,12},
 minor tick={},
 xlabel=\(x\), ylabel=\(f(x)\),
 samples=250]
-\addplot[domain=-3:5 ,thick] {-(x+2)*(x-1)*(x-4)};
+\addplot[domain=-3:5 ] {-(x+2)*(x-1)*(x-4)};
 \node[circle,fill,red,inner sep=2pt] at (axis cs:2,8) {};
 \node[circle,fill,red,inner sep=2pt] at (axis cs:3,10) {};
 \node[circle,fill,red,inner sep=2pt] at (axis cs:-1,-10) {};
@@ -271,7 +271,7 @@ ytick={24,48,72,96},
 minor tick={},
 xlabel=\(t\), ylabel=\(C\),
 samples=250]
-\addplot[domain=0:20,thick] {96*0.5^(x/5)};
+\addplot[domain=0:20] {96*0.5^(x/5)};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
@@ -349,7 +349,7 @@ yticklabels={1000,2000,3000,4000},
 minor tick={},
 xlabel=\(t\), ylabel=\(B\),
 samples=250]
-\addplot[domain=0:22,thick] {1*2^(x/10)};
+\addplot[domain=0:22] {1*2^(x/10)};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
@@ -428,7 +428,7 @@ minor tick={},
 xlabel=\(x\), ylabel=\(y\),
 trig format plots = rad,
 samples=250]
-\addplot[domain=0:6.28,thick] ({sin(x)}, {sin(2*x)});
+\addplot[domain=0:6.28] ({sin(x)}, {sin(2*x)});
 \end{axis}
 \end{tikzpicture}
 </latex-image>
@@ -457,8 +457,8 @@ minor tick={},
 xlabel=\(x\), ylabel=\(y\),
 trig format plots = rad,
 samples=250]
-\addplot[domain=0:6.28,thick] ({sin(x)}, {sin(2*x)});
-\draw[red,thick] (axis cs:-0.5,2)  (axis cs:-0.5,-2);
+\addplot[domain=0:6.28] ({sin(x)}, {sin(2*x)});
+\draw[red] (axis cs:-0.5,2) -- (axis cs:-0.5,-2);
 \end{axis}
 \end{tikzpicture}
 </latex-image>
@@ -489,7 +489,7 @@ ytick={-4, -2,...,8},
 minor tick={},
 xlabel=\(x\), ylabel=\(y\),
 samples=250]
-\addplot[domain=-4:4,thick] {(x-2)*(x+2)};
+\addplot[domain=-4:4] {(x-2)*(x+2)};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
@@ -522,7 +522,7 @@ ytick={-4, -2,...,8},
 minor tick={},
 xlabel=\(x\), ylabel=\(y\),
 samples=250]
-\addplot[domain=-4:4,thick] {(x-2)*(x+2)};
+\addplot[domain=-4:4] {(x-2)*(x+2)};
 \node[circle,fill,red,inner sep=2pt] at (axis cs:0,-4) {};
 \node[circle,fill,blue,inner sep=2pt] at (axis cs:-2,0) {};
 \node[circle,fill,blue,inner sep=2pt] at (axis cs:2,0) {};
@@ -591,7 +591,7 @@ minor tick={},
 xlabel=\(t\), ylabel=\(y\),
 trig format = rad,
 samples=250]
-\addplot[domain=0:12,thick] {2*sin(2*3.14/12*x)+1};
+\addplot[domain=0:12] {2*sin(2*pi/12*x)+1};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
