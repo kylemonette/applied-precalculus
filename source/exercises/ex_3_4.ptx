@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_3_4">
+
+
+<exercisegroup>
+<title>Quadratic Equations</title>
+<introduction>
+<p>
+Find all real solutions to each quadratic equation. Give exact and approximate values rounded to three decimal places.
+</p>
+</introduction>
+
+
+<exercise>
+<statement>
+<p>
+<m>x^2-5 x-14=0</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=-2</m> and <m>x=7</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>x (x + 3) = -2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=-2</m> and <m>x=-1</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>6x^2+x-1=0</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=-\frac{1}{2}=-0.5</m> and <m>x=\frac{1}{3}\approx0.333</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>x^2-2x-2=0</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=1-\sqrt{3}\approx-0.732</m> and <m>x=1+\sqrt{3}\approx2.732</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>-4x^2-17x-15=0</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=-3</m> and <m>x=-\frac{5}{4}=-1.25</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>2 x (3 - x) = 4 (x - 5)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=\dfrac{1-\sqrt{41}}{2}\approx-2.701</m> and <m>x=\dfrac{1+\sqrt{41}}{2}\approx3.702</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+
+<exercisegroup>
+<title>Intercepts and Vertex</title>
+<introduction>
+<p>
+Find the intercepts and vertex of each quadratic function. Give exact and approximate values rounded off to three decimal places.
+</p>
+</introduction>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=x^2+2x-3</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-3</m>, <m>1</m>; vertical intercept: <m>-3</m>; vertex: <m>(-1,-4)</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=x^2+8x+10</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-4-\sqrt{6}\approx-6.450</m>, <m>-4+\sqrt{6}\approx-1.551</m>; vertical intercept: <m>10</m>; vertex: <m>(-4,-6)</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>g(x)=3x^2-6x-1</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>\frac{3-2\sqrt{3}}{3}\approx-0.155</m>, <m>\frac{3+2\sqrt{3}}{3}\approx2.155</m>; vertical intercept: <m>-1</m>; vertex: <m>(1,-4)</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>y=t^2-4t+5</m>
+</p>
+</statement>
+
+<solution>
+<p>
+no horizontal intercepts; vertical intercept: 5; vertex <m>(2,1)</m>
+</p>
+</solution>
+</exercise>
+
+
+</exercisegroup>
+
+
+<exercisegroup>
+<title>Discriminant</title>
+<introduction>
+<p>
+Calculate the discriminant of each quadratic equation and use it to determine whether the equation will have one real solution, two distinct real solutions, or no real solutions.
+</p>
+</introduction>
+
+
+<exercise>
+<statement>
+<p>
+<m>3x^2-12x+12=0</m>
+</p>
+</statement>
+
+<solution>
+<p>
+0; one real solution
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>8x^2+14x+2=0</m>
+</p>
+</statement>
+
+<solution>
+<p>
+132; two distinct real solutions
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>3x^2-8x+15=0</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-116</m>; no real solutions
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>x(x-4)=10</m>
+</p>
+</statement>
+
+<solution>
+<p>
+56; two distinct real solutions
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+A baseball is thrown straight up with the initial speed of 50 ft/sec by a player who is 6 feet tall. Let <m>H(t)</m> be the height of the ball above the ground <m>t</m> seconds later.
+</p>
+<ol>
+<li>Find a formula for <m>H(t)</m>.</li>
+<li>When does the ball reach its maximum height and what is its maximum height? Round your answers to two decimal places.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>H(t)=-16t^2+50t+6</m>
+        </li>
+        <li>
+            <p>The ball reaches its maximum height approximately 1.56 seconds after it is thrown straight up and that maximum height is approximately 45.06 feet.</p>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercisegroup>
+<title>Factored Form</title>
+<introduction>
+<p>
+Rewrite the given quadratic function in factored form. Be sure to use the exact values of the zeros of each function.
+</p>
+</introduction>
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=3x^2-3x-6</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=3(x+1)(x-2)</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>g(x)=x^2+6x+7</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=\left(x-(-3-\sqrt{2})\right)\left(x-(-3+\sqrt{2})\right)</m>
+</p>
+</solution>
+</exercise>
+
+
+</exercisegroup>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+The graph of a quadratic function <m>f(x)</m> is given below. Write the function in factored form. Then rewrite the function in standard form.
+</p>
+
+<image width="50%" xml:id="ex_3_4_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_3_4_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-1.5,xmax=2.5,
+ymin=-2.5,ymax=5.5,
+xtick={-2,...,4},
+ytick={-4,...,5},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+]
+\addplot[domain=-2.5:4.5] {-2*(x+1)*(x-2)};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</statement>
+
+<solution>
+<p>
+<m>f(x)=-2(x+1)(x-2)</m>; <m>f(x)=-2x^2+2x+4</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+The graph of a quadratic function <m>g(t)</m> is given below. Write the function in factored form. Then rewrite the function in standard form.
+</p>
+
+<image width="50%" xml:id="ex_3_4_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_3_4_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-2.5,xmax=2.5,
+ymin=-4.5,ymax=2.5,
+xtick={-2,...,2},
+ytick={-4,...,2},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+]
+\addplot[domain=-2.5:2.5] {x^2-4};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</statement>
+
+<solution>
+<p>
+<m>g(t)=(t-2)(t+2)</m>; <m>g(t)=t^2-4</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+</exercises>

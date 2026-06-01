@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_3_1">
+
+
+<exercisegroup>
+<title>Standard Form</title>
+<introduction>
+<p>
+Write each quadratic function in standard form. Then determine whether its graph will open up or open down without graphing the function.
+</p>
+</introduction>
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=x(4x-7)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=4x^2-7x</m>; opens up
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>h(t)=17+3t-5t^2-2(1.5t-2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>h(t)=-5t^2+21</m>; opens down
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>g(x)=4x(x-4)-2x(x-1)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=2x^2-14x</m>; opens up
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>y=-4(x+5)^2+80</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=-4x^2-40x-20</m>; opens down
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Intercepts and Vertex</title>
+    <introduction>
+        <p>
+           Use the graph of each quadratic function to identify its intercept(s) and vertex.
+        </p>
+    </introduction>
+
+<exercise>
+<statement>
+
+<image width="50%" xml:id="ex_3_1_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_3_1_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-2.5,xmax=4.5,
+ymin=-4.5,ymax=5.5,
+xtick={-2,...,4},
+ytick={-4,...,5},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+]
+\addplot[domain=-2.5:4.5] {(x+1)*(x-3)};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-1</m>, <m>3</m>; vertical intercept: <m>-3</m>; vertex: <m>(1,-4)</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<image width="50%" xml:id="ex_3_1_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_3_1_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-1.5,xmax=3.5,
+ymin=-8.5,ymax=1.5,
+xtick={-2,...,4},
+ytick={-8,...,5},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+]
+\addplot[domain=-1.5:3.5] {-(x-1)^2-1};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</statement>
+
+<solution>
+<p>
+no horizontal intercepts; vertical intercept: <m>-2</m>; vertex: <m>(1,-1)</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+
+
+
+<exercisegroup>
+<title>Horizontal Intercepts</title>
+<introduction>
+<p>
+The horizontal intercepts of a quadratic parabola are given. Find the <m>x</m>-coordinate of its vertex.
+</p>
+</introduction>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>x=-1.5</m> and <m>x=1.5</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>0</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>x=-2</m> and <m>x=5</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{3}{2}</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercise>
+<statement>
+<p>
+A quadratic parabola crosses the <m>x</m>-axis at the point <m>(2,0)</m> and has its vertex at the point <m>(4,4)</m>. Find the second point on the <m>x</m>-axis where the parabola crosses the <m>x</m>-axis. Does the parabola open up or open down?
+</p>
+</statement>
+
+<solution>
+<p>
+<m>(6,0)</m>; opens down
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+A lighting company can sell <m>1000-2p</m> units of its specialty chandelier if it charges <m>\$p</m> per specialty chandelier.
+</p>
+<ol>
+<li>Find the formula for the revenue <m>R(p)</m> generated from specialty chandelier sales and graph it.</li>
+<li>At what price will the lighting company sell zero of its specialty chandelier?</li>
+<li>What is the maximum revenue? What price should the lighting company charge per specialty chandelier in order to maximize revenue?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>R(p)=p(1000-2p)</m> or <m>R(p)=-2p^2+1000p</m>
+        </li>
+        <li>
+            <m>\$500</m>
+        </li>
+        <li>
+            <p>The maximum revenue is <m>\$125,000</m>. The lighting company should charge <m>\$250</m> per specialty chandelier to maximize revenue.</p>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+</exercises>

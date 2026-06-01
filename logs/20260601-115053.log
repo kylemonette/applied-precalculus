@@ -1,0 +1,79 @@
+INFO    : Building target web
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+WARNING : Now generating QR codes
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : discovering source file's directory name: /Users/Kyle/Desktop/m103-new/source
+INFO    : verifying and expanding input directory: /Users/Kyle/Desktop/m103-new/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/Kyle/Desktop/m103-new/generated-assets
+INFO    : verifying and expanding input directory: /Users/Kyle/Desktop/m103-new/source/../assets
+INFO    : input directory expanded to absolute path: /Users/Kyle/Desktop/m103-new/assets
+INFO    : manufacturing QR codes from /Users/Kyle/Desktop/m103-new/source/main.ptx for placement in /Users/Kyle/Desktop/m103-new/generated-assets/qrcode
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /Users/Kyle/.ptx/2.40.2/core/xsl/extract-qrcode.xsl
+INFO    : successful application of /Users/Kyle/.ptx/2.40.2/core/xsl/extract-qrcode.xsl
+INFO    : creating URL with content "https://kylemonette.github.io/m103-book/fig_1_5_arc_graph-1.html" as /Users/Kyle/Desktop/m103-new/generated-assets/qrcode/fig_1_5_arc_graph-1.png...
+INFO    : creating URL with content "https://kylemonette.github.io/m103-book/fig_2_1_linear_graph-2.html" as /Users/Kyle/Desktop/m103-new/generated-assets/qrcode/fig_2_1_linear_graph-2.png...
+INFO    : creating URL with content "https://kylemonette.github.io/m103-book/fig_3_1_quadratic_basic-1.html" as /Users/Kyle/Desktop/m103-new/generated-assets/qrcode/fig_3_1_quadratic_basic-1.png...
+INFO    : creating URL with content "https://kylemonette.github.io/m103-book/jsx_1_2_function_graph-1.html" as /Users/Kyle/Desktop/m103-new/generated-assets/qrcode/jsx_1_2_function_graph-1.png...
+INFO    : QR code creation complete
+WARNING : Now generating latex images
+INFO    : converting latex-image pictures from /Users/Kyle/Desktop/m103-new/source/main.ptx to svg graphics for placement in /Users/Kyle/Desktop/m103-new/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /Users/Kyle/Desktop/m103-new/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'author.tools': 'yes', 'cli.version': '2.40', 'publisher': '/Users/Kyle/Desktop/m103-new/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /Users/Kyle/Desktop/m103-new/source
+INFO    : verifying and expanding input directory: /Users/Kyle/Desktop/m103-new/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/Kyle/Desktop/m103-new/generated-assets
+INFO    : verifying and expanding input directory: /Users/Kyle/Desktop/m103-new/source/../assets
+INFO    : input directory expanded to absolute path: /Users/Kyle/Desktop/m103-new/assets
+INFO    : discovering source file's directory name: /Users/Kyle/Desktop/m103-new/source
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /Users/Kyle/.ptx/2.40.2/core/xsl/extract-latex-image.xsl
+INFO    : successful application of /Users/Kyle/.ptx/2.40.2/core/xsl/extract-latex-image.xsl
+INFO    : converting ws_1_2_6_fig.tex to ws_1_2_6_fig.pdf
+INFO    : cropping ws_1_2_6_fig.pdf to cropped-ws_1_2_6_fig.pdf
+INFO    : renaming cropped-ws_1_2_6_fig.pdf to ws_1_2_6_fig.pdf
+INFO    : converting ws_1_2_6_fig.pdf to ws_1_2_6_fig.svg
+INFO    : converting ws_1_2_5_fig.tex to ws_1_2_5_fig.pdf
+INFO    : cropping ws_1_2_5_fig.pdf to cropped-ws_1_2_5_fig.pdf
+INFO    : renaming cropped-ws_1_2_5_fig.pdf to ws_1_2_5_fig.pdf
+INFO    : converting ws_1_2_5_fig.pdf to ws_1_2_5_fig.svg
+INFO    : converting ws_1_2_9_fig.tex to ws_1_2_9_fig.pdf
+INFO    : cropping ws_1_2_9_fig.pdf to cropped-ws_1_2_9_fig.pdf
+INFO    : renaming cropped-ws_1_2_9_fig.pdf to ws_1_2_9_fig.pdf
+INFO    : converting ws_1_2_9_fig.pdf to ws_1_2_9_fig.svg
+INFO    : Removing temporary directory /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptx-jgwk40pm
+INFO    : Removing temporary directory /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptx-hadtxax9
+INFO    : Finished generating assets.
+
+INFO    : Building with custom xsl /Users/Kyle/Desktop/m103-new/xsl/pretext-html.xsl
+INFO    : Preparing to build into /Users/Kyle/Desktop/m103-new/output/web.
+INFO    : discovering source file's directory name: /Users/Kyle/Desktop/m103-new/source
+INFO    : verifying and expanding input directory: /Users/Kyle/Desktop/m103-new/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/Kyle/Desktop/m103-new/generated-assets
+INFO    : verifying and expanding input directory: /Users/Kyle/Desktop/m103-new/source/../assets
+INFO    : input directory expanded to absolute path: /Users/Kyle/Desktop/m103-new/assets
+INFO    : discovering source file's directory name: /Users/Kyle/Desktop/m103-new/source
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 8.1.1
+INFO    : Downloading Runestone Services, version 8.1.1
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-denver
+INFO    : converting /Users/Kyle/Desktop/m103-new/source/main.ptx to HTML in /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptx-jam4e6tq
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptxcli_ulmhz7nc/cli_xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptxcli_ulmhz7nc/cli_xsl/pretext-html.xsl
+INFO    : Removing temporary directory /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptx-jam4e6tq
+INFO    : Removing temporary directory /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptx-h5fa1hzn
+INFO    : 
+Finished build for target web. Run `pretext view web` to see the results.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 

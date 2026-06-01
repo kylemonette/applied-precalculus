@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter_4" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Power Functions</title>
+
+  <introduction>
+    <p>
+        Intro about Chapter 4.
+    </p>
+</introduction>
+
+  <!-- include sections -->
+<xi:include href="sec_4_1.ptx" />
+<xi:include href="sec_4_2.ptx" />
+<xi:include href="sec_4_3.ptx" />
+<xi:include href="sec_4_4.ptx" />
+</chapter>

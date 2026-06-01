@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_2_1">
+
+
+<exercisegroup>
+<title>Slope-Intercept Form</title>
+<introduction>
+<p>
+For each of the following, rewrite the linear function in slope-intercept form. Then identify the slope and vertical intercept.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-2_1_1">
+<statement>
+<p>
+<m>f(x)=5x-2(x+3)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=3x-6</m>; slope: 3; vertical intercept: <m>-6</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m> g(x)=4(2x-1)+2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=8x-2</m>; slope: <m>8</m>; vertical intercept: <m>-2</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle h(t)=\frac{18t-5}{2}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>h(t)=9t-2.5</m>; slope: <m>9</m>; vertical intercept: <m>-2.5</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle m(x)=2(x-1)+2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>m(x)=2x</m>; slope: <m>2</m>; vertical intercept: <m>0</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Computing the Slope</title>
+    <introduction>
+        <p>
+           For each of the following, find the slope of the line passing through each pair of points.
+        </p>
+    </introduction>
+
+<exercise>
+<statement>
+<p>
+<m>(0,10)</m> and <m>(3,16)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>(6,-4)</m> and <m>(-15,-1)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-\frac{1}{7}</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>(-0.7,7.2)</m> and <m>(-0.5,12.5)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>26.5</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>\left(\frac{1}{3},1\right)</m> and <m>\left(-1,\frac{1}{2}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{3}{8}</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>(3,-5)</m> and <m>(8,-5)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>0</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+<m>(0,0)</m> and <m>(2,2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>1</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+
+
+
+
+
+
+<exercisegroup>
+<title>Finding the Slope</title>
+    <introduction>
+        <p>
+           For each of the following, find the slope of the linear function corresponding to the information provided.
+        </p>
+    </introduction>
+
+<exercise>
+<statement>
+<p>
+<m>f(1)=-2</m> and <m>f(3)=1</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>1.5</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>g(0.5)=0</m> and <m>g(2)=-2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-\frac{4}{3}\approx-1.33</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>h(-1)=-2</m> and <m>h(1)=2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>w(2)=-3</m> and <m>w(6)=-3</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>0</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+
+    
+<exercise>
+<statement>
+<p>
+Identify the slope and vertical intercept of each line. Then write an equation of the line.
+</p>
+
+<ol>
+<li>
+
+<image width="50%" xml:id="ex_2_1_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_2_1_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-2.5,xmax=2.5,
+ymin=-2.5,ymax=2.5,
+xtick={-2,...,2},
+ytick={-2,...,2},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 0.8,
+y post scale = 0.8
+]
+\addplot[domain=-2.5:2.5] {1/2*x+1};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</li>
+
+<li>
+<image width="50%" xml:id="ex_2_1_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_2_1_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-2.5,xmax=2.5,
+ymin=-4.5,ymax=2.5,
+xtick={-2,...,2},
+ytick={-4,...,2},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 0.8,
+y post scale = 0.8
+]
+\addplot[domain=-2.5:2.5] {-3/2*x-1};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</li>
+ 
+
+<li>
+<image width="50%" xml:id="ex_2_1_3">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_2_1_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-3.5,xmax=3.5,
+ymin=-2.5,ymax=2.5,
+xtick={-3,...,3},
+ytick={-2,...,2},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 0.8,
+y post scale = 0.8
+]
+\addplot[domain=-3.5:3.5] {2/3*x};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</li>
+
+
+<li>
+<image width="50%" xml:id="ex_2_1_4">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_2_1_4_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-4.5,xmax=3.5,
+ymin=-4.5,ymax=2.5,
+xtick={-4,...,3},
+ytick={-4,...,2},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 0.8,
+y post scale = 0.8
+]
+\addplot[domain=-4.5:3.5] {-2/3*x-1};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</li>
+
+</ol>
+
+
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            slope: <m>0.5</m>; vertical intercept: <m>1</m>; equation: <m>y=0.5x+1</m>
+        </li>
+        <li>
+            slope: <m>-\frac{3}{2}</m>; vertical intercept: <m>-1</m>; equation: <m>y=-\frac{3}{2}x-1</m>
+        </li>
+        <li>
+            slope: <m>\frac{2}{3}</m>; vertical intercept: <m>0</m>; equation: <m>y=\frac{2}{3}x</m>
+        </li>
+        <li>
+            slope: <m>-\frac{2}{3}</m>; vertical intercept: <m>-1</m>; equation: <m>y=-\frac{2}{3}x-1</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+Five linear functions are given below.
+Drag each function on the left to the corresponding line number on the right.
+</p>
+
+<image width="50%" xml:id="ex_2_1_5">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_2_1_5_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-2.5,xmax=2.5,
+ymin=-8.5,ymax=8.5,
+xtick={-2,...,2},
+ytick={-8,...,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=-2.5:2.5] {-2*x-3} node[pos=0.85, below] {\hspace*{-16pt}line 5};
+\addplot[domain=-2.5:2.5,red] {3*x-1} node[pos=0.85, above] {\hspace*{-16pt}line 2};
+\addplot[domain=-2.5:2.5,orange] {3*x+2} node[pos=0.85, above] {\hspace*{-16pt}line 1};
+\addplot[domain=-2.5:2.5,teal] {x-1} node[pos=0.85, above] {\hspace*{-16pt}line 4};
+\addplot[domain=-2.5:2.5,purple] {2} node[pos=0.85, above] {\hspace*{-16pt}line 3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</statement>
+
+<cardsort> 
+
+<match>
+<premise order="1">
+<m>y=3x+2</m>
+</premise>
+<response>
+Line 1
+</response>
+</match>
+
+<match>
+<premise order="2">
+<m>y=3x-1</m>
+</premise>
+<response>
+Line 2
+</response>
+</match>
+
+<match>
+<premise order="3">
+<m>y=2</m>
+</premise>
+<response>
+Line 3
+</response>
+</match>
+
+<match>
+<premise order="4">
+<m>y=x-1</m>
+</premise>
+<response>
+Line 4
+</response>
+</match>
+
+<match>
+<premise order="5">
+<m>y=-2x-3</m>
+</premise>
+<response>
+Line 5
+</response>
+</match> 
+
+</cardsort>
+
+<solution>
+<p>
+Line 1 is <m>y=3x+2</m>; Line 2 is <m>y=3x-1</m>; Line 3 is <m>y = 2</m>; Line 4 is <m>y=x-1</m>; Line 5 is <m>y=-2x-3</m>.
+</p>
+</solution>
+
+</exercise>
+
+<!-- <exercise>
+  <title> Exercise Title </title>
+  <statement> Problem Statement </statement>
+  <feedback> General Feedback </feedback>
+  <cardsort>
+    <match>
+      <premise> Item 1 </premise>
+      <response> Target 1 </response>
+    </match>
+    <match>
+      <premise> Item 2 </premise>
+      <response> Target 2 </response>
+    </match>
+    <match>
+      <premise> Item 3a </premise>
+      <premise> Item 3b </premise>
+      <premise> Item 3c </premise>
+      <response> Target 3 </response>
+    </match>
+    <match>
+      <premise> Distractor Item </premise>
+    </match>
+    <match>
+      <response> Distractor Target </response>
+    </match>
+  </cardsort>
+</exercise> -->
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+During the 2019-2020 academic year, a senior lecturer at URI earned a base salary of <m>\$55,683</m> for a standard teaching load. For each credit taught in excess of the standard load, <m>\$1,567</m> were added to his salary. Write a linear equation expressing the total amount <m>A</m> that the senior lecturer earned for teaching <m>n</m> credits in excess of the standard workload during the 2019-2020 academic year.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>A=1567n+55683</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+The elevation in feet, <m>E(t)</m>, of a hiker <m>t</m> minutes after beginning her hike is given by <m>E(t)=35t+1350</m>.
+</p>
+<ol>
+<li>Write a complete sentence explaining the practical meaning of the vertical intercept of this linear function. Include units in your answer.</li>
+<li>Write a complete sentence explaining the practical meaning of the slope of this linear function. Include units in your answer.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            The initial elevation of the hiker is 1350 feet.
+        </li>
+        <li>
+            The hiker's elevation is increasing at a rate of 35 feet per minute.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+The distance in miles from the finish line, <m>D(t)</m>, of a bicyclist <m>t</m> hours after beginning a race is given by <m>D(t)=50-25t</m>.
+</p>
+<ol>
+<li>Write a complete sentence explaining the practical meaning of the vertical intercept of this linear function. Include units in your answer.</li>
+<li>Write a complete sentence explaining the practical meaning of the slope of this linear function. Include units in your answer.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            The bicyclist's initial distance from the finish line is 50 miles.
+        </li>
+        <li>
+            The bicyclist's distance from the finish line is decreasing at a rate of 25 miles per hour.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+</exercises>
+
+
+

@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_2_3">
+
+    
+<title>Modeling and Numerically Given Functions</title>
+
+
+<objectives>
+    <introduction>
+        <p>
+            After completing this section, you should be able to do the following.
+        </p>
+    </introduction>
+    <ol>
+        <li>
+            <p>
+            First objective.
+            </p>
+        </li>
+
+        <li>
+            <p>
+        Second objective.
+            </p>
+        </li> 
+        <li>
+            <p>
+            Third objective.
+            </p>
+        </li>
+    </ol>
+</objectives>
+
+
+
+<p>
+How do we recognize when it is appropriate for a function given numerically<mdash/>through a table of values<mdash/>to be modeled by a linear function? The key is to remember that a function is linear if it changes at a constant rate. We will explore how to determine whether or not a numerically given function changes at a constant rate in the following examples.
+</p>
+
+<example xml:id="example-ch2-larvae">
+<statement>
+<p>
+In her laboratory, a biologist is studying the growth of the larvae of a certain insect species during the last instar. Her team takes weight measurements of the larvae every 6 hours for 48 hours beginning with <m>t=0</m>. Let <m>W(t)</m> denote the average larval weight, in grams, at time <m>t</m>. Here are the measurements they record rounded off to two decimal places
+<fn>Data source: <url href="http://www.biology.arizona.edu/biomath/tutorials/Linear/LinearModels.html">http://www.biology.arizona.edu/biomath/tutorials/Linear/LinearModels.html</url>, accessed: 6/12/20</fn>.
+</p>
+
+
+<tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+    <row>
+        <cell><m>t</m> (hours)</cell>
+        <cell><m>0</m></cell>
+        <cell><m>6</m></cell>
+        <cell><m>12</m></cell>
+        <cell><m>18</m></cell>
+        <cell><m>24</m></cell>
+        <cell><m>30</m></cell>
+        <cell><m>36</m></cell>
+        <cell><m>42</m></cell>
+        <cell><m>48</m></cell>
+    </row>
+    <row>
+        <cell><m>W(t)</m> (grams)</cell>
+        <cell><m>7.00</m></cell>
+        <cell><m>7.45</m></cell>
+        <cell><m>7.90</m></cell>
+        <cell><m>8.35</m></cell>
+        <cell><m>8.80</m></cell>
+        <cell><m>9.25</m></cell>
+        <cell><m>9.70</m></cell>
+        <cell><m>10.15</m></cell>
+        <cell><m>10.60</m></cell>
+    </row>
+</tabular>
+
+<p>
+Is it appropriate for the growth of the larvae to be modeled by a linear function? If it is, find a formula that matches the data.
+</p>
+
+</statement>
+
+<solution>
+<p>
+It would be appropriate to model <m>W(t)</m> by a linear function if it changes at a constant rate. A function changes at a constant rate if equal changes in the independent variable correspond to equal changes in the dependent variable.
+</p>
+
+<p>
+From the table, we can see that the independent variable <m>t</m> increases by the quantity <m>\Delta t = 6</m> as we move between consecutive inputs. Starting at <m>t=0</m>, we must determine the corresponding change in <m>W(t)</m> each time <m>t</m> increases by <m>\Delta t =6</m> (or, equivalently, the difference between each pair of consecutive outputs in the table).
+</p>
+
+<p>
+<md>
+<mrow>W(6)-W(0) \amp\;=\; 7.45-7.00 \amp \;=\; 0.45 \quad \text{grams}</mrow>
+<mrow>W(12)-W(6) \amp\;=\; 7.90-7.45 \amp \; = \; 0.45 \quad \text{grams}</mrow>
+<mrow>W(18)-W(12) \amp\;=\; 8.35-7.90 \amp \; = \; 0.45 \quad \text{grams}</mrow>
+<mrow>W(24)-W(18) \amp\;=\; 8.80-8.35 \amp \; = \; 0.45 \quad \text{grams}</mrow>
+<mrow>W(30)-W(24) \amp\;=\; 9.25-8.80 \amp \; = \; 0.45 \quad \text{grams}</mrow>
+<mrow>W(36)-W(30) \amp\;=\; 9.70-9.25 \amp \; = \; 0.45 \quad \text{grams}</mrow>
+<mrow>W(42)-W(36) \amp \;=\; 10.15-9.70 \amp \; = \; 0.45 \quad \text{grams}</mrow>
+<mrow>W(48)-W(42) \amp \;=\; 10.60-10.15 \amp \; = \; 0.45 \quad \text{grams}</mrow>
+</md>
+</p>
+
+<!-- ToDo: can include table with arrows above and below -->
+
+<p>
+These calculations indicate that each time <m>t</m> increases by <m>\Delta t = 6</m>, the function <m>W(t)</m> increases by <m>\Delta W=0.45</m>.
+</p>
+
+
+
+<!-- <image width="70%" xml:id="fig_2_3_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="2_3_1_fig">
+\begin{tikzpicture}[remember picture,arrow/.style={-Stealth, thick},node/.style={font=\scriptsize}]
+\node (tbl) [inner sep=0] {
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+$t$ (hours) \amp \markcell{t1}{0} \amp \markcell{t2}{6} \amp \markcell{t3}{12}  \markcell{t4}{18} \amp \markcell{t5}{24} \amp \markcell{t6}{30} \amp \markcell{t7}{36} \amp \markcell{t8}{42} \amp \markcell{t9}{48} \\\hline
+$W(t)$ (grams) \amp \markcell{b1}{7.00} \amp \markcell{b2}{7.45} \amp \markcell{b3}{7.90} \amp \markcell{b4}{8.35} \amp \markcell{b5}{8.80} \amp \markcell{b6}{9.25} \amp \markcell{b7}{9.70} \amp \markcell{b8}{10.15} \amp \markcell{b9}{10.60} \\\hline
+\end{tabular}
+};
+\begin{scope}[overlay, arrow/.style={-Stealth, thick}, node/.style={font=\scriptsize}]
+\def\myshift{6pt} 
+\foreach \val [count=\j from 1] in {$+6$,$+6$,$+6$,$+6$,$+6$,$+6$,$+6$,$+6$} {
+\pgfmathtruncatemacro{\next}{\j+1}
+\draw[arrow, blue]([yshift=\myshift]t\j.north) to [bend left=45] node[midway, above=2pt, node] {\val}([yshift=\myshift]t\next.north);
+}
+\foreach \val [count=\j from 1] in {$+0.45$,$+0.45$,$+0.45$,$+0.45$,$+0.45$, $+0.45$, $+0.45$, $+0.45$} {
+\pgfmathtruncatemacro{\next}{\j+1}
+\draw[arrow, red]([yshift=-\myshift]b\j.south)to [bend right=45] node[midway, below=2pt, node] {\val}([yshift=-\myshift]b\next.south);
+}
+\end{scope}
+\end{tikzpicture}
+</latex-image>
+</image> -->
+
+<p>
+Hence the function <m>W(t)</m> changes at a constant rate. Indeed, the average rate of change in <m>W(t)</m> on each of the <m>6</m>-hour intervals is
+<md>\frac{\Delta W}{\Delta t}=\frac{0.45}{6}=0.075 \quad \frac{\text{grams}}{\text{hour}}.</md>
+</p>
+
+<p>
+Since it changes at a constant rate, it is appropriate to model <m>W(t)</m> by a linear function <m>W(t)=mt+b</m> for some constants <m>m</m> and <m>b</m>. The vertical intercept <m>b</m> is the value of the function at <m>t=0</m>. We have that value in the table: <md>b=W(0)=7.00 \quad \text{grams}</md> The slope is the constant rate of change which we have just calculated, so <m>m = 0.075</m> grams/hour. Hence <md>W(t)=0.075t+7.00</md> is an appropriate mathematical model for the growth of the larvae.
+</p>
+
+
+</solution>
+
+</example>
+
+
+
+
+<example>
+<statement>
+<p>
+Decide which of the following tables could represent a linear function. For each table that could represent a linear function, find a formula matching the data in the table.
+</p>
+
+<p><ol>
+<li>
+<tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+<row>
+    <cell><m>t</m></cell>
+    <cell><m>2</m></cell>
+    <cell><m>4</m></cell>
+    <cell><m>6</m></cell>
+    <cell><m>8</m></cell>
+    <cell><m>10</m></cell>
+    <cell><m>12</m></cell>
+</row>
+<row>
+    <cell><m>f(t)</m></cell>
+    <cell><m>6.0</m></cell>
+    <cell><m>4.6</m></cell>
+    <cell><m>3.2</m></cell>
+    <cell><m>1.8</m></cell>
+    <cell><m>0.4</m></cell>
+    <cell><m>-1.0</m></cell>
+</row>
+</tabular>
+</li>
+
+<li>
+<tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+<row>
+    <cell><m>x</m></cell>
+    <cell><m>0</m></cell>
+    <cell><m>3</m></cell>
+    <cell><m>6</m></cell>
+    <cell><m>9</m></cell>
+    <cell><m>12</m></cell>
+    <cell><m>15</m></cell>
+</row>
+<row>
+    <cell><m>g(x)</m></cell>
+    <cell><m>6</m></cell>
+    <cell><m>7.5</m></cell>
+    <cell><m>9.25</m></cell>
+    <cell><m>11.5</m></cell>
+    <cell><m>15.5</m></cell>
+    <cell><m>20</m></cell>
+</row>
+</tabular>
+</li>
+
+<li>
+<tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+<row>
+    <cell><m>x</m></cell>
+    <cell><m>0</m></cell>
+    <cell><m>1</m></cell>
+    <cell><m>2</m></cell>
+    <cell><m>3</m></cell>
+    <cell><m>4</m></cell>
+    <cell><m>5</m></cell>
+</row>
+<row>
+    <cell><m>h(x)</m></cell>
+    <cell><m>3</m></cell>
+    <cell><m>4.5</m></cell>
+    <cell><m>6</m></cell>
+    <cell><m>7.5</m></cell>
+    <cell><m>9</m></cell>
+    <cell><m>10.5</m></cell>
+</row>
+</tabular>
+</li>
+</ol>
+</p>
+</statement>
+
+
+<solution>
+<p><ol>
+<li>
+<p>
+The change in <m>t</m> between any two consecutive inputs in the table is given by <m>\Delta t = 2</m>. The change in <m>f(t)</m> as <m>t</m> increases by <m>\Delta t</m> (or, equivalently, the change in <m>f</m> between each pair of consecutive points in the table) can be calculated as follows:
+</p>
+<p>
+<md>
+<mrow>\Delta f \amp \;=\; f(4)-f(2) \amp\;=\; \amp\quad  4.6-6.0 \amp\;=\; -1.4</mrow>
+<mrow>\Delta f \amp \;=\; f(6)-f(4) \amp \;=\; \amp\quad 3.2-4.6 \amp\;=\; -1.4</mrow>
+<mrow>\Delta f \amp \;=\; f(8)-f(6) \amp \;=\;  \amp \quad 1.8-3.2 \amp\;=\; -1.4</mrow>
+<mrow>\Delta f \amp \;=\; f(10)-f(8) \amp \;=\;  \amp\quad 0.4-1.8 \amp\;=\; -1.4</mrow>
+<mrow>\Delta f \amp \;=\; f(12)-f(10) \amp \;=\;  \amp -1.0-0.4 \amp\;=\; -1.4</mrow>
+</md>
+</p>
+
+<p>
+We can see that each time <m>t</m> increases by <m>\Delta t = 2</m>, <m>f(t)</m> changes by <m>\Delta f=-1.4</m>; that is; <m>f(t)</m> decreases by <m>1.4</m>.
+</p>
+
+<!-- ToDo: can include table with arrows above and below -->
+
+<p>
+Since changes in <m>f</m> corresponding to equal changes in <m>t</m> are all equal, the function <m>f(t)</m> is linear, so <m>f(t)=mt+b</m> for some constants <m>m</m> and <m>b</m>.
+The slope <m>m</m> is given by <md>m=\frac{\Delta f}{\Delta t}=\frac{-1.4}{2}=-0.7.</md>
+Hence <md>f(t)=-0.7t+b.</md>
+</p>
+
+<p>
+In <xref ref="example-ch2-larvae" />, we could easily find the vertical intercept <m>b</m> as we were given the value of the function at 0. The table for <m>f(t)</m> does not directly give us the value <m>f(0)</m>, so we will use another point given in the table to set up an equation and solve for <m>b</m>. Taking the point <m>(2,6)</m> from the table, we have that <m>f(2)=6</m>
+</p>
+<p>
+<md>
+<mrow>-0.7\cdot 2+b\amp\;=\;6</mrow>
+<mrow>-1.4 + b \amp\;=\;6</mrow>
+<mrow>-1.4 \textcolor{blue}{+1.4} + b \amp \;=\; 6 \textcolor{blue}{+1.4}</mrow>
+<mrow>b \amp \;=\; 7.4</mrow>
+</md>
+</p>
+<p>
+The final formula for the linear function matching the table is <md>f(t)=-0.7t+7.4.</md>
+</p>
+</li>
+
+<!-- ToDo: can include table with arrows above and below -->
+
+<li>
+<p>
+Consecutive values of <m>x</m> in the table are equally spaced by <m>\Delta x = 3</m>. We must check if all the corresponding changes in <m>g(x)</m> are equal.
+</p>
+<aside>
+<p>
+Here, we can see that each time <m>x</m> increases by <m>\Delta x=3</m>, the corresponding value of <m>\Delta g</m> becomes larger and larger. That means that the function <m>g(x)</m> increases faster and faster<mdash/>by more and more at each next step<mdash/>so <m>g(x)</m> increases at an increasing rate unlike a linear function that increases or decreases at a constant rate.
+</p>
+</aside>
+
+<!-- ToDo: can include table with arrows above and below -->
+
+<p>
+Because the change in the output, <m>\Delta g</m>, is not the same each time <m>x</m> increases by <m>\Delta x=3</m>, the function is <em>not</em> linear.
+</p>
+</li>
+
+<li>
+
+<!-- ToDo: can include table with arrows above and below -->
+
+<p>
+All changes in <m>x</m> are equal between consecutive inputs in the table with <m>\Delta x=1</m>. The corresponding changes in <m>h(x)</m> are also equal: at every step <m>h(x)</m> increases by <m>1.5</m>, so <m>\Delta h=1.5</m>. Hence, <m>h(x)</m> is a linear function. We find the slope to be <md>m=\frac{\Delta h}{\Delta x}=\frac{1.5}{1}=1.5.</md> We are given the value of <m>h</m> at 0: <m>h(0)=3</m>. Hence, <m>b=3</m>. The formula for <m>h(x)</m> is: <md>h(x)=1.5x+3.</md>
+</p>
+</li>
+
+</ol></p>
+</solution>
+
+</example>
+
+
+
+<example xml:id="example-ch2-depreciation">
+<statement>
+<p>
+A company purchased a computer system for <m>\$20300</m>. The company accountant decided to depreciate the item over 5 years of its <q>useful life</q> for tax purposes. The depreciated value of the system, <m>V(t)</m>, in dollars, reported to the IRS <m>t</m> years after the purchase (the so-called <q>carrying value</q>) is given by:
+</p>
+
+<tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+    <row>
+        <cell><m>t</m> (years after purchase)</cell>
+        <cell><m>0</m></cell>
+        <cell><m>1</m></cell>
+        <cell><m>2</m></cell>
+        <cell><m>3</m></cell>
+        <cell><m>4</m></cell>
+        <cell><m>5</m></cell>
+    </row>
+    <row>
+        <cell><m>V(t)</m> (dollars)</cell>
+        <cell><m>20300</m></cell>
+        <cell><m>17240</m></cell>
+        <cell><m>14180</m></cell>
+        <cell><m>11120</m></cell>
+        <cell><m>8060</m></cell>
+        <cell><m>5000</m></cell>
+    </row>
+</tabular>
+
+<p><ol>
+<li>
+<p>
+What is the amount of depreciation over each of the five years?
+</p>
+</li>
+
+<li>
+<p>
+What is an appropriate formula for the carrying value <m>V(t)</m>?
+</p>
+</li>
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+We begin by calculating the change in depreciated value each year:
+</p>
+<p>
+<md>
+<mrow>\Delta V \amp\;=\; 17240-20300 \amp \;=\; -3060</mrow>
+<mrow>\Delta V \amp\;=\; 14180-17240 \amp \;=\; -3060</mrow>
+<mrow>\Delta V \amp\;=\; 11120-14180 \amp \;=\; -3060</mrow>
+<mrow>\Delta V \amp\;=\; 8060-11120 \amp \;=\; -3060</mrow>
+<mrow>\Delta V \amp\;=\; 5000-8060 \amp \;=\; -3060</mrow>
+</md>
+</p>
+
+<p>
+From the above, we conclude that the computer system depreciates by <m>\$3060</m> each of the five years.
+</p>
+</li>
+
+<li>
+<p>
+Since equal changes of <m>\Delta t=1</m> in <m>t</m> correspond to equal changes <m>\Delta V=-3060</m> in the depreciated value of the computer system, <m>V(t)</m> can be modeled by a linear function with formula: <md>V(t)=-3060t+20300.</md>
+</p>
+</li>
+
+</ol></p>
+</solution>
+
+</example>
+
+
+<p>
+The depreciation method used by the accountant in <xref ref="example-ch2-depreciation" /> is called <q>straight-line depreciation</q>. The 5 years of useful life is prescribed by the IRS for each type of asset. Information about how the value at the end of the asset's useful life, called the <q>salvage value</q>, is prescribed can be found in accounting books.
+</p>
+<p>
+In the straight-line depreciation method, the fixed annual depreciation amount is calculated by taking the difference between the purchase cost and the salvage value and dividing by the number of years of useful life of the asset. For the computer system from <xref ref="example-ch2-depreciation" />, this calculation results in
+<md>\frac{\text{purchase cost} - \text{ salvage cost}}{\text{years of useful life}}=\frac{20300-5000}{5}=3060.
+</md>
+</p>
+
+<p>
+The computer system is depreciating by <m>\$3060</m> each year, so the slope of the associated line is <m>-3060</m>. The graph of the depreciated value <m>V(t)</m> for <m>0\leq t\leq 5</m> is the straight line shown below.
+</p>
+
+<image width="60%" xml:id="fig_2_3_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="2_3_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+scaled ticks=false,
+xmin=0,xmax=5.9,
+ymin=0,ymax=23900,
+xtick={1,2,3,4,5},
+ytick={5000,8060,11120,14180,17240,20300},
+minor tick={},
+xlabel=\(t\), ylabel=\(V(t)\),
+x post scale = 1.2
+]
+\addplot+[smooth,mark=*,mark options={fill=red}] plot coordinates {
+(0, 20300)
+(1, 17240)
+(2, 14180)
+(3, 11120)
+(4, 8060)
+(5, 5000)
+};
+%vertical dashes Delta V
+\draw[dashed,teal,thick, -Stealth] (1,20300) -- (1,17600);
+\node at (1.4,18500) {\small $\textcolor{teal}{-3060}$};
+
+\draw[dashed,teal,thick, -Stealth] (2,17240) -- (2,14580);
+\node at (2.4,15500) {\small $\textcolor{teal}{-3060}$};
+\
+\draw[dashed,teal,thick, -Stealth] (3,14180) -- (3,11420);
+\node at (3.4,12500) {\small $\textcolor{teal}{ -3060}$};
+
+\draw[dashed,teal,thick, -Stealth] (4,11120) -- (4,8460);
+\node at (4.4,9500) {\small $\textcolor{teal}{ -3060}$};
+
+\draw[dashed,teal,thick, -Stealth] (5,8060) -- (5,5400);
+\node at (5.4,6500) {\small $\textcolor{teal}{ -3060}$};
+
+%horizontal dashes Delta t
+\draw[dashed,purple,thick, -Stealth] (0,20300) -- (1,20300);
+\node at (0.7,19400) {\small $\textcolor{purple}{+1}$};
+
+\draw[dashed,purple,thick, -Stealth] (1,17240) -- (2,17240);
+\node at (1.7,16240) {\small $\textcolor{purple}{+1}$};
+
+\draw[dashed,purple,thick, -Stealth] (2,14180) -- (3,14180);
+\node at (2.7,13280) {\small $\textcolor{purple}{+1}$};
+
+\draw[dashed,purple,thick, -Stealth] (3,11120) -- (4,11120);
+\node at (3.7,10220) {\small $\textcolor{purple}{+1}$};
+
+\draw[dashed,purple,thick, -Stealth] (4,8060) -- (5,8060);
+\node at (4.7,7160) {\small $\textcolor{purple}{+1}$};
+
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+
+<xi:include href="exercises/ex_2_3.ptx"/>
+</section>

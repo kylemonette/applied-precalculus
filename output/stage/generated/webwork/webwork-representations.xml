@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-1" ww-id="webwork-1">
+    <static seed="1">
+      <statement><p><ol label="a.">
+<li>
+<p><m>f(1)</m></p>
+<p><fillin characters="1" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p><m>f(-1.5)</m></p>
+<p><fillin characters="1" name="AnSwEr0002"/></p>
+</li>
+<li>
+<p><m>f(0)</m></p>
+<p><fillin characters="1" name="AnSwEr0003"/></p>
+</li>
+</ol></p>
+</statement>
+      <answer>
+        <p>
+          <m>5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <solution><p><ol label="a.">
+<li>
+<p><m>f(1) = {5}</m></p>
+</li>
+<li>
+<p><m>f(-1.5) = {0}</m></p>
+</li>
+<li>
+<p><m>f(0) = {3}</m></p>
+</li>
+</ol></p>
+</solution>
+    </static>
+    <rendering-data problemSource="Applied_Precalculus/1-Introduction_to_Functions/1_1-The_Concept_of_a_Function/1.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg><![CDATA[
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+);
+
+TEXT(beginproblem());
+
+Context()->variables->are(x => "Real");
+
+$a = random(2,6,1);
+$b = non_zero_random(-5,5,1);
+$f = Formula("$a*x + $b")->reduce;
+
+$x1 = random(1,3,1);
+$x2 = random(-6,-1,0.5);
+$x3 = 0;
+$y1 = $f->eval(x=>$x1);
+$y2 = $f->eval(x=>$x2);
+$y3 = $f->eval(x=>$x3);
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+
+
+
+a. [`f([$x1])`]
+
+    [_]{$y1}
+
+b. [`f([$x2])`]
+
+    [_]{$y2}
+
+c. [`f([$x3])`]
+
+    [_]{$y3}
+
+END_PGML
+
+BEGIN_PGML_SOLUTION
+a. [`f([$x1]) = [$y1] `]
+
+b. [`f([$x2]) = [$y2] `]
+
+c. [`f([$x3]) = [$y3] `]
+END_PGML_SOLUTION
+
+ENDDOCUMENT();]]></pg>
+  </webwork-reps>
+  <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-webwork-2" ww-id="webwork-2">
+    <static seed="2">
+      <statement><p>The value of a car, <m>V</m>, in dollars, is a function of the number of years, <m>t</m>, since it was purchased; that is, <m>V=g(t)</m>.</p>
+<p>The independent variable is <ul form="popup" name="AnSwEr0001"><li>
+<p>?</p>
+</li><li>
+<p>t</p>
+</li><li>
+<p>V</p>
+</li><li>
+<p>g</p>
+</li></ul> with units <ul form="popup" name="AnSwEr0002"><li>
+<p>?</p>
+</li><li>
+<p>dollars</p>
+</li><li>
+<p>years</p>
+</li><li>
+<p>dollars/year</p>
+</li></ul>.</p>
+<p>The dependent variable is <ul form="popup" name="AnSwEr0003"><li>
+<p>?</p>
+</li><li>
+<p>t</p>
+</li><li>
+<p>V</p>
+</li><li>
+<p>g</p>
+</li></ul> with units <ul form="popup" name="AnSwEr0004"><li>
+<p>?</p>
+</li><li>
+<p>dollars</p>
+</li><li>
+<p>years</p>
+</li><li>
+<p>dollars/year</p>
+</li></ul>.</p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{t}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{years}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{V}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{dollars}</m>
+        </p>
+      </answer>
+      <solution><p>The independent variable is <m>t</m> and has units of years. The dependent variable is <m>V</m> and has units of dollars.</p>
+</solution>
+    </static>
+    <rendering-data problemSource="Applied_Precalculus/1-Introduction_to_Functions/1_1-The_Concept_of_a_Function/2.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+    <pg><![CDATA[
+
+DOCUMENT();
+
+############################################################
+# Load Macros
+############################################################
+loadMacros(
+  "PGstandard.pl",
+  "PGML.pl",
+  "PGcourse.pl",
+"parserPopUp.pl"
+);
+
+TEXT(beginproblem());
+Context('Numeric');
+$var_indp = PopUp(["?","t", "V", "g"],"t");
+$var_dep = PopUp(["?","t", "V", "g"],"V");
+$units_indp = PopUp(["?", "dollars", "years", "dollars/year"], "years");
+$units_dep = PopUp(["?", "dollars", "years", "dollars/year"], "dollars");
+
+############################################################
+# Body
+############################################################
+
+BEGIN_PGML
+The value of a car, [`V`], in dollars, is a function of the number of years, [`t`], since it was purchased; that is, [`V=g(t)`].
+
+The independent variable is [_____]{$var_indp} with units [_____]{$units_indp}.
+
+The dependent variable is [_____]{$var_dep} with units [_____]{$units_dep}.
+
+END_PGML
+
+
+BEGIN_PGML_SOLUTION
+The independent variable is [`t`] and has units of years. The dependent variable is [`V`] and has units of dollars.
+END_PGML_SOLUTION
+
+ENDDOCUMENT();]]></pg>
+  </webwork-reps>
+</webwork-representations>

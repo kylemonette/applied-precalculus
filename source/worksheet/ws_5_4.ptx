@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws_5_4" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Practice Worksheet</title>
+
+<exercise>
+<introduction>
+<p>
+Explain what the following functions tell you about the quantities they describe, where <m>t</m> is measured in years.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=50\cdot 2^{t/10}</m>
+</p>
+</statement>
+<solution>
+<p>
+The initial quantity is <m>50</m>, and it doubles every <m>10</m> years.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>Q=210(\frac{1}{2})^{t/6}</m>
+</p>
+</statement>
+<solution>
+<p>
+The initial quantity is <m>210</m>, and it halves every <m>6</m> years.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>P=16(4)^{t/5}</m>
+</p>
+</statement>
+<solution>
+<p>
+The initial quantity is <m>16</m>, and it quadruples every <m>5</m> years.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>f(t)=75(0.85)^{t/2}</m>
+</p>
+</statement>
+<solution>
+<p>
+The initial quantity is <m>75</m>, and it is multiplied by <m>0.85</m> every <m>2</m> years.
+</p>
+</solution>
+</task>
+
+
+
+</exercise>
+
+
+<exercise>
+<introduction>
+<p>
+Write an exponential function <m>Q=A\cdot c^{t/T}</m> describing each of the following scenarios. Then convert the formula to the form <m>Q=A\cdot b^t</m>.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+A population begins with <m>1200</m> members and triples every <m>15</m> years.
+</p>
+</statement>
+<solution>
+<p>
+Here, <m>A=1200</m>, <m>c=3</m> due to tripling, and <m>T=15</m> so
+<md>
+Q = 1200 \cdot 3^{\frac{t}{15}}.
+</md> To convert this to the form <m>Ab^t</m>, note that <m>b = 3^{1 /15} = 1.07599</m> and so
+<md>
+Q = 1200 (1.07599)^t.
+</md>
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+A bacteria colony starts with <m>12</m> and doubles every <m>20</m> hours.
+</p>
+</statement>
+<solution>
+<p>
+Here <m>A=12</m>, <m>c=2</m>, and <m>T=20</m> so that
+<md>
+Q = 12 \cdot 2^{\frac{t}{20}}.
+</md> To convert this function, note that <m>b = 2^{1 /20} = 1.0353</m> so
+<md>
+Q = 12 \cdot (1.0353)^t.
+</md>
+</p>
+</solution>
+</task>
+
+
+<task>
+<statement>
+<p>
+A lake begins with <m>550</m> fish and one tenth disappear every year.
+</p>
+</statement>
+<solution>
+<p>
+Here <m>A = 550</m>, <m>c=\frac{9}{10}</m>, and <m>T=1</m> so that
+<md>
+Q = 550 \cdot \pbr{\frac{9}{10}} ^{t / 1} \quad \implies \quad 550 \cdot \pbr{\frac{9}{10}} ^t.
+</md>
+</p>
+</solution>
+</task>
+
+</exercise>
+
+
+</worksheet>

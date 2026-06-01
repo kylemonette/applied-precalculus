@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Practice Worksheet</title>
+
+
+<!-- <page> -->
+
+<!-- </page> -->
+
+
+<exercise workspace="2in">
+<title>The title of my exercise</title>
+
+<statement>
+    <p>
+        the statement here
+    </p>
+</statement>
+
+<hint>
+    <p>
+        A sample of a hint; must go 1) hint, 2) answer, 3) solution
+    </p>
+</hint>
+<answer>
+    <p>
+        Just the short answer
+    </p>
+</answer>
+<solution>
+    <p>
+        The full solution with all work
+    </p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+
+<task workspace="1in">
+    <statement>
+        <p>
+            Part a - first task
+        </p>
+    </statement>
+<answer>
+    <p>
+        The answer to part (a)
+    </p>
+</answer>
+<solution>
+    <p>
+        The solution to part (a)
+    </p>
+</solution>
+</task>
+<task workspace="1in">
+    <statement>
+        <p>
+            The second task
+        </p>
+    </statement>
+</task>
+</exercise>
+
+
+
+<exercisegroup>
+    <introduction>
+        <p>
+            Some common instructions go here.
+        </p>
+    </introduction>
+
+    <exercise>
+        <statement>
+            <p>
+                The first exercise in the group
+            </p>
+        </statement>
+    </exercise>
+
+<exercise>
+        <statement>
+            <p>
+                The second exercise in the group
+            </p>
+        </statement>
+    </exercise>
+</exercisegroup>
+    
+
+
+
+<exercise>
+    <statement>
+        <p>
+            An exercise after the group.
+        </p>
+    </statement>
+</exercise>
+
+
+
+
+</worksheet>
+

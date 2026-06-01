@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_1_3">
+
+    
+<title>Functions Given Numerically</title>
+
+
+<objectives>
+    <introduction>
+        <p>
+            After completing this section, you should be able to do the following.
+        </p>
+    </introduction>
+    <ol>
+        <li>
+            <p>
+            First objective.
+            </p>
+        </li>
+
+        <li>
+            <p>
+        Second objective.
+            </p>
+        </li> 
+        <li>
+            <p>
+            Third objective.
+            </p>
+        </li>
+    </ol>
+</objectives>
+
+
+<p>
+    In the previous section, we saw that if a function is given algebraically<mdash/>by a formula<mdash/>we can easily create a table of values for that function.
+    That table of values can then be used to sketch the graph of the function, which in turn provides a visual representation of the function that can allow us to see behavior that may not be readily apparent from the formula alone.
+</p>
+
+<p>
+    When we study a real-life process, which inevitably involves a function of some kind, we rarely begin with a formula for a function that represents<mdash/>or <em>models</em><mdash/>the process.
+    Typically, we take measurements and collect and tabulate numerical data for the process we are studying.
+    We then try to find a formula for a function that “fits” the numerical information we collected.
+    That is, we <em>start</em> with a table of values and <em>then</em> try to find a formula for a function, not the other way around.
+</p>
+
+<p>
+    Finding a mathematical description of a real-life process is called <em>mathematical modeling</em>.
+    A function that is given by its table of values is said to be given <em>numerically</em>.
+</p>
+
+<p>
+    If you ever kept overripe bananas in your house a bit too long, you probably experienced an invasion by fruit flies.
+    And you probably noticed how quickly the population of fruit flies in your house was increasing.
+    It is difficult to count the number of fruit flies in a house, but it can be done in a laboratory.
+</p>
+
+<p>
+Suppose that a population of fruit flies in a laboratory experiment is initially 100 flies and it begins to grow.
+The size of the population, <m>P</m>, measured in <alert>thousands</alert> of flies, is a function of the time <m>t</m> since the experiment began; that is, <m>P=f(t)</m>.
+Given how quickly fruit flies multiply, it is reasonable to measure <m>t</m> in days.
+The scientists conducting the experiment do not have a formula for <m>f(t)</m> that describes the growth of this fruit fly population and, in general, that growth (and therefore the function <m>f(t)</m>) depends on many factors controlled by the lab<mdash/>the temperature, food provided, etc.
+Taking into consideration the length of the fruit fly reproductive cycle, the scientists observe the population and take measurements every 14 days.
+The data they collect is provided in the table below.
+</p>
+
+<table xml:id="table-ch1-fruit-flies">
+<title></title>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+    <row bottom="minor">
+    <cell> <m>t</m> (in days)</cell>
+    <cell>0</cell>
+    <cell>14</cell>
+    <cell>28</cell>
+    <cell>42</cell>
+    <cell>56</cell>
+    </row>
+
+    <row>
+    <cell> <m>P=f(t)</m> (in thousands)</cell>
+    <cell>0.1</cell>
+    <cell>3.94</cell>
+    <cell>155.12</cell>
+    <cell>6106.99</cell>
+    <cell>240432.20</cell>
+    </row>
+</tabular>
+</table>
+
+<p>
+    We see that <m>f(t)</m> is an increasing function and it increases very fast.
+    After 56 days, the initial population of 100 flies grew to 240432.2 thousand flies; that is, 240,432,200 flies!
+</p>
+
+<p>
+    Can we find a formula for a function <m>f(t)</m> so that <xref ref="table-ch1-fruit-flies"/> is a table of values for <m>f(t)</m>? In other words, can we find a mathematical model for the population growth exhibited in the fruit fly experiment? It turns out that finding a formula for a function that corresponds to experimental data, even if only approximately, may be difficult.
+    In fact, it can be impossible.
+    A formula corresponding to <xref ref="table-ch1-fruit-flies"/> <em>can</em> be found, as the growth of the fruit fly population is exponential.
+    You will see how this is done when we cover exponential functions in Chapter 5.
+</p>
+
+<p>
+    One can obtain a visual representation of a function from a numerical representation by sketching its approximate graph.
+    The function <m>f(t)</m> associated with <xref ref="table-ch1-fruit-flies"/> for <m>t</m> between 0 and 42 is plotted below.
+    The value at <m>t=56</m> is so large that it squeezes the graph vertically too much and makes it hard to read, which is why we excluded it.
+</p>
+
+
+  <image width="50%" xml:id="fig_1_3_1">
+    <shortdescription>
+    A short description.
+    </shortdescription>
+    <latex-image label="1_3_1_fig">
+    \begin{tikzpicture}[scale=0.8]
+    \begin{axis}[grid=both,
+    xmin=0,xmax=4.5,
+    ymin=0,ymax=6.5,
+    xtick={1,2,3,4},
+    xticklabels = {10,20,30,40},
+    ytick={1,2,3,4,5,6},
+    yticklabels = {1000,2000,3000,4000,5000,6000},
+    minor tick={},
+    xlabel=\(t\), ylabel=\(P\),
+    x post scale = 1.2
+    ]
+    \addplot+[smooth,mark=*,mark options={fill=red}] plot coordinates {
+    (0, 0.0001)
+    (1.4, 0.00394)
+    (2.8, 0.15512)
+    (4.2, 6.10699)
+    };
+    \end{axis}
+    \end{tikzpicture}
+    </latex-image>
+</image>
+
+
+<example>
+    <statement>
+        <p>
+        On December 31, 2019 the price of ExxonMobil stock (NYSE: XOM) was changing during the day.
+        The price of the stock each hour from 10 am to 4 pm is recorded in the table below.
+        </p>
+
+    <table xml:id="table-ch1-exxon-1">
+        <title></title>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+    <row bottom="minor">
+            <cell>time</cell>
+            <cell>10 am</cell>
+            <cell>11 am</cell>
+            <cell>12 pm</cell>
+            <cell>1 pm</cell>
+            <cell>2 pm</cell>
+            <cell>3 pm</cell>
+            <cell>4 pm</cell>
+        </row>
+            <row>
+            <cell>price (dollars)</cell>
+            <cell> <m>69.35</m> </cell>
+            <cell> <m>69.17</m> </cell>
+            <cell> <m>69.41</m> </cell>
+            <cell> <m>69.38</m> </cell>
+            <cell> <m>69.32</m> </cell>
+            <cell> <m>69.32</m> </cell>
+            <cell> <m>69.78</m> </cell>
+            </row>
+        </tabular>
+    </table>
+
+    <p>
+    <ol>
+        <li>
+            Let <m>E=p(t)</m> be the function that gives the price of ExxonMobil stock <m>t</m> hours after 10 am on December 31, 2019.
+            Rewrite <xref ref="table-ch1-exxon-1" /> with the first row giving values of <m>t</m> and the second values of <m>E=p(t)</m>.
+        </li>
+
+        <li>
+            Sketch an approximate graph of <m>p(t)</m>.
+        </li>
+
+        <li>
+            Does it appear simple to find a formula or mathematical model for the function <m>p(t)</m>?
+        </li>
+        </ol>
+    </p>
+    </statement>
+
+    <solution>
+        <p>
+        <ol>
+    <li>
+        <p>
+        We denote by <m>t</m> the time, in hours, since 10 am on December 31, 2019.
+        This means that 10 am is <m>t=0</m>, 11 am is <m>t=1</m>, 4 pm is <m>t=6</m>, and so on.
+        As the function <m>E=p(t)</m> gives the price of ExxonMobil stock at time <m>t</m>, we can express <m>E=p(t)</m> numerically by:
+        </p>
+
+        <table xml:id="table-ch1-exxon-2">
+            <title></title>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+            <row bottom="minor">
+                <cell> <m>t</m> </cell>
+                <cell> <m>0</m> </cell>
+                <cell> <m>1</m> </cell>
+                <cell> <m>2</m> </cell>
+                <cell> <m>3</m> </cell>
+                <cell> <m>4</m> </cell>
+                <cell> <m>5</m> </cell>
+                <cell> <m>6</m> </cell>
+            </row>
+            <row>
+            <cell> <m>p(t)</m> </cell>
+            <cell> <m>69.35</m> </cell>
+            <cell> <m>69.17</m> </cell>
+            <cell> <m>69.41</m> </cell>
+            <cell> <m>69.38</m> </cell>
+            <cell> <m>69.32</m> </cell>
+            <cell> <m>69.32</m> </cell>
+            <cell> <m>69.78</m> </cell>
+            </row>
+            </tabular>
+        </table>
+
+        </li>
+            <li>
+            <p>
+                We use <xref ref="table-ch1-exxon-2"/> to sketch an approximation of the graph of <m>E=p(t)</m>.
+            </p>
+
+            <image width="60%" xml:id="fig_1_3_2">
+            <shortdescription>
+            A short description.
+            </shortdescription>
+            <latex-image label="1_3_2_fig">
+            \begin{tikzpicture}[scale=0.8]
+            \begin{axis}[grid=both,
+            xmin=0,xmax=6.5,
+            ymin=6.9,ymax=7,
+            xtick={1,2,3,4,5,6},
+            ytick={6.91,6.92,...,6.99},
+            yticklabels = {69.1,69.2,69.3,69.4,69.5,69.6,69.7,69.8,69.9},
+            minor tick={},
+            xlabel=\(t\), ylabel=\(P\),
+            x post scale = 1.2
+            ]
+            \addplot+[smooth,mark=*,mark options={fill=red}] plot coordinates {
+            (0, 6.935)
+            (1, 6.917)
+            (2, 6.941)
+            (3, 6.938)
+            (4, 6.932)
+            (5, 6.932)
+            (6, 6.978)
+            };
+            \end{axis}
+            \end{tikzpicture}
+            </latex-image>
+        </image>
+
+            <p>
+                Note that the red ordered pairs are guaranteed to be on the graph of <m>p(t)</m>, while the line segments used to connect them are not.
+            </p>
+            </li>
+
+            <li>
+                The function <m>p(t)</m> is neither increasing nor decreasing as the graph sometimes climbs and sometimes falls as <m>t</m> increases.
+                Finding a formula for the function <m>p(t)</m> that models fluctuations of the price of a stock does not seem simple and we will not attempt to do so.
+            </li>
+        </ol>
+        </p>
+    </solution>
+</example>
+
+
+
+<example>
+<statement>
+    <p>
+    A woman goes to a gym to exercise.
+    After <m>t</m> minutes on a treadmill, her pulse (heart rate), <m>H</m>, in beats per minute, is:
+    </p>
+
+    <table xml:id="table-ch1-women-gym">
+    <title></title>
+    <tabular left="minor" right="minor" halign="center" bottom="minor" top="minor">
+    <row>
+        <cell> <m>t</m> (minutes)</cell>
+        <cell>0</cell>
+        <cell>2</cell>
+        <cell>4</cell>
+        <cell>6</cell>
+        <cell>8</cell>
+        <cell>10</cell>
+    </row>
+    <row>
+    <cell> <m>H</m> (bpm)</cell>
+    <cell>80</cell>
+    <cell>84</cell>
+    <cell>88</cell>
+    <cell>92</cell>
+    <cell>96</cell>
+    <cell>100</cell>
+    </row>
+
+    </tabular>    
+    </table>
+<p>
+<ol>
+<li>
+    <p>
+    Express the above table as a function.
+    </p>
+</li>
+
+<li>
+    <p>
+    Does it appear simple to find a formula or mathematical model for this function?
+    </p>
+</li>
+
+<li>
+    <p>
+    Sketch an approximate graph of the function.
+    </p>
+</li>
+</ol>
+</p>
+
+</statement>
+
+<solution>
+<p>
+<ol>
+<li>
+    <p>
+    The woman's pulse, <m>H</m>, is a function of time <m>t</m>, which, based on the table, we will measure in minutes since her treadmill workout began.
+    We could write <m>H=f(t)</m> if we chose to name the associated function <m>f</m>.
+    For the sake of simplicity, we often denote the dependent variable and the function by the same letter.
+    In this case, we will instead write <m>H=H(t)</m>.
+    </p>
+</li>
+
+<li>
+    <p>
+    Can we find a formula for <m>H(t)</m>? We haven't developed any specific techniques to do so yet, and hence to answer this question we can only attempt to observe patterns and make educated guesses based on common sense.
+    </p>
+
+    <p>
+    Looking at the data in <xref ref="table-ch1-women-gym"/>, we can see that the woman's pulse <m>H</m> increases as time <m>t</m> increases, which we might expect based on our own experience with exercise.
+    How does <m>H</m> increase? The initial value of <m>H</m><mdash/><m>H(0)</m> in function notation<mdash/>is <m>80</m>.
+    During the first two minutes from <m>t=0</m> to <m>t=2</m>, her pulse increases by <m>4</m> bpm from <m>80</m> to <m>84</m>.
+    During the next two minutes from <m>t=2</m> to <m>t=4</m>, her pulse increases again by <m>4</m> bpm from <m>84</m> to <m>88</m>.
+    Looking at each of the remaining two-minute intervals, we see that her pulse increases by <m>4</m> bpm every two minutes: <m>88</m> to <m>92</m>, <m>92</m> to <m>96</m>, and <m>96</m> to <m>100</m>.
+    </p>
+
+    <p>
+    As we attempt to find a possible formula for <m>H(t)</m>, we observe that if her pulse is increasing by <m>4</m> bpm every two minutes, we could perhaps think of this as <m>2</m> bpm every <m>1</m> minute instead.
+    So her pulse starts at an initial value of <m>80</m> bpm and then we add <m>2</m> bpm for every one-minute change in <m>t</m>.
+    The formula that reflects that is:
+    <md>
+        H(t)=80+2t.
+    </md>
+    Let's check if the values of <m>H(t)</m> reflect the data in <xref ref="table-ch1-women-gym"/>:
+    </p>
+
+    <p>
+    <md>
+    <mrow>H(0)=80+2\cdot 0 \amp = 80 \amp H(2) \amp =80+2\cdot 2 \phantom{0} = 84 </mrow>
+    <mrow>H(4)=80+2\cdot 4\amp =88 \amp   H(6) \amp= 80+2\cdot 6 \phantom{0} =  92</mrow>
+    <mrow>H(8)=80+2\cdot 8 \amp =96 \amp  H(10) \amp=80+2\cdot 10 = 100.</mrow>  
+    </md>
+    </p>
+
+    <p>
+    Yes! Our formula produces all the right values and matches the information given in <xref ref="table-ch1-women-gym"/>.
+    </p>
+
+    <p>
+    Note that the formula <m>H(t)=80+2t</m> gives a <em>possible</em> formula for <m>H(t)</m>.
+    It is entirely possible that the woman's actual heart rate at time <m>t=1.5</m> minutes does not match what the formula <m>H(t)=80+2t</m> suggests it should be.
+    We have no way of knowing, as the table does not tell us anything about the values of <m>H(t)</m> at any times other than <m>t=0,2,4,6,8,10</m> minutes.
+    </p>
+</li>
+
+<li>
+<p>
+Here is an approximate graph of the function <m>H=H(t)</m> based on the numerical data:
+</p>
+
+<image width="60%" xml:id="fig_1_3_3">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="1_3_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=10.5,
+ymin=7.6,ymax=10.5,
+xtick={2,4,6,8,10},
+% xticklabels = {80,84,88,92,96,100},
+ytick={8,8.4,8.8,9.2,9.6,10},
+yticklabels = {80,84,88,92,96,100},
+minor tick={},
+xlabel=\(t\), ylabel=\(H\),
+x post scale = 1.2
+]
+\addplot+[smooth,mark=*,mark options={fill=red}] plot coordinates {
+(0,8)
+(2,8.4)
+(4,8.8)
+(6,9.2)
+(8,9.6)
+(10,10)
+};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</li>
+</ol>
+</p>
+</solution>
+</example>
+
+
+
+
+<example>
+<statement>
+    <p>
+    Functions <m>y=f(x)</m> and <m>y=g(x)</m> are given numerically below.
+    Find possible formulas for <m>f(x)</m> and <m>g(x)</m>.
+    </p>
+
+    <p>
+    <ol>
+<li>
+    <table xml:id="table-ch1-exm-1">
+        <title></title>
+    <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+        <row>
+            <cell> <m>x</m> </cell>
+            <cell> <m>0</m> </cell>
+            <cell> <m>1</m> </cell>
+            <cell> <m>2</m> </cell>
+            <cell> <m>3</m> </cell>
+            <cell> <m>4</m> </cell>
+            <cell> <m>5</m> </cell>
+        </row>
+
+            <row>
+            <cell> <m>f(x)</m> </cell>
+            <cell> <m>0</m> </cell>
+            <cell> <m>-1</m> </cell>
+            <cell> <m>-4</m> </cell>
+            <cell> <m>-9</m> </cell>
+            <cell> <m>-16</m> </cell>
+            <cell> <m>-25</m> </cell>
+            </row>
+            </tabular>
+        </table>
+        </li>
+
+        <li>
+        <table xml:id="table-ch1-exm-2">
+        <title></title>
+    <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                <row>
+                <cell> <m>x</m> </cell>
+                <cell> <m>0</m> </cell>
+                <cell> <m>1</m> </cell>
+                <cell> <m>2</m> </cell>
+                <cell> <m>3</m> </cell>
+                <cell> <m>4</m> </cell>
+                <cell> <m>5</m> </cell>
+                </row>
+                <row>
+                    <cell> <m>g(x)</m> </cell>
+                    <cell> <m>80</m> </cell>
+                    <cell> <m>78</m> </cell>
+                    <cell> <m>76</m> </cell>
+                    <cell> <m>74</m> </cell>
+                    <cell> <m>72</m> </cell>
+                    <cell> <m>70</m> </cell>
+                </row>
+                </tabular>
+            </table>
+            </li>
+            </ol>
+    </p>
+</statement>
+
+<solution>
+    <p>
+    <ol>
+    <li>
+        <p>
+        We notice that the values of <m>f(x)</m> for each <m>x</m> given in the table are negative and have the magnitude equal to <m>x^{2}</m>.
+        Hence, a possible function represented by <xref ref="table-ch1-exm-1"/> is <m>f(x)=-x^{2}</m>.
+        We can easily check that <m>f(x)=-x^{2}</m> works by substituting <m>x=0,1,2,3,4,5</m> into <m>f(x)</m> and calculating the corresponding values.
+        Those are indeed <m>0,-1,-4,-9,-16,</m> and <m>-25</m>, respectively.
+        </p>
+    </li>
+
+    <li>
+        <p>
+        At <m>x=0</m>, <m>g(0)=80</m>.
+        Then, as <m>x</m> increases, <m>g(x)</m> decreases in a very regular fashion: for each increase of 1 in <m>x</m>, <m>g(x)</m> decreases by 2.
+        A formula that gives exactly such behavior is:
+        <md>
+            g(x)=80-2x.
+        </md>
+        We can verify that this function produces the values in <xref ref="table-ch1-exm-2"/>:
+        </p>
+        <p>
+        <md>
+        <mrow>g(0) \amp \; =\; 80 - 2 \cdot 0 \; = \; 80 \amp g(1) \amp \;=\; 80-2 \cdot 1 \;=\;78</mrow>
+        <mrow>g(2) \amp \;=\;80-2\cdot 2\;=\;76 \amp g(3) \amp \;=\; 80-2\cdot 3\;=\;74 </mrow>
+        <mrow>g(4) \amp \;=\; 80-2\cdot 4\;=\;72 \amp g(5) \amp \;=\;80-2\cdot 5\;=\;70</mrow>
+        </md>
+    </p>
+    </li>
+    </ol>
+    </p>
+</solution>
+</example>
+
+<p>
+For now, we can only try to observe patterns and <q>guess</q> formulas for numerically given functions.
+As we study various families of functions, we will develop more systematic methods for finding formulas of functions given numerically.
+</p>
+
+
+<xi:include href="exercises/ex_1_3.ptx"/>
+<xi:include href="worksheet/ws_1_3.ptx"/>
+
+</section>

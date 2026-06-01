@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_4_1">
+
+
+<title>Algebra of Powers: Integral Exponents</title>
+
+<objectives>
+    <introduction>
+        <p>
+            After completing this section, you should be able to do the following.
+        </p>
+    </introduction>
+    <ol>
+        <li>
+            <p>
+            First objective.
+            </p>
+        </li>
+
+        <li>
+            <p>
+        Second objective.
+            </p>
+        </li> 
+        <li>
+            <p>
+            Third objective.
+            </p>
+        </li>
+    </ol>
+</objectives>
+
+
+<p>
+    In the next two sections we review algebra of power expressions of the form: <md>a^p</md> where <m>a</m> and <m>p</m> are given numbers. The number <m>a</m> is called the <em>base</em> in the expression and the power <m>p</m> that the base is being raised to is called the <em>exponent</em>.
+</p>
+
+<p>
+    We begin with integral exponents; that is, exponents that are integers. If <m>p</m> is a positive integer <m>p = 1, 2, 3, \dots</m>, then <m>a^p</m> is simply a short way of writing repeated multiplication:
+<md>
+a^p = \underbrace{a \cdot a \cdot \ldots \cdot a}_{p \text{ times}}</md>
+In particular, for <m>p = 1, 2, 3\dots</m>, <md>0^p = 0, \quad 1^p = 1.</md>
+</p>
+
+<p>
+We expand this simple definition to the exponent <m>p = 0</m> by defining for any number <m>a</m>: <md>a^0 = 1.</md> In particular, by definition: <md>0^0 = 1.</md>
+Next, we extend the definition to negative integer exponents by defining for every <m>a \neq 0</m> and every <m>p = 0, 1, 2, 3, \dots</m>, <md>a^{-p} = \frac{1}{a^p}</md> In particular: <md>a^{-1} = \frac{1}{a}</md>
+</p>
+
+<p>
+    These simple definitions easily imply the basic properties of power expressions.
+</p>
+
+<theorem>
+<title>Rules of Exponents <mdash/> Integral Exponents</title>
+<statement>
+<p>
+    Let <m>a</m>, <m>b</m> be given numbers, <m>p</m> and <m>r</m> be integers. Then the following equalities hold provided both sides are defined:
+</p>
+
+<p><ol>
+<li xml:id="int-exps-prop1">
+    <m>\displaystyle a^0 = 1</m>
+</li>
+
+<li xml:id="int-exps-prop2">
+    <m>\displaystyle a^{-p} = \frac{1}{a^p}</m>
+</li>
+
+<li xml:id="int-exps-prop3">
+    <m>\displaystyle a^p \cdot a^r = a^{p + r}</m>
+</li>
+
+<li xml:id="int-exps-prop4">
+    <m>\displaystyle \frac{a^p}{a^r} = a^{p - r}</m>
+</li>
+
+<li xml:id="int-exps-prop5">
+    <m>\displaystyle (a^p)^r = a^{p \cdot r}</m>
+</li>
+
+<li xml:id="int-exps-prop6">
+    <m>\displaystyle (a \cdot b)^p = a^p \cdot b^p</m>
+</li>
+
+<li xml:id="int-exps-prop7">
+    <m>\displaystyle \left( \frac{a}{b} \right)^p = \frac{a^p}{b^p}</m>
+</li>
+
+<li xml:id="int-exps-prop8">
+    <m>\displaystyle \left( \frac{a}{b} \right)^{-p} = \left( \frac{b}{a} \right)^{p}</m>
+</li>
+</ol></p>
+</statement>
+</theorem>
+
+<p>
+    An expression in the formulas above may not be defined if there is a zero in the denominator. For example, in <xref ref="int-exps-prop2" />, <m>\frac{1}{a^p}</m> is not defined if <m>a = 0</m> and <m>p \neq 0</m>. So <xref ref="int-exps-prop2" /> holds for <m>a \neq 0</m>.
+</p>
+
+<p>
+The properties of exponents listed above follow very easily from our definitions. For example, to illustrate <xref ref="int-exps-prop3" /> observe:
+<md>a^p \cdot a^r = \underbrace{a \cdot a \cdot \ldots \cdot a}_{p \text{ times}}
+\cdot \underbrace{a \cdot a \cdot \ldots \cdot a}_{r \text{ times}}
+= \underbrace{a \cdot a \cdot \ldots \cdot a}_{p + r  \text{ times}}
+= a^{p + r}.</md>
+</p>
+
+<example>
+<statement>
+<p>
+    Rewrite each expression given below as a power of 3; that is, in the form <m>3^p</m> for some constant <m>p</m>.
+</p>
+
+<p><ol>
+<li>
+<p>
+    <m>\displaystyle \frac{1}{3^2}</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>\displaystyle 3^5 \cdot 3^{-2}</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>\displaystyle \frac{(3^2)^3}{3^8}</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>\displaystyle \left( \frac{3^{-3}}{3^{4}} \right)^2</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>\displaystyle \left( \frac{3^5}{27} \right)^2</m>
+</p>
+</li>
+
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+    All we need is <xref ref="int-exps-prop2" />: <md>\frac{1}{3^2} = 3^{-2}.</md> We rewrote the expression as <m>3^p</m> for <m>p = -2</m>.
+</p>
+</li>
+
+<li>
+<p>
+    By <xref ref="int-exps-prop3" />: <md>3^5 \cdot 3^{-2} = 3^{(5 + (-2))} = 3^{3}.</md>
+</p>
+</li>
+
+<li>
+<p>
+    By <xref ref="int-exps-prop5" /> and <xref ref="int-exps-prop4" />: <md>\frac{(3^2)^3}{3^8} = \frac{3^6}{3^8} = 3^{(6 - 8)} = 3^{-2}.</md>
+</p>
+</li>
+
+<li>
+<p>
+    As <m>\displaystyle 3^{-3} = \frac{1}{3^3}</m> we have: <md>\left( \frac{3^{-3}}{3^{4}} \right)^2 = \left( \frac{1}{3^3 \cdot 3^{4}} \right)^2 = \left( \frac{1}{3^7} \right)^2 = (3^{-7})^2 = 3^{-14}.</md>
+</p>
+</li>
+
+<li>
+<p>
+    Note that <m>27 = 3^3</m>. Using <xref ref="int-exps-prop7" />: <md>\left( \frac{3^5}{27} \right)^2 = \left( \frac{3^5}{3^3} \right)^2 = \frac{3^{10}}{3^6} = 3^{4}.</md>
+</p>
+</li>
+
+</ol>
+</p>
+</solution>
+</example>
+
+<example>
+<statement>
+<p>
+    Use Rules of Exponents to simplify the following expressions if possible:
+</p>
+
+<p><ol>
+<li>
+<p>
+    <m>\displaystyle (x^2 \cdot x^3)^2</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>\left( \dfrac{x^2 y^5}{x^4} \right)^{-3}</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>\left( \dfrac{x^{-2} y^5}{x^{-3} y^2} \right)^{-1}</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>(a + b)^7</m>
+</p>
+</li>
+</ol>
+</p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+    We use <xref ref="int-exps-prop3" /> to simplify the expression under the outside power 2. Then we use <xref ref="int-exps-prop5" />: <md>(x^2 \cdot x^3)^2 = (x^5)^2 = x^{10}.</md>
+</p>
+</li>
+
+<li>
+<p>
+    Let's begin by simplifying the expression under the power <m>-3</m> using <xref ref="int-exps-prop4" />: <md>\left( \frac{x^2 y^5}{x^4} \right)^{-3} = \left( \frac{y^5}{x^2} \right)^{-3}.</md> Now we use <xref ref="int-exps-prop8" /> and then <xref ref="int-exps-prop7" />: <md>\left( \frac{y^5}{x^2} \right)^{-3} = \left( \frac{x^2}{y^5} \right)^{3} = \frac{(x^2)^3}{(y^5)^3} = \frac{x^6}{y^{15}}.</md>
+</p>
+</li>
+
+<li>
+<p>
+    Let's simplify the expression under the power <m>-1</m> using <xref ref="int-exps-prop2" />: <md>\left( \frac{x^{-2} y^5}{x^{-3} y^2} \right)^{-1} = \left( \frac{x^{3} y^5}{x^{2} y^2} \right)^{-1}.</md> By <xref ref="int-exps-prop4" /> and then <xref ref="int-exps-prop2" />: <md>\left( \frac{x^{3} y^5}{x^{2} y^2} \right)^{-1} = (x y^3)^{-1} = \frac{1}{x y^3}.</md>
+</p>
+</li>
+
+<li>
+<p>
+    There is no rule for the power of a sum or a difference! We cannot simplify <m>(a + b)^7</m> using Rules of Exponents. You certainly <term>cannot</term> distribute the power 7 and write the expression as <m>a^7 + b^7</m>.
+</p>
+</li>
+
+</ol></p>
+</solution>
+</example>
+
+
+
+
+<xi:include href="exercises/ex_4_1.ptx"/>
+
+</section>

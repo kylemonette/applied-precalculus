@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_4_3">
+
+
+<exercisegroup>
+<title>Power Functions</title>
+<introduction>
+<p>
+Determine whether a given function is a power function. If yes, identify the coefficient <m>k</m> and the exponent <m>p</m>. If not, say so.
+</p>
+</introduction>
+
+
+<exercise>
+<statement>
+<p>
+<m>y= \dfrac{0.8x^4}{0.2x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=4x^3</m>; <m>k=4</m>; <m>p=3</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=\frac{\sqrt{9x^8}}{x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=3x^3</m>; <m>k=3</m>; <m>p=3</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle f(x)=\frac{1}{3}\cdot 3^{x+1}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Not a power function.
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle g(x)=\sqrt{0.01x^6}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=0.1x^3</m>; <m>k=0.1</m>; <m>p=3</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>h(x)=0.01x^3-2x^2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Not a power function.
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=9\sqrt{\frac{x^5}{x}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=9x^2</m>; <m>k=9</m>; <m>p=2</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Braking Distance</title>
+<introduction>
+<p>
+<q>Braking distance</q> or <q>stopping distance</q> refers to the distance a car will travel from the point when its brakes are fully applied to when it comes to a complete stop
+<fn><url href="http://hyperphysics.phy-astr.gsu.edu/hbase/crstp.html">http://hyperphysics.phy-astr.gsu.edu/hbase/crstp.html</url>, accessed: 7/5/20</fn>.
+The braking distance is proportional to the square of the car's speed and it depends on the coefficient of friction, <m>\mu</m>, between the tires and the road surface. Let <m>D</m> denote distance, in feet, and <m>S</m> speed in mph. The formula for the braking distance is:
+<md>
+D=\frac{0.034}{\mu}S^2
+</md>
+Note that the braking distance does not include a driver's reaction time
+<fn><url href="https://en.wikipedia.org/wiki/Braking_distance">https://en.wikipedia.org/wiki/Braking_distance</url>, accessed: 7/5/20</fn>.
+</p>
+</introduction>
+
+
+<exercise>
+<statement>
+<p>
+Is the braking distance a power function of speed? If yes, give the coefficient <m>k</m> and the exponent <m>p</m>. Assume that <m>\mu</m> is a given constant.
+</p>
+</statement>
+
+<solution>
+<p>
+Yes; <m>k=\frac{0.034}{\mu}</m>; <m>p=2</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+The coefficient of friction under normal conditions when the road is dry is <m>\mu=0.7</m>. What is the braking distance of a car that travels on a dry road at <m>35</m> mph? What is the braking distance at <m>70</m> mph?
+</p>
+</statement>
+
+<solution>
+<p>
+<m>59.5</m> feet; <m>238</m> feet
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+By what factor does the braking distance increase when speed <m>S</m> doubles?
+</p>
+</statement>
+
+<solution>
+<p>
+Factor of <m>4</m>.
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+The coefficient of friction on a wet road is <m>\mu=0.4</m>. Calculate the braking distance of a car traveling at <m>70</m> mph on a wet road.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>416.5</m> feet
+</p>
+</solution>
+</exercise>
+
+
+</exercisegroup>
+
+
+
+<exercise>
+<statement>
+<p>
+Below are the graphs of four power functions <m>y=kx^p</m> where <m>p</m> is a positive integer. In each of the graphs, is the exponent <m>p</m> even or odd? Is the coefficient <m>k</m> positive or negative?
+</p>
+
+<sidebyside widths="24% 24% 24% 24%" margins="0% 0% " valigns="bottom bottom bottom bottom">
+
+<image width="50%" xml:id="ex_4_3_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_1_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {x^2};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+<image width="50%" xml:id="ex_4_3_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_2_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {x^3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+<image width="50%" xml:id="ex_4_3_3">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_3_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {-x^3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+<image width="50%" xml:id="ex_4_3_4">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_4_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {-x^2};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</sidebyside>
+
+</statement>
+
+<solution>
+<p>
+From left to right:
+</p>
+<p>
+    <ul>
+        <li>
+            <m>p</m> is even and <m>k</m> is positive.
+        </li>
+        <li>
+            <m>p</m> is odd and <m>k</m> is positive.
+        </li>
+        <li>
+            <m>p</m> is odd and <m>k</m> is negative.
+        </li>
+        <li>
+            <m>p</m> is even and <m>k</m> is negative.
+        </li>
+    </ul>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Which of the following is a graph of <m>f(x)=-4x^5</m>?
+</p>
+
+<sidebyside widths="33% 33% 33%" margins="0% 0%" valigns="bottom bottom bottom">
+
+<image width="50%" xml:id="ex_4_3_5">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_5_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {0.4*x^3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<image width="50%" xml:id="ex_4_3_6">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_6_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {-0.4*x^3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+<image width="50%" xml:id="ex_4_3_7">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_7_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {-x^2};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+</sidebyside>
+
+</statement>
+
+<solution>
+<p>
+The graph in the middle.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+Which of the following is a graph of <m>f(x)=-3x^4</m>?
+</p>
+
+<sidebyside widths="33% 33% 33%" margins="0% 0%" valigns="bottom bottom bottom">
+
+
+<image width="50%" xml:id="ex_4_3_8">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_8_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {-0.4*x^3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+
+<image width="50%" xml:id="ex_4_3_9">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_9_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {-0.4*x^2};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+
+<image width="50%" xml:id="ex_4_3_10">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_10_fig">
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {0.4*x^2};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+</sidebyside>
+
+</statement>
+
+<solution>
+<p>
+The second graph.
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+Below you see graphs of the functions <m>y=-x^4</m>,   <m>y=\frac{1}{4}x^4</m>, and  <m>y=x^4</m>. Decide which is which.
+</p>
+
+<image width="50%" xml:id="ex_4_3_11">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_4_3_11_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+legend pos = south east,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:2.5] {x^2};
+\addlegendentry{A}
+\addplot[domain=-2.5:2.5,red] {-x^2};
+\addlegendentry{B}
+\addplot[domain=-2.5:2.5,orange] {0.3*x^2};
+\addlegendentry{C}
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+</statement>
+
+<solution>
+<p>
+A is <m>y=x^4</m>; B is <m>y=-x^4</m>; C is <m>y=\frac{1}{4}^4</m>.
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+The area, <m>A</m>, of a unilateral triangle whose sides have length <m>a</m> is given by:
+<md>
+A=\frac{\sqrt{3}}{4}a^2.
+</md>
+Find the side length <m>a</m>, in cm, which gives the area <m>A</m> equal to <m>8 \text{ cm}^2</m>. Round off your answer to three decimal places.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>4.298</m> cm
+</p>
+</solution>
+</exercise>
+
+
+
+</exercises>

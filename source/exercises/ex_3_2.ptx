@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_3_2">
+
+<exercisegroup>
+<title>Finding Intercepts</title>
+<introduction>
+<p>
+Find the intercepts of each quadratic function.
+</p>
+</introduction>
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=x^2+3 x+2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-1</m>, <m>-2</m>; vertical intercept: <m>2</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>y=x^2-x-6</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-2</m>, <m>3</m> ; vertical intercept: <m>-6</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>g(t)=t^2+t-6</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-3</m>, <m>2</m> ; vertical intercept: <m>-6</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>y=x^2-8 x+16</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>4</m>; vertical intercept: <m>16</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>f(w)=w^2+14 w+49</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercept: <m>-7</m>; vertical intercept: <m>49</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>f(t)=64t^2-36</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-\frac{3}{4}</m>, <m>\frac{3}{4}</m>; vertical intercept: <m>-36</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>h(x)=2 x^2+10 x+8</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-4</m>, <m>-1</m>; vertical intercept: <m>8</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>y=2 w^2- w-3</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-1</m>, <m>\frac{3}{2}</m>; vertical intercept: <m>-3</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=-x^2-6 x+16</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-8</m>, <m>2</m>; vertical intercept: <m>16</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>g(x)=\frac{1}{49}-4x^2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>-\frac{1}{14}</m>, <m>\frac{1}{14}</m>; vertical intercept: <m>\frac{1}{49}</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>p(x)=2x^2-6x</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>0</m>, <m>3</m>; vertical intercept: <m>0</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+<m>m(t)=-5t^2+2t</m>
+</p>
+</statement>
+
+<solution>
+<p>
+horizontal intercepts: <m>0</m>, <m>\frac{2}{5}</m>; vertical intercept: <m>0</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+A model rocket is launched vertically from the ground with an initial velocity of <m>168</m> feet per second. Let <m>H(t)</m> be the height, in feet, of the rocket <m>t</m> seconds after launch.
+</p>
+<ol>
+<li>Write a formula for the function <m>H(t)</m>.</li>
+<li>Find <m>t</m> when the model rocket hits the ground.</li>
+<li>Find the maximum height that the model rocket reaches.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>H(t)=-16t^2+168t</m>
+        </li>
+        <li>
+            <m>10.5</m> seconds
+        </li>
+        <li>
+            The maximum height that the model rocket reaches is <m>441</m> feet.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+</exercises>

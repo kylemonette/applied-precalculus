@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws_2_2" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Practice Worksheet</title>
+
+<exercise>
+<introduction>
+<p>
+Determine whether each equation has one solution, no solutions, or an infinite number of solutions. If there is a solution, find it.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+<m>3(x-1)=-3(x+1)</m>
+</p>
+</statement>
+<solution>
+<p>
+Distributing on each side,
+<md>
+3x-3 = -3x-3.
+</md> Adding <m>3</m> to both sides,
+<md>
+3x=-3x.
+</md> Adding <m>3x</m> to both sides,
+<md>
+6x=0.
+</md> Therefore <m>x=0</m> is the only solution.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>6x+5=-4</m>
+</p>
+</statement>
+<solution>
+<p>
+Subtracting <m>5</m> from both sides,
+<md>
+6x=-9.
+</md> Dividing both sides by <m>6</m>,
+<md>
+x = -\frac{9}{6} = -\frac{3}{2}
+</md> is the only solution.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>5x+7=5(x+1)+1</m>
+</p>
+</statement>
+<solution>
+<p>
+Distributing on the right side,
+<md>
+5x+7 = 5x+5+1 .
+</md> Therefore we have
+<md>
+5x+7 = 5x+6.
+</md> Subtracting <m>5x</m> from both sides,
+<md>
+7=6.
+</md> Clearly impossible!! So there is no solution.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>-2x+3=-2(x-1)+1</m>
+</p>
+</statement>
+<solution>
+<p>
+Distributing on the right side,
+<md>
+-2x+3 = -2x+2+1.
+</md> Therefore we have
+<md>
+-2x +3 = -2x+3.
+</md> Adding <m>2x</m> to both sides,
+<md>
+3=3.
+</md> Clearly always true!! Therefore there are infinitely many solutions.
+</p>
+</solution>
+</task>
+
+
+
+</exercise>
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Solve the equation <m>g(t)=5</m> where <m>g(t)=\dfrac{-7}{6-2t}</m>.
+</p>
+</statement>
+<solution>
+<p>
+We set up
+<md>
+5 = \frac{-7}{6-2t}.
+</md> Multiplying both sides by <m>6-2t</m>, then
+<md>
+5(6-2t) = -7.
+</md> Distributing on the left,
+<md>
+30 - 10t = -7
+</md> and then subtracting <m>30</m> from both sides,
+<md>
+-10t = -37 \quad \implies \quad t = \frac{-37}{-10}  = 3.7.
+</md>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+Is each line horizontal, vertical, or neither? If it is horizontal or vertical, write an equation for the line and graph the line.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+The line through <m>(0,6)</m> and <m>(1,6)</m>.
+</p>
+</statement>
+<solution>
+<p>
+The slope is given by
+<md>
+m = \frac{6-6}{1-0}  = \frac{0}{1}=0.
+</md> Therefore the line is horizontal, and further the vertical intercept was given as <m>b=6</m> so <m>y=6</m> is the equation. The graph is below.
+</p>
+
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+axis lines=middle,
+xmin=-8,xmax=8,
+ymin=-8,ymax=8,
+xtick={-8,-6,...,8},
+ytick={-8,-6,...,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-7:7,thick] {6};
+\end{axis}
+\end{tikzpicture}
+
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+The line through <m>(1,3)</m> and <m>(-4,1)</m>.
+</p>
+</statement>
+<solution>
+<p>
+The slope is 
+<md>
+m = \frac{1-3}{-4-1}  = \frac{-2}{-5}  = \frac{2}{5}.
+</md> So the line is neither vertical nor horizontal.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+The line through <m>(2,-5)</m> and <m>(2,4)</m>.
+</p>
+</statement>
+<solution>
+<p>
+The slope is
+<md>
+m = \frac{4-(-5)}{2-2}  = \frac{9}{0} \qquad \text{which is undefined!}
+</md> Therefore the line is vertical, and the <m>x</m>-intercept is <m>x=2</m>. The graph is below.
+</p>
+
+
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+axis lines=middle,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick={-3,-2,-1,1,2,3},
+xticklabels={-3,-2,-1,1,2,3},
+ytick={-3,-2,-1,1,2,3},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\draw[thick] (axis cs:2,3)--(axis cs:2,-3);
+\end{axis}
+\end{tikzpicture}
+
+</solution>
+</task>
+
+
+</exercise>
+
+</worksheet>

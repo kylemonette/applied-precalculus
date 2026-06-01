@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws_7_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Practice Worksheet</title>
+
+<exercise>
+<introduction>
+<p>
+Determine what function has been transformed and what transformations have been applied to it. Then graph the function.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=x^2+10</m>
+</p>
+</statement>
+<solution>
+<p>
+For the original function <m>f(x)=x^2</m>, then <m>y</m> is <m>f(x)</m> shifted up by <m>10</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=\sqrt[5]{x}-3</m>
+</p>
+</statement>
+<solution>
+<p>
+For the original function <m>f(x)=\sqrt[5]{x} </m>, then <m>y</m> is <m>f(x)</m> shifted down by <m>3</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=\ln(x+3)</m>
+</p>
+</statement>
+<solution>
+<p>
+For the original function <m>f(x)=\ln (x)</m>, then <m>y</m> is <m>f(x)</m> shifted left by <m>3</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=(x-5)^2</m>
+</p>
+</statement>
+<solution>
+<p>
+For the original function <m>f(x)=x^2</m>, then <m>y</m> is <m>f(x)</m> shifted right by <m>5</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=\dfrac{1}{x-7}+4</m>
+</p>
+</statement>
+<solution>
+<p>
+For the original function <m>f(x)=\dfrac{1}{x}</m>, then <m>y</m> is <m>f(x)</m> shifted right <m>7</m> and up <m>4</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=e^{x-0.5}-7</m>
+</p>
+</statement>
+<solution>
+<p>
+For the original function <m>f(x)=e^x</m>, then <m>y</m> is <m>f(x)</m> shifted down <m>7</m> and right <m>0.5</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=(x+6)^2-2</m>
+</p>
+</statement>
+<solution>
+<p>
+For the original function <m>f(x)=x^2</m>, then <m>y</m> is <m>f(x)</m> shifted left <m>6</m> and down <m>2</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=2^{x+3}+8</m>
+</p>
+</statement>
+<solution>
+<p>
+For the original function <m>f(x)=2^x</m>, then <m>y</m> is <m>f(x)</m> shifted up <m>8</m> and left <m>3</m>.
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+What transformations have been applied to the function <m>f(x)=13x^2+2x-4</m> to obtain <m>g(x)=13(x-4)^2+2(x-4)+6</m>?
+</p>
+</statement>
+<solution>
+<p>
+Because the <m>x</m> in the function <m>f(x)</m> has been replaced with <m>x-4</m> in the function <m>g(x)</m>, this suggests that <m>g(x)</m> is the result of shifting <m>f(x)</m> to the right by <m>4</m>.
+
+And, the <m>-4</m> constant in <m>f(x)</m> is replaced with <m>6</m> in <m>g(x)</m>, which is <m>10</m> higher. Therefore <m>g(x)</m> is <m>f(x)</m> shifted up by <m>10</m>.
+
+In summary, <m>g(x)</m> is <m>f(x)</m> shifted right <m>4</m> and up by <m>10</m>. To confirm, <m>g(x)=f(x-4)+10</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Below is the graph of a function <m>f(x)</m>. Graph the function <m>g(x)=f(x-4)-3</m>.
+</p>
+
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+
+xmin=-1.5,xmax=6.5,
+ymin=-2.5,ymax=4,
+xtick={-1,0,1,2,3,4,5,6},
+ytick={-2,-1,0,1,2,3},
+minor tick={},
+xlabel=\(x\), ylabel=\(f(x)\),
+samples=250]
+\addplot[domain=-1:2 ,thick] {-abs(x-1)+3};
+
+\ifprintanswers
+\addplot[domain=3:6 ,thick,red] {-abs(x-5)};
+\else \fi
+\end{axis}
+\end{tikzpicture}
+
+</statement>
+<solution>
+<p>
+To obtain <m>g(x)</m>, shift the graph of <m>f(x)</m> <m>4</m> units to the right and down <m>3</m> units. The graph in red above is the graph of <m>g(x)</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Below is the graph of a transformation of the function <m>y=x^2</m>. Write a possible formula for it.
+</p>
+
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+xmin=-4,xmax=2,
+ymin=-2.5,ymax=6,
+xtick={-4,-3,-2,-1,1,2},
+ytick={-2,-1,1,2,3,4,5,6},
+minor tick={},
+xlabel=\(x\), ylabel=\(f(x)\),
+samples=250]
+\addplot[domain=-4:2 ,thick] {(x+1)^2-2};
+
+\ifprintanswers
+\addplot[domain=-4:2 ,thick,red] {x^2};
+\else \fi
+\end{axis}
+\end{tikzpicture}
+
+</statement>
+<solution>
+<p>
+The red function on the graph above is the plot of <m>y=x^2</m>. Therefore, the one in black (i.e., the one we need a formula for) appears to have been shifted left by <m>1</m> and down by <m>2</m>. Therefore, this function is <m>y=(x+1)^2-2</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+A function <m>g(x)</m> is formed by shifting the function <m>f(x)</m> left <m>5</m> and down <m>6</m>. Write a formula for <m>g</m> in terms of <m>f</m>.
+</p>
+</statement>
+<solution>
+<p>
+Here, <m>g(x)=f(x+5)-6</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+A function <m>g(x)</m> is formed by shifting the function <m>f(x)</m> right <m>2.7</m> and up <m>14</m>. Write a formula for <m>g</m> in terms of <m>f</m>.
+</p>
+</statement>
+<solution>
+<p>
+Here, <m>g(x)=f(x-2.7)+14</m>.
+</p>
+</solution>
+</exercise>
+
+
+</worksheet>

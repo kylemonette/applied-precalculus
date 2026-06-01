@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Introduction to Functions</title>
+
+  <introduction>
+  <p>
+  The dose of medication that a pediatrician should prescribe to a child patient depends on the child's weight. The amount of medication remaining in a person's body depends on how much time has passed since they took the most recent dose. The distance between you and your destination depends on the speed at which you are traveling. The amount of practice problems you complete when studying for a mathematics class depends on how much time you spend working on them.
+  </p>
+
+  <p>
+  Each of the above describes a special type of dependence relationship between two variables called a <em>function</em>. Functions are used to model input<mdash/>output relationships in a precise manner and are an essential part of the foundation for calculus and other advanced mathematical topics.
+  </p>
+
+  <p>
+  This chapter introduces the concept of a function and a variety of different ways that a function may be presented, including algebraic, graphical, and numerical representations. It also explains how functions are used to describe relationships in many real<mdash/>world phenomena.
+  </p>
+
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec_1_1.ptx" />
+  <xi:include href="sec_1_2.ptx" />
+  <xi:include href="sec_1_3.ptx" />
+  <xi:include href="sec_1_4.ptx" />
+  <xi:include href="sec_1_5.ptx" />
+
+</chapter>

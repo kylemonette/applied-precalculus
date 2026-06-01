@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_3_2">
+
+    
+<title>Factoring Quadratic Expressions</title>
+
+
+<objectives>
+    <introduction>
+        <p>
+            After completing this section, you should be able to do the following.
+        </p>
+    </introduction>
+    <ol>
+        <li>
+            <p>
+            First objective.
+            </p>
+        </li>
+
+        <li>
+            <p>
+        Second objective.
+            </p>
+        </li> 
+        <li>
+            <p>
+            Third objective.
+            </p>
+        </li>
+    </ol>
+</objectives>
+
+
+<introduction>
+
+<p>
+In order to algebraically solve for the horizontal intercepts of a quadratic function such as <md>f(x)=x^2+5x+6</md> one must set <m>f(x)</m> equal to <m>0</m> and then solve for <m>x</m>; in other words, one must solve the quadratic equation <md>x^2+5x+6=0.</md> This equation can be solved by <alert>factoring</alert>. This process will be explained below.
+</p>
+
+
+<p>
+When we multiply together <md>(x+M)(x+N)</md> for some real numbers <m>M</m> and <m>N</m>, we obtain:
+</p>
+
+
+<!-- ToDo: change tikz arrows here -->
+
+
+<!-- <p>
+<md>
+(\source{x}\,\,+\source{M})(\target{x}+\target{N})\mbox{\drawarrows} \amp =x^2+Mx+Nx+M\cdot N \\
+\amp =x^2+(M+N)x+M\cdot N.
+</md>
+</p> -->
+
+<p>
+So if one begins with a quadratic expression of the form <m>x^2+Bx+C</m> and wants to find two numbers <m>M</m> and <m>N</m> such that <md>x^2+Bx+C=(x+M)(x+N),</md> it must be the case that <m>M+N=B</m> and <m>M\cdot N=C</m>.
+</p>
+
+<theorem>
+<title>Factoring Quadratics of the Form <m>x^2+Bx+C</m></title>
+<statement>
+<p>
+In order to factor a quadratic expression of the form <m>x^2+Bx+C</m> (where <m>B</m>, and <m>C</m> are constants and <m>x</m> is a variable), find two numbers <m>M</m> and <m>N</m> whose product is <m>C</m> and whose sum is <m>B</m>. Then <md>x^2+Bx+C=(x+M)(x+N).</md>
+</p>
+</statement>
+</theorem>
+
+
+<example xml:id="exercise-ch3-factor">
+<statement>
+<p>
+Factor each quadratic expression.
+</p>
+
+<p>
+<ol>
+<li>
+<p>
+    <m>x^2+5x+6</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>t^2-16t+64</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>w^2+8w-20</m>
+</p>
+</li>
+</ol>
+</p>
+</statement>
+<solution>
+<p><ol>
+<li>
+<p>
+We need to find two numbers whose product is <m>C=6</m> and whose sum is <m>B=5</m>. Since <m>2\cdot3=6</m> and <m>2+3=5</m>, we have <md>x^2+5x+6=(x+2)(x+3).</md>
+</p>
+</li>
+
+<li>
+<p>
+We need to find two numbers whose product is <m>C=64</m> and whose sum is <m>B=-16</m>. Since <m>-8\cdot(-8)=64</m> and <m>-8+(-8)=-16</m>, we have <md>t^2-16t+64=(t-8)(t-8)=(t-8)^2.</md>
+</p>
+</li>
+
+<li>
+<p>
+We need to find two numbers whose product is <m>C=-20</m> and whose sum is <m>B=8</m>. Since <m>-2\cdot10=-20</m> and <m>-2+10=8</m>, we have <md>w^2+8w-20=(w-2)(w+10).</md>
+</p>
+</li>
+
+</ol></p>
+</solution>
+</example>
+
+
+<example>
+<statement>
+<p>
+Find the horizontal intercepts of each quadratic function.
+</p>
+
+<p><ol>
+<li>
+<p>
+    <m>f(x)=x^2+5x+6</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>y=z^2-49</m>
+</p>
+</li>
+
+</ol></p>
+</statement>
+<solution>
+<p><ol>
+<li>
+<p>
+To find the horizontal intercepts, we set the function equal to 0 and solve for <m>x</m>: <md>x^2+5x+6=0.</md>
+We factored the left-hand side of this equation in<xref ref="exercise-ch3-factor" /> (a), so
+<md>(x+2)(x+3)=0.</md>
+</p>
+
+<p>
+<md>
+<mrow>x+2\amp=0 \amp\qquad x+3 \amp= 0</mrow>
+<mrow>x+2\textcolor{blue}{-2}\amp=0\textcolor{blue}{-2} \amp\qquad x+3\textcolor{blue}{-3} \amp= 0\textcolor{blue}{-3}</mrow>
+<mrow>x\amp=-2 \amp\qquad x\amp=-3</mrow>
+</md>
+</p>
+<p>
+Hence the horizontal intercepts of <m>f(x)=x^2+5x+6</m> are <m>x=-3</m> and <m>x=-2</m>.
+</p>
+</li>
+
+<li>
+<p>
+Again, we set the quadratic function equal to 0 and solve: <md>z^2-49=0.</md> In order to factor the left-hand side, we note that <m>z^2-49=z^2+0z-49</m>, so we need two numbers whose product is <m>C=-49</m> and whose sum is <m>B=0</m>. Since <m>-7\cdot 7=-49</m> and <m>-7+7=0</m>, we obtain <md>(z-7)(z+7)=0</md>
+</p>
+
+<p>
+<md>
+<mrow>z-7\amp\;=\;0 \amp\qquad z+7\amp\;=\;0</mrow>
+<mrow>z-7\textcolor{blue}{+7}\amp\;=\;0\textcolor{blue}{+7} \amp\qquad z+7\textcolor{blue}{-7}\amp\;=\;0\textcolor{blue}{-7}</mrow>
+<mrow>z\amp\;=\;7 \amp \qquad z\amp\;=\;-7</mrow>
+</md>
+</p>
+<p>
+Hence the horizontal intercepts of <m>y=z^2-49</m> are <m>z=-7</m> and <m>z=7</m>.
+</p>
+</li>
+</ol>
+</p>
+</solution>
+</example>
+
+
+<p>
+The quadratic function <m>z^2-49</m> in the above example is an example of a <alert>difference of squares</alert>.
+</p>
+
+<theorem>
+<title>Difference of Squares</title>
+<statement>
+<p>
+The difference of squares <m>A^2-B^2</m> factors into <m>(A+B)(A-B)</m>: <md>A^2-B^2=(A+B)(A-B).</md>
+</p>
+</statement>
+</theorem>
+
+<p>
+The above formula can be verified quickly through multiplication:
+</p>
+
+<!-- ToDo: change tikz arrows here -->
+
+
+<!-- <p>
+<md>
+(\source{A}\,\,+\source{B})(\target{A}-\target{B})\mbox{\drawarrows} \amp= A^2-AB+AB-B^2 \\
+\amp=A^2-B^2.
+</md>
+</p> -->
+
+<example>
+<statement>
+<p>
+Factor each difference of squares:
+</p>
+
+<p><ol>
+<li>
+<p>
+    <m>16x^2-81</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>100y^2-\frac{1}{4}</m>
+</p>
+</li>
+</ol></p>
+</statement>
+<solution>
+<p><ol>
+<li>
+<p>
+Here, <md>16x^2 - 81 = (4x)^2 - (9)^2</md> so <md>16x^2 - 81 = (4x + 9)(4x - 9).</md>
+</p>
+</li>
+
+<li>
+<p>
+Here, <md>100y^2 - \frac{1}{4} = (10y)^2 - \left( \frac{1}{2} \right)^2</md> so <md>100y^2 - \frac{1}{4} = \left( 10y + \frac{1}{2} \right)\left( 10y - \frac{1}{2} \right).</md>
+</p>
+</li>
+</ol></p>
+</solution>
+</example>
+
+<p>
+Each of the above factoring strategies are special cases of a more general approach to factoring quadratic functions.
+</p>
+
+<theorem>
+<title>Factoring Quadratics of the Form <m>ax^2 + bx + c</m></title>
+<statement>
+<p>
+To factor a trinomial of the form <m>ax^2 + bx + c</m> (where <m>a</m>, <m>b</m>, and <m>c</m> are constants with <m>a \neq 0</m> and <m>x</m> is a variable), <alert>rewrite the term</alert> <m>bx</m> to factor by grouping. This is done by finding two numbers <alert>whose product is <m>a \cdot c</m> and whose sum is <m>b</m></alert>. These two numbers can be used to rewrite the term <m>bx</m>.
+</p>
+</statement>
+</theorem>
+
+<example>
+<statement>
+<p>
+Factor each of the following quadratic expressions.
+</p>
+
+<p><ol>
+<li>
+<p>
+    <m>x^2 + 5x - 36</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>6x^2 + 7x - 20</m>
+</p>
+</li>
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+Here <m>a = 1</m>, <m>b = 5</m>, and <m>c = -36</m>. List all <alert>factors of</alert> <m>a \cdot c = -36</m>. Notice that the pair <m>\textcolor{red}{9}</m>, <m>\textcolor{red}{-4}</m> <alert>multiply to</alert> <m>-36</m> and <alert>sum to</alert> <m>5</m>. Now
+</p>
+<p>
+<md>
+<mrow>x^2 + 5x - 36 \amp\;=\; x^2 \textcolor{red}{+9x} \textcolor{red}{-4x} - 36</mrow>
+<mrow>\amp\;=\; x(x + 9) - 4(x + 9)</mrow>
+<mrow>\amp\;=\; (x + 9)(x - 4).</mrow>
+</md>
+</p>
+</li>
+
+<li>
+<p>
+Here <m>a = 6</m>, <m>b = 7</m>, and <m>c = -20</m>. List all <alert>factors of</alert> <m>a \cdot c = -120</m>. Notice that the pair <m>\textcolor{red}{15}</m>, <m>\textcolor{red}{-8}</m> <alert>multiply to</alert> <m>-120</m> and <alert>sum to</alert> <m>7</m>. Now
+</p>
+<p>
+<md>
+<mrow>6x^2 + 7x - 20 \amp\;=\; 6x^2 \textcolor{red}{+ 15x}  \textcolor{red}{-8x} - 20</mrow>
+<mrow>\amp\;=\; 3x(2x + 5) - 4(2x + 5)</mrow>
+<mrow>\amp\;=\; (2x + 5)(3x - 4).</mrow>
+</md>
+</p>
+</li>
+</ol></p>
+</solution>
+</example>
+
+
+<example>
+<statement>
+<p>
+Find the horizontal intercepts of the quadratic function <m>y = -3t^2 - t + 2</m>.
+</p>
+</statement>
+<solution>
+<p>
+We set the quadratic function equal to <m>0</m> and solve: <md>-3t^2 - t + 2 = 0.</md> In order to factor the left-hand side, we observe that <m>a = -3</m>, <m>b = -1</m>, and <m>c = 2</m>. List all <alert>factors of</alert> <m>a \cdot c = -6</m>. Notice that the pair <m>\textcolor{red}{-3}</m>, <m>\textcolor{red}{2}</m> <alert>multiply to</alert> <m>-6</m> and <alert>sum to</alert> <m>-1</m>. Now
+</p>
+<p>
+<md>
+<mrow>-3t^2 - t + 2 \amp\;=\; -3t^2  \textcolor{red}{-3t + 2t} + 2</mrow>
+<mrow>\amp\;=\; -3t(t+1) + 2(t+1)</mrow>
+<mrow>\amp\;=\; (t+1)(-3t+2).</mrow>
+</md>
+</p>
+<p>
+so we have that <md>(t+1)(-3t+2) = 0</md>
+</p>
+<p>
+<md>
+<mrow>t+1 \amp\;=\; 0 \amp \qquad -3t+2 \amp\;=\; 0</mrow>
+<mrow>t+1 \textcolor{blue}{-1} \amp \;=\; 0 \textcolor{blue}{-1} \amp \qquad -3t+2 \textcolor{blue}{- 2} \amp\;=\; 0 \textcolor{blue}{- 2}</mrow>
+<mrow>t \amp\;=\; -1 \amp -3t \amp\;=\; -2</mrow>
+<mrow>\amp \amp \dfrac{\cancel{-3}t}{\cancel{-3}} \amp\;=\; \dfrac{-2}{-3}</mrow>
+<mrow>\amp \amp t \amp\;=\; \dfrac{2}{3}</mrow>
+</md>
+</p>
+
+<p>
+Hence, the horizontal intercepts of <m>y=-3t^2-t+2</m> are <m>t=-1</m> and <m>t=\frac{2}{3}</m>. The function <m>y=-3t^2-t+2</m> can be factored in the form <m>y=(t+1)(-3t+2)</m>. By factoring out <m>-3</m> from the second term, we can factor the function even further as <md>y = -3(t+1)\left(t-\frac{2}{3}\right).</md> In this form, the real zeros (horizontal intercepts) of the function are readily apparent.
+</p>
+</solution>
+</example>
+
+
+<p>
+It is worth mentioning another special case of factoring a quadratic expression <m>ax^2+bx+c</m>: the case when <m>c</m> is zero.
+</p>
+
+<theorem>
+<title>Factoring Quadratics of the Form <m>ax^2+bx</m></title>
+<statement>
+<p>
+Consider an expression of the form <m>ax^2+bx</m> (where <m>a</m> and <m>b</m> are constants with <m>a\neq0</m> and <m>x</m> is a variable). To factor the expression, factor out <m>x</m> from both terms: <md>ax^2 + bx = x(ax + b)</md> or, alternatively, factor out <m>ax</m> from both terms: <md>ax^2 + bx = ax\left(x + \frac{b}{a}\right).</md>
+</p>
+</statement>
+</theorem>
+
+
+<p>
+If we rewrite a given expression <m>ax^2+bx</m> as <md>ax\left(x + \frac{b}{a}\right),</md>
+the horizontal intercepts of the function <m>y = ax^2 + bx</m> are straightforward to find.
+We want to solve the equation: <md>ax\left(x + \frac{b}{a}\right) = 0.</md> The product is equal to <m>0</m> if <m>ax = 0</m> or <m>x + \frac{b}{a} = 0</m>. Since <m>a \neq 0</m>, <m>ax = 0</m> when <m>x = 0</m>.
+The second term <m>x + \frac{b}{a} = 0</m> when <m>x = -\frac{b}{a}</m>. Hence, we have two <m>x</m>-intercepts for <m>ax^2 + bx</m>: <md>x = 0 \hspace{20pt} \text{and} \hspace{20pt} x = -\frac{b}{a}.</md>
+</p>
+
+<example>
+<statement>
+<p>
+Find horizontal intercepts of each of the quadratic functions given below.
+</p>
+
+<p><ol>
+<li>
+<p>
+    <m>y=-2x^2+3x</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>y=x^2-5x</m>
+</p>
+</li>
+</ol>
+</p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+Here, <m>a=-2</m>, <m>b=3</m>, and <m>c=0</m>. We factor <m>-2x</m> from both terms: <md>-2x^2+3x = -2x\left(x + \left(-\frac{3}{2}\right)\right)
+= -2x\left(x - \frac{3}{2}\right).</md>
+The solutions to the equation <md>-2x\left(x - \frac{3}{2}\right) = 0</md> are <m>x=0</m> and <m>x=\dfrac{3}{2}</m>, which are the two horizontal intercepts of the function.
+</p>
+</li>
+
+<li>
+<p>
+Here, <m>a=1</m>, <m>b=-5</m>, and <m>c=0</m>. We factor out <m>x</m>: <md>x^2-5x = x(x-5).</md>
+The horizontal intercepts are <m>x=0</m> and <md>x = -\frac{b}{a} = 5.</md>
+</p>
+</li>
+</ol>
+</p>
+</solution>
+</example>
+
+
+</introduction>
+
+
+<subsection>
+<title>
+Quadratic Functions and Projectile Motion
+</title>
+
+<p>
+Consider a projectile in a vertical motion straight up or straight down. The height of the projectile above the ground, <m>H(t)</m>, in feet, <m>t</m> seconds after it has been thrown can be modeled by the quadratic function <md>H(t) = -16 t^2 + V_0 t + H_0</md> where <m>V_0</m> is the initial velocity of the object in feet per second and <m>H_0</m> is the initial height of the object in feet.
+</p>
+
+
+<example>
+<statement>
+<p>
+A model rocket is launched from the ground with an initial velocity of 180 feet per second. Let <m>H(t)</m> be the height of the rocket above the ground <m>t</m> seconds after launch.
+</p>
+<p><ol>
+<li>
+<p>
+Write a formula for the function <m>H(t)</m>.
+</p>
+</li>
+
+<li>
+<p>
+When will the model rocket hit the ground?
+</p>
+</li>
+
+<li>
+<p>
+Find the maximum height that the model rocket reaches.
+</p>
+</li>
+
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+The model rocket is launched from the ground. Hence, the initial height <m>H_0</m> is 0 feet; that is, <m>H_0 = 0</m>. The initial velocity is 180 ft/sec. Hence, <m>V_0 = 180</m>. The function that gives the height of the rocket after <m>t</m> seconds is: <md>H(t) = -16 t^2 + 180 t.</md>
+</p>
+</li>
+
+<li>
+<p>
+The rocket travels vertically upwards, reaches its maximum height, and then falls back to the ground. It hits the ground at the time <m>t</m> when its height above the ground is zero; that is, when <m>H(t) = 0</m>. To find such <m>t</m>, we must solve the equation <md>H(t) = -16 t^2 + 180 t=0
+.</md>
+Note that the solutions to this equation are the horizontal intercepts of the quadratic parabola associated with <m>H(t)</m>. Factoring the left-hand side of the equation results in <m>t ( -16 t + 180 ) = 0</m>, or, equivalently, <md>-16 t ( t - 11.25 )=0.</md> The horizontal intercepts are thus <m>t=0</m> and <m>t=11.25</m>. So the height of the rocket is 0 feet above the ground at both time <m>t = 0</m> — that is, at the moment of launch — and also at time <m>t = 11.25</m>, which is when the rocket comes back and hits the ground. Hence, the rocket hits the ground 11.25 seconds after launch.
+</p>
+</li>
+
+<li>
+<p>
+The rocket reaches its maximum height when <m>H(t)</m> is at its maximum. The graph of <m>H(t) = -16 t^2 + 180 t</m> is a parabola opening down. Hence, <m>H(t)</m> is at its maximum at the vertex of the parabola. Remember that the <m>t</m>-coordinate of the vertex is the midpoint of the horizontal intercepts, <m>t_1 = 0</m> and <m>t_2 = 11.25</m>. Hence, the <m>t</m>-coordinate of the vertex is <m>\frac{t_1+t_2}{2}=\frac{0 + 11.25}{2} = 5.75</m>. Thus, the maximum height is reached at time <m>t = 5.75</m>. The height at <m>t = 5.75</m> is <md>H(5.75) = -16(5.75)^2 + 180(5.75) = 506</md> feet. So at its highest, the rocket reaches 506 feet. The graph of the function <m>H(t)</m> explains everything:
+</p>
+
+<image width="50%" xml:id="fig_3_2_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="3_2_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=12,
+ymin=0,ymax=33,
+xtick={1,...,12},
+ytick={100/16, 200/16, 300/16, 400/16, 500/16},
+yticklabels={$100$, $200$, $300$, $400$, $500$},
+minor tick={},
+xlabel=\(t\), ylabel=\(H\),
+]
+\addplot[domain=0:12] {-x^2 + 180/16*x};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<p>
+Note that the graph shows the height of the rocket <m>H(t)</m> as a function of time <m>t</m>. It does <em>not</em> show the path of the rocket, which travels straight up and down along a vertical line.
+</p>
+</li>
+
+</ol></p>
+</solution>
+</example>
+
+</subsection>
+
+
+
+
+
+
+<xi:include href="exercises/ex_3_2.ptx"/>
+</section>

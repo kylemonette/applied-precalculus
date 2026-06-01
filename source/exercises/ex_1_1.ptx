@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_1_1">
+
+
+<!-- <exercise>
+<statement>
+<p>
+The value of a car, <m>V</m>, in dollars, is a function of the number of years, <m>t</m>, since it was purchased; that is, <m>V=g(t)</m>.
+</p>
+<ol>
+<li>What is the independent variable?</li>
+<li>In what units is the independent variable measured?</li>
+<li>What is the dependent variable?</li>
+<li>In what units is the dependent variable measured?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>t</m>
+        </li>
+        <li>
+            years
+        </li>
+        <li>
+            <m>V</m>
+        </li>
+        <li>
+            dollars
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise> -->
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+The amount of caffeine, <m>C</m>, measured in milligrams, in a person's body <m>t</m> hours after drinking a cup of coffee is given by the function <m>C=f(t)</m>. What do each of the following statements tell you in practical terms; that is, in terms of time and caffeine? Answer in complete sentences and include units with each number.
+</p>
+<ol>
+<li><m>f(0)=96</m></li>
+<li><m>f(5)=48</m></li>
+<li><m>f(24)\approx 0</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            The amount of caffeine in a person's body <m>0</m> hours after drinking a cup of coffee is 96 mg.
+        </li>
+        <li>
+            The amount of caffeine in a person's body <m>5</m> hours after drinking a cup of coffee is 48 mg.
+        </li>
+        <li>
+            <p>The amount of caffeine in a person's body <m>24</m> hours after drinking a cup of coffee is approximately 0 mg.</p>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+The total number of units, <m>P</m>, produced after <m>t</m> hours of production is given by the function <m>P=h(t)</m>. What do each of the following statements tell you in practical terms; that is, in terms of units of product produced and time? Answer in complete sentences and include units with each number.
+</p>
+<ol>
+<li><m>h(1)=10</m></li>
+<li><m>0=h(0)</m></li>
+<li><m>h(3) \approx 29 </m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            A total of 10 units of the product are produced in 1 hour.
+        </li>
+        <li>
+            A total of 0 units of the product are produced in 0 hours.
+        </li>
+        <li>
+            A total of approximately 29 units of the product are produced in 3 hours.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+The total cost of a meal in a restaurant, <m>C</m>, in dollars, as a function of the menu price of the meal, <m>p</m>, also in dollars, is given by
+<md>
+C=p+0.20p
+</md>
+where the term <m>0.20p</m> corresponds to a <m>20\%</m> tip.
+</p>
+<ol>
+<li>What is the input variable and what units is it measured in?</li>
+<li>What is the output variable and what units is it measured in?</li>
+<li>Calculate the total cost of a meal whose menu price is <m>\$25</m>.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>p</m>; dollars
+        </li>
+        <li>
+            <m>C</m>; dollars
+        </li>
+        <li>
+            <m>\$30</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+A bakery makes 6 batches of cookies an hour, with a batch typically consisting of 12 cookies. The total number of batches baked, <m>B</m>, is measured as function of time <m>t</m>, in hours, so that <m>B=f(t)=6t</m>.
+</p>
+<ol>
+<li>What is the independent variable?</li>
+<li>What is the dependent variable?</li>
+<li>Evaluate <m>f(3)</m>. What is the practical meaning of <m>f(3)</m> in the applied context of this problem?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            The independent variable is <m>t</m>, which represents the time spent baking in hours.
+        </li>
+        <li>
+            <p>The dependent variable is <m>B</m>, which represents the number of batches of cookies made by the bakery after <m>t</m> hours have passed.</p>
+        </li>
+        <li>
+            <m>f(3)=18</m>; The bakery makes 18 batches of cookies (or approximately 216 cookies) in 3 hours.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+A driver is heading to a faraway town. The amount of fuel, <m>G</m>, in gallons, left in the fuel tank is a function of the number of miles <m>m</m> driven during the trip; that is, <m>G=f(m)</m>.
+</p>
+<ol>
+<li>What does the statement <m>f(70)=6</m> tell you in practical terms? What are units of the numbers 70 and 6?</li>
+<li>What does the statement  <m>f(200)=1</m> tell you in practical terms?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            The amount of fuel left in the fuel tank 70 miles into the drive is 6 gallons.
+        </li>
+        <li>
+            The amount of fuel left in the fuel tank 200 miles into the drive is 1 gallon.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+<!-- <exercise>
+<statement>
+<p>
+Let <m>f(x)=2x+1</m>. Evaluate:
+</p>
+<ol>
+<li><m>f(3)</m></li>
+<li><m>f(-4.5)</m></li>
+<li><m>f(0)</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>7</m>
+        </li>
+        <li>
+            <m>-8</m>
+        </li>
+        <li>
+            <m>1</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise> -->
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>f(x)=4-3x</m>. Evaluate and simplify if possible:
+</p>
+<ol>
+<li><m>f(3b)</m></li>
+<li><m>f(b+1)</m></li>
+<li><m>f(b+3)-f(3)</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>-9b+4</m>
+        </li>
+        <li>
+            <m>-3b+1</m>
+        </li>
+        <li>
+            <m>-3b</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>g(x)=3x-x^2</m>. Evaluate:
+</p>
+<ol>
+<li><m>g(2)</m></li>
+<li><m>g(-2)</m></li>
+<li><m>g(\sqrt{2})</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>2</m>
+        </li>
+        <li>
+            <m>-10</m>
+        </li>
+        <li>
+            <m>3\sqrt{2}-2</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>g(x)=x^2+3</m>. Evaluate and simplify if possible:
+</p>
+<ol>
+<li><m>g(h-1)</m></li>
+<li><m>g(h+1)</m></li>
+<li><m>g(b+1)-g(1)</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>h^2-2h+4</m>
+        </li>
+        <li>
+            <m>h^2+2h+4</m>
+        </li>
+        <li>
+            <m>b^2+2b</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>\displaystyle f(x)=\frac{1}{x+1}</m>. Evaluate. If the value is undefined, say so.
+</p>
+<ol>
+<li><m>f(0)</m></li>
+<li><m>f(-1)</m></li>
+<li><m>f(-2)</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>1</m>
+        </li>
+        <li>
+            undefined
+        </li>
+        <li>
+            <m>-1</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>\displaystyle f(x)=\frac{3}{x+2}</m>. Evaluate and simplify if possible.
+</p>
+<ol>
+<li><m>f(h-1)</m></li>
+<li><m>f(h+1)</m></li>
+<li><m>f(b)-4f(1)</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>\frac{3}{h+1}</m>
+        </li>
+        <li>
+            <m>\frac{3}{h+3}</m>
+        </li>
+        <li>
+            <m>\frac{3}{b+2}-4</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>f(t)=t^2+\frac{1}{t}</m>. Evaluate and simplify if possible.
+</p>
+<ol>
+<li><m>f(2)</m></li>
+<li><m>f(h+1)</m></li>
+<li><m>f(h+1) - f(2)</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>\frac{9}{2}</m>
+        </li>
+        <li>
+            <m>h^2+2h+1+\frac{1}{h+1}</m>
+        </li>
+        <li>
+            <m>h^2+2h+\frac{1}{h+1}-\frac{7}{2}</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>g(x)=2x^2+\frac{3}{2}x</m> and <m>f(x)=x+3</m>. Evaluate and simplify if possible.
+</p>
+<ol>
+<li><m>f(2)+g(1)</m></li>
+<li><m>g(1)+2f(x+1)</m></li>
+<li><m>f(2x)-g(4+x)</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>\frac{17}{2}</m>
+        </li>
+        <li>
+            <m>2x+\frac{23}{2}</m>
+        </li>
+        <li>
+            <m>-2x^2-\frac{31}{2}x-35</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+A URI student tutors for MTH 103. The cost of each session in terms of hours, <m>t</m>, is given by the function <m>c(t)=10t+15</m>.
+</p>
+<ol>
+<li>What is the cost of a 3 hour session?</li>
+<li>If <m>c(t)=\$60</m>, how many hours was the session?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>\$45</m>
+        </li>
+        <li>
+            <m>4.5</m> hours
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+The value of a car, <m>V</m>, in dollars, <m>t</m> years after purchase is given by the function <m>V=g(t)</m>, where <m>g(t)=16500-1500t</m>.
+</p>
+<ol>
+<li>What is the value of the car at the time of purchase?</li>
+<li>What is the value of the car <m>5</m> years after purchase?</li>
+<li>After how many years is the car worth nothing?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>\$16500</m>
+        </li>
+        <li>
+            <m>\$9000</m>
+        </li>
+        <li>
+            <m>11</m> years
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<!-- \footnote{https://www.weather.gov/safety/lightning-science-thunder, accessed: 6/26/20}. -->
+<p>
+Since you see lightning immediately and it takes the sound of thunder about 5 seconds to travel a mile, you can calculate the distance between you and the lightning. Count the number of seconds, <m>S</m>, between the flash of lightning and the sound of thunder. Then the distance, <m>D</m>, in miles, between you and the lightning is given by the function:
+<md>
+D=\frac{S}{5}
+</md>
+</p>
+<ol>
+<li>Identify the independent and the dependent variable.</li>
+<li>How far is the lightning if you counted 4 seconds between the flash and the thunder?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>S</m> is the independent variable; <m>D</m> is the dependent variable
+        </li>
+        <li>
+            <m>\frac{4}{5}</m> of a mile
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+The cost of a medium pizza is <m>\$10</m> plus <m>\$1.75</m> per topping. Write a function <m>f(x)</m> to describe the cost of a medium pizza with <m>x</m> number of toppings.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=1.75x+10</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find a formula for a function <m>h(x)</m> for each of the following scenarios:
+</p>
+<ol>
+<li><m>h</m> multiplies the input by 7 then adds <m>5</m> to the result.</li>
+<li><m>h</m> adds <m>5</m> to the input and then multiplies the result by 7.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>7x+5</m>
+        </li>
+        <li>
+            <m>7(x+5)</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find a formula for a function <m>f(x)</m> for each of the following scenarios:
+</p>
+<ol>
+<li><m>f</m> takes the square of the input, multiplies the result by 5, then subtracts 8.</li>
+<li><m>f</m> multiplies the input by 5, takes the square of the result, then subtracts 8.</li>
+<li><m>f</m> subtracts 8 from the input, takes the square of the result, then multiplies by 5.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>5x^2-8</m>
+        </li>
+        <li>
+            <m>(5x)^2-8 = 25x^2-8</m>
+        </li>
+        <li>
+            <m>5(x-8)^2</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find a formula for a function <m>g(x)</m> for each of the following scenarios:
+</p>
+<ol>
+<li><m>g</m> takes the input, divides it by 3, then adds this to the square root of the input times 4.</li>
+<li><m>g</m> takes the reciprocal of the square root of the input, adds <m>1</m> to this, and then adds the input squared.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>\frac{x}{3} + \sqrt{x}\cdot 4</m>
+        </li>
+        <li>
+            <m>\frac{1}{\sqrt{x}}+1+x^2</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find the domain of each of the following functions.
+</p>
+<ol>
+<li><m>\displaystyle f(x)=x-1</m></li>
+<li><m>\displaystyle f(x)=\frac{1}{x-1}</m></li>
+<li><m>\displaystyle f(x)=\frac{2}{x^2-4}</m></li>
+<li><m>\displaystyle f(x)=\sqrt{x}</m></li>
+<li><m>\displaystyle f(x)=x^2-4</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            all real numbers or <m>(-\infty,\infty)</m> in interval notation
+        </li>
+        <li>
+            all real numbers <m>x\neq1</m> or <m>(-\infty,1)\cup(1,\infty)</m> in interval notation
+        </li>
+        <li>
+            all real numbers <m>x\neq-2</m>, <m>x\neq2</m> or <m>(-\infty,-2)\cup(-2,2)\cup(2,\infty)</m> in interval notation
+        </li>
+        <li>
+            all real numbers <m>x\geq0</m> or <m>[0,\infty)</m> in interval notation
+        </li>
+        <li>
+            all real numbers or <m>(-\infty,\infty)</m> in interval notation
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find the domain of each of the following functions.
+</p>
+<ol>
+<li><m>f(x)=x^n</m>, where <m>n</m> is a positive integer</li>
+<li><m>f(x)=x^2+x+\frac{2}{x}</m></li>
+<li><m>f(x)=\frac{1}{\sqrt{x}}</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            all real numbers or <m>(-\infty,\infty)</m> in interval notation
+        </li>
+        <li>
+            all real numbers <m>x\neq0</m> or <m>(-\infty,0)\cup(0,\infty)</m> in interval notation
+        </li>
+        <li>
+            all real numbers <m>x\gt 0</m> or <m>(0,\infty)</m> in interval notation
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</exercises>

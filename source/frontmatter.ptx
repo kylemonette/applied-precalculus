@@ -7,9 +7,9 @@
   <bibinfo>
   
     <author>
-      <personname>You</personname>
-      <department>Your department</department>
-      <institution>Your institution</institution>
+      <personname>PersonNameChangeMe</personname>
+      <department>Department of Mathematics and Applied Mathematical Sciences</department>
+      <institution>University of Rhode Island</institution>
     </author>
     <date>
       <today />
@@ -20,9 +20,11 @@
     </website>
 
     <copyright>
-      <year>2020<ndash />2024</year>
-      <holder>You</holder>
-      <shortlicense> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+      <year>2020<ndash />2026</year>
+      <holder>Barbara Kaskosz and Erin Denette</holder>
+      <shortlicense>
+        This book is distributed under CC BY-NC-ND 4.0: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License:
+        <url href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">creativecommons.org/licenses/by-nc-nd/4.0/legalcode</url>.
       </shortlicense>
     </copyright>
   
@@ -35,5 +37,49 @@
   <colophon xml:id="front-colophon">
     <colophon-items/>
   </colophon>
+
+  <acknowledgement>
+    <p>
+      The authors would like to thank the many instructors of MTH 103 at the University of Rhode Island, including full-time faculty, part-time faculty, and graduate teaching assistants, whose feedback has contributed to the improvement of both <em>Applied Precalculus</em> the course and <em>Applied Precalculus</em> the textbook over the years. Very special acknowledgment and boundless gratitude is owed to Kyle Monette, who worked closely with us on reformatting and editing as we prepared the second edition of <em>Applied Precalculus.</em> We also thank Faith Bailey for her contribution of additional exercises to our book.
+    </p>
+  </acknowledgement>
+
+  <preface xml:id="preface">
+    <p>As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.
+    </p>
+
+    <p>
+To illustrate our approach, take for example the family of linear functions. When talking about linear functions, our emphasis is on the practical meaning and the units of the slope as well as on the units and the practical meaning of the horizontal and vertical intercepts. Such practical understanding is built through many applied examples and their careful analysis. We show how to use linear functions to model real-life processes which are described through tabulated data. At the same time, we try to ensure that students build the algebraic proficiency necessary to successfully work with linear functions. 
+    </p>
+
+    <p>
+We present all the main precalculus topics while stressing their practical meaning and their real-life applications. Those topics include:
+<ul>
+<li>Functions, their graphs, and their numerical representation;</li>
+<li>Linear functions and their applications;</li>
+<li>Quadratic functions and quadratic equations;</li>
+<li>Algebra of exponential expressions, power functions, and their applications;</li>
+<li>Exponential and logarithmic functions, their algebraic properties and their rich variety of applications in the life sciences;</li>
+<li>Trigonometric functions and their applications to modeling periodic phenomena.</li>
+</ul>
+</p>
+
+<p>
+Our intended audience is primarily students in the life sciences and pharmacy. These students can be divided generally into two groups. The first group consists of students for whom this course is a terminal mathematics course, who wish to learn tools of before-calculus mathematics and to develop solid skills of applying those tools to real-life problems. The second group consists of students who plan to continue their study of mathematics in an applied calculus course.
+</p>
+</preface>
+
+<preface>
+    <title>About the Authors</title>
+
+    <p>
+      <em>Erin Denette</em> serves as a Teaching Professor for the University of Rhode Island Department of Mathematics and Applied Mathematical Sciences. She received her Ph.D. and M.S. in Mathematics from the University of Rhode Island. She earned her B.S. in Mathematics from Fitchburg State University.
+    </p>
+
+    <p>
+      <em>Barbara Kaskosz</em> serves as a Professor for the University of Rhode Island Department of Mathematics and Applied Mathematical Sciences. She received her Ph.D. in Mathematics from the Institute of Mathematics of the Polish Academy of Sciences and her M.S. in Mathematics from the University of Warsaw.
+    </p>
+  </preface>
+  
 </frontmatter>
 

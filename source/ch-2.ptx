@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter_2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Linear Functions</title>
+
+  <introduction>
+    <p>
+		The daily dose of medication to administer to a child of weight <m>w</m> initially presented in <xref ref="example-ch1-amox" /> and the amount of water remaining in a tank <m>t</m> minutes after it began to leak presented in <xref ref="example-ch1-leak" /> are two illustrations of <em>linear functions</em>, which will be covered in depth in this chapter.
+	</p>
+
+	<p>
+		Linear functions are generally considered the simplest type of function in mathematics. This is largely due to the simplicity of the equations used to describe them when presented algebraically and the simplicity of their graphs. It is also the case that when a linear function appears in the context of a real-life process, the meaning of all elements of the function is clear.
+	</p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec_2_1.ptx" />
+  <xi:include href="sec_2_2.ptx" />
+  <xi:include href="sec_2_3.ptx" />
+
+</chapter>

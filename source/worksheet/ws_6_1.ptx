@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws_6_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Practice Worksheet</title>
+
+<exercise>
+<introduction>
+<p>
+Evaluate without using a calculator, or say that the expression is undefined.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+<m>\ln (e^9)</m>
+</p>
+</statement>
+<solution>
+<p>
+If <m>\ln (e^9)=x</m> then <m>e^x = e^9</m>, so <m>x</m> must be <m>9</m>. Hence <m>\ln (e^9)=9</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>\log_4 (\sqrt{4^3})</m>
+</p>
+</statement>
+<solution>
+<p>
+If <m>\log_4(\sqrt{4^3} )=x</m> then <m>4^x = \sqrt{4^3} </m>. Note that <m>\sqrt{4^3} = (4^3)^{1 /2} = 4^{3 /2}</m>. Therefore <m>4^x = 4^{3 /2}</m> and thus <m>x=\frac{3}{2}</m> is the value of the logarithm.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>\log (0.0001)</m>
+</p>
+</statement>
+<solution>
+<p>
+<em>Recall: <m>\log </m> with no subscript means base <m>10</m></em>
+
+Because <m>0.0001 = 10^{-4}</m>, then this is <m>\log (10^{-4})</m>. If <m>\log (10^{-4})=x</m>, then <m>10^x = 10^{-4}</m>. Therefore <m>x=-4</m> and so <m>\log (0.0001)=-4</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>\log_2(-8)</m>
+</p>
+</statement>
+<solution>
+<p>
+This is not defined. Recall that <m>\log _b(x)</m> is only defined for <m>x \gt 0</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>\log_7 \pbr{\dfrac{1}{343}}</m>
+</p>
+</statement>
+<solution>
+<p>
+Note that <m>343 = 7^3</m> so that <m>\frac{1}{343}=7^{-3}</m>. Therefore <m>\log_7(7^{-3})=x</m> means that <m>7^x = 7^{-3}</m> and so <m>x=-3</m>, implying that the logarithm value is <m>-3</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>\log_4(16)</m>
+</p>
+</statement>
+<solution>
+<p>
+Because <m>16=4^2</m>, then we have <m>\log _4(4^2)</m>. If <m>\log _4(4^2)=x</m>, then <m>4^x=4^2</m> and so <m>x=2</m>. Therefore <m>\log _4(16)=2</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>\ln \pbr{\dfrac{e^2}{\sqrt[3]{e}}}</m>
+</p>
+</statement>
+<solution>
+<p>
+We can simplify the fraction here to be
+<md>
+\frac{e^2}{\sqrt[3]{e} } \quad = \quad \frac{e^2}{e^{1 /3}}  \quad = \quad e^{2-1/3} \quad = \quad e^{5/3} .
+</md> Now, we are computing <m>\ln (e^{5 /3})</m>. If <m>\ln (e^{5 /3})=x</m>, then <m>e^x = e^{5 /3}</m> so <m>x=\frac{5}{3}</m> is the logarithm value.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>\log_9 \pbr{\dfrac{1}{6561}}</m>
+</p>
+</statement>
+<solution>
+<p>
+Note that <m>6561 = 9^4</m> and so <m>\frac{1}{6561} = 9^{-4}</m>. Therefore we have <m>\log _9(9^{-4})</m> and this is just <m>-4</m>.
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+Use the definition of the logarithm to solve each equation.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+<m>2^x=63</m>
+</p>
+</statement>
+<solution>
+<p>
+With the definition of the logarithm, then <m>\log _2(63)=x</m> is the exact solution. As a decimal, this is <m>x=5.97728</m> (do this on your calculator).
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>6(10)^x-4=5</m>
+</p>
+</statement>
+<solution>
+<p>
+Adding <m>4</m> to both sides, then <m>6 \cdot 10^x = 9</m>. Dividing by <m>6</m> yields <m>10^x = \frac{9}{6}=\frac{3}{2}</m>. Now, by the definition of the logarithm this means that <m>\log(3 /2) = x</m>. Recall that <m>\log </m> with no subscript is base <m>10</m>. As a decimal, <m>x=0.17609</m>.
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+</worksheet>

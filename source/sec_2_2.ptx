@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_2_2">
+
+    
+<title>Working with Linear Functions and Linear Equations</title>
+
+
+<objectives>
+    <introduction>
+        <p>
+            After completing this section, you should be able to do the following.
+        </p>
+    </introduction>
+    <ol>
+        <li>
+            <p>
+            First objective.
+            </p>
+        </li>
+
+        <li>
+            <p>
+        Second objective.
+            </p>
+        </li> 
+        <li>
+            <p>
+            Third objective.
+            </p>
+        </li>
+    </ol>
+</objectives>
+
+
+<introduction>
+<p>
+In the last section, we introduced the slope-intercept form <m>y=mx+b</m> of a linear function, which is often used when given the slope <m>m</m> and vertical intercept <m>b</m>. When given two points on the linear function, the <em>point-slope form</em> is frequently used instead.
+</p>
+
+<theorem>
+<title>Point-Slope Form</title>
+<statement>
+<p><ul>
+<li>
+<p>
+    The point-slope form of the equation of a line with slope <m>m</m> passing through <m>(x_0,y_0)</m> is: <md>y-y_0=m(x-x_0).</md>
+</p>
+</li>
+<li>
+<p>
+    A linear function <m>y=f(x)</m> with slope <m>m</m> for which <m>f(x_0)=y_0</m> can be written in the point-slope form as: <md>f(x)=y_0+m(x-x_0).</md>
+</p>
+</li>
+</ul>
+</p>
+<p>
+Note that <m>f(x_0)=y_0</m> means that the point <m>(x_0,y_0)</m> is on the graph of the function <m>y=f(x)</m>.
+</p>
+</statement>
+</theorem>
+
+
+<p>
+The point-slope form is very useful for finding formulas for linear functions and equations of lines.
+</p>
+
+
+<example>
+<statement>
+<p>
+Find an equation in point-slope form for the line passing through each set of points. Then rewrite each equation in the slope-intercept form.
+</p>
+
+<p><ol>
+<li>
+<p>
+    <m>(2,-1)</m> and <m>(4,5)</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>(-1,-2)</m> and <m>(1,3)</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>(0,0)</m> and <m>(1,1.5)</m>
+</p>
+</li>
+</ol></p>
+</statement>
+
+
+<solution>
+<p>
+In each part, we follow the same steps. We first use the two given points to find the slope. Once we have obtained the value of the slope, we then designate one of the two points as <m>(x_0,y_0)</m> and write an equation in the point-slope form. Finally, we rewrite the equation in the slope-intercept form.
+</p>
+
+<p><ol>
+<li>
+<p>
+    Using the slope formula, we find that
+</p>
+
+<p>
+    <md>m=\frac{5-(-1)}{4-2}=\frac{6}{2}=3.</md> We will next let <m>(x_0,y_0)=(2,-1)</m> and use point-slope form. An equation of the line is thus
+</p>
+
+<p>
+    <md>y-(-1)=3(x-2)\text{ or } y+1=3(x-2).</md> To convert to slope-intercept form, we begin by expanding the right-hand side, which results in <md>y+1=3x-6.</md> By subtracting <m>1</m> from both sides, we obtain the slope-intercept form <md>y=3x-7.</md>
+</p>
+</li>
+
+<li>
+<p>
+    The slope is <md>m=\frac{3-(-2)}{1-(-1)}=\frac{5}{2}.</md> If we take <m>(x_0,y_0)=(1,3)</m>, an equation of the line in slope-intercept form is <md>y-3=\frac{5}{2}(x-1)</md> which simplifies to <md>y-3=\frac{5}{2}x-\frac{5}{2}.</md> Adding 3 to both sides (which can be rewritten as <m>\dfrac{6}{2}</m> to obtain a common denominator) to results in the slope-intercept form <md>y=\frac{5}{2}x+\frac{1}{2}.</md>
+</p>
+</li>
+
+<li>
+<p>
+    The slope is <md>m=\dfrac{1.5-0}{1-0}=\frac{1.5}{1}=1.5.</md> If we take <m>(x_0,y_0)=(0,0)</m>, the resulting point-slope form of the line is <md>y-0=1.5(x-0)</md>
+    which simplifies to the slope-intercept form <md>y=1.5x.</md>
+</p>
+<aside>
+<p>
+Note that <m>y=1.5x</m> is in the form <m>y=mx+b</m> with <m>b=0</m>. This makes sense, as the line passes through the origin <m>(0,0)</m>, meaning that the <m>y</m>-intercept of the line is <m>0</m>.
+</p>
+</aside>
+</li>
+
+</ol></p>
+
+</solution>
+</example>
+
+
+<example>
+<statement>
+<p>
+Let <m>y=f(x)</m> be a linear function such that <m>f(1)=-2</m> and <m>f(3)=-5</m>. Find a formula for the function in the slope-intercept form.
+</p>
+</statement>
+
+<solution>
+<p>
+We are given the values of <m>f</m> at two inputs, which tells us that the two points <m>(1,-2)</m> and <m>(3,-5)</m> are on the graph of the function.
+Using these to calculate the slope we find that <md>m=\frac{-5-(-2)}{3-1}=-\frac{3}{2}.</md>
+Recall that the point-slope form for a linear function <m>f(x)</m> can alternatively be written as <md>f(x)=y_0+m(x-x_0).</md>
+If we take <m>(x_0,y_0)=(1,-2)</m> we find that <md>f(x)=-2-\frac{3}{2}(x-1).</md>
+The formula simplifies to the slope-intercept form <md>f(x)=-\frac{3}{2}x-\frac{1}{2}.</md>
+</p>
+</solution>
+</example>
+
+
+
+</introduction>
+
+
+<subsection>
+<title>Linear Functions and Linear Equations</title>
+
+<p>
+When working with linear functions, we frequently find ourselves needing to set the formula for the linear function equal to a specific quantity and then to solve the resulting equation. For instance, when tasked with finding the horizontal intercept of the linear function <m>f(x)=-5x+1</m>, we would set <m>f(x)=0</m> and solve for <m>x</m>. The resulting equation <m>-5x+1=0</m> is an illustration of a <alert>linear equation in one variable.</alert>
+</p>
+
+
+<definition>
+<title>Linear Equation in One Variable</title>
+<statement>
+<p>
+An equation that can be written in the form <md>Ax+B=C</md> where <m>A</m>, <m>B</m>, and <m>C</m> are real numbers with <m>A\neq0</m> and <m>x</m> is the variable is called a <alert>linear equation in one variable</alert>.
+</p>
+</statement>
+</definition>
+
+<p>
+We will explore how such linear equations arise in applications of linear functions and review how to solve them in the examples below.
+</p>
+
+
+
+<example xml:id="example-ch2-reno-drive">
+<statement>
+<p>
+Mr. Bell is driving through Nevada to Reno at a constant speed of <m>40</m> mph. Let <m>D(t)</m> be his distance from Reno, in miles, <m>t</m> hours after he began driving and suppose that Mr. Bell checks his GPS at <m>t=2</m> to find that his distance from Reno is <m>150</m> miles.
+</p>
+
+<p><ol>
+<li>
+    <p>
+        Find a formula for the function <m>D(t)</m>.
+    </p>
+</li>
+
+<li>
+    <p>
+        How far from Reno was Mr. Bell when he began driving?
+    </p>
+</li>
+
+<li>
+    <p>
+        How long from the moment he began driving will it take him to reach Reno?
+    </p>
+</li>
+</ol>
+</p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+    At first, it may seem that we don't have enough information to find a formula for <m>D(t)</m> as we only know the value of the function at a single point: <m>D(2)</m>=150. However, we also know that Mr. Bell is driving at the constant speed of 40 mph. In the applied context of this example, this tells us that his distance from Reno is decreasing at the constant rate of 40 mph. A decreasing function has a negative rate of change, so we could say that <m>D(t)</m> is changing at the constant rate of <m>-40</m> mph. Furthermore, since the rate of change of <m>D(t)</m> is constant, the function <m>D(t)</m> is linear and its slope is the constant rate of change; that is, <m>m=-40</m>. With both the slope <m>m=-40</m> and the point <m>(2,150)</m>, we can write the point-slope form for <m>D(t)</m>: <md>D(t)=150-40(t-2).</md> This can be simplified to slope-intercept form:
+</p>
+
+<p>
+<md>
+<mrow>D(t) \amp \;=\; 150-40(t-2)</mrow>
+<mrow>\amp \;=\; 150-40t+80 </mrow>
+<mrow>\amp \;=\; -40t+230</mrow>
+</md>
+or, equivalently, be written as <md>D(t)=230-40t.</md>
+</p>
+</li>
+
+<li>
+<p>
+    Mr. Bell began driving at <m>t=0</m> when, according to the formula, his distance from Reno was <m>D(0)=230</m> miles.
+</p>
+</li>
+
+<li>
+<p>
+    Mr. Bell will reach Reno when his distance from Reno is 0 miles; that is, at the value of <m>t</m> such that <md>D(t)=230-40t=0.</md> To find such <m>t</m> we must solve the equation <md>230-40t=0
+.</md>
+To solve our equation, we apply the standard methods of algebra, which in that case will involve subtracting <m>230</m> from both sides of the equation and then dividing both sides by <m>-40</m>.
+</p>
+<p>
+<md>
+<mrow>230 \textcolor{blue}{-230}-40t \amp \;=\; 0 \textcolor{blue}{-230}</mrow>
+<mrow>-40t \amp \;=\; -230 </mrow>
+<mrow>\frac{-40t}{\textcolor{red}{-40}} \amp \;=\; \frac{-230}{\textcolor{red}{-40}} </mrow>
+<mrow>t \amp \;=\; \frac{23}{4} </mrow>
+<mrow>t \amp \;=\; 5.75 </mrow>
+</md>
+</p>
+
+<p>
+    It takes Mr. Bell <m>5.75</m> hours total to reach Reno. Alternatively, we could translate <m>5.75</m> hours into <m>5</m> hours and <m>45</m> minutes.
+</p>
+</li>
+
+</ol></p>
+</solution>
+
+</example>
+
+
+<p>
+Observe that to answer parts (b) and (c) of <xref ref="example-ch2-reno-drive" />, we had to find the <alert>intercepts</alert> of the function <m>D(t)</m>. In applied problems, intercepts have an important practical meaning. Here is a graph of the function <m>D(t)=230-40t</m> that serves as a visual illustration of the meaning of the intercepts that we found:
+</p>
+
+
+<image width="50%" xml:id="fig_2_2_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="2_2_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=6.1,
+ymin=0,ymax=255,
+xtick={1,...,6},
+xticklabels={1,...,6},
+ytick={50,100,...,250},
+yticklabels={50,100,...,250},
+minor tick={},
+xlabel=\(t\text{ (hours)}\), ylabel=\(D\text{ (miles)}\),
+]
+\addplot[domain=0:10] {-40*x+230};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+
+<example>
+<statement>
+<p>
+During the first ten days after hatching, a chick gains weight at the rate of <m>18.9</m> grams/day. Let <m>w(d)</m> be the weight of the chick <m>d</m> days after hatching and suppose that three days after hatching the chick weighs <m>100.6</m> grams.
+</p>
+
+<p><ol>
+<li>
+<p>
+    Find a formula for the function <m>w(d)</m>.
+</p>
+</li>
+
+<li>
+<p>
+    What was the weight of the chick when it hatched?
+</p>
+</li>
+
+<li>
+<p>
+    How many days after it hatched will the chick weigh <m>120</m> grams?
+</p>
+</li>
+</ol></p>
+
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+    The function <m>w(d)</m> changes at a constant rate so it is linear. As the slope <m>m</m> is equal to the constant rate of change, <m>m=18.9</m>. We are also given the value of the function at <m>d=3</m>: <m>w(3)=100.6</m>. Hence, the point <m>(d_0,w_0)=(3,100.6)</m> is on the graph of the function <m>w(d)</m>. Using the point-slope form of a linear function we find: <md>w(d)=100.6+18.9(d-3).</md> In slope-intercept form, <md>w(d)=18.9d+43.9</md>
+</p>
+</li>
+
+<li>
+<p>
+    The chick hatched when <m>d=0</m>. Therefore, the weight of the chick when it hatched was <md>w(0)=18.9\cdot 0+43.9=43.9\approx 44 \; \text{grams}.</md>
+</p>
+</li>
+
+<li>
+<p>
+    The weight of the chick will reach <m>120</m> grams for the value of <m>d</m> that satisfies the equation <m>w(d)=120</m>. That is, for <m>d</m> satisfying the equation <md>43.9+18.9d=120.</md> To solve for <m>d</m>, subtract <m>43.9</m> from both sides and then divide both sides by <m>18.9</m>
+</p>
+<p>
+<md>
+<mrow>18.9d+43.9\textcolor{blue}{-43.9} \amp \;=\; 120 \textcolor{blue}{-43.9} </mrow>
+<mrow>18.9d \amp \;=\; 76.1</mrow>
+<mrow>\dfrac{{18.9}d}{\textcolor{red}{18.9}} \amp \;=\; \dfrac{76.1}{\textcolor{red}{18.9}}</mrow>
+<mrow>d \amp \;\approx\; 4.026 </mrow>
+</md>
+</p>
+
+<p>
+    It will take approximately <m>4</m> days for the chick to reach the weight of <m>120</m> grams.
+</p>
+</li>
+</ol>
+</p>
+</solution>
+</example>
+
+
+
+<example>
+<statement>
+<p>
+Twin towns are municipalities in different countries that are paired to encourage human contact and cultural links. The populations of two twin towns<mdash/>one in the Netherlands and one in France<mdash/>are <m>N(t)</m> and <m>F(t)</m>, respectively, where <m>t</m> is the number of years since a twin partnership was established.
+</p>
+
+<p>
+Both populations grow linearly according to the formulas:
+<md>N(t)=400t+8200 \qquad \text{and}\qquad F(t)=600t+6500.</md>
+</p>
+
+<p><ol>
+<li>
+<p>
+    Which town had a larger population when a twin partnership was initially established?
+</p>
+</li>
+
+<li>
+<p>
+    Which town has a faster growing population? At what rate does it grow?
+</p>
+</li>
+
+<li>
+<p>
+    Will the two populations ever be equal? If yes, when?
+</p>
+</li>
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+    The initial population of the Dutch town is <m>N(0)=8200</m> people, of the French town <m>F(0)=6500</m>. Initially, the population of the Dutch town was larger.
+</p>
+</li>
+
+<li>
+<p>
+    It is the slope of each function that gives its rate of increase. The population of the Dutch town grows at the rate of <m>400</m> people/year while the population of the French town grows faster at the rate of <m>600</m> people/year.
+</p>
+</li>
+
+<li>
+<p>
+    The population of the French town is initially lower than the population of the Dutch town. However, as the populations of both towns grow, the population of the French town grows faster and therefore will at some point surpass the population of the Dutch town. This can be seen clearly when we graph both functions.
+</p>
+
+<image width="60%" xml:id="fig_2_2_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="2_2_2_fig">
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+scaled ticks=false,
+legend pos=south west,
+xmin=0,xmax=12.1,
+ymin=0,ymax=15,
+xtick={1,...,12},
+xticklabels={1,...,12},
+ytick={2,4,...,14},
+yticklabels={2000,4000,...,14000},
+minor tick={},
+xlabel=\(t\text{ (years)}\), ylabel=Population,
+]
+\addplot[domain=0:12] {0.400*x+8.2};
+\addlegendentry{$N(t)$};
+\addplot[domain=0:12,red] {0.600*x+6.5};
+\addlegendentry{$F(t)$};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<p>
+    The population of the French town overtakes the population of the Dutch town where the graphs of <m>F(t)</m> and <m>N(t)</m> cross. This appears to occur between years 8 and 9. As we have the formulas for both <m>F(t)</m> and <m>N(t)</m>, we can be more precise than this.
+</p>
+
+<p>
+    The populations of the two towns are equal when <m>F(t)=N(t)</m>. That is, for the value of <m>t</m> satisfying the equation <md>400t+8200=600t+6500.</md> This is a linear equation in the variable <m>t</m>. To solve it, we begin by moving all constant terms to one side of the equation and all the terms containing <m>t</m> to the other.
+</p>
+<p>
+<md>
+<mrow>400t+8200 \textcolor{blue}{-6500} \amp \;=\; 600t+6500 \textcolor{blue}{-6500} </mrow>
+<mrow>1700 + 400t \amp \; = \; 600t </mrow>
+<mrow>400t + 1700 \textcolor{red}{-400t} \amp \; = \; 600t \textcolor{red}{-400t} </mrow>
+<mrow>1700 \amp\; = \; 200t</mrow>
+</md>
+</p>
+
+<p>
+    Dividing both sides by <m>200</m>, we find that <m>t=8.5</m> years after establishing a twin partnership, the populations of both towns are equal.
+</p>
+</li>
+</ol>
+</p>
+</solution>
+</example>
+
+
+
+
+<example>
+<statement>
+<p>
+The value <m>V(t)</m> of a car, in dollars, <m>t</m> years after the car was purchased is given by <md>V(t)=15000-1250t.</md>
+</p>
+
+<p><ol>
+<li>
+<p>
+    Find the vertical intercept and the horizontal intercept of the function <m>V(t)</m> and explain their meaning in practical terms.
+</p>
+</li>
+
+<li>
+<p>
+    Create a graph of the function <m>V(t)</m>. What restriction should be placed on the domain of <m>V(t)</m> in the applied context of this exercise?
+</p>
+</li>
+
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+    The vertical intercept is the value of the function at <m>t=0</m>: <md>V(0)=15000-1250\cdot 0=15000.</md> In practical terms, it is the purchase value of the car.
+</p>
+
+<p>
+    For the horizontal intercept, we must find the value of <m>t</m> for which <m>V(t)=0</m>. That is, we must solve the linear equation <m>15000-1250t=0</m>:
+</p>
+
+<p>
+<md>
+<mrow>15000 - 1250t \textcolor{blue}{+1250t} \amp \; = \; 0 \textcolor{blue}{+1250t} </mrow>
+<mrow>15000 \amp\; = \; 1250 t </mrow>
+<mrow>\dfrac{15000}{\textcolor{red}{1250}} \amp\; = \; \dfrac{1250 t}{ \textcolor{red}{1250}} </mrow>
+<mrow>\frac{15000}{1250} \amp \; = \; t </mrow>
+<mrow>12 \amp \; = \; t</mrow>
+</md>
+We find that the horizontal intercept is <m>t=12</m>. In practical terms, the horizontal intercept tells us that the car will have no value 12 years after it was purchased.
+</p>
+</li>
+
+<li>
+<p>
+    The graph of the function <m>V(t)=15000-1250t</m>, with intercepts clearly visible, is provided below.
+</p>
+
+
+<image width="60%" xml:id="fig_2_2_3">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="2_2_3_fig">
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+scaled ticks=false,
+xmin=-0.5,xmax=13,
+ymin=-1,ymax=16,
+xtick={1,...,12},
+xticklabels={1,...,12},
+ytick={5,10,15},
+yticklabels={5000,10000,15000},
+minor tick={},
+xlabel=\(t\text{ (years)}\), ylabel=\(V\text{ (dollars)}\),
+]
+\addplot[domain=0:12] {-1.25*x+15};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<p>
+    While the line <m>y=15000-1250t</m> extends forever in both directions and has a domain of all real numbers, the domain of the function <m>V(t)</m> should be limited to <m>0\leq t \leq 12</m> for practical reasons. This is because the formula begins to model the applied scenario when the car was purchased at time <m>t=0</m> and ceases to model the applied scenario after 12 years have passed (it does not make sense for the value of the car to be negative).
+</p>
+</li>
+
+</ol></p>
+</solution>
+</example>
+
+
+</subsection>
+
+
+
+<subsection>
+<title>Number of Solutions to a Linear Equation in One Variable</title>
+
+<p>
+You may have noticed that each individual linear equation that we set up and solved in the preceding examples resulted in a single solution. It is, however, possible for a linear equation in one variable to result in no solution or an infinite number of solutions. Although you will rarely encounter either of these scenarios when working with linear functions modeling real-life situations, it is important to be familiar with the possibility.
+</p>
+
+
+
+<example>
+<statement>
+<p>
+Solve each linear equation, if possible.
+</p>
+
+<p><ol>
+<li>
+    <p>
+        <m>5x-10=5(x-2)</m>
+    </p>
+</li>
+
+<li>
+    <p>
+        <m>6z-14=z+4</m>
+    </p>
+</li>
+
+<li>
+    <p>
+        <m>4-0.5t=-4-0.5t</m>
+    </p>
+</li>
+
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+    To solve, we begin by expanding the left-hand side:
+</p>
+<p>
+<md>
+<mrow>5x-10 \amp \;=\; 5(x-2) </mrow>
+<mrow>5x-10 \amp \;=\; 5x-10</mrow>
+</md>
+</p>
+<p>
+You may observe that both sides of the equation are identical. Because of this, the equation is true for all values of <m>x</m> and hence has an <alert>infinite number of solutions</alert>.
+</p>
+</li>
+
+<li>
+<p>
+    To solve, we move all terms involving <m>z</m> to one side of the equation and all constants to the other:
+</p>
+<p>
+<md>
+<mrow>6z-14 \amp \;=\; z+4</mrow>
+<mrow>6z-14+\textcolor{blue}{+14} \amp \;=\; z+4\textcolor{blue}{+14} </mrow>
+<mrow>6z \amp \;=\; z+18 </mrow>
+<mrow>6z\textcolor{red}{-z} \amp \;=\; z\textcolor{red}{-z}+18 </mrow>
+<mrow>5z \amp \;=\; 18.</mrow>
+</md>
+</p>
+
+<p>
+Dividing both sides by 5 results in the <alert>single solution</alert>
+<m>z=\frac{18}{5}=3.6</m>.
+</p>
+</li>
+
+<li>
+<p>
+    To solve, we move all terms involving <m>t</m> to one side of the equation:
+</p>
+<p>
+<md>
+<mrow>4-0.5t \amp \;=\; -4-0.5t </mrow>
+<mrow>4-0.5t\textcolor{blue}{+0.5t} \amp \;=\; -4-0.5t\textcolor{blue}{+0.5t} </mrow>
+<mrow>4 \amp \;=\; -4</mrow>
+</md>
+</p>
+<p>
+We end up with a statement that is never true; 4 is not the same value as <m>-4</m>. The equation has <alert>no solution</alert>.
+</p>
+</li>
+
+</ol></p>
+</solution>
+</example>
+</subsection>
+
+
+<xi:include href="exercises/ex_2_2.ptx"/>
+
+</section>

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_1_3">
+
+
+<exercise xml:id="exercise-1_3-table1">
+<statement>
+<p>
+Use the numerically given function <m>f(x)</m> below to find each of the following.
+</p>
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>5</m></cell>
+<cell><m>10</m></cell>
+<cell><m>15</m></cell>
+<cell><m>20</m></cell>
+<cell><m>25</m></cell>
+</row>
+<row>
+<cell><m>f(x)</m></cell>
+<cell><m>0</m></cell>
+<cell><m>2.23</m></cell>
+<cell><m>3.16</m></cell>
+<cell><m>3.87</m></cell>
+<cell><m>4.47</m></cell>
+<cell><m>5</m></cell>
+</row>
+</tabular>
+
+<p>
+<ol>
+<li><m>f(5)</m></li>
+<li><m>f(15)</m></li>
+<li><m>f(20)</m></li>
+</ol>
+</p>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>2.23</m>
+        </li>
+        <li>
+            <m>3.87</m>
+        </li>
+        <li>
+            <m>4.47</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>f(x)</m> be the function given in <xref ref="exercise-1_3-table1"/>.
+</p>
+
+<p>
+<ol>
+<li>Find all values of <m>x</m> for which <m>f(x) = 0</m></li>
+<li>Find all values of <m>x</m> for which <m>f(x) = 2.23</m></li>
+</ol>
+</p>
+
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>x=0</m>
+        </li>
+        <li>
+            <m>x=5</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+<exercise xml:id="exercise-1_3-table2">
+<statement>
+<p>
+Use the numerically given function <m>g(t)</m> below to find each of the following.
+</p>
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>2</m></cell>
+<cell><m>4</m></cell>
+<cell><m>6</m></cell>
+<cell><m>8</m></cell>
+<cell><m>10</m></cell>
+</row>
+<row>
+<cell><m>g(t)</m></cell>
+<cell><m>1.5</m></cell>
+<cell><m>3.7</m></cell>
+<cell><m>1.5</m></cell>
+<cell><m>4.2</m></cell>
+<cell><m>1.5</m></cell>
+<cell><m>0</m></cell>
+</row>
+</tabular>
+
+<p>
+<ol>
+<li><m>g(4)</m></li>
+<li><m>g(2)</m></li>
+<li><m>g(8)</m></li>
+</ol>
+</p>
+
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>g(4)=1.5</m>
+        </li>
+        <li>
+            <m>g(2)=3.7</m>
+        </li>
+        <li>
+            <m>g(8)=1.5</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>g(t)</m> be the function given in <xref ref="exercise-1_3-table2"/>.
+</p>
+<ol>
+<li>Find all values of <m>t</m> for which <m>g(t)=1.5</m>.</li>
+<li>Find all values of <m>t</m> for which <m>g(t)=3.7</m>.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>t=0</m>, <m>t=4</m>, and <m>t=8</m>
+        </li>
+        <li>
+            <m>t=2</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Determine a formula for the function <m>h(x)</m> given numerically in the table below.
+</p>
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+</row>
+<row>
+<cell><m>h(x)</m></cell>
+<cell><m>-8</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>8</m></cell>
+<cell><m>27</m></cell>
+<cell><m>64</m></cell>
+</row>
+</tabular>
+
+
+</statement>
+
+<solution>
+<p>
+<m>h(x)=x^3</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Determine a formula for the function <m>F(t)</m> given numerically in the table below and fill in the missing values.
+</p>
+
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+<cell><m>6</m></cell>
+</row>
+<row>
+<cell><m>F(t)</m></cell>
+<cell><m>4</m></cell>
+<cell><m>2</m></cell>
+<cell><m>0</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-4</m></cell>
+<cell><m>-6</m></cell>
+<cell><m>-8</m></cell>
+<cell>?</cell>
+<cell>?</cell>
+</row>
+</tabular>
+
+
+</statement>
+
+<solution>
+<p>
+<m>F(t)=-2t</m>
+</p>
+
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>5</m></cell>
+<cell><m>6</m></cell>
+</row>
+<row>
+<cell><m>F(t)</m></cell>
+<cell><m>-10</m></cell>
+<cell><m>-12</m></cell>
+</row>
+</tabular>
+
+
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+A driver of a Volkswagen Passat fills up his gas tank and starts a highway trip to a faraway city. Let <m>G</m>, in gallons, be the amount of gas left in the tank after driving <m>d</m> miles. Fill in the missing numbers and find the gas mileage of the VW Passat; that is, the number of miles the SUV gets per gallon.
+</p>
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>d</m></cell>
+<cell><m>0</m></cell>
+<cell><m>36</m></cell>
+<cell><m>72</m></cell>
+<cell><m>108</m></cell>
+<cell><m>144</m></cell>
+<cell><m>180</m></cell>
+<cell><m>216</m></cell>
+<cell><m>252</m></cell>
+</row>
+<row>
+<cell><m>G(d)</m></cell>
+<cell><m>18.5</m></cell>
+<cell><m>17</m></cell>
+<cell><m>15.5</m></cell>
+<cell><m>14</m></cell>
+<cell><m>12.5</m></cell>
+<cell>?</cell>
+<cell>?</cell>
+<cell>?</cell>
+</row>
+</tabular>
+
+
+</statement>
+
+<solution>
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>d</m></cell>
+<cell><m>180</m></cell>
+<cell><m>216</m></cell>
+<cell><m>252</m></cell>
+</row>
+<row>
+<cell><m>G(d)</m></cell>
+<cell><m>11</m></cell>
+<cell><m>9.5</m></cell>
+<cell><m>8</m></cell>
+</row>
+</tabular>
+
+<p>
+The gas mileage of the driver's Volkswagen Passat is 24 miles per gallon.
+</p>
+
+</solution>
+</exercise>
+
+
+
+
+
+
+<exercise xml:id = "exercise-1_3-population">
+<statement>
+<p>
+Data regarding the world population between 2010 and 2018, in billions, is recorded in the table below.
+<!-- \footnote{https://www.worldometers.info/world-population/world-population-by-year/, accessed: 6/28/20}  -->
+</p>
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell>Year</cell>
+<cell><m>2010</m></cell>
+<cell><m>2011</m></cell>
+<cell><m>2012</m></cell>
+<cell><m>2013</m></cell>
+<cell><m>2014</m></cell>
+<cell><m>2015</m></cell>
+<cell><m>2016</m></cell>
+<cell><m>2017</m></cell>
+<cell><m>2018</m></cell>
+</row>
+<row>
+<cell>Population</cell>
+<cell><m>6.957</m></cell>
+<cell><m>7.041</m></cell>
+<cell><m>7.126</m></cell>
+<cell><m>7.211</m></cell>
+<cell><m>7.296</m></cell>
+<cell><m>7.380</m></cell>
+<cell><m>7.464</m></cell>
+<cell><m>7.548</m></cell>
+<cell><m>7.631</m></cell>
+</row>
+</tabular>
+
+<p>
+The information in the table can be rewritten so that the population, <m>P</m>, in billions, is a function of the number of years, <m>t</m>, since 2010. This rewriting has been partially completed for you. Fill in the missing values.
+</p>
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>?</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>?</m></cell>
+<cell><m>6</m></cell>
+<cell><m>7</m></cell>
+<cell><m>8</m></cell>
+</row>
+<row>
+<cell><m>P(t)</m></cell>
+<cell><m>6.957</m></cell>
+<cell><m>7.041</m></cell>
+<cell>?</cell>
+<cell><m>7.211</m></cell>
+<cell><m>7.296</m></cell>
+<cell><m>7.380</m></cell>
+<cell><m>7.464</m></cell>
+<cell>?</cell>
+<cell><m>7.631</m></cell>
+</row>
+</tabular>
+
+</statement>
+
+<solution>
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+<cell><m>6</m></cell>
+<cell><m>7</m></cell>
+<cell><m>8</m></cell>
+</row>
+<row>
+<cell><m>P(t)</m></cell>
+<cell><m>6.957</m></cell>
+<cell><m>7.041</m></cell>
+<cell><m>7.126</m></cell>
+<cell><m>7.211</m></cell>
+<cell><m>7.296</m></cell>
+<cell><m>7.380</m></cell>
+<cell><m>7.464</m></cell>
+<cell><m>7.548</m></cell>
+<cell><m>7.631</m></cell>
+</row>
+</tabular>
+
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Sketch an approximate graph of the population function <m>P(t)</m> whose table you completed in <xref ref="exercise-1_3-population"/>.
+</p>
+</statement>
+
+<solution>
+
+<image width="50%" xml:id="ex_1_3_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_1_3_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=8.5,
+ymin=6.8,ymax=7.75,
+xtick={1,2,3,4,5,6,7,8},
+ytick={6.9,7.0,...,7.7},
+yticklabels = {6.90,7.00,7.10,7.20,7.30,7.40,7.50,7.60,7.70},
+minor tick={},
+xlabel=\(t\), ylabel=\(P\),
+x post scale = 1.2
+]
+\addplot+[smooth,mark=*,mark options={fill=red}] plot coordinates {
+(0, 6.957)
+(1, 7.041)
+(2, 7.126)
+(3, 7.211)
+(4, 7.296)
+(5, 7.380)
+(6, 7.464)
+(7, 7.548)
+(8, 7.631)
+};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+
+</solution>
+</exercise>
+
+
+
+
+
+<exercise xml:id="exercise-1_3-dragon">
+<statement>
+<p>
+The amount of power a dragon must output to carry a knight depends on how fast it is flying, as shown in the table below.
+</p>
+
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell>speed <m>x</m> (mph)</cell>
+<cell><m>60</m></cell>
+<cell><m>70</m></cell>
+<cell><m>80</m></cell>
+<cell><m>90</m></cell>
+<cell><m>100</m></cell>
+</row>
+<row>
+<cell>power <m>y</m> (kW)</cell>
+<cell><m>23</m></cell>
+<cell><m>25</m></cell>
+<cell><m>30</m></cell>
+<cell><m>36</m></cell>
+<cell><m>45</m></cell>
+</row>
+</tabular>
+
+<p>
+<ol>
+<li>Is the amount of power required for the dragon to carry the knight increasing or decreasing as its speed increases? Explain how you arrive at your conclusion from the data in the table.</li>
+<li>Is the amount of power required for the dragon to carry the knight changing faster and faster or slower and slower as its speed increases? Explain how you arrive at your conclusion from the data in the table.</li>
+</ol>
+</p>
+
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <p>The amount of power required for the dragon to carry the knight is increasing as the dragon's speed increases. This is evident from the table since the values associated with the power required increase as the speed increases.</p>
+        </li>
+        <li>
+            <p>The amount of power required for the dragon to carry the knight is increasing faster and faster as the dragon's speed increases. This is evident from the table since each time the speed increases by 10 miles per hour starting at 60 miles per hour, the power required to carry the knight increases by more and more.</p>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Sketch the graph of the function given numerically in <xref ref="exercise-1_3-dragon"/> and use it to answer the following questions.
+</p>
+<ol>
+<li>Is the amount of power required for the dragon to carry the knight increasing or decreasing as its speed increases? Explain how you arrive at your conclusion from the graph.</li>
+<li>Is the amount of power required for the dragon to carry the knight changing faster and faster or slower and slower as its speed increases? Explain how you arrive at your conclusion from the graph.</li>
+</ol>
+</statement>
+
+<solution>
+
+
+<image width="50%" xml:id="ex_1_3_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ex_1_3_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=59.9,xmax=102.5,
+ymin=15,ymax=47.5,
+xtick={60,70,80,90,100},
+xticklabels = {60,70,80,90,100},
+ytick={15,20,25,30,35,40,45,50},
+yticklabels = {15,20,25,30,35,40,45,50},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2
+]
+\addplot+[smooth,mark=*,mark options={fill=red}] plot coordinates {
+(60, 23)
+(70, 25)
+(80, 30)
+(90, 36)
+(100, 45)
+};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<p>
+    <ol>
+        <li>
+            <p>The amount of power required for the dragon to carry the knight is increasing as the dragon's speed increases. This is evident from the graph since it climbs over the interval <m>60\leq x \leq 100</m>.</p>
+        </li>
+        <li>
+            <p>The amount of power required for the dragon to carry the knight is increasing faster and faster as the dragon's speed increases. This is evident from the graph since each time the speed increases by 10 miles per hour starting at 60 miles per hour, the graph climbs more and more quickly.</p>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+</exercises>

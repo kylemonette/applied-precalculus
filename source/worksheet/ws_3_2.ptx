@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws_3_2" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Practice Worksheet</title>
+
+
+
+Find the horizontal intercepts of each quadratic function by factoring.
+
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>f(x)=x^2+3 x+2</m>
+</p>
+</statement>
+<solution>
+<p>
+Two numbers that multiply to <m>2</m> and add to <m>3</m> are <m>1</m> and <m>2</m>, so <m>f(x)=(x+2)(x+1)</m>. Setting this to <m>0</m>, then <m>x+2=0</m> and <m>x+1=0</m>, meaning <m>x=-2</m> and <m>x=-1</m> are the horizontal intercepts.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>y=x^2-x-6</m>
+</p>
+</statement>
+<solution>
+<p>
+Two numbers that multiply to <m>-6</m> and add to <m>-1</m> are <m>-3</m> and <m>2</m>, so <m>y=(x-3)(x+2)</m>. Setting this to <m>0</m>, then <m>x-3=0</m> and <m>x+2=0</m>, meaning <m>x=3</m> and <m>x=-2</m> are the horizontal intercepts.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>g(t)=t^2+t-6</m>
+</p>
+</statement>
+<solution>
+<p>
+Two numbers that multiply to <m>-6</m> and add to <m>1</m> are <m>3</m> and <m>-2</m>, so <m>g(t)=(t+3)(t-2)</m>. Setting this to <m>0</m>, then <m>t+3=0</m> and <m>t-2=0</m>, meaning <m>t=-3</m> and <m>t=2</m> are the horizontal intercepts.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>y=x^2-8 x+16</m>
+</p>
+</statement>
+<solution>
+<p>
+Two numbers that multiply to <m>16</m> and add to <m>-8</m> are <m>-4</m> and <m>-4</m>, so <m>y=(x-4)(x-4)</m>. Setting this to <m>0</m>, then <m>x-4=0</m> and so <m>x=4</m> is the only horizontal intercept.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>f(w)=w^2+14 w+49</m>
+</p>
+</statement>
+<solution>
+<p>
+Two numbers that multiply to <m>49</m> and add to <m>14</m> are <m>7</m> and <m>7</m>, so <m>f(w)=(w+7)(w+7)</m>. Setting this to <m>0</m>, then <m>w+7=0</m> and so <m>w=-7</m> is the only horizontal intercept.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>f(t)=64t^2-36</m>
+</p>
+</statement>
+<solution>
+<p>
+One method (the preferred method) is to realize this is a <em>difference of squares</em>. That is, <m>f(t)=(8t)^2-6^2</m> and so <m>f(t)=(8t+6)(8t-6)</m>. In this case, setting <m>f(t)=0</m> yields <m>8t-6=0</m> so <m>t=\frac{6}{8}=\frac{3}{4}</m> and also <m>8t+6=0</m> so <m>t=-\frac{3}{4}</m>.
+
+Another method is to factor out <m>64</m> and write <m>f(t)=64(t^2-9 / 16)</m>. Then, we need two numbers that multiply to <m>-9/16</m> and add to <m>0</m>, which are <m>-3/4</m> and <m>3 /4</m>. Thus <m>f(t)=64(t-3/4)(t+3/4)</m> which is actually equal to the other method above (as we expect) if you distribute the <m>64</m> inside.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>h(x)=2 x^2+10 x+8</m>
+</p>
+</statement>
+<solution>
+<p>
+Note that <m>2</m> is a factor in each term, so we can write <m>h(x) = 2 (x^2+5x+4)</m>. Now, concentrate on <m>x^2+5x+4</m>. Two numbers that multiply to <m>4</m> and add to <m>5</m> are <m>4</m> and <m>1</m>, so this factors to <m>(x+4)(x+1)</m>. Therefore <m>h(x)=2(x+4)(x+1)</m>. Horizontal intercepts are <m>x=-4</m> and <m>x=-1</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>y=2 w^2- w-3</m>
+</p>
+</statement>
+<solution>
+<p>
+Unlike the last question, <m>2</m> is not a factor in every term. So we use the <m>ac</m>-method (described in the textbook). First, find two numbers which multiply to <m>a\cdot c = 2 \cdot (-3)=-6</m> and add to <m>-1</m>, which are <m>2</m> and <m>-3</m>. Then, write <m>y = 2w^2 +2w - 3w - 3</m>. Factoring out the greatest common factors,
+<md>
+y = 2w(w+1) - 3\cdot (w+1)
+</md> which factors to <m>y=(w+1)(2w-3)</m>. Setting this to <m>0</m>, then <m>w+1=0</m> and <m>2w-3=0</m>. Thus horizontal intercepts are <m>w=-1</m> and <m>w=\frac{3}{2}</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>f(x)=-x^2-6x+16</m>
+</p>
+</statement>
+<solution>
+<p>
+Factor out the <m>-1</m> from everything, yielding <m>f(x)=-(x^2+6x-16)</m>. Then, concentrate on <m>x^2+6x-16</m>. Two numbers which multiply to <m>-16</m> and add to <m>6</m> are <m>8</m> and <m>-2</m>. Therefore <m>f(x)=-(x+8)(x-2)</m>. Setting this to <m>0</m>, then <m>x+8=0</m> and <m>x-2=0</m>, thus <m>x=-8</m> and <m>x=2</m> are the horizontal intercepts.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>g(x)=\frac{1}{49}-4x^2</m>
+</p>
+</statement>
+<solution>
+<p>
+This is another <em>difference of squares</em> since <m>g(x)=\pbr{\frac{1}{7}} ^2 - (2x)^2</m>. Therefore <m>g(x)=\pbr{\frac{1}{7}-2x} \pbr{\frac{1}{7}+2x} </m>. This means that the horizontal intercepts are when <m>\frac{1}{7}-2x=0</m> and <m>\frac{1}{7}+2x=0</m>, that is, when <m>x=\frac{1}{14}</m> and <m>x=-\frac{1}{14}</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>p(x)=2x^2-6x</m>
+</p>
+</statement>
+<solution>
+<p>
+The factor <m>2x</m> is common to both terms, so <m>p(x)=2x(x-3)</m> and therefore the horizontal intercepts are when <m>x=0</m> and <m>x=3</m>.
+
+<em>Alternatively, you can just factor out the <m>2</m> and then write <m>p(x)=2(x^2-3x)</m>. From here, find two numbers that multiply to <m>0</m> and add to <m>-3</m>. This will yield the same answer as the above.</em>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+<m>m(t)=-5t^2+2t</m>
+</p>
+</statement>
+<solution>
+<p>
+The greatest common factor in each term is <m>t</m>, so <m>m(t)=t(-5t+2)</m>. Then, horizontal intercepts are when <m>t=0</m> and when <m>-5t+2=0</m>, that is, <m>t=0</m> and <m>t=\frac{2}{5}</m>.
+</p>
+</solution>
+</exercise>
+
+
+</worksheet>

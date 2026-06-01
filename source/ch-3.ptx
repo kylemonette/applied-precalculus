@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter_3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Quadratic Functions</title>
+
+  <introduction>
+    <p>
+        Describing the path of a projectile, designing lenses to bend and focus light, and maximizing revenue in certain business situations are just a few of the places that <em>quadratic functions</em> can be utilized. With <q>U</q>-shaped graphs known as parabolas, these functions allow us to model and understand a remarkable array of real-world phenomena.
+    </p>
+</introduction>
+
+  <!-- include sections -->
+<xi:include href="sec_3_1.ptx" />
+<xi:include href="sec_3_2.ptx" />
+<xi:include href="sec_3_3.ptx" />
+<xi:include href="sec_3_4.ptx" />
+</chapter>

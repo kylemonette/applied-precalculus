@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws_5_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<title>Practice Worksheet</title>
+
+
+<exercise>
+<introduction>
+<p>
+Write each exponential function in the form <m>y=A\cdot b^t</m>. Then identify the initial value and growth factor.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=3(6)^{2t}</m>
+</p>
+</statement>
+<solution>
+<p>
+We can write <m>y=3 (6^2)^t</m> and so <m>y=3(36)^t</m>, meaning <m>A=3</m> and <m>b=36</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>f(t)=6(0.5)^{t-1}</m>
+</p>
+</statement>
+<solution>
+<p>
+Using exponent rules, <m>f(t)=6(0.5)^t (0.5)^{-1} = 6(0.5)^t \cdot 2 = 12 (0.5)^t</m>. Therefore <m>A=12</m> and <m>b=0.5</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>g(t)=0.5\pbr{1-\dfrac{1.2}{6}}^{3t}</m>
+</p>
+</statement>
+<solution>
+<p>
+We can simplify <m>1-\frac{1.2}{6} = 0.8</m> and so <m>g(t)=0.5(0.8)^{3t}</m>. Then, <m>g(t)=0.5 (0.8^3)^t = 0.5(0.512)^t</m> so <m>A=0.5</m> and <m>b=0.512</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=\sqrt{9(0.01)^t}</m>
+</p>
+</statement>
+<solution>
+<p>
+Using exponent rules, <m>y=\sqrt{9} \cdot \sqrt{(0.01)^t} = 3 (0.01^t)^{1 /2}</m>. Then, <m>y=3 \pbr{0.01^{1 /2}}^t = 3 (0.1)^t</m> so <m>A=3</m> and <m>b=0.1</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=\dfrac{16(2)^t}{8(2)^{3t}}</m>
+</p>
+</statement>
+<solution>
+<p>
+Using exponent rules, <m>y=\frac{16}{8} 2^{t-3t} = 2 \cdot 2^{-2t}</m> and therefore <m>y=2 \cdot (2^{-2})^t = 2 \cdot (0.25)^t</m>. Therefore <m>A=2</m> and <m>b=0.25</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=\pbr{(10)^2}^{-6t+1}</m>
+</p>
+</statement>
+<solution>
+<p>
+Simplifying <m>10^2=100</m> then <m>y=100^{-6t+1}</m> which is <m>y=(100)^{-6t}\cdot 100 = (100^{-6})^t \cdot 100</m>. Thus <m>y=100 \cdot (100^{-6})^t</m> and so <m>A=100</m> and <m>b=100^{-6}</m>.
+</p>
+</solution>
+</task>
+
+
+
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+Identify whether each exponential function represents exponential growth or exponential decay. Then identify the percent growth rate.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=1200(1.115)^t</m>
+</p>
+</statement>
+<solution>
+<p>
+The growth factor is <m>b=1.115</m> which is greater than <m>1</m> so this describes exponential growth. The growth rate <m>r</m> is <m>r=b-1=1.115-1 = 0.115 = 11.5\%</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=10(0.923)^x</m>
+</p>
+</statement>
+<solution>
+<p>
+The growth factor is <m>b=0.923<1</m> so this describes exponential decay. The growth rate is <m>r=b-1 = 0.923-1 = -0.077 = -7.7\%</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>f(x)=20(\sqrt{3})^x</m>
+</p>
+</statement>
+<solution>
+<p>
+The growth factor is <m>b=\sqrt{3} =1.73205>1</m> so this describes exponential growth. The growth rate is <m>r=b-1 = 1.73205-1 = 0.73205 = 73.205\%</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>P=50\pbr{\dfrac{3}{4}}^{-t}</m>
+</p>
+</statement>
+<solution>
+<p>
+By noting that <m>\pbr{\dfrac{3}{4}} ^{-t} = \pbr{\dfrac{4}{3}} ^t</m>, then we have <m>P = 50 \pbr{\frac{4}{3}} ^t</m>. Thus the growth rate <m>b=\frac{4}{3}>1</m> so this represents exponential growth. The growth rate is <m>r=b-1 = \frac{4}{3}-1 = 0.333 = 33.3 \%</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=\dfrac{300}{5(3)^x}</m>
+</p>
+</statement>
+<solution>
+<p>
+We can simplify <m>y = \dfrac{300}{5} \cdot 3^{-x} = 60 \cdot \pbr{\dfrac{1}{3}} ^x</m>. The growth factor is <m>b=\frac{1}{3}<1</m> so this represents exponential decay. The growth rate is <m>r=b-1  = \frac{1}{3}-1 = -\frac{2}{3} = -0.6666 = -66.6\%</m>.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>Q=1000\pbr{1+\dfrac{0.05}{12}}^{12t}</m>.
+</p>
+</statement>
+<solution>
+<p>
+We can write <m>Q = 1000 \pbr{1.00417} ^{12t}</m> and so <m>Q = 1000 \pbr{(1.00417)^{12}} ^t = 1000 \pbr{1.0512} ^t</m>. Therefore the growth factor is <m>b=1.0512>1</m> so this describes exponential growth. The growth rate is <m>r=b-1 = 1.0512-1 = 0.0512 = 5.12\%</m>.
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+What is the growth factor that corresponds to a growth rate of <m>20\%</m>?
+</p>
+</statement>
+<solution>
+<p>
+When <m>r=20\% = 0.2</m> then <m>b=1+r = 1+0.2 = 1.2</m> is the growth factor.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+What is the growth factor that corresponds to a decay rate of <m>15\%</m>?
+</p>
+</statement>
+<solution>
+<p>
+When <m>r=-15\% = -0.15</m> then <m>b=1+r = 1+(-0.15) = 1-0.15 = 0.85</m> is the growth factor.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+What is the percent growth rate that corresponds to a growth factor of <m>0.925</m>?
+</p>
+</statement>
+<solution>
+<p>
+When <m>b=0.925</m> then <m>r=b-1 = 0.925 - 1 = -0.03 = -3\%</m> is the percent growth rate.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+What is the percent growth rate that corresponds to a growth factor of <m>1.62</m>?
+</p>
+</statement>
+<solution>
+<p>
+When <m>b=1.62</m> then <m>r=b-1 = 1.62-1 = 0.62 = 62\%</m> is the percent growth rate.
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Write an expression representing a population at time <m>t</m> years if it is initially 2 million and shrinking at a rate of <m>3\%</m> per year.
+</p>
+</statement>
+<solution>
+<p>
+The initial value is <m>A=2000000</m> and the growth rate is <m>r=-3\% = -0.03</m> so <m>b=1+r = 1+(-0.03) = 0.97</m>. Hence
+<md>
+y = 2000000 (0.97)^t.
+</md>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Write an expression representing the quantity of pollutant in a lake if the initial amount is <m>Q_0</m> and the amount of pollutant is growing at a rate of <m>2\%</m> a year for <m>6</m> years.
+</p>
+</statement>
+<solution>
+<p>
+The growth rate is <m>r=2\% = 0.02</m> so <m>b=1+r = 1.02</m>. The initial amount is <m>Q_0</m>, so
+<md>
+y = Q_0 (1.02)^t.
+</md> After <m>t=6</m> years, then the amount of pollutant in the lake would be
+<md>
+y = Q_0 (1.02)^6.
+</md>
+</p>
+</solution>
+</exercise>
+
+</worksheet>

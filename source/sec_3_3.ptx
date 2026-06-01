@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_3_3">
+
+    
+<title>Vertex Form and Completing the Square</title>
+
+
+<objectives>
+    <introduction>
+        <p>
+            After completing this section, you should be able to do the following.
+        </p>
+    </introduction>
+    <ol>
+        <li>
+            <p>
+            First objective.
+            </p>
+        </li>
+
+        <li>
+            <p>
+        Second objective.
+            </p>
+        </li> 
+        <li>
+            <p>
+            Third objective.
+            </p>
+        </li>
+    </ol>
+</objectives>
+
+<introduction>
+
+
+<p>
+Recall that the standard form of a quadratic function is <md>f(x) = a x^2 + b x + c,</md> where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers with <m>a \neq 0</m>.
+</p>
+
+<p>
+When one first looks upon the function <md>f(x) = (x-1)^2 + 2</md> it may not immediately be apparent that this is in fact a quadratic function. This can be seen by expanding the right-hand side:
+</p>
+
+<p>
+<md>
+<mrow>f(x) \amp\;=\; (x-1)^2 + 2</mrow>
+<mrow>\amp\;=\; (x - 1)(x - 1) + 2</mrow>
+<mrow>\amp\;=\; x^2 - x - x + 1 + 2</mrow>
+<mrow>\amp\;=\; x^2 - 2x + 3</mrow>
+</md>
+</p>
+
+<p>
+Hence, <md>f(x) = (x-1)^2 + 2</md> can be written in the standard form of a quadratic function as <md>f(x) = x^2 - 2x + 3.</md>
+This is the same quadratic function that appeared in part (a) of <xref ref="exercise-ch3-graph-quads" /> where we saw that the vertex was <m>(\textcolor{red}{1}, \textcolor{blue}{2})</m>.
+Notice that these numbers appear in the alternate formula for
+<m>f(x) = x^2 - 2x + 3</m>: <md>f(x) = (x - \textcolor{red}{1})^2 + \textcolor{blue}{2}.</md>
+This is not a coincidence and brings us to the <alert>vertex form</alert> of a quadratic function.
+</p>
+
+<definition>
+<title>Vertex Form</title>
+<statement>
+<p>
+The <alert>vertex form</alert> of a quadratic function with vertex <m>(\textcolor{red}{h},\textcolor{blue}{k})</m> is given by <md>f(x)=a(x-\textcolor{red}h)^2+\textcolor{blue}k</md>
+</p>
+</statement>
+</definition>
+
+<example>
+<statement>
+<p>
+Identify the vertex of each of the following quadratic functions.
+</p>
+
+<p>
+<ol>
+<li>
+<p>
+    <m>f(t)=-3(t-6)^2-4</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>y=(x+7)^2+3</m>
+</p>
+</li>
+</ol>
+</p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+The function can be written as <md>f(t) = -3(t - \textcolor{red}{6})^2 + \textcolor{blue}{-4}.</md>
+It can be seen that <m>h = \textcolor{red}{6}</m> and <m>k = \textcolor{blue}{-4}</m>, so its vertex is <m>(6, -4)</m>.
+</p>
+</li>
+
+<li>
+<p>
+Note that for the function <md>y = (x+7)^2 + 3</md> addition is being performed inside the parentheses instead of subtraction, as is required to correctly identify <m>h</m> using the vertex form. Recalling that subtracting a negative number is the same as adding, we can rewrite the above as <md>y = (x - (\textcolor{red}{-7}))^2 + \textcolor{blue}{3}</md> which allows us to identify that <m>h = \textcolor{red}{-7}</m> and <m>k = \textcolor{blue}{3}</m>. The vertex is <m>(-7, 3)</m>.
+</p>
+</li>
+</ol></p>
+</solution>
+</example>
+
+
+
+</introduction>
+
+<subsection>
+<title>Converting from Vertex Form to Standard Form</title>
+
+<p>
+In the beginning of this section, we converted <m>f(x)=(x-1)^2+2</m> from vertex form to its standard form <m>f(x)=x^2-2x+3</m> by expanding the right-hand side. This is what is done in general to convert a quadratic function from vertex form to standard form. To expedite this process, special product formulas may be used. Note that
+</p>
+
+<p>
+<md>
+<mrow>(A+B)^2 \amp\;=\; (A + B)(A + B) \amp (A-B)^2 \amp\;=\; (A - B)(A - B)</mrow>
+<mrow>\amp\;=\; A^2 + AB + AB + B^2 \amp \amp \;=\; A^2 - AB - AB + B^2</mrow>
+<mrow>\amp\;=\; A^2 + 2AB + B^2 \amp\amp \;=\; A^2 - 2AB + B^2</mrow>
+</md>
+</p>
+
+
+<theorem xml:id="res-ch3-special-products">
+<title>Special Product Formulas</title>
+<statement>
+<p>
+<md>(A+B)^2 = A^2 + 2AB + B^2
+\qquad \quad
+(A-B)^2 = A^2 - 2AB + B^2
+</md>
+</p>
+</statement>
+</theorem>
+
+
+
+<example>
+<statement>
+<p>
+Convert each quadratic function from vertex form to standard form and identify <m>a</m>, <m>b</m>, and <m>c</m>.
+</p>
+
+<p><ol>
+<li>
+<p>
+    <m>y=\left(x-\frac{1}{2}\right)^2+5</m>
+</p>
+</li>
+
+<li>
+<p>
+    <m>g(t)=-3(t-5)^2-10</m>
+</p>
+</li>
+</ol>
+</p>
+</statement>
+
+<solution>
+
+<p><ol>
+<li>
+<p>
+Note that
+</p>
+<p>
+<md>
+<mrow>y \amp\;=\; \left( x - \frac{1}{2} \right)^2 + 5</mrow>
+<mrow>\amp\;=\; \left( (x)^2 -x  + \left( \frac{1}{2} \right)^2 \right) + 5</mrow>
+<mrow>\amp\;=\; x^2 - x + \frac{1}{4} + 5</mrow>
+<mrow>\amp\;=\; x^2 - x + \frac{1}{4} + \frac{5}{1} \cdot \textcolor{blue}{\frac{4}{4}}</mrow>
+<mrow>\amp\;=\; x^2 - x + \frac{21}{4}</mrow>
+</md>
+</p>
+<p>
+so the standard form is <m>y = x^2 - x + \frac{21}{4}</m>. Here <m>a = 1</m>, <m>b = -1</m>, and <m>c = \frac{21}{4}</m>.
+</p>
+</li>
+<li>
+<p>
+Note that
+</p>
+<p>
+<md>
+<mrow>g(t) \amp\;=\; -3 ( t - 5 )^2 - 10</mrow>
+<mrow>\amp\;=\; -3 \left( (t)^2 - 2 (t) (5) + (5)^2 \right) - 10</mrow>
+<mrow>\amp\;=\; -3 ( t^2 - 10 t + 25 ) - 10</mrow>
+<mrow>\amp\;=\; -3 ( t^2 b - 10 c t + 25 d) - 10</mrow>
+<mrow>\amp\;=\; -3 t^2 + 30 t - 75 - 10</mrow>
+<mrow>\amp\;=\; -3 t^2 + 30 t - 85</mrow>
+</md>
+</p>
+<p>
+so the standard form is <m>g(t)=-3t^2+30t-85</m>. Here <m>a=-3</m>, <m>b=30</m>, and <m>c=-85</m>.
+</p>
+</li>
+</ol></p>
+
+</solution>
+</example>
+
+</subsection>
+
+
+
+
+
+<subsection>
+<title>Converting from Standard Form to Vertex Form</title>
+
+<p>
+Converting from standard form to vertex form requires <alert>completing the square</alert>. This process will be explained below, but first an observation. Note that
+</p>
+<p>
+<md>
+<mrow>x^2 + Bx + \left( \frac{B}{2} \right)^2 \amp= x^2 + 2(x) \left( \frac{B}{2} \right) + \left( \frac{B}{2} \right)^2 </mrow>
+<mrow>\amp= \left( x + \frac{B}{2} \right)^2</mrow>
+</md>
+</p>
+<p>
+by the first special product formula (see <xref ref="res-ch3-special-products" />).
+</p>
+
+
+<theorem>
+<title>Completing the Square for <m>x^2+Bx+C</m></title>
+
+<statement>
+<p>
+To complete the square on a quadratic function of the form <m>x^2 + Bx + C</m>:
+</p>
+<p><ol>
+<li>
+Identify <m>B</m>, the coefficient of the <q><m>x</m></q> term.
+</li>
+<li>
+Compute <m>\textcolor{blue}{\left( \frac{B}{2} \right)^2 }</m>.
+</li>
+
+<li>
+<p>
+Add and subtract this quantity from the original quadratic function: <md>x^2 + Bx \textcolor{blue}{ + \left( \dfrac{B}{2} \right)^2} + C  \textcolor{blue}{-\left( \dfrac{B}{2} \right)^2}</md> Note that by both adding and subtracting the same number from the original function, you have in fact added <m>0</m>, which does not change the function.
+</p>
+</li>
+<li>
+<p>
+Factor <m>x^2 + Bx + \left( \frac{B}{2} \right)^2</m> into <m>\left( x + \frac{B}{2} \right)^2</m> and combine constants to finish completing the square.
+</p>
+</li>
+</ol>
+</p>
+</statement>
+</theorem>
+
+
+<example>
+<statement>
+<p>
+Convert each of the following quadratic functions from standard form to vertex form. Then identify the vertex.
+</p>
+
+<p><ol>
+<li>
+<p>
+<m>f(x)=x^2+6x+10</m>
+</p>
+</li>
+
+<li>
+<p>
+<m>y = t^2 - 8t + 1</m>
+</p>
+</li>
+
+<li>
+<p>
+<m>g(x) = x^2 + 5x - 3</m>
+</p>
+</li>
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+The quadratic function <m>f(x)=x^2+6x+10</m> is of the form <m>x^2+Bx+C</m> with <m>B=6</m>. Now <md>\textcolor{blue}{\left( \frac{B}{2} \right)^2 } = \left( \frac{6}{2} \right)^2 = (3)^2 = 9.</md> Adding and subtracting this quantity from the quadratic yields:
+</p>
+<p>
+<md>
+<mrow>x^2 + 6x + 10
+\amp\;=\; \textcolor{red}{\underbrace{ {\color{black}x^2 + 6x }\textcolor{blue}{+9}}_{\textcolor{red}{\text{factors into } (x+3)^2}} }
++ 10 \textcolor{blue}{-} \textcolor{blue}{9} </mrow>
+<mrow>\amp\;=\; (x+3)^2 + 1.</mrow>
+</md>
+</p>
+<p>
+Hence, the vertex form of <m>f(x)=x^2+6x+10</m> is <md>f(x) = (x+3)^2 + 1</md> and the vertex is <m>(-3, 1)</m>.
+</p>
+</li>
+
+<li>
+<p>
+The quadratic function <m>y = t^2 - 8t + 1</m> is of the form <m>t^2 + Bt + C</m> with <m>B = -8</m>. Now <md>\textcolor{blue}{\left( \frac{B}{2} \right)^2 } = \left( \frac{-8}{2} \right)^2 = (-4)^2 = 16.</md> Adding and subtracting this quantity from the quadratic yields:
+</p>
+<p>
+<md>
+<mrow>t^2 - 8t + 1
+\amp\;=\; \textcolor{red}{\underbrace{ {\color{black}t^2 - 8t} \textcolor{blue}{+16} }_{\textcolor{red}{\text{factors into } (t-4)^2}} }
++ 1 \textcolor{blue}{-} \textcolor{blue}{16} </mrow>
+<mrow>\amp\;=\; (t-4)^2 - 15.</mrow>
+</md>
+</p>
+<p>
+Hence, the vertex form of <m>y = t^2 - 8t + 1</m> is <md>y = (t-4)^2 - 15</md> and the vertex is <m>(4, -15)</m>.
+</p>
+</li>
+
+<li>
+<p>
+The quadratic function <m>g(x) = x^2 + 5x - 3</m> is of the form <m>x^2 + Bx + C</m> with <m>B = 5</m>.
+Now <md>\textcolor{blue}{\left( \frac{B}{2} \right)^2 } = \left( \frac{5}{2} \right)^2 = \frac{25}{4}</md>
+Adding and subtracting this quantity from the quadratic yields:
+</p>
+<aside>
+<p>
+Don't forget that <m>x^2+Bx+\left(\frac{B}{2}\right)^2</m> always factors into <m>(x+\frac{B}{2})^2</m>. This is particularly helpful to remember in more complicated exercises like this one.
+</p>
+</aside>
+<p>
+<md>
+<mrow>
+x^2 + 5x - 3
+\amp\;=\; \textcolor{red}{\underbrace{ {\color{black}x^2 + 5x} \textcolor{blue}{+\frac{25}{4}} }_{\textcolor{red}{\text{factors into } \left( x + \frac{B}{2} \right)^2=\left(x+\frac{5}{2}\right)^2}} }
+\hspace{-20pt}- 3 \textcolor{blue}{-} \textcolor{blue}{\frac{25}{4}}</mrow>
+<mrow>
+\amp\;=\; \left(x + \frac{5}{2}\right)^2 - \frac{3}{1} \textcolor{orange}{\cdot \frac{4}{4}} - \frac{25}{4} </mrow>
+<mrow>\amp\;=\; \left(x + \frac{5}{2}\right)^2 - \frac{12}{4} - \frac{25}{4}</mrow>
+<mrow>\amp\;=\; \left(x + \frac{5}{2}\right)^2 - \frac{37}{4}.</mrow>
+</md>
+</p>
+<p>
+Hence, the vertex form of <m>g(x) = x^2 + 5x - 3</m> is <md>g(x) = \left(x + \frac{5}{2}\right)^2 - \frac{37}{4}</md> and the vertex is <m>\left( -\frac{5}{2}, -\frac{37}{4} \right)</m>.
+</p>
+</li>
+
+</ol></p>
+</solution>
+
+</example>
+
+
+<aside>
+<p>
+In short: when <m>a\neq 1</m>, create a <q>new</q> quadratic (the one in parentheses) that has its <q><m>a</m></q> coefficient equal to <m>1</m>.
+</p>
+</aside>
+
+
+
+<theorem>
+<title>Complete Square on <m>ax^2 + bx + c</m></title>
+
+<statement>
+<p>
+To complete the square on a quadratic function of the form <m>ax^2+bx+c</m> where <m>a\neq1</m>:
+</p>
+
+<p><ol>
+<li>
+<p>
+Factor <m>a</m> out of the first two terms to obtain an expression of the form <md>a\left(x^2+\frac{b}{a}x\right)+c</md>
+</p>
+</li>
+
+<li>
+<p>
+Complete the square within the parentheses.
+</p>
+</li>
+
+<li>
+<p>
+Distribute <m>a</m> and combine constants to finish completing the square on the original quadratic.
+</p>
+</li>
+</ol></p>
+</statement>
+</theorem>
+
+
+
+<example>
+<statement>
+<p>
+Convert each of the following quadratic functions from standard form to vertex form. Then identify the vertex.
+</p>
+
+<p><ol>
+<li>
+<p>
+<m>y = 3x^2 - 6x + 1</m>
+</p>
+</li>
+
+<li>
+<p>
+<m>f(t) = -2t^2 + t - 4</m>
+</p>
+</li>
+
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+We begin by factoring the <m>3</m> out of the first two terms to obtain <md>3 \left( x^2 - 2x \right) + 1.</md> We then complete the square inside the parentheses; in other words, we will complete the square on <m>x^2 - 2x</m>. Here <m>B = -2</m> so <md>{\textcolor{blue}{\left( \frac{B}{2} \right)^2}} = \left( \frac{-2}{2} \right)^2 = (-1)^2 = 1</md> and
+</p>
+<p>
+<md>
+<mrow>\textcolor{orange}{x^2 - 2x}
+\amp\;=\; \textcolor{red}{\underbrace{ \textcolor{black}{x^2 - 2x}  \textcolor{blue}{+1} }_{\textcolor{red}{\text{factors into } (x-1)^2}} }  \textcolor{blue}{-}  \textcolor{blue}{1} </mrow>
+<mrow>\amp\;=\; \textcolor{orange}{(x-1)^2 - 1}.</mrow>
+</md>
+</p>
+<p>
+Now
+</p>
+<p>
+<md>
+<mrow>3 \left( \textcolor{orange}{x^2 - 2x} \right) + 1
+\amp\;=\; 3 \left( \textcolor{orange}{(x-1)^2 - 1} \right) + 1</mrow>
+<mrow>\amp\;=\; 3 (x-1)^2 - 3 + 1 </mrow>
+<mrow>\amp\;=\; 3 (x-1)^2 - 2.</mrow>
+</md>
+</p>
+
+<p>
+Hence, the vertex form of <m>y = 3x^2 - 6x + 1</m> is <md>y = 3(x-1)^2 - 2</md> and the vertex is <m>\left( 1, -2 \right)</m>.
+</p>
+</li>
+
+<li>
+<p>
+We begin by factoring the <m>-2</m> out of the first two terms to obtain <md>-2 \left( t^2 - \frac{1}{2} t \right) - 4.</md> We then complete the square inside the parentheses; in other words, we will complete the square on <m>t^2 - \frac{1}{2} t</m>. Here <m>B = -\frac{1}{2}</m> so <md>{\textcolor{blue}{\left( \frac{B}{2} \right)^2}} = \left( -\frac{1/2}{2} \right)^2 = \left( -\frac{1}{4} \right)^2 = \frac{1}{16}</md> and
+</p>
+<p>
+<md>
+<mrow>\textcolor{orange}{t^2 - \frac{1}{2} t}
+\amp\;=\; \textcolor{red}{\underbrace{ \textcolor{black}{t^2 - \frac{1}{2} t}  \textcolor{blue}{+\frac{1}{16}} }_{\textcolor{red}{\text{factors into } \left(t+\frac{B}{2}\right)^2=\left( t - \frac{1}{4} \right)^2}} } \hspace{-20pt} \textcolor{blue}{-}  \textcolor{blue}{\frac{1}{16}}
+</mrow>
+<mrow>\amp\;=\; \textcolor{orange}{\left( t - \frac{1}{4} \right)^2 - \frac{1}{16}}.
+</mrow>
+</md>
+</p>
+<p>
+Now
+</p>
+<p>
+<md>
+<mrow>-2 \left( \textcolor{orange}{t^2 - \frac{1}{2} t} \right) - 4
+\amp\;=\; -2 \left( \textcolor{orange}{\left( t - \frac{1}{4} \right)^2 - \frac{1}{16}} \right) - 4
+</mrow>
+<mrow>\amp\;=\; -2 \left( t - \frac{1}{4} \right)^2 + \frac{2}{16} - 4 </mrow>
+<mrow>\amp\;=\; -2 \left( t - \frac{1}{4} \right)^2 + \frac{1}{8} - \frac{4}{1} \textcolor{red}{\cdot \frac{8}{8}} </mrow>
+<mrow>\amp\;=\; -2 \left( t - \frac{1}{4} \right)^2 + \frac{1}{8} - \frac{32}{8} </mrow>
+<mrow>\amp\;=\; -2 \left( t - \frac{1}{4} \right)^2 - \frac{31}{8}.</mrow>
+</md>
+</p>
+
+<p>
+Hence, the vertex form of <m>f(t) = -2t^2 + t - 4</m> is <md>f(t) = -2 \left( t - \frac{1}{4} \right)^2 - \frac{31}{8}</md> and the vertex is <m>\left( \frac{1}{4}, -\frac{31}{8} \right)</m>.
+</p>
+</li>
+
+</ol></p>
+</solution>
+
+</example>
+
+
+
+</subsection>
+
+
+
+
+<subsection>
+<title>Using Vertex Form to Find Horizontal Intercepts</title>
+
+<p>
+If a quadratic function is given in vertex form, then its horizontal intercepts can be found by following the process illustrated in the example below.
+</p>
+
+
+<example>
+
+<statement>
+<p>
+Find the horizontal intercepts of each of the following functions.
+</p>
+
+<p><ol>
+<li>
+<p>
+<m>f(x)=x^2-9</m>
+</p>
+</li>
+
+<li>
+<p>
+<m>g(x)=(x+1)^2-10</m>
+</p>
+</li>
+
+<li>
+<p>
+<m>y(t)=4(t-1)^2-64</m>
+</p>
+</li>
+
+<li>
+<p>
+<m>h(x)=(x-5)^2+8</m>
+</p>
+</li>
+</ol></p>
+</statement>
+
+<solution>
+<p><ol>
+<li>
+<p>
+To find the horizontal or <m>x</m>-intercept(s) of this quadratic function, we set <m>f(x)</m> equal to <m>0</m> and solve for <m>x</m>. We could treat the left-hand side as a difference of squares and proceed by factoring, but we also could take an alternate approach: 
+</p>
+<p>
+<md>
+<mrow>x^2 - 9 \amp \; = \; 0</mrow>
+<mrow>x^2 - 9 \textcolor{blue}{+9} \amp\;=\; 0  \textcolor{blue}{+ 9}</mrow>
+<mrow>x^2 \amp\;=\; 9.</mrow>
+</md>
+</p>
+<p>
+This equation can be solved by taking the square root of both sides, remembering that there will be both a positive solution and a negative solution since both <m>(\sqrt{9})^2 = 9</m> and <m>(-\sqrt{9})^2 = 9</m>:
+</p>
+<p>
+<md>
+<mrow>x^2 \amp\;=\; 9</mrow>
+<mrow>x \amp\;=\; \pm \sqrt{9}</mrow>
+<mrow>x \amp\;=\; \pm 3.</mrow>
+</md>
+</p>
+<p>
+Hence, the horizontal intercepts of the function <m>f(x) = x^2 - 9</m> and the solutions of the equation <m>x^2 - 9 = 0</m> are <m>x = -3</m> and <m>x = 3</m>.
+</p>
+</li>
+
+<li>
+<p>
+To find the horizontal intercepts, we set <m>g(x)</m> equal to <m>0</m> and solve for <m>x</m>:
+</p>
+<p>
+<md>
+<mrow>(x+1)^2 - 10 \amp\;=\; 0</mrow>
+<mrow>(x+1)^2 - 10  \textcolor{blue}{+ 10} \amp\;=\; 0  \textcolor{blue}{+ 10}</mrow>
+<mrow>(x+1)^2 \amp\;=\; 10</mrow>
+<mrow>x+1 \amp\;=\; \pm \sqrt{10}</mrow>
+<mrow>x+1  \textcolor{blue}{- 1} \amp\;=\; \pm \sqrt{10}  \textcolor{blue}{- 1}</mrow>
+<mrow>x \amp\;=\; -1 \pm \sqrt{10}.</mrow>
+</md>
+</p>
+<p>
+We obtain two solutions to our equation and two horizontal intercepts of <m>g(x)</m>: <m>x = -1 - \sqrt{10}</m> and <m>x = -1 + \sqrt{10}</m>.
+</p>
+</li>
+
+<li>
+<p>
+To find the horizontal intercepts, we set <m>y(t)</m> to <m>0</m> and solve for <m>t</m>:
+</p>
+<p>
+<md>
+<mrow>4(t-1)^2 - 64 \amp\;=\; 0</mrow>
+<mrow>4(t-1)^2 - 64  \textcolor{blue}{+64} \amp\;=\; 0  \textcolor{blue}{+64}</mrow>
+<mrow>4(t-1)^2 \amp\;=\; 64</mrow>
+<mrow>\dfrac{\cancel{4}(t-1)^2}{\cancel{4}} \amp\;=\; \dfrac{64}{4}</mrow>
+<mrow>(t-1)^2 \amp\;=\; 16</mrow>
+<mrow>t-1 \amp\;=\; \pm \sqrt{16}</mrow>
+<mrow>t-1 \amp\;=\; \pm 4</mrow>
+<mrow>t-1  \textcolor{blue}{+ 1} \amp\;=\; \pm 4  \textcolor{blue}{+ 1}</mrow>
+<mrow>t \amp\;=\; 1 \pm 4.</mrow>
+</md>
+</p>
+<p>
+Hence, the two solutions and therefore the two horizontal intercepts are <m>t = 1 + 4 = 5</m> and <m>t = 1 - 4 = -3</m>.
+</p>
+</li>
+
+<li>
+<p>
+Once more, we set the function <m>h(x)</m> equal to <m>0</m> and solve for <m>x</m>:
+</p>
+<p>
+<md>
+<mrow>(x-5)^2 + 8 \amp\;=\; 0</mrow>
+<mrow>(x-5)^2 + 8  \textcolor{blue}{- 8} \amp\;=\; 0  \textcolor{blue}{- 8}</mrow>
+<mrow>(x-5)^2 \amp\;=\; -8.</mrow>
+</md>
+</p>
+<p>In this case there is no real solution, since <m>\sqrt{-8}</m> is not a real number. This means that the equation has no real solutions and the function <m>h(x) = (x-5)^2 + 8</m> has no horizontal intercepts. If we take a moment to visualize the graph of the function, this makes sense. Its graph is an upward facing parabola with vertex <m>(5, 8)</m>. Since the lowest point (the vertex) of this parabola is above the <m>x</m>-axis, there cannot be any horizontal intercepts.
+</p>
+</li>
+
+</ol></p>
+</solution>
+
+</example>
+
+
+</subsection>
+
+
+
+
+
+<xi:include href="exercises/ex_3_3.ptx"/>
+</section>

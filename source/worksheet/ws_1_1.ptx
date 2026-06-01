@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="ws_1_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Practice Worksheet</title>
+
+
+<!-- <page> -->
+
+<!-- </page> -->
+
+
+<exercise>
+<introduction>
+<p>
+A caffeine addict has <m>\$20</m> and buys <m>c</m> cups of coffee at <m>\$1.25</m> per cup. The amount of money that he has left depends on the number of cups that he buys.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+Why is this scenario an example of a function? What is the input? What is the output?
+</p>
+</statement>
+<solution>
+<p>
+This is a function because if they purchase a specific number of cups of coffee, there is exactly one amount of money left. The input is the number of cups of coffee purchased, the output is the amount of money left.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+Write an equation/formula expressing the amount of money <m>D</m> that the caffeine addict will have left after purchasing <m>c</m> cups of coffee.
+</p>
+</statement>
+<solution>
+<p>
+<m>D = 20 - 1.25 c</m>. (They lose <m>\$1.25</m> from their <m>\$20</m> for each cup of coffee <m>c</m> they buy)
+</p>
+</solution>
+</task>
+
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+What is the domain? What is the range?
+</p>
+</statement>
+<solution>
+<p>
+The domain is the set of all possible numbers of cups of coffee they could purchase, which are integers (whole numbers) and specifically must be between <m>0</m> and <m>16</m>. <em>The <m>16</m> is there because it is the maximum number of cups of coffee they can purchase with <m>\$20</m></em>.
+
+The range is the set of all possible amounts of money they could have left from the initial <m>\$20</m>. So numbers from <m>0</m> to <m>20</m> spaced by <m>1.25</m>.
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Let <m>f(r)</m> be the weight of an astronaut in pounds at a distance <m>r</m> (in thousands of miles) from the earth's center. Explain the meaning of each of the following. Write a complete sentence explaining the meaning of <m>f(4)=180</m>, including units.
+</p>
+</statement>
+<solution>
+<p>
+At a distance of <m>4</m> thousand miles from the Earth's center, the astronaut weighs <m>180</m> pounds.
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Write an expression for the total cost of an item of sticker price <m>\$p</m> that is on sale for <m>\$5</m> off given that the sales tax is <m>7\%</m>.
+</p>
+</statement>
+<solution>
+<p>
+The total cost is equal to the sale price plus the sales tax on the sale price. That is,
+<md>
+\text{total cost } \quad=\quad \underbrace{p-5}_\text{sale price} \;+\; \underbrace{0.07(p-5)}_\text{tax on sale price}   .
+</md>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+Write an expression for the sequence of operations.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+Subtract 9 from <m>x</m> and then multiply the result by 5.
+</p>
+</statement>
+<solution>
+<p>
+<m>5(x-9)</m>
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+Subtract <m>x</m> from 7 and then divide the result by 6.
+</p>
+</statement>
+<solution>
+<p>
+<m>\dfrac{7-x}{6} </m>, or equivalently <m>\frac{1}{6}(7-x)</m>
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+Divide <m>x</m> by 3, subtract 4, and triple the result.
+</p>
+</statement>
+<solution>
+<p>
+First we have <m>\frac{x}{3}</m>, and then subtracting <m>4</m> yields <m>\frac{x}{3}-4</m>. Finally, this is tripled (multiplied by <m>3</m>) to obtain <m>3\pbr{\frac{x}{3}-4} </m>.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+Add 10 to <m>x</m>, then divide by 3, then square the result.
+</p>
+</statement>
+<solution>
+<p>
+<m>\pbr{\frac{x+10}{3} } ^2</m>
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+Given that <m>f(x)=x^2+3x</m>, <m>g(x)=\sqrt{x^2-2}</m>, and <m>p(t)=10-3(t+1)</m>, find each of the following.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+<m>f(0)</m>
+</p>
+</statement>
+<solution>
+<p>
+<m>f(0) = 0^2 + 3 \cdot 0 = 0</m>
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>g(-4)</m>
+</p>
+</statement>
+<solution>
+<p>
+<m>g(-4) = \sqrt{(-4)^2-2}  = \sqrt{16-2} =\sqrt{14} </m>
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>p(-\frac{1}{2})</m>
+</p>
+</statement>
+<solution>
+<p>
+<m>p\pbr{-\frac{1}{2}} = 10 - 3 \pbr{-\frac{1}{2}+1}  = 10 - 3 \pbr{\frac{1}{2}}  = 10-1.5 = 8.5</m>
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>g(2t)</m>
+</p>
+</statement>
+<solution>
+<p>
+<m>g(2t) = \sqrt{(2t)^2 - 2}  = \sqrt{4t^2 - 2} </m>
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>p(x+h)</m>
+</p>
+</statement>
+<solution>
+<p>
+<m>p(x+h) = 10-3\pbr{(x+h)+1} = 10 - 3x-3h-3 = -3x-3h+7</m>
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>f(3+h)-f(3)</m>
+</p>
+</statement>
+<solution>
+<p>
+We advise that you compute <m>f(3+h)</m> and <m>f(3)</m> separately. First,
+<md>
+f(3+h) = (3+h)^2+3(3+h) = (3+h)(3+h) + 9 + 3h = 9+3h+3h+h^2+9+3h = h^2+9h+18.
+</md> Second,
+<md>
+f(3) = 3^2 + 3(3) = 18.
+</md> Therefore
+<md>
+f(3+h) - f(3) = h^2 + 9h + 18 - 18 = h^2 + 9h.
+</md>
+</p>
+</solution>
+</task>
+
+
+
+</exercise>
+
+
+<exercise>
+<introduction>
+<p>
+Find the domain of each function.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=2x^2+3x-1</m>
+</p>
+</statement>
+<solution>
+<p>
+All real numbers.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=-3x+2</m>
+</p>
+</statement>
+<solution>
+<p>
+All real numbers.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+<m>y=\sqrt{2x+5}</m>
+</p>
+</statement>
+<solution>
+<p>
+Because <m>2x+5</m> must be nonnegative, we require that <m>2x+5\ge 0</m>. Thus <m>2x\ge -5</m> and so <m>x\ge -\frac{5}{2}</m>. That is, the domain is all numbers greater than or equal to <m>-\frac{5}{2}</m>.
+</p>
+</solution>
+</task>
+
+
+
+<task>
+<statement>
+<p>
+<m>y=\dfrac{3}{7-2x}</m>
+</p>
+</statement>
+<solution>
+<p>
+Because <m>7-2x</m> cannot be zero (we cannot divide by zero), then <m>7-2x\neq 0</m> means that <m>7\neq 2x</m> and so <m>x\neq \frac{7}{2}</m>. That is, the domain is all numbers <em>except for</em> <m>\frac{7}{2}</m>.
+</p>
+</solution>
+</task>
+
+
+
+</exercise>
+
+
+
+
+</worksheet>
+
