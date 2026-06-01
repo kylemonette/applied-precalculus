@@ -1,0 +1,34 @@
+INFO    : Building target web
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /Users/Kyle/Desktop/m103-new/output/web.
+INFO    : discovering source file's directory name: /Users/Kyle/Desktop/m103-new/source
+INFO    : verifying and expanding input directory: /Users/Kyle/Desktop/m103-new/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/Kyle/Desktop/m103-new/generated-assets
+INFO    : verifying and expanding input directory: /Users/Kyle/Desktop/m103-new/source/../assets
+INFO    : input directory expanded to absolute path: /Users/Kyle/Desktop/m103-new/assets
+INFO    : discovering source file's directory name: /Users/Kyle/Desktop/m103-new/source
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /Users/Kyle/.ptx/2.40.2/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 8.1.1
+INFO    : Downloading Runestone Services, version 8.1.1
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /Users/Kyle/Desktop/m103-new/source/main.ptx to HTML in /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptx-g4p3su3f
+INFO    : XSL conversion of /Users/Kyle/Desktop/m103-new/source/main.ptx by /Users/Kyle/.ptx/2.40.2/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of /Users/Kyle/.ptx/2.40.2/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptx-g4p3su3f
+INFO    : Removing temporary directory /var/folders/n6/n642y1m14g7_wy5sv_qrzksh0000gn/T/ptx-wbov7vhd
+INFO    : 
+Finished build for target web. Run `pretext view web` to see the results.
+
+INFO    : 
+Success!  Built requested target(s) without errors.
+
+INFO    : 
