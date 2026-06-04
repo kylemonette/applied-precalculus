@@ -47,7 +47,7 @@ For each of the following, rewrite the linear function in slope-intercept form. 
 <exercise>
 <statement>
 <p>
-<m>\displaystyle h(t)=\frac{18t-5}{2}</m>
+<m>h(t)=\dfrac{18t-5}{2}</m>
 </p>
 </statement>
 
@@ -64,7 +64,7 @@ For each of the following, rewrite the linear function in slope-intercept form. 
 <exercise>
 <statement>
 <p>
-<m>\displaystyle m(x)=2(x-1)+2</m>
+<m>m(x)=2(x-1)+2</m>
 </p>
 </statement>
 
@@ -194,11 +194,11 @@ For each of the following, rewrite the linear function in slope-intercept form. 
 
 <exercisegroup>
 <title>Finding the Slope</title>
-    <introduction>
-        <p>
-           For each of the following, find the slope of the linear function corresponding to the information provided.
-        </p>
-    </introduction>
+<introduction>
+<p>
+    For each of the following, find the slope of the linear function corresponding to the information provided.
+</p>
+</introduction>
 
 <exercise>
 <statement>
@@ -269,9 +269,12 @@ For each of the following, rewrite the linear function in slope-intercept form. 
 Identify the slope and vertical intercept of each line. Then write an equation of the line.
 </p>
 
-<ol>
-<li>
+<sbsgroup widths="48% 48%" margins="0% 0%">
 
+<sidebyside>
+
+<figure xml:id="fig-ex_2_1_1">
+  <caption></caption>
 <image width="50%" xml:id="ex_2_1_1">
 <shortdescription>
 A short description.
@@ -293,10 +296,10 @@ y post scale = 0.8
 \end{tikzpicture}
 </latex-image>
 </image>
+</figure>
 
-</li>
-
-<li>
+<figure xml:id="fig-ex_2_1_2">
+  <caption></caption>
 <image width="50%" xml:id="ex_2_1_2">
 <shortdescription>
 A short description.
@@ -318,11 +321,14 @@ y post scale = 0.8
 \end{tikzpicture}
 </latex-image>
 </image>
+</figure>
 
-</li>
+</sidebyside>
  
 
-<li>
+<sidebyside>
+<figure xml:id="fig-ex_2_1_3">
+  <caption></caption>
 <image width="50%" xml:id="ex_2_1_3">
 <shortdescription>
 A short description.
@@ -344,11 +350,10 @@ y post scale = 0.8
 \end{tikzpicture}
 </latex-image>
 </image>
+</figure>
 
-</li>
-
-
-<li>
+<figure xml:id="fig-ex_2_1_4">
+  <caption></caption>
 <image width="50%" xml:id="ex_2_1_4">
 <shortdescription>
 A short description.
@@ -370,30 +375,29 @@ y post scale = 0.8
 \end{tikzpicture}
 </latex-image>
 </image>
+</figure>
 
-</li>
-
-</ol>
+</sidebyside>
+</sbsgroup>
 
 
 </statement>
 
 <solution>
 <p>
-    <ol>
-        <li>
-            slope: <m>0.5</m>; vertical intercept: <m>1</m>; equation: <m>y=0.5x+1</m>
-        </li>
-        <li>
-            slope: <m>-\frac{3}{2}</m>; vertical intercept: <m>-1</m>; equation: <m>y=-\frac{3}{2}x-1</m>
-        </li>
-        <li>
-            slope: <m>\frac{2}{3}</m>; vertical intercept: <m>0</m>; equation: <m>y=\frac{2}{3}x</m>
-        </li>
-        <li>
-            slope: <m>-\frac{2}{3}</m>; vertical intercept: <m>-1</m>; equation: <m>y=-\frac{2}{3}x-1</m>
-        </li>
-    </ol>
+<xref ref="fig-ex_2_1_1"/>: slope <m>0.5</m>; vertical intercept <m>1</m>; equation <m>y=0.5x+1</m>
+</p>
+
+<p>
+<xref ref="fig-ex_2_1_2"/>: slope <m>-\frac{3}{2}</m>; vertical intercept <m>-1</m>; equation <m>y=-\frac{3}{2}x-1</m>
+</p>
+
+<p>
+<xref ref="fig-ex_2_1_3"/>: slope <m>\frac{2}{3}</m>; vertical intercept <m>0</m>; equation <m>y=\frac{2}{3}x</m>
+</p>
+
+<p>
+<xref ref="fig-ex_2_1_4"/>: slope <m>-\frac{2}{3}</m>; vertical intercept <m>-1</m>; equation <m>y=-\frac{2}{3}x-1</m>
 </p>
 </solution>
 </exercise>
@@ -489,36 +493,6 @@ Line 1 is <m>y=3x+2</m>; Line 2 is <m>y=3x-1</m>; Line 3 is <m>y = 2</m>; Line 4
 </solution>
 
 </exercise>
-
-<!-- <exercise>
-  <title> Exercise Title </title>
-  <statement> Problem Statement </statement>
-  <feedback> General Feedback </feedback>
-  <cardsort>
-    <match>
-      <premise> Item 1 </premise>
-      <response> Target 1 </response>
-    </match>
-    <match>
-      <premise> Item 2 </premise>
-      <response> Target 2 </response>
-    </match>
-    <match>
-      <premise> Item 3a </premise>
-      <premise> Item 3b </premise>
-      <premise> Item 3c </premise>
-      <response> Target 3 </response>
-    </match>
-    <match>
-      <premise> Distractor Item </premise>
-    </match>
-    <match>
-      <response> Distractor Target </response>
-    </match>
-  </cardsort>
-</exercise> -->
-
-
 
 
 

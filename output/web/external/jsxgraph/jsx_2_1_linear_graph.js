@@ -10,12 +10,12 @@ showCopyright: false
 
 var bptx = board.create('glider',[0,1,board.defaultAxes.y],{attractToGrid: true, attractorDistance: 10, attractorunit: 'screen' , name: 'b', color: 'red', size: 3, fontSize: 16});
 
- var xptx = board.create('point',[1,2], {attractToGrid: true, attractorDistance: 10, attractorunit: 'screen' ,  name:'', color: 'red', size:3});
- var line2 = board.create("line",[bptx,xptx]);
- 
- const m = (xptx.Y() - bptx.Y()) / xptx.X();
- 
- const fmt = (v) => parseFloat(v.toFixed(2)).toString();
+var xptx = board.create('point',[1,2], {attractToGrid: true, attractorDistance: 10, attractorunit: 'screen' ,  name:'', color: 'red', size:3});
+var line2 = board.create("line",[bptx,xptx]);
+
+const m = (xptx.Y() - bptx.Y()) / xptx.X();
+
+const fmt = (v) => parseFloat(v.toFixed(2)).toString();
 
 // Build a single term (always includes sign)
 const buildTerm = (coef, variable) => {

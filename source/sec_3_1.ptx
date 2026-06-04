@@ -216,7 +216,12 @@ The graph of each quadratic function can be obtained by making a table of values
 <p>
 <ol>
 <li>
-<p></p>
+
+<p>
+The <m>y</m>-intercept is where the graph crosses the <m>y</m>-axis; this occurs at <m>y=3</m>. There are no <m>x</m>-intercepts, since the graph is located entirely above the <m>x</m>-axis.
+The <q>turning point</q> or vertex is the lowest point on the graph since this is an upward facing quadratic parabola; hence the vertex is <m>(1,2)</m>.
+</p>
+
 <image width="50%" xml:id="fig_3_1_2">
 <shortdescription>
 A short description.
@@ -236,15 +241,15 @@ xlabel=\(x\), ylabel=\(f(x)\),
 \end{tikzpicture}
 </latex-image>
 </image>
-<p>
-The <m>y</m>-intercept is where the graph crosses the <m>y</m>-axis; this occurs at <m>y=3</m>. There are no <m>x</m>-intercepts, since the graph is located entirely above the <m>x</m>-axis.
-The <q>turning point</q> or vertex is the lowest point on the graph since this is an upward facing quadratic parabola; hence the vertex is <m>(1,2)</m>.
-</p>
 </li>
 
 
 <li>
-<p></p>
+
+<p>
+The <m>y</m>-intercept of this quadratic function is <m>y=-3</m>. The graph crosses the <m>x</m>-axis at two points so there are two <m>x</m>-intercepts. Visual inspection reveals that the approximate values of <m>x</m> at which the <m>x</m>-intercepts are located are <m>x=-3.6</m> and <m>x=-0.4</m>. The vertex is the highest point on the graph since this is a downward facing quadratic parabola; hence the vertex is <m>(-2,5)</m>.
+</p>
+
 <image width="50%" xml:id="fig_3_1_3">
 <shortdescription>
 A short description.
@@ -265,15 +270,15 @@ xlabel=\(x\), ylabel=\(g(x)\),
 </latex-image>
 </image>
 
-<p>
-The <m>y</m>-intercept of this quadratic function is <m>y=-3</m>. The graph crosses the <m>x</m>-axis at two points so there are two <m>x</m>-intercepts. Visual inspection reveals that the approximate values of <m>x</m> at which the <m>x</m>-intercepts are located are <m>x=-3.6</m> and <m>x=-0.4</m>. The vertex is the highest point on the graph since this is a downward facing quadratic parabola; hence the vertex is <m>(-2,5)</m>.
-</p>
-
 </li>
 
 
 <li>
-<p></p>
+
+<p>
+The <m>y</m>-intercept of this function is <m>y=4</m>. The graph crosses the <m>x</m>-axis at one point only: <m>(2,0)</m>. Hence, <m>h(x)</m> has one horizontal intercept <m>x=2</m>. The vertex is the lowest point on the graph since this is an upward facing quadratic parabola; hence the vertex is <m>(2,0)</m>.
+</p>
+
 <image width="50%" xml:id="fig_3_1_4">
 <shortdescription>
 A short description.
@@ -294,9 +299,6 @@ xlabel=\(x\), ylabel=\(h(x)\),
 </latex-image>
 </image>
 
-<p>
-The <m>y</m>-intercept of this function is <m>y=4</m>. The graph crosses the <m>x</m>-axis at one point only: <m>(2,0)</m>. Hence, <m>h(x)</m> has one horizontal intercept <m>x=2</m>. The vertex is the lowest point on the graph since this is an upward facing quadratic parabola; hence the vertex is <m>(2,0)</m>.
-</p>
 </li>
 </ol>
 </p>

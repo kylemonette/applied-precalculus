@@ -54,7 +54,7 @@ When one first looks upon the function <md>f(x) = (x-1)^2 + 2</md> it may not im
 
 <p>
 Hence, <md>f(x) = (x-1)^2 + 2</md> can be written in the standard form of a quadratic function as <md>f(x) = x^2 - 2x + 3.</md>
-This is the same quadratic function that appeared in part (a) of <xref ref="exercise-ch3-graph-quads" /> where we saw that the vertex was <m>(\textcolor{red}{1}, \textcolor{blue}{2})</m>.
+This is the same quadratic function that appeared in <xref ref="exercise-ch3-graph-quads" /> where we saw that the vertex was <m>(\textcolor{red}{1}, \textcolor{blue}{2})</m>.
 Notice that these numbers appear in the alternate formula for
 <m>f(x) = x^2 - 2x + 3</m>: <md>f(x) = (x - \textcolor{red}{1})^2 + \textcolor{blue}{2}.</md>
 This is not a coincidence and brings us to the <alert>vertex form</alert> of a quadratic function.
@@ -68,6 +68,18 @@ The <alert>vertex form</alert> of a quadratic function with vertex <m>(\textcolo
 </p>
 </statement>
 </definition>
+
+
+
+<figure xml:id="fig_3_3_vertex_form">
+<interactive platform="jsxgraph" source="jsxgraph/jsx_3_3_vertex_form.js" width="60%">
+    <slate xml:id="jsx_3_3_vertex_form_fig" surface="jsxboard"/>
+    <instructions>
+        <p>Drag the vertex and change the value of <m>a</m> to see how the graph changes.</p>
+    </instructions>
+</interactive>
+</figure>
+
 
 <example>
 <statement>
