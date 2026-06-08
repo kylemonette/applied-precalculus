@@ -2,7 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="practice_1_1">
 <title>Practice Problems</title>
   
-<exercise label="ww-1.1.1">
+<exercise label="ww_1_1_1">
 <webwork><xi:include parse="text" href="pg/ww_1_1_1.pg"/></webwork>
 </exercise>
 
@@ -58,7 +58,7 @@
 
 
 
-<exercise label="ww-1.1.2">
+<exercise label="ww_1_1_2">
 <webwork><xi:include parse="text" href="pg/ww_1_1_2.pg"/></webwork>
 </exercise>
 

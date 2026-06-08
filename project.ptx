@@ -6,7 +6,6 @@
 <project ptx-version="2">
   <targets>
     <target name="web" format="html" source="main.ptx" publication="publication.ptx" xsl="pretext-html.xsl">
-    <!-- <stringparams debug.mathjax4="yes"/> -->
     <stringparams author.tools="yes"/>
     </target>
 

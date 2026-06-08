@@ -87,11 +87,11 @@
         </page>
 
         <!-- chapter 1 page breaks -->
-        <insertions pagebreaks="sec_1_2 sec_1_3 sec_1_4 sec_1_5"/>
+        <!-- <insertions pagebreaks="sec_1_2 sec_1_3 sec_1_4 sec_1_5"/> -->
         <!-- chapter 2 page breaks -->
-        <insertions pagebreaks="sec_2_2 sec_2_3"/>
+        <!-- <insertions pagebreaks="sec_2_2 sec_2_3"/> -->
         <!-- chapter 2 page breaks -->
-        <insertions pagebreaks="sec_3_2 sec_3_3 sec_3_4"/>
+        <!-- <insertions pagebreaks="sec_3_2 sec_3_3 sec_3_4"/> -->
 
     </latex>
   <!-- <latex> -->
