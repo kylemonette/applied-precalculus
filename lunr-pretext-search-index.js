@@ -154,18 +154,18 @@ var ptx_lunr_docs = [
   "body": "  Find the domain of each of the following functions.                Note that neither and are assigned any specific practical applied meaning. This means that the domain of each function will be all inputs for which the output is defined.     The function is defined at any input that does not lead to division by zero and undefined at any input that does lead to division by zero. To find the value(s) of for which is undefined, we set its denominator equal to zero and solve for :   We can now see that is undefined when and when . The domain of is all real numbers except for these two values. This can be written in a variety of different ways.   domain  set-builder notation  interval notation  union    Domain of in words:     Domain of in set-builder notation :     Domain of in interval notation : The symbol is called a union . Essentially, it means include all these intervals .         The function is defined provided the number under the radical is not negative. That is, it is defined for those values of satisfying that . We can isolate on one side of the inequality   which allows us to conclude that the domain of is all real numbers that are greater than or equal to . As before, this can be written in a variety of different ways.     Domain of in words:     Domain of in set-builder notation :     Domain of in interval notation :  Notice that we wrote and not to denote that is included in the domain.            "
 },
 {
-  "id": "ww-1.1.1",
+  "id": "ww_1_1_1",
   "level": "2",
-  "url": "sec_1_1.html#ww-1.1.1",
+  "url": "sec_1_1.html#ww_1_1_1",
   "type": "Exercise",
   "number": "1",
   "title": "",
   "body": "                                              "
 },
 {
-  "id": "ww-1.1.2",
+  "id": "ww_1_1_2",
   "level": "2",
-  "url": "sec_1_1.html#ww-1.1.2",
+  "url": "sec_1_1.html#ww_1_1_2",
   "type": "Exercise",
   "number": "2",
   "title": "",
