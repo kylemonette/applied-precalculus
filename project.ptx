@@ -4,17 +4,22 @@
 
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
 <project ptx-version="2">
-  <targets>
-    <target name="web" format="html" source="main.ptx" publication="publication.ptx" xsl="pretext-html.xsl">
-    <stringparams author.tools="yes"/>
-    </target>
+<targets>
 
-    <target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl">
+<target name="web" format="html" source="main.ptx" publication="publication.ptx" xsl="pretext-html.xsl">
+<stringparams author.tools="yes"/>
+</target>
+
+<target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl">
+<stringparams author.tools="yes"/>
+</target>
+
+<target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl">
 <stringparams draft="yes"/>
-    </target>
+</target>
 
-    <target name="runestone" publication="runestone.ptx" format="html" />
-  </targets>
+<target name="runestone" publication="runestone.ptx" format="html" />
+</targets>
 </project>
 
 <!-- SAMPLE MANIFEST illustrating all options. Defaults are given (mostly).              -->
