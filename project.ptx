@@ -6,7 +6,7 @@
 <project ptx-version="2">
 <targets>
 
-<target name="web" format="html" source="main.ptx" publication="publication.ptx" xsl="pretext-html.xsl">
+<target name="web" format="html" source="main.ptx" publication="publication.ptx" xsl="pretext-html.xsl" deploy-dir="web">
 <stringparams author.tools="yes"/>
 </target>
 
