@@ -10,7 +10,7 @@
 <stringparams author.tools="yes"/>
 </target>
 
-<target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl">
+<target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl" deploy-dir="supplement">
 <stringparams author.tools="yes"/>
 </target>
 
