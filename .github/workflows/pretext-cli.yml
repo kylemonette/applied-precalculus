@@ -30,7 +30,6 @@ jobs:
             - name: install deps
               run: |
                 pip install -r requirements.txt
-                pip install "pelican[markdown]"
 
             - name: set up node
               uses: actions/setup-node@v4
