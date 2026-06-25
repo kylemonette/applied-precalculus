@@ -19,10 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
-hasWebworkReps: true,
+hasWebworkReps: false,
 hasSage: false,
 isReact: false,
 htmlPresentation: false,
@@ -67,7 +66,7 @@ eBookConfig.enable_chatcodes =  false;
 <!--*** Runestone Services ***-->
 <script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.2f713d2360adcee7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
-<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="apc" class="pretext book ignore-math">
@@ -112,7 +111,7 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
@@ -122,57 +121,28 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">About the Authors</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-chapter">
-<div class="toc-title-box"><a href="chapter_1.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Functions</span></a></div>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part_1.html" class="internal"><span class="title">Practice Worksheets</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_1.html" class="internal"><span class="title">Chapter 1</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec_1_1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Concept of a Function</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-4" class="internal"><span class="title">Functions in General</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-5" class="internal"><span class="title">Functions in Applied Settings</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-6" class="internal"><span class="title">Increasing and Decreasing Functions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-7" class="internal"><span class="title">Functions as a Sequence of Operations</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_1.html#practice_1_1" class="internal"><span class="title">Practice Problems</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_1.html#ex_1_1" class="internal"><span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_1_1.html#ws_1_1" class="internal"><span class="title">Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_1" class="internal"><span class="title">1.1 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_2" class="internal"><span class="title">1.2 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_3" class="internal"><span class="title">1.3 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_4" class="internal"><span class="title">1.4 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_5" class="internal"><span class="title">1.5 Practice Worksheet</span></a></div></li>
 </ul>
+</li></ul>
 </li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec_1_2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The Graph of a Function</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_2.html#sec_1_2-4" class="internal"><span class="title">Graphs of Increasing and Decreasing Functions</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_2.html#sec_1_2-5" class="internal"><span class="title">Vertical Line Test</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_2.html#ex_1_2" class="internal"><span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_1_2.html#ws_1_2" class="internal"><span class="title">Practice Worksheet</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec_1_3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Functions Given Numerically</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_3.html#ex_1_3" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_1_3.html#ws_1_3" class="internal"><span class="codenumber">1.3</span> <span class="title">Practice Worksheet</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec_1_4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Vertical and Horizontal Intercepts</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_4.html#ex_1_4" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_1_4.html#ws_1_4" class="internal"><span class="codenumber">1.4</span> <span class="title">Practice Worksheet</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec_1_5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Average Rate of Change</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_5.html#ex_1_5" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li>
-<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sec_1_5.html#ws_1_5" class="internal"><span class="codenumber">1.5</span> <span class="title">Practice Worksheet</span></a></div></li>
-</ul>
-</li>
-</ul>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part_2.html" class="internal"><span class="title">Exam Reviews</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="exam1.html" class="internal"><span class="title">Exam 1 Practice</span></a></div></li></ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="book" id="apc"><nav class="summary-links"><ul>
 <li><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></li>
-<li><a href="chapter_1.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Functions</span></a></li>
+<li><a href="part_1.html" class="internal"><span class="title">Practice Worksheets</span></a></li>
+<li><a href="part_2.html" class="internal"><span class="title">Exam Reviews</span></a></li>
 </ul></nav><div class="autopermalink" data-description="Book: Applied Precalculus"><a href="#apc" title="Copy heading and permalink for Book: Applied Precalculus" aria-label="Copy heading and permalink for Book: Applied Precalculus">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="frontmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
