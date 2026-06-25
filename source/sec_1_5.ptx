@@ -535,6 +535,6 @@ As <m>t</m> is the number of seconds after the ball is dropped, a negative answe
 
 
 <xi:include href="exercises/ex_1_5.ptx"/>
-<xi:include href="worksheet/ws_1_5.ptx"/>
+<!-- <xi:include href="worksheet/ws_1_5.ptx"/> -->
 
 </section>

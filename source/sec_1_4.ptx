@@ -462,6 +462,6 @@ x post scale = 1
 
 
 <xi:include href="exercises/ex_1_4.ptx"/>
-<xi:include href="worksheet/ws_1_4.ptx"/>
+<!-- <xi:include href="worksheet/ws_1_4.ptx"/> -->
 
 </section>

@@ -30,7 +30,7 @@
       <!--<projects level="2" />-->
       <!--<equations level="2" />-->
       <!--<footnotes level="2" />-->
-    <divisions level="2"/>
+    <divisions level="0"/>
   </numbering>
 
 

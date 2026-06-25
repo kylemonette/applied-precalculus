@@ -2,7 +2,8 @@
 
 <pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
   <!-- we first include a file which contains the docinfo element: -->
-  <xi:include href="./docinfo.ptx" />
+  <xi:include href="./docinfo-supplement.ptx" />
+
 
   <!-- <book xml:id="applied-precalculus"> -->
     <book xml:id="apc">
@@ -12,8 +13,34 @@
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
+    <part xml:id="part_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Practice Worksheets</title>
+
+    <chapter xml:id="chapter_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 1</title>
+
+    <xi:include href="worksheet/ws_1_1.ptx"/>
+    <xi:include href="worksheet/ws_1_2.ptx"/>
+    <xi:include href="worksheet/ws_1_3.ptx"/>
+    <xi:include href="worksheet/ws_1_4.ptx"/>
+    <xi:include href="worksheet/ws_1_5.ptx"/>
+
+    </chapter>
+
+    </part>
+
+
+
+
+    <part xml:id="part_2" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Exam Reviews</title>
+
+    <xi:include href="exam1.ptx"/>
+
+    </part>
+
     <!-- Include chapters -->
-    <xi:include href="./ch-1.ptx" />
+    <!-- <xi:include href="./ch-1.ptx" /> -->
     
 
   </book>

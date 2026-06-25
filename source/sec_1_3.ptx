@@ -535,6 +535,6 @@ As we study various families of functions, we will develop more systematic metho
 
 
 <xi:include href="exercises/ex_1_3.ptx"/>
-<xi:include href="worksheet/ws_1_3.ptx"/>
+<!-- <xi:include href="worksheet/ws_1_3.ptx"/> -->
 
 </section>

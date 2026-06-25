@@ -756,7 +756,7 @@ In an abstract setting, when variables are not associated any specific real-life
 
 <xi:include href="practice/pr_1_1.ptx" />
 <xi:include href="exercises/ex_1_1.ptx"/>
-<xi:include href="worksheet/ws_1_1.ptx"/>
+<!-- <xi:include href="worksheet/ws_1_1.ptx"/> -->
 
 </section>
 

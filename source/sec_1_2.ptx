@@ -688,6 +688,6 @@ We will revisit graphs of functions in Section 1.4.
 </subsection>
 
 <xi:include href="exercises/ex_1_2.ptx"/>
-<xi:include href="worksheet/ws_1_2.ptx"/>
+<!-- <xi:include href="worksheet/ws_1_2.ptx"/> -->
 
 </section>
