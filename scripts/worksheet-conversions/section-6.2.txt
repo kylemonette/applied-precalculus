@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{6.2}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+\question Use properties of the logarithm to rewrite each expression in terms of $\log x$ and $\log y$ or state that this is not possible.
+
+\begin{parts}
+\part $\log(xy^4)$
+
+\begin{solution}[6em]
+\[
+\log (xy^4) \quad = \quad \log (x) + \log (y^4) \quad = \quad \log (x) + 4 \log (y)
+.\] 
+\end{solution}
+
+\part $\log (\frac{3x^2}{y})$
+
+\begin{solution}[8em]
+\[
+\log \pbr{\frac{3x^2}{y}} \quad = \quad \log (3x^2) - \log (y) \quad = \quad \log (3) + \log (x^2) - \log (y) \quad = \quad \log (3) + 2\log (x) - \log (y)
+.\] 
+\end{solution}
+
+\part $\log (x-y^4)$
+
+\begin{solution}[6em]
+There is no rule for subtracting inside of a logarithm, so nothing else can be done here.
+\end{solution}
+
+\part $\log(\sqrt[3]{xy})$
+
+\begin{solution}[8em]
+Recall that $\sqrt[3]{xy} = (xy)^{1 /3} $. Therefore
+\[
+\log \pbr{\sqrt[3]{xy} } \quad = \quad \log \pbr{(xy)^{1 /3}} \quad = \quad \frac{1}{3} \log (xy) \quad = \quad \frac{1}{3}\pbr{\log (x) + \log (y)}    
+.\] 
+\end{solution}
+
+\part $\log(\frac{1}{x^3y})$
+
+\begin{solution}[8em]
+\[
+\log \pbr{\frac{1}{x^3y}}  \quad = \quad \log (1) - \log (x^3y) \quad = \quad 0 - \pbr{\log (x^3) + \log (y)} \quad = \quad -3\log (x) - \log (y)
+.\] 
+\end{solution}
+
+\end{parts}
+
+\question Write each expression as a single logarithm.
+
+\begin{parts}
+\part $\log_9(2)-2\log_9(5)$
+
+\begin{solution}[8em]
+Moving the coefficient $2$ inside the second logarithm, then we have
+\[
+\log _9(2) - \log_9(5^2) \quad = \quad \log _9\pbr{\frac{2}{25}} 
+.\] 
+\end{solution}
+
+\part $2\log_3(x)+12\log_5(y)$
+
+\begin{solution}[8em]
+These cannot be combined or simplified any further because the two logarithms have different bases. Indeed, the formulas we learned in section 6.2 only apply if the bases of all the logarithms involved are the same.
+\end{solution}
+
+\part $\log(x)+\frac{\log(y)}{2}+\frac{\log(z)}{3}$
+
+\begin{solution}[10em]
+\begin{align*}
+\log(x)+\frac{\log(y)}{2}+\frac{\log(z)}{3} & \quad = \quad \log (x) + \frac{1}{2} \log (y) + \frac{1}{3} \log (z) \\
+& \quad = \quad \log (x) + \log (y^{1 /2}) + \log (z ^{1 /3}) \\
+& \quad =\quad \log (x) + \log (\sqrt{y} ) + \log (\sqrt[3]{z})\\
+& \quad = \quad \log (x \sqrt{y} \sqrt[3]{z})  
+\end{align*}
+\end{solution}
+
+\part $\log_3(12)-\log_3(7)+4\log_3(z)$
+
+\begin{solution}[10em]
+\begin{align*}
+\log_3(12)-\log_3(7)+4\log_3(z) & \quad = \quad \log_3(12) - \log_3(7) + \log_3(z^4) \\
+& \quad = \quad \log_3 \pbr{\frac{12}{7}} + \log_3(z^4) \\
+& \quad = \quad \log_3\pbr{\frac{12}{7}z^4} 
+\end{align*}
+\end{solution}
+
+\end{parts}
+
+
+
+\question Use the natural logarithm or the common logarithm to solve each equation.
+
+\ifprintanswers
+\begin{framed}
+\textcolor{red}{\bf REMARK:} We note that the following solutions were done with the natural logarithm, $\ln $. You could have done the common logarithm, $\log $, (base $10$), and the only difference would be that instead of writing $\ln $ as below you would write $\log $. Your final answers for $x$ should be the same. We advise you use the logarithm that your calculator can compute. For example, if your calculator can only do the natural logarithm, you should be using that.
+\end{framed}
+\else
+\fi
+
+\begin{parts}
+\part $4^z=15$
+
+\begin{solution}[10em]
+Taking the natural logarithm of both sides yields $\ln (4^z) = \ln (15)$. Then, we can move the exponent $z$ out to get $z \ln (4) = \ln (15)$. Lastly, divide by $\ln (4)$ to get
+\[
+z = \frac{\ln (15)}{\ln (4)}  = 1.95345
+.\] 
+\end{solution}
+
+\part $5\cdot3^x-35=0$
+
+\begin{solution}[10em]
+Add $35$ to both sides to get $5\cdot 3^x = 35$ and then divide by $5$ to get
+\[
+3^x = 7
+.\] Now, take the natural logarithm of both sides to obtain $\ln (3^x) = \ln (7)$ which we simplify as $x\ln (3) = \ln (7)$. Finally,
+\[
+x = \frac{\ln (7)}{\ln (3)}  = 1.77124
+.\] 
+\end{solution}
+
+\part $6^x=2^{x-3}$
+
+\begin{solution}[18em]
+Begin by taking the natural logarithm of both sides:
+\[
+\ln (6^x) = \ln (2^{x-3})
+.\] On the left we can move the $x$ in front, and on the right we can move the whole $x-3$ term in front:
+\[
+x\ln (6) = (x-3)\ln (2)
+.\] Distributing the right side yields $x\ln (6) = x\ln (2) - 3\ln (2)$. Now we want to move the $x\ln (2)$ term to the left side; the goal being to have all $x$ terms on one side. Subtracting $x\ln (2)$ to both sides,
+\[
+x\ln (6) - x\ln (2) = -3\ln (2)
+.\] Factoring out $x$ on the left,
+\[
+x\pbr{\ln (6) - \ln (2)} = -3\ln (2)
+\] and then dividing both sides by $\ln (6)-\ln (2)$ gives us
+\[
+x = \frac{-3\ln (2)}{\ln (6)-\ln (2)} = -1.89279
+.\]  
+\end{solution}
+
+\part $120\cdot1.06^t=210\cdot1.02^t$
+
+\begin{solution}[18em]
+Taking the natural logarithm of both sides,
+\[
+\ln (120 \cdot 1.06^t) = \ln (210 \cdot 1.02^t)
+.\] Expanding both sides,
+\[
+\ln (120) + \ln (1.06^t) = \ln (210) + \ln (1.02^t)
+\] and then moving the exponent to the front gives us
+\[
+\ln (120) + t \ln (1.06) = \ln (210) + t \ln (1.02)
+.\] Now we move the $t \ln (1.02)$ term to the left side by subtracting it over, so that we have all instances of the variable $t$ on one side. That is,
+\[
+\ln (120) + t\ln (1.06) - t\ln (1.02) = \ln (210)
+.\] Now subtracting the $\ln (120)$ term from both sides we get 
+\[
+t\ln (1.06) - t\ln (1.02) =\ln (210) - \ln (120) \quad \implies \quad t \pbr{\ln (1.06)-\ln (1.02)}  = \ln (210) - \ln (120)
+.\] Now, solving for $t$ yields
+\[
+t = \frac{\ln (210)-\ln (120)}{\ln (1.06)-\ln (1.02)} = 14.5482
+.\] 
+\end{solution}
+
+\part $2149(1.045)^y=8200$
+
+\begin{solution}[15em]
+Begin by dividing both sides by $2149$ to get
+\[
+1.045^y = \frac{8200}{2149} 
+.\] Take the logarithm of both sides:
+\[
+\ln (1.045^y) = \ln \pbr{\frac{8200}{2149}} \quad \implies \quad y \ln (1.045) = \ln \pbr{\frac{8200}{2149} } 
+.\] Solving for $y$ gives us
+\[
+y = \frac{\ln \pbr{\frac{8200}{2149} } }{\ln (1.045)} = 30.42313
+.\] 
+\end{solution}
+
+\part $60(3)^x=25(2)^x$
+
+\begin{solution}
+Dividing both sides by $60$ yields
+\[
+3^x = \frac{25}{60}\cdot 2^x
+.\] One approach is to proceed as in part (d) above. Another is to divide both sides by $2^x$ which gives us
+\[
+\frac{3^x}{2^x}  = \frac{25}{60} 
+\] and then we can write the left side as one exponential function as in
+\[
+\pbr{\frac{3}{2}} ^x = \frac{25}{60}
+.\] Now, to solve this we take the logarithm of both sides as usual:
+\[
+\ln \pbr{\pbr{\frac{3}{2}}^x} = \ln \pbr{\frac{25}{60}}  \quad \implies \quad x \ln \pbr{\frac{3}{2}} = \ln \pbr{\frac{25}{60}}  
+.\]  Therefore
+\[
+x = \frac{\ln (25 /60)}{\ln (3 /2)} = -2.15917 
+.\] 
+\end{solution}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,416 @@
+
+
+\noindent In \exrange{exercise-4.4.1}{exercise-4.4.6}, determine whether a given function is a power function. If yes, identify the coefficient <m>k</m> and the exponent <m>p</m>. If not, say so.
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.4.1}
+<m>\displaystyle y= \frac{\sqrt{x^3}}{0.1x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=10x^{1/2}</m>; <m>k=10</m>; <m>p=\frac{1}{2}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y= \frac{\sqrt{0.01x^3}}{\sqrt{x}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=0.1x</m>; <m>k=0.1</m>; <m>p=1</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle g(x)=\frac{x^{\frac{5}{3}}}{4x^{\frac{1}{4}}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=\frac{1}{4}x^{17/12}</m>; <m>k=\frac{1}{4}</m>; <m>p=\frac{17}{12}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle h(x)=2x^{\frac{3}{2}}-x^{-2}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Not a power function.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=\sqrt{\frac{x^5}{9x}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=\frac{1}{3}x^2</m>; <m>k=\frac{1}{3}</m>; <m>p=2</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.4.6}
+<m>\displaystyle f(x)=(\sqrt{2^x})^2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Not a power function.
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Four power functions <m>y=kx^p</m> are graphed below, where <m>p</m> is a negative integer. In each of the graphs, is the exponent <m>p</m> even or odd? Is the coefficient <m>k</m> positive or negative?
+
+\noindent
+\begin{tabular}{cccc}
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:-0.1] {1/x};
+\addplot[domain=0.1:2.5] {1/x};
+\end{axis}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-3:-0.5] {-1/x^2};
+\addplot[domain=0.5:3] {-1/x^2};
+\end{axis}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:-0.1] {-1/x};
+\addplot[domain=0.1:2.5] {-1/x};
+\end{axis}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-3:-0.5] {1/x^2};
+\addplot[domain=0.5:3] {1/x^2};
+\end{axis}
+\end{tikzpicture} \\
+(a) & (b) & (c) & (d)
+\end{tabular}
+</p>
+</statement>
+
+<solution>
+<p>
+(a) <m>p</m> is odd; <m>k</m> is positive.
+(b) <m>p</m> is even; <m>k</m> is negative.
+(c) <m>p</m> is odd; <m>k</m> is negative.
+(d) <m>p</m> is even; <m>k</m> is positive.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+Which of the following is a graph of <m>f(x)=-2x^{-5}</m>?
+
+\begin{tabular}{ccc}
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-3:-0.5] {-1/x^2};
+\addplot[domain=0.5:3] {-1/x^2};
+\end{axis}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-3:-0.5] {1/x^2};
+\addplot[domain=0.5:3] {1/x^2};
+\end{axis}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:-0.1] {-1/x};
+\addplot[domain=0.1:2.5] {-1/x};
+\end{axis}
+\end{tikzpicture} \\
+(a) & (b) & (c)
+\end{tabular}
+</p>
+</statement>
+
+<solution>
+<p>
+(c)
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+Which of the following is a graph of <m>f(x)=2x^{-4}</m>?
+
+\begin{tabular}{ccc}
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-3:-0.5] {1/x^2};
+\addplot[domain=0.5:3] {1/x^2};
+\end{axis}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-3:3] {x^2};
+\end{axis}
+\end{tikzpicture}
+&
+\begin{tikzpicture}[scale=0.5]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=-2.5:-0.1] {1/x};
+\addplot[domain=0.1:2.5] {1/x};
+\end{axis}
+\end{tikzpicture} \\
+(a) & (b) & (c)
+\end{tabular}
+</p>
+</statement>
+
+<solution>
+<p>
+(a)
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+Below you see graphs of the functions <m>\displaystyle y=x^{\frac{1}{2}}</m>,   <m>\displaystyle y=2x^{\frac{1}{2}}</m>, and <m>\displaystyle y=-x^{\frac{1}{2}}</m>. Decide which is which.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=-0.5,xmax=3,
+ymin=-3,ymax=3,
+legend pos = south east,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel={}, ylabel={},
+]
+\addplot[domain=0:3] {2*sqrt(x)};
+\addlegendentry{A}
+\addplot[domain=0:3,red] {sqrt(x)};
+\addlegendentry{B}
+\addplot[domain=0:3,orange] {-sqrt(x)};
+\addlegendentry{C}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+</statement>
+
+<solution>
+<p>
+Graph A is <m>y=2 x^{1/2}</m>, graph B is <m>y=x^{1/2}</m>, and graph C is <m>y=-x^{1/2}</m>.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+Find a formula for a power function <m>f(x)=kx^p</m> given numerically by:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+$x$ & $0$ & $1$ & $2$ & $3$ & $5$ \\\hline
+$f(x)$ & $0$ & $3$ & $3\sqrt{2}$ & $3\sqrt{3}$ & $3\sqrt{5}$ \\\hline
+\end{tabular}
+\end{center}
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=3x^\frac{1}{2}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+Find a formula for a power function <m>g(x)=kx^p</m> given numerically by: 
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+$x$  & $0$ & $1$ & $2$ & $3$ & $5$ \\\hline
+$g(x)$ & undefined & $2$ & $1$ & $\frac{2}{3}$ & $\frac{2}{5}$ \\\hline
+\end{tabular}
+\end{center}
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=2x^{-1}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+Consider a pendulum depicted below\footnote{Modified from a public domain image at https://en.wikipedia.org/wiki/Pendulum, accessed: 7/8/20}:
+
+\begin{center}
+\includegraphics[scale=0.2]{exercise-4.4-pendulum.png}
+\end{center}
+
+When the pendulum is displaced sideways from its resting position---called the equilibrium position---the force due to gravity will cause the pendulum to oscillate back and forth about the equilibrium position. The time, <m>T</m>, needed to execute one full cycle---a left swing and the right swing---is called the pendulum's period. The period <m>T</m> depends on the length <m>L</m> of the pendulum\footnote{https://en.wikipedia.org/wiki/Pendulum, accessed: 7/8/20} and the local acceleration due to gravity <m>g</m>:
+<me>
+T=2\pi\sqrt{\frac{L}{g}}.
+</me>
+</p>
+<ol>
+<li>With <m>g</m> fixed, is <m>T</m> a power function of <m>L</m>? In other words, is <m>T=kL^p</m>? If yes, find the coefficient and the exponent.</li>
+<li>On the surface of the Earth, the acceleration due to gravity, <m>g</m>, is equal to <m>9.81\text{ m}/\text{sec}^2</m> where <m>m</m> stands for meters. Calculate the period of a pendulum of length <m>0.5 \text{ m}</m> that happily oscillates in Kingston, RI.</li>
+<li>An astronaut is standing on the surface of a faraway asteroid wondering about the acceleration due to gravity on the asteroid. The astronaut has a watch and a pendulum whose length is <m>0.3 \text{ m}</m>. The astronaut measures the period of the pendulum which turns out to be <m>5</m> seconds. What is the acceleration due to gravity on the asteroid?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <p>yes; <m>T=\dfrac{2\pi}{\sqrt{g}}L^\frac{1}{2}</m> where the coefficient is <m>\dfrac{2\pi}{\sqrt{g}}</m> and the exponent is <m>\frac{1}{2}</m>.</p>
+        </li>
+        <li>
+            approximately <m>1.42</m> seconds.
+        </li>
+        <li>
+            approximately <m>0.47 \text{ m}/\text{sec}^2</m>.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>

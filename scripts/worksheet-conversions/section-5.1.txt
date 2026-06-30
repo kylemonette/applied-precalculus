@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{5.1}
+\input{worksheetspreamble.tex}
+
+
+
+\begin{document}
+
+\begin{questions}
+\question Write each exponential function in the form $y=A\cdot b^t$. Then identify the initial value and growth factor.
+
+\begin{parts}
+\part $y=3(6)^{2t}$
+
+\begin{solution}[5em]
+We can write $y=3 (6^2)^t$ and so $y=3(36)^t$, meaning $A=3$ and $b=36$.
+\end{solution}
+
+\part $f(t)=6(0.5)^{t-1}$
+
+\begin{solution}[5em]
+Using exponent rules, $f(t)=6(0.5)^t (0.5)^{-1} = 6(0.5)^t \cdot 2 = 12 (0.5)^t$. Therefore $A=12$ and $b=0.5$.
+\end{solution}
+
+\part $g(t)=0.5\pbr{1-\dfrac{1.2}{6}}^{3t}$
+
+\begin{solution}[5em]
+We can simplify $1-\frac{1.2}{6} = 0.8$ and so $g(t)=0.5(0.8)^{3t}$. Then, $g(t)=0.5 (0.8^3)^t = 0.5(0.512)^t$ so $A=0.5$ and $b=0.512$.
+\end{solution}
+
+\part  $y=\sqrt{9(0.01)^t}$
+
+\begin{solution}[5em]
+Using exponent rules, $y=\sqrt{9} \cdot \sqrt{(0.01)^t} = 3 (0.01^t)^{1 /2}$. Then, $y=3 \pbr{0.01^{1 /2}}^t = 3 (0.1)^t$ so $A=3$ and $b=0.1$.
+\end{solution}
+
+\part $y=\dfrac{16(2)^t}{8(2)^{3t}}$
+
+\begin{solution}[5em]
+Using exponent rules, $y=\frac{16}{8} 2^{t-3t} = 2 \cdot 2^{-2t}$ and therefore $y=2 \cdot (2^{-2})^t = 2 \cdot (0.25)^t$. Therefore $A=2$ and $b=0.25$.
+\end{solution}
+
+\part $y=\pbr{(10)^2}^{-6t+1}$
+
+\begin{solution}[5em]
+Simplifying $10^2=100$ then $y=100^{-6t+1}$ which is $y=(100)^{-6t}\cdot 100 = (100^{-6})^t \cdot 100$. Thus $y=100 \cdot (100^{-6})^t$ and so $A=100$ and $b=100^{-6}$.
+\end{solution}
+
+
+\end{parts}
+
+
+\question Identify whether each exponential function represents exponential growth or exponential decay. Then identify the percent growth rate.
+
+\begin{parts}
+\part $y=1200(1.115)^t$
+
+\begin{solution}[7em]
+The growth factor is $b=1.115$ which is greater than $1$ so this describes exponential growth. The growth rate $r$ is $r=b-1=1.115-1 = 0.115 = 11.5\%$.
+\end{solution}
+
+\part $y=10(0.923)^x$
+
+\begin{solution}[9em]
+The growth factor is $b=0.923<1$ so this describes exponential decay. The growth rate is $r=b-1 = 0.923-1 = -0.077 = -7.7\%$.
+\end{solution}
+
+\part $f(x)=20(\sqrt{3})^x$
+
+\begin{solution}[7em]
+The growth factor is $b=\sqrt{3} =1.73205>1$ so this describes exponential growth. The growth rate is $r=b-1 = 1.73205-1 = 0.73205 = 73.205\%$.
+\end{solution}
+
+\part $P=50\pbr{\dfrac{3}{4}}^{-t}$
+
+\begin{solution}[7em]
+By noting that $\pbr{\dfrac{3}{4}} ^{-t} = \pbr{\dfrac{4}{3}} ^t$, then we have $P = 50 \pbr{\frac{4}{3}} ^t$. Thus the growth rate $b=\frac{4}{3}>1$ so this represents exponential growth. The growth rate is $r=b-1 = \frac{4}{3}-1 = 0.333 = 33.3 \%$.
+\end{solution}
+
+\part $y=\dfrac{300}{5(3)^x}$
+
+\begin{solution}[7em]
+We can simplify $y = \dfrac{300}{5} \cdot 3^{-x} = 60 \cdot \pbr{\dfrac{1}{3}} ^x$. The growth factor is $b=\frac{1}{3}<1$ so this represents exponential decay. The growth rate is $r=b-1  = \frac{1}{3}-1 = -\frac{2}{3} = -0.6666 = -66.6\%$.
+\end{solution}
+
+\part $Q=1000\pbr{1+\dfrac{0.05}{12}}^{12t}$.
+
+\begin{solution}[7em]
+We can write $Q = 1000 \pbr{1.00417} ^{12t}$ and so $Q = 1000 \pbr{(1.00417)^{12}} ^t = 1000 \pbr{1.0512} ^t$. Therefore the growth factor is $b=1.0512>1$ so this describes exponential growth. The growth rate is $r=b-1 = 1.0512-1 = 0.0512 = 5.12\%$.
+\end{solution}
+
+\end{parts}
+
+\question What is the growth factor that corresponds to a growth rate of $20\%$?
+
+\begin{solution}[5em]
+When $r=20\% = 0.2$ then $b=1+r = 1+0.2 = 1.2$ is the growth factor.
+\end{solution}
+
+
+\question What is the growth factor that corresponds to a decay rate of $15\%$?
+
+\begin{solution}[5em]
+When $r=-15\% = -0.15$ then $b=1+r = 1+(-0.15) = 1-0.15 = 0.85$ is the growth factor.
+\end{solution}
+
+
+\question What is the percent growth rate that corresponds to a growth factor of $0.925$?
+
+\begin{solution}[5em]
+When $b=0.925$ then $r=b-1 = 0.925 - 1 = -0.03 = -3\%$ is the percent growth rate.
+\end{solution}
+
+
+\question What is the percent growth rate that corresponds to a growth factor of $1.62$?
+
+\begin{solution}[5em]
+When $b=1.62$ then $r=b-1 = 1.62-1 = 0.62 = 62\%$ is the percent growth rate.
+\end{solution}
+
+
+\question Write an expression representing a population at time $t$ years if it is initially 2 million and shrinking at a rate of $3\%$ per year.
+
+\begin{solution}[7em]
+The initial value is $A=2000000$ and the growth rate is $r=-3\% = -0.03$ so $b=1+r = 1+(-0.03) = 0.97$. Hence
+\[
+y = 2000000 (0.97)^t
+.\] 
+\end{solution}
+
+
+\question Write an expression representing the quantity of pollutant in a lake if the initial amount is $Q_0$ and the amount of pollutant is growing at a rate of $2\%$ a year for $6$ years.
+
+\begin{solution}[7em]
+The growth rate is $r=2\% = 0.02$ so $b=1+r = 1.02$. The initial amount is $Q_0$, so
+\[
+y = Q_0 (1.02)^t
+.\] After $t=6$ years, then the amount of pollutant in the lake would be
+\[
+y = Q_0 (1.02)^6
+.\] 
+\end{solution}
+
+
+\end{questions}
+
+\end{document}

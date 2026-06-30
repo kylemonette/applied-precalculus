@@ -1,0 +1,239 @@
+
+
+<exercise>
+<introduction>
+<p>
+Use the table to find each of the following.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|} \hline
+$t$ & $-5$ & $0$ & $5$ & $10$ \\\hline
+$g(t)$ & $9$ & $-1$ & $9$ & $5$ \\\hline
+\end{tabular}
+\end{center}
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+<m>g(0)</m>
+</p>
+</statement>
+</task>
+<task>
+<statement>
+<p>
+<m>g(5)</m>
+
+<task workspace="1in">
+<statement>
+<p>
+The value(s) of <m>t</m> for which <m>g(t)=9</m>.
+</p>
+</statement>
+<solution>
+<p>
+From the table, <m>g(0)=-1</m>, <m>g(5)=9</m>, and lastly <m>t=-5</m> and <m>t=5</m> both satisfy <m>g(t)=9</m>.
+</p>
+</solution>
+</task>
+
+
+
+</exercise>
+</p>
+</statement>
+</task>
+<exercise>
+<introduction>
+<p>
+A function <m>f(x)</m> is given numerically below. Compute the following:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+$x$ & $0$ & $2$ & $4$ & $6$ & $8$ & $10$  \\\hline
+$f(x)$ & $1.5$ & $3.7$ & $1.5$ & $4.2$ & $1.5$ & $0$ \\\hline
+\end{tabular}
+\end{center}
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+<m>f(4)</m>
+</p>
+</statement>
+</task>
+<task>
+<statement>
+<p>
+<m>f(2)</m> 
+
+<task workspace="1in">
+<statement>
+<p>
+<m>f(8)</m>
+</p>
+</statement>
+<solution>
+<p>
+From the table, <m>f(4)=1.5</m>, <m>f(2)=3.7</m>, and <m>f(8)=1.5</m>.
+</p>
+</solution>
+</task>
+
+
+
+</exercise>
+</p>
+</statement>
+</task>
+<exercise>
+<introduction>
+<p>
+Let <m>f(x)</m> be the function in the previous problem.
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+Find all inputs <m>x</m> for which <m>f(x)=1.5</m>.
+</p>
+</statement>
+<solution>
+<p>
+When <m>f(x)=1.5</m> (can think of this as <m>y</m>, the second row in the table), then <m>x</m> could be <m>0</m>, <m>4</m>, and <m>8</m>.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+Find all inputs <m>x</m> for which <m>f(x)=3.7</m>.
+</p>
+</statement>
+<solution>
+<p>
+When <m>f(x)=3.7</m>, then <m>x</m> could only be <m>2</m>.
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Guess a formula for the function <m>g(x)</m> given numerically in the table below.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+$x$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ & $4$ \\\hline
+$g(x)$ & $-8$ & $-1$  & $0$ & $1$ & $8$ & $27$ & $64$ \\\hline
+\end{tabular}
+\end{center}
+</p>
+</statement>
+<solution>
+<p>
+Here, <m>g(x)=x^3</m>. Convince yourself that this formula works!
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Guess a formula for the function <m>h(t)</m> given numerically in the table below. Fill in the missing values.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
+$t$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ \\\hline
+$h(t)$ & $4$ & $2$ & $0$ & $-2$ & $-4$ & $-6$ & $-8$ & \hspace{2em} & \hspace{2em} \\\hline
+\end{tabular}
+\end{center}
+</p>
+</statement>
+<solution>
+<p>
+Notice that the inputs <m>t</m> go up by <m>1</m> each time. And, the outputs <m>h(t)</m> go down by <m>2</m> each time. Or, you can think of the outputs as being the inputs multiplied by <m>-2</m>.
+
+Therefore, <m>h(t)=-2t</m>. Thus <m>h(5)=-10</m> and <m>h(6)=-12</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+Here is the data for the world population (\href{https://www.worldometers.info/world-population/world-population-by-year/}{worldometers.info/world-population/world-population-by-year}) between 2010 and 2018, in billions:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
+Year & 2010 & 2011 & 2012 & 2013 & 2014 & 2015 & 2016 & 2017 & 2018 \\\hline 
+Population & 6.957 & 7.041  & 7.126& 7.211  & 7.296 & 7.380 & 7.464  & 7.548 & 7.631 \\\hline
+\end{tabular}
+\end{center}
+
+To study the population from the mathematical point of view, it is convenient to rewrite the data in terms of the independent variable <m>t</m> which stands for the number of years since 2010 and write the population, <m>P</m>, in billions, as a function <m>P=P(t)</m> of years since 2010. Based on the table above, fill in the missing values:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
+$t$ & 0 & 1 & \ifprintanswers \textcolor{red}{2} \else \hspace{3em} \fi & 3 & 4 & \ifprintanswers \textcolor{red}{5} \else \hspace{3em} \fi & 6 & 7 & 8 \\\hline
+$P(t)$ & 6.957 & 7.041  & \ifprintanswers \textcolor{red}{7.126} \else \hspace{3em} \fi & 7.211  & 7.296 & 7.380 & 7.464  & \ifprintanswers \textcolor{red}{7.548} \else \hspace{3em} \fi & 7.631 \\\hline
+\end{tabular}
+\end{center}
+</p>
+</statement>
+<solution>
+<p>
+The completed table is shown above.
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+A driver of an SUV fills up his gas tank and starts a highway trip to a faraway city. Let <m>G</m>, in gallons, be the amount of gas left in the tank after driving <m>d</m> miles. Of course <m>G</m> is a function of <m>d</m>; that is, <m>G=G(d)</m>. Here is partial data about the function:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
+$d$ & $0$ & $60$ & $120$ & $180$ & $240$ & $300$ & $360$ & $420$ & $480$ & $510$ \\\hline
+$G(d)$ & $17$ & $15$  & $13$ & $11$ & $9$ & $7$ & \ifprintanswers \textcolor{red}{5} \else \hspace{3em} \fi & \ifprintanswers \textcolor{red}{3} \else \hspace{3em} \fi & \ifprintanswers \textcolor{red}{1} \else \hspace{3em} \fi & \ifprintanswers \textcolor{red}{0} \else \hspace{3em} \fi \\\hline
+\end{tabular}
+\end{center}
+
+Find gas mileage of the SUV; that is, the number of miles the SUV gets per gallon. Fill in the missing numbers.
+</p>
+</statement>
+<solution>
+<p>
+Except for the last column when <m>d=510</m>, note that the miles <m>d</m> go up by <m>60</m> each time, and the gallons <m>G(d)</m> go down by <m>2</m> each time. Using these rules, the completed table is given above.
+
+Therefore, the car can drive <m>510</m> miles using <m>17</m> gallons of gas. Thus, the gas mileage is
+<me>
+\frac{510 \text{ miles} }{17 \text{ gallons} } \;=\; 30 \frac{\text{miles} }{\text{gallon} }  .
+</me>
+</p>
+</solution>
+</exercise>
+

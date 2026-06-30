@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{7.3}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+\question Let $f(x)=2x-1$, $g(x)=3x$, and $h(x)=x^2+1$. Find each of the following.
+
+\begin{parts}
+\part $f(g(x))$
+
+\begin{solution}[7em]
+\[
+f(g(x)) \quad = \quad f(3x) \quad =  \quad 2(3x)-1 \quad = \quad 6x-1
+.\] 
+\end{solution}
+
+\part $h(g(x))$
+
+\begin{solution}[7em]
+\[
+h(g(x)) \quad = \quad h(3x) \quad = \quad (3x)^2+1 \quad = \quad 9x^2+1
+.\] 
+\end{solution}
+
+\part $g(f(x))$
+
+\begin{solution}[7em]
+\[
+g(f(x)) \quad = \quad g(2x-1) \quad = \quad 3(2x-1) \quad= \quad 6x-3
+.\] 
+\end{solution}
+
+\part $f(g(-3))$
+
+\begin{solution}[7em]
+Option 1: Use the formula in part (a), plugging in $x=-3$. Then $f(g(-3)) = 6(-3)-1 = -19$.
+
+Option 2: Evaluate the composition directly. Since $g(-3)=-9$, then $f(g(-3)) = f(-9) = -19$.
+\end{solution}
+
+\part $f(h(7))$
+
+\begin{solution}[7em]
+Option 1: {\it Find the formula for $f(h(x))$ if you want!}
+
+Option 2: Evaluate the composition directly. Since $h(7) = 50$, then $f(h(7)) = f(50) = 2(50)-1=99$.
+\end{solution}
+
+\part $f(g(h(2)))$
+
+\begin{solution}[7em]
+Option 1: {\it Find the formula for $f(g(h(x)))$ if you want, but this is a LOT of work!}
+
+Option 2: (Recommended!) Evaluate the composition directly, working inside--out. Note that $h(2)=2^2+1=5$. Then, $g(h(2)) = g(5) = 3(5)=15$. Lastly, $f(g(h(2))) = f(15) = 2(15)-1=29$.
+\end{solution}
+
+\end{parts}
+
+
+
+\question Let $f(x)=-3x+7$ and $g(x)=2x^2-8$. Find the following.
+
+\begin{parts}
+\part $f(g(x))$
+
+\begin{solution}[9em]
+\[
+f(g(x)) \quad =\quad f(2x^2-8) \quad = \quad -3(2x^2-8)+7 \quad= \quad -6x^2+24+7 \quad = \quad -6x^2+31
+.\] 
+\end{solution}
+
+\part $g(f(x))$
+
+\begin{solution}[9em]
+\[
+g(f(x)) \quad = \quad  g(-3x+7) \quad = \quad 2(-3x+7)^2-8
+.\] If you wish, you may find it advantageous to practice expanding this out:
+\begin{align*}
+2(-3x+7)^2-8 & \quad = \quad 2(-3x+7)(-3x+7)-8 \\
+& \quad = \quad 2(9x^2-21x-21x+49)-8 \\
+& \quad = \quad 18x^2-84x+90
+\end{align*}
+\end{solution}
+
+\end{parts}
+
+\question Identify functions $f(x)$ and $g(x)$ to rewrite each of the following as a composition of the form $f(g(x))$.
+
+\begin{parts}
+\part $y=(4x+3)^2$
+
+\begin{solution}[7em]
+A good rule of thumb is that we want to choose the inner function --- in this case $g(x)$ --- to be the ``function you would put a number into first'' if you were evaluating the original function. So, here we could pick
+\[
+g(x) = 4x+3, \qquad f(x)=x^2
+.\] To check this, note that
+\[
+f(g(x)) \quad = \quad f(4x+3) \quad = \quad (4x+3)^2
+\] as desired. 
+\end{solution}
+
+\part $y=(x-1)^2+2(x-1)-8$
+
+\begin{solution}[7em]
+Here we can pick
+\[
+g(x) = x-1, \qquad f(x)=x^2+2x-8
+.\] Verify on your own that this works by computing $f(g(x))$.
+\end{solution}
+
+\part $y=\sqrt{x^2+7}$
+
+\begin{solution}[7em]
+Here we can pick
+\[
+g(x) = x^2+7, \qquad f(x)=\sqrt{x} 
+.\] Another correct choice is to pick
+\[
+g(x) = x^2, \qquad f(x) = \sqrt{x+7} 
+.\] 
+\end{solution}
+
+\part $y=\dfrac{1}{3x^7+2}$
+
+\begin{solution}[7em]
+Here we can pick
+\[
+g(x) = 3x^7 + 2, \qquad f(x)=\frac{1}{x}
+.\] Another correct choice is to pick
+\[
+g(x) = 3x^7, \qquad f(x) = \frac{1}{x+2}
+.\] Yet another is to use
+\[
+g(x) = x^7, \qquad f(x)=\frac{1}{3x+2}
+.\] 
+\end{solution}
+
+\end{parts}
+
+
+
+\end{questions}
+
+\end{document}

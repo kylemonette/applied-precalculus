@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{4.1}
+\input{worksheetspreamble.tex}
+
+\begin{document}
+
+\fullwidth{\noindent Simplify the following so that positive exponents remain}
+
+\begin{questions}
+
+\question $(x^2y^5)^0$
+
+\begin{solution}[5em]
+This expression equals $1$, since anything to the power $0$ is just $1$.
+\end{solution}
+
+
+\question $\pbr{\dfrac{x^{-3}}{xy^2}}^{-1}$
+
+\begin{solution}[10em]
+\begin{align*}
+\pbr{\dfrac{x^{-3}}{xy^2}}^{-1} & \quad = \quad \pbr{\frac{x^{-3-1}}{y^2} } ^{-1}\\
+& \quad = \quad \pbr{\frac{x^{-4}}{y^2}}^{-1}\\
+&\quad = \quad \frac{y^2}{x^{-4}} \\
+& \quad = \quad y^2x^4 
+\end{align*}
+{\it There are other avenues to take to get to this answer. You could have distributed the $-1$ power to the numerator and denominator first, for example.}
+\end{solution}
+
+
+\question $\dfrac{(x-y)^3}{x}$
+
+\begin{solution}[6em]
+This cannot be simplified any further using exponent rules.
+\end{solution}
+
+
+\question $(2x^2y^4)^3$
+
+\begin{solution}[6em]
+\[
+(2x^2y^4)^3 \quad=\quad 2^3(x^2)^3(y^4)^3 \quad = \quad 8 x^{2\cdot 3} y^{4\cdot 3} \quad = \quad 8 x^6 y^{12}
+.\] 
+\end{solution}
+
+
+\question $ \dfrac{x+y}{y}$
+
+\begin{solution}[4em]
+This cannot be simplified further using exponent rules. Namely, be sure not to cancel the $y$ from the numerator!
+\end{solution}
+
+
+\question $\pbr{\dfrac{\pi (x^{2})^6}{x^{2}y^{-4}}}^2$
+
+\begin{solution}[10em]
+\begin{align*}
+\pbr{\dfrac{\pi (x^{2})^6}{x^{2}y^{-4}}}^2 & \quad = \quad \pbr{\frac{\pi x^{12}}{x^2y^{-4}} } ^{2}\\
+& \quad = \quad \pbr{\frac{\pi x^{12-2}}{y^{-4}} } ^{2}\\
+& \quad = \quad \pbr{\frac{\pi x^{10}}{y^{-4}} } ^2\\
+& \quad = \quad \pbr{\pi x^{10}y^{4}} ^2\\
+& \quad = \quad \pi ^2 \cdot (x^{10})^2 \cdot (y^4)^2\\
+& \quad = \quad \pi ^2 x^{20} y^{8} 
+\end{align*}
+{\it There are other avenues to take to get to this answer. You could have distributed the $2$ power to the numerator and denominator first, for example.}
+\end{solution}
+
+
+\question $ \dfrac{x^2+y^3}{xy}$
+
+\begin{solution}[5em]
+This cannot be simplified further using exponent rules.
+\end{solution}
+
+
+
+
+\end{questions}
+
+\end{document}

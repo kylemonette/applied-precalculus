@@ -55,7 +55,7 @@ In this section, we will review the concepts of roots and radicals. Please note 
 </definition>
 
 <p>
-    For example, let <m>a = 4</m>, <m>n = 2</m>. The number <m>4</m> has two roots of order <m>2</m>: <m>y = 2</m> and <m>y = -2</m>. Of course, <m>2^2 = (-2)^2 = 4</m>. On the other hand, let <m>a = -4</m> and <m>n = 2</m>. The number <m>-4</m> has no roots of order <m>2</m>, since there are no numbers whose square is <m>-4</m>. We say that the square root of <m>-4</m> <em>does not exist</em>.
+    For example, let <m>a = 4</m>, <m>n = 2</m>. The number <m>4</m> has two roots of order <m>2</m>: <m>y = 2</m> and <m>y = -2</m>, since <m>2^2 = (-2)^2 = 4</m>. On the other hand, let <m>a = -4</m> and <m>n = 2</m>. The number <m>-4</m> has no roots of order <m>2</m>, since there are no numbers whose square is <m>-4</m>. We say that the square root of <m>-4</m> <em>does not exist</em>.
 </p>
 
 <p>
@@ -166,7 +166,7 @@ The order, <m>3</m>, is odd. Hence, there is only one root of order <m>3</m> of 
 
 <li>
 <p>
-A negative number <m>a = -81</m> has no roots of even orders and <m>4</m> is even. Hence, no roots.
+A negative number <m>a = -81</m> has no roots of even order, and <m>4</m> is even. Hence, <m>-81</m> has no roots of order <m>4</m>.
 </p>
 </li>
 
@@ -328,7 +328,7 @@ Let <m>a</m> be a given number and let <m>m</m> and <m>n</m> be positive integer
 </definition>
 
 <p>
-    Note that <m>\sqrt[n]{a}</m> exists unless <m>n</m> is even and <m>a</m> is negative. The combination of negative radicands (numbers under radicals) and even roots and powers cause a lot of possible problems with the behavior of fractional exponents and Rules of Exponents are not always satisfied.
+    Note that <m>\sqrt[n]{a}</m> exists unless <m>n</m> is even and <m>a</m> is negative. The combination of negative radicands (numbers under radicals) with even roots causes a number of problems for the behavior of fractional exponents, and the Rules of Exponents do not always hold.
 </p>
 
 <p>

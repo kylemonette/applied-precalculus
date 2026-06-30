@@ -1,0 +1,233 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{6.3}
+\input{worksheetspreamble.tex}
+
+
+
+\begin{document}
+
+\ifprintanswers
+\begin{framed}
+\noindent \textcolor{red}{\bf REMARK:} We note that the following solutions were done with the natural logarithm, $\ln $. You could have done the common logarithm, $\log $, (base $10$), and the only difference would be that instead of writing $\ln $ as below you would write $\log $. Your final answers will be the same number. We advise you use the logarithm that your calculator can compute. For example, if your calculator can only do the natural logarithm, you should be using that.
+\end{framed}
+\else
+\fi
+
+\begin{questions}
+
+
+
+\question Find the doubling time (for increasing quantity) or the half-life (for decreasing quantity).
+
+\begin{parts}
+\part $y=150\cdot1.07^t$
+
+\begin{solution}[12em]
+The function is increasing, so we compute the doubling time. Setting the function to twice the initial value, then
+\[
+300 = 150 \cdot (1.07)^t
+.\] Dividing by the $150$ yields $2 = (1.07)^t$ and then taking the natural logarithm of both sides gives us
+\[
+\ln (2) = \ln (1.07^t) \quad \implies \quad \ln (2) = t \ln (1.07)
+.\] Therefore the doubling time is
+\[
+t = \frac{\ln (2)}{\ln (1.07)} = 10.24477 
+.\] 
+\end{solution}
+
+\part $y=63\cdot0.61^t$
+
+\begin{solution}[12em]
+This function is decreasing, so we compute the half-life. Setting the function to half its initial value, then
+\[
+31.5 = 63 \cdot (0.61)^t
+.\] Dividing by $63$ yields $\frac{1}{2} = (0.61)^t$ and then taking the natural logarithm of both sides gives us
+\[
+\ln (1 /2) = \ln (0.61^t) \quad \implies \quad \ln (1 /2) = t \ln (0.61)
+.\] Therefore the half-life is
+\[
+t = \frac{\ln (1 /2)}{\ln (0.61)}  = 1.40229
+.\] 
+\end{solution}
+
+
+\end{parts}
+
+\question An investment begins with $\$2500$ and earns $1.3\%$ per year.
+
+\begin{parts}
+\part What is the doubling time?
+
+\begin{solution}[16em]
+First, find the formula for the function. Because $A=2500$ and $r=1.3\% = 0.013$, then $b=1+r = 1.013$ and so
+\[
+y = 2500 (1.013)^t
+.\] To find the doubling time of this function, set it equal to twice the initial value. That is,
+\[
+5000 = 2500 (1.013)^t
+.\] Dividing by $2500$ yields $2 = (1.013)^t$. Then take the natural logarithm:
+\[
+\ln (2) = \ln (1.013^t) \quad \implies \quad \ln (2) = t \ln (1.013)
+.\] Therefore the doubling-time is
+\[
+t = \frac{\ln (2)}{\ln (1.013)}  = 53.66484 \quad \text{years} 
+.\] 
+\end{solution}
+
+\part How long does it take for the investment to triple?
+
+\begin{solution}[16em]
+Now we set the function equal to three times its initial value. That is,
+\[
+7500 = 2500 (1.013)^t
+.\] Dividing by $2500$ yields $3 = (1.013)^t$. Taking the natural logarithm,
+\[
+\ln (3) = \ln (1.013^t) \quad \implies \quad \ln (3) = t \ln (1.013)
+.\] Therefore the time it takes to triple is
+\[
+t = \frac{\ln (3)}{\ln (1.013)}  = 85.0567  \quad \text{years} 
+.\] 
+\end{solution}
+
+\end{parts}
+
+\question A radioactive substance decays exponentially. After $t=4$ days, there is $20$mg of the initial amount remaining and after $t=8$ days, there is $12$mg of the initial amount remaining. When will $20\%$ of the initial amount remain?
+
+\begin{solution}[30em]
+First, we find the formula for the function. Two points are given: $(4,20)$ and $(8,12)$. Using these, form two equations:
+\[
+20 = A \cdot b^4 \quad \text{and} \quad 12 = A\cdot b^8
+.\] Dividing them we get
+\[
+\frac{12}{20} = \frac{A\cdot b^8}{A\cdot b^4}  \quad \implies \quad \frac{3}{5} = b^4
+\] and so $b=\sqrt[4]{3 /5} = (3 /5)^{1 /4} $. Now, we can update the formula:
+\[
+y = A \cdot \pbr{\pbr{\frac{3}{5}}^{1 /4}}^t \quad \implies \quad y= A \cdot \pbr{\frac{3}{5}} ^{t /4}
+.\] Plugging in a point, say $(4,20)$, then
+\[
+20 = A \cdot \pbr{\frac{3}{5}}^{4 /4} \quad \implies \quad 20 = A \pbr{\frac{3}{5}}  \quad \implies \quad A = \frac{100}{3}
+.\] Now we know that the formula for the function is
+\[
+y = \frac{100}{3} \cdot \pbr{\frac{3}{5}} ^{t /4}
+.\] Now, note that $20\%$ of the original amount is $20\%$ of $\frac{100}{3}$ which is $0.2 \times \frac{100}{3}$. So we set the function equal to this number:
+\[
+0.2 \pbr{\frac{100}{3}} = \frac{100}{3} \cdot \pbr{\frac{3}{5}} ^{t /4}
+.\] Divide both sides by $\frac{100}{3}$:
+\[
+0.2 = \pbr{\frac{3}{5}} ^{t/4}
+.\] Take the natural logarithm of both sides:
+\[
+\ln (0.2) = \ln \pbr{\pbr{\frac{3}{5}} ^{t/4}} \quad \implies \quad \ln (0.2) = \frac{t}{4} \ln \pbr{\frac{3}{5}} 
+.\] Therefore 
+\[
+t = \frac{4\ln (0.2)}{\ln (3 /5)} = 12.6026 \quad\text{days}  
+.\] 
+\end{solution}
+
+
+
+\question A $24$kg sample of radioactive material loses $3\%$ of its mass every $8$ days.
+
+\begin{parts}
+\part What is the half-life?
+
+\begin{solution}[20em]
+Here, $A=24$ and $r=-3\% = -0.03$. So $b=1+r = 1+(-0.03) = 0.97$. Also, in the context of section 5.4, $T=8$ days here. Therefore the formula that describes this is
+\[
+y = A \cdot b^{t /T} = 24 \cdot (0.97)^{t /8}   
+.\] To find the half-life, set this function equal to half its initial value which is $12$ here. Therefore,
+\[
+12 = 24 \cdot (0.97)^{t /8}
+.\] Dividing by $24$ and then taking the natural logarithm,
+\[
+\ln \pbr{\frac{1}{2}} = \ln (0.97^{t /8}) \quad \implies \quad \ln \pbr{\frac{1}{2}}  = \frac{t}{8} \ln (0.97)
+.\] Therefore
+\[
+t = \frac{8 \ln (1 /2)}{\ln (0.97)}  = 182.0528 \quad \text{days} 
+.\] 
+\end{solution}
+
+
+\part How long will it take before the sample has shrunk to a weight of $2$ kg?
+
+\begin{solution}[9em]
+Using the formula in part (a), we set $y=2$ and solve for $t$. That is,
+\[
+2 = 24 \pbr{0.97} ^{t /8}
+.\] Dividing by $24$ and then taking the natural logarithm,
+\[
+\ln \pbr{\frac{1}{12}} = \ln (0.97^{t/8}) \quad \implies \quad \ln \pbr{\frac{1}{12}} = \frac{t}{8} \ln (0.97)
+.\] Solving for $t$ yields
+\[
+t = \frac{8\ln (1 /12)}{\ln (0.97)}  = 652.6519 \quad\text{days} 
+.\] 
+\end{solution}
+
+
+\end{parts}
+
+
+
+\question A rain forest's area is being reduced by $18\%$ every $9$ years. How long does it take for the rain forest to reach one-half of its starting area?
+
+\begin{solution}[20em]
+Here we have the growth rate $r=-18\% = -0.18$, so $b=1+r = 0.82$, and $T=9$ years. Therefore the formula that describes this is
+\[
+y = A \cdot b^{t /T} = A (0.82)^{t /9}
+.\] Note that we do not know $A$, nor have enough information to find it. But, it is actually not needed as the following will illustrate.
+
+To find the half-life, set the function to $\frac{1}{2}A$:
+\[
+\frac{1}{2}A = A (0.82)^{t /9} \quad \implies \quad \frac{1}{2} = (0.82)^{t /9}
+\] after dividing by $A$. Taking the natural logarithm,
+\[
+\ln \pbr{\frac{1}{2}}  = \ln (0.82^{t /9}) \quad \implies \quad \ln \pbr{\frac{1}{2}}  = \frac{t}{9} \ln (0.82)
+.\] Solving for $t$, we get
+\[
+t = \frac{9\ln (1 /2)}{\ln (0.82) } = 31.4351 \quad \text{years} 
+.\]  
+\end{solution}
+
+
+
+\question A population has a continuous growth rate of $12.3\%$. What is the population's doubling time?
+
+\begin{solution}
+Given that $k=12.3\% = 0.123$, then the function is
+\[
+y = A e^{0.123 t}
+\] where $A$ is unknown, but is not needed anyway. Setting the formula above to $2A$, then
+\[
+2A = A e^{0.123t}\quad \implies \quad 2 = e^{0.123 t}
+.\] Taking the natural logarithm of both sides yields
+\[
+\ln (2) = \ln (e^{0.123t}) \quad \implies \quad \ln (2) = 0.123t
+.\] Solving for $t$ gives us
+\[
+t = \frac{\ln (2)}{0.123} = 5.63534 \quad \text{years}
+.\]  
+\end{solution}
+
+
+\end{questions}
+
+\end{document}

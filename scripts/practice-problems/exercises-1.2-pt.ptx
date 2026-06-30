@@ -1,0 +1,608 @@
+
+<exercise>
+<statement>
+<p>
+Create a table of values and sketch the graph of the function <m>y=x^3</m> for <m>-2\leq x\leq 2</m>. Then use a graphing calculator or other graphing utility to check your graph.
+</p>
+</statement>
+
+<solution>
+<p>
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+$x$ & $-2$ & $-1$ & $0$ & $1$ & $2$ \\ \hline
+$y$ & $-8$ & $-1$ & $0$ & $1$ & $8$ \\\hline
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-2.5,xmax=2.5,
+ymin=-8.5,ymax=8.5,
+xtick={-2,-1,...,2},
+ytick={-8,-6,...,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=-2.5:2.5] {x^3};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Create a table of values and sketch the graph of the function <m>f(t)=t^2+t</m> for <m>-2\leq t\leq 1</m>. Then use your calculator or any other graphing utility to check your graph.
+</p>
+</statement>
+
+<solution>
+<p>
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|c|} \hline
+$t$ & $-2$ & $-1$ & $0$ & $1$  \\ \hline
+$f(t)$ & $2$ & $0$ & $0$ & $2$ \\\hline
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-2.5,xmax=1.5,
+ymin=-2.5,ymax=3.5,
+xtick={-2,-1,...,2},
+ytick={-2,...,3},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=-2.5:1.5] {x^2+x};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Create a table of values and sketch the graph of the function <m>g(x)=\sqrt{x}</m> for <m>x\geq 0</m>. Then use a graphing calculator or other graphing utility to check your graph.
+</p>
+</statement>
+
+<solution>
+<p>
+\begin{minipage}{0.5\textwidth}
+\begin{tabular}{|c|c|c|c|c|} \hline
+$x$ & $0$ & $1$ & $4$ & $9$  \\ \hline
+$g(x)$ & $0$ & $1$ & $2$ & $3$ \\\hline
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=9.5,
+ymin=0,ymax=3.5,
+xtick={0,...,9},
+ytick={0,...,3},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=0:9.5] {x^(1/2)};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+The total cost of a meal in a restaurant, <m>C</m>, in dollars, as a function of the price of the meal, <m>p</m>, in dollars is given by:
+<me>
+C=p+0.20p
+</me>
+where the term <m>0.20p</m> corresponds to the <m>20\%</m> tip. Create a table of values and sketch the graph of the function <m>C=p+0.20p</m> for <m>10\leq p\leq 20</m>. Then use your calculator or any other graphing utility to check your graph.
+</p>
+</statement>
+
+<solution>
+<p>
+\begin{minipage}{0.55\textwidth}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline $p$ & $10$ & $12$ & $14$ & $16$ & $18$ & $20$
+\\\hline $C$ & $12$ & $14.4$ & $16.8$ & $19.2$ & $21.6$ & $24$
+\\\hline
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=both,
+xmin=9.5,xmax=20.5,
+ymin=11,ymax=24.5,
+xtick={10,12,14,16,18,20},
+ytick={12,14,16,18,20,22,24},
+minor tick={},
+xlabel=\(p\), ylabel=\(C\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=10:20] {x+0.2*x};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+<exercise xml:id="exercise-1.2-graph1>
+<statement>
+<p>
+Use the graph of the function <m>y=f(x)</m> below to estimate each of the following.
+
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-2.5,xmax=4.5,
+ymin=-11,ymax=11,
+xtick={-2,...,4},
+ytick={-10,-8,...,8,10},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=-2.5:4.5] {(x+2)*(x-1)*(x-4)};
+\end{axis}
+\end{tikzpicture}
+</p>
+<ol>
+<li><m>f(2)</m></li>
+<li><m>f(3)</m></li>
+<li><m>f(-1)</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>f(2) = -8</m>
+        </li>
+        <li>
+            <m>f(3) = -10</m>
+        </li>
+        <li>
+            <m>f(-1) = 10</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+For the function <m>y=f(x)</m> whose graph is given in Exercise~\ref{exercise-1.2-graph1}, estimate all values <m>x</m> for which <m>f(x)=0</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=-2</m>, <m>x=1</m>, and <m>x=4</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+For the function <m>y=f(x)</m> whose graph is given in Exercise~\ref{exercise-1.2-graph1}, estimate all values of <m>x</m> for which <m>f(x)=8</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x\approx -1.5</m>, <m>x=0</m>, and <m>x\approx 4.5</m>.
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+<exercise xml:id="exercise-1.2-graph2">
+<statement>
+<p>
+Use the graph of the function <m>y = f(t)</m> shown below to estimate each of the following.
+</p>
+<ol>
+<li><m>f(0)</m></li>
+<li><m>f(12)</m></li>
+<li><m>f(10)</m></li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>f(0)=9</m>
+        </li>
+        <li>
+            <m>f(12)=9</m>
+        </li>
+        <li>
+            <m>f(10)\approx 10.5</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+For the function <m>y = f(t)</m> whose graph is given in Exercise~\ref{exercise-1.2-graph2}, estimate all values of <m>t</m> for which <m>f(t) = 15</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>t=6</m> and <m>t=18</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+For the function <m>y = f(t)</m> whose graph is given in Exercise~\ref{exercise-1.2-graph2}, estimate all values of <m>t</m> for which <m>f(t) = 12</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>t=3</m>, <m>t=9</m>, <m>t=15</m>, and <m>t=21</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+A driver of a 2019 Toyota Corolla fills his gas tank and embarks on a highway trip. The amount of gas left in the tank, <m>G</m>, in gallons, is a function of the number of miles <m>m</m> driven, <m>G=g(m)</m>. Use the graph of <m>g(m)</m> given below to answer the following questions. 
+
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=600,
+ymin=0,ymax=14,
+xtick={100,200,300,400,528},
+ytick={0,...,12,13.2},
+% yticklabels={20,40,60,80,100,120},
+minor tick={},
+xlabel=\(m\text{ (miles)}\), ylabel=\(G\text{ (gallons)}\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=0:528] {13.2-(13.2/528)*x};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+<ol>
+<li>What is the fuel tank capacity of the 2019 Toyota Corolla?</li>
+<li>How much fuel is left after 200 miles?</li>
+<li>What happens after 528 miles?</li>
+<li>What is the fuel efficiency of the 2019 Toyota Corolla on the highway?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>13.2</m> gallons.
+        </li>
+        <li>
+            <m>8</m> gallons.
+        </li>
+        <li>
+            The gas tank is empty.
+        </li>
+        <li>
+            Approximately <m>40</m> miles per gallon.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise xml:id="exercise-1.2-caff">
+<statement>
+<p>
+The amount of caffeine remaining in the body, <m>C</m>, in milligrams, <m>t</m> hours after drinking a cup of coffee, <m>C=C(t)</m> is given by the graph below.
+
+
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=21,
+ymin=0,ymax=100,
+xtick={5,10,...,20},
+ytick={24,48,...,96},
+minor tick={},
+xlabel=\(t\text{ (hours)}\), ylabel=\(C\text{ (mg)}\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=0:20] {96*(1/2)^(x/5)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+<ol>
+<li>How much caffeine was absorbed into the bloodstream from the cup of coffee?</li>
+<li>How much caffeine is left after 5 hours? After 10 hours?</li>
+<li>Is the function <m>C(t)</m> increasing, decreasing or neither on the interval <m>t\geq 0</m>?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>96</m> mg.
+        </li>
+        <li>
+            After <m>5</m> hours, there are <m>48</m> mg left. After <m>10</m> hours, <m>24</m> mg.
+        </li>
+        <li>
+            Decreasing.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+A man deposited money into a savings account. His balance <m>B(t)</m>, in dollars, after <m>t</m> years is given by the graph below.
+
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=21,
+ymin=0,ymax=5,
+xtick={5,10,...,20},
+ytick={1,2,3,4},
+yticklabels={1000,2000,3000,4000},
+minor tick={},
+xlabel=\(t\text{ (years)}\), ylabel=\(B\text{ (dollars)}\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=0:21] {1*(2)^(x/10)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+<ol>
+<li>What was his initial deposit?</li>
+<li>How much money was in his account after 10 years? After 20 years?</li>
+<li>Is the function <m>B(t)</m> increasing, decreasing or neither in the interval <m>t\geq 0</m>?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>\$1000</m>.
+        </li>
+        <li>
+            After 10 years, <m>\$2000</m>. After 20 years, <m>\$4000</m>.
+        </li>
+        <li>
+            Increasing.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+Is the curve below the graph of a function <m>y=f(x)</m>? Explain your answer.
+
+
+
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[
+xmin=-1.1,xmax=1.1,
+ymin=-0.5,ymax=0.5,
+xtick={-1,-0.5,...,1},
+ytick={-0.4,-0.2,...,0.4},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot [data cs=polar,domain=0:180,samples=361] (\x,{sqrt(cos(2*x))});
+\addplot [data cs=polar,domain=0:180,samples=361] (\x,{-sqrt(cos(2*x))});
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+</statement>
+
+<solution>
+<p>
+No, because it fails the vertical line test (in many places!).
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+The graph of a function <m>y=f(x)</m> is given below. Use it to find the following.
+
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-4.5,xmax=4.5,
+ymin=-5,ymax=9,
+xtick={-4,...,4},
+ytick={-4,-2,...,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=-4:4] {x^2-4};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+<ol>
+<li>Estimate <m>f(0)</m>.</li>
+<li>Estimate all values of <m>x</m> for which <m>f(x)=0</m>.</li>
+<li>Estimate all values of <m>x</m> for which <m>f(x)=5</m>.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>f(0) = -4</m>.
+        </li>
+        <li>
+            <m>x=-2</m> and <m>x=2</m>.
+        </li>
+        <li>
+            <m>x=-3</m> and <m>x = 3</m>.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+For the function <m>y=f(t)</m> whose graph is depicted below, identify the intervals on the <m>t</m>-axis for which the function is increasing and for which the function is decreasing.
+
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=12.5,
+ymin=-1.5,ymax=3.5,
+xtick={0,...,12},
+ytick={-1,...,3},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=0:12] {2*sin(deg(2*pi/12 *x))+1};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+</statement>
+
+<solution>
+<p>
+Increasing on the intervals <m>(0,3) \cup (9,12)</m>. <em>Or, write as <m>0\lt t\lt 3</m> and <m>9\lt t\lt 12</m></em>.
+Decreasing on the interval <m>(3,9)</m>. <em>Or, write as <m>3\lt t \lt 9</m></em>.
+</p>
+</solution>
+</exercise>

@@ -47,12 +47,11 @@
 </definition>
 
 <p>
-<term>Note:</term> When <m>y</m> depends on <m>x</m> according to the formula <m>y = kx^p</m> we say that <m>y</m> is <term>directly proportional</term> (or proportional) to <m>x^p</m> with the coefficient of proportionality <m>k</m>
- If <m>\displaystyle y = \frac{k}{x^p}</m>, we say that <m>y</m> is <term>inversely proportional</term> to <m>x^p</m> with the coefficient of proportionality <m>k</m>. So power functions express proportionality of the dependent variable to powers of the independent variable.
+<term>Note:</term> When <m>y</m> depends on <m>x</m> according to the formula <m>y = kx^p</m>, we say that <m>y</m> is <term>directly proportional</term> (or proportional) to <m>x^p</m> with the coefficient of proportionality <m>k</m>. If <m>\displaystyle y = \frac{k}{x^p}</m>, we say that <m>y</m> is <term>inversely proportional</term> to <m>x^p</m> with the coefficient of proportionality <m>k</m>. So power functions express proportionality of the dependent variable to powers of the independent variable.
 </p>
 
 <p>
-    As the title suggests in this section we look at the case when the exponent <m>p</m> is a positive integer.
+    As the title suggests, in this section we look at the case when the exponent <m>p</m> is a positive integer.
 </p>
 
 <example>

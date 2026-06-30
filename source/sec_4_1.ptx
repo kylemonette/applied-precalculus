@@ -228,13 +228,13 @@ The properties of exponents listed above follow very easily from our definitions
 
 <li>
 <p>
-    Let's begin by simplifying the expression under the power <m>-3</m> using <xref ref="int-exps-prop4" />: <md>\left( \frac{x^2 y^5}{x^4} \right)^{-3} = \left( \frac{y^5}{x^2} \right)^{-3}.</md> Now we use <xref ref="int-exps-prop8" /> and then <xref ref="int-exps-prop7" />: <md>\left( \frac{y^5}{x^2} \right)^{-3} = \left( \frac{x^2}{y^5} \right)^{3} = \frac{(x^2)^3}{(y^5)^3} = \frac{x^6}{y^{15}}.</md>
+    We begin by simplifying the expression under the power <m>-3</m> using <xref ref="int-exps-prop4" />: <md>\left( \frac{x^2 y^5}{x^4} \right)^{-3} = \left( \frac{y^5}{x^2} \right)^{-3}.</md> Now we use <xref ref="int-exps-prop8" /> and then <xref ref="int-exps-prop7" />: <md>\left( \frac{y^5}{x^2} \right)^{-3} = \left( \frac{x^2}{y^5} \right)^{3} = \frac{(x^2)^3}{(y^5)^3} = \frac{x^6}{y^{15}}.</md>
 </p>
 </li>
 
 <li>
 <p>
-    Let's simplify the expression under the power <m>-1</m> using <xref ref="int-exps-prop2" />: <md>\left( \frac{x^{-2} y^5}{x^{-3} y^2} \right)^{-1} = \left( \frac{x^{3} y^5}{x^{2} y^2} \right)^{-1}.</md> By <xref ref="int-exps-prop4" /> and then <xref ref="int-exps-prop2" />: <md>\left( \frac{x^{3} y^5}{x^{2} y^2} \right)^{-1} = (x y^3)^{-1} = \frac{1}{x y^3}.</md>
+    We simplify the expression under the power <m>-1</m> using <xref ref="int-exps-prop2" />: <md>\left( \frac{x^{-2} y^5}{x^{-3} y^2} \right)^{-1} = \left( \frac{x^{3} y^5}{x^{2} y^2} \right)^{-1}.</md> By <xref ref="int-exps-prop4" /> and then <xref ref="int-exps-prop2" />: <md>\left( \frac{x^{3} y^5}{x^{2} y^2} \right)^{-1} = (x y^3)^{-1} = \frac{1}{x y^3}.</md>
 </p>
 </li>
 

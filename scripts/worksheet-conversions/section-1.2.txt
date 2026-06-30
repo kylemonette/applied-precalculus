@@ -1,0 +1,332 @@
+
+\question Create a table of values and sketch the graph of the function $y=x^3$ for $-2\leq x\leq 2$. Then use your calculator or any other graphing utility to check your graph.
+
+
+\begin{solution}[16em]
+\begin{minipage}{0.4\textwidth}
+\centering
+\begin{tabular}{c|r}
+$x$ & $y=x^3$ \\\hline
+$-2$ & $(-2)^3=-8$\\\hline
+$-1$ & $(-1)^3=-1$\\\hline
+$0$ & $0^3=0$\\\hline
+$1$ & $1^3 = 1$\\\hline
+$2$ & $2^3 = 8$
+\end{tabular} 
+\end{minipage} \hfill
+\begin{minipage}{0.6\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+xmin=-3,xmax=3,
+ymin=-9,ymax=9,
+xtick={-2,-1,1,2},
+ytick={-8,-6,-4,-2,2,4,6,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-2:2,thick] {x^3};
+\end{axis}
+\end{tikzpicture}
+\end{minipage} 
+
+
+\end{solution}
+
+
+\question The total cost of a meal in a restaurant, $C$, in dollars, as a function of the price of the meal, $p$, in dollars is given by:
+\[
+C=p+0.20p
+\]
+where the term $0.20p$ corresponds to the 20\% tip. Create a table of values and sketch the graph of the function $C=p+0.20p$ for $10\leq p\leq 20$. Then use your calculator or any other graphing utility to check your graph. 
+
+\begin{solution}[16em]
+We can combine like terms and write $C = 1.20 p$. We then have the following.
+
+\begin{minipage}{0.4\textwidth}
+\centering
+\begin{tabular}{c|c}
+$p$ & $C=1.20p$ \\\hline
+$10$ & $12$\\\hline
+$15$ & $18$\\\hline
+$20$ & $24$
+\end{tabular} 
+\end{minipage} \hfill
+\begin{minipage}{0.6\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+xmin=0,xmax=20,
+ymin=0,ymax=25,
+xtick={5,10,15,20},
+ytick={5,10,15,20,25},
+minor tick={},
+xlabel=\(p\), ylabel=\(C\),
+samples=250]
+\addplot[domain=0:20,thick] {1.2*x};
+\end{axis}
+\end{tikzpicture}
+\end{minipage} 
+\end{solution}
+
+
+\question Use the graph of the function $y=f(x)$ below to estimate:
+
+\begin{parts}
+\part $f(2)$ 
+
+\part $f(3)$ 
+
+\part $f(-1)$
+
+\begin{solution}
+From the graph, $f(2)=8$, $f(3)=10$, and $f(-1)=-10$ (the points in red).
+\end{solution}
+
+\end{parts}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis line style = very thick,
+axis lines=middle,
+xmin=-3,xmax=5,
+ymin=-11,ymax=13,
+xtick={-3,...,5},
+ytick={-10,-8,...,12},
+minor tick={},
+xlabel=\(x\), ylabel=\(f(x)\),
+samples=250]
+\addplot[domain=-3:5 ,thick] {-(x+2)*(x-1)*(x-4)};
+
+\ifprintanswers
+\node[circle,fill,red,inner sep=2pt] at (axis cs:2,8) {};
+\node[circle,fill,red,inner sep=2pt] at (axis cs:3,10) {};
+\node[circle,fill,red,inner sep=2pt] at (axis cs:-1,-10) {};
+
+\node[circle,fill,green,inner sep=2pt] at (axis cs:-2,0) {};
+\node[circle,fill,green,inner sep=2pt] at (axis cs:1,0) {};
+\node[circle,fill,green,inner sep=2pt] at (axis cs:4,0) {};
+
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:-2.4,8) {};
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:2,8) {};
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:3.4,8) {};
+
+\else \fi
+\end{axis}
+\end{tikzpicture}
+
+\end{center}
+
+\question For the function $y=f(x)$ in Problem 3, estimate all points $x$ for which $f(x)=0$.
+
+\begin{solution}[5em]
+This is looking for ordered pairs $(x,y)$ on the graph of the function where $y=0$, which are: $(-2,0)$, $(1,0)$, and $(4,0)$ (the points in green).
+\end{solution}
+
+
+\question For the function $y=f(x)$ in Problem 3, estimate all points $x$ for which $f(x)=8$.
+
+\begin{solution}[5em]
+This is looking for ordered pairs $(x,y)$ on the graph of the function where $y=8$, which are (approximately): $(-2.2,8)$, $(2,8)$, and $(3.4, 8)$ (the points in blue).
+\end{solution}
+
+
+\question The amount of caffeine remaining in the body, $C$, in milligrams, $t$ hours after drinking a cup of coffee, $C=C(t)$ is given by the graph below:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=0,xmax=20,
+ymin=0,ymax=96,
+xtick={5,10,15,20},
+ytick={24,48,72,96},
+minor tick={},
+xlabel=\(t\), ylabel=\(C\),
+samples=250]
+\addplot[domain=0:20,thick] {96*0.5^(x/5)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{parts}
+\part How much caffeine was absorbed into the bloodstream from the cup of coffee?
+
+\begin{solution}[4em]
+This is the value at $t=0$ hours, so $96$ milligrams.
+\end{solution}
+
+\part How much caffeine is left after 5 hours? After 10 hours?
+
+\begin{solution}[4em]
+After $5$ hours, there are $C(5)=48$ mg of caffeine remaining. After $10$ hours, there are $C(10)=24$ mg of caffeine remaining.
+\end{solution}
+
+
+\part Is the function $C(t)$ increasing, decreasing or neither on the interval $t\geq 0$?
+
+\begin{solution}[4em]
+The function is decreasing on $t\ge 0$; the outputs decrease as the inputs increase.
+\end{solution}
+
+\end{parts}
+
+
+
+\question A man deposits money into a savings account. His balance $B(t)$, in dollars, after $t$ years is given by the graph below:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=0,xmax=24,
+ymin=0,ymax=5,
+xtick={5,10,15,20},
+ytick={1,2,3,4},
+yticklabels={1000,2000,3000,4000},
+minor tick={},
+xlabel=\(t\), ylabel=\(B\),
+samples=250]
+\addplot[domain=0:22,thick] {1*2^(x/10)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{parts}
+\part What was his initial deposit?
+
+\begin{solution}[4em]
+His initial deposit is the value of $B(0)$, which is $\$1000$.
+\end{solution}
+
+
+\part How much money was in his account after 10 years? After 20 years?
+
+\begin{solution}[4em]
+After $10$ years, there is $B(10)=\$2000$ in his account. After $20$ years, there is $B(20)=\$4000$ in his account.
+\end{solution}
+
+
+\part Is the function $B(t)$ increasing, decreasing or neither in the interval $t\geq 0$?
+
+\begin{solution}[4em]
+The function $B$ is increasing for $t\ge 0$.
+\end{solution}
+
+
+\end{parts}
+
+
+\question Is the curve below the graph of a function $y=f(x)$? Explain!
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+trig format plots = rad,
+samples=250]
+\addplot[domain=0:6.28,thick] ({sin(x)}, {sin(2*x)});
+
+\ifprintanswers
+\draw[red,thick] (axis cs:-0.5,2) -- (axis cs:-0.5,-2);
+\else\fi
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{solution}
+No, because it fails the vertical line test as shown above (and in other places as well).
+\end{solution}
+
+
+\question The graph of a function $y=f(x)$ is given below.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=-4,xmax=4,
+ymin=-5,ymax=9,
+xtick={-4,...,4},
+ytick={-4, -2,...,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-4:4,thick] {(x-2)*(x+2)};
+
+\ifprintanswers
+\node[circle,fill,red,inner sep=2pt] at (axis cs:0,-4) {};
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:-2,0) {};
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:2,0) {};
+\node[circle,fill,green,inner sep=2pt] at (axis cs:-3,5) {};
+\node[circle,fill,green,inner sep=2pt] at (axis cs:3,5) {};
+
+\else \fi
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{parts}
+\part Estimate $f(0)$.
+
+\begin{solution}
+From the graph, $f(0)=-4$ (shown in red).
+\end{solution}
+
+
+\part Estimate all values of $x$ for which $f(x)=0$.
+
+\begin{solution}
+We look for ordered pairs $(x,y)$ on the graph where $y=0$. These occur at $(-2,0)$ and $(2,0)$ (shown in blue).
+\end{solution}
+
+
+\part Estimate all values of $x$ for which $f(x)=5$.
+
+\begin{solution}[8em]
+Similarly, $(-3,5)$ and $(3,5)$ (shown in green).
+\end{solution}
+
+\end{parts}
+
+\question For the function $y=f(t)$ whose graph is depicted below, identify intervals on the $t$-axis on which the function is increasing and the intervals on the $t$-axis on which the function is decreasing.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=0,xmax=13,
+ymin=-2,ymax=4,
+xtick={1,...,12},
+ytick={-1,1,2,3},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+trig format = rad,
+samples=250]
+\addplot[domain=0:12,thick] {2*sin(2*3.14/12*x)+1};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{solution}
+The function is increasing on the intervals $(0,3)$ and $(9,12)$, which in inequality notation reads $0<t<3$ and $9<t<12$, respectively.
+
+The function is decreasing on the interval $(3,9)$, which in inequality notation reads $3<t<9$.
+\end{solution}
+
+
+\end{questions}

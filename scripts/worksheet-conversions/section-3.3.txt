@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{3.3}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+
+\question Complete the square to convert each quadratic function from standard form to vertex form. Then identify the vertex.
+
+\begin{parts}
+\part $y=x^2+8x$
+
+\begin{solution}[15em]
+Here, $b=8$ so $\frac{b}{2}=4$ and $\pbr{\frac{b}{2}} ^2 = 16$. Adding and subtracting this, we get
+\[
+y = x^2+8x+16-16
+\] which factors to
+\[
+y = (x+4)^2-16
+.\] The vertex is $(-4,-16)$. 
+\end{solution}
+
+\part $y=4x^2-12x$
+
+\begin{solution}[15em]
+First factor out the $4$ to get $y=4(x^2-3x)$. Now concentrate only on the $x^2-3x$ quadratic. Here, $b=-3$ so $\frac{b}{2}=-\frac{3}{2}$ and $\pbr{\frac{b}{2}} ^2 = \frac{9}{4}$. Thus
+\[
+x^2-3x \quad=\quad x^2-3x + \frac{9}{4} - \frac{9}{4} \quad=\quad \pbr{x-\frac{3}{2}} ^2-\frac{9}{4}
+.\] Multiplying back by the $4$ we factored out originally,
+\[
+y \quad=\quad 4\pbr{\pbr{x-\frac{3}{2}} ^2 - \frac{9}{4}} \quad=\quad 4\pbr{x-\frac{3}{2}} ^2-9
+.\] The vertex is $\pbr{\frac{3}{2}, -9} $.
+\end{solution}
+
+\part $y=x^2-2x-15$
+
+\begin{solution}[15em]
+Here $b=-2$ so $\frac{b}{2}=-1$ and $\pbr{\frac{b}{2}} ^2=1$. Adding and subtracting this,
+\[
+y \quad=\quad x^2-2x+1-15-1 \quad=\quad (x-1)^2-15-1 \quad=\quad (x-1)^2-16
+.\] The vertex is $(1,-16)$.
+\end{solution}
+
+
+\part $y=3x^2-20x+7$
+
+\begin{solution}[15em]
+First factor out the $3$ from the first two terms to get $y=3(x^2-\frac{20}{3}x) + 7$. Now, concentrate only on the $x^2-\frac{20}{3}x$ quadratic. Here, $b=-\frac{20}{3}$ so $\frac{b}{2}=-\frac{10}{3}$ and $(\frac{b}{2})^2 = \frac{100}{9}$. Adding and subtracting this,
+\[
+x^2-\frac{20}{3}x  \quad=\quad x^2 - \frac{20}{3}x + \frac{100}{9} - \frac{100}{9} \quad=\quad \pbr{x-\frac{10}{3}} ^2 - \frac{100}{9}
+.\] Now, multiply by the $3$ that we factored out initially to get
+\[
+y \quad=\quad 3 \pbr{\pbr{x-\frac{10}{3}} ^2 - \frac{100}{9}} + 7 \quad=\quad 3\pbr{x-\frac{10}{3}} ^2 - \frac{100}{3} + 7 \quad=\quad 3\pbr{x-\frac{10}{3}} ^2 - \frac{79}{3}
+.\] The vertex is $(\frac{10}{3}, -\frac{79}{3})$.
+\end{solution}
+
+\part $y=5x^2-10x+48$
+
+\begin{solution}[15em]
+Factor out the $5$ from the first two terms to get $y=5(x^2-2x)+48$. Now, concentrate only on the $x^2-2x$ quadratic. Here, $b=-2$ and so $\frac{b}{2}=-1$ and $\pbr{\frac{b}{2}} ^2=1$. Therefore
+\[
+x^2-2x \quad = \quad x^2-2x+1-1 \quad = \quad (x-1)^2-1
+.\] Now, multiply by the $5$ that we factored out initially to get
+\[
+y \quad = \quad 5\pbr{(x-1)^2-1} + 48 \quad = \quad 5(x-1)^2-5+48 \quad = \quad 5(x-1)^2+43
+.\] The vertex is $(1,43)$.
+\end{solution}
+
+\part $y=4x^2-2x+1$
+
+\begin{solution}[15em]
+Factor out the $4$ from the first two terms to get $y=4(x^2-\frac{1}{2}x) + 1$. Now, concentrate only on the $x^2-\frac{1}{2}x$ quadratic. Here, $b=-\frac{1}{2}$ so $\frac{b}{2}=-\frac{1}{4}$ and $\pbr{\frac{b}{2}} ^2 = \frac{1}{16}$. Therefore
+\[
+x^2-\frac{1}{2}x \quad = \quad x^2 - \frac{1}{2}x + \frac{1}{16} - \frac{1}{16} \quad = \quad \pbr{x-\frac{1}{4}}^2 - \frac{1}{16} 
+.\] Now, multiply by the $4$ that we factored out initially to get
+\[
+y \quad = \quad 4 \pbr{\pbr{x-\frac{1}{4}} ^2-\frac{1}{16}} + 1 \quad = \quad 4\pbr{x-\frac{1}{4}} ^2 - \frac{4}{16} + 1 \quad = \quad 4\pbr{x-\frac{1}{4}} ^2 +\frac{3}{4}
+.\] The vertex is $\pbr{\frac{1}{4}, \frac{3}{4}} $.
+\end{solution}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

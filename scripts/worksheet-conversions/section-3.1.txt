@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{3.1}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+
+\begin{questions}
+
+\question Write each quadratic function in the standard form $ax^2+bx+c$ and identify $a$, $b$, and $c$. For each function, what is the $y$-intercept? Will its graph open up or down?
+
+\begin{parts}
+\part $y=(-4x)^2+1$
+
+\begin{solution}[6em]
+Because $(-4x)^2 = 16x^2$, then the equation in standard form is
+\[
+y = 16x^2 + 1
+.\] This means $a=16$, $b=0$, and $c=1$. Because $a$ is positive, the quadratic opens up. And the vertical intercept is $1$.
+\end{solution}
+
+
+\part $f(x)=(x-6)^2-20$
+
+\begin{solution}[9em]
+First, expand $(x-6)^2$ by multiplying $(x-6)(x-6)$ to get
+\[
+f(x) = (x-6)(x-6)-20 = (x^2-6x-6x+36)-20 = x^2-12x+16
+.\] This means $a=1$, $b=-12$, and $c=16$. Because $a$ is positive, the graph opens up. And the vertical intercept is $16$.
+\end{solution}
+
+
+\part $g(x)=2(x-3)^2-16$
+
+\begin{solution}[10em]
+Expand the $(x-3)^2$ term by computing $(x-3)(x-3)$:
+\begin{align*}
+g(x) &= 2(x-3)(x-3)-16\\
+&= 2 \pbr{x^2-3x-3x+9} -16\\
+& = 2\pbr{x^2-6x+9} -16\\
+&= 2x^2-12x+18-16\\
+&= 2x^2-12x + 2
+\end{align*}
+So $a=2$, $b=-12$, and $c=2$. This means the graph opens up and has a vertical intercept of $2$.
+\end{solution}
+
+
+\part $y=-(x+1)(x-5)$
+
+\begin{solution}[7em]
+Expand the product to get
+\[
+y = - \pbr{x^2-5x+x-5} = - \pbr{x^2-4x-5}  = -x^2+4x+5
+.\] Be careful of the negative sign in front! Now, $a=-1$, $b=4$, and $c=5$ so the graph opens down (because $a$ is negative) and has a vertical intercept of $5$.
+\end{solution}
+
+
+\part $h(x)=(x-2)(x+7)-3(2x-5)$
+
+\begin{solution}[9em]
+\begin{align*}
+h(x) &= x^2+7x-2x-14 - 3(2x-5) \\
+&= x^2+5x-14 - 6x + 15 \\
+&= x^2-x+1
+\end{align*}
+Therefore $a=1$, $b=-1$, and $c=1$, so the graph opens up and has a vertical intercept at $1$.
+\end{solution}
+
+
+\end{parts} 
+
+\question A quadratic parabola crosses the $x$-axis at the point $(2,0)$ and has a vertex of $(4,4)$. Find the second point on the $x$-axis where the parabola crosses the $x$-axis. Does the parabola open up or open down?
+
+\begin{solution}[5em]
+Recall that $h=\dfrac{x_1+x_2}{2} $. We know $x_1=2$ and $h=4$ (the $x$-coordinate of the vertex). Therefore
+\[
+4=\frac{2+x_2}{2} 
+.\] Solving for $x_2$, we multiply both sides by $2$ to get $8 = 2+x_2$ and so $x_2=6$. This means that the function has another $x$-intercept at $x=6$.
+
+To determine if it opens up or down, note that the vertex is above the $x$-axis (because $k=4$, the $y$-coordinate of the vertex). So the graph must open {\it down}, because we know it has two horizontal intercepts and the vertex is above the $x$-axis.
+\end{solution}
+
+
+\question The horizontal intercepts of a quadratic parabola are $x=-2$ and $x=5$. Find the $x$-coordinate of its vertex.
+
+\begin{solution}
+The $x$-coordinate of the vertex is $h$, and so we use
+\[
+h = \frac{x_1+x_2}{2} 
+.\] Because $x_1=-2$ and $x_2=5$, then
+\[
+h = \frac{-2+5}{2}  = \frac{3}{2}
+.\] 
+\end{solution}
+
+
+\end{questions}
+
+\end{document}

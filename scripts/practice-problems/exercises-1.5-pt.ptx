@@ -1,0 +1,301 @@
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find the average rate of change of each function over the indicated interval. Give your answers to two decimal places.
+</p>
+<ol>
+<li><m>f(x)=1+x^2</m> between <m>x=1</m> and <m>x=5</m>.</li>
+<li><m>f(x)=1+x^2</m> between <m>x=-3</m> and <m>x=0</m>.</li>
+<li><m>\displaystyle g(t)=\frac{1}{t}</m> between <m>t=1</m> and <m>t=3</m>.</li>
+<li><m>p(x)=2-3x</m> between <m>x=1</m> and <m>x=5</m>.</li>
+<li><m>p(x)=2-3x</m> between <m>x=-1</m> and <m>x=2</m>.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>6</m>
+        </li>
+        <li>
+            <m>-3</m>
+        </li>
+        <li>
+            <m>-1/3</m>
+        </li>
+        <li>
+            <m>-3</m>
+        </li>
+        <li>
+            <m>-3</m>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+In Section 1.3 Exercise~\ref{exercise-1_3-population}, data about the world population, in billions, between the years 2010 and 2018, was given in the table shown below. Use the data to answer the following questions.
+
+\begin{center}\footnotesize
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline Year &2010 & 2011 & 2012 & 2013 & 2014 & 2015 & 2016 & 2017 & 2018
+\\\hline Population & 6.957 & 7.041  & 7.126& 7.211  & 7.296 & 7.380 &7.464  & 7.548 & 7.631
+\\\hline
+\end{tabular}
+\end{center}
+</p>
+<ol>
+<li>What was the average rate of change of the world population between 2010 and 2012? Between 2016 and 2018? Give your answers to four decimal places and include units with your answers.</li>
+<li>Is there a one-year interval in the time period from 2010 to 2018 during which the average rate of change of the population was negative?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            0.0845 billion people per year; 0.0835 billion people per year
+        </li>
+        <li>
+            No.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+A ball is dropped from a cliff above a lake. The ball's height above the surface of the lake, <m>h(t)</m>, in feet, <m>t</m> seconds after the ball is dropped, is given by
+<me>
+h(t)=300-16t^2.
+</me>
+</p>
+<ol>
+<li>What is the average rate of change in height <m>h(t)</m> between <m>t=0</m> and <m>t=3</m>? Between <m>t=1</m> and <m>t=4</m>? Give units with your answers.</li>
+<li>Are your answers in part (a) positive or negative? Explain why.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>-48</m> feet per second; <m>-80</m> feet per second
+        </li>
+        <li>
+            negative; the height of the ball is decreasing as time progresses (as it was dropped)
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+In Section 1.2 Exercise~\ref{exercise-1_2-caff}, the graph of a function <m>C(t)</m> (provided again below) was given.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=21,
+ymin=0,ymax=100,
+xtick={5,10,...,20},
+ytick={24,48,...,96},
+% yticklabels={20,40,60,80,100,120},
+minor tick={},
+xlabel=\(t\text{ (hours)}\), ylabel=\(C\text{ (mg)}\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=0:20] {96*(1/2)^(x/5)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent Recall that this graph that models the amount of caffeine, in milligrams, remaining in the body <m>t</m> hours after drinking a cup of coffee. Use the graph to do the following.
+
+%\begin{center}
+%\includegraphics[scale=0.6]{graph1-2-12.pdf}
+%\end{center}
+</p>
+<ol>
+<li>Estimate the average rate of change of <m>C(t)</m> between <m>t=0</m> and <m>t=5</m>. Give units with your answer.</li>
+<li>Estimate the average rate of change of <m>C(t)</m> between <m>t=10</m> and <m>t=15</m>. Give units with your answer.</li>
+<li>Compare the magnitudes of your answers in (a) and (b). Can you explain the difference by what you see on the graph?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>-9.6</m> mg/hr
+        </li>
+        <li>
+            <m>-2.4</m> mg/hr
+        </li>
+        <li>
+            <p>The average rate of change from <m>t = 0</m> to <m>t = 5</m> hours is larger than the average rate of change from <m>t=10</m> to <m>t=15</m> hours. It can be seen that the rate at which the amount of caffeine in the bloodstream is changing gets smaller and smaller as time progresses.</p>
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+The graph of a function <m>y=f(t)</m> is shown below.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=both,
+xmin=0,xmax=12.5,
+ymin=-1.5,ymax=3.5,
+xtick={0,1,...,12},
+ytick={-1,...,3},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2
+]
+\addplot[domain=0:12] {2*sin(2*pi/12*deg(x))+1};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\noindent Without performing any calculations, answer the following questions.
+</p>
+<ol>
+<li>Is the average rate of change of <m>f(t)</m> between  <m>t=0</m> and <m>t=3</m> positive or negative? Explain your answer.</li>
+<li>Is the average rate of change of <m>f(t)</m> between  <m>t=3</m> and <m>t=6</m> positive or negative? Explain your answer.</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            positive since the graph is increasing on this interval
+        </li>
+        <li>
+            negative since the graph is decreasing on this interval
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+A person's weight, <m>W</m>, in pounds, depends on the number of minutes <m>m</m> of daily exercise. Hence, <m>W=W(m)</m> is a function of <m>m</m>. Below is a numerical representation of <m>W(m)</m>:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline $m$ (minutes) & 0 & 20 & 40 & 60 & 80 & 100 & 120
+\\\hline $W$ (pounds) & 159 & 152 & 146 & 141 & 137 & 136 & 135.6 
+\\\hline
+\end{tabular}
+\end{center}
+</p>
+<ol>
+<li>Find the average rate of change of <m>W(m)</m> between <m>m=0</m> and <m>m=40</m>. Give units with your answer.</li>
+<li>Find the average rate of change of <m>W(m)</m> between <m>m=80</m> and <m>m=120</m>. Give units with your answer.</li>
+<li>Based on your answers and the data in the table, what can you say about the rate of weight loss with increasing amount of exercise?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            <m>-0.325</m> pounds/minute
+        </li>
+        <li>
+            <m>-0.035</m> pounds/minute
+        </li>
+        <li>
+            The rate of weight loss slows as the daily amount of exercise increases.
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Worldwide sales of passenger cars fluctuated between 2012 and 2019\footnote{http://www.oica.net/wp-content/uploads/pc\_sales\_2019.pdf, accessed: 6/30/20}, as can be seen in the table below.
+\begin{center}\scriptsize
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+\hline Year  & 2010 & 2011 & 2012 & 2013 & 2014 & 2015 & 2016 & 2017 & 2018 & 2019
+\\\hline Cars Sold & 55.82 & 57.84 & 60.94 & 63.43 & 65.71 & 66.31 & 69.46 & 70.69 & 68.68 & 64.34 
+\\ (millions) & & & & & & & & & &
+\\\hline
+\end{tabular}
+\end{center}
+</p>
+<ol>
+<li>Calculate the average rate of change in sales of passenger cars between the years 2010 and 2017. Give units with your answer.</li>
+<li>Calculate the average rate of change in sales of passenger cars between the years 2017 and 2019. Give units with your answer.</li>
+<li>In what one-year intervals was the average rate of change negative?</li>
+</ol>
+</statement>
+
+<solution>
+<p>
+    <ol>
+        <li>
+            approximately 2.124 million cars sold per year
+        </li>
+        <li>
+            <m>-3.175</m> million cars sold per year
+        </li>
+        <li>
+            from 2017 to 2018 and from 2018 to 2019
+        </li>
+    </ol>
+</p>
+</solution>
+</exercise>

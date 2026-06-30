@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{4.2}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+
+\question Simplify using exponent rules. Write your answer in the form $kx^p$ if possible.
+
+\begin{parts}
+\part $y=5x^6\cdot4x^2$
+
+\begin{solution}[6em]
+\[
+y \quad = \quad 20x^{6+2} \quad = \quad 20x^8
+.\] 
+\end{solution}
+
+\part $y=\dfrac{1}{2}\sqrt[3]{x}$
+
+\begin{solution}[6em]
+\[
+y \quad = \quad \frac{1}{2} x^{1 /3}
+.\] 
+\end{solution}
+
+\part $y=\dfrac{\pi}{x}$
+
+\begin{solution}[6em]
+\[
+y \quad = \quad \pi  x^{-1}
+.\] 
+\end{solution}
+
+\part $y=(x^2)^4$
+
+\begin{solution}[6em]
+\[
+y \quad=\quad x^{2\cdot 4} \quad = \quad x^8
+.\] 
+\end{solution}
+
+\part $y=(0.7)^x$
+
+\begin{solution}[6em]
+Cannot be simplified further.
+\end{solution}
+
+\part $y=(0.5x^6)^{-3}$
+
+\begin{solution}[6em]
+\[
+y \quad = \quad (0.5)^{-3}\cdot x^{6(-3)}\quad = \quad 8 \cdot x^{-18}
+.\] 
+\end{solution}
+
+\part $y=\dfrac{14x^{-2}}{21\sqrt{x^7}}$
+
+\begin{solution}[6em]
+Notice that $\frac{14}{21}$ reduces to $\frac{2}{3}$. And, in the last step below we used that $-2-\frac{7}{2} = -\frac{4}{2}-\frac{7}{2}=-\frac{11}{2}$ (simply subtracting fractions).
+\[
+y \quad = \quad \frac{2 x^{-2}}{3x^{7 /2}}  \quad = \quad \frac{2}{3} x^{-2-7 /2} \quad = \quad \frac{2}{3}x^{-11 /2}
+.\] 
+\end{solution}
+
+\part $y=\dfrac{x^5+1}{x^5-1}$
+
+\begin{solution}[8em]
+This cannot be simplified any further using exponent rules.
+\end{solution}
+
+\end{parts}
+
+
+\question Solve each equation. When there is no real solution, state that to be the case.
+
+\begin{parts}
+\part $a^{1/3}-3=5$
+
+\begin{solution}[10em]
+Adding $3$ to both sides, $a^{1 /3} = 8$. Cubing each side (raise to the third power), then
+\[
+\pbr{a^{1 /3}} ^3 = 8^3 \quad \implies \quad a = 8^3 = 512
+.\] 
+\end{solution}
+
+\part $1+\sqrt{2x+3}=6$
+
+\begin{solution}[10em]
+Subtracting $1$, then $\sqrt{2x+3}  = 5$. Squaring both sides,
+\[
+\pbr{\sqrt{2x+3}}^2 = 5^2 \quad \implies \quad 2x+3 = 25 \quad \implies \quad 2x=22 \quad \implies \quad x=11 
+.\] 
+\end{solution}
+
+\part $7(b+2)^3-26=30$
+
+\begin{solution}[10em]
+Adding $26$ to both sides, then $7(b+2)^3 = 56$. Divide both sides to $7$ to get $(b+2)^3 = 8$. Then, we take the cube root:
+\[
+\sqrt[3]{(b+2)^3} = \sqrt[3]{8} \quad \implies \quad b+2 = 2 \quad \implies \quad b=0  
+.\] 
+\end{solution}
+
+\part $2y^6+8=0$
+
+\begin{solution}[10em]
+Subtracting $8$ from both sides, then $2y^6 = -8$. Dividing by $2$, then $y^6 = -4$. Note that this equation does not have a solution because we cannot take an even root (namely, the $6$th root) of a negative number. 
+\end{solution}
+
+\part $80=100+10x^5$
+
+\begin{solution}[10em]
+Subtracting $100$, then $-20 = 10x^5$. Dividing by $10$ yields $-2 = x^5$. We {\it can} take the $5$th root here, $5$ being an odd number. So
+\[
+\sqrt[5]{-2} = \sqrt[5]{x^5} \quad \implies \quad \sqrt[5]{-2} = x   
+.\] 
+\end{solution}
+
+\part $(3w-5)^4+4=20$
+
+\begin{solution}
+Subtracting $4$, then $(3w-5)^4 = 16$. Taking the $4$th root of both sides yields
+\[
+3w-5 = \pm \sqrt[4]{16} \quad \implies \quad 3w-5=\pm 2
+.\] One solution is when $3w-5=2$, which means $3w=7$ so $w=\frac{7}{3}$. The second solution is when $3w-5=-2$, which means $3w=3$ so $w=1$.
+
+Hence the two solutions are $w=\frac{7}{3}$ and $w=1$.
+\end{solution}
+
+\end{parts}
+
+\end{questions}
+
+\end{document}

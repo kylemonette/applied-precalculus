@@ -1,0 +1,95 @@
+
+\question Find the average rate of change of $f(x)=2x^3$ from $x=1$ to $x=3$.
+
+\begin{solution}[8em]
+First, compute $f(1)=2$ and $f(3)=54$. Then, the average rate of change is
+\[
+\frac{f(3)-f(1)}{3-1}  = \frac{54-2}{2}  = 26
+.\] 
+\end{solution}
+
+\question Find the average rate of change of $g(t)=3t^2+4$ between $t=-2$ and $t=1$.
+
+\begin{solution}[8em]
+First, compute $g(-2) = 3(-2)^2 + 4 = 16$ and $g(1) = 3(1)^2+4=7$. Then, the average rate of change is
+\[
+\frac{g(1)-g(-2)}{1-(-2)}  = \frac{7-16}{1+2}  = \frac{-9}{3} = -3
+.\] 
+\end{solution}
+
+\question The table below gives the net sales of The Gap, Inc., which operates nearly $3000$ clothing stores.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+Year & 2005 & 2006 & 2007 & 2008 & 2009 & 2010 \\\hline
+Sales (millions of dollars) & 16019 & 15923 & 15763 & 14526 & 14197 & 14660 \\\hline
+\end{tabular} 
+\end{center} 
+
+\begin{parts}
+\part Find the average rate of change in net sales between $2005$ and $2008$. Give units and interpret your answer.
+
+\begin{solution}[8em]
+The average rate of change from 2005 to 2008 is
+\[
+\frac{14526 - 16019}{2008 - 2005}  = \frac{-1493}{3} = -497.7 \text{ millions of \$} / \text{year} 
+.\] This means that on average, The Gap's net sales decreased by approximately $497.7$ million dollars per year from 2005 to 2008.
+\end{solution}
+
+\part From 2005 to 2010, were there any one-year intervals during which the average rate of change was positive? If so, when?
+
+\begin{solution}[10em]
+Yes. From 2009 to 2010 is the only two consecutive years for which the sales increased. Therefore, this is the only one-year interval for which the ARC was positive.
+\end{solution}
+
+\end{parts} 
+
+\question The graph of a function $f(t)$ is given below.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=-2,xmax=5,
+ymin=-3,ymax=5,
+xtick={-1,1,2,3,4},
+ytick={-2,-1,1,2,3,4},
+minor tick={},
+xlabel=\(t\), ylabel=\(f(t)\),
+trig format = rad,
+samples=250]
+\addplot[domain=-1:4 ,thick] {-3*sin(2*3.14159/4*x) + 1};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{parts}
+\part What is the average rate of change from $t=0$ to $t=3$?
+
+\begin{solution}[8em]
+The average rate of change from $t=0$ to $t=3$ is
+\[
+\frac{f(3)-f(0)}{3-0}  = \frac{4-1}{3}  = 1
+.\] 
+\end{solution}
+
+\part What is the average rate of change from $t=-1$ to $t=1$?
+
+\begin{solution}[8em]
+The average rate of change from $t=-1$ to $t=1$ is
+\[
+\frac{f(1)-f(-1)}{1-(-1)} = \frac{-2-4}{1+1} = -3
+.\] 
+\end{solution}
+
+\part What is the average rate of change from $t=1$ to $t=4$?
+
+\begin{solution}[8em]
+The average rate of change from $t=1$ to $t=4$ is
+\[
+\frac{f(4)-f(1)}{4-1}  = \frac{1-(-2)}{3}  = 1
+.\] 
+\end{solution}
+
+\end{parts} 

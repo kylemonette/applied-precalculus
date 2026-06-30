@@ -1,0 +1,220 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{8.2}
+\input{worksheetspreamble.tex}
+
+\newcommand{\rad}{\quad \textrm{radians}}
+
+\begin{document}
+
+\begin{questions}
+
+\question  Determine the radian measure of each angle and in which quadrant the terminal side of the angle is located.
+
+\begin{parts}
+\part $12^\circ$
+
+\begin{solution}[5em]
+Multiply by $\frac{\pi}{180}$ to convert:
+\[
+12^\circ  \cdot \frac{\pi}{180}  \quad = \quad \frac{12\pi}{180} \quad = \quad \frac{\pi}{15} \rad 
+.\] This is in quadrant 1.
+\end{solution}
+
+
+\part $450^\circ$
+
+\begin{solution}[5em]
+Multiply by $\frac{\pi}{180}$ to convert:
+\[
+450^\circ  \cdot \frac{\pi}{180} \quad = \quad \frac{450\pi }{180}  \quad = \quad \frac{5\pi}{2} \rad
+.\] Note that $\frac{5\pi}{2}$ radians is coterminal to $\frac{\pi}{2}$ radians which is $90^\circ $, so this angle is on the positive $y$-axis.
+\end{solution}
+
+
+\part $610^\circ$
+
+\begin{solution}[5em]
+Multiply by $\frac{\pi}{180}$ to convert:
+\[
+610^\circ  \cdot \frac{\pi}{180} \quad = \quad \frac{610\pi }{180}  \quad = \quad \frac{61\pi }{18} \rad
+.\] This is in quadrant 3, because it is coterminal to $250^\circ $.
+\end{solution}
+
+
+\part $-275^\circ$
+
+\begin{solution}[5em]
+Multiply by $\frac{\pi}{180}$ to convert:
+\[
+-275^\circ \cdot \frac{\pi}{180} \quad = \quad \frac{-275\pi }{180}  \quad = \quad \frac{-55\pi }{36} \rad
+.\] This is in quadrant 1 because it is coterminal to $85^\circ $.
+\end{solution}
+
+
+\part $-815^\circ$
+
+\begin{solution}[5em]
+Multiply by $\frac{\pi}{180}$ to convert:
+\[
+-815^\circ  \cdot \frac{\pi}{180} \quad = \quad \frac{-815\pi }{180}  \quad = \quad \frac{-163\pi }{36} \rad
+.\] This is in quadrant 3 because it is coterminal to $265^\circ $.
+\end{solution}
+
+\end{parts}
+
+
+\question  Determine the degree measure of each radian angle and in which quadrant the terminal side of the angle is located.
+
+\begin{parts}
+\part $7\pi$
+
+\begin{solution}[5em]
+Multiply by $\frac{180}{\pi }$ to convert:
+\[
+7\pi \cdot \frac{180}{\pi } \quad = \quad 1260^\circ 
+.\] This is on the negative $x$-axis because it is coterminal to $180^\circ $.
+\end{solution}
+
+
+\part $\dfrac{\pi}{30}$
+
+\begin{solution}[4em]
+Multiply by $\frac{180}{\pi }$ to convert:
+\[
+\frac{\pi}{30} \cdot \frac{180}{\pi } \quad = \quad \frac{180}{30} \quad = \quad 6^\circ 
+.\] This is in quadrant 1.
+\end{solution}
+
+\part $-2\pi$
+
+\begin{solution}[4em]
+Multiply by $\frac{180}{\pi }$ to convert:
+\[
+-2\pi \cdot \frac{180}{\pi } \quad = \quad -360^\circ 
+.\] This is on the positive $x$-axis because it is coterminal to $0^\circ $.
+\end{solution}
+
+\part $\dfrac{-35\pi}{6}$
+
+\begin{solution}[4em]
+Multiply by $\frac{180}{\pi }$ to convert:
+\[
+-\frac{35\pi}{6}\cdot \frac{180}{\pi } \quad = \quad \frac{-6300}{6} \quad = \quad -1050^\circ  
+.\] This is in quadrant 1 because it is coterminal to $30^\circ $.
+\end{solution}
+
+\part $4$
+
+\begin{solution}[3em]
+Multiply by $\frac{180}{\pi }$ to convert:
+\[
+4 \cdot \frac{180}{\pi } \quad = \quad \frac{720}{\pi } \quad \approx  \quad 229^\circ 
+.\] This is in quadrant 3.
+\end{solution}
+\end{parts}
+
+
+\question Find the arc length spanned by each angle on a circle of radius $3$ feet. Angles are in radians unless specifically marked as degrees.
+
+\begin{parts}
+\part $45^\circ$
+
+\begin{solution}[5em]
+First, convert $45^\circ $ to radians, which is $\frac{\pi}{4}$ radians. The arc length is then
+\[
+S = \frac{\pi}{4}\cdot 3 = \frac{3\pi}{4} \text{ feet} 
+.\] 
+\end{solution}
+
+\part $\dfrac{3\pi}{4}$
+
+\begin{solution}[5em]
+As the angle is already in radians, we can just compute the arc length directly:
+\[
+S = \frac{3\pi}{4}\cdot 3 = \frac{9\pi}{4} \text{ feet} 
+.\] 
+\end{solution}
+
+\part $2\pi$
+
+\begin{solution}[5em]
+As the angle is already in radians, we can just compute the arc length directly:
+\[
+S = 2\pi \cdot 3 = 6\pi \text{ feet} 
+.\] 
+\end{solution}
+
+\part $360^\circ$
+
+\begin{solution}[5em]
+Because $360^\circ  = 2\pi$ radians, then the arc length is
+\[
+S = 2\pi \cdot 3 = 6\pi \text{ feet} 
+.\]  
+\end{solution}
+
+\part $\dfrac{\pi}{4}$
+
+\begin{solution}[5em]
+The angle is already in radians, so
+\[
+S = \frac{\pi}{4}\cdot 3 = \frac{3\pi}{4} \text{ feet} 
+.\] 
+\end{solution}
+
+\end{parts}
+
+
+\question What angle corresponds to the given number of rotations about the unit circle from the positive $x$-axis? Give both the radian and degree measure.
+
+\begin{parts}
+\part 2 counterclockwise
+
+\begin{solution}[3em]
+This corresponds to $720^\circ  = 4\pi $ radians.
+\end{solution}
+
+\part 3 clockwise
+
+\begin{solution}[3em]
+This corresponds to $-1080^\circ  = -6\pi $ radians.
+\end{solution}
+
+\part 1 clockwise
+
+\begin{solution}[3em]
+This corresponds to $-360^\circ  = -2\pi $ radians.
+\end{solution}
+
+\part 1/4 clockwise
+
+\begin{solution}[3em]
+This corresponds to $-90^\circ  = -\frac{\pi}{2}$ radians.
+\end{solution}
+
+\end{parts}
+
+
+
+\end{questions}
+
+\end{document}

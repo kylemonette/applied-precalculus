@@ -1,0 +1,362 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{8.4-8.5}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+\question A rabbit population, $R(t)$, in a national park rises and falls each year. It is at its minimum of $4000$ rabbits in January. By July, as the weather warms up and food grows more abundant, the population triples in size to $12000$. But the following January, the population again falls to $4000$ rabbits, completing the cycle.
+
+\begin{parts}
+\part What are the period, amplitude, and midline of $R(t)$?
+
+\begin{solution}[9em]
+The period is $12$ months. The amplitude is
+\[
+\text{Amp.}  \quad = \quad \frac{y_\text{max} - y_\text{min} }{2}  \quad = \quad \frac{12000-4000}{2}  \quad=\quad 4000 \quad \text{ rabbits} 
+.\] The midline equation is
+\[
+y \quad=\quad \frac{y_\text{max}  + y_\text{min} }{2} \quad = \quad \frac{12000 + 4000}{2} \quad = \quad 8000
+.\] 
+\end{solution}
+
+
+\part Find a possible formula for $R(t)$. Graph two full cycles of the function starting with $t=0$.
+
+\begin{solution}[17em]
+Note that $R(t)$ is a negative cosine function because the vertical intercept (when $t=0$) is a minimum in the cycle. That is,
+\[
+A  = -4000, \qquad B = \frac{2\pi}{P} = \frac{2\pi}{12} = \frac{\pi}{6}, \qquad C = 8000
+.\] Therefore the function is
+\[
+R(t) = -4000 \cos \pbr{\frac{\pi}{6}t}  + 8000
+.\] Its graph is shown below.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+axis lines=middle,
+xmin=0,xmax=24.5,
+ymin=0,ymax=12.5,
+xtick={12,24},
+ytick={4,8,12},
+yticklabels={4000,8000,12000},
+minor tick={},
+xlabel=\(t\), ylabel=\(R(t)\),
+trig format = rad,
+samples=250]
+\addplot[domain=0:24 ,thick] {-4*cos(3.14/6*x)+8};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\end{solution}
+
+\end{parts}
+
+
+\question A woman takes $2.5$ seconds to breathe in and out once. The volume of air in her lungs, $V(t)$, varies between the minimum of $0.4$ liters and the maximum of $4.3$ liters. Assume that at $t=0$ the volume is at its minimum; that is, $t=0$ is when the woman starts to breathe in.
+
+\begin{parts}
+\part What are the period, amplitude, and midline of $V(t)$?
+
+\begin{solution}[9em]
+The period is $2.5$ seconds. The amplitude is
+\[
+\text{Amp.}  \quad = \quad \frac{y_\text{max} - y_\text{min} }{2}  \quad = \quad \frac{4.3-0.4}{2}  \quad=\quad 1.95 \quad \text{ liters} 
+.\] The midline equation is
+\[
+y \quad=\quad \frac{y_\text{max}  + y_\text{min} }{2} \quad = \quad \frac{4.3 + 0.4}{2} \quad = \quad 2.35
+.\] 
+\end{solution}
+
+\part Find a possible formula for $V(t)$. Graph two full cycles of the function starting with $t=0$.
+
+\begin{solution}
+Note that $V(t)$ is a negative cosine function because the vertical intercept (when $t=0$) is a minimum in the cycle. That is,
+\[
+A = -1.95, \qquad B = \frac{2\pi}{P} = \frac{2\pi}{2.5} = 0.8\pi , \qquad C = 2.35
+.\] The function is
+\[
+V(t) = -1.95 \cos \pbr{0.8\pi t} +2.35
+.\] 
+\end{solution}
+
+\end{parts}
+
+
+\ifprintanswers \else \clearpage \fi
+
+\question Identify the amplitude, period, and midline of each of the following functions.
+
+\begin{parts}
+
+\part $y=-3.5\sin(\pi t)$
+
+\begin{solution}[8em]
+The amplitude is $\abs*{A}  = \abs*{-3.5}  = 3.5$. 
+
+The period is $P = \dfrac{2\pi}{B} = \dfrac{2\pi}{\pi} = 2$.
+
+The midline is $y=C = 0$.
+\end{solution}
+
+
+\part $y=-2\cos\pbr{\dfrac{\pi t}{3}}-1$
+
+\begin{solution}[8em]
+The amplitude is $\abs*{A}  = \abs*{-2}  = 2$. 
+
+The period is $P = \dfrac{2\pi}{B} = \dfrac{2\pi}{\pi  /3} = 2\pi \cdot \dfrac{3}{\pi} = 6$.
+
+The midline is $y=C = -1$.
+\end{solution}
+
+\part $y=0.5\sin\pbr{\dfrac{\pi t}{2}}+1$
+
+\begin{solution}[8em]
+The amplitude is $\abs*{A}  =  0.5$. 
+
+The period is $P = \dfrac{2\pi}{B} = \dfrac{2\pi}{\pi  /2} = 2\pi \cdot \dfrac{2}{\pi} = 4$.
+
+The midline is $y=C = 1$.
+\end{solution}
+
+\part $y=1.5\sin\pbr{2\pi t}+\pi$
+
+\begin{solution}[8em]
+The amplitude is $\abs*{A}  = 1.5$. 
+
+The period is $P = \dfrac{2\pi}{B} = \dfrac{2\pi}{2\pi } = 1$.
+
+The midline is $y=C = \pi $.
+\end{solution}
+
+\part $y=2\cos\pbr{\dfrac{2\pi t}{3}}$
+
+\begin{solution}[8em]
+The amplitude is $\abs*{A}  = 2$. 
+
+The period is $P = \dfrac{2\pi}{B} = \dfrac{2\pi}{2\pi /3} = 2\pi \cdot \dfrac{3}{2\pi} = 3$.
+
+The midline is $y=C = 0$.
+\end{solution}
+
+\part $y=2\sin\pbr{3t}+2$
+
+\begin{solution}[8em]
+The amplitude is $\abs*{A}  = 2$. 
+
+The period is $P = \dfrac{2\pi}{B} = \dfrac{2\pi}{3}$.
+
+The midline is $y=C = 2$.
+\end{solution}
+
+\end{parts}
+
+
+
+\ifprintanswers \else \clearpage \fi
+
+
+\question Find a possible formula for the following periodic functions.
+
+\begin{parts}
+\part \
+
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style = very thick,
+xmin=-8,xmax=8,
+ymin=0,ymax=7,
+xtick={-6.28,6.38},
+xticklabels={$-30\pi $, $30\pi $},
+ytick={2,6},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+trig format plots = rad,
+samples=250]
+\addplot[domain=-6.28:6.28,thick] {-2*sin(2*3.14*x/6.28)+4};
+\end{axis}
+\end{tikzpicture}
+
+\begin{solution}[16em]
+The amplitude is
+\[
+\text{Amp.}  \quad = \quad \frac{y_\text{max} - y_\text{min} }{2}  \quad = \quad \frac{6-2}{2}  \quad = \quad 2
+.\] The period is $P = 30\pi $ and so
+\[
+B \quad = \quad \frac{2\pi}{P} \quad = \quad \frac{2\pi}{30\pi } \quad = \quad \frac{1}{15}
+.\] The midline equation is
+\[
+y \quad = \quad \frac{y_\text{max} + y_\text{min} }{2}  \quad = \quad \frac{6+2}{2}  \quad = \quad 4
+.\] This is a negative sine function because the vertical intercept is on the midline and then the function decreases. Therefore
+\[
+y = -2\sin \pbr{\frac{1}{15}x}  + 4
+.\] 
+\end{solution}
+
+
+
+\part \
+
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style = very thick,
+xmin=-8,xmax=8,
+ymin=0,ymax=10,
+xtick={-6.28,6.38},
+xticklabels={$-16\pi $, $16\pi $},
+ytick={3,9},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+trig format plots = rad,
+samples=250]
+\addplot[domain=-6.28:6.28,thick] {-3*sin(2*3.14*x/6.28)+6};
+\end{axis}
+\end{tikzpicture}
+
+\begin{solution}[17em]
+The amplitude is
+\[
+\text{Amp.}  \quad = \quad \frac{y_\text{max} - y_\text{min} }{2}  \quad = \quad \frac{9-3}{2}  \quad = \quad 3
+.\] The period is $P = 16\pi $ and so
+\[
+B \quad = \quad \frac{2\pi}{P} \quad = \quad \frac{2\pi}{16\pi } \quad = \quad \frac{1}{8}
+.\] The midline equation is
+\[
+y \quad = \quad \frac{y_\text{max} + y_\text{min} }{2}  \quad = \quad \frac{9+3}{2}  \quad = \quad 6
+.\] This is a negative sine function because the vertical intercept is on the midline and then the function decreases. Therefore
+\[
+y = -3\sin \pbr{\frac{1}{8}x}  + 6
+.\] 
+\end{solution}
+
+
+\part \
+
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style = very thick,
+xmin=0,xmax=11,
+ymin=-8,ymax=8,
+xtick={5,10},
+ytick={-7,7},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+trig format plots = rad,
+samples=250]
+\addplot[domain=0:10,thick] {-7*sin(2*3.14*x/10)};
+\end{axis}
+\end{tikzpicture}
+
+\begin{solution}[16em]
+The amplitude is
+\[
+\text{Amp.}  \quad = \quad \frac{y_\text{max} - y_\text{min} }{2}  \quad = \quad \frac{7-(-7)}{2}  \quad = \quad 7
+.\] The period is $P = 10 $ and so
+\[
+B \quad = \quad \frac{2\pi}{P} \quad = \quad \frac{2\pi}{10} \quad = \quad \frac{\pi }{5}
+.\] The midline equation is
+\[
+y \quad = \quad \frac{y_\text{max} + y_\text{min} }{2}  \quad = \quad \frac{7+(-7)}{2}  \quad = \quad 0
+.\] This is a {\it negative} sine function because the vertical intercept is on the midline and then the function {\it decreases}. Therefore
+\[
+y = -7\sin \pbr{\frac{\pi }{5}t}
+.\] 
+\end{solution}
+
+
+\part \
+
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style = very thick,
+xmin=-9.5,xmax=18.5,
+ymin=-3.5,ymax=3.5,
+xtick={-9,9,18},
+xticklabel style = {xshift=0.3cm},
+ytick={-3,3},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+trig format plots = rad,
+samples=250]
+\addplot[domain=-9:18,thick] {3*sin(2*3.14*x/18)};
+\end{axis}
+\end{tikzpicture}
+
+
+\begin{solution}
+The amplitude is
+\[
+\text{Amp.}  \quad = \quad \frac{y_\text{max} - y_\text{min} }{2}  \quad = \quad \frac{3-(-3)}{2}  \quad = \quad 3
+.\] The period is $P = 18$ and so
+\[
+B \quad = \quad \frac{2\pi}{P} \quad = \quad \frac{2\pi}{18} \quad = \quad \frac{\pi }{9}
+.\] The midline equation is
+\[
+y \quad = \quad \frac{y_\text{max} + y_\text{min} }{2}  \quad = \quad \frac{3+(-3)}{2}  \quad = \quad 0
+.\] This is a positive sine function because the vertical intercept is on the midline and then the function increases. Therefore
+\[
+y = 3 \sin  \pbr{\frac{\pi }{9}t}
+.\] 
+\end{solution}
+
+\end{parts} 
+
+
+\ifprintanswers \else \clearpage \fi
+
+
+\question The following table shows values of a periodic function $f(x)$. The maximum value attained by $f(x)$ is 4.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline $x$ & $0$ & $5$ & $10$ & $15$ & $20$ & $25$ & $30$ \\\hline
+$f(x)$ & $4$ & $0$ & $-4$ & $0$ & $4$ & $0$ & $-4$ \\\hline
+\end{tabular}
+\end{center}
+
+Find the period, amplitude, and midline for $f(x)$. Then find a possible formula for $f(x)$.
+
+\begin{solution}
+The period is $P=20$ and so $B = \frac{2\pi}{P} = \frac{2\pi}{20} = \frac{\pi}{10}$. The amplitude is 
+\[
+\text{Amp.}  \quad = \quad \frac{y_\text{max}  - y_\text{min} }{2}  \quad = \quad \frac{4-(-4)}{2}  \quad = \quad 4
+.\] The midline equation is
+\[
+y \quad = \quad \frac{y_\text{max}  + y_\text{min} }{2}  \quad = \quad \frac{4+(-4)}{2}  \quad = \quad 0
+.\] Note that this must be a cosine function because the vertical intercept $(0,4)$ is a maximum output in the cycle. Therefore
+\[
+y = 4 \cos \pbr{\frac{\pi}{10}x}
+.\] 
+\end{solution}
+
+
+\end{questions}
+
+\end{document}

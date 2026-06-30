@@ -1,0 +1,219 @@
+
+In \exrange{exercise-4.2.1}{exercise-4.2.6}, solve an equation for <m>x</m> or for <m>b</m>. Be sure to list all solutions. Give exact and approximate values rounded off to three decimal places. If there are no solutions say so.
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.2.1}
+<m>\displaystyle \frac{2}{5}x^4+3=11</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=-\sqrt[4]{20}\approx-2.115</m> and <m>x=\sqrt[4]{20}\approx2.115</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle 1500b^{30}=17000</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>b=-\sqrt[30]{\frac{34}{3}} \approx -1.084</m> and <m>b=\sqrt[30]{\frac{34}{3}} \approx 1.084</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle 5x^3-6=-8</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=\sqrt[3]{-\frac{2}{5}}\approx-0.737</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{5}{3}x^6+9=4</m>
+</p>
+</statement>
+
+<solution>
+<p>
+No real solutions.
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle 3(x-1)^2+1=10</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=1-\sqrt{3}\approx-0.732</m> and <m>x=1+\sqrt{3}\approx2.732</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.2.6}
+<m>\displaystyle (x+2)^3=-8</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=-4</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+\noindent In \exrange{exercise-4.2.7}{exercise-4.2.10}, rewrite an expression as a power of <m>3</m>; that is, in the form <m>3^r</m> for some <m>r</m>. If it is not possible, say so.
+
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.2.7}
+<m>\displaystyle \frac{9^2}{3\sqrt{3}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>3^{5/2}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{27}{\sqrt{3}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>3^{5/2}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{3^2\sqrt[3]{9}}{\sqrt{3}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>3^{13/6}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.2.10}
+<m>\displaystyle \frac{3^{1/5}\sqrt[4]{3}}{\sqrt{3}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>3^{-1/20}</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+\noindent In \exrange{exercise-4.2.11}{exercise-4.2.14}, simplify a given expression. If it is not possible, say so. <m>x</m> and <m>y</m> are assumed to be positive.
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.2.11}
+<m>\displaystyle \frac{\sqrt{x}+\sqrt{y}}{xy}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Cannot be simplified.
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle (\sqrt[4]{y}\sqrt[3]{x})^4</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>xy\sqrt[3]{x}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{x^{\frac{2}{3}}y^3}{xy}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\dfrac{y^2}{\sqrt[3]{x}}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.2.14}
+<m>\displaystyle \frac{x^2y^3}{\sqrt{x}+\sqrt[3]{y}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Cannot be simplified.
+</p>
+</solution>
+</exercise>

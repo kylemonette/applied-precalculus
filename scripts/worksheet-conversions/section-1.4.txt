@@ -1,0 +1,185 @@
+
+
+\question Find the horizontal and vertical intercepts of the following or state that they don't exist.
+
+\begin{parts}
+\part $y=3x-1.5$
+
+\begin{solution}[6em]
+Setting $y=0$, then $0=3x-1.5$ and so $1.5=3x$ implying that $x=1 /2$ is the horizontal intercept. The vertical intercept is when $x=0$, so $y=-1.5$.
+\end{solution}
+
+
+\part $f(x)=1-x^2$
+
+\begin{solution}[6em]
+Setting $f(x)=0$, then $0=1-x^2$ and so $x^2=1$. Thus $x=1$ and $x=-1$ are the horizontal intercepts. The vertical intercept is when $x=0$, so $y=1$.
+\end{solution}
+
+
+\part $g(t)=5.4-0.2t$
+
+\begin{solution}[6em]
+Setting $g(t)=0$, then $5.4-0.2t=0$ and so $t=27$ is the horizontal intercept. When $t=0$, then $y=5.4$ is the vertical intercept.
+\end{solution}
+
+
+\part $y=2x^3+16$
+
+\begin{solution}[6em]
+Setting $y=0$, then $2x^3+16=0$ and so $2x^3=-16$. Thus $x^3=-8$ implying that $x=\sqrt[3]{-8} $ is the horizontal intercept. When $x=0$, then $y=16$ is the vertical intercept.
+\end{solution}
+
+
+\part $h(m)=2\sqrt{m}-3$
+
+\begin{solution}[6em]
+Setting $h(m)=0$, then $2\sqrt{m} -3=0$ so $2\sqrt{m} =3$. Thus $\sqrt{m}  = 3 /2$ implying that $m = (3 /2)^2 = 9 /4$. The vertical intercept is $y=-3$.
+\end{solution}
+
+
+\part $y=\dfrac{1}{x}$
+
+\begin{solution}[6em]
+Note that $y$ can never be $0$, so there are no horizontal intercepts. And, $x$ cannot be $0$ so there are no vertical intercepts either.
+\end{solution}
+
+
+\part $y=\dfrac{1}{x-1}$
+
+\begin{solution}[6em]
+Note that $y$ can never be $0$, so there are no horizontal intercepts. But there is a vertical intercept when $x=0$, and this is $y=-1$.
+\end{solution}
+
+\end{parts} 
+
+\ifprintanswers \else \clearpage \fi
+
+\question For each of the following, find the horizontal and vertical intercepts or state that there is not enough information to determine them.
+
+\begin{parts}
+
+\part 
+
+\begin{tabular}{|c|c|c|c|c|c|c|}\hline
+$x$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ \\\hline
+$y$ & $3$ & $0$ & $2$ & $2.5$ & $0$ & $4$ \\\hline
+\end{tabular}
+
+\begin{solution}[3em]
+Vertical intercept is $y=2$, horizontal intercepts are $x=-1$ and $x=2$.
+\end{solution}
+
+
+\part
+
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+$t$ & $0$ & $2$ & $4$ & $6$ & $8$ & $10$ \\\hline
+$f(t)$ & $5$ & $6$ & $8$ & $4$ & $8$ & $4$ \\\hline
+\end{tabular}
+
+\begin{solution}[3em]
+Vertical intercept is $y=5$, and there are no horizontal intercepts ($y$ is never $0$).
+\end{solution}
+
+
+\part
+
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+$x$ & $3$ & $4$ & $5$ & $6$ & $7$ & $8$ \\\hline
+$g(x)$ & $-5$ & $-4$  & $-5$ & $-2$  & $-2$ & $0$ \\\hline
+\end{tabular}
+
+\begin{solution}[3em]
+There are no vertical intercepts ($x$ is never $0$), and the horizontal intercept is at $x=8$.
+\end{solution}
+
+
+\end{parts}
+
+
+
+
+\question Estimate the horizontal and vertical intercepts given the graph of the function.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=0,xmax=8,
+ymin=-5,ymax=5,
+xtick={1,...,8},
+ytick={-4,...,4},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+trig format = rad,
+samples=250]
+\addplot[domain=0:8,thick] {4*sin(2*3.14159/8*x)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\begin{solution}[4em]
+The vertical intercept is at $(0,0)$. The horizontal intercepts are at $(0,0)$, $(4,0)$, and $(8,0)$.
+\end{solution}
+
+
+\question Estimate the horizontal and vertical intercepts given the graph of the function.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=-2,xmax=4,
+ymin=-1,ymax=9,
+xtick={-1,1,2,3},
+ytick={1,2,3,4,5,6,7,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-2:4,thick] {(x-1)^2+2};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+
+\begin{solution}
+The vertical intercept is at $(0,3)$. There are no horizontal intercepts.
+\end{solution}
+
+
+\ifprintanswers \else \clearpage \fi
+
+
+\question A ball is dropped from a cliff above a lake. The ball's height above the surface of the lake, $h(t)$, in feet, $t$ seconds after the ball is dropped is given by
+\[
+h(t)=300-16t^2
+.\]
+Find the vertical intercept of the function $h(t)$ and the horizontal intercepts for which $t\geq 0$. (Round off to two decimal places.) Interpret the intercepts in practical terms.
+
+\begin{solution}[20em]
+The vertical intercept is $y=h(0)=300$. This occurs when $t=0$, so we can say that the ball was $300$ feet above ground when it was dropped.
+
+The horizontal intercept is when $y=h(t)=0$, that is when $0=300-16t^2$. Solving for $t$ we get
+\[
+16t^2 = 300 \quad \implies \quad t^2 = \frac{300}{16} \quad \implies \quad t = \sqrt{300 / 16} \approx 4.33
+.\] This means that $4.33$ seconds after the ball was dropped, it hit the ground (because the height $h(t)$ is $0$).
+\end{solution}
+
+
+\question The value of a car $V(t)$, in dollars, $t$ years after the car was purchased is:
+\[
+V(t)=21500-1500t
+\]
+Find vertical and horizontal intercepts of the function $V(t)$ and interpret them in terms of dollars and years.
+
+\begin{solution}
+The vertical intercept is when $t=0$, which is $V(0)=21500$. This means that the car was worth $\$21500$ at the time of purchase.
+
+The horizontal intercept is when $V(t)=0$. That is, $21500-1500t=0$. Solving this equation for $t$ yields
+\[
+21500 = 1500t \quad \implies \quad t = \frac{21500}{1500}  \approx 14.33
+.\] Therefore, $14.33$ years after purchase the value of the car is $\$0$.
+\end{solution}

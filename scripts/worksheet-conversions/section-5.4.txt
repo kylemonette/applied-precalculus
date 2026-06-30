@@ -1,0 +1,107 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{5.4}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+\question Explain what the following functions tell you about the quantities they describe, where $t$ is measured in years.
+
+\begin{parts}
+\part $y=50\cdot 2^{t/10}$
+
+\begin{solution}[3em]
+The initial quantity is $50$, and it doubles every $10$ years.
+\end{solution}
+
+
+\part $Q=210(\frac{1}{2})^{t/6}$
+
+\begin{solution}[3em]
+The initial quantity is $210$, and it halves every $6$ years.
+\end{solution}
+
+
+\part $P=16(4)^{t/5}$
+
+\begin{solution}[3em]
+The initial quantity is $16$, and it quadruples every $5$ years.
+\end{solution}
+
+
+\part $f(t)=75(0.85)^{t/2}$
+
+\begin{solution}[3em]
+The initial quantity is $75$, and it is multiplied by $0.85$ every $2$ years.
+\end{solution}
+
+
+\end{parts}
+
+\question Write an exponential function $Q=A\cdot c^{t/T}$ describing each of the following scenarios. Then convert the formula to the form $Q=A\cdot b^t$.
+
+\begin{parts}
+\part A population begins with $1200$ members and triples every $15$ years.
+
+\begin{solution}[9em]
+Here, $A=1200$, $c=3$ due to tripling, and $T=15$ so
+\[
+Q = 1200 \cdot 3^{\frac{t}{15}}
+.\] To convert this to the form $Ab^t$, note that $b = 3^{1 /15} = 1.07599$ and so
+\[
+Q = 1200 (1.07599)^t
+.\] 
+\end{solution}
+
+\part A bacteria colony starts with $12$ and doubles every $20$ hours.
+
+\begin{solution}[9em]
+Here $A=12$, $c=2$, and $T=20$ so that
+\[
+Q = 12 \cdot 2^{\frac{t}{20}}
+.\] To convert this function, note that $b = 2^{1 /20} = 1.0353$ so
+\[
+Q = 12 \cdot (1.0353)^t
+.\]  
+\end{solution}
+
+\part A lake begins with $550$ fish and one tenth disappear every year.
+
+\begin{solution}
+Here $A = 550$, $c=\frac{9}{10}$, and $T=1$ so that
+\[
+Q = 550 \cdot \pbr{\frac{9}{10}} ^{t / 1} \quad \implies \quad 550 \cdot \pbr{\frac{9}{10}} ^t
+.\] 
+\end{solution}
+
+
+% \part An investment is initially worth 50000 dollars and loses 25\% of its value every 10 years.
+
+% \part A lake begins with 550 fish of a certain species and one-third disappear every seven years.
+
+% \part  A house whose value increases by 7.2\% per year is worth \$275000 in year $t=0$.
+
+\end{parts}
+\end{questions}
+
+\end{document}

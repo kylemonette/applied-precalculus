@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{8.3}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+
+\question Find the exact value of each of the following without using technology. Angles are in radians unless specifically marked as degrees.
+
+\begin{parts}
+\part $\sin(150^\circ)$
+
+\begin{solution}[4em]
+$\sin(150^\circ) = \dfrac{1}{2}$
+\end{solution}
+
+
+\part $\cos\pbr{\dfrac{4\pi}{3}}$
+
+\begin{solution}[4em]
+$\cos\pbr{\dfrac{4\pi}{3}} = -\dfrac{1}{2}$
+\end{solution}
+
+
+\part $\sin\pbr{-\dfrac{\pi}{4}}$
+
+\begin{solution}[4em]
+$\sin\pbr{-\dfrac{\pi}{4}} = \dfrac{-\sqrt{2} }{2} $
+
+{\it You can use the idea that $-\pi /4$ radians is the same as $-45^\circ $ and go clockwise on the unit circle, or compute a coterminal angle to $-\pi /4$ that is between $0$ and $2\pi $ radians. This coterminal angle is $7\pi /4$.}
+\end{solution}
+
+
+\part $\sin\pbr{\dfrac{2\pi}{3}}$
+
+\begin{solution}[4em]
+$\sin\pbr{\dfrac{2\pi}{3}} = \dfrac{\sqrt{3} }{2} $
+\end{solution}
+
+
+\part $\sin(315^\circ)$
+
+\begin{solution}[4em]
+$\sin(315^\circ) = \dfrac{-\sqrt{2} }{2} $
+\end{solution}
+
+
+\part $\sin\pbr{\dfrac{13\pi}{6}}$
+
+\begin{solution}[4em]
+$\sin\pbr{\dfrac{13\pi}{6}} = \dfrac{1}{2}$ \qquad {\it A coterminal angle to $13\pi /6$ is $\pi /6$.}
+\end{solution}
+
+
+\part $\sin\pbr{\dfrac{7\pi}{3}}$
+
+\begin{solution}[4em]
+$\sin\pbr{\dfrac{7\pi}{3}} = \dfrac{\sqrt{3} }{2}  $ \qquad {\it A coterminal angle to $\frac{7\pi}{3}$ is $\frac{\pi}{3}$.}
+\end{solution}
+
+
+\part $\cos(-30^\circ)$
+
+\begin{solution}[4em]
+$\cos(-30^\circ) = \dfrac{\sqrt{3} }{2} $  \qquad {\it A coterminal angle to $-30^\circ $ is $330^\circ $.}
+\end{solution}
+
+
+\part $\cos(210^\circ)$
+
+\begin{solution}[4em]
+$\cos(210^\circ) = \dfrac{-\sqrt{3} }{2} $
+\end{solution}
+
+
+
+\end{parts}
+
+\question Use a calculator to find approximate values for $\sin(5)$ and $\cos(5)$ for $5$ degrees and for $5$ radians. 
+
+\begin{solution}
+In radians, $\sin (5) = -0.9589$ and $\cos (5) = 0.2837$.
+
+In degrees, $\sin (5^\circ ) = 0.0872$ and $\cos (5^\circ ) = 0.9962$.
+\end{solution}
+
+
+\end{questions}
+
+\end{document}

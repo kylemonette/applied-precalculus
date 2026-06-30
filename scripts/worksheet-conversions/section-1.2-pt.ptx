@@ -1,0 +1,482 @@
+
+<exercise workspace="1in">
+<statement>
+<p>
+Create a table of values and sketch the graph of the function <m>y=x^3</m> for <m>-2\leq x\leq 2</m>. Then use your calculator or any other graphing utility to check your graph.
+</p>
+</statement>
+<solution>
+<p>
+\begin{minipage}{0.4\textwidth}
+\centering
+\begin{tabular}{c|r}
+$x$ & $y=x^3$ \\\hline
+$-2$ & $(-2)^3=-8$\\\hline
+$-1$ & $(-1)^3=-1$\\\hline
+$0$ & $0^3=0$\\\hline
+$1$ & $1^3 = 1$\\\hline
+$2$ & $2^3 = 8$
+\end{tabular} 
+\end{minipage} \hfill
+\begin{minipage}{0.6\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+xmin=-3,xmax=3,
+ymin=-9,ymax=9,
+xtick={-2,-1,1,2},
+ytick={-8,-6,-4,-2,2,4,6,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-2:2,thick] {x^3};
+\end{axis}
+\end{tikzpicture}
+\end{minipage}
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+The total cost of a meal in a restaurant, <m>C</m>, in dollars, as a function of the price of the meal, <m>p</m>, in dollars is given by:
+<me>
+C=p+0.20p
+</me>
+where the term <m>0.20p</m> corresponds to the 20\% tip. Create a table of values and sketch the graph of the function <m>C=p+0.20p</m> for <m>10\leq p\leq 20</m>. Then use your calculator or any other graphing utility to check your graph. 
+
+\begin{solution}[16em]
+We can combine like terms and write <m>C = 1.20 p</m>. We then have the following.
+
+\begin{minipage}{0.4\textwidth}
+\centering
+\begin{tabular}{c|c}
+$p$ & $C=1.20p$ \\\hline
+$10$ & $12$\\\hline
+$15$ & $18$\\\hline
+$20$ & $24$
+\end{tabular} 
+\end{minipage} \hfill
+\begin{minipage}{0.6\textwidth}
+\centering
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+xmin=0,xmax=20,
+ymin=0,ymax=25,
+xtick={5,10,15,20},
+ytick={5,10,15,20,25},
+minor tick={},
+xlabel=\(p\), ylabel=\(C\),
+samples=250]
+\addplot[domain=0:20,thick] {1.2*x};
+\end{axis}
+\end{tikzpicture}
+\end{minipage} 
+\end{solution}
+
+
+<exercise>
+<introduction>
+<p>
+Use the graph of the function <m>y=f(x)</m> below to estimate:
+</p>
+</introduction>
+</p>
+</introduction>
+<task>
+<statement>
+<p>
+<m>f(2)</m>
+</p>
+</statement>
+</task>
+<task>
+<statement>
+<p>
+<m>f(3)</m> 
+
+<task>
+<statement>
+<p>
+<m>f(-1)</m>
+</p>
+</statement>
+<solution>
+<p>
+From the graph, <m>f(2)=8</m>, <m>f(3)=10</m>, and <m>f(-1)=-10</m> (the points in red).
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis line style = very thick,
+axis lines=middle,
+xmin=-3,xmax=5,
+ymin=-11,ymax=13,
+xtick={-3,...,5},
+ytick={-10,-8,...,12},
+minor tick={},
+xlabel=\(x\), ylabel=\(f(x)\),
+samples=250]
+\addplot[domain=-3:5 ,thick] {-(x+2)*(x-1)*(x-4)};
+
+\ifprintanswers
+\node[circle,fill,red,inner sep=2pt] at (axis cs:2,8) {};
+\node[circle,fill,red,inner sep=2pt] at (axis cs:3,10) {};
+\node[circle,fill,red,inner sep=2pt] at (axis cs:-1,-10) {};
+
+\node[circle,fill,green,inner sep=2pt] at (axis cs:-2,0) {};
+\node[circle,fill,green,inner sep=2pt] at (axis cs:1,0) {};
+\node[circle,fill,green,inner sep=2pt] at (axis cs:4,0) {};
+
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:-2.4,8) {};
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:2,8) {};
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:3.4,8) {};
+
+\else \fi
+\end{axis}
+\end{tikzpicture}
+
+\end{center}
+</p>
+</statement>
+</task>
+<exercise workspace="1in">
+<statement>
+<p>
+For the function <m>y=f(x)</m> in Problem 3, estimate all points <m>x</m> for which <m>f(x)=0</m>.
+</p>
+</statement>
+<solution>
+<p>
+This is looking for ordered pairs <m>(x,y)</m> on the graph of the function where <m>y=0</m>, which are: <m>(-2,0)</m>, <m>(1,0)</m>, and <m>(4,0)</m> (the points in green).
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise workspace="1in">
+<statement>
+<p>
+For the function <m>y=f(x)</m> in Problem 3, estimate all points <m>x</m> for which <m>f(x)=8</m>.
+</p>
+</statement>
+<solution>
+<p>
+This is looking for ordered pairs <m>(x,y)</m> on the graph of the function where <m>y=8</m>, which are (approximately): <m>(-2.2,8)</m>, <m>(2,8)</m>, and <m>(3.4, 8)</m> (the points in blue).
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+The amount of caffeine remaining in the body, <m>C</m>, in milligrams, <m>t</m> hours after drinking a cup of coffee, <m>C=C(t)</m> is given by the graph below:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=0,xmax=20,
+ymin=0,ymax=96,
+xtick={5,10,15,20},
+ytick={24,48,72,96},
+minor tick={},
+xlabel=\(t\), ylabel=\(C\),
+samples=250]
+\addplot[domain=0:20,thick] {96*0.5^(x/5)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+How much caffeine was absorbed into the bloodstream from the cup of coffee?
+</p>
+</statement>
+<solution>
+<p>
+This is the value at <m>t=0</m> hours, so <m>96</m> milligrams.
+</p>
+</solution>
+</task>
+
+
+<task workspace="1in">
+<statement>
+<p>
+How much caffeine is left after 5 hours? After 10 hours?
+</p>
+</statement>
+<solution>
+<p>
+After <m>5</m> hours, there are <m>C(5)=48</m> mg of caffeine remaining. After <m>10</m> hours, there are <m>C(10)=24</m> mg of caffeine remaining.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+Is the function <m>C(t)</m> increasing, decreasing or neither on the interval <m>t\geq 0</m>?
+</p>
+</statement>
+<solution>
+<p>
+The function is decreasing on <m>t\ge 0</m>; the outputs decrease as the inputs increase.
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+A man deposits money into a savings account. His balance <m>B(t)</m>, in dollars, after <m>t</m> years is given by the graph below:
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=0,xmax=24,
+ymin=0,ymax=5,
+xtick={5,10,15,20},
+ytick={1,2,3,4},
+yticklabels={1000,2000,3000,4000},
+minor tick={},
+xlabel=\(t\), ylabel=\(B\),
+samples=250]
+\addplot[domain=0:22,thick] {1*2^(x/10)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+</introduction>
+
+<task workspace="1in">
+<statement>
+<p>
+What was his initial deposit?
+</p>
+</statement>
+<solution>
+<p>
+His initial deposit is the value of <m>B(0)</m>, which is <m>\$1000</m>.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+How much money was in his account after 10 years? After 20 years?
+</p>
+</statement>
+<solution>
+<p>
+After <m>10</m> years, there is <m>B(10)=\$2000</m> in his account. After <m>20</m> years, there is <m>B(20)=\$4000</m> in his account.
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+Is the function <m>B(t)</m> increasing, decreasing or neither in the interval <m>t\geq 0</m>?
+</p>
+</statement>
+<solution>
+<p>
+The function <m>B</m> is increasing for <m>t\ge 0</m>.
+</p>
+</solution>
+</task>
+
+
+
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+Is the curve below the graph of a function <m>y=f(x)</m>? Explain!
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+trig format plots = rad,
+samples=250]
+\addplot[domain=0:6.28,thick] ({sin(x)}, {sin(2*x)});
+
+\ifprintanswers
+\draw[red,thick] (axis cs:-0.5,2) -- (axis cs:-0.5,-2);
+\else\fi
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+</statement>
+<solution>
+<p>
+No, because it fails the vertical line test as shown above (and in other places as well).
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+The graph of a function <m>y=f(x)</m> is given below.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=-4,xmax=4,
+ymin=-5,ymax=9,
+xtick={-4,...,4},
+ytick={-4, -2,...,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-4:4,thick] {(x-2)*(x+2)};
+
+\ifprintanswers
+\node[circle,fill,red,inner sep=2pt] at (axis cs:0,-4) {};
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:-2,0) {};
+\node[circle,fill,blue,inner sep=2pt] at (axis cs:2,0) {};
+\node[circle,fill,green,inner sep=2pt] at (axis cs:-3,5) {};
+\node[circle,fill,green,inner sep=2pt] at (axis cs:3,5) {};
+
+\else \fi
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+Estimate <m>f(0)</m>.
+</p>
+</statement>
+<solution>
+<p>
+From the graph, <m>f(0)=-4</m> (shown in red).
+</p>
+</solution>
+</task>
+
+
+
+<task>
+<statement>
+<p>
+Estimate all values of <m>x</m> for which <m>f(x)=0</m>.
+</p>
+</statement>
+<solution>
+<p>
+We look for ordered pairs <m>(x,y)</m> on the graph where <m>y=0</m>. These occur at <m>(-2,0)</m> and <m>(2,0)</m> (shown in blue).
+</p>
+</solution>
+</task>
+
+
+
+<task workspace="1in">
+<statement>
+<p>
+Estimate all values of <m>x</m> for which <m>f(x)=5</m>.
+</p>
+</statement>
+<solution>
+<p>
+Similarly, <m>(-3,5)</m> and <m>(3,5)</m> (shown in green).
+</p>
+</solution>
+</task>
+
+
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+For the function <m>y=f(t)</m> whose graph is depicted below, identify intervals on the <m>t</m>-axis on which the function is increasing and the intervals on the <m>t</m>-axis on which the function is decreasing.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=0,xmax=13,
+ymin=-2,ymax=4,
+xtick={1,...,12},
+ytick={-1,1,2,3},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+trig format = rad,
+samples=250]
+\addplot[domain=0:12,thick] {2*sin(2*3.14/12*x)+1};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+</p>
+</statement>
+<solution>
+<p>
+The function is increasing on the intervals <m>(0,3)</m> and <m>(9,12)</m>, which in inequality notation reads <m>0<t<3</m> and <m>9<t<12</m>, respectively.
+
+The function is decreasing on the interval <m>(3,9)</m>, which in inequality notation reads <m>3<t<9</m>.
+</p>
+</solution>
+</exercise>
+
+
+

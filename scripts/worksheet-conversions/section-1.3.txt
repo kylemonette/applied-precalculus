@@ -1,0 +1,142 @@
+
+
+\question Use the table to find each of the following.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|} \hline
+$t$ & $-5$ & $0$ & $5$ & $10$ \\\hline
+$g(t)$ & $9$ & $-1$ & $9$ & $5$ \\\hline
+\end{tabular}
+\end{center}
+
+\begin{parts}
+\part $g(0)$
+
+\part $g(5)$
+
+\part The value(s) of $t$ for which $g(t)=9$.
+
+\begin{solution}[7em]
+From the table, $g(0)=-1$, $g(5)=9$, and lastly $t=-5$ and $t=5$ both satisfy $g(t)=9$.
+\end{solution}
+
+
+\end{parts}
+
+\question A function $f(x)$ is given numerically below. Compute the following:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+$x$ & $0$ & $2$ & $4$ & $6$ & $8$ & $10$  \\\hline
+$f(x)$ & $1.5$ & $3.7$ & $1.5$ & $4.2$ & $1.5$ & $0$ \\\hline
+\end{tabular}
+\end{center}
+
+\begin{parts}
+\part $f(4)$
+
+\part $f(2)$ 
+
+\part $f(8)$
+
+\begin{solution}[7em]
+From the table, $f(4)=1.5$, $f(2)=3.7$, and $f(8)=1.5$.
+\end{solution}
+
+
+\end{parts}
+
+\question Let $f(x)$ be the function in the previous problem.
+
+\begin{parts}
+\part Find all inputs $x$ for which $f(x)=1.5$.
+
+\begin{solution}[3em]
+When $f(x)=1.5$ (can think of this as $y$, the second row in the table), then $x$ could be $0$, $4$, and $8$.
+\end{solution}
+
+
+\part Find all inputs $x$ for which $f(x)=3.7$.
+
+\begin{solution}[3em]
+When $f(x)=3.7$, then $x$ could only be $2$.
+\end{solution}
+
+\end{parts}
+
+
+\question Guess a formula for the function $g(x)$ given numerically in the table below.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}\hline
+$x$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ & $4$ \\\hline
+$g(x)$ & $-8$ & $-1$  & $0$ & $1$ & $8$ & $27$ & $64$ \\\hline
+\end{tabular}
+\end{center}
+
+\begin{solution}[11em]
+Here, $g(x)=x^3$. Convince yourself that this formula works!
+\end{solution}
+
+
+
+\question Guess a formula for the function $h(t)$ given numerically in the table below. Fill in the missing values.
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
+$t$ & $-2$ & $-1$ & $0$ & $1$ & $2$ & $3$ & $4$ & $5$ & $6$ \\\hline
+$h(t)$ & $4$ & $2$ & $0$ & $-2$ & $-4$ & $-6$ & $-8$ & \hspace{2em} & \hspace{2em} \\\hline
+\end{tabular}
+\end{center}
+
+\begin{solution}[10em]
+Notice that the inputs $t$ go up by $1$ each time. And, the outputs $h(t)$ go down by $2$ each time. Or, you can think of the outputs as being the inputs multiplied by $-2$.
+
+Therefore, $h(t)=-2t$. Thus $h(5)=-10$ and $h(6)=-12$.
+\end{solution}
+
+
+
+\question Here is the data for the world population (\href{https://www.worldometers.info/world-population/world-population-by-year/}{worldometers.info/world-population/world-population-by-year}) between 2010 and 2018, in billions:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
+Year & 2010 & 2011 & 2012 & 2013 & 2014 & 2015 & 2016 & 2017 & 2018 \\\hline 
+Population & 6.957 & 7.041  & 7.126& 7.211  & 7.296 & 7.380 & 7.464  & 7.548 & 7.631 \\\hline
+\end{tabular}
+\end{center}
+
+To study the population from the mathematical point of view, it is convenient to rewrite the data in terms of the independent variable $t$ which stands for the number of years since 2010 and write the population, $P$, in billions, as a function $P=P(t)$ of years since 2010. Based on the table above, fill in the missing values:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline
+$t$ & 0 & 1 & \ifprintanswers \textcolor{red}{2} \else \hspace{3em} \fi & 3 & 4 & \ifprintanswers \textcolor{red}{5} \else \hspace{3em} \fi & 6 & 7 & 8 \\\hline
+$P(t)$ & 6.957 & 7.041  & \ifprintanswers \textcolor{red}{7.126} \else \hspace{3em} \fi & 7.211  & 7.296 & 7.380 & 7.464  & \ifprintanswers \textcolor{red}{7.548} \else \hspace{3em} \fi & 7.631 \\\hline
+\end{tabular}
+\end{center}
+
+\begin{solution}[8em]
+The completed table is shown above.
+\end{solution}
+
+
+
+\question A driver of an SUV fills up his gas tank and starts a highway trip to a faraway city. Let $G$, in gallons, be the amount of gas left in the tank after driving $d$ miles. Of course $G$ is a function of $d$; that is, $G=G(d)$. Here is partial data about the function:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}\hline
+$d$ & $0$ & $60$ & $120$ & $180$ & $240$ & $300$ & $360$ & $420$ & $480$ & $510$ \\\hline
+$G(d)$ & $17$ & $15$  & $13$ & $11$ & $9$ & $7$ & \ifprintanswers \textcolor{red}{5} \else \hspace{3em} \fi & \ifprintanswers \textcolor{red}{3} \else \hspace{3em} \fi & \ifprintanswers \textcolor{red}{1} \else \hspace{3em} \fi & \ifprintanswers \textcolor{red}{0} \else \hspace{3em} \fi \\\hline
+\end{tabular}
+\end{center}
+
+Find gas mileage of the SUV; that is, the number of miles the SUV gets per gallon. Fill in the missing numbers.
+
+\begin{solution}
+Except for the last column when $d=510$, note that the miles $d$ go up by $60$ each time, and the gallons $G(d)$ go down by $2$ each time. Using these rules, the completed table is given above.
+
+Therefore, the car can drive $510$ miles using $17$ gallons of gas. Thus, the gas mileage is
+\[
+\frac{510 \text{ miles} }{17 \text{ gallons} } \;=\; 30 \frac{\text{miles} }{\text{gallon} }  
+.\] 
+\end{solution}

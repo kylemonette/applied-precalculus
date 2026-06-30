@@ -1,0 +1,154 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{5.2}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+
+\question Find an equation for the exponential function graphed below. Then identify the growth factor and the growth rate.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style = very thick,
+xmin=-3,xmax=4,
+ymin=0,ymax=20,
+xtick={-5,...,5},
+ytick={-2,0,2,...,18},
+minor tick={},
+xlabel=\(x\), ylabel=\(f(x)\),
+samples=250]
+\addplot[domain=-5:5,thick] {8*(1.5)^x};
+\node[label={0:{(2,18)}},circle,fill,inner sep=2pt] at (axis cs:2,18) {};
+\end{axis}
+\end{tikzpicture}
+\end{center} 
+
+\begin{solution}[14em]
+From the graph, the initial value is $A = 8$. Therefore we know that $f(x)=8b^x$ and we need to determine $b$. To do so, plug in the other point $(2,18)$. This yields
+\[
+18 = 8 b^2 \quad \implies \quad \frac{18}{8} =b^2 \quad \implies \quad b = 1.5
+.\] Therefore the function is given by
+\[
+f(x) = 8 \cdot (1.5)^x
+.\] 
+\end{solution}
+
+
+\question Find an equation for the exponential function graphed below. Then identify the growth factor and the growth rate.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style = very thick,
+xmin=-1,xmax=5,
+ymin=0,ymax=6,
+xtick={-5,...,5},
+ytick={1,2,3,4,5,6,7},
+minor tick={},
+xlabel=\(x\), ylabel=\(f(x)\),
+samples=250]
+\addplot[domain=-5:5,thick] {4*(0.45)^x};
+\node[label={45:{(3,0.3645)}},circle,fill,inner sep=2pt] at (axis cs:3,0.3645) {};
+\end{axis}
+\end{tikzpicture}
+\end{center} 
+
+\begin{solution}
+The initial value is $A=4$. So we know that $f(x)=4 b^x$ where we need to determine $b$. To do so, plug in the other point $(3, 0.3645)$ to get
+\[
+0.3645 = 4 \cdot b^3 \quad \implies \quad 0.091125 = b^3 \quad \implies \quad b = 0.45
+.\] Thus the function is 
+\[
+f(x) = 4 \cdot (0.45)^x
+.\] 
+\end{solution}
+
+
+\ifprintanswers \else \clearpage\fi
+
+
+\question Find an equation for the exponential function $f(t)=A\cdot b^t$ passing through the ordered pairs $(0,6)$ and $(4,16.2)$.
+
+\begin{solution}[18em]
+The first point $(0,6)$ means that the initial value is $A = 6$. Now, we know that $f(t) = 6 \cdot b^t$ and we determine $b$ now by plugging in the other point:
+\[
+16.2 = 6 \cdot b^4 \quad \implies \quad 2.7 = b^4 \quad \implies \quad b = \sqrt[4]{2.7}=1.28186 
+.\] Thus the function is
+\[
+f(t) = 6 (1.28186)^t
+.\] 
+\end{solution}
+
+
+\question Find an equation for the exponential function $g(x)$ satisfying that $g(6)=10$ and $g(8)=5$.
+
+\begin{solution}[18em]
+Note that neither point is the initial value, so we need to create two equations and divide them. The equations are
+\[
+10 = A \cdot b^6 \quad \text{and} \quad 5 = A \cdot b^8
+.\] Dividing them, we get
+\[
+\frac{5}{10} = \frac{A\cdot b^8}{A\cdot b^6} \quad \implies \quad \frac{1}{2} = b^2 \quad \implies \quad b = \sqrt{\frac{1}{2}} =0.70711
+.\] Now, we can update the formula to
+\[
+g(x) = A \cdot (0.70711)^x
+\] and solve for $A$ by plugging in either of the given points. If we use the first one, say, then
+\[
+10 = A (0.70711)^6 \quad \implies \quad A = 79.9978
+.\] So the equation is then
+\[
+g(x) = 79.9978 \cdot (0.70711)^x
+.\]  
+\end{solution}
+
+
+\question Find an equation for the exponential function $h(t)$ satisfying that $h(2)=1.2$ and $h(4)=0.3$.
+
+\begin{solution}
+Note that neither point is the initial value, so we need to create two equations and divide them. The equations are
+\[
+1.2 = A \cdot b^2 \quad \text{and} \quad 0.3 = A \cdot b^4
+.\] Dividing them, we get
+\[
+\frac{0.3}{1.2}  = \frac{A\cdot b^4}{A\cdot b^2} \quad \implies \quad b^2 = 0.25 \quad \implies \quad b = \sqrt{0.25}  = 0.5
+.\] Now, we can update the formula to
+\[
+h(t) = A \cdot (0.5)^t
+\] and solve for $A$ by plugging in either of the given points. If we use the first one, say, then
+\[
+1.2 = A (0.5)^2 \quad \implies \quad A = 4.8
+.\] So the function is then
+\[
+h(t) = 4.8\cdot (0.5)^t
+.\] 
+\end{solution}
+
+
+
+\end{questions}
+
+\end{document}

@@ -1,0 +1,271 @@
+
+
+
+
+In \exrange{exercise-4.1.1}{exercise-4.1.4}, rewrite a given expression as a power of <m>2</m>; that is, express it in the form <m>2^m</m> for some <m>m</m>.
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.1.1}
+<m>\displaystyle \frac{4}{2^4}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2^{-2}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>(2^3)^{-2}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2^{-6}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{8^2}{2}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2^5</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.1.4}
+<m>\displaystyle \left(\frac{2^3}{2^4\cdot 2^5}\right)^2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2^{-12}</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+\noindent In \exrange{exercise-4.1.5}{exercise-4.1.8}, rewrite a given expression as a power of <m>5</m>; that is, express it in the form <m>5^m</m> for some <m>m</m>.
+
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.1.5}
+<m>5^2\cdot 5^{-3}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>5^{-1}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \left(\frac{25^2}{5}\right)^{-1}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>5^{-3}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \left(\frac{5^{-1}}{5^{-2}}\right)^2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>5^{2}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.1.8}
+<m>\displaystyle \left(\frac{5^3}{25^2}\right)^{-2}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>5^2</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+
+
+\noindent In \exrange{exercise-4.1.9}{exercise-4.1.15}, simplify a given expression if possible. If not possible, state so.
+
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.1.9}
+<m>(x^2y^5)^0</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>1</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \left(\frac{x^{-3}}{xy^2}\right)^{-1}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x^4y^2</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{(x-y)^3}{x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Cannot be simplified.
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>(2x^2y^4)^3</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>8x^6y^{12}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{x+y}{y}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Cannot be simplified.
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \left(\frac{\pi (x^{2})^6}{x^{2}y^{-4}}\right)^2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\pi^2x^{20}y^8</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+\label{exercise-4.1.15}
+<m>\displaystyle \frac{x^2+y^3}{xy}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Cannot be simplified.
+</p>
+</solution>
+</exercise>
+
+
+
+
+
+<exercise>
+<statement>
+<p>
+Let <m>p</m> and <m>r</m> be positive integers. Use the definition of exponentiation
+<me>
+a^m=\underbrace{a\cdot a\cdot  \ldots \cdot a}_{m \text{ times}}
+</me>
+to explain why the following formula is valid:
+<me>
+(a^p)^r=a^{p\cdot r}.
+</me>
+</p>
+</statement>
+
+<solution>
+
+<p>
+<md>
+<mrow>(a^p)^r \amp = \left( \underbrace{a \cdot a \cdot \ldots \cdot a}_{p \text{ times}}\right)^r</mrow>
+<mrow>\amp = \underbrace{\left( \underbrace{a \cdot a \cdot \ldots \cdot a}_{p \text{ times}}\right) \cdot \ldots \cdot \left( \underbrace{a \cdot a \cdot \ldots \cdot a}_{p \text{ times}}\right)}_{r \text{ times}}</mrow>
+<mrow>\amp= \underbrace{a \cdot a \cdot \ldots \cdot a}_{p \cdot r \text{ times}}</mrow>
+<mrow>\amp= a^{p\cdot r}</mrow>
+</md>
+</p>
+
+</solution>
+</exercise>

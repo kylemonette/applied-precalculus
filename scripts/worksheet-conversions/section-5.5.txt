@@ -1,0 +1,165 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{5.5}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+\question For each problem, suppose $t$ is measured in years. Give the initial value, the continuous growth rate, the annual growth factor, and the annual growth rate.
+
+\begin{parts}
+\part $y=1450e^{0.72t}$
+
+\begin{solution}[7em]
+The initial value is $A = 1450$ and the continuous growth rate is $k=0.72 = 72\%$. Then, $b=e^k = e^{0.72} = 2.05443$ is the annual growth factor. The annual growth rate is $r=b-1 = 2.05443-1 = 1.05443 = 105.443\%$.
+\end{solution}
+
+\part $P(t)=10000e^{-0.48t}$
+
+\begin{solution}[7em]
+The initial value is $A = 10000$ and the continuous growth rate is $k=-0.48=-48\%$. Then, $b=e^k = e^{-0.48} = 0.61878$ is the annual growth factor. The annual growth rate is $r=b-1 = 0.61878 -1 = -0.38122 = -38.122\%$.
+\end{solution}
+
+\part $Q=27e^{1.65t}$
+
+\begin{solution}[7em]
+The initial value is $27$ and the continuous growth rate is $k=1.65 = 165\%$. Then, $b=e^{k} = e^{1.65} = 5.2069$ is the annual growth factor. The annual growth rate is $r = b -1 = 5.2069 - 1 = 4.2069 = 420.69\%$.
+\end{solution}
+
+\part $f(t)=200e^{-0.02t}$
+
+\begin{solution}[7em]
+The initial value is $200$ and the continuous growth rate is $k = -0.02 = -2\%$. Then, $b=e^k = e^{-0.02} = 0.9802$ is the annual growth factor. The annual growth rate is $r=b-1 = 0.9802 -1 = -0.0198 = -1.98\%$.
+\end{solution}
+
+\end{parts}
+
+\question A trash dumpster starts with $5$ pounds of garbage. Write a formula which represents the amount of garbage in the dumpster after $t$ days given the following rates.
+
+\begin{parts}
+\part The amount of garbage increases by $3$ pounds per day.
+
+\begin{solution}[7em]
+This describes a linear relationship $y=mt+b$ where the slope is $m=3$ and the intercept is $b=5$ so $y=3t+5$. 
+\end{solution}
+
+
+\part The amount of garbage increases by $3\%$ per day.
+
+\begin{solution}[7em]
+This is an exponential relationship. The initial value is $A=5$ and the growth rate is $r=3\% = 0.03$ so the growth factor is $b=1+r = 1.03$. Therefore $y=5(1.03)^t$.
+\end{solution}
+
+
+\part The amount of garbage increases at a continuous rate of $3\%$ per day.
+
+\begin{solution}[7em]
+This is an exponential relationship. The initial value is $A=5$ and the continuous growth rate is $k=3\% = 0.03$. Therefore $y=5 e^{0.03t}$.
+\end{solution}
+
+\end{parts}
+
+
+
+\question A container with $1$ liter of liquid is placed in a warm, arid environment. The liquid evaporates at a continuous rate of $2.3\%$ per day.
+
+\begin{parts}
+\part Write a function which represents the amount of liquid (in milliliters) in the container after $t$ days.
+
+\begin{solution}[5em]
+The initial value is $1$ liter so $A=1000$ milliliters (be careful on the units!) and the continuous growth rate is $k=-2.3\% = -0.023$. Therefore $y=1000 e^{-0.023t}$.
+\end{solution}
+
+
+\part What is the daily decay rate?
+
+\begin{solution}[5em]
+Recall that $k=-0.023$ so $b=e^{k} = e^{-0.023} = 0.97726$. Thus the growth rate is $r=b-1 = -0.02274 = -2.274\%$, and then the decay rate is $2.274\%$.
+\end{solution}
+
+
+\part How much liquid remains after $5$ days?
+
+\begin{solution}[5em]
+Using part (a), evaluate the function at $t=5$ to get $y=1000e^{-0.023(5)} = 891.366$ milliliters.
+\end{solution}
+
+\end{parts}
+
+\question Write a formula for each of the following.
+
+\begin{parts}
+\part The amount of a radioactive substance present after $t$ hours if there are initially $500$ mg and the half-life is $9$ hours.
+
+\begin{solution}[6em]
+Here we have $A=500$ being the initial value and $T=9$ hours being the half-life. Therefore
+\[
+y = 500 \pbr{\frac{1}{2}} ^{t /9}
+\] {\it See section 5.4 for this formula} 
+\end{solution}
+
+
+\part The value of a car after $t$ years if the initial price is $\$26,\!000$ and the car depreciates at a rate of $11\%$ per year.
+
+\begin{solution}[6em]
+The initial value $A=26000$ and the growth rate is $r=-11\% = -0.11$ so $b=1+r = 1+(-0.11) = 0.89$. Therefore
+\[
+y = 26000\cdot (0.89)^t
+.\] 
+\end{solution}
+
+
+\part The value of a car after $t$ years if the initial price is $\$33,\!000$ and the car depreciates at a rate of $\$3,\!700$ per year.
+
+\begin{solution}[7em]
+Because the value of the car decreases by a constant amount per year, this is a linear function (namely, not exponential). Therefore
+\[
+y = -3700t + 33000
+.\] 
+\end{solution}
+
+
+\part The population of a city in year $t$ (measured in years after 2005) if the population in 2005 is $125,\!000$ and the city is growing at a continuous rate of $3.1\%$ per year.
+
+\begin{solution}[7em]
+The initial value is $125000$ and the continuous growth rate is $k=3.1\%=0.031$. Therefore
+\[
+y = 125000 e^{0.031t}
+.\] 
+\end{solution}
+
+
+\part The number of ants in a colony if the initial colony size is $6000$ ants and the number of ants increases by $2.7\%$ each day.
+
+\begin{solution}
+The initial value is $A = 6000$ and the growth rate $r=2.7\%=0.027$ so $b=1+r=1.027$. Therefore
+\[
+y = 6000(1.027)^t
+.\] 
+\end{solution}
+
+
+\end{parts}
+\end{questions}
+
+\end{document}

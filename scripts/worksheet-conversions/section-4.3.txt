@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{4.3}
+\input{worksheetspreamble.tex}
+
+
+
+\begin{document}
+
+\begin{questions}
+
+\question Identify the exponent and the coefficient of each power function.
+
+\begin{parts}
+
+\part $y=2x^2\cdot4x^3$
+
+\begin{solution}[5em]
+Simplifying we get $y=8 x^{2+3} = 8x^5$. So the exponent is $5$ and the coefficient is $8$.
+\end{solution}
+
+\part $y=(x^2)^3$
+
+\begin{solution}[5em]
+Simplifying we get $y=x^{2\cdot 3} = x^6$. So the exponent is $6$ and the coefficient is $1$.
+\end{solution}
+
+\part $y=\dfrac{x^8}{7x^3}$
+
+\begin{solution}[5em]
+Simplifying we get $y=\dfrac{x^{8-3}}{7} = \dfrac{x^5}{7}$ which we can write as $y=\frac{1}{7}x^5$. Therefore the coefficient is $\frac{1}{7}$ and the exponent is $5$.
+\end{solution}
+
+\part $y=(0.1x^2)^5(-4x)^2$
+
+\begin{solution}[9em]
+\begin{align*}
+y & \quad = \quad (0.1)^5 (x^2)^5 (-4)^2 (x)^2\\
+& \quad = \quad 0.00001 \,x^{10} (16) x^2\\
+& \quad = \quad 0.00016 \,x^{10+2}\\
+& \quad = \quad 0.00016 \,x^{12}
+\end{align*}
+Therefore the coefficient is $0.00016$ and the exponent is $12$.
+\end{solution}
+
+\part $y=\pbr{\dfrac{(2x)^4}{x^3}}^2$
+
+\begin{solution}[9em]
+\begin{align*}
+y& \quad = \quad \pbr{\frac{16 x^4}{x^3} } ^2\\
+& \quad = \quad \pbr{16 x^{4-3}} ^2\\
+& \quad = \quad \pbr{16x} ^2\\
+& \quad = \quad 16^2 \cdot x^2 \\
+& \quad = \quad 256 \cdot x^2
+\end{align*}
+Therefore the coefficient is $256$ and the exponent is $2$.
+\end{solution}
+
+\part $y=\dfrac{8x}{\pi^2}$
+
+\begin{solution}[5em]
+Here, $y=\dfrac{8}{\pi ^2} \cdot x$ and so the coefficient is $\dfrac{8}{\pi ^2}$ and the exponent is $1$.
+\end{solution}
+
+
+\end{parts}
+
+
+\question Draw a rough sketch of the graph of a power function $y=kx^p$ with the stated properties.
+\begin{parts}
+\part negative coefficient and an exponent of 3
+
+\begin{solution}[12em]
+\centering
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style=very thick,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-2:2 ,thick] {-x^3};
+\end{axis}
+\end{tikzpicture}
+\end{solution}
+
+
+\part negative coefficient and an exponent of 12
+
+\begin{solution}[12em]
+\centering
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style=very thick,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-2:2 ,thick] {-x^2};
+\end{axis}
+\end{tikzpicture}
+\end{solution}
+
+\part positive coefficient and an exponent of 4
+
+\begin{solution}[12em]
+\centering
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style=very thick,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-2:2 ,thick] {x^4};
+\end{axis}
+\end{tikzpicture}
+\end{solution}
+
+\part positive coefficient and an exponent of 1
+
+\begin{solution}[12em]
+\centering
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style=very thick,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-1.6:1.6 ,thick] {x};
+\end{axis}
+\end{tikzpicture}
+\end{solution}
+\end{parts}
+
+\end{questions}
+
+\end{document}

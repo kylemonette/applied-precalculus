@@ -1,0 +1,171 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{4.4}
+\input{worksheetspreamble.tex}
+
+
+\begin{document}
+
+\begin{questions}
+
+\question Identify the exponent and the coefficient of each power function.
+
+\begin{parts}
+\part $y=\dfrac{7}{2x^3}$
+
+\begin{solution}[4em]
+We have $y=\frac{7}{2}x^{-3}$ so the coefficient is $\frac{7}{2}$ and the exponent is $-3$.
+\end{solution}
+
+
+\part $y=6\sqrt[3]{x}$
+
+\begin{solution}[4em]
+We have $y=6 x^{1 /3}$ so the coefficient is $6$ and the exponent is $1 /3$.
+\end{solution}
+
+
+\part $y=\dfrac{25x^4}{125x^7}$
+
+\begin{solution}[7em]
+Note that $\frac{25}{125}$ reduces to $\frac{1}{5}$. Therefore
+\[
+y \quad = \quad \frac{1}{5} x^{4-7} \quad = \quad \frac{1}{5}x^{-3}
+.\] So the coefficient is $\frac{1}{5}$ and the exponent is $-3$.
+\end{solution}
+
+
+\part $y=\dfrac{2x^4}{3\sqrt{x}}$
+
+\begin{solution}[7em]
+\[
+y \quad = \quad \frac{2x^{4}}{3x^{1 /2}}  \quad = \quad \frac{2}{3}x^{4 - 1/2} \quad = \quad \frac{2}{3}x^{7 /2}
+.\] So the coefficient is $\frac{2}{3}$ and the exponent is $\frac{7}{2}$.
+\end{solution}
+
+
+\part $y=(5x^2)^{-2}$
+
+\begin{solution}[7em]
+Here we have $y=(5)^{-2} \cdot (x^2)^{-2} = \frac{1}{5^2} \cdot x^{-4} = \frac{1}{25}x^{-4}$. So the coefficient is $\frac{1}{25}$ and the exponent is $-4$.
+\end{solution}
+
+
+\part $y=(0.5x^{-3})^2(5x^6)^3$
+
+\begin{solution}[7em]
+\[
+y \quad = \quad (0.5)^2 (x^{-3})^2 (5)^3 (x^6)^3 \quad = \quad \frac{1}{4} \cdot x^{-6} \cdot 125 \cdot x^{18} \quad = \quad \frac{125}{4} \cdot x^{12}
+.\] Therefore the coefficient is $\frac{125}{4}$ and the exponent is $12$.
+\end{solution}
+
+\end{parts}
+
+
+\question Draw a rough sketch of the graph of a power function $y=kx^p$ with the stated properties.
+
+\begin{parts}
+\part negative coefficient and an exponent of $\frac{5}{4}$
+
+\begin{solution}[13em]
+\centering
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style=very thick,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=0:2 ,thick] {-x^1.2};
+\end{axis}
+\end{tikzpicture}
+\end{solution}
+
+\part negative coefficient and an exponent of $-3$
+
+\begin{solution}[12em]
+\centering
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style=very thick,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-3:-0.1 ,thick] {-1/x};
+\addplot[domain=0.1:3 ,thick] {-1/x};
+\end{axis}
+\end{tikzpicture}
+\end{solution}
+
+\part positive coefficient and an exponent of $0.1$
+
+\begin{solution}[12em]
+\centering
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style=very thick,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=0:2 ,thick] {x^0.5};
+\end{axis}
+\end{tikzpicture}
+\end{solution}
+
+\part positive coefficient and an exponent of $-6$
+
+\begin{solution}[12em]
+\centering
+\begin{tikzpicture}[scale=0.7]
+\begin{axis}[grid=none,
+axis lines=middle,
+axis line style=very thick,
+xmin=-3,xmax=3,
+ymin=-3,ymax=3,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-3:-0.1 ,thick] {1/x^2};
+\addplot[domain=0.1:3 ,thick] {1/x^2};
+\end{axis}
+\end{tikzpicture}
+\end{solution}
+\end{parts}
+
+\end{questions}
+
+\end{document}

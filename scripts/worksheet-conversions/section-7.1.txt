@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Problems and solutions originally written by Erin Denette
+% Solutions latex-ed and layout edited by Kyle Monette
+
+% Questions? Email Kyle at kmonette@uri.edu
+
+% Last Updated: January 2026
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DocumentMetadata{
+  tagging=on,
+  lang = en,
+  pdfstandard = ua-2,
+  tagging-setup={math/setup=mathml-SE, math/alt/use, page/exclude-header-footer}
+}
+
+\documentclass{exam}
+\usepackage{standalone}
+\newcommand{\secnum}{7.1}
+\input{worksheetspreamble.tex}
+
+\begin{document}
+
+
+\begin{questions}
+\question Determine what function has been transformed and what transformations have been applied to it. Then graph the function.
+
+\begin{parts}
+\part $y=x^2+10$
+
+\begin{solution}[4em]
+For the original function $f(x)=x^2$, then $y$ is $f(x)$ shifted up by $10$. 
+\end{solution}
+
+\part $y=\sqrt[5]{x}-3$
+
+\begin{solution}[4em]
+For the original function $f(x)=\sqrt[5]{x} $, then $y$ is $f(x)$ shifted down by $3$.
+\end{solution}
+
+\part $y=\ln(x+3)$
+
+\begin{solution}[4em]
+For the original function $f(x)=\ln (x)$, then $y$ is $f(x)$ shifted left by $3$.
+\end{solution}
+
+\part $y=(x-5)^2$
+
+\begin{solution}[4em]
+For the original function $f(x)=x^2$, then $y$ is $f(x)$ shifted right by $5$.
+\end{solution}
+
+\part $y=\dfrac{1}{x-7}+4$
+
+\begin{solution}[4em]
+For the original function $f(x)=\dfrac{1}{x}$, then $y$ is $f(x)$ shifted right $7$ and up $4$. 
+\end{solution}
+
+\part $y=e^{x-0.5}-7$
+
+\begin{solution}[4em]
+For the original function $f(x)=e^x$, then $y$ is $f(x)$ shifted down $7$ and right $0.5$.
+\end{solution}
+
+\part $y=(x+6)^2-2$
+
+\begin{solution}[4em]
+For the original function $f(x)=x^2$, then $y$ is $f(x)$ shifted left $6$ and down $2$.
+\end{solution}
+
+\part $y=2^{x+3}+8$
+
+\begin{solution}[4em]
+For the original function $f(x)=2^x$, then $y$ is $f(x)$ shifted up $8$ and left $3$.
+\end{solution}
+
+\end{parts}
+
+
+\question What transformations have been applied to the function $f(x)=13x^2+2x-4$ to obtain $g(x)=13(x-4)^2+2(x-4)+6$?
+
+\begin{solution}[15em]
+Because the $x$ in the function $f(x)$ has been replaced with $x-4$ in the function $g(x)$, this suggests that $g(x)$ is the result of shifting $f(x)$ to the right by $4$.
+
+And, the $-4$ constant in $f(x)$ is replaced with $6$ in $g(x)$, which is $10$ higher. Therefore $g(x)$ is $f(x)$ shifted up by $10$.
+
+In summary, $g(x)$ is $f(x)$ shifted right $4$ and up by $10$. To confirm, $g(x)=f(x-4)+10$.
+\end{solution}
+
+
+
+
+\question Below is the graph of a function $f(x)$. Graph the function $g(x)=f(x-4)-3$.
+
+% \begin{tikzpicture}[scale=0.9]
+% \begin{axis}[grid=both,
+% axis lines=middle,
+% axis line style = very thick,
+% xmin=-1.5,xmax=2.5,
+% ymin=0,ymax=4,
+% xtick={-1,0,1,2},
+% ytick={1,2,3},
+% minor tick={},
+% xlabel=\(x\), ylabel=\(f(x)\),
+% samples=250]
+% \addplot[domain=-1:2 ,thick] {-abs(x-1)+3};
+
+% \ifprintanswers
+% \addplot[domain=-1:2 ,thick,red] {-abs(x-5)};
+% \else \fi
+% \end{axis}
+% \end{tikzpicture}
+% \hfill
+% \ifprintanswers
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=-1.5,xmax=6.5,
+ymin=-2.5,ymax=4,
+xtick={-1,0,1,2,3,4,5,6},
+ytick={-2,-1,0,1,2,3},
+minor tick={},
+xlabel=\(x\), ylabel=\(f(x)\),
+samples=250]
+\addplot[domain=-1:2 ,thick] {-abs(x-1)+3};
+
+\ifprintanswers
+\addplot[domain=3:6 ,thick,red] {-abs(x-5)};
+\else \fi
+\end{axis}
+\end{tikzpicture}
+
+\begin{solution}[5em]
+To obtain $g(x)$, shift the graph of $f(x)$ $4$ units to the right and down $3$ units. The graph in red above is the graph of $g(x)$.
+\end{solution}
+
+
+\question Below is the graph of a transformation of the function $y=x^2$. Write a possible formula for it.
+
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+axis line style = very thick,
+xmin=-4,xmax=2,
+ymin=-2.5,ymax=6,
+xtick={-4,-3,-2,-1,1,2},
+ytick={-2,-1,1,2,3,4,5,6},
+minor tick={},
+xlabel=\(x\), ylabel=\(f(x)\),
+samples=250]
+\addplot[domain=-4:2 ,thick] {(x+1)^2-2};
+
+\ifprintanswers
+\addplot[domain=-4:2 ,thick,red] {x^2};
+\else \fi
+\end{axis}
+\end{tikzpicture}
+
+\begin{solution}[4em]
+The red function on the graph above is the plot of $y=x^2$. Therefore, the one in black (i.e., the one we need a formula for) appears to have been shifted left by $1$ and down by $2$. Therefore, this function is $y=(x+1)^2-2$.
+\end{solution}
+
+
+
+\question A function $g(x)$ is formed by shifting the function $f(x)$ left $5$ and down $6$. Write a formula for $g$ in terms of $f$.
+
+\begin{solution}[6em]
+Here, $g(x)=f(x+5)-6$.
+\end{solution}
+
+
+\question A function $g(x)$ is formed by shifting the function $f(x)$ right $2.7$ and up $14$. Write a formula for $g$ in terms of $f$.
+
+\begin{solution}
+Here, $g(x)=f(x-2.7)+14$.
+\end{solution}
+
+
+
+\end{questions}
+
+\end{document}

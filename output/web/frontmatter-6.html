@@ -36,7 +36,7 @@ htmlPresentation: false,
 <meta name="twitter:description" content="Applied Precalculus Description">
 <meta property="og:description" content="Applied Precalculus Description">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.42"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.43"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -58,15 +58,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.7';
+eBookConfig.runestone_version = '8.1.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.2f713d2360adcee7.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.53a23d1b65c1dce2.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.4787412a251795e3.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -75,23 +75,41 @@ eBookConfig.enable_chatcodes =  false;
 <h1 class="heading"><a href="apc.html"><span class="title">Applied Precalculus</span> <span class="subtitle">MTH 103</span></a></h1>
 <p class="byline">PersonNameChangeMe</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
-<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-3.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
-<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search book" commandfor="ptx-search-dialog" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
-<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog" closedby="closerequest"><div class="ptx-search-dialog-controls">
-<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close search" id="ptx-search-close" class="ptx-search-close" commandfor="ptx-search-dialog" command="close"><span class="material-symbols-outlined">close</span></button>
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-3.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
 <div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
-<h2 class="ptx-search-results-heading">Search Results: </h2>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
 <div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
 <ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
 </div>
-<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page" commandfor="ptx-embed-popup" command="show-modal"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup" closedby="closerequest"><div class="ptx-embed-popup-controls">
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
 <p>Copy the code below to embed this page in your own website or LMS page.</p>
-<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close embed popup"><span class="material-symbols-outlined">close</span></button>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
 </div>
 <div class="ptx-embed-code-container">
-<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="textbox"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy embed code"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
-</div></dialog><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="preface.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="frontmatter.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chapter_1.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="preface.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="frontmatter.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chapter_1.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
 \newcommand{\Z}{\mathbb Z}
 \newcommand{\Q}{\mathbb Q}
@@ -112,10 +130,10 @@ eBookConfig.enable_chatcodes =  false;
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter contains-active">
 <div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
-<ul class="structural toc-item-list contains-active">
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-frontmatter">
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
@@ -124,10 +142,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chapter_1.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chapter_1" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_1_1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Concept of a Function</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_1_1" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-4" class="internal"><span class="title">Functions in General</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-5" class="internal"><span class="title">Functions in Applied Settings</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-6" class="internal"><span class="title">Increasing and Decreasing Functions</span></a></div></li>
@@ -138,7 +156,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_1_2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The Graph of a Function</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_1_2" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_2.html#sec_1_2-4" class="internal"><span class="title">Graphs of Increasing and Decreasing Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_2.html#sec_1_2-5" class="internal"><span class="title">Vertical Line Test</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_2.html#ex_1_2" class="internal"><span class="title">Exercises</span></a></div></li>
@@ -146,24 +164,24 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_1_3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Functions Given Numerically</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_3.html#ex_1_3" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_1_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_3.html#ex_1_3" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_1_4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Vertical and Horizontal Intercepts</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_4.html#ex_1_4" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_1_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_4.html#ex_1_4" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_1_5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Average Rate of Change</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_5.html#ex_1_5" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_1_5" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_5.html#ex_1_5" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chapter_2.html" class="internal"><span class="codenumber">2</span> <span class="title">Linear Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chapter_2" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_2_1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Properties of Linear Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_2_1" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-4" class="internal"><span class="title">Practical Interpretation of the Slope and Vertical Intercept</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-5" class="internal"><span class="title">Graphs of Linear Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-6" class="internal"><span class="title">The Slope Formula</span></a></div></li>
@@ -173,7 +191,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_2_2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Working with Linear Functions and Linear Equations</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_2_2" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_2.html#sec_2_2-4" class="internal"><span class="title">Linear Functions and Linear Equations</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_2.html#sec_2_2-5" class="internal"><span class="title">Number of Solutions to a Linear Equation in One Variable</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_2_2.html#ex_2_2" class="internal"><span class="title">Exercises</span></a></div></li>
@@ -181,16 +199,16 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_2_3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Modeling and Numerically Given Functions</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_2_3.html#ex_2_3" class="internal"><span class="codenumber">2.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_2_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_2_3.html#ex_2_3" class="internal"><span class="codenumber">2.3</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 </ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chapter_3.html" class="internal"><span class="codenumber">3</span> <span class="title">Quadratic Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chapter_3" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_3_1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Quadratic Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_3_1" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_1.html#sec_3_1-4" class="internal"><span class="title">Graphs of Quadratic Functions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_1.html#sec_3_1-5" class="internal"><span class="title">Quadratic Functions and Their Graphs in Applications</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_1.html#ex_3_1" class="internal"><span class="title">Exercises</span></a></div></li>
@@ -198,14 +216,14 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_3_2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Factoring Quadratic Expressions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_3_2" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_2.html#sec_3_2-4" class="internal"><span class="title">Quadratic Functions and Projectile Motion</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_2.html#ex_3_2" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_3_3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Vertex Form and Completing the Square</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_3_3" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_3.html#sec_3_3-4" class="internal"><span class="title">Converting from Vertex Form to Standard Form</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_3.html#sec_3_3-5" class="internal"><span class="title">Converting from Standard Form to Vertex Form</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_3.html#sec_3_3-6" class="internal"><span class="title">Using Vertex Form to Find Horizontal Intercepts</span></a></div></li>
@@ -214,7 +232,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_3_4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">The Quadratic Formula</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_3_4" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_4.html#sec_3_4-4" class="internal"><span class="title">The Discriminant</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_4.html#sec_3_4-5" class="internal"><span class="title">Using Horizontal Intercepts to Find the Vertex</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_4.html#sec_3_4-6" class="internal"><span class="title">Factored Form of a Quadratic Function</span></a></div></li>
@@ -225,14 +243,14 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="chapter_4.html" class="internal"><span class="codenumber">4</span> <span class="title">Power Functions</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-chapter_4" class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Algebra of Powers: Integral Exponents</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_1.html#ex_4_1" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_4_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_1.html#ex_4_1" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Algebra of Powers: Fractional Exponents</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_4_2" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-3" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_2.html#ex_4_2" class="internal"><span class="title">Exercises</span></a></div></li>
@@ -240,14 +258,14 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Power Functions: Positive Integral Exponents</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_4_3" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-3" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_3.html#ex_4_3" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Power Functions: Fractional and Negative Integral Exponents</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-sec_4_4" class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-3" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
@@ -259,7 +277,7 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-backmatter">
 <div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
-<ul class="structural toc-item-list">
+<ul id="ptx-toc-group-backmatter" class="structural toc-item-list">
 <li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Solutions</span></a></div></li>
 <li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Index</span></a></div></li>
 <li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Colophon</span></a></div></li>
@@ -272,12 +290,12 @@ eBookConfig.enable_chatcodes =  false;
 <span class="type">Preface</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">About the Authors</span>
 </h2>
 <div class="para" id="frontmatter-6-2">
-<em class="emphasis">Erin Denette</em> serves as a Teaching Professor for the University of Rhode Island Department of Mathematics and Applied Mathematical Sciences. She received her Ph.D. and M.S. in Mathematics from the University of Rhode Island. She earned her B.S. in Mathematics from Fitchburg State University.<div class="autopermalink" data-description="Paragraph"><a href="#frontmatter-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Erin Denette</em> serves as a Teaching Professor for the University of Rhode Island Department of Mathematics and Applied Mathematical Sciences. She received her Ph.D. and M.S. in Mathematics from the University of Rhode Island. She earned her B.S. in Mathematics from Fitchburg State University.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#frontmatter-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="frontmatter-6-3">
-<em class="emphasis">Barbara Kaskosz</em> serves as a Professor for the University of Rhode Island Department of Mathematics and Applied Mathematical Sciences. She received her Ph.D. in Mathematics from the Institute of Mathematics of the Polish Academy of Sciences and her M.S. in Mathematics from the University of Warsaw.<div class="autopermalink" data-description="Paragraph"><a href="#frontmatter-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<em class="emphasis">Barbara Kaskosz</em> serves as a Professor for the University of Rhode Island Department of Mathematics and Applied Mathematical Sciences. She received her Ph.D. in Mathematics from the Institute of Mathematics of the Polish Academy of Sciences and her M.S. in Mathematics from the University of Warsaw.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#frontmatter-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Preface: About the Authors"><a href="#frontmatter-6" title="Copy heading and permalink for Preface: About the Authors" aria-label="Copy heading and permalink for Preface: About the Authors">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Preface: About the Authors"><a tabindex="-1" href="#frontmatter-6" title="Copy heading and permalink for Preface: About the Authors" aria-label="Copy heading and permalink for Preface: About the Authors">🔗</a></div>
 </section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">
