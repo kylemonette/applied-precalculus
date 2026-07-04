@@ -493,13 +493,13 @@ Rewrite each of the following expressions as a power of 5; that is, in the form 
 
 <li>
 <p>
-    By definition of fractional powers and <xref ref="int-exps-prop2" />: <md>5\sqrt{5} = 5 \cdot 5^{\frac{1}{2}} = 5^{1 + \frac{1}{2}} = 5^{\frac{3}{2}}.</md>
+    By definition of fractional powers and <xref ref="int-exps-prop2">Property</xref>: <md>5\sqrt{5} = 5 \cdot 5^{\frac{1}{2}} = 5^{1 + \frac{1}{2}} = 5^{\frac{3}{2}}.</md>
 </p>
 </li>
 
 <li>
 <p>
-    Note that <m>25 = 5^2</m>. Using <xref ref="int-exps-prop2" /> and <xref ref="int-exps-prop3" />: <md>\frac{5\sqrt{5}}{25} = \frac{5 \cdot 5^{\frac{1}{2}}}{5^2} = \frac{5^{\frac{3}{2}}}{5^2} = 5^{\frac{3}{2} - 2} = 5^{-\frac{1}{2}}.</md>
+    Note that <m>25 = 5^2</m>. Using <xref ref="int-exps-prop2">Property</xref> and <xref ref="int-exps-prop3">Property</xref>: <md>\frac{5\sqrt{5}}{25} = \frac{5 \cdot 5^{\frac{1}{2}}}{5^2} = \frac{5^{\frac{3}{2}}}{5^2} = 5^{\frac{3}{2} - 2} = 5^{-\frac{1}{2}}.</md>
 </p>
 </li>
 

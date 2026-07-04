@@ -7,7 +7,7 @@
   <!-- <book xml:id="applied-precalculus"> -->
     <book xml:id="apc">
     <title>Applied Precalculus</title>
-    <subtitle>MTH 103</subtitle>
+    <subtitle></subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
