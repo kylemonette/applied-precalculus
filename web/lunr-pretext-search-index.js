@@ -445,7 +445,7 @@ var ptx_lunr_docs = [
   "id": "sec_1_2-5-4",
   "level": "2",
   "url": "sec_1_2.html#sec_1_2-5-4",
-  "type": "Theorem",
+  "type": "Result",
   "number": "1.2.10",
   "title": "Vertical Line Test.",
   "body": "Vertical Line Test   Let a curve in the -plane be given. If there is a vertical line that intersects the curve more than once, then the curve does not represent a function. If every vertical line intersects the curve at most once, then the curve represents the graph of a function.   "
@@ -1066,7 +1066,7 @@ var ptx_lunr_docs = [
   "id": "res-ch2-slope-roc",
   "level": "2",
   "url": "sec_2_1.html#res-ch2-slope-roc",
-  "type": "Theorem",
+  "type": "Result",
   "number": "2.1.4",
   "title": "Slope as Rate of Change.",
   "body": " Slope as Rate of Change   For every linear function , the rate of change of with respect to is constant and equal to , with units Further, represents the initial value of the function, , and is measured in units of .   "
@@ -1102,7 +1102,7 @@ var ptx_lunr_docs = [
   "id": "sec_2_1-5-4",
   "level": "2",
   "url": "sec_2_1.html#sec_2_1-5-4",
-  "type": "Theorem",
+  "type": "Result",
   "number": "2.1.8",
   "title": "Graph of a Linear Function.",
   "body": " Graph of a Linear Function   The graph of a linear function is a straight line with slope and vertical intercept . The equation of the line in the slope-intercept form is .    If the slope , the function is increasing and its graph is climbing as increases.    If the slope , the function is decreasing and its graph is falling as increases.    If the slope , the function is the constant function , and its graph is the horizontal line .      "
@@ -1129,7 +1129,7 @@ var ptx_lunr_docs = [
   "id": "sec_2_1-6-4",
   "level": "2",
   "url": "sec_2_1.html#sec_2_1-6-4",
-  "type": "Theorem",
+  "type": "Result",
   "number": "2.1.11",
   "title": "Slope Formula.",
   "body": " Slope Formula   The slope of a linear function whose graph passes through two distinct points and is:    "
@@ -1165,7 +1165,7 @@ var ptx_lunr_docs = [
   "id": "sec_2_1-7-5",
   "level": "2",
   "url": "sec_2_1.html#sec_2_1-7-5",
-  "type": "Theorem",
+  "type": "Result",
   "number": "2.1.15",
   "title": "Constant Functions and Horizontal Lines.",
   "body": " Constant Functions and Horizontal Lines   The linear function with slope and vertical intercept is a constant function with equation given by and its graph is the horizontal line through the -value .   "
@@ -1174,7 +1174,7 @@ var ptx_lunr_docs = [
   "id": "sec_2_1-7-12",
   "level": "2",
   "url": "sec_2_1.html#sec_2_1-7-12",
-  "type": "Theorem",
+  "type": "Result",
   "number": "2.1.16",
   "title": "Vertical Lines.",
   "body": " Vertical Lines   The vertical line with horizontal intercept has equation given by and its slope is undefined.   "
@@ -1372,7 +1372,7 @@ var ptx_lunr_docs = [
   "id": "sec_2_2-3-2",
   "level": "2",
   "url": "sec_2_2.html#sec_2_2-3-2",
-  "type": "Theorem",
+  "type": "Result",
   "number": "2.2.1",
   "title": "Point-Slope Form.",
   "body": " Point-Slope Form     The point-slope form of the equation of a line with slope passing through is:     A linear function with slope for which can be written in the point-slope form as:      Note that means that the point is on the graph of the function .   "
@@ -1813,7 +1813,7 @@ var ptx_lunr_docs = [
   "id": "res-ch3-quadgraphsresult",
   "level": "2",
   "url": "sec_3_1.html#res-ch3-quadgraphsresult",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.1.4",
   "title": "Special Features of the Graphs of Quadratic Functions.",
   "body": " Special Features of the Graphs of Quadratic Functions   The U -shaped graph of a quadratic function is called a parabola .    If is positive the U opens up and the vertex occurs at the lowest point on the parabola.    If is negative the U opens down and the vertex occurs at the highest point on the parabola.     Furthermore, a quadratic parabola is symmetric about the vertical line passing through its vertex, which is referred to as the axis of symmetry . Because of this symmetry, the -coordinate of the vertex of a quadratic function with two distinct horizontal intercepts occurs at the midpoint of those horizontal intercepts.    The -coordinate of the vertex of a quadratic function with distinct horizontal intercepts and has formula:      "
@@ -1957,7 +1957,7 @@ var ptx_lunr_docs = [
   "id": "sec_3_2-3-4",
   "level": "2",
   "url": "sec_3_2.html#sec_3_2-3-4",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.2.1",
   "title": "Factoring Quadratics of the Form <span class=\"process-math\">\\(x^2+Bx+C\\)<\/span>.",
   "body": " Factoring Quadratics of the Form   In order to factor a quadratic expression of the form (where , and are constants and is a variable), find two numbers and whose product is and whose sum is . Then    "
@@ -1984,7 +1984,7 @@ var ptx_lunr_docs = [
   "id": "sec_3_2-3-8",
   "level": "2",
   "url": "sec_3_2.html#sec_3_2-3-8",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.2.4",
   "title": "Difference of Squares.",
   "body": " Difference of Squares   The difference of squares factors into :    "
@@ -2002,7 +2002,7 @@ var ptx_lunr_docs = [
   "id": "sec_3_2-3-12",
   "level": "2",
   "url": "sec_3_2.html#sec_3_2-3-12",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.2.6",
   "title": "Factoring Quadratics of the Form <span class=\"process-math\">\\(ax^2 + bx + c\\)<\/span>.",
   "body": " Factoring Quadratics of the Form   To factor a trinomial of the form (where , , and are constants with and is a variable), rewrite the term  to factor by grouping. This is done by finding two numbers whose product is and whose sum is . These two numbers can be used to rewrite the term .   "
@@ -2029,7 +2029,7 @@ var ptx_lunr_docs = [
   "id": "sec_3_2-3-16",
   "level": "2",
   "url": "sec_3_2.html#sec_3_2-3-16",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.2.9",
   "title": "Factoring Quadratics of the Form <span class=\"process-math\">\\(ax^2+bx\\)<\/span>.",
   "body": " Factoring Quadratics of the Form   Consider an expression of the form (where and are constants with and is a variable). To factor the expression, factor out from both terms: or, alternatively, factor out from both terms:    "
@@ -2218,7 +2218,7 @@ var ptx_lunr_docs = [
   "id": "res-ch3-special-products",
   "level": "2",
   "url": "sec_3_3.html#res-ch3-special-products",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.3.4",
   "title": "Special Product Formulas.",
   "body": " Special Product Formulas       "
@@ -2236,7 +2236,7 @@ var ptx_lunr_docs = [
   "id": "sec_3_3-5-5",
   "level": "2",
   "url": "sec_3_3.html#sec_3_3-5-5",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.3.6",
   "title": "Completing the Square for <span class=\"process-math\">\\(x^2+Bx+C\\)<\/span>.",
   "body": " Completing the Square for   To complete the square on a quadratic function of the form :   Identify , the coefficient of the term.  Compute .   Add and subtract this quantity from the original quadratic function: Note that by both adding and subtracting the same number from the original function, you have in fact added , which does not change the function.    Factor into and combine constants to finish completing the square.      "
@@ -2254,7 +2254,7 @@ var ptx_lunr_docs = [
   "id": "sec_3_3-5-8",
   "level": "2",
   "url": "sec_3_3.html#sec_3_3-5-8",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.3.8",
   "title": "Complete Square on <span class=\"process-math\">\\(ax^2 + bx + c\\)<\/span>.",
   "body": " Complete Square on   To complete the square on a quadratic function of the form where :    Factor out of the first two terms to obtain an expression of the form     Complete the square within the parentheses.    Distribute and combine constants to finish completing the square on the original quadratic.     "
@@ -2479,7 +2479,7 @@ var ptx_lunr_docs = [
   "id": "sec_3_4-3-2",
   "level": "2",
   "url": "sec_3_4.html#sec_3_4-3-2",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.4.1",
   "title": "Quadratic Formula.",
   "body": " Quadratic Formula   Recall that a quadratic equation in standard form is written in the form The solution(s) to a quadratic equation in standard form are given by the quadratic formula :    "
@@ -2515,7 +2515,7 @@ var ptx_lunr_docs = [
   "id": "sec_3_4-4-4",
   "level": "2",
   "url": "sec_3_4.html#sec_3_4-4-4",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.4.5",
   "title": "",
   "body": "  Given the discriminant of the quadratic equation :    If , then the quadratic equation has two distinct real solutions.    If , then the quadratic equation has one real solution.    If , then the quadratic equation has no real solutions.     "
@@ -2533,7 +2533,7 @@ var ptx_lunr_docs = [
   "id": "sec_3_4-5-7",
   "level": "2",
   "url": "sec_3_4.html#sec_3_4-5-7",
-  "type": "Theorem",
+  "type": "Result",
   "number": "3.4.7",
   "title": "Vertex Formula.",
   "body": " Vertex Formula   The vertex of a quadratic function in the standard form is given by    "
@@ -2752,7 +2752,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Algebra of Powers: Integral Exponents",
-  "body": " Algebra of Powers: Integral Exponents    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In the next two sections we review algebra of power expressions of the form: where and are given numbers. The number is called the base in the expression and the power that the base is being raised to is called the exponent .  We begin with integral exponents; that is, exponents that are integers. If is a positive integer , then is simply a short way of writing repeated multiplication: In particular, for ,   We expand this simple definition to the exponent by defining for any number : In particular, by definition: Next, we extend the definition to negative integer exponents by defining for every and every , In particular:   These simple definitions easily imply the basic properties of power expressions.   Rules of Exponents Integral Exponents   Let , be given numbers, and be integers. Then the following equalities hold provided both sides are defined:                              An expression in the formulas above may not be defined if there is a zero in the denominator. For example, in , is not defined if and . So holds for .  The properties of exponents listed above follow very easily from our definitions. For example, to illustrate observe:     Rewrite each expression given below as a power of 3; that is, in the form for some constant .                                 All we need is : We rewrote the expression as for .    By :     By and :     As we have:     Note that . Using :          Use Rules of Exponents to simplify the following expressions if possible:                             We use to simplify the expression under the outside power 2. Then we use :     We begin by simplifying the expression under the power using : Now we use and then :     We simplify the expression under the power using : By and then :     There is no rule for the power of a sum or a difference! We cannot simplify using Rules of Exponents. You certainly cannot distribute the power 7 and write the expression as .        Rewriting Expressions   Rewrite the given expression as a power of ; that is, express it in the form for some .                                                     Rewriting Expressions   Rewrite the given expression as a power of ; that is, express it in the form for some .                                                     Simplifying Expressions   Simplify the given expression if possible. If not possible, state so.                                  Cannot be simplified.                       Cannot be simplified.                       Cannot be simplified.       Let and be positive integers. Use the definition of exponentiation to explain why the following formula is valid:           "
+  "body": " Algebra of Powers: Integral Exponents    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In the next two sections we review algebra of power expressions of the form: where and are given numbers. The number is called the base in the expression and the power that the base is being raised to is called the exponent .  We begin with integral exponents; that is, exponents that are integers. If is a positive integer , then is simply a short way of writing repeated multiplication: In particular, for ,   We expand this simple definition to the exponent by defining for any number : In particular, by definition: Next, we extend the definition to negative integer exponents by defining for every and every , In particular:   These simple definitions easily imply the basic properties of power expressions.   Rules of Exponents Integral Exponents   Let , be given numbers, and be integers. Then the following equalities hold provided both sides are defined:                              An expression in the formulas above may not be defined if there is a zero in the denominator. For example, in Property , is not defined if and . So holds for .  The properties of exponents listed above follow very easily from our definitions. For example, to illustrate observe:     Rewrite each expression given below as a power of 3; that is, in the form for some constant .                                 All we need is : We rewrote the expression as for .    By :     By and :     As we have:     Note that . Using :          Use Rules of Exponents to simplify the following expressions if possible:                             We use to simplify the expression under the outside power 2. Then we use :     We begin by simplifying the expression under the power using : Now we use and then :     We simplify the expression under the power using : By and then :     There is no rule for the power of a sum or a difference! We cannot simplify using Rules of Exponents. You certainly cannot distribute the power 7 and write the expression as .        Rewriting Expressions   Rewrite the given expression as a power of ; that is, express it in the form for some .                                                     Rewriting Expressions   Rewrite the given expression as a power of ; that is, express it in the form for some .                                                     Simplifying Expressions   Simplify the given expression if possible. If not possible, state so.                                  Cannot be simplified.                       Cannot be simplified.                       Cannot be simplified.       Let and be positive integers. Use the definition of exponentiation to explain why the following formula is valid:           "
 },
 {
   "id": "sec_4_1-2",
@@ -2767,7 +2767,7 @@ var ptx_lunr_docs = [
   "id": "sec_4_1-7",
   "level": "2",
   "url": "sec_4_1.html#sec_4_1-7",
-  "type": "Theorem",
+  "type": "Result",
   "number": "4.1.1",
   "title": "Rules of Exponents — Integral Exponents.",
   "body": " Rules of Exponents Integral Exponents   Let , be given numbers, and be integers. Then the following equalities hold provided both sides are defined:                             "
@@ -2965,7 +2965,7 @@ var ptx_lunr_docs = [
   "id": "sec_4_2-3-6",
   "level": "2",
   "url": "sec_4_2.html#sec_4_2-3-6",
-  "type": "Theorem",
+  "type": "Result",
   "number": "4.2.2",
   "title": "Roots and Radicals.",
   "body": " Roots and Radicals   Let be a given number and be a positive integer.     Suppose is even.    If , then has no th order roots.    If , then has two th roots, one positive and one of the same magnitude but negative. We denote the positive  th root as: (We use the radical symbol .) The two th roots can then be written as    Typically, we might use the notation to denote the positive and negative roots.      Suppose is odd. Then has exactly one th root which we denote as If is negative, the root is negative; if is positive the root is positive.  If , then has one root of any order: .     "
@@ -2992,7 +2992,7 @@ var ptx_lunr_docs = [
   "id": "sec_4_2-3-12",
   "level": "2",
   "url": "sec_4_2.html#sec_4_2-3-12",
-  "type": "Theorem",
+  "type": "Result",
   "number": "4.2.5",
   "title": "Properties of Radicals.",
   "body": " Properties of Radicals   Let , be given numbers. Let , be positive integers. Then the following equalities hold provided that the roots involved exist, and both sides are defined:                    if is even     if is odd     "
@@ -3028,7 +3028,7 @@ var ptx_lunr_docs = [
   "id": "sec_4_2-4-9",
   "level": "2",
   "url": "sec_4_2.html#sec_4_2-4-9",
-  "type": "Theorem",
+  "type": "Result",
   "number": "4.2.8",
   "title": "Rules of Exponents — Arbitrary Exponents.",
   "body": " Rules of Exponents Arbitrary Exponents   Let , be given positive numbers, and be real numbers. Then the following equalities hold:                          "
