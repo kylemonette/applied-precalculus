@@ -18,8 +18,8 @@
 <stringparams draft="yes"/>
 </target>
 
-<target name="standalone" format="html" source="main-supplement.ptx" publication="standalone.ptx" xsl="pretext-html.xsl">
-</target>
+<!-- <target name="standalone" format="html" source="main-supplement.ptx" publication="standalone.ptx" xsl="pretext-html.xsl"> -->
+<!-- </target> -->
 
 <target name="runestone" publication="runestone.ptx" format="html" />
 </targets>
