@@ -18,6 +18,9 @@
 <stringparams draft="yes"/>
 </target>
 
+<target name="standalone" format="html" source="main.ptx" publication="standalone.ptx" xsl="pretext-html.xsl" deploy-dir="standalone">
+</target>
+
 <target name="runestone" publication="runestone.ptx" format="html" />
 </targets>
 </project>
