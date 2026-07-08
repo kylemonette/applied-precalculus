@@ -35,7 +35,7 @@
 
 
   <common>
-    <chunking level="1"/>
+    <chunking level="2"/>
     <tableofcontents level="2"/>
     <exercise-reading hint="yes" answer="no" solution="no"/>
 <!-- Inline exercises include card sorting, etc. Should match the same as divisional exercises below. -->
@@ -190,7 +190,7 @@
       <!--<calculator model="geogebra-classic" activecode="python" />-->
 
     <!-- Set the base URL of where the online version is hosted to have links in other formats -->
-      <baseurl href="https://kylemonette.github.io/mth103-book/supplements/"/>
+      <baseurl href="https://kylemonette.github.io/mth103-book/supplement/"/>
 
     <!-- Control behavior of online WeBWorK, per type: -->
       <!-- <webwork
