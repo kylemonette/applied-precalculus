@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Chapter 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Applied Precalculus: Supplementary Material">
+<meta property="og:title" content="Applied Precalculus: Supplementary Material">
+<meta property="book:title" content="Applied Precalculus: Supplementary Material">
+<meta name="twitter:description" content="Applied Precalculus Description">
+<meta property="og:description" content="Applied Precalculus Description">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.43"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.9';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.846a0d6fafaa99e0.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bbcfc02849ebc023.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="apc" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="apc.html"><span class="title">Applied Precalculus</span> <span class="subtitle">Supplementary Material</span></a></h1>
+<p class="byline"></p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="chapter_2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="part_1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chapter_4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\usepackage{xcolor,color}
+\newcommand{\aroc}{\text{ARC}}
+\newcommand{\rad}{\quad \textrm{radians}}
+\newcommand{\pbr}[1]{\left( #1 \right)}
+\newcommand{\sbr}[1]{\left\{ #1 \right\}}
+\newcommand{\cbr}[1]{\left[ #1 \right]}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\markcell}[2]{
+\tikz[remember picture, baseline=(#1.base)] \node[inner sep=0pt] (#1) {#2};
+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part_1.html" class="internal"><span class="title">Practice Worksheets</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-part_1">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_1.html" class="internal"><span class="title">Chapter 1</span></a></div>
+<ul id="ptx-toc-group-chapter_1" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_1" class="internal"><span class="title">1.1 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_2" class="internal"><span class="title">1.2 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_3" class="internal"><span class="title">1.3 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_4" class="internal"><span class="title">1.4 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_1.html#ws_1_5" class="internal"><span class="title">1.5 Practice Worksheet</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_2.html" class="internal"><span class="title">Chapter 2</span></a></div>
+<ul id="ptx-toc-group-chapter_2" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_2.html#ws_2_1" class="internal"><span class="title">2.1 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_2.html#ws_2_2" class="internal"><span class="title">2.2 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_2.html#ws_2_3" class="internal"><span class="title">2.3 Practice Worksheet</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter_3.html" class="internal"><span class="title">Chapter 3</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-chapter_3">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_3.html#ws_3_1" class="internal"><span class="title">3.1 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_3.html#ws_3_2" class="internal"><span class="title">3.2 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_3.html#ws_3_3" class="internal"><span class="title">3.3 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_3.html#ws_3_4" class="internal"><span class="title">3.4 Practice Worksheet</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_4.html" class="internal"><span class="title">Chapter 4</span></a></div>
+<ul id="ptx-toc-group-chapter_4" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_4.html#ws_4_1" class="internal"><span class="title">4.1 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_4.html#ws_4_2" class="internal"><span class="title">4.2 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_4.html#ws_4_3" class="internal"><span class="title">4.3 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_4.html#ws_4_4" class="internal"><span class="title">4.4 Practice Worksheet</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_5.html" class="internal"><span class="title">Chapter 5</span></a></div>
+<ul id="ptx-toc-group-chapter_5" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_5.html#ws_5_1" class="internal"><span class="title">5.1 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_5.html#ws_5_2" class="internal"><span class="title">5.2 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_5.html#ws_5_3" class="internal"><span class="title">5.3 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_5.html#ws_5_4" class="internal"><span class="title">5.4 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_5.html#ws_5_5" class="internal"><span class="title">5.5 Practice Worksheet</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_6.html" class="internal"><span class="title">Chapter 6</span></a></div>
+<ul id="ptx-toc-group-chapter_6" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_6.html#ws_6_1" class="internal"><span class="title">6.1 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_6.html#ws_6_2" class="internal"><span class="title">6.2 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_6.html#ws_6_3" class="internal"><span class="title">6.3 Practice Worksheet</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_7.html" class="internal"><span class="title">Chapter 7</span></a></div>
+<ul id="ptx-toc-group-chapter_7" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_7.html#ws_7_1" class="internal"><span class="title">7.1 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_7.html#ws_7_2" class="internal"><span class="title">7.2 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_7.html#ws_7_3" class="internal"><span class="title">7.3 Practice Worksheet</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_8.html" class="internal"><span class="title">Chapter 8</span></a></div>
+<ul id="ptx-toc-group-chapter_8" class="structural toc-item-list">
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_8.html#ws_8_1" class="internal"><span class="title">8.1 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_8.html#ws_8_2" class="internal"><span class="title">8.2 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_8.html#ws_8_3" class="internal"><span class="title">8.3 Practice Worksheet</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="chapter_8.html#ws_8_4" class="internal"><span class="title">8.4 - 8.5 Practice Worksheet</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part_2.html" class="internal"><span class="title">Exam Reviews</span></a></div>
+<ul id="ptx-toc-group-part_2" class="structural toc-item-list"><li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="exam1.html" class="internal"><span class="title">Exam 1 Practice</span></a></div></li></ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="chapter" id="chapter_3">
+<h2 class="heading hide-type">
+<span class="type">​</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chapter 3</span>
+</h2>
+<section class="worksheet" id="ws_3_1" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.1 Practice Worksheet</span><div class="print-links"><a href="?printpreview=ws_3_1" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h3>
+<article class="exercise exercise-like" id="ws_3_1-2"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="ws_3_1-2-1">
+<div class="para" id="ws_3_1-2-1-1">Write each quadratic function in the standard form <span class="process-math">\(ax^2+bx+c\)</span> and identify <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(b\text{,}\)</span> and <span class="process-math">\(c\text{.}\)</span> For each function, what is the <span class="process-math">\(y\)</span>-intercept? Will its graph open up or down?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="ws_3_1-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="ws_3_1-2-2-1-1">
+<span class="process-math">\(y=(-4x)^2+1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_1-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_1-2-2-2-1">
+<div class="para">Because <span class="process-math">\((-4x)^2 = 16x^2\text{,}\)</span> then the equation in standard form is</div>
+<div class="displaymath process-math" id="ws_3_1-2-2-2-1-2">
+\begin{equation*}
+y = 16x^2 + 1.
+\end{equation*}
+</div>
+<div class="para">This means <span class="process-math">\(a=16\text{,}\)</span> <span class="process-math">\(b=0\text{,}\)</span> and <span class="process-math">\(c=1\text{.}\)</span> Because <span class="process-math">\(a\)</span> is positive, the quadratic opens up. And the vertical intercept is <span class="process-math">\(1\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.a.1"><a tabindex="-1" href="#ws_3_1-2-2-2" title="Copy heading and permalink for Solution 1.a.1" aria-label="Copy heading and permalink for Solution 1.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.a"><a tabindex="-1" href="#ws_3_1-2-2" title="Copy heading and permalink for Task 1.a" aria-label="Copy heading and permalink for Task 1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws_3_1-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="ws_3_1-2-3-1-1">
+<span class="process-math">\(f(x)=(x-6)^2-20\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_1-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_1-2-3-2-1">
+<div class="para">First, expand <span class="process-math">\((x-6)^2\)</span> by multiplying <span class="process-math">\((x-6)(x-6)\)</span> to get</div>
+<div class="displaymath process-math" id="ws_3_1-2-3-2-1-3">
+\begin{equation*}
+f(x) = (x-6)(x-6)-20 = (x^2-6x-6x+36)-20 = x^2-12x+16.
+\end{equation*}
+</div>
+<div class="para">This means <span class="process-math">\(a=1\text{,}\)</span> <span class="process-math">\(b=-12\text{,}\)</span> and <span class="process-math">\(c=16\text{.}\)</span> Because <span class="process-math">\(a\)</span> is positive, the graph opens up. And the vertical intercept is <span class="process-math">\(16\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.b.1"><a tabindex="-1" href="#ws_3_1-2-3-2" title="Copy heading and permalink for Solution 1.b.1" aria-label="Copy heading and permalink for Solution 1.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.b"><a tabindex="-1" href="#ws_3_1-2-3" title="Copy heading and permalink for Task 1.b" aria-label="Copy heading and permalink for Task 1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws_3_1-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="ws_3_1-2-4-1-1">
+<span class="process-math">\(g(x)=2(x-3)^2-16\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_1-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_1-2-4-2-1">Expand the <span class="process-math">\((x-3)^2\)</span> term by computing <span class="process-math">\((x-3)(x-3)\text{:}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ws_3_1-2-4-2-2">
+<div class="displaymath process-math" id="ws_3_1-2-4-2-2-1">
+\begin{align*}
+g(x) \amp= 2(x-3)(x-3)-16\\
+\amp= 2 \pbr{x^2-3x-3x+9} -16\\
+\amp = 2\pbr{x^2-6x+9} -16\\
+\amp= 2x^2-12x+18-16\\
+\amp= 2x^2-12x + 2
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ws_3_1-2-4-2-3">So <span class="process-math">\(a=2\text{,}\)</span> <span class="process-math">\(b=-12\text{,}\)</span> and <span class="process-math">\(c=2\text{.}\)</span> This means the graph opens up and has a vertical intercept of <span class="process-math">\(2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.c.1"><a tabindex="-1" href="#ws_3_1-2-4-2" title="Copy heading and permalink for Solution 1.c.1" aria-label="Copy heading and permalink for Solution 1.c.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.c"><a tabindex="-1" href="#ws_3_1-2-4" title="Copy heading and permalink for Task 1.c" aria-label="Copy heading and permalink for Task 1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws_3_1-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="ws_3_1-2-5-1-1">
+<span class="process-math">\(y=-(x+1)(x-5)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_1-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_1-2-5-2-1">
+<div class="para">Expand the product to get</div>
+<div class="displaymath process-math" id="ws_3_1-2-5-2-1-1">
+\begin{equation*}
+y = - \pbr{x^2-5x+x-5} = - \pbr{x^2-4x-5}  = -x^2+4x+5.
+\end{equation*}
+</div>
+<div class="para">Be careful of the negative sign in front! Now, <span class="process-math">\(a=-1\text{,}\)</span> <span class="process-math">\(b=4\text{,}\)</span> and <span class="process-math">\(c=5\)</span> so the graph opens down (because <span class="process-math">\(a\)</span> is negative) and has a vertical intercept of <span class="process-math">\(5\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.d.1"><a tabindex="-1" href="#ws_3_1-2-5-2" title="Copy heading and permalink for Solution 1.d.1" aria-label="Copy heading and permalink for Solution 1.d.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.d"><a tabindex="-1" href="#ws_3_1-2-5" title="Copy heading and permalink for Task 1.d" aria-label="Copy heading and permalink for Task 1.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="ws_3_1-2-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="ws_3_1-2-6-1-1">
+<span class="process-math">\(h(x)=(x-2)(x+7)-3(2x-5)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_1-2-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_1-2-6-2-1">
+<div class="displaymath process-math" id="ws_3_1-2-6-2-1-1">
+\begin{align*}
+h(x) \amp= x^2+7x-2x-14 - 3(2x-5)\\
+\amp= x^2+5x-14 - 6x + 15\\
+\amp= x^2-x+1
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ws_3_1-2-6-2-2">Therefore <span class="process-math">\(a=1\text{,}\)</span> <span class="process-math">\(b=-1\text{,}\)</span> and <span class="process-math">\(c=1\text{,}\)</span> so the graph opens up and has a vertical intercept at <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-2-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.e.1"><a tabindex="-1" href="#ws_3_1-2-6-2" title="Copy heading and permalink for Solution 1.e.1" aria-label="Copy heading and permalink for Solution 1.e.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 1.e"><a tabindex="-1" href="#ws_3_1-2-6" title="Copy heading and permalink for Task 1.e" aria-label="Copy heading and permalink for Task 1.e">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#ws_3_1-2" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_1-3"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws_3_1-3-1-1">A quadratic parabola crosses the <span class="process-math">\(x\)</span>-axis at the point <span class="process-math">\((2,0)\)</span> and has a vertex of <span class="process-math">\((4,4)\text{.}\)</span> Find the second point on the <span class="process-math">\(x\)</span>-axis where the parabola crosses the <span class="process-math">\(x\)</span>-axis. Does the parabola open up or open down?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_1-3-2-1">
+<div class="para">Recall that <span class="process-math">\(h=\dfrac{x_1+x_2}{2} \text{.}\)</span> We know <span class="process-math">\(x_1=2\)</span> and <span class="process-math">\(h=4\)</span> (the <span class="process-math">\(x\)</span>-coordinate of the vertex). Therefore</div>
+<div class="displaymath process-math" id="ws_3_1-3-2-1-5">
+\begin{equation*}
+4=\frac{2+x_2}{2} .
+\end{equation*}
+</div>
+<div class="para">Solving for <span class="process-math">\(x_2\text{,}\)</span> we multiply both sides by <span class="process-math">\(2\)</span> to get <span class="process-math">\(8 = 2+x_2\)</span> and so <span class="process-math">\(x_2=6\text{.}\)</span> This means that the function has another <span class="process-math">\(x\)</span>-intercept at <span class="process-math">\(x=6\text{.}\)</span> To determine if it opens up or down, note that the vertex is above the <span class="process-math">\(x\)</span>-axis (because <span class="process-math">\(k=4\text{,}\)</span> the <span class="process-math">\(y\)</span>-coordinate of the vertex). So the graph must open <em class="emphasis">down</em>, because we know it has two horizontal intercepts and the vertex is above the <span class="process-math">\(x\)</span>-axis.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#ws_3_1-3-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#ws_3_1-3" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_1-4"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws_3_1-4-1-1">The horizontal intercepts of a quadratic parabola are <span class="process-math">\(x=-2\)</span> and <span class="process-math">\(x=5\text{.}\)</span> Find the <span class="process-math">\(x\)</span>-coordinate of its vertex.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_1-4-2-1">
+<div class="para">The <span class="process-math">\(x\)</span>-coordinate of the vertex is <span class="process-math">\(h\text{,}\)</span> and so we use</div>
+<div class="displaymath process-math" id="ws_3_1-4-2-1-3">
+\begin{equation*}
+h = \frac{x_1+x_2}{2} .
+\end{equation*}
+</div>
+<div class="para">Because <span class="process-math">\(x_1=-2\)</span> and <span class="process-math">\(x_2=5\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="ws_3_1-4-2-1-6">
+\begin{equation*}
+h = \frac{-2+5}{2}  = \frac{3}{2}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#ws_3_1-4-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#ws_3_1-4" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: 3.1 Practice Worksheet"><a tabindex="-1" href="#ws_3_1" title="Copy heading and permalink for Worksheet: 3.1 Practice Worksheet" aria-label="Copy heading and permalink for Worksheet: 3.1 Practice Worksheet">🔗</a></div>
+</section>
+<section class="worksheet" id="ws_3_2" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.2 Practice Worksheet</span><div class="print-links"><a href="?printpreview=ws_3_2" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h3>
+<div class="exercisegroup" id="ws_3_2-2">
+<h4 class="heading"><span class="title">Finding Intercepts.</span></h4>
+<div class="introduction" id="ws_3_2-2-2">
+<div class="para" id="ws_3_2-2-2-1">Find the horizontal intercepts of each quadratic function by factoring.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="ws_3_2-2-3"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-3-1-1">
+<span class="process-math">\(f(x)=x^2+3 x+2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-3-2-1">Two numbers that multiply to <span class="process-math">\(2\)</span> and add to <span class="process-math">\(3\)</span> are <span class="process-math">\(1\)</span> and <span class="process-math">\(2\text{,}\)</span> so <span class="process-math">\(f(x)=(x+2)(x+1)\text{.}\)</span> Setting this to <span class="process-math">\(0\text{,}\)</span> then <span class="process-math">\(x+2=0\)</span> and <span class="process-math">\(x+1=0\text{,}\)</span> meaning <span class="process-math">\(x=-2\)</span> and <span class="process-math">\(x=-1\)</span> are the horizontal intercepts.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#ws_3_2-2-3-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#ws_3_2-2-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-4"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-4-1-1">
+<span class="process-math">\(y=x^2-x-6\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-4-2-1">Two numbers that multiply to <span class="process-math">\(-6\)</span> and add to <span class="process-math">\(-1\)</span> are <span class="process-math">\(-3\)</span> and <span class="process-math">\(2\text{,}\)</span> so <span class="process-math">\(y=(x-3)(x+2)\text{.}\)</span> Setting this to <span class="process-math">\(0\text{,}\)</span> then <span class="process-math">\(x-3=0\)</span> and <span class="process-math">\(x+2=0\text{,}\)</span> meaning <span class="process-math">\(x=3\)</span> and <span class="process-math">\(x=-2\)</span> are the horizontal intercepts.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#ws_3_2-2-4-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#ws_3_2-2-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-5"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-5-1-1">
+<span class="process-math">\(g(t)=t^2+t-6\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-5-2-1">Two numbers that multiply to <span class="process-math">\(-6\)</span> and add to <span class="process-math">\(1\)</span> are <span class="process-math">\(3\)</span> and <span class="process-math">\(-2\text{,}\)</span> so <span class="process-math">\(g(t)=(t+3)(t-2)\text{.}\)</span> Setting this to <span class="process-math">\(0\text{,}\)</span> then <span class="process-math">\(t+3=0\)</span> and <span class="process-math">\(t-2=0\text{,}\)</span> meaning <span class="process-math">\(t=-3\)</span> and <span class="process-math">\(t=2\)</span> are the horizontal intercepts.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#ws_3_2-2-5-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#ws_3_2-2-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-6"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-6-1-1">
+<span class="process-math">\(y=x^2-8 x+16\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-6-2-1">Two numbers that multiply to <span class="process-math">\(16\)</span> and add to <span class="process-math">\(-8\)</span> are <span class="process-math">\(-4\)</span> and <span class="process-math">\(-4\text{,}\)</span> so <span class="process-math">\(y=(x-4)(x-4)\text{.}\)</span> Setting this to <span class="process-math">\(0\text{,}\)</span> then <span class="process-math">\(x-4=0\)</span> and so <span class="process-math">\(x=4\)</span> is the only horizontal intercept.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#ws_3_2-2-6-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#ws_3_2-2-6" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-7"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-7-1-1">
+<span class="process-math">\(f(w)=w^2+14 w+49\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-7-2-1">Two numbers that multiply to <span class="process-math">\(49\)</span> and add to <span class="process-math">\(14\)</span> are <span class="process-math">\(7\)</span> and <span class="process-math">\(7\text{,}\)</span> so <span class="process-math">\(f(w)=(w+7)(w+7)\text{.}\)</span> Setting this to <span class="process-math">\(0\text{,}\)</span> then <span class="process-math">\(w+7=0\)</span> and so <span class="process-math">\(w=-7\)</span> is the only horizontal intercept.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.1"><a tabindex="-1" href="#ws_3_2-2-7-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#ws_3_2-2-7" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-8"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-8-1-1">
+<span class="process-math">\(f(t)=64t^2-36\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-8-2-1">One method (the preferred method) is to realize this is a <em class="emphasis">difference of squares</em>. That is, <span class="process-math">\(f(t)=(8t)^2-6^2\)</span> and so <span class="process-math">\(f(t)=(8t+6)(8t-6)\text{.}\)</span> In this case, setting <span class="process-math">\(f(t)=0\)</span> yields <span class="process-math">\(8t-6=0\)</span> so <span class="process-math">\(t=\frac{6}{8}=\frac{3}{4}\)</span> and also <span class="process-math">\(8t+6=0\)</span> so <span class="process-math">\(t=-\frac{3}{4}\text{.}\)</span> Another method is to factor out <span class="process-math">\(64\)</span> and write <span class="process-math">\(f(t)=64(t^2-9 / 16)\text{.}\)</span> Then, we need two numbers that multiply to <span class="process-math">\(-9/16\)</span> and add to <span class="process-math">\(0\text{,}\)</span> which are <span class="process-math">\(-3/4\)</span> and <span class="process-math">\(3 /4\text{.}\)</span> Thus <span class="process-math">\(f(t)=64(t-3/4)(t+3/4)\)</span> which is actually equal to the other method above (as we expect) if you distribute the <span class="process-math">\(64\)</span> inside.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.1"><a tabindex="-1" href="#ws_3_2-2-8-2" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6"><a tabindex="-1" href="#ws_3_2-2-8" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-9"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-9-1-1">
+<span class="process-math">\(h(x)=2 x^2+10 x+8\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-9-2-1">Note that <span class="process-math">\(2\)</span> is a factor in each term, so we can write <span class="process-math">\(h(x) = 2 (x^2+5x+4)\text{.}\)</span> Now, concentrate on <span class="process-math">\(x^2+5x+4\text{.}\)</span> Two numbers that multiply to <span class="process-math">\(4\)</span> and add to <span class="process-math">\(5\)</span> are <span class="process-math">\(4\)</span> and <span class="process-math">\(1\text{,}\)</span> so this factors to <span class="process-math">\((x+4)(x+1)\text{.}\)</span> Therefore <span class="process-math">\(h(x)=2(x+4)(x+1)\text{.}\)</span> Horizontal intercepts are <span class="process-math">\(x=-4\)</span> and <span class="process-math">\(x=-1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1"><a tabindex="-1" href="#ws_3_2-2-9-2" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 7"><a tabindex="-1" href="#ws_3_2-2-9" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-10"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-10-1-1">
+<span class="process-math">\(y=2 w^2- w-3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_2-2-10-2-1">
+<div class="para">Unlike the last question, <span class="process-math">\(2\)</span> is not a factor in every term. So we use the <span class="process-math">\(ac\)</span>-method (described in the textbook). First, find two numbers which multiply to <span class="process-math">\(a\cdot c = 2 \cdot (-3)=-6\)</span> and add to <span class="process-math">\(-1\text{,}\)</span> which are <span class="process-math">\(2\)</span> and <span class="process-math">\(-3\text{.}\)</span> Then, write <span class="process-math">\(y = 2w^2 +2w - 3w - 3\text{.}\)</span> Factoring out the greatest common factors,</div>
+<div class="displaymath process-math" id="ws_3_2-2-10-2-1-8">
+\begin{equation*}
+y = 2w(w+1) - 3\cdot (w+1)
+\end{equation*}
+</div>
+<div class="para">which factors to <span class="process-math">\(y=(w+1)(2w-3)\text{.}\)</span> Setting this to <span class="process-math">\(0\text{,}\)</span> then <span class="process-math">\(w+1=0\)</span> and <span class="process-math">\(2w-3=0\text{.}\)</span> Thus horizontal intercepts are <span class="process-math">\(w=-1\)</span> and <span class="process-math">\(w=\frac{3}{2}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.1"><a tabindex="-1" href="#ws_3_2-2-10-2" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 8"><a tabindex="-1" href="#ws_3_2-2-10" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-11"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-11-1-1">
+<span class="process-math">\(f(x)=-x^2-6x+16\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-11-2-1">Factor out the <span class="process-math">\(-1\)</span> from everything, yielding <span class="process-math">\(f(x)=-(x^2+6x-16)\text{.}\)</span> Then, concentrate on <span class="process-math">\(x^2+6x-16\text{.}\)</span> Two numbers which multiply to <span class="process-math">\(-16\)</span> and add to <span class="process-math">\(6\)</span> are <span class="process-math">\(8\)</span> and <span class="process-math">\(-2\text{.}\)</span> Therefore <span class="process-math">\(f(x)=-(x+8)(x-2)\text{.}\)</span> Setting this to <span class="process-math">\(0\text{,}\)</span> then <span class="process-math">\(x+8=0\)</span> and <span class="process-math">\(x-2=0\text{,}\)</span> thus <span class="process-math">\(x=-8\)</span> and <span class="process-math">\(x=2\)</span> are the horizontal intercepts.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.1"><a tabindex="-1" href="#ws_3_2-2-11-2" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 9"><a tabindex="-1" href="#ws_3_2-2-11" title="Copy heading and permalink for Worksheet Exercise 9" aria-label="Copy heading and permalink for Worksheet Exercise 9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-12"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-12-1-1">
+<span class="process-math">\(g(x)=\frac{1}{49}-4x^2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-12-2-1">This is another <em class="emphasis">difference of squares</em> since <span class="process-math">\(g(x)=\pbr{\frac{1}{7}} ^2 - (2x)^2\text{.}\)</span> Therefore <span class="process-math">\(g(x)=\pbr{\frac{1}{7}-2x} \pbr{\frac{1}{7}+2x} \text{.}\)</span> This means that the horizontal intercepts are when <span class="process-math">\(\frac{1}{7}-2x=0\)</span> and <span class="process-math">\(\frac{1}{7}+2x=0\text{,}\)</span> that is, when <span class="process-math">\(x=\frac{1}{14}\)</span> and <span class="process-math">\(x=-\frac{1}{14}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.1"><a tabindex="-1" href="#ws_3_2-2-12-2" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 10"><a tabindex="-1" href="#ws_3_2-2-12" title="Copy heading and permalink for Worksheet Exercise 10" aria-label="Copy heading and permalink for Worksheet Exercise 10">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-13"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-13-1-1">
+<span class="process-math">\(p(x)=2x^2-6x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-13-2-1">The factor <span class="process-math">\(2x\)</span> is common to both terms, so <span class="process-math">\(p(x)=2x(x-3)\)</span> and therefore the horizontal intercepts are when <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=3\text{.}\)</span> <em class="emphasis">Alternatively, you can just factor out the <span class="process-math">\(2\)</span> and then write <span class="process-math">\(p(x)=2(x^2-3x)\text{.}\)</span> From here, find two numbers that multiply to <span class="process-math">\(0\)</span> and add to <span class="process-math">\(-3\text{.}\)</span> This will yield the same answer as the above.</em><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 11.1"><a tabindex="-1" href="#ws_3_2-2-13-2" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 11"><a tabindex="-1" href="#ws_3_2-2-13" title="Copy heading and permalink for Worksheet Exercise 11" aria-label="Copy heading and permalink for Worksheet Exercise 11">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_2-2-14"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_2-2-14-1-1">
+<span class="process-math">\(m(t)=-5t^2+2t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_2-2-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_2-2-14-2-1">The greatest common factor in each term is <span class="process-math">\(t\text{,}\)</span> so <span class="process-math">\(m(t)=t(-5t+2)\text{.}\)</span> Then, horizontal intercepts are when <span class="process-math">\(t=0\)</span> and when <span class="process-math">\(-5t+2=0\text{,}\)</span> that is, <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=\frac{2}{5}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_2-2-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 12.1"><a tabindex="-1" href="#ws_3_2-2-14-2" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 12"><a tabindex="-1" href="#ws_3_2-2-14" title="Copy heading and permalink for Worksheet Exercise 12" aria-label="Copy heading and permalink for Worksheet Exercise 12">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1–12: Finding Intercepts"><a tabindex="-1" href="#ws_3_2-2" title="Copy heading and permalink for Exercise Group 1–12: Finding Intercepts" aria-label="Copy heading and permalink for Exercise Group 1–12: Finding Intercepts">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet: 3.2 Practice Worksheet"><a tabindex="-1" href="#ws_3_2" title="Copy heading and permalink for Worksheet: 3.2 Practice Worksheet" aria-label="Copy heading and permalink for Worksheet: 3.2 Practice Worksheet">🔗</a></div>
+</section>
+<section class="worksheet" id="ws_3_3" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.3 Practice Worksheet</span><div class="print-links"><a href="?printpreview=ws_3_3" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h3>
+<div class="exercisegroup" id="ws_3_3-2">
+<h4 class="heading"><span class="title">Standard Form to Vertex Form.</span></h4>
+<div class="introduction" id="ws_3_3-2-2">
+<div class="para" id="ws_3_3-2-2-1">Complete the square to convert each quadratic function from standard form to vertex form. Then identify the vertex.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="ws_3_3-2-3"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_3-2-3-1-1">
+<span class="process-math">\(y=x^2+8x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_3-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_3-2-3-2-1">
+<div class="para">Here, <span class="process-math">\(b=8\)</span> so <span class="process-math">\(\frac{b}{2}=4\)</span> and <span class="process-math">\(\pbr{\frac{b}{2}} ^2 = 16\text{.}\)</span> Adding and subtracting this, we get</div>
+<div class="displaymath process-math" id="ws_3_3-2-3-2-1-4">
+\begin{equation*}
+y = x^2+8x+16-16
+\end{equation*}
+</div>
+<div class="para">which factors to</div>
+<div class="displaymath process-math" id="ws_3_3-2-3-2-1-5">
+\begin{equation*}
+y = (x+4)^2-16.
+\end{equation*}
+</div>
+<div class="para">The vertex is <span class="process-math">\((-4,-16)\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#ws_3_3-2-3-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#ws_3_3-2-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_3-2-4"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_3-2-4-1-1">
+<span class="process-math">\(y=4x^2-12x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_3-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_3-2-4-2-1">
+<div class="para">First factor out the <span class="process-math">\(4\)</span> to get <span class="process-math">\(y=4(x^2-3x)\text{.}\)</span> Now concentrate only on the <span class="process-math">\(x^2-3x\)</span> quadratic. Here, <span class="process-math">\(b=-3\)</span> so <span class="process-math">\(\frac{b}{2}=-\frac{3}{2}\)</span> and <span class="process-math">\(\pbr{\frac{b}{2}} ^2 = \frac{9}{4}\text{.}\)</span> Thus</div>
+<div class="displaymath process-math" id="ws_3_3-2-4-2-1-7">
+\begin{equation*}
+x^2-3x \quad=\quad x^2-3x + \frac{9}{4} - \frac{9}{4} \quad=\quad \pbr{x-\frac{3}{2}} ^2-\frac{9}{4}.
+\end{equation*}
+</div>
+<div class="para">Multiplying back by the <span class="process-math">\(4\)</span> we factored out originally,</div>
+<div class="displaymath process-math" id="ws_3_3-2-4-2-1-9">
+\begin{equation*}
+y \quad=\quad 4\pbr{\pbr{x-\frac{3}{2}} ^2 - \frac{9}{4}} \quad=\quad 4\pbr{x-\frac{3}{2}} ^2-9.
+\end{equation*}
+</div>
+<div class="para">The vertex is <span class="process-math">\(\pbr{\frac{3}{2}, -9} \text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#ws_3_3-2-4-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#ws_3_3-2-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_3-2-5"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_3-2-5-1-1">
+<span class="process-math">\(y=x^2-2x-15\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_3-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_3-2-5-2-1">
+<div class="para">Here <span class="process-math">\(b=-2\)</span> so <span class="process-math">\(\frac{b}{2}=-1\)</span> and <span class="process-math">\(\pbr{\frac{b}{2}} ^2=1\text{.}\)</span> Adding and subtracting this,</div>
+<div class="displaymath process-math" id="ws_3_3-2-5-2-1-4">
+\begin{align*}
+y \amp \quad=\quad x^2-2x+1-15-1 \\
+\amp \quad=\quad (x-1)^2-15-1\\
+\amp \quad=\quad (x-1)^2-16.
+\end{align*}
+</div>
+<div class="para">The vertex is <span class="process-math">\((1,-16)\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#ws_3_3-2-5-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#ws_3_3-2-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_3-2-6"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_3-2-6-1-1">
+<span class="process-math">\(y=3x^2-20x+7\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_3-2-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_3-2-6-2-1">
+<div class="para">First factor out the <span class="process-math">\(3\)</span> from the first two terms to get <span class="process-math">\(y=3(x^2-\frac{20}{3}x) + 7\text{.}\)</span> Now, concentrate only on the <span class="process-math">\(x^2-\frac{20}{3}x\)</span> quadratic. Here, <span class="process-math">\(b=-\frac{20}{3}\)</span> so <span class="process-math">\(\frac{b}{2}=-\frac{10}{3}\)</span> and <span class="process-math">\((\frac{b}{2})^2 = \frac{100}{9}\text{.}\)</span> Adding and subtracting this,</div>
+<div class="displaymath process-math" id="ws_3_3-2-6-2-1-7">
+\begin{align*}
+x^2-\frac{20}{3}x  \amp \quad=\quad x^2 - \frac{20}{3}x + \frac{100}{9} - \frac{100}{9} \\
+\amp \quad=\quad \pbr{x-\frac{10}{3}} ^2 - \frac{100}{9}.
+\end{align*}
+</div>
+<div class="para">Now, multiply by the <span class="process-math">\(3\)</span> that we factored out initially to get</div>
+<div class="displaymath process-math" id="ws_3_3-2-6-2-1-9">
+\begin{align*}
+y \amp \quad=\quad 3 \pbr{\pbr{x-\frac{10}{3}} ^2 - \frac{100}{9}} + 7 \\
+\amp \quad=\quad 3\pbr{x-\frac{10}{3}} ^2 - \frac{100}{3} + 7 \\
+\amp \quad=\quad 3\pbr{x-\frac{10}{3}} ^2 - \frac{79}{3}.
+\end{align*}
+</div>
+<div class="para">The vertex is <span class="process-math">\((\frac{10}{3}, -\frac{79}{3})\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#ws_3_3-2-6-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#ws_3_3-2-6" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_3-2-7"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_3-2-7-1-1">
+<span class="process-math">\(y=5x^2-10x+48\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_3-2-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_3-2-7-2-1">
+<div class="para">Factor out the <span class="process-math">\(5\)</span> from the first two terms to get <span class="process-math">\(y=5(x^2-2x)+48\text{.}\)</span> Now, concentrate only on the <span class="process-math">\(x^2-2x\)</span> quadratic. Here, <span class="process-math">\(b=-2\)</span> and so <span class="process-math">\(\frac{b}{2}=-1\)</span> and <span class="process-math">\(\pbr{\frac{b}{2}} ^2=1\text{.}\)</span> Therefore</div>
+<div class="displaymath process-math" id="ws_3_3-2-7-2-1-7">
+\begin{equation*}
+x^2-2x \quad = \quad x^2-2x+1-1 \quad = \quad (x-1)^2-1.
+\end{equation*}
+</div>
+<div class="para">Now, multiply by the <span class="process-math">\(5\)</span> that we factored out initially to get</div>
+<div class="displaymath process-math" id="ws_3_3-2-7-2-1-9">
+\begin{align*}
+y \amp \quad = \quad 5\pbr{(x-1)^2-1} + 48 \\
+\amp \quad = \quad 5(x-1)^2-5+48 \\
+\amp \quad = \quad 5(x-1)^2+43.
+\end{align*}
+</div>
+<div class="para">The vertex is <span class="process-math">\((1,43)\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.1"><a tabindex="-1" href="#ws_3_3-2-7-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#ws_3_3-2-7" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_3-2-8"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_3-2-8-1-1">
+<span class="process-math">\(y=4x^2-2x+1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_3-2-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_3-2-8-2-1">
+<div class="para">Factor out the <span class="process-math">\(4\)</span> from the first two terms to get <span class="process-math">\(y=4(x^2-\frac{1}{2}x) + 1\text{.}\)</span> Now, concentrate only on the <span class="process-math">\(x^2-\frac{1}{2}x\)</span> quadratic. Here, <span class="process-math">\(b=-\frac{1}{2}\)</span> so <span class="process-math">\(\frac{b}{2}=-\frac{1}{4}\)</span> and <span class="process-math">\(\pbr{\frac{b}{2}} ^2 = \frac{1}{16}\text{.}\)</span> Therefore</div>
+<div class="displaymath process-math" id="ws_3_3-2-8-2-1-7">
+\begin{align*}
+x^2-\frac{1}{2}x \amp \quad = \quad x^2 - \frac{1}{2}x + \frac{1}{16} - \frac{1}{16}\\
+\amp \quad = \quad \pbr{x-\frac{1}{4}}^2 - \frac{1}{16}.
+\end{align*}
+</div>
+<div class="para">Now, multiply by the <span class="process-math">\(4\)</span> that we factored out initially to get</div>
+<div class="displaymath process-math" id="ws_3_3-2-8-2-1-9">
+\begin{align*}
+y \amp \quad = \quad 4 \pbr{\pbr{x-\frac{1}{4}} ^2-\frac{1}{16}} + 1 \\
+\amp \quad = \quad 4\pbr{x-\frac{1}{4}} ^2 - \frac{4}{16} + 1 \\
+\amp \quad = \quad 4\pbr{x-\frac{1}{4}} ^2 +\frac{3}{4}.
+\end{align*}
+</div>
+<div class="para">The vertex is <span class="process-math">\(\pbr{\frac{1}{4}, \frac{3}{4}} \text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_3-2-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.1"><a tabindex="-1" href="#ws_3_3-2-8-2" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6"><a tabindex="-1" href="#ws_3_3-2-8" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1–6: Standard Form to Vertex Form"><a tabindex="-1" href="#ws_3_3-2" title="Copy heading and permalink for Exercise Group 1–6: Standard Form to Vertex Form" aria-label="Copy heading and permalink for Exercise Group 1–6: Standard Form to Vertex Form">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet: 3.3 Practice Worksheet"><a tabindex="-1" href="#ws_3_3" title="Copy heading and permalink for Worksheet: 3.3 Practice Worksheet" aria-label="Copy heading and permalink for Worksheet: 3.3 Practice Worksheet">🔗</a></div>
+</section>
+<section class="worksheet" id="ws_3_4" data-margins="0.75in 0.75in 0.75in 0.75in">
+<h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">3.4 Practice Worksheet</span><div class="print-links"><a href="?printpreview=ws_3_4" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h3>
+<div class="exercisegroup" id="ws_3_4-2">
+<h4 class="heading"><span class="title">Solving Quadratic Equations.</span></h4>
+<div class="introduction" id="ws_3_4-2-2">
+<div class="para" id="ws_3_4-2-2-1">Use an appropriate method to solve each quadratic equation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="ws_3_4-2-3"><h5 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-2-3-1-1">
+<span class="process-math">\((x+1)(x-5)=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_4-2-3-2-1">Because this is already factored, set each factor to <span class="process-math">\(0\text{.}\)</span> Therefore <span class="process-math">\(x+1=0\)</span> and <span class="process-math">\(x-5=0\text{,}\)</span> implying <span class="process-math">\(x=-1\)</span> and <span class="process-math">\(x=5\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#ws_3_4-2-3-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 1"><a tabindex="-1" href="#ws_3_4-2-3" title="Copy heading and permalink for Worksheet Exercise 1" aria-label="Copy heading and permalink for Worksheet Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-2-4"><h5 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-2-4-1-1">
+<span class="process-math">\((4k+5)(k-1)=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_4-2-4-2-1">Because this is already factored, set each factor to <span class="process-math">\(0\text{.}\)</span> Therefore <span class="process-math">\(4k+5=0\)</span> and <span class="process-math">\(k-1=0\text{,}\)</span> implying <span class="process-math">\(k=-\frac{5}{4}\)</span> and <span class="process-math">\(k=1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#ws_3_4-2-4-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 2"><a tabindex="-1" href="#ws_3_4-2-4" title="Copy heading and permalink for Worksheet Exercise 2" aria-label="Copy heading and permalink for Worksheet Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-2-5"><h5 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-2-5-1-1">
+<span class="process-math">\(x^2-13x-14=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_4-2-5-2-1">This can be factored to <span class="process-math">\((x-14)(x+1)=0\text{.}\)</span> Therefore, <span class="process-math">\(x=14\)</span> and <span class="process-math">\(x=-1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#ws_3_4-2-5-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 3"><a tabindex="-1" href="#ws_3_4-2-5" title="Copy heading and permalink for Worksheet Exercise 3" aria-label="Copy heading and permalink for Worksheet Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-2-6"><h5 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-2-6-1-1">
+<span class="process-math">\(4n^2-25=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-2-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_4-2-6-2-1">This is a difference of squares: <span class="process-math">\((2n)^2-5^2=0\text{.}\)</span> Therefore it can be factored to <span class="process-math">\((2n+5)(2n-5)=0\text{.}\)</span> Of course, you could use the <span class="process-math">\(ac\)</span>-method in section 3.2 as well. Now, <span class="process-math">\(2n+5=0\)</span> so <span class="process-math">\(n=-\frac{5}{2}\)</span> and <span class="process-math">\(2n-5=0\)</span> so <span class="process-math">\(n=\frac{5}{2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#ws_3_4-2-6-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 4"><a tabindex="-1" href="#ws_3_4-2-6" title="Copy heading and permalink for Worksheet Exercise 4" aria-label="Copy heading and permalink for Worksheet Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-2-7"><h5 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-2-7-1-1">
+<span class="process-math">\(3x^2+5x-2=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-2-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_4-2-7-2-1">Here we’ll use the quadratic formula:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ws_3_4-2-7-2-2">
+<div class="displaymath process-math" id="ws_3_4-2-7-2-2-1">
+\begin{align*}
+x \amp \quad = \quad \frac{-b \pm \sqrt{b^2-4ac} }{2a}\\
+\amp \quad = \quad \frac{-5 \pm \sqrt{5^2-4(3)(-2)} }{2(3)}\\
+\amp \quad = \quad \frac{-5 \pm \sqrt{25+24} }{6}\\
+\amp \quad = \quad \frac{-5 \pm \sqrt{49} }{6}\\
+\amp \quad = \quad \frac{-5 \pm 7}{6}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="ws_3_4-2-7-2-3">Now, <span class="process-math">\(\frac{-5+7}{6} = \frac{2}{6}=\frac{1}{3}\)</span> and <span class="process-math">\(\frac{-5-7}{6} = \frac{-12}{6}=-2\)</span> so the solutions are <span class="process-math">\(x=\frac{1}{3}\)</span> and <span class="process-math">\(x=-2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-7-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.1"><a tabindex="-1" href="#ws_3_4-2-7-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 5"><a tabindex="-1" href="#ws_3_4-2-7" title="Copy heading and permalink for Worksheet Exercise 5" aria-label="Copy heading and permalink for Worksheet Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-2-8"><h5 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-2-8-1-1">
+<span class="process-math">\(x^2+8x=-15\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-2-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_4-2-8-2-1">First, rewrite the equation as <span class="process-math">\(x^2+8x+15=0\text{.}\)</span> This factors to <span class="process-math">\((x+5)(x+3)=0\text{.}\)</span> Therefore, <span class="process-math">\(x+5=0\)</span> and <span class="process-math">\(x+3=0\text{,}\)</span> implying the solutions are <span class="process-math">\(x=-5\)</span> and <span class="process-math">\(x=-3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.1"><a tabindex="-1" href="#ws_3_4-2-8-2" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 6"><a tabindex="-1" href="#ws_3_4-2-8" title="Copy heading and permalink for Worksheet Exercise 6" aria-label="Copy heading and permalink for Worksheet Exercise 6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-2-9"><h5 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-2-9-1-1">
+<span class="process-math">\(x(x-20)=-100\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-2-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-2-9-2-1">
+<div class="para">We must first distribute the <span class="process-math">\(x\)</span> to get <span class="process-math">\(x^2 - 20x = -100\)</span> and then add <span class="process-math">\(100\)</span> to both sides:</div>
+<div class="displaymath process-math" id="ws_3_4-2-9-2-1-4">
+\begin{equation*}
+x^2-20x+100=0.
+\end{equation*}
+</div>
+<div class="para">Now, we can factor this equation to <span class="process-math">\((x-10)(x-10)=0\text{,}\)</span> implying the solution is <span class="process-math">\(x=10\text{.}\)</span> <em class="emphasis">If you did not do this first step, you might be saying that from <span class="process-math">\(x(x-20)=-100\)</span> it follows that <span class="process-math">\(x=-100\)</span> and <span class="process-math">\(x-20=-100\text{.}\)</span> This is NOT true! Remember the zero-product rule only works if the equation is set to <span class="process-math">\(0\text{,}\)</span> and not some other number like <span class="process-math">\(-100\text{.}\)</span></em>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1"><a tabindex="-1" href="#ws_3_4-2-9-2" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 7"><a tabindex="-1" href="#ws_3_4-2-9" title="Copy heading and permalink for Worksheet Exercise 7" aria-label="Copy heading and permalink for Worksheet Exercise 7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-2-10"><h5 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-2-10-1-1">
+<span class="process-math">\(9y^2-11=6y\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-2-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ws_3_4-2-10-2-1">Subtract <span class="process-math">\(6y\)</span> from both sides to obtain <span class="process-math">\(9y^2-6y-11=0\text{.}\)</span> Using the quadratic formula, then<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ws_3_4-2-10-2-2">
+<div class="displaymath process-math" id="ws_3_4-2-10-2-2-1">
+\begin{align*}
+y \amp \quad = \quad \frac{-b \pm \sqrt{b^2-4ac} }{2a}\\
+\amp \quad = \quad \frac{6 \pm \sqrt{(-6)^2-4(9)(-11)} }{2(9)}\\
+\amp \quad = \quad \frac{6\pm \sqrt{36+396} }{18}\\
+\amp \quad = \quad \frac{6 \pm \sqrt{432} }{18} \qquad \text{(can leave it like this)}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-2-10-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.1"><a tabindex="-1" href="#ws_3_4-2-10-2" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 8"><a tabindex="-1" href="#ws_3_4-2-10" title="Copy heading and permalink for Worksheet Exercise 8" aria-label="Copy heading and permalink for Worksheet Exercise 8">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1–8: Solving Quadratic Equations"><a tabindex="-1" href="#ws_3_4-2" title="Copy heading and permalink for Exercise Group 1–8: Solving Quadratic Equations" aria-label="Copy heading and permalink for Exercise Group 1–8: Solving Quadratic Equations">🔗</a></div>
+</div>
+<div class="exercisegroup" id="ws_3_4-3">
+<h4 class="heading"><span class="title">Computing the Discriminant.</span></h4>
+<div class="introduction" id="ws_3_4-3-2">
+<div class="para" id="ws_3_4-3-2-1">Compute the discriminant of each quadratic equation. What does it tell you about the number of solutions that the equation will have?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="ws_3_4-3-3"><h5 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-3-3-1-1">
+<span class="process-math">\(6p^2-2p-3=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-3-3-2-1">
+<div class="para">Here <span class="process-math">\(a=6\text{,}\)</span> <span class="process-math">\(b=-2\text{,}\)</span> and <span class="process-math">\(c=-3\)</span> so the discriminant is</div>
+<div class="displaymath process-math" id="ws_3_4-3-3-2-1-4">
+\begin{equation*}
+D \quad = \quad b^2-4ac \quad = \quad (-2)^2-4(6)(-3) \quad = \quad 76.
+\end{equation*}
+</div>
+<div class="para">Because <span class="process-math">\(D \gt 0\text{,}\)</span> there are two distinct real solutions.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.1"><a tabindex="-1" href="#ws_3_4-3-3-2" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 9"><a tabindex="-1" href="#ws_3_4-3-3" title="Copy heading and permalink for Worksheet Exercise 9" aria-label="Copy heading and permalink for Worksheet Exercise 9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-3-4"><h5 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-3-4-1-1">
+<span class="process-math">\(9n^2-3n+2=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-3-4-2-1">
+<div class="para">Here <span class="process-math">\(a=9\text{,}\)</span> <span class="process-math">\(b=-3\text{,}\)</span> and <span class="process-math">\(c=2\)</span> so the discriminant is</div>
+<div class="displaymath process-math" id="ws_3_4-3-4-2-1-4">
+\begin{equation*}
+D \quad = \quad b^2-4ac \quad = \quad (-3)^2-4(9)(2) \quad = \quad -63.
+\end{equation*}
+</div>
+<div class="para">Because <span class="process-math">\(D \lt 0\text{,}\)</span> there are no real solutions.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.1"><a tabindex="-1" href="#ws_3_4-3-4-2" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 10"><a tabindex="-1" href="#ws_3_4-3-4" title="Copy heading and permalink for Worksheet Exercise 10" aria-label="Copy heading and permalink for Worksheet Exercise 10">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-3-5"><h5 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-3-5-1-1">
+<span class="process-math">\(x^2-2x-15=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-3-5-2-1">
+<div class="para">Here <span class="process-math">\(a=1\text{,}\)</span> <span class="process-math">\(b=-2\text{,}\)</span> and <span class="process-math">\(c=-15\)</span> so the discriminant is</div>
+<div class="displaymath process-math" id="ws_3_4-3-5-2-1-4">
+\begin{equation*}
+D \quad = \quad b^2-4ac \quad = \quad (-2)^2-4(1)(-15) \quad = \quad 64.
+\end{equation*}
+</div>
+<div class="para">Because <span class="process-math">\(D \gt 0\text{,}\)</span> there are two distinct real solutions.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 11.1"><a tabindex="-1" href="#ws_3_4-3-5-2" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 11"><a tabindex="-1" href="#ws_3_4-3-5" title="Copy heading and permalink for Worksheet Exercise 11" aria-label="Copy heading and permalink for Worksheet Exercise 11">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-3-6"><h5 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-3-6-1-1">
+<span class="process-math">\(-x^2-9=6x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-3-6-2-1">
+<div class="para">Rewrite this as <span class="process-math">\(-x^2-6x-9=0\)</span> by subtracting <span class="process-math">\(6x\)</span> from both sides. Then, <span class="process-math">\(a=-1\text{,}\)</span> <span class="process-math">\(b=-6\text{,}\)</span> and <span class="process-math">\(c=-9\)</span> so the discriminant is</div>
+<div class="displaymath process-math" id="ws_3_4-3-6-2-1-6">
+\begin{equation*}
+D \quad = \quad b^2-4ac \quad = \quad (-6)^2-4(-1)(-9) \quad = \quad 0.
+\end{equation*}
+</div>
+<div class="para">Because <span class="process-math">\(D=0\text{,}\)</span> there is one real solution.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 12.1"><a tabindex="-1" href="#ws_3_4-3-6-2" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 12"><a tabindex="-1" href="#ws_3_4-3-6" title="Copy heading and permalink for Worksheet Exercise 12" aria-label="Copy heading and permalink for Worksheet Exercise 12">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-3-7"><h5 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-3-7-1-1">
+<span class="process-math">\(-2x^2-8x-14=-6\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-3-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-3-7-2-1">
+<div class="para">Rewrite this as <span class="process-math">\(-2x^2-8x-8=0\text{.}\)</span> Then <span class="process-math">\(a=-2\text{,}\)</span> <span class="process-math">\(b=-8\text{,}\)</span> and <span class="process-math">\(c=-8\)</span> so the discriminant is</div>
+<div class="displaymath process-math" id="ws_3_4-3-7-2-1-5">
+\begin{equation*}
+D \quad = \quad b^2-4ac \quad = \quad (-8)^2-4(-2)(-8) \quad = \quad 0.
+\end{equation*}
+</div>
+<div class="para">Because <span class="process-math">\(D=0\text{,}\)</span> there is one real solution.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 13.1"><a tabindex="-1" href="#ws_3_4-3-7-2" title="Copy heading and permalink for Solution 13.1" aria-label="Copy heading and permalink for Solution 13.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 13"><a tabindex="-1" href="#ws_3_4-3-7" title="Copy heading and permalink for Worksheet Exercise 13" aria-label="Copy heading and permalink for Worksheet Exercise 13">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-3-8"><h5 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5>
+<div class="para" id="ws_3_4-3-8-1-1">
+<span class="process-math">\(n(8-7n)=0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-3-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-3-8-2-1">
+<div class="para">Rewrite this as <span class="process-math">\(8n-7n^2=0\text{,}\)</span> or <span class="process-math">\(-7n^2+8n=0\text{.}\)</span> Then <span class="process-math">\(a=-7\text{,}\)</span> <span class="process-math">\(b=8\text{,}\)</span> and <span class="process-math">\(c=0\)</span> so the discriminant is</div>
+<div class="displaymath process-math" id="ws_3_4-3-8-2-1-6">
+\begin{equation*}
+D \quad = \quad b^2-4ac \quad = \quad 8^2-4(-7)(0) \quad = \quad 64.
+\end{equation*}
+</div>
+<div class="para">Because <span class="process-math">\(D\gt 0\text{,}\)</span> there are two distinct real solutions.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 14.1"><a tabindex="-1" href="#ws_3_4-3-8-2" title="Copy heading and permalink for Solution 14.1" aria-label="Copy heading and permalink for Solution 14.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 14"><a tabindex="-1" href="#ws_3_4-3-8" title="Copy heading and permalink for Worksheet Exercise 14" aria-label="Copy heading and permalink for Worksheet Exercise 14">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 9–14: Computing the Discriminant"><a tabindex="-1" href="#ws_3_4-3" title="Copy heading and permalink for Exercise Group 9–14: Computing the Discriminant" aria-label="Copy heading and permalink for Exercise Group 9–14: Computing the Discriminant">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="ws_3_4-4"><h4 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws_3_4-4-1-1">Find the formula for the quadratic function whose graph has <span class="process-math">\(x\)</span>-intercepts <span class="process-math">\((4,0)\)</span> and <span class="process-math">\((10,0)\)</span> and <span class="process-math">\(y\)</span>-intercept <span class="process-math">\((0,20)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-4-2-1">
+<div class="para">Given the <span class="process-math">\(x\)</span>-intercepts <span class="process-math">\(x_1=4\)</span> and <span class="process-math">\(x_2=10\text{,}\)</span> then using <em class="emphasis">factored form</em> we have</div>
+<div class="displaymath process-math" id="ws_3_4-4-2-1-5">
+\begin{equation*}
+y \quad = \quad a(x-x_1)(x-x_2)  \quad = \quad a(x-4)(x-10).
+\end{equation*}
+</div>
+<div class="para">We need the other point <span class="process-math">\((0,20)\)</span> to determine <span class="process-math">\(a\text{.}\)</span> Plugging this in,</div>
+<div class="displaymath process-math" id="ws_3_4-4-2-1-8">
+\begin{equation*}
+20 \quad = \quad a(0-4)(0-10).
+\end{equation*}
+</div>
+<div class="para">Therefore, <span class="process-math">\(20=a(-4)(-10)\)</span> so <span class="process-math">\(20=a(40)\)</span> and thus <span class="process-math">\(a=\frac{1}{2}\text{.}\)</span> So</div>
+<div class="displaymath process-math" id="ws_3_4-4-2-1-12">
+\begin{equation*}
+y = \frac{1}{2}(x-4)(x-10).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 15.1"><a tabindex="-1" href="#ws_3_4-4-2" title="Copy heading and permalink for Solution 15.1" aria-label="Copy heading and permalink for Solution 15.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 15"><a tabindex="-1" href="#ws_3_4-4" title="Copy heading and permalink for Worksheet Exercise 15" aria-label="Copy heading and permalink for Worksheet Exercise 15">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-5"><h4 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws_3_4-5-1-1">Find the formula for the quadratic function whose graph has vertex <span class="process-math">\((-3,8)\)</span> and <span class="process-math">\(y\)</span>-intercept <span class="process-math">\((0,-5)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ws_3_4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-5-2-1">
+<div class="para">Given the vertex <span class="process-math">\(h=-3\)</span> and <span class="process-math">\(k=8\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="ws_3_4-5-2-1-3">
+\begin{equation*}
+y \quad = \quad a(x-h)^2+k \quad = \quad a(x+3)^2+8.
+\end{equation*}
+</div>
+<div class="para">We use the other point <span class="process-math">\((0,-5)\)</span> to solve for <span class="process-math">\(a\text{.}\)</span> Plugging this in above,</div>
+<div class="displaymath process-math" id="ws_3_4-5-2-1-6">
+\begin{equation*}
+-5 \quad = \quad a(0+3)^2+8.
+\end{equation*}
+</div>
+<div class="para">This means that <span class="process-math">\(-5 = a(9)+8\)</span> so <span class="process-math">\(-13=9a\)</span> implying that <span class="process-math">\(a=\frac{-13}{9} \text{.}\)</span> So</div>
+<div class="displaymath process-math" id="ws_3_4-5-2-1-10">
+\begin{equation*}
+y = -\frac{13}{9} (x+3)^2+8.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 16.1"><a tabindex="-1" href="#ws_3_4-5-2" title="Copy heading and permalink for Solution 16.1" aria-label="Copy heading and permalink for Solution 16.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 16"><a tabindex="-1" href="#ws_3_4-5" title="Copy heading and permalink for Worksheet Exercise 16" aria-label="Copy heading and permalink for Worksheet Exercise 16">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-6"><h4 class="heading"><span class="codenumber">17<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws_3_4-6-1-1">Find the equation in factored form for the graphed quadratic function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ws_3_4_1_fig.svg" role="img" class="contained" alt="A short description."></div>
+<div class="solutions">
+<details id="ws_3_4-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-6-2-1">
+<div class="para">One approach is to use the two horizontal intercepts <span class="process-math">\(x_1=-5\)</span> and <span class="process-math">\(x_2=3\text{.}\)</span> Then</div>
+<div class="displaymath process-math" id="ws_3_4-6-2-1-3">
+\begin{equation*}
+y \quad = \quad a(x-x_1)(x-x_2) \quad = \quad a(x+5)(x-3).
+\end{equation*}
+</div>
+<div class="para">To determine <span class="process-math">\(a\text{,}\)</span> we need to use another point on the graph, say <span class="process-math">\((-1,12)\text{.}\)</span> Plugging this in,</div>
+<div class="displaymath process-math" id="ws_3_4-6-2-1-6">
+\begin{equation*}
+12 \quad = \quad a(-1+5)(-1-3) \quad = \quad a(4)(-4).
+\end{equation*}
+</div>
+<div class="para">Thus <span class="process-math">\(12=-16a\)</span> and so <span class="process-math">\(a=\frac{-12}{16} = \frac{-3}{4} \text{.}\)</span> This means</div>
+<div class="displaymath process-math" id="ws_3_4-6-2-1-9">
+\begin{equation*}
+y = \frac{-3}{4} (x+5)(x-3).
+\end{equation*}
+</div>
+<div class="para"><em class="emphasis">Note that using the vertex <span class="process-math">\((-1,12)\text{,}\)</span> like the next question, will give you an equation for the quadratic function but it will not be in <em class="alert">factored form</em> as this problem is requiring.</em></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 17.1"><a tabindex="-1" href="#ws_3_4-6-2" title="Copy heading and permalink for Solution 17.1" aria-label="Copy heading and permalink for Solution 17.1">🔗</a></div>
+</div></details>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 17"><a tabindex="-1" href="#ws_3_4-6" title="Copy heading and permalink for Worksheet Exercise 17" aria-label="Copy heading and permalink for Worksheet Exercise 17">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ws_3_4-7"><h4 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ws_3_4-7-1-1">Find the equation in vertex form for the graphed quadratic function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ws_3_4_2_fig.svg" role="img" class="contained" alt="A short description."></div>
+<div class="solutions">
+<details id="ws_3_4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ws_3_4-7-2-1">
+<div class="para">We use the vertex <span class="process-math">\((2,-12)\)</span> here to get</div>
+<div class="displaymath process-math" id="ws_3_4-7-2-1-2">
+\begin{equation*}
+y \quad = \quad a(x-2)^2-12.
+\end{equation*}
+</div>
+<div class="para">To determine <span class="process-math">\(a\text{,}\)</span> use another point on the graph like <span class="process-math">\((6,0)\)</span> for example. Plugging this in,</div>
+<div class="displaymath process-math" id="ws_3_4-7-2-1-5">
+\begin{equation*}
+0 \quad = \quad a(6-2)^2-12.
+\end{equation*}
+</div>
+<div class="para">Therefore <span class="process-math">\(0=16a-12\)</span> and so <span class="process-math">\(a=\frac{3}{4}\text{.}\)</span> This implies</div>
+<div class="displaymath process-math" id="ws_3_4-7-2-1-8">
+\begin{equation*}
+y = \frac{3}{4}(x-2)^2-12.
+\end{equation*}
+</div>
+<div class="para"><em class="emphasis">Note that using the two horizontal intercepts, like the previous question, will give you an equation for the quadratic function but it will not be in <em class="alert">vertex form</em> as this problem is requiring.</em></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ws_3_4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 18.1"><a tabindex="-1" href="#ws_3_4-7-2" title="Copy heading and permalink for Solution 18.1" aria-label="Copy heading and permalink for Solution 18.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Worksheet Exercise 18"><a tabindex="-1" href="#ws_3_4-7" title="Copy heading and permalink for Worksheet Exercise 18" aria-label="Copy heading and permalink for Worksheet Exercise 18">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Worksheet: 3.4 Practice Worksheet"><a tabindex="-1" href="#ws_3_4" title="Copy heading and permalink for Worksheet: 3.4 Practice Worksheet" aria-label="Copy heading and permalink for Worksheet: 3.4 Practice Worksheet">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="​: Chapter 3"><a tabindex="-1" href="#chapter_3" title="Copy heading and permalink for ​: Chapter 3" aria-label="Copy heading and permalink for ​: Chapter 3">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="chapter_2.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chapter_4.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
