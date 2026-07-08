@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper,total={374pt,9.0in}}
+%% Custom Page Layout Adjustments (use publisher page-geometry)
+\geometry{papersize={8.5in,11in}, width=33pc, height=51pc, inner=.75in, outer=.75in, top=0.75in, twoside, ignoreheadfoot, }
+\usepackage{amsmath,amssymb}
+\usepackage{tikz, pgfplots}
+\usepackage{pgfplotstable}
+\usetikzlibrary{positioning,matrix,arrows, arrows.meta, positioning}
+\usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+\usetikzlibrary{decorations.markings}
+\pgfplotsset{
+soldot/.style={
+    color=black,only marks,mark=*},
+holdot/.style={
+    color=black,fill=white,only marks,mark=*},
+compat=1.18,
+standard/.style={
+    every axis x label/.style={at={(current axis.right of origin)},anchor=north west},
+    every axis y label/.style={at={(current axis.above origin)},anchor=north east}},
+    every axis plot/.append style={blue,thick,samples=250},
+    every axis/.append style = {axis lines = middle},
+}
+\tikzset{
+rcirc/.style={circle, fill=red, inner sep=2pt},
+rpoint with label/.style n args={1}{rcirc,label={#1}},
+gcirc/.style={circle, fill=green, inner sep=2pt},
+gpoint with label/.style n args={1}{gcirc,label={#1}}
+}
+\ifdefined\tikzset
+\tikzset{ampersand replacement = \amp}
+\fi
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\usepackage{xcolor,color}
+\newcommand{\aroc}{\text{ARC}}
+\newcommand{\pbr}[1]{\left( #1 \right)}
+\newcommand{\sbr}[1]{\left\{ #1 \right\}}
+\newcommand{\cbr}[1]{\left[ #1 \right]}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\markcell}[2]{
+\tikz[remember picture, baseline=(#1.base)] \node[inner sep=0pt] (#1) {#2};
+}
+\newcommand{\lt}{<}
+\newcommand{\gt}{>}
+\newcommand{\amp}{&}
+\begin{document}
+\pagestyle{empty}
+\resizebox{\width}{\height}{
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+scaled ticks=false,
+xmin=0,xmax=5.9,
+ymin=0,ymax=23900,
+xtick={1,2,3,4,5},
+ytick={5000,8060,11120,14180,17240,20300},
+minor tick={},
+xlabel=\(t\), ylabel=\(V(t)\),
+x post scale = 1.2
+]
+\addplot+[smooth,mark=*,mark options={fill=red}] plot coordinates {
+(0, 20300)
+(1, 17240)
+(2, 14180)
+(3, 11120)
+(4, 8060)
+(5, 5000)
+};
+%vertical dashes Delta V
+\draw[dashed,teal,thick, -Stealth] (1,20300) -- (1,17600);
+\node at (1.4,18500) {\small $\textcolor{teal}{-3060}$};
+
+\draw[dashed,teal,thick, -Stealth] (2,17240) -- (2,14580);
+\node at (2.4,15500) {\small $\textcolor{teal}{-3060}$};
+\
+\draw[dashed,teal,thick, -Stealth] (3,14180) -- (3,11420);
+\node at (3.4,12500) {\small $\textcolor{teal}{ -3060}$};
+
+\draw[dashed,teal,thick, -Stealth] (4,11120) -- (4,8460);
+\node at (4.4,9500) {\small $\textcolor{teal}{ -3060}$};
+
+\draw[dashed,teal,thick, -Stealth] (5,8060) -- (5,5400);
+\node at (5.4,6500) {\small $\textcolor{teal}{ -3060}$};
+
+%horizontal dashes Delta t
+\draw[dashed,purple,thick, -Stealth] (0,20300) -- (1,20300);
+\node at (0.7,19400) {\small $\textcolor{purple}{+1}$};
+
+\draw[dashed,purple,thick, -Stealth] (1,17240) -- (2,17240);
+\node at (1.7,16240) {\small $\textcolor{purple}{+1}$};
+
+\draw[dashed,purple,thick, -Stealth] (2,14180) -- (3,14180);
+\node at (2.7,13280) {\small $\textcolor{purple}{+1}$};
+
+\draw[dashed,purple,thick, -Stealth] (3,11120) -- (4,11120);
+\node at (3.7,10220) {\small $\textcolor{purple}{+1}$};
+
+\draw[dashed,purple,thick, -Stealth] (4,8060) -- (5,8060);
+\node at (4.7,7160) {\small $\textcolor{purple}{+1}$};
+
+\end{axis}
+\end{tikzpicture}%
+}
+\end{document}
