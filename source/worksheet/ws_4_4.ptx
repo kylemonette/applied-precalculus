@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws_4_4" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Practice Worksheet</title>
+<title>4.4 Practice Worksheet</title>
 
-<exercise>
+<exercisegroup>
+<title>Power Functions</title>
 <introduction>
 <p>
 Identify the exponent and the coefficient of each power function.
 </p>
 </introduction>
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=\dfrac{7}{2x^3}</m>
@@ -21,11 +22,11 @@ Identify the exponent and the coefficient of each power function.
 We have <m>y=\frac{7}{2}x^{-3}</m> so the coefficient is <m>\frac{7}{2}</m> and the exponent is <m>-3</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=6\sqrt[3]{x}</m>
@@ -36,11 +37,11 @@ We have <m>y=\frac{7}{2}x^{-3}</m> so the coefficient is <m>\frac{7}{2}</m> and 
 We have <m>y=6 x^{1 /3}</m> so the coefficient is <m>6</m> and the exponent is <m>1 /3</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=\dfrac{25x^4}{125x^7}</m>
@@ -54,11 +55,11 @@ y \quad = \quad \frac{1}{5} x^{4-7} \quad = \quad \frac{1}{5}x^{-3}.
 </md> So the coefficient is <m>\frac{1}{5}</m> and the exponent is <m>-3</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=\dfrac{2x^4}{3\sqrt{x}}</m>
@@ -71,11 +72,11 @@ y \quad = \quad \frac{2x^{4}}{3x^{1 /2}}  \quad = \quad \frac{2}{3}x^{4 - 1/2} \
 </md> So the coefficient is <m>\frac{2}{3}</m> and the exponent is <m>\frac{7}{2}</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=(5x^2)^{-2}</m>
@@ -86,11 +87,11 @@ y \quad = \quad \frac{2x^{4}}{3x^{1 /2}}  \quad = \quad \frac{2}{3}x^{4 - 1/2} \
 Here we have <m>y=(5)^{-2} \cdot (x^2)^{-2} = \frac{1}{5^2} \cdot x^{-4} = \frac{1}{25}x^{-4}</m>. So the coefficient is <m>\frac{1}{25}</m> and the exponent is <m>-4</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=(0.5x^{-3})^2(5x^6)^3</m>
@@ -99,14 +100,16 @@ Here we have <m>y=(5)^{-2} \cdot (x^2)^{-2} = \frac{1}{5^2} \cdot x^{-4} = \frac
 <solution>
 <p>
 <md>
-y \quad = \quad (0.5)^2 (x^{-3})^2 (5)^3 (x^6)^3 \quad = \quad \frac{1}{4} \cdot x^{-6} \cdot 125 \cdot x^{18} \quad = \quad \frac{125}{4} \cdot x^{12}.
+<mrow>y \amp \quad = \quad (0.5)^2 (x^{-3})^2 (5)^3 (x^6)^3 </mrow>
+<mrow> \amp \quad = \quad \frac{1}{4} \cdot x^{-6} \cdot 125 \cdot x^{18}</mrow>
+<mrow> \amp \quad = \quad \frac{125}{4} \cdot x^{12}.</mrow>
 </md> Therefore the coefficient is <m>\frac{125}{4}</m> and the exponent is <m>12</m>.
 </p>
 </solution>
-</task>
-
-
 </exercise>
+
+
+</exercisegroup>
 
 
 
@@ -124,7 +127,11 @@ negative coefficient and an exponent of <m>\frac{5}{4}</m>
 </p>
 </statement>
 <solution>
-
+<image width="50%" xml:id="ws_4_4_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_4_4_1_fig">
 \begin{tikzpicture}[scale=0.7]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -138,7 +145,8 @@ samples=250]
 \addplot[domain=0:2 ,thick] {-x^1.2};
 \end{axis}
 \end{tikzpicture}
-
+</latex-image>
+</image>
 </solution>
 </task>
 
@@ -151,6 +159,11 @@ negative coefficient and an exponent of <m>-3</m>
 </statement>
 <solution>
 
+<image width="50%" xml:id="ws_4_4_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_4_4_2_fig">
 \begin{tikzpicture}[scale=0.7]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -165,7 +178,8 @@ samples=250]
 \addplot[domain=0.1:3 ,thick] {-1/x};
 \end{axis}
 \end{tikzpicture}
-
+</latex-image>
+</image>
 </solution>
 </task>
 
@@ -177,7 +191,11 @@ positive coefficient and an exponent of <m>0.1</m>
 </p>
 </statement>
 <solution>
-
+<image width="50%" xml:id="ws_4_4_3">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_4_4_3_fig">
 \begin{tikzpicture}[scale=0.7]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -191,7 +209,8 @@ samples=250]
 \addplot[domain=0:2 ,thick] {x^0.5};
 \end{axis}
 \end{tikzpicture}
-
+</latex-image>
+</image>
 </solution>
 </task>
 
@@ -203,7 +222,11 @@ positive coefficient and an exponent of <m>-6</m>
 </p>
 </statement>
 <solution>
-
+<image width="50%" xml:id="ws_4_4_4">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_4_4_4_fig">
 \begin{tikzpicture}[scale=0.7]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -218,6 +241,8 @@ samples=250]
 \addplot[domain=0.1:3 ,thick] {1/x^2};
 \end{axis}
 \end{tikzpicture}
+</latex-image>
+</image>
 </solution>
 </task>
 

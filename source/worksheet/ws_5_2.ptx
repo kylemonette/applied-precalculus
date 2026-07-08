@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws_5_2" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Practice Worksheet</title>
+<title>5.2 Practice Worksheet</title>
 
 <exercise workspace="1in">
 <statement>
@@ -9,6 +9,11 @@
 Find an equation for the exponential function graphed below. Then identify the growth factor and the growth rate.
 </p>
 
+<image width="50%" xml:id="ws_5_2_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_5_2_1_fig">
 \begin{tikzpicture}[scale=0.9]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -23,6 +28,8 @@ samples=250]
 \node[label={0:{(2,18)}},circle,fill,inner sep=2pt] at (axis cs:2,18) {};
 \end{axis}
 \end{tikzpicture}
+</latex-image>
+</image>
 
 </statement>
 <solution>
@@ -46,6 +53,11 @@ f(x) = 8 \cdot (1.5)^x.
 Find an equation for the exponential function graphed below. Then identify the growth factor and the growth rate.
 </p>
 
+<image width="50%" xml:id="ws_5_2_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_5_2_2_fig">
 \begin{tikzpicture}[scale=0.9]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -60,7 +72,8 @@ samples=250]
 \node[label={45:{(3,0.3645)}},circle,fill,inner sep=2pt] at (axis cs:3,0.3645) {};
 \end{axis}
 \end{tikzpicture}
-
+</latex-image>
+</image>
 </statement>
 <solution>
 <p>

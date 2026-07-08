@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws_3_3" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Practice Worksheet</title>
+<title>3.3 Practice Worksheet</title>
 
 
 
-<exercise>
+<exercisegroup>
+<title>Standard Form to Vertex Form</title>
 <introduction>
 <p>
 Complete the square to convert each quadratic function from standard form to vertex form. Then identify the vertex.
 </p>
 </introduction>
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=x^2+8x</m>
@@ -29,10 +30,10 @@ y = (x+4)^2-16.
 </md> The vertex is <m>(-4,-16)</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=4x^2-12x</m>
@@ -49,10 +50,10 @@ y \quad=\quad 4\pbr{\pbr{x-\frac{3}{2}} ^2 - \frac{9}{4}} \quad=\quad 4\pbr{x-\f
 </md> The vertex is <m>\pbr{\frac{3}{2}, -9} </m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=x^2-2x-15</m>
@@ -62,15 +63,18 @@ y \quad=\quad 4\pbr{\pbr{x-\frac{3}{2}} ^2 - \frac{9}{4}} \quad=\quad 4\pbr{x-\f
 <p>
 Here <m>b=-2</m> so <m>\frac{b}{2}=-1</m> and <m>\pbr{\frac{b}{2}} ^2=1</m>. Adding and subtracting this,
 <md>
-y \quad=\quad x^2-2x+1-15-1 \quad=\quad (x-1)^2-15-1 \quad=\quad (x-1)^2-16.
-</md> The vertex is <m>(1,-16)</m>.
+<mrow>y \amp \quad=\quad x^2-2x+1-15-1 </mrow>
+<mrow> \amp \quad=\quad (x-1)^2-15-1</mrow>
+<mrow>\amp \quad=\quad (x-1)^2-16.</mrow>
+</md>
+The vertex is <m>(1,-16)</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=3x^2-20x+7</m>
@@ -80,17 +84,21 @@ y \quad=\quad x^2-2x+1-15-1 \quad=\quad (x-1)^2-15-1 \quad=\quad (x-1)^2-16.
 <p>
 First factor out the <m>3</m> from the first two terms to get <m>y=3(x^2-\frac{20}{3}x) + 7</m>. Now, concentrate only on the <m>x^2-\frac{20}{3}x</m> quadratic. Here, <m>b=-\frac{20}{3}</m> so <m>\frac{b}{2}=-\frac{10}{3}</m> and <m>(\frac{b}{2})^2 = \frac{100}{9}</m>. Adding and subtracting this,
 <md>
-x^2-\frac{20}{3}x  \quad=\quad x^2 - \frac{20}{3}x + \frac{100}{9} - \frac{100}{9} \quad=\quad \pbr{x-\frac{10}{3}} ^2 - \frac{100}{9}.
-</md> Now, multiply by the <m>3</m> that we factored out initially to get
+<mrow>x^2-\frac{20}{3}x  \amp \quad=\quad x^2 - \frac{20}{3}x + \frac{100}{9} - \frac{100}{9} </mrow>
+<mrow> \amp \quad=\quad \pbr{x-\frac{10}{3}} ^2 - \frac{100}{9}.</mrow>
+</md>
+Now, multiply by the <m>3</m> that we factored out initially to get
 <md>
-y \quad=\quad 3 \pbr{\pbr{x-\frac{10}{3}} ^2 - \frac{100}{9}} + 7 \quad=\quad 3\pbr{x-\frac{10}{3}} ^2 - \frac{100}{3} + 7 \quad=\quad 3\pbr{x-\frac{10}{3}} ^2 - \frac{79}{3}.
+<mrow>y \amp \quad=\quad 3 \pbr{\pbr{x-\frac{10}{3}} ^2 - \frac{100}{9}} + 7 </mrow>
+<mrow>\amp \quad=\quad 3\pbr{x-\frac{10}{3}} ^2 - \frac{100}{3} + 7 </mrow>
+<mrow> \amp \quad=\quad 3\pbr{x-\frac{10}{3}} ^2 - \frac{79}{3}.</mrow>
 </md> The vertex is <m>(\frac{10}{3}, -\frac{79}{3})</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=5x^2-10x+48</m>
@@ -103,14 +111,16 @@ Factor out the <m>5</m> from the first two terms to get <m>y=5(x^2-2x)+48</m>. N
 x^2-2x \quad = \quad x^2-2x+1-1 \quad = \quad (x-1)^2-1.
 </md> Now, multiply by the <m>5</m> that we factored out initially to get
 <md>
-y \quad = \quad 5\pbr{(x-1)^2-1} + 48 \quad = \quad 5(x-1)^2-5+48 \quad = \quad 5(x-1)^2+43.
+<mrow>y \amp \quad = \quad 5\pbr{(x-1)^2-1} + 48 </mrow>
+<mrow> \amp \quad = \quad 5(x-1)^2-5+48 </mrow>
+<mrow>\amp \quad = \quad 5(x-1)^2+43.</mrow>
 </md> The vertex is <m>(1,43)</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=4x^2-2x+1</m>
@@ -120,16 +130,19 @@ y \quad = \quad 5\pbr{(x-1)^2-1} + 48 \quad = \quad 5(x-1)^2-5+48 \quad = \quad 
 <p>
 Factor out the <m>4</m> from the first two terms to get <m>y=4(x^2-\frac{1}{2}x) + 1</m>. Now, concentrate only on the <m>x^2-\frac{1}{2}x</m> quadratic. Here, <m>b=-\frac{1}{2}</m> so <m>\frac{b}{2}=-\frac{1}{4}</m> and <m>\pbr{\frac{b}{2}} ^2 = \frac{1}{16}</m>. Therefore
 <md>
-x^2-\frac{1}{2}x \quad = \quad x^2 - \frac{1}{2}x + \frac{1}{16} - \frac{1}{16} \quad = \quad \pbr{x-\frac{1}{4}}^2 - \frac{1}{16} .
+<mrow>x^2-\frac{1}{2}x \amp \quad = \quad x^2 - \frac{1}{2}x + \frac{1}{16} - \frac{1}{16}</mrow>
+<mrow> \amp \quad = \quad \pbr{x-\frac{1}{4}}^2 - \frac{1}{16}.</mrow>
 </md> Now, multiply by the <m>4</m> that we factored out initially to get
 <md>
-y \quad = \quad 4 \pbr{\pbr{x-\frac{1}{4}} ^2-\frac{1}{16}} + 1 \quad = \quad 4\pbr{x-\frac{1}{4}} ^2 - \frac{4}{16} + 1 \quad = \quad 4\pbr{x-\frac{1}{4}} ^2 +\frac{3}{4}.
+<mrow> y \amp \quad = \quad 4 \pbr{\pbr{x-\frac{1}{4}} ^2-\frac{1}{16}} + 1 </mrow>
+<mrow> \amp \quad = \quad 4\pbr{x-\frac{1}{4}} ^2 - \frac{4}{16} + 1 </mrow>
+<mrow> \amp \quad = \quad 4\pbr{x-\frac{1}{4}} ^2 +\frac{3}{4}.</mrow>
 </md> The vertex is <m>\pbr{\frac{1}{4}, \frac{3}{4}} </m>.
 </p>
 </solution>
-</task>
-
-
 </exercise>
+
+
+</exercisegroup>
 
 </worksheet>

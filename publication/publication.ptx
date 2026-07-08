@@ -205,7 +205,8 @@
       <!--<asymptote links="yes"/>-->
 
     <!-- Feedback button can be added with a link to an email or form -->
-      <!--<feedback href="mailto:youraddress@yourUni.edu"/>-->
+<feedback href="mailto:mth103videos@gmail.com"/>
+
 
     <!-- Magic IDs identify HTML pages to analytics services   -->
     <!-- Presence implies relevant Javascript will be added    -->

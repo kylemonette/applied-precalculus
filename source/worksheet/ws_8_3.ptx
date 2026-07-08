@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws_8_3" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Practice Worksheet</title>
+<title>8.3 Practice Worksheet</title>
 
 
-<exercise>
+<exercisegroup>
+<title>Evaluating Sin and Cos</title>
 <introduction>
 <p>
 Find the exact value of each of the following without using technology. Angles are in radians unless specifically marked as degrees.
 </p>
 </introduction>
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>\sin(150^\circ)</m>
@@ -22,11 +23,11 @@ Find the exact value of each of the following without using technology. Angles a
 <m>\sin(150^\circ) = \dfrac{1}{2}</m>
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>\cos\pbr{\dfrac{4\pi}{3}}</m>
@@ -37,11 +38,11 @@ Find the exact value of each of the following without using technology. Angles a
 <m>\cos\pbr{\dfrac{4\pi}{3}} = -\dfrac{1}{2}</m>
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>\sin\pbr{-\dfrac{\pi}{4}}</m>
@@ -54,11 +55,11 @@ Find the exact value of each of the following without using technology. Angles a
 <em>You can use the idea that <m>-\pi /4</m> radians is the same as <m>-45^\circ </m> and go clockwise on the unit circle, or compute a coterminal angle to <m>-\pi /4</m> that is between <m>0</m> and <m>2\pi </m> radians. This coterminal angle is <m>7\pi /4</m>.</em>
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>\sin\pbr{\dfrac{2\pi}{3}}</m>
@@ -69,11 +70,11 @@ Find the exact value of each of the following without using technology. Angles a
 <m>\sin\pbr{\dfrac{2\pi}{3}} = \dfrac{\sqrt{3} }{2} </m>
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>\sin(315^\circ)</m>
@@ -84,11 +85,11 @@ Find the exact value of each of the following without using technology. Angles a
 <m>\sin(315^\circ) = \dfrac{-\sqrt{2} }{2} </m>
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>\sin\pbr{\dfrac{13\pi}{6}}</m>
@@ -96,14 +97,14 @@ Find the exact value of each of the following without using technology. Angles a
 </statement>
 <solution>
 <p>
-<m>\sin\pbr{\dfrac{13\pi}{6}} = \dfrac{1}{2}</m> \qquad <em>A coterminal angle to <m>13\pi /6</m> is <m>\pi /6</m>.</em>
+<m>\sin\pbr{\dfrac{13\pi}{6}} = \dfrac{1}{2}</m>. <em>A coterminal angle to <m>13\pi /6</m> is <m>\pi /6</m>.</em>
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>\sin\pbr{\dfrac{7\pi}{3}}</m>
@@ -111,14 +112,14 @@ Find the exact value of each of the following without using technology. Angles a
 </statement>
 <solution>
 <p>
-<m>\sin\pbr{\dfrac{7\pi}{3}} = \dfrac{\sqrt{3} }{2}  </m> \qquad <em>A coterminal angle to <m>\frac{7\pi}{3}</m> is <m>\frac{\pi}{3}</m>.</em>
+<m>\sin\pbr{\dfrac{7\pi}{3}} = \dfrac{\sqrt{3} }{2}  </m>. <em>A coterminal angle to <m>\frac{7\pi}{3}</m> is <m>\frac{\pi}{3}</m>.</em>
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>\cos(-30^\circ)</m>
@@ -126,14 +127,14 @@ Find the exact value of each of the following without using technology. Angles a
 </statement>
 <solution>
 <p>
-<m>\cos(-30^\circ) = \dfrac{\sqrt{3} }{2} </m>  \qquad <em>A coterminal angle to <m>-30^\circ </m> is <m>330^\circ </m>.</em>
+<m>\cos(-30^\circ) = \dfrac{\sqrt{3} }{2} </m>. <em>A coterminal angle to <m>-30^\circ </m> is <m>330^\circ </m>.</em>
 </p>
 </solution>
-</task>
+</exercise>
 
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>\cos(210^\circ)</m>
@@ -144,12 +145,14 @@ Find the exact value of each of the following without using technology. Angles a
 <m>\cos(210^\circ) = \dfrac{-\sqrt{3} }{2} </m>
 </p>
 </solution>
-</task>
-
-
-
-
 </exercise>
+
+
+
+
+</exercisegroup>
+
+
 
 
 <exercise>

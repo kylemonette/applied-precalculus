@@ -7,11 +7,12 @@
 <targets>
 
 <target name="web" format="html" source="main.ptx" publication="publication.ptx" xsl="pretext-html.xsl" deploy-dir="web">
-<stringparams author.tools="yes"/>
+<stringparams author.tools="yes" html.css.extra="external/custom.css" />
 </target>
 
 <target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl" deploy-dir="supplement">
-<stringparams author.tools="yes"/>
+<stringparams author.tools="yes" html.css.extra="external/custom.css" />
+<!-- <stringparams author.tools="yes"/> -->
 </target>
 
 <target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl">

@@ -35,8 +35,8 @@
 
 
   <common>
-    <chunking level="2"/>
-    <tableofcontents level="3"/>
+    <chunking level="1"/>
+    <tableofcontents level="2"/>
     <exercise-reading hint="yes" answer="no" solution="no"/>
 <!-- Inline exercises include card sorting, etc. Should match the same as divisional exercises below. -->
     <exercise-inline hint="yes" answer="yes" solution="yes"/>
@@ -44,6 +44,12 @@
         <exercise-divisional hint="yes" answer="no" solution="yes"/> 
     <exercise-worksheet hint="yes" answer="yes" solution="yes"/>
     <exercise-project hint="yes" answer="no" solution="no"/>
+
+    <worksheet>
+    <!-- <first-page-header left="Applied Precalculus" right="Practice Worksheets"/> -->
+    <!-- <running-header left="Applied Precalculus" right="Practice Worksheets"/> -->
+    </worksheet>
+
     <!-- Level at which are html files generated (chapter/section/etc): -->
       <!--<chunking level="1" />-->
 
@@ -205,7 +211,7 @@
       <!--<asymptote links="yes"/>-->
 
     <!-- Feedback button can be added with a link to an email or form -->
-      <!--<feedback href="mailto:youraddress@yourUni.edu"/>-->
+      <feedback href="mailto:mth103videos@gmail.com"/>
 
     <!-- Magic IDs identify HTML pages to analytics services   -->
     <!-- Presence implies relevant Javascript will be added    -->

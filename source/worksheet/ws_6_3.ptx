@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws_6_3" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Practice Worksheet</title>
+<title>6.3 Practice Worksheet</title>
+
 
 <p>
-<alert>REMARK:</alert> We note that the following solutions were done with the natural logarithm, <m>\ln </m>. You could have done the common logarithm, <m>\log </m>, (base <m>10</m>), and the only difference would be that instead of writing <m>\ln </m> as below you would write <m>\log </m>. Your final answers will be the same number. We advise you use the logarithm that your calculator can compute. For example, if your calculator can only do the natural logarithm, you should be using that.
+<alert>REMARK:</alert>
 </p>
 
+<p>
+We note that the following solutions were done with the natural logarithm, <m>\ln </m>. You could have used the common logarithm, <m>\log </m>, (base <m>10</m>).
+Your final answers for <m>x</m> will be the same. We advise you use the logarithm that your calculator can compute.
+</p>
 
 
 

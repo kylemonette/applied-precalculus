@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws_7_3" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Practice Worksheet</title>
+<title>7.3 Practice Worksheet</title>
 
 
 <exercise>
@@ -68,7 +68,9 @@ g(f(x)) \quad = \quad g(2x-1) \quad = \quad 3(2x-1) \quad= \quad 6x-3.
 <solution>
 <p>
 Option 1: Use the formula in part (a), plugging in <m>x=-3</m>. Then <m>f(g(-3)) = 6(-3)-1 = -19</m>.
+</p>
 
+<p>
 Option 2: Evaluate the composition directly. Since <m>g(-3)=-9</m>, then <m>f(g(-3)) = f(-9) = -19</m>.
 </p>
 </solution>
@@ -84,7 +86,9 @@ Option 2: Evaluate the composition directly. Since <m>g(-3)=-9</m>, then <m>f(g(
 <solution>
 <p>
 Option 1: <em>Find the formula for <m>f(h(x))</m> if you want!</em>
+</p>
 
+<p>
 Option 2: Evaluate the composition directly. Since <m>h(7) = 50</m>, then <m>f(h(7)) = f(50) = 2(50)-1=99</m>.
 </p>
 </solution>
@@ -100,8 +104,10 @@ Option 2: Evaluate the composition directly. Since <m>h(7) = 50</m>, then <m>f(h
 <solution>
 <p>
 Option 1: <em>Find the formula for <m>f(g(h(x)))</m> if you want, but this is a LOT of work!</em>
+</p>
 
-Option 2: (Recommended!) Evaluate the composition directly, working inside--out. Note that <m>h(2)=2^2+1=5</m>. Then, <m>g(h(2)) = g(5) = 3(5)=15</m>. Lastly, <m>f(g(h(2))) = f(15) = 2(15)-1=29</m>.
+<p>
+Option 2: (Recommended!) Evaluate the composition directly, working inside-out. Note that <m>h(2)=2^2+1=5</m>. Then, <m>g(h(2)) = g(5) = 3(5)=15</m>. Lastly, <m>f(g(h(2))) = f(15) = 2(15)-1=29</m>.
 </p>
 </solution>
 </task>
@@ -128,7 +134,10 @@ Let <m>f(x)=-3x+7</m> and <m>g(x)=2x^2-8</m>. Find the following.
 <solution>
 <p>
 <md>
-f(g(x)) \quad =\quad f(2x^2-8) \quad = \quad -3(2x^2-8)+7 \quad= \quad -6x^2+24+7 \quad = \quad -6x^2+31.
+<mrow>f(g(x)) \amp \quad =\quad f(2x^2-8) </mrow>
+<mrow> \amp \quad = \quad -3(2x^2-8)+7 </mrow>
+<mrow>\amp \quad= \quad -6x^2+24+7 </mrow>
+<mrow> \amp \quad = \quad -6x^2+31.</mrow>
 </md>
 </p>
 </solution>
@@ -145,7 +154,8 @@ f(g(x)) \quad =\quad f(2x^2-8) \quad = \quad -3(2x^2-8)+7 \quad= \quad -6x^2+24+
 <p>
 <md>
 g(f(x)) \quad = \quad  g(-3x+7) \quad = \quad 2(-3x+7)^2-8.
-</md> If you wish, you may find it advantageous to practice expanding this out:
+</md>
+If you wish, you may find it advantageous to practice expanding this out:
 </p>
 <p>
 <md>
@@ -177,7 +187,7 @@ Identify functions <m>f(x)</m> and <m>g(x)</m> to rewrite each of the following 
 </statement>
 <solution>
 <p>
-A good rule of thumb is that we want to choose the inner function --- in this case <m>g(x)</m> --- to be the ``function you would put a number into first'' if you were evaluating the original function. So, here we could pick
+A good rule of thumb is that we want to choose the inner function <mdash/> in this case <m>g(x)</m> <mdash/> to be the <q>function you would put a number into first</q> if you were evaluating the original function. So, here we could pick
 <md>
 g(x) = 4x+3, \qquad f(x)=x^2.
 </md> To check this, note that

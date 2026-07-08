@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws_3_2" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Practice Worksheet</title>
+<title>3.2 Practice Worksheet</title>
 
 
-
+<exercisegroup>
+<title>Finding Intercepts</title>
+<introduction>
+<p>
 Find the horizontal intercepts of each quadratic function by factoring.
+</p>
+</introduction>
 
 
 
@@ -195,5 +200,7 @@ The greatest common factor in each term is <m>t</m>, so <m>m(t)=t(-5t+2)</m>. Th
 </solution>
 </exercise>
 
+
+</exercisegroup>
 
 </worksheet>

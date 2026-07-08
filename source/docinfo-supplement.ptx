@@ -26,6 +26,7 @@
     \newcommand{\R}{\mathbb R}
     \usepackage{xcolor,color}
     \newcommand{\aroc}{\text{ARC}}
+    \newcommand{\rad}{\quad \textrm{radians}}
     \newcommand{\pbr}[1]{\left( #1 \right)}
     \newcommand{\sbr}[1]{\left\{ #1 \right\}}
     \newcommand{\cbr}[1]{\left[ #1 \right]}

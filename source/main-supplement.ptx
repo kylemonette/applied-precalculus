@@ -8,10 +8,10 @@
   <!-- <book xml:id="applied-precalculus"> -->
     <book xml:id="apc">
     <title>Applied Precalculus</title>
-    <subtitle>MTH 103</subtitle>
+    <subtitle>Supplementary Material</subtitle>
 
     <!-- Include frontmatter -->
-    <xi:include href="./frontmatter.ptx" />
+    <!-- <xi:include href="./frontmatter.ptx" /> -->
 
     <part xml:id="part_1" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Practice Worksheets</title>
@@ -24,23 +24,75 @@
     <xi:include href="worksheet/ws_1_3.ptx"/>
     <xi:include href="worksheet/ws_1_4.ptx"/>
     <xi:include href="worksheet/ws_1_5.ptx"/>
-
     </chapter>
 
+    <chapter xml:id="chapter_2" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 2</title>
+    <xi:include href="worksheet/ws_2_1.ptx"/>
+    <xi:include href="worksheet/ws_2_2.ptx"/>
+    <xi:include href="worksheet/ws_2_3.ptx"/>
+    </chapter>
+
+    <chapter xml:id="chapter_3" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 3</title>
+    <xi:include href="worksheet/ws_3_1.ptx"/>
+    <xi:include href="worksheet/ws_3_2.ptx"/>
+    <xi:include href="worksheet/ws_3_3.ptx"/>
+    <xi:include href="worksheet/ws_3_4.ptx"/>
+    </chapter>
+
+    <chapter xml:id="chapter_4" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 4</title>
+    <xi:include href="worksheet/ws_4_1.ptx"/>
+    <xi:include href="worksheet/ws_4_2.ptx"/>
+    <xi:include href="worksheet/ws_4_3.ptx"/>
+    <xi:include href="worksheet/ws_4_4.ptx"/>
+    </chapter>
+
+    <chapter xml:id="chapter_5" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 5</title>
+
+    <xi:include href="worksheet/ws_5_1.ptx"/>
+    <xi:include href="worksheet/ws_5_2.ptx"/>
+    <xi:include href="worksheet/ws_5_3.ptx"/>
+    <xi:include href="worksheet/ws_5_4.ptx"/>
+    <xi:include href="worksheet/ws_5_5.ptx"/>
+    </chapter>
+
+    <chapter xml:id="chapter_6" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 6</title>
+    <xi:include href="worksheet/ws_6_1.ptx"/>
+    <xi:include href="worksheet/ws_6_2.ptx"/>
+    <xi:include href="worksheet/ws_6_3.ptx"/>
+    </chapter>
+
+    <chapter xml:id="chapter_7" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 7</title>
+    <xi:include href="worksheet/ws_7_1.ptx"/>
+    <xi:include href="worksheet/ws_7_2.ptx"/>
+    <xi:include href="worksheet/ws_7_3.ptx"/>
+    </chapter>
+
+   <chapter xml:id="chapter_8" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Chapter 8</title>
+    <xi:include href="worksheet/ws_8_1.ptx"/>
+    <xi:include href="worksheet/ws_8_2.ptx"/>
+    <xi:include href="worksheet/ws_8_3.ptx"/>
+    <xi:include href="worksheet/ws_8_4-8_5.ptx"/>
+    </chapter>
     </part>
 
 
 
 
-    <part xml:id="part_2" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+
+    <!-- <part xml:id="part_2" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Exam Reviews</title>
 
     <xi:include href="exam1.ptx"/>
 
-    </part>
-
-    <!-- Include chapters -->
-    <!-- <xi:include href="./ch-1.ptx" /> -->
+    </part> -->
     
 
   </book>

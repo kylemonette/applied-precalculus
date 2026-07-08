@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws_7_2" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Practice Worksheet</title>
+<title>7.2 Practice Worksheet</title>
 
-<exercise>
+<exercisegroup>
+<title>Transforming Functions</title>
 <introduction>
 <p>
 Determine what function has been transformed and what transformations have been applied to it. Then graph the function.
 </p>
 </introduction>
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=5x^2</m>
@@ -21,10 +22,10 @@ Determine what function has been transformed and what transformations have been 
 With the original function <m>f(x)=x^2</m>, then <m>y</m> is <m>f(x)</m> stretched vertically by a factor of <m>5</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=\dfrac{1}{7}\sqrt[3]{t}</m>
@@ -35,10 +36,10 @@ With the original function <m>f(x)=x^2</m>, then <m>y</m> is <m>f(x)</m> stretch
 With the original function <m>f(t)=\sqrt[3]{t} </m>, then <m>y</m> is <m>f(t)</m> compressed vertically by a factor of <m>7</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=\ln(6x)</m>
@@ -49,10 +50,10 @@ With the original function <m>f(t)=\sqrt[3]{t} </m>, then <m>y</m> is <m>f(t)</m
 With the original function <m>f(x)=\ln (x)</m>, then <m>y</m> is <m>f(x)</m> compressed horizontally by a factor of <m>6</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=\pbr{\dfrac{1}{5}x}^2</m>
@@ -63,10 +64,10 @@ With the original function <m>f(x)=\ln (x)</m>, then <m>y</m> is <m>f(x)</m> com
 With the original function <m>f(x)=x^2</m>, then <m>y</m> is <m>f(x)</m> stretched horizontally by a factor of <m>5</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=6\sqrt[5]{x}+8</m>
@@ -77,10 +78,10 @@ With the original function <m>f(x)=x^2</m>, then <m>y</m> is <m>f(x)</m> stretch
 With the original function <m>f(x)=\sqrt[5]{x} </m>, then <m>y</m> is <m>f(x)</m> stretched vertically by a factor of <m>6</m> and shifted up by <m>8</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=-\dfrac{1}{4}(x-5)^2</m>
@@ -91,10 +92,10 @@ With the original function <m>f(x)=\sqrt[5]{x} </m>, then <m>y</m> is <m>f(x)</m
 With the original function <m>f(x)=x^2</m>, then <m>y</m> is <m>f(x)</m> compressed vertically by a factor of <m>4</m>, shifted right by <m>5</m>, and reflected over the <m>x</m>-axis.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=3e^{\frac{1}{2}x}+1</m>
@@ -105,10 +106,10 @@ With the original function <m>f(x)=x^2</m>, then <m>y</m> is <m>f(x)</m> compres
 With the original function <m>f(x)=e^x</m>, then <m>y</m> is <m>f(x)</m> stretched horizontally by a factor of <m>2</m>, stretched vertically by a factor of <m>3</m>, and shifted up by <m>1</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=2^{3(x-0.5)}-5</m>
@@ -119,11 +120,9 @@ With the original function <m>f(x)=e^x</m>, then <m>y</m> is <m>f(x)</m> stretch
 With the original function <m>f(x)=2^x</m>, then <m>y</m> is <m>f(x)</m> shifted right by <m>0.5</m>, compressed horizontally by a factor of <m>3</m>, and shifted down <m>5</m> units.
 </p>
 </solution>
-</task>
-
 </exercise>
 
-
+</exercisegroup>
 
 
 <exercise workspace="1in">
@@ -153,6 +152,11 @@ g(x) \quad = \quad 2 \pbr{13(3x)^2 + 2(3x) - 4}  \quad = \quad 2 f(3x).
 Below is the graph of a function <m>f(x)</m>. Graph the functions <m>g(x)=3f(x)</m> and <m>h(x)=f(2x)</m>.
 </p>
 
+<image width="50%" xml:id="ws_7_2_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_7_2_1_fig">
 \begin{tikzpicture}[scale=0.9]
 \begin{axis}[grid=both,
 axis lines=middle,
@@ -166,9 +170,21 @@ samples=250]
 \addplot[domain=-1:2 ,thick] {-abs(x-1)+3};
 \end{axis}
 \end{tikzpicture}
+</latex-image>
+</image>
 
-\ifprintanswers
+</statement>
 
+<solution>
+<p>
+In red we have <m>g(x)=3f(x)</m> and in blue <m>h(x)=f(2x)</m>. <em>Notice the dimensions of the vertical axis have been increased to <m>9</m>. If you plot <m>h(x)</m> on the same axis scale as the grid for <m>f(x)</m>, it may look a bit different.</em>
+</p>
+
+<image width="50%" xml:id="ws_7_2_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_7_2_2_fig">
 \begin{tikzpicture}[scale=0.9]
 \begin{axis}[grid=both,
 axis lines=middle,
@@ -183,14 +199,9 @@ samples=250]
 \addplot[domain=-0.5:1,thick,blue] {-abs(2*x-1)+3};
 \end{axis}
 \end{tikzpicture}
+</latex-image>
+</image>
 
-
-
-</statement>
-<solution>
-<p>
-On the graph on the right, in red we have \textcolor{red}{<m>g(x)=3f(x)</m>} and in blue \textcolor{blue}{<m>h(x)=f(2x)</m>}. <em>Notice the dimensions of the vertical axis have been increased to <m>9</m>. If you plot <m>h(x)</m> on the same axis scale as the grid for <m>f(x)</m>, it may look a bit different.</em>
-</p>
 </solution>
 </exercise>
 
@@ -203,6 +214,11 @@ On the graph on the right, in red we have \textcolor{red}{<m>g(x)=3f(x)</m>} and
 Below is the graph of a transformation of the function <m>y=x^2</m> obtained by scaling. Write a possible formula for it.
 </p>
 
+<image width="50%" xml:id="ws_7_2_3">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_7_2_3_fig">
 \begin{tikzpicture}[scale=0.9]
 \begin{axis}[grid=both,
 axis lines=middle,
@@ -214,23 +230,48 @@ minor tick={},
 xlabel=\(x\), ylabel=\(y\),
 samples=250]
 \addplot[domain=-5:5 ,thick] {(0.5*x)^2};
-
-\ifprintanswers
-\addplot[domain=-5:5 ,thick,red] {x^2};
-\else \fi
 \end{axis}
 \end{tikzpicture}
+</latex-image>
+</image>
 
 </statement>
 <solution>
 <p>
-In the graph above, we plot in red <m>y=x^2</m>. Notice that for <m>y=x^2</m> then we have the point <m>(1,1)</m> but for the black function we have <m>(2,1)</m>. Similarly, <m>(2,4)</m> on <m>y=x^2</m> corresponds with <m>(4,4)</m> for the black function.
-
-That is, if the <m>y</m>-values are kept constant, then the <m>x</m>-values are being multiplied by <m>2</m>. Therefore, the function in black is a horizontal scaling of <m>y=x^2</m>, namely a horizontal stretching by a factor of <m>2</m>.
-So, we have <m>y=\pbr{\frac{1}{2}x} ^2</m> for the formula.
-
-<em>We remark that you could interpret this as a vertical scaling instead of a horizontal one. Here, you would consider constant <m>x</m>-values and see what happens to the <m>y</m>-values. For example, the point <m>(2,4)</m> on the <m>y=x^2</m> function aligns with <m>(2,1)</m> on the black function. Because <m>1</m> is one-fourth of <m>4</m>, then there is a vertical compression by a factor of <m>4</m>, and therefore <m>y=\frac{1}{4}x^2</m> is the formula. Notice that this is <alert>exactly</alert> the same formula as we got with the ``horizontal scaling'' approach, if you simplify that formula.</em>
+In the graph below, we plot in red <m>y=x^2</m>. Notice that for <m>y=x^2</m> then we have the point <m>(1,1)</m> but for the blue function we have <m>(2,1)</m>. Similarly, <m>(2,4)</m> on <m>y=x^2</m> corresponds with <m>(4,4)</m> for the blue function.
 </p>
+
+<p>
+That is, if the <m>y</m>-values are kept constant, then the <m>x</m>-values are being multiplied by <m>2</m>. Therefore, the function in blue is a horizontal scaling of <m>y=x^2</m>, namely a horizontal stretching by a factor of <m>2</m>.
+So, we have <m>y=\pbr{\frac{1}{2}x} ^2</m> for the formula.
+</p>
+
+<image width="50%" xml:id="ws_7_2_4">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_7_2_4_fig">
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=both,
+axis lines=middle,
+xmin=-5,xmax=5,
+ymin=0,ymax=7,
+xtick={-6,...,6},
+ytick={-1,1,2,3,4,5,6,7},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+samples=250]
+\addplot[domain=-5:5 ,thick] {(0.5*x)^2};
+\addplot[domain=-5:5 ,thick,red] {x^2};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+
+<p>
+<em>We remark that you could interpret this as a vertical scaling instead of a horizontal one. Here, you would consider constant <m>x</m>-values and see what happens to the <m>y</m>-values. For example, the point <m>(2,4)</m> on the <m>y=x^2</m> function aligns with <m>(2,1)</m> on the blue function. Because <m>1</m> is one-fourth of <m>4</m>, then there is a vertical compression by a factor of <m>4</m>, and therefore <m>y=\frac{1}{4}x^2</m> is the formula. Notice that this is <alert>exactly</alert> the same formula as we got with the <q>horizontal scaling</q> approach, if you simplify that formula.</em>
+</p>
+
 </solution>
 </exercise>
 

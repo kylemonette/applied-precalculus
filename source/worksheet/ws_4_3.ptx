@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <worksheet xml:id="ws_4_3" xmlns:xi="http://www.w3.org/2001/XInclude">
-<title>Practice Worksheet</title>
+<title>4.3 Practice Worksheet</title>
 
 
-<exercise>
+<exercisegroup>
+<title>Power Functions</title>
 <introduction>
 <p>
 Identify the exponent and the coefficient of each power function.
@@ -12,7 +13,7 @@ Identify the exponent and the coefficient of each power function.
 </introduction>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=2x^2\cdot4x^3</m>
@@ -23,10 +24,10 @@ Identify the exponent and the coefficient of each power function.
 Simplifying we get <m>y=8 x^{2+3} = 8x^5</m>. So the exponent is <m>5</m> and the coefficient is <m>8</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=(x^2)^3</m>
@@ -37,10 +38,10 @@ Simplifying we get <m>y=8 x^{2+3} = 8x^5</m>. So the exponent is <m>5</m> and th
 Simplifying we get <m>y=x^{2\cdot 3} = x^6</m>. So the exponent is <m>6</m> and the coefficient is <m>1</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=\dfrac{x^8}{7x^3}</m>
@@ -51,10 +52,10 @@ Simplifying we get <m>y=x^{2\cdot 3} = x^6</m>. So the exponent is <m>6</m> and 
 Simplifying we get <m>y=\dfrac{x^{8-3}}{7} = \dfrac{x^5}{7}</m> which we can write as <m>y=\frac{1}{7}x^5</m>. Therefore the coefficient is <m>\frac{1}{7}</m> and the exponent is <m>5</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=(0.1x^2)^5(-4x)^2</m>
@@ -74,10 +75,10 @@ Simplifying we get <m>y=\dfrac{x^{8-3}}{7} = \dfrac{x^5}{7}</m> which we can wri
 Therefore the coefficient is <m>0.00016</m> and the exponent is <m>12</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=\pbr{\dfrac{(2x)^4}{x^3}}^2</m>
@@ -98,10 +99,10 @@ Therefore the coefficient is <m>0.00016</m> and the exponent is <m>12</m>.
 Therefore the coefficient is <m>256</m> and the exponent is <m>2</m>.
 </p>
 </solution>
-</task>
+</exercise>
 
 
-<task workspace="1in">
+<exercise workspace="1in">
 <statement>
 <p>
 <m>y=\dfrac{8x}{\pi^2}</m>
@@ -112,11 +113,11 @@ Therefore the coefficient is <m>256</m> and the exponent is <m>2</m>.
 Here, <m>y=\dfrac{8}{\pi ^2} \cdot x</m> and so the coefficient is <m>\dfrac{8}{\pi ^2}</m> and the exponent is <m>1</m>.
 </p>
 </solution>
-</task>
-
-
-
 </exercise>
+
+
+
+</exercisegroup>
 
 
 
@@ -130,12 +131,16 @@ Draw a rough sketch of the graph of a power function <m>y=kx^p</m> with the stat
 <task workspace="1in">
 <statement>
 <p>
-negative coefficient and an exponent of 3
+negative coefficient and an exponent of <m>3</m>
 </p>
 </statement>
 
 <solution>
-
+<image width="50%" xml:id="ws_4_3_1">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_4_3_1_fig">
 \begin{tikzpicture}[scale=0.7]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -149,7 +154,8 @@ samples=250]
 \addplot[domain=-2:2 ,thick] {-x^3};
 \end{axis}
 \end{tikzpicture}
-
+</latex-image>
+</image>
 </solution>
 </task>
 
@@ -158,11 +164,15 @@ samples=250]
 <task workspace="1in">
 <statement>
 <p>
-negative coefficient and an exponent of 12
+negative coefficient and an exponent of <m>12</m>
 </p>
 </statement>
 <solution>
-
+<image width="50%" xml:id="ws_4_3_2">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_4_3_2_fig">
 \begin{tikzpicture}[scale=0.7]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -176,7 +186,8 @@ samples=250]
 \addplot[domain=-2:2 ,thick] {-x^2};
 \end{axis}
 \end{tikzpicture}
-
+</latex-image>
+</image>
 </solution>
 </task>
 
@@ -184,12 +195,15 @@ samples=250]
 <task workspace="1in">
 <statement>
 <p>
-positive coefficient and an exponent of 4
+positive coefficient and an exponent of <m>4</m>
 </p>
 </statement>
 <solution>
-
-
+<image width="50%" xml:id="ws_4_3_3">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_4_3_3_fig">
 \begin{tikzpicture}[scale=0.7]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -203,7 +217,8 @@ samples=250]
 \addplot[domain=-2:2 ,thick] {x^4};
 \end{axis}
 \end{tikzpicture}
-
+</latex-image>
+</image>
 </solution>
 </task>
 
@@ -215,7 +230,11 @@ positive coefficient and an exponent of 1
 </p>
 </statement>
 <solution>
-
+<image width="50%" xml:id="ws_4_3_4">
+<shortdescription>
+A short description.
+</shortdescription>
+<latex-image label="ws_4_3_4_fig">
 \begin{tikzpicture}[scale=0.7]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -229,7 +248,8 @@ samples=250]
 \addplot[domain=-1.6:1.6 ,thick] {x};
 \end{axis}
 \end{tikzpicture}
-
+</latex-image>
+</image>
 </solution>
 </task>
 
