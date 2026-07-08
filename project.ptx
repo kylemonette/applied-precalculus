@@ -15,7 +15,7 @@
 <!-- <stringparams author.tools="yes"/> -->
 </target>
 
-<target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl">
+<target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl" deploy-dir="print">
 <stringparams draft="yes"/>
 </target>
 
