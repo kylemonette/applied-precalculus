@@ -6,23 +6,27 @@
 <project ptx-version="2">
 <targets>
 
-<target name="web" format="html" source="main.ptx" publication="publication.ptx" xsl="pretext-html.xsl" deploy-dir="web">
+<!-- <target name="web" format="html" source="main.ptx" publication="publication.ptx" xsl="pretext-html.xsl" deploy-dir="web"> -->
+<target name="web" format="html" source="main.ptx" publication="publication.ptx" xsl="pretext-html.xsl">
 <stringparams author.tools="yes" html.css.extra="external/custom.css" />
 </target>
 
-<target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl" deploy-dir="supplement">
+<!-- <target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl" deploy-dir="supplement"> -->
+<target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl" compression="scorm">
 <stringparams author.tools="yes" html.css.extra="external/custom.css" />
 <!-- <stringparams author.tools="yes"/> -->
 </target>
 
-<target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl" deploy-dir="print">
+<!-- <target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl" deploy-dir="print"> -->
+<target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl">
 <stringparams draft="yes"/>
 </target>
 
-<!-- <target name="standalone" format="html" source="main-supplement.ptx" publication="standalone.ptx" xsl="pretext-html.xsl"> -->
-<!-- </target> -->
+
 
 <target name="runestone" publication="runestone.ptx" format="html" />
+
+
 </targets>
 </project>
 
