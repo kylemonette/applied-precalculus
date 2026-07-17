@@ -1,9 +1,0 @@
-/* Remove the print header options on the worksheets. */
-.header-footer-options {
-  display: none;
-}
-
-/* This removes ALL options (headers, solutions, workspace highlights */
-/* .print-options {
-  display: none;
-} */
