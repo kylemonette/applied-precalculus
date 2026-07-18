@@ -225,9 +225,7 @@ The graph below illustrates the changes in <m>x</m> and <m>y</m>.
 </figure>
 
 
-
-
-<image width="50%" xml:id="fig_1_5_3">
+<!-- <image width="50%" xml:id="fig_1_5_3">
 <shortdescription>
 A short description.
 </shortdescription>
@@ -247,11 +245,11 @@ x post scale = 1
 \addplot[domain=0:5] {-0.3*(x-4)^2+4};
 \node[rpoint with label={45:{}}] at (axis cs:0.6,0.532) {};
 \node[rpoint with label={90:{}}] at (axis cs:3.8,3.988) {};
-\draw[thick,dashed] (0.6,0.532) -- (3.8,0.532) node[midway,below] {$\Delta x$} -- (3.8,3.988) node[midway,right] {$\Delta y$};
+\draw[thick,dashed] (0.6,0.532)  TWO DASHES HERE (3.8,0.532) node[midway,below] {$\Delta x$} TWO DASHES HERE (3.8,3.988) node[midway,right] {$\Delta y$};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
-</image>
+</image> -->
 
 
 <example>
