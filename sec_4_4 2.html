@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Power Functions: Fractional and Negative Integral Exponents</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: true,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Applied Precalculus">
+<meta property="og:title" content="Applied Precalculus">
+<meta property="book:title" content="Applied Precalculus">
+<meta name="twitter:description" content="Applied Precalculus Description">
+<meta property="og:description" content="Applied Precalculus Description">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.14';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.cb5af2e851de3574.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f51cd4153b45055d.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.66fa8a682a32c0ac.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="apc" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="apc.html"><span class="title">Applied Precalculus</span></a></div>
+<p class="byline">PersonNameChangeMe</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-3.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec_4_3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter_4.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\usepackage{xcolor,color}
+\newcommand{\aroc}{\text{ARC}}
+\newcommand{\pbr}[1]{\left( #1 \right)}
+\newcommand{\sbr}[1]{\left\{ #1 \right\}}
+\newcommand{\cbr}[1]{\left[ #1 \right]}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\markcell}[2]{
+\tikz[remember picture, baseline=(#1.base)] \node[inner sep=0pt] (#1) {#2};
+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">About the Authors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_1.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Functions</span></a></div>
+<ul id="ptx-toc-group-chapter_1" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_1_1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Concept of a Function</span></a></div>
+<ul id="ptx-toc-group-sec_1_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-4" class="internal"><span class="title">Functions in General</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-5" class="internal"><span class="title">Functions in Applied Settings</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-6" class="internal"><span class="title">Increasing and Decreasing Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-7" class="internal"><span class="title">Functions as a Sequence of Operations</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_1.html#practice_1_1" class="internal"><span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_1.html#ex_1_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_1_2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The Graph of a Function</span></a></div>
+<ul id="ptx-toc-group-sec_1_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_2.html#sec_1_2-4" class="internal"><span class="title">Graphs of Increasing and Decreasing Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_2.html#sec_1_2-5" class="internal"><span class="title">Vertical Line Test</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_2.html#ex_1_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_1_3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Functions Given Numerically</span></a></div>
+<ul id="ptx-toc-group-sec_1_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_3.html#ex_1_3" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_1_4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Vertical and Horizontal Intercepts</span></a></div>
+<ul id="ptx-toc-group-sec_1_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_4.html#ex_1_4" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_1_5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Average Rate of Change</span></a></div>
+<ul id="ptx-toc-group-sec_1_5" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_5.html#ex_1_5" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_2.html" class="internal"><span class="codenumber">2</span> <span class="title">Linear Functions</span></a></div>
+<ul id="ptx-toc-group-chapter_2" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_2_1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Properties of Linear Functions</span></a></div>
+<ul id="ptx-toc-group-sec_2_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-4" class="internal"><span class="title">Practical Interpretation of the Slope and Vertical Intercept</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-5" class="internal"><span class="title">Graphs of Linear Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-6" class="internal"><span class="title">The Slope Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-7" class="internal"><span class="title">Constant Functions, Horizontal and Vertical Lines</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_2_1.html#ex_2_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_2_2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Working with Linear Functions and Linear Equations</span></a></div>
+<ul id="ptx-toc-group-sec_2_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_2.html#sec_2_2-4" class="internal"><span class="title">Linear Functions and Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_2.html#sec_2_2-5" class="internal"><span class="title">Number of Solutions to a Linear Equation in One Variable</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_2_2.html#ex_2_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_2_3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Modeling and Numerically Given Functions</span></a></div>
+<ul id="ptx-toc-group-sec_2_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_2_3.html#ex_2_3" class="internal"><span class="codenumber">2.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_3.html" class="internal"><span class="codenumber">3</span> <span class="title">Quadratic Functions</span></a></div>
+<ul id="ptx-toc-group-chapter_3" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_3_1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Quadratic Functions</span></a></div>
+<ul id="ptx-toc-group-sec_3_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_1.html#sec_3_1-4" class="internal"><span class="title">Graphs of Quadratic Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_1.html#sec_3_1-5" class="internal"><span class="title">Quadratic Functions and Their Graphs in Applications</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_1.html#ex_3_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_3_2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Factoring Quadratic Expressions</span></a></div>
+<ul id="ptx-toc-group-sec_3_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_2.html#sec_3_2-4" class="internal"><span class="title">Quadratic Functions and Projectile Motion</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_2.html#ex_3_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_3_3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Vertex Form and Completing the Square</span></a></div>
+<ul id="ptx-toc-group-sec_3_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_3.html#sec_3_3-4" class="internal"><span class="title">Converting from Vertex Form to Standard Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_3.html#sec_3_3-5" class="internal"><span class="title">Converting from Standard Form to Vertex Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_3.html#sec_3_3-6" class="internal"><span class="title">Using Vertex Form to Find Horizontal Intercepts</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_3.html#ex_3_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_3_4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">The Quadratic Formula</span></a></div>
+<ul id="ptx-toc-group-sec_3_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_4.html#sec_3_4-4" class="internal"><span class="title">The Discriminant</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_4.html#sec_3_4-5" class="internal"><span class="title">Using Horizontal Intercepts to Find the Vertex</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_4.html#sec_3_4-6" class="internal"><span class="title">Factored Form of a Quadratic Function</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_4.html#ex_3_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter_4.html" class="internal"><span class="codenumber">4</span> <span class="title">Power Functions</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-chapter_4">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4_1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Algebra of Powers: Integral Exponents</span></a></div>
+<ul id="ptx-toc-group-sec_4_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_1.html#ex_4_1" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4_2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Algebra of Powers: Fractional Exponents</span></a></div>
+<ul id="ptx-toc-group-sec_4_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-3" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_2.html#ex_4_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4_3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Power Functions: Positive Integral Exponents</span></a></div>
+<ul id="ptx-toc-group-sec_4_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-3" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_3.html#ex_4_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec_4_4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Power Functions: Fractional and Negative Integral Exponents</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec_4_4">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-3" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_4.html#ex_4_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul id="ptx-toc-group-backmatter" class="structural toc-item-list">
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="codenumber">A</span> <span class="title">Selected Solutions</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-4.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec_4_4">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Power Functions: Fractional and Negative Integral Exponents</span>
+</h1>
+<section class="introduction" id="sec_4_4-2">
+<article class="objectives goal-like" id="sec_4_4-2-1"><h2 class="heading"><span class="type">Objectives</span></h2>
+<div class="introduction" id="sec_4_4-2-1-1">
+<div class="para" id="sec_4_4-2-1-1-1">After completing this section, you should be able to do the following.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ol class="decimal" id="sec_4_4-2-1-2">
+<li id="sec_4_4-2-1-2-1">
+<div class="para" id="sec_4_4-2-1-2-1-1">First objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Objective 4.4.1"><a tabindex="-1" href="#sec_4_4-2-1-2-1" title="Copy heading and permalink for Objective 4.4.1" aria-label="Copy heading and permalink for Objective 4.4.1">🔗</a></div>
+</li>
+<li id="sec_4_4-2-1-2-2">
+<div class="para" id="sec_4_4-2-1-2-2-1">Second objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Objective 4.4.2"><a tabindex="-1" href="#sec_4_4-2-1-2-2" title="Copy heading and permalink for Objective 4.4.2" aria-label="Copy heading and permalink for Objective 4.4.2">🔗</a></div>
+</li>
+<li id="sec_4_4-2-1-2-3">
+<div class="para" id="sec_4_4-2-1-2-3-1">Third objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-2-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Objective 4.4.3"><a tabindex="-1" href="#sec_4_4-2-1-2-3" title="Copy heading and permalink for Objective 4.4.3" aria-label="Copy heading and permalink for Objective 4.4.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Objectives"><a tabindex="-1" href="#sec_4_4-2-1" title="Copy heading and permalink for Objectives" aria-label="Copy heading and permalink for Objectives">🔗</a></div>
+</article>
+<div class="para" id="sec_4_4-2-2">In the previous section, we considered power functions <span class="process-math">\(f(x) = kx^p\)</span> in the case when <span class="process-math">\(p\)</span> is a positive integer. When <span class="process-math">\(p\)</span> is a negative integer, power functions behave quite differently.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="sec_4_4-3">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Negative Integral Exponents</span>
+</h2>
+<div class="para logical" id="sec_4_4-3-2">
+<div class="para">Consider a power function</div>
+<div class="displaymath process-math" id="sec_4_4-3-2-1">
+\begin{equation*}
+f(x) = kx^p
+\end{equation*}
+</div>
+<div class="para">in the case when the exponent <span class="process-math">\(p\)</span> is a negative integer. The behavior and graphs of such functions are very different from those of power functions with positive integral exponents.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-3-3">A negative exponent <span class="process-math">\(x^{-m}\)</span> means the reciprocal <span class="process-math">\(\frac{1}{x^m}\text{.}\)</span> So now the independent variable is in the denominator. The domain of a power function in this case is no longer the set of all real numbers as <span class="process-math">\(x\)</span> cannot be <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-3-4">We now look more closely at these graphs.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_4_4-3-5"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_4_4-3-5-1-1">Which of the functions below are power functions? Rewrite those which are in standard form <span class="process-math">\(y = kx^p\text{.}\)</span> Identify the coefficient and the exponent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_4_4-3-5-1-2">
+<ol class="decimal" id="sec_4_4-3-5-1-2-1">
+<li id="sec_4_4-3-5-1-2-1-1">
+<div class="para" id="sec_4_4-3-5-1-2-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle f(x) = \frac{3x^2}{2x^3}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-5-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_4_4-3-5-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_4_4-3-5-1-2-1-2">
+<div class="para" id="sec_4_4-3-5-1-2-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle g(x) = \frac{-\pi}{x^4}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-5-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_4_4-3-5-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_4_4-3-5-1-2-1-3">
+<div class="para" id="sec_4_4-3-5-1-2-1-3-1">
+<span class="process-math">\(\displaystyle \displaystyle h(x) = \frac{70}{3^x}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-5-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_4_4-3-5-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-5-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_4_4-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_4_4-3-5-2-1">
+<ol class="decimal" id="sec_4_4-3-5-2-1-1">
+<li id="sec_4_4-3-5-2-1-1-1">
+<div class="para logical" id="sec_4_4-3-5-2-1-1-1-1">
+<div class="para">The function <span class="process-math">\(f(x)\)</span> is a power function. Using Rules of Exponents from Section 4.1, we can rewrite:</div>
+<div class="displaymath process-math" id="sec_4_4-3-5-2-1-1-1-1-2">
+\begin{equation*}
+f(x) = \frac{3x^2}{2x^3} = \frac{3}{2x} = \frac{3}{2} \cdot \frac{1}{x} = \frac{3}{2} \cdot x^{-1}.
+\end{equation*}
+</div>
+<div class="para">The coefficient is <span class="process-math">\(k = \frac{3}{2}\)</span> and the exponent is <span class="process-math">\(p = -1\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-5-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_4_4-3-5-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_4_4-3-5-2-1-1-2">
+<div class="para logical" id="sec_4_4-3-5-2-1-1-2-1">
+<div class="para">
+<span class="process-math">\(g(x)\)</span> is a power function:</div>
+<div class="displaymath process-math" id="sec_4_4-3-5-2-1-1-2-1-2">
+\begin{equation*}
+g(x) = \frac{-\pi}{x^4} = -\pi x^{-4}.
+\end{equation*}
+</div>
+<div class="para">The coefficient is <span class="process-math">\(k = -\pi\)</span> and the exponent is <span class="process-math">\(p = -4\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-5-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_4_4-3-5-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_4_4-3-5-2-1-1-3">
+<div class="para logical" id="sec_4_4-3-5-2-1-1-3-1">
+<div class="para">
+<span class="process-math">\(h(x)\)</span> is not a power function. Using rules of exponents for arbitrary exponents, we can rewrite:</div>
+<div class="displaymath process-math" id="sec_4_4-3-5-2-1-1-3-1-2">
+\begin{equation*}
+h(x) = \frac{70}{3^x} = 70 \cdot 3^{-x}.
+\end{equation*}
+</div>
+<div class="para">The function <span class="process-math">\(h(x) = 70 \cdot 3^{-x}\)</span> is not a power function. Indeed, the base of the power expression <span class="process-math">\(3^{-x}\)</span> is constant at <span class="process-math">\(3\text{,}\)</span> meanwhile the exponent <span class="process-math">\(-x\)</span> varies.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-5-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_4_4-3-5-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.4.1.1"><a tabindex="-1" href="#sec_4_4-3-5-2" title="Copy heading and permalink for Solution 4.4.1.1" aria-label="Copy heading and permalink for Solution 4.4.1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 4.4.1"><a tabindex="-1" href="#sec_4_4-3-5" title="Copy heading and permalink for Example 4.4.1" aria-label="Copy heading and permalink for Example 4.4.1">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_4_4-3-6"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec_4_4-3-6-1-1">
+<div class="para">Body mass index (BMI) is an easy screening method for weight category — underweight, healthy weight, overweight, and obesity. BMI is calculated as follows:</div>
+<div class="displaymath process-math" id="sec_4_4-3-6-1-1-2">
+\begin{equation*}
+\text{BMI} = \frac{\text{(weight in lb)} \cdot 703}{(\text{height in inches})^2}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_4_4-3-6-1-2">
+<div class="para">A person who weighs 170 lb may be underweight or obese—it depends on the person’s height. Let <span class="process-math">\(I(h)\)</span> denote body mass index of a person who weighs 170 lb and whose height is <span class="process-math">\(h\text{.}\)</span> Then, according to the formula,</div>
+<div class="displaymath process-math" id="sec_4_4-3-6-1-2-4">
+\begin{equation*}
+I(h) = \frac{170 \cdot 703}{h^2}
+\end{equation*}
+</div>
+<div class="para">Note that with the weight fixed at 170 lb, body mass index is a power function of height: <span class="process-math">\(\displaystyle I = 119510 \cdot h^{-2}\text{.}\)</span> (In terms of proportionality, BMI is inversely proportional to the square of height.) The obese category is defined as BMI of 30.0 or above. The normal weight category corresponds to BMI between 18.5 and 24.9.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec_4_4-3-6-1-3">Find the height <span class="process-math">\(h\)</span> at and below which a person weighing 170 lb is obese.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-6-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_4_4-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_4_4-3-6-2-1">
+<div class="para">We want to find <span class="process-math">\(h\)</span> such that <span class="process-math">\(I(h) = 30\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_4_4-3-6-2-1-3">
+\begin{equation*}
+\frac{170 \cdot 703}{h^2} = 30
+\end{equation*}
+</div>
+<div class="para">After multiplying both sides by <span class="process-math">\(h^2\)</span> and dividing by 30, then</div>
+<div class="displaymath process-math" id="sec_4_4-3-6-2-1-5">
+\begin{equation*}
+h^2 = \frac{170 \cdot 703}{30}
+\end{equation*}
+</div>
+<div class="para">which gives:</div>
+<div class="displaymath process-math" id="sec_4_4-3-6-2-1-6">
+\begin{equation*}
+h = \pm\sqrt{\frac{170 \cdot 703}{30}}
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(h\)</span> in our problem has to be positive, the solution is:</div>
+<div class="displaymath process-math" id="sec_4_4-3-6-2-1-8">
+\begin{equation*}
+h = \sqrt{\frac{170 \cdot 703}{30}} \approx 63
+\end{equation*}
+</div>
+<div class="para">At the height <span class="process-math">\(h = 63\)</span> inches and below a person weighing 170 lb is obese.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-3-6-2-2">Note that when <span class="process-math">\(h\)</span> increases <span class="process-math">\(I(h)\)</span> decreases as the denominator of the expression <span class="process-math">\(\displaystyle \frac{170 \cdot 703}{h^2}\)</span> becomes larger. On the other hand, when <span class="process-math">\(h\)</span> gets smaller, <span class="process-math">\(I(h)\)</span> gets larger. Hence, every person shorter than <span class="process-math">\(63\)</span> inches who weighs 170 lb is also obese.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-3-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.4.2.1"><a tabindex="-1" href="#sec_4_4-3-6-2" title="Copy heading and permalink for Solution 4.4.2.1" aria-label="Copy heading and permalink for Solution 4.4.2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 4.4.2"><a tabindex="-1" href="#sec_4_4-3-6" title="Copy heading and permalink for Example 4.4.2" aria-label="Copy heading and permalink for Example 4.4.2">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Negative Integral Exponents"><a tabindex="-1" href="#sec_4_4-3" title="Copy heading and permalink for Subsection: Negative Integral Exponents" aria-label="Copy heading and permalink for Subsection: Negative Integral Exponents">🔗</a></div>
+</section>
+<section class="subsection" id="sec_4_4-4">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphs of Power Functions: Negative Integral Exponents</span>
+</h2>
+<div class="para" id="sec_4_4-4-2">Graphs of power functions <span class="process-math">\(y = kx^p\)</span> with exponents <span class="process-math">\(p\)</span> that are negative integers have a different shape depending on whether <span class="process-math">\(p\)</span> is even or <span class="process-math">\(p\)</span> is odd.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-4-3">
+<dfn class="terminology">Odd Negative Exponents</dfn><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-4-4">We begin with the case <span class="process-math">\(k = 1\)</span> and <span class="process-math">\(p = -1\text{.}\)</span> The graph of the function <span class="process-math">\(\displaystyle y = x^{-1} = \frac{1}{x}\)</span> looks as follows:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/4_4_1_fig.svg" role="img" class="contained" alt="A short description."></div>
+<div class="para logical" id="sec_4_4-4-6">
+<div class="para">Observe that when <span class="process-math">\(x\)</span> gets larger and larger, say:</div>
+<div class="displaymath process-math" id="sec_4_4-4-6-2">
+\begin{equation*}
+x = 1, \hspace{2pt} 2, \hspace{2pt} 3, \hspace{2pt} 4, \hspace{2pt} 5, \hspace{2pt} \dots 1000 \hspace{2pt} \dots,
+\end{equation*}
+</div>
+<div class="para">the values <span class="process-math">\(\displaystyle y = \frac{1}{x}\)</span> become very close to 0. Indeed, they are:</div>
+<div class="displaymath process-math" id="sec_4_4-4-6-4">
+\begin{equation*}
+y = 1, \hspace{2pt} \frac{1}{2}, \hspace{2pt} \frac{1}{3}, \hspace{2pt} \frac{1}{4}, \hspace{2pt} \frac{1}{5}, \hspace{2pt} \dots\frac{1}{1000}\dots.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-4-7">In terms of the graph, this behavior translates to the graph getting very close, arbitrarily close, to the <span class="process-math">\(x\)</span>-axis. We say that the <span class="process-math">\(x\)</span>-axis, or equivalently the horizontal line <span class="process-math">\(y = 0\text{,}\)</span> is a <dfn class="terminology">horizontal asymptote</dfn> of the function <span class="process-math">\(y = \dfrac{1}{x}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_4_4-4-8">
+<div class="para">Observe that as <span class="process-math">\(x\)</span> is getting close to 0 from the right, the values are becoming very large. We test a few positive inputs close to <span class="process-math">\(0\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_4_4-4-8-3">
+\begin{equation*}
+x = \frac{1}{2}, \hspace{2pt} \frac{1}{3}, \hspace{2pt} \frac{1}{4}, \hspace{2pt} \frac{1}{5}, \hspace{2pt} \dots \frac{1}{1000}\dots
+\end{equation*}
+</div>
+<div class="para">The corresponding values <span class="process-math">\(\displaystyle y = \frac{1}{x}\)</span> are:</div>
+<div class="displaymath process-math" id="sec_4_4-4-8-5">
+\begin{equation*}
+y = 2, \hspace{2pt} 3, \hspace{2pt} 4, \hspace{2pt} 5, \hspace{2pt} \dots 1000 \hspace{2pt} \dots
+\end{equation*}
+</div>
+<div class="para">In terms of the graph, this behavior translates to the graph getting very close to the <span class="process-math">\(y\)</span>-axis with the values of the function becoming arbitrarily large. We say that the <span class="process-math">\(y\)</span>-axis, or equivalently the vertical line <span class="process-math">\(x = 0\text{,}\)</span> is a <dfn class="terminology">vertical asymptote</dfn> of the function <span class="process-math">\(\displaystyle y = \frac{1}{x}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_4_4-4-9">
+<div class="para">The portion of the graph corresponding to negative inputs <span class="process-math">\(x\text{,}\)</span> is symmetric about the origin to the portion of the graph corresponding to positive inputs. Indeed, when <span class="process-math">\(x\)</span> changes sign <span class="process-math">\(y = \frac{1}{x}\)</span> changes sign:</div>
+<div class="displaymath process-math" id="sec_4_4-4-9-4">
+\begin{equation*}
+\frac{1}{-x} = -\frac{1}{x}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-4-10">Graphs of other power functions <span class="process-math">\(y = kx^p\)</span> in which the exponent <span class="process-math">\(p\)</span> is an odd negative integer have a similar shape to the graph of <span class="process-math">\(\displaystyle y = \frac{1}{x}\text{.}\)</span> For example:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/4_4_2_fig.svg" role="img" class="contained" alt="A short description."></div>
+<div class="para" id="sec_4_4-4-12">As always, the coefficient <span class="process-math">\(k\)</span> in <span class="process-math">\(y = kx^p\)</span> stretches or shrinks the graph of <span class="process-math">\(y = x^p\)</span> vertically. Additionally, if <span class="process-math">\(k\)</span> is negative, the graph is reflected about the <span class="process-math">\(x\)</span>-axis.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:48% 48%;column-gap:4%;">
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/4_4_3_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/4_4_4_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+</div>
+</div>
+<div class="para" id="sec_4_4-4-14">
+<dfn class="terminology">Even Negative Exponents</dfn><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-4-15">When <span class="process-math">\(p\)</span> is a negative even integer, the graph of <span class="process-math">\(y = x^p\)</span> is entirely above the <span class="process-math">\(x\)</span>-axis and it is symmetric about the <span class="process-math">\(y\)</span>-axis, since <span class="process-math">\((-x)^p = x^p\)</span> when <span class="process-math">\(p\)</span> is even.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/4_4_5_fig.svg" role="img" class="contained" alt="A short description."></div>
+<div class="para" id="sec_4_4-4-17">The graphs of the functions <span class="process-math">\(y = x^p\)</span> for other even negative integers <span class="process-math">\(p\)</span> have a similar shape:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/4_4_6_fig.svg" role="img" class="contained" alt="A short description."></div>
+<div class="para" id="sec_4_4-4-19">The <span class="process-math">\(x\)</span>-axis is still a horizontal asymptote and the <span class="process-math">\(y\)</span>-axis is a vertical asymptote. The coefficient <span class="process-math">\(k\)</span> is responsible for vertical scaling and a reflection about the <span class="process-math">\(x\)</span>-axis if <span class="process-math">\(k\)</span> is negative. For example:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/4_4_7_fig.svg" role="img" class="contained" alt="A short description."></div>
+<div class="para" id="sec_4_4-4-21">
+<dfn class="terminology">Summary</dfn><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-4-22">Here is a summary of how graphs of power functions look for negative integer exponents <span class="process-math">\(p\text{,}\)</span> even and odd, and for coefficients <span class="process-math">\(k\)</span> positive and negative.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:20% 40% 40%;column-gap:0%;">
+<div class="sbspanel sbspanel--middle middle" style="">
+<div class="para" id="sec_4_4-4-23-1">
+<span class="process-math">\(f(x)=kx^p\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-23-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--middle middle" style="">
+<div class="para" id="sec_4_4-4-23-2">
+<span class="process-math">\(p\)</span> even and negative<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-23-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--middle middle" style="">
+<div class="para" id="sec_4_4-4-23-3">
+<span class="process-math">\(p\)</span> odd and negative<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-23-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:20% 40% 40%;column-gap:0%;">
+<div class="sbspanel sbspanel--middle middle" style="">
+<div class="para" id="sec_4_4-4-24-1">Positive coefficient, <span class="process-math">\(k \gt 0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-24-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--middle middle" style=""><div class="image-box"><img src="generated/latex-image/4_4_summary_even_neg_pos_fig.svg" role="img" class="contained" alt="Graph of a representative power function with even negative exponent and positive coefficient."></div></div>
+<div class="sbspanel sbspanel--middle middle" style=""><div class="image-box"><img src="generated/latex-image/4_4_summary_odd_neg_pos_fig.svg" role="img" class="contained" alt="Graph of a representative power function with odd negative exponent and positive coefficient."></div></div>
+</div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:20% 40% 40%;column-gap:0%;">
+<div class="sbspanel sbspanel--middle middle" style="">
+<div class="para" id="sec_4_4-4-25-1">Negative coefficient, <span class="process-math">\(k \lt 0\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-4-25-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="sbspanel sbspanel--middle middle" style=""><div class="image-box"><img src="generated/latex-image/4_4_summary_even_neg_neg_fig.svg" role="img" class="contained" alt="Graph of a representative power function with even negative exponent and negative coefficient."></div></div>
+<div class="sbspanel sbspanel--middle middle" style=""><div class="image-box"><img src="generated/latex-image/4_4_summary_odd_neg_neg_fig.svg" role="img" class="contained" alt="Graph of a representative power function with odd negative exponent and negative coefficient."></div></div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Graphs of Power Functions: Negative Integral Exponents"><a tabindex="-1" href="#sec_4_4-4" title="Copy heading and permalink for Subsection: Graphs of Power Functions: Negative Integral Exponents" aria-label="Copy heading and permalink for Subsection: Graphs of Power Functions: Negative Integral Exponents">🔗</a></div>
+</section>
+<section class="subsection" id="sec_4_4-5">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fractional Exponents</span>
+</h2>
+<article class="example example-like" id="sec_4_4-5-2"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_4_4-5-2-1-1">Which of the functions below are power functions? Those which are, rewrite in standard form <span class="process-math">\(y = kx^p\text{.}\)</span> Identify the coefficient and the exponent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_4_4-5-2-1-2">
+<ol class="decimal" id="sec_4_4-5-2-1-2-1">
+<li id="sec_4_4-5-2-1-2-1-1">
+<div class="para" id="sec_4_4-5-2-1-2-1-1-1">
+<span class="process-math">\(\displaystyle \displaystyle f(x) = \frac{3x^3}{7\sqrt{x}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_4_4-5-2-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_4_4-5-2-1-2-1-2">
+<div class="para" id="sec_4_4-5-2-1-2-1-2-1">
+<span class="process-math">\(\displaystyle \displaystyle g(x) = \frac{2x^{1/3}}{x^4}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_4_4-5-2-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_4_4-5-2-1-2-1-3">
+<div class="para" id="sec_4_4-5-2-1-2-1-3-1">
+<span class="process-math">\(\displaystyle \displaystyle h(x) = \sqrt{\frac{2x}{x^{-2}}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_4_4-5-2-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_4_4-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_4_4-5-2-2-1">
+<ol class="decimal" id="sec_4_4-5-2-2-1-1">
+<li id="sec_4_4-5-2-2-1-1-1">
+<div class="para logical" id="sec_4_4-5-2-2-1-1-1-1">
+<div class="para">The function <span class="process-math">\(f(x)\)</span> is a power function. Using rules of exponents for arbitrary exponents, we can rewrite:</div>
+<div class="displaymath process-math" id="sec_4_4-5-2-2-1-1-1-1-2">
+\begin{equation*}
+f(x) = \frac{3x^3}{7\sqrt{x}} = \frac{3x^3}{7x^{1/2}} = \frac{3x^{5/2}}{7} = \frac{3}{7}x^{\frac{5}{2}}
+\end{equation*}
+</div>
+<div class="para">The coefficient is <span class="process-math">\(k = \frac{3}{7}\)</span> and the exponent is <span class="process-math">\(p = \frac{5}{2}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_4_4-5-2-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_4_4-5-2-2-1-1-2">
+<div class="para logical" id="sec_4_4-5-2-2-1-1-2-1">
+<div class="para">
+<span class="process-math">\(g(x)\)</span> is a power function:</div>
+<div class="displaymath process-math" id="sec_4_4-5-2-2-1-1-2-1-2">
+\begin{equation*}
+g(x) = \frac{2x^{1/3}}{x^4} = 2x^{\frac{1}{3} - 4} = 2x^{-\frac{11}{3}}
+\end{equation*}
+</div>
+<div class="para">The coefficient is <span class="process-math">\(k = 2\)</span> and the exponent is <span class="process-math">\(p = -\frac{11}{3}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_4_4-5-2-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_4_4-5-2-2-1-1-3">
+<div class="para" id="sec_4_4-5-2-2-1-1-3-1">
+<span class="process-math">\(h(x)\)</span> is a power function as well. Using rules of exponents for arbitrary exponents and properties of the square root, we can rewrite:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_4_4-5-2-2-1-1-3-2">
+<div class="displaymath process-math" id="sec_4_4-5-2-2-1-1-3-2-1">
+\begin{align*}
+h(x) \amp = \sqrt{\frac{2x}{x^{-2}}} = \frac{\sqrt{2x}}{\sqrt{x^{-2}}} = \frac{\sqrt{2} \cdot x^{1/2}}{(x^{-2})^{1/2}} \\
+\amp= \frac{\sqrt{2} \cdot x^{1/2}}{x^{-1}} = \sqrt{2} \cdot x^{(1/2 - (-1))} \\
+\amp = \sqrt{2} \cdot x^{\frac{3}{2}}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-2-1-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_4_4-5-2-2-1-1-3-3">The coefficient is <span class="process-math">\(k = \sqrt{2}\)</span> and the exponent is <span class="process-math">\(p = \frac{3}{2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-2-1-1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_4_4-5-2-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.4.3.1"><a tabindex="-1" href="#sec_4_4-5-2-2" title="Copy heading and permalink for Solution 4.4.3.1" aria-label="Copy heading and permalink for Solution 4.4.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 4.4.3"><a tabindex="-1" href="#sec_4_4-5-2" title="Copy heading and permalink for Example 4.4.3" aria-label="Copy heading and permalink for Example 4.4.3">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_4_4-5-3"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec_4_4-5-3-1-1">
+<div class="para">Body surface area (BSA) is the total surface area of the human body. The body surface area is used in many measurements in medicine, including the calculation of drug dosages and the amount of fluids to be administered intravenously. There are several accepted formulas to calculate BSA. One of the most commonly used is the Du Bois formula:</div>
+<div class="displaymath process-math" id="sec_4_4-5-3-1-1-1">
+\begin{equation*}
+\text{BSA} = 0.007184 \cdot w^{0.425} \cdot h^{0.725}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(w\)</span> is weight in kilograms (kg) and <span class="process-math">\(h\)</span> is height in centimeters (cm). The formula gives BSA in square meters, <span class="process-math">\(\text{m}^2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_4_4-5-3-1-2">
+<ol class="decimal" id="sec_4_4-5-3-1-2-1">
+<li id="sec_4_4-5-3-1-2-1-1">
+<div class="para" id="sec_4_4-5-3-1-2-1-1-1">Calculate BSA of a female who stands 158 cm tall and weighs 60 kg. Give units with your answer.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-3-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_4_4-5-3-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_4_4-5-3-1-2-1-2">
+<div class="para" id="sec_4_4-5-3-1-2-1-2-1">Let weight be fixed at 70 kg. Then BSA depends on height <span class="process-math">\(h\)</span> only— with weight fixed at 70, BSA is a function of <span class="process-math">\(h\)</span> only. Denote this function by <span class="process-math">\(S(h)\text{.}\)</span> Find a formula for <span class="process-math">\(S(h)\text{.}\)</span> Is it a power function? If yes, identify the coefficient and the exponent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-3-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_4_4-5-3-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_4_4-5-3-1-2-1-3">
+<div class="para" id="sec_4_4-5-3-1-2-1-3-1">Use your formula for <span class="process-math">\(S(h)\)</span> to calculate BSA for a female that weighs 70 kg and is 158 cm tall. Give units with your answer.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-3-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_4_4-5-3-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_4_4-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_4_4-5-3-2-1">
+<ol class="decimal" id="sec_4_4-5-3-2-1-1">
+<li id="sec_4_4-5-3-2-1-1-1">
+<div class="para logical" id="sec_4_4-5-3-2-1-1-1-1">
+<div class="para">We want to calculate BSA for <span class="process-math">\(w = 60\)</span> and <span class="process-math">\(h = 158\text{.}\)</span> We substitute the values into the Du Bois formula:</div>
+<div class="displaymath process-math" id="sec_4_4-5-3-2-1-1-1-1-3">
+\begin{equation*}
+\text{BSA} = 0.007184 \cdot 60^{0.425} \cdot 158^{0.725} \approx 1.61.
+\end{equation*}
+</div>
+<div class="para">The total body surface area of a person who weighs <span class="process-math">\(60\)</span> kg and is <span class="process-math">\(158\)</span> cm tall is <span class="process-math">\(1.61 \text{ m}^2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_4_4-5-3-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_4_4-5-3-2-1-1-2">
+<div class="para logical" id="sec_4_4-5-3-2-1-1-2-1">
+<div class="para">Fix <span class="process-math">\(w = 70\text{.}\)</span> Then BSA as a function of <span class="process-math">\(h\)</span> is:</div>
+<div class="displaymath process-math" id="sec_4_4-5-3-2-1-1-2-1-3">
+\begin{equation*}
+S(h) = 0.007184 \cdot 70^{0.425} \cdot h^{0.725} = 0.043705 \cdot h^{0.725}
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\(S(h)\)</span> is a power function of <span class="process-math">\(h\)</span> with the coefficient <span class="process-math">\(0.043705\)</span> and exponent <span class="process-math">\(0.725\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_4_4-5-3-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_4_4-5-3-2-1-1-3">
+<div class="para" id="sec_4_4-5-3-2-1-1-3-1">BSA of a female who weighs <span class="process-math">\(70\)</span> kg and is <span class="process-math">\(158\)</span> cm tall is <span class="process-math">\(S(158) = 0.043705 \cdot 158^{0.725} \approx 1.72\text{.}\)</span> The total body surface area of a person who weighs <span class="process-math">\(70\)</span> kg and is <span class="process-math">\(158\)</span> cm tall is <span class="process-math">\(1.72 \text{ m}^2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-3-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_4_4-5-3-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.4.4.1"><a tabindex="-1" href="#sec_4_4-5-3-2" title="Copy heading and permalink for Solution 4.4.4.1" aria-label="Copy heading and permalink for Solution 4.4.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 4.4.4"><a tabindex="-1" href="#sec_4_4-5-3" title="Copy heading and permalink for Example 4.4.4" aria-label="Copy heading and permalink for Example 4.4.4">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Fractional Exponents"><a tabindex="-1" href="#sec_4_4-5" title="Copy heading and permalink for Subsection: Fractional Exponents" aria-label="Copy heading and permalink for Subsection: Fractional Exponents">🔗</a></div>
+</section>
+<section class="subsection" id="sec_4_4-6">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphs of Power Functions: Fractional Exponents</span>
+</h2>
+<div class="para" id="sec_4_4-6-2">When considering power functions with fractional exponents or, more general, with exponents which are not integers, we restrict the domain to <span class="process-math">\(x \geq 0\)</span> (or to <span class="process-math">\(x \gt 0\)</span> if a non-integral exponent is negative). The graphs of <span class="process-math">\(x^{1/2}\)</span> and <span class="process-math">\(x^{3/2}\)</span> are given below as an example. Traditionally, roots of odd orders like <span class="process-math">\(\sqrt[3]{x}\)</span> or <span class="process-math">\(\sqrt[5]{x}\)</span> are considered and graphed for all <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_4_4-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:48% 48%;column-gap:4%;">
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/4_4_8_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/4_4_9_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+</div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Subsection: Graphs of Power Functions: Fractional Exponents"><a tabindex="-1" href="#sec_4_4-6" title="Copy heading and permalink for Subsection: Graphs of Power Functions: Fractional Exponents" aria-label="Copy heading and permalink for Subsection: Graphs of Power Functions: Fractional Exponents">🔗</a></div>
+</section>
+<section class="exercises" id="ex_4_4">
+<h2 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h2>
+<div class="exercisegroup" id="ex_4_4-1">
+<h3 class="heading"><span class="title">Power Functions.</span></h3>
+<div class="introduction" id="ex_4_4-1-2">
+<div class="para" id="ex_4_4-1-2-1">Determine whether the given function is a power function. If yes, identify the coefficient <span class="process-math">\(k\)</span> and the exponent <span class="process-math">\(p\text{.}\)</span> If not, say so.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<div class="exercisegroup-exercises">
+<article class="exercise exercise-like" id="ex_4_4-1-3"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ex_4_4-1-3-1-1">
+<span class="process-math">\(\displaystyle y= \frac{\sqrt{x^3}}{0.1x}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex_4_4-1-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-1-3-2-1">
+<span class="process-math">\(y=10x^{1/2}\text{;}\)</span> <span class="process-math">\(k=10\text{;}\)</span> <span class="process-math">\(p=\frac{1}{2}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#ex_4_4-1-3-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#ex_4_4-1-3" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-1-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ex_4_4-1-4-1-1">
+<span class="process-math">\(\displaystyle y= \frac{\sqrt{0.01x^3}}{\sqrt{x}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex_4_4-1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-1-4-2-1">
+<span class="process-math">\(y=0.1x\text{;}\)</span> <span class="process-math">\(k=0.1\text{;}\)</span> <span class="process-math">\(p=1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#ex_4_4-1-4-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#ex_4_4-1-4" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-1-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ex_4_4-1-5-1-1">
+<span class="process-math">\(\displaystyle g(x)=\frac{x^{\frac{5}{3}}}{4x^{\frac{1}{4}}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex_4_4-1-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-1-5-2-1">
+<span class="process-math">\(y=\frac{1}{4}x^{17/12}\text{;}\)</span> <span class="process-math">\(k=\frac{1}{4}\text{;}\)</span> <span class="process-math">\(p=\frac{17}{12}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#ex_4_4-1-5-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#ex_4_4-1-5" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-1-6"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ex_4_4-1-6-1-1">
+<span class="process-math">\(\displaystyle h(x)=2x^{\frac{3}{2}}-x^{-2}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex_4_4-1-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-1-6-2-1">Not a power function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#ex_4_4-1-6-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#ex_4_4-1-6" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-1-7"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ex_4_4-1-7-1-1">
+<span class="process-math">\(\displaystyle y=\sqrt{\frac{x^5}{9x}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex_4_4-1-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-1-7-2-1">
+<span class="process-math">\(y=\frac{1}{3}x^2\text{;}\)</span> <span class="process-math">\(k=\frac{1}{3}\text{;}\)</span> <span class="process-math">\(p=2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.1"><a tabindex="-1" href="#ex_4_4-1-7-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 5"><a tabindex="-1" href="#ex_4_4-1-7" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-1-8"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="ex_4_4-1-8-1-1">
+<span class="process-math">\(\displaystyle f(x)=(\sqrt{2^x})^2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="ex_4_4-1-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-1-8-2-1">Not a power function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-1-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.1"><a tabindex="-1" href="#ex_4_4-1-8-2" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 6"><a tabindex="-1" href="#ex_4_4-1-8" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
+</article>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1–6: Power Functions"><a tabindex="-1" href="#ex_4_4-1" title="Copy heading and permalink for Exercise Group 1–6: Power Functions" aria-label="Copy heading and permalink for Exercise Group 1–6: Power Functions">🔗</a></div>
+</div>
+<article class="exercise exercise-like" id="ex_4_4-2"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_4_4-2-1-1">Four power functions <span class="process-math">\(y=kx^p\)</span> are graphed below, where <span class="process-math">\(p\)</span> is a negative integer. In each of the graphs, is the exponent <span class="process-math">\(p\)</span> even or odd? Is the coefficient <span class="process-math">\(k\)</span> positive or negative?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:24% 24% 24% 24%;column-gap:1.333333333333333%;">
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_1_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_2_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_3_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_4_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+</div>
+</div>
+<div class="solutions">
+<details id="ex_4_4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-2-2-1">From left to right:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="ex_4_4-2-2-2">
+<ul class="disc" id="ex_4_4-2-2-2-1">
+<li id="ex_4_4-2-2-2-1-1">
+<div class="para" id="p-derived-ex_4_4-2-2-2-1-1">
+<span class="process-math">\(p\)</span> is odd; <span class="process-math">\(k\)</span> is positive.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ex_4_4-2-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex_4_4-2-2-2-1-2">
+<div class="para" id="p-derived-ex_4_4-2-2-2-1-2">
+<span class="process-math">\(p\)</span> is even; <span class="process-math">\(k\)</span> is negative.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ex_4_4-2-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex_4_4-2-2-2-1-3">
+<div class="para" id="p-derived-ex_4_4-2-2-2-1-3">
+<span class="process-math">\(p\)</span> is odd; <span class="process-math">\(k\)</span> is negative.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ex_4_4-2-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="ex_4_4-2-2-2-1-4">
+<div class="para" id="p-derived-ex_4_4-2-2-2-1-4">
+<span class="process-math">\(p\)</span> is even; <span class="process-math">\(k\)</span> is positive.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#ex_4_4-2-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1"><a tabindex="-1" href="#ex_4_4-2-2" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 7"><a tabindex="-1" href="#ex_4_4-2" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-3"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_4_4-3-1-1">Which of the following is a graph of <span class="process-math">\(f(x)=-2x^{-5}\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:33% 33% 33%;column-gap:0.5%;">
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_5_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_6_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_7_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+</div>
+</div>
+<div class="solutions">
+<details id="ex_4_4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-3-2-1">The graph on the right.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.1"><a tabindex="-1" href="#ex_4_4-3-2" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 8"><a tabindex="-1" href="#ex_4_4-3" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-4"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_4_4-4-1-1">Which of the following is a graph of <span class="process-math">\(f(x)=2x^{-4}\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:33% 33% 33%;column-gap:0.5%;">
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_8_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_9_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/ex_4_4_10_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+</div>
+</div>
+<div class="solutions">
+<details id="ex_4_4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-4-2-1">The graph on the left.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.1"><a tabindex="-1" href="#ex_4_4-4-2" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 9"><a tabindex="-1" href="#ex_4_4-4" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-5"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_4_4-5-1-1">Below you see graphs of the functions <span class="process-math">\(\displaystyle y=x^{\frac{1}{2}}\text{,}\)</span>   <span class="process-math">\(\displaystyle y=2x^{\frac{1}{2}}\text{,}\)</span> and <span class="process-math">\(\displaystyle y=-x^{\frac{1}{2}}\text{.}\)</span> Decide which is which.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ex_4_4_11_fig.svg" role="img" class="contained" alt="A short description."></div>
+<div class="solutions">
+<details id="ex_4_4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-5-2-1">Graph A is <span class="process-math">\(y=2 x^{1/2}\text{,}\)</span> graph B is <span class="process-math">\(y=x^{1/2}\text{,}\)</span> and graph C is <span class="process-math">\(y=-x^{1/2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.1"><a tabindex="-1" href="#ex_4_4-5-2" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 10"><a tabindex="-1" href="#ex_4_4-5" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-6"><h3 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_4_4-6-1-1">Find a formula for a power function <span class="process-math">\(f(x)=kx^p\)</span> given numerically by:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="table table-like" id="ex_4_4-6-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Table 4.4.5: "><a tabindex="-1" href="#ex_4_4-6-1-2" title="Copy heading and permalink for Table 4.4.5: " aria-label="Copy heading and permalink for Table 4.4.5: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(5\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3\sqrt{2}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3\sqrt{3}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3\sqrt{5}\)</span></td>
+</tr>
+</table></div>
+</figure><div class="solutions">
+<details id="ex_4_4-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-6-2-1">
+<span class="process-math">\(f(x)=3x^\frac{1}{2}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 11.1"><a tabindex="-1" href="#ex_4_4-6-2" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 11"><a tabindex="-1" href="#ex_4_4-6" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-7"><h3 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_4_4-7-1-1">Find a formula for a power function <span class="process-math">\(g(x)=kx^p\)</span> given numerically by:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="table table-like" id="ex_4_4-7-1-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.4.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Table 4.4.6: "><a tabindex="-1" href="#ex_4_4-7-1-2" title="Copy heading and permalink for Table 4.4.6: " aria-label="Copy heading and permalink for Table 4.4.6: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(5\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(g(x)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines">undefined</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{2}{3}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{2}{5}\)</span></td>
+</tr>
+</table></div>
+</figure><div class="solutions">
+<details id="ex_4_4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="ex_4_4-7-2-1">
+<span class="process-math">\(g(x)=2x^{-1}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 12.1"><a tabindex="-1" href="#ex_4_4-7-2" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 12"><a tabindex="-1" href="#ex_4_4-7" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_4_4-8"><h3 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_4_4-8-1-1">Consider a pendulum depicted below <details class="ptx-footnote" aria-live="polite" id="ex_4_4-8-1-1-1"><summary class="ptx-footnote__number" title="Footnote 4.4.1"><sup> 1 </sup></summary>
+<div class="ptx-footnote__contents" id="ex_4_4-8-1-1-1">Modified from a public domain image at <a class="external" href="https://en.wikipedia.org/wiki/Pendulum" target="_blank">https://en.wikipedia.org/wiki/Pendulum</a>, accessed: 7/8/20
+</div></details>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="external/images/exercise-4.4-pendulum.png" class="contained" alt="A short description."></div> 
+<div class="para logical" id="ex_4_4-8-1-3">
+<div class="para">When the pendulum is displaced sideways from its resting position—called the equilibrium position—the force due to gravity will cause the pendulum to oscillate back and forth about the equilibrium position. The time, <span class="process-math">\(T\text{,}\)</span> needed to execute one full cycle—a left swing and the right swing—is called the pendulum’s period. The period <span class="process-math">\(T\)</span> depends on the length <span class="process-math">\(L\)</span> of the pendulum <details class="ptx-footnote" aria-live="polite" id="ex_4_4-8-1-3-8"><summary class="ptx-footnote__number" title="Footnote 4.4.2"><sup> 2 </sup></summary>
+<div class="ptx-footnote__contents" id="ex_4_4-8-1-3-8">
+<a class="external" href="https://en.wikipedia.org/wiki/Pendulum" target="_blank">https://en.wikipedia.org/wiki/Pendulum</a>, accessed: 7/8/20
+</div></details> and the local acceleration due to gravity <span class="process-math">\(g\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="ex_4_4-8-1-3-10">
+\begin{equation*}
+T=2\pi\sqrt{\frac{L}{g}}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-8-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha lower-alpha-level-1" id="ex_4_4-8-1-4">
+<li id="ex_4_4-8-1-4-1">
+<div class="para" id="p-derived-ex_4_4-8-1-4-1">With <span class="process-math">\(g\)</span> fixed, is <span class="process-math">\(T\)</span> a power function of <span class="process-math">\(L\text{?}\)</span> In other words, is <span class="process-math">\(T=kL^p\text{?}\)</span> If yes, find the coefficient and the exponent.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 13.a"><a tabindex="-1" href="#ex_4_4-8-1-4-1" title="Copy heading and permalink for Item 13.a" aria-label="Copy heading and permalink for Item 13.a">🔗</a></div>
+</li>
+<li id="ex_4_4-8-1-4-2">
+<div class="para" id="p-derived-ex_4_4-8-1-4-2">On the surface of the Earth, the acceleration due to gravity, <span class="process-math">\(g\text{,}\)</span> is equal to <span class="process-math">\(9.81\text{ m}/\text{sec}^2\)</span> where m stands for meters. Calculate the period of a pendulum of length <span class="process-math">\(0.5 \text{ m}\)</span> that happily oscillates in Kingston, RI.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 13.b"><a tabindex="-1" href="#ex_4_4-8-1-4-2" title="Copy heading and permalink for Item 13.b" aria-label="Copy heading and permalink for Item 13.b">🔗</a></div>
+</li>
+<li id="ex_4_4-8-1-4-3">
+<div class="para" id="p-derived-ex_4_4-8-1-4-3">An astronaut is standing on the surface of a faraway asteroid wondering about the acceleration due to gravity on the asteroid. The astronaut has a watch and a pendulum whose length is <span class="process-math">\(0.3 \text{ m}\text{.}\)</span> The astronaut measures the period of the pendulum which turns out to be <span class="process-math">\(5\)</span> seconds. What is the acceleration due to gravity on the asteroid?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 13.c"><a tabindex="-1" href="#ex_4_4-8-1-4-3" title="Copy heading and permalink for Item 13.c" aria-label="Copy heading and permalink for Item 13.c">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="ex_4_4-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex_4_4-8-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex_4_4-8-2-1-1">
+<li id="ex_4_4-8-2-1-1-1">
+<div class="para" id="ex_4_4-8-2-1-1-1-1">yes; <span class="process-math">\(T=\dfrac{2\pi}{\sqrt{g}}L^\frac{1}{2}\)</span> where the coefficient is <span class="process-math">\(\dfrac{2\pi}{\sqrt{g}}\)</span> and the exponent is <span class="process-math">\(\frac{1}{2}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-8-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 13.a"><a tabindex="-1" href="#ex_4_4-8-2-1-1-1" title="Copy heading and permalink for Item 13.a" aria-label="Copy heading and permalink for Item 13.a">🔗</a></div>
+</li>
+<li id="ex_4_4-8-2-1-1-2">
+<div class="para" id="p-derived-ex_4_4-8-2-1-1-2">approximately <span class="process-math">\(1.42\)</span> seconds.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 13.b"><a tabindex="-1" href="#ex_4_4-8-2-1-1-2" title="Copy heading and permalink for Item 13.b" aria-label="Copy heading and permalink for Item 13.b">🔗</a></div>
+</li>
+<li id="ex_4_4-8-2-1-1-3">
+<div class="para" id="p-derived-ex_4_4-8-2-1-1-3">approximately <span class="process-math">\(0.47 \text{ m}/\text{sec}^2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 13.c"><a tabindex="-1" href="#ex_4_4-8-2-1-1-3" title="Copy heading and permalink for Item 13.c" aria-label="Copy heading and permalink for Item 13.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_4_4-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 13.1"><a tabindex="-1" href="#ex_4_4-8-2" title="Copy heading and permalink for Solution 13.1" aria-label="Copy heading and permalink for Solution 13.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 13"><a tabindex="-1" href="#ex_4_4-8" title="Copy heading and permalink for Exercise 13" aria-label="Copy heading and permalink for Exercise 13">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercises"><a tabindex="-1" href="#ex_4_4" title="Copy heading and permalink for Exercises" aria-label="Copy heading and permalink for Exercises">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 4.4: Power Functions: Fractional and Negative Integral Exponents"><a tabindex="-1" href="#sec_4_4" title="Copy heading and permalink for Section 4.4: Power Functions: Fractional and Negative Integral Exponents" aria-label="Copy heading and permalink for Section 4.4: Power Functions: Fractional and Negative Integral Exponents">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec_4_3.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:mth103videos@gmail.com" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
