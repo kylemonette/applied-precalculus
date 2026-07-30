@@ -2948,7 +2948,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_4_2.html#sec_4_2-2-1",
   "type": "Objectives",
-  "number": "",
+  "number": "4.2",
   "title": "",
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
@@ -3191,7 +3191,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_4_3.html#sec_4_3-2-1",
   "type": "Objectives",
-  "number": "",
+  "number": "4.3",
   "title": "",
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
@@ -3407,7 +3407,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sec_4_4.html#sec_4_4-2-1",
   "type": "Objectives",
-  "number": "",
+  "number": "4.4",
   "title": "",
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
