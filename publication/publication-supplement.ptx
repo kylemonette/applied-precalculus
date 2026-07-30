@@ -35,8 +35,8 @@
 
 
   <common>
-    <chunking level="2"/>
-    <tableofcontents level="2"/>
+    <chunking level="3"/>
+    <tableofcontents level="3"/>
     <exercise-reading hint="yes" answer="no" solution="no"/>
 <!-- Inline exercises include card sorting, etc. Should match the same as divisional exercises below. -->
     <exercise-inline hint="yes" answer="yes" solution="yes"/>
@@ -46,8 +46,8 @@
     <exercise-project hint="yes" answer="no" solution="no"/>
 
     <worksheet>
-    <!-- <first-page-header left="Applied Precalculus" right="Practice Worksheets"/> -->
-    <!-- <running-header left="Applied Precalculus" right="Practice Worksheets"/> -->
+    <first-page-header left="Applied Precalculus" right="Practice Worksheets"/>
+    <running-header left="Applied Precalculus" right="Practice Worksheets"/>
     </worksheet>
 
     <!-- Level at which are html files generated (chapter/section/etc): -->
@@ -91,45 +91,8 @@
         <page>
             <geometry>papersize={8.5in,11in}, width=33pc, height=51pc, inner=.75in, outer=.75in, top=0.75in, twoside, ignoreheadfoot, </geometry>
         </page>
-
-        <!-- chapter 1 page breaks -->
-        <!-- <insertions pagebreaks="sec_1_2 sec_1_3 sec_1_4 sec_1_5"/> -->
-        <!-- chapter 2 page breaks -->
-        <!-- <insertions pagebreaks="sec_2_2 sec_2_3"/> -->
-        <!-- chapter 2 page breaks -->
-        <!-- <insertions pagebreaks="sec_3_2 sec_3_3 sec_3_4"/> -->
-
     </latex>
-  <!-- <latex> -->
-  <!-- Replace the <latex> tag above with the one below to try these-->
-  <!--
-    <latex
-          print="no"
-          sides="one"
-          open-odd="no"
-          pageref="no"
-          font-size="10"
-          draft="no"
-          latex-style="dyslexic-font"
-      >
-  -->
-
-    <!-- Control text justification and bottom page behavior. Add content intended for \geometry{} inside the <geometry> element. -->
-    <!--
-      <page right-alignment="flush" bottom-alignment="ragged" crop-marks="letter">
-        <geometry></geometry>
-      </page>
-    -->
-
-    <!-- The asymptote/@links set to "yes" would produce  -->
-    <!-- links the html version of asymptote graphics.    -->
-      <!--<asymptote links="no" />-->
-
-    <!-- Covers: provide paths to pdfs for front and back covers: -->
-      <!--<cover front="cover-front.pdf" back="cover-back.pdf" />-->
-    <!-- Set @formatted to "no" to remove formatting on worksheets: -->
-      <!--<worksheet formatted="yes" />-->
-  <!-- </latex> -->
+ 
 
   <html embed-button="yes">
     <!-- A possible attribute for the html tag above is @short-answer-responses, with values either "always" or "graded".  As in: -->

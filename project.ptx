@@ -12,8 +12,8 @@
 </target>
 
 <!-- <target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl" deploy-dir="supplement"> -->
-<target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl" compression="scorm">
-<stringparams author.tools="yes" html.css.extra="external/custom.css" />
+<target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-supplement.xsl" compression="scorm">
+<stringparams html.css.extra="external/custom.css" />
 <!-- <stringparams author.tools="yes"/> -->
 </target>
 
