@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="practice_1_3">
+<title>Practice Problems</title>
+  
+<exercise label="ww_1_3_1">
+<webwork><xi:include parse="text" href="pg/ww_1_3_1.pg"/></webwork>
+</exercise>
+
+
+
+
+</exercises>

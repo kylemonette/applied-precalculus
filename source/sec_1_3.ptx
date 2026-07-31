@@ -533,7 +533,7 @@ For now, we can only try to observe patterns and <q>guess</q> formulas for numer
 As we study various families of functions, we will develop more systematic methods for finding formulas of functions given numerically.
 </p>
 
-
+<xi:include href="practice/pr_1_3.ptx" />
 <xi:include href="exercises/ex_1_3.ptx"/>
 <!-- <xi:include href="worksheet/ws_1_3.ptx"/> -->
 

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This frontmatter division will contain all content before the -->
-<!-- first chapter. Fill in and comment/uncomment to see how this -->
-<!-- works. -->
+
 
 <frontmatter xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="frontmatter">
   <bibinfo>
   
     <author>
-      <personname>PersonNameChangeMe</personname>
+      <personname>Erin Denette &amp; Barbara Kaskosz</personname>
       <department>Department of Mathematics and Applied Mathematical Sciences</department>
       <institution>University of Rhode Island</institution>
     </author>
@@ -15,9 +13,9 @@
       <today />
     </date>
 
-    <website>
+    <!-- <website>
       <url href="https://pretextbook.org">My Website</url>
-    </website>
+    </website> -->
 
     <copyright>
       <year>2020<ndash />2026</year>

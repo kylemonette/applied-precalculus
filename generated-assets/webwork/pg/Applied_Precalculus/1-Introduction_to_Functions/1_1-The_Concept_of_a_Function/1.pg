@@ -31,7 +31,7 @@ $y3 = $f->eval(x=>$x3);
 
 BEGIN_PGML
 
-
+Let [`f(x) = [$f]`]. Evaluate:
 
 a. [`f([$x1])`]
 

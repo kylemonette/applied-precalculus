@@ -54,7 +54,7 @@
 
 
 
-<image width="50%" xml:id="fig_1_2_1">
+<!-- <image width="50%" xml:id="fig_1_2_1">
 <shortdescription>
 A short description.
 </shortdescription>
@@ -71,12 +71,12 @@ minor tick={},
 xlabel=\(x\), ylabel=\(y\)
 ]
 \addplot[domain=-2:3] {x^3-3*x^2+2*x+1} node[left,pos=0.85] {$y=f(x)$};
-\draw[dashed] (0,1.528) -- (2.2,1.528) -- (2.2,0);
+\draw[dashed] (0,1.528) DASH-DASH (2.2,1.528) DASH_DASH (2.2,0);
 \node[rpoint with label={0:{$(x,f(x))$}}] at (axis cs:2.2,1.528) {};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
-</image>
+</image> -->
 
 
 
