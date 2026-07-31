@@ -1,7 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ww_1_1_1" assembly-id="ww_1_1_1">
   <static seed="1">
-    <statement><p><ol label="a.">
+    <statement><p>Let <m>f(x) = {2x+3}</m>. Evaluate:</p>
+<p><ol label="a.">
 <li>
 <p><m>f(1)</m></p>
 <p><fillin characters="1" name="AnSwEr0001"/></p>
@@ -79,7 +80,7 @@ $y3 = $f->eval(x=>$x3);
 
 BEGIN_PGML
 
-
+Let [`f(x) = [$f]`]. Evaluate:
 
 a. [`f([$x1])`]
 
