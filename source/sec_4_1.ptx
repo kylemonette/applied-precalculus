@@ -33,30 +33,44 @@
 
 
 <p>
-    In the next two sections we review algebra of power expressions of the form: <md>a^p</md> where <m>a</m> and <m>p</m> are given numbers. The number <m>a</m> is called the <em>base</em> in the expression and the power <m>p</m> that the base is being raised to is called the <em>exponent</em>.
+In the next two sections we review algebra of power expressions of the form: <md>a^p</md> where <m>a</m> and <m>p</m> are given numbers. The number <m>a</m> is called the <em>base</em> in the expression and the power <m>p</m> that the base is being raised to is called the <em>exponent</em>.
 </p>
 
 <p>
-    We begin with integral exponents; that is, exponents that are integers. If <m>p</m> is a positive integer <m>p = 1, 2, 3, \dots</m>, then <m>a^p</m> is simply a short way of writing repeated multiplication:
+We begin with integral exponents; that is, exponents that are integers. If <m>p</m> is a positive integer <m>p = 1, 2, 3, \dots</m>, then <m>a^p</m> is a short way of writing repeated multiplication:
 <md>
-a^p = \underbrace{a \cdot a \cdot \ldots \cdot a}_{p \text{ times}}</md>
-In particular, for <m>p = 1, 2, 3\dots</m>, <md>0^p = 0, \quad 1^p = 1.</md>
+a^p = \underbrace{a \cdot a \cdot \ldots \cdot a}_{p \text{ copies of } a}</md>
+In particular, for <m>p = 1, 2, 3\dots</m>,
+<md>
+0^p = 0 \quad \text{and} \quad 1^p = 1.
+</md>
 </p>
 
 <p>
-We expand this simple definition to the exponent <m>p = 0</m> by defining for any number <m>a</m>: <md>a^0 = 1.</md> In particular, by definition: <md>0^0 = 1.</md>
-Next, we extend the definition to negative integer exponents by defining for every <m>a \neq 0</m> and every <m>p = 0, 1, 2, 3, \dots</m>, <md>a^{-p} = \frac{1}{a^p}</md> In particular: <md>a^{-1} = \frac{1}{a}</md>
+This definition can be expanded to the exponent <m>p = 0</m> by defining for any number <m>a</m>,
+<md>
+a^0 = 1.
+</md>
+Note that, by definition, this means
+<md>
+0^0 = 1.
+</md>
+We can also extend this definition to negative integer exponents by defining for every <m>a \neq 0</m> and every <m>p = 0, 1, 2, 3, \dots</m>,
+<md>
+a^{-p} = \frac{1}{a^p}.
+</md>
+In particular: <md>a^{-1} = \frac{1}{a}</md>
 </p>
 
 <p>
-    These simple definitions easily imply the basic properties of power expressions.
+These definitions lead to the basic properties of power expressions.
 </p>
 
 <theorem>
 <title>Rules of Exponents <mdash/> Integral Exponents</title>
 <statement>
 <p>
-    Let <m>a</m>, <m>b</m> be given numbers, <m>p</m> and <m>r</m> be integers. Then the following equalities hold provided both sides are defined:
+Let <m>a</m> and <m>b</m> be given numbers, and let <m>p</m> and <m>r</m> be integers. Then the following equalities hold provided both sides are defined:
 </p>
 
 <p><ol>
@@ -96,14 +110,17 @@ Next, we extend the definition to negative integer exponents by defining for eve
 </theorem>
 
 <p>
-    An expression in the formulas above may not be defined if there is a zero in the denominator. For example, in <xref ref="int-exps-prop2">Property</xref>, <m>\frac{1}{a^p}</m> is not defined if <m>a = 0</m> and <m>p \neq 0</m>. So <xref ref="int-exps-prop2">Property</xref> holds for <m>a \neq 0</m>.
+Note that an expression in the formulas above may not be defined if there is a zero in the denominator. For example, in <xref ref="int-exps-prop2">Property</xref>, <m>\frac{1}{a^p}</m> is not defined if <m>a = 0</m> and <m>p \neq 0</m>. That means that <xref ref="int-exps-prop2">Property</xref> holds for any <m>a \neq 0</m>.
 </p>
 
 <p>
-The properties of exponents listed above follow very easily from our definitions. For example, to illustrate <xref ref="int-exps-prop3">Property</xref> observe:
-<md>a^p \cdot a^r = \underbrace{a \cdot a \cdot \ldots \cdot a}_{p \text{ times}}
-\cdot \underbrace{a \cdot a \cdot \ldots \cdot a}_{r \text{ times}}
-= \underbrace{a \cdot a \cdot \ldots \cdot a}_{p + r  \text{ times}}
+The properties of exponents listed above follow from the definitions at the beginning of this section.
+This is illustrated for <xref ref="int-exps-prop3">Property</xref> below:
+<md>
+a^p \cdot a^r =
+\underbrace{a \cdot a \cdot \ldots \cdot a}_{p \text{ copies}}
+\cdot \underbrace{a \cdot a \cdot \ldots \cdot a}_{r \text{ copies}}
+= \underbrace{a \cdot a \cdot \ldots \cdot a}_{p + r  \text{ copies}}
 = a^{p + r}.</md>
 </p>
 
@@ -151,7 +168,7 @@ The properties of exponents listed above follow very easily from our definitions
 <p><ol>
 <li>
 <p>
-    All we need is <xref ref="int-exps-prop2">Property</xref>: <md>\frac{1}{3^2} = 3^{-2}.</md> We rewrote the expression as <m>3^p</m> for <m>p = -2</m>.
+    By <xref ref="int-exps-prop2">Property</xref>: <md>\frac{1}{3^2} = 3^{-2}.</md> We rewrote the expression as <m>3^p</m> for <m>p = -2</m>.
 </p>
 </li>
 
