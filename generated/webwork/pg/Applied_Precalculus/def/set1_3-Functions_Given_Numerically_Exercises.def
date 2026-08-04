@@ -1,0 +1,11 @@
+openDate          = 01/01/2027 at 12:00am
+dueDate           = 12/31/2027 at 10:00pm
+answerDate        = 12/31/2027 at 10:00pm
+paperHeaderFile   = Applied_Precalculus/header/1_3-Functions_Given_Numerically_Exercises.pg
+screenHeaderFile  = Applied_Precalculus/header/1_3-Functions_Given_Numerically_Exercises.pg
+description       = Functions Given Numerically
+problemListV2
+problem_start
+source_file = Applied_Precalculus/1-Introduction_to_Functions/1_3-Functions_Given_Numerically/1_3_1.pg
+problem_id = 1
+problem_end

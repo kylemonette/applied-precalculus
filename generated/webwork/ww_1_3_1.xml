@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ww_1_3_1" assembly-id="ww_1_3_1">
+  <static seed="3">
+    <statement><p>The function <m>g(x)</m> is given by the following table of values.</p>
+<tabular bottom="minor" left="minor" top="major" valign="top">
+<col halign="center" right="minor"/>
+<col halign="center" right="minor"/>
+<col halign="center" right="minor"/>
+<col halign="center" right="minor"/>
+<col halign="center" right="minor"/>
+<col halign="center" right="minor"/>
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>-10</m></cell>
+<cell><m>-5</m></cell>
+<cell><m>0</m></cell>
+<cell><m>5</m></cell>
+<cell><m>10</m></cell>
+</row>
+<row bottom="major">
+<cell><m>g(x)</m></cell>
+<cell><m>5</m></cell>
+<cell><m>0</m></cell>
+<cell><m>10</m></cell>
+<cell><m>-5</m></cell>
+<cell><m>-10</m></cell>
+</row>
+</tabular>
+<p>Use the table to fill in the missing values.
+Separate multiple answers with a comma.</p>
+<p><ol label="a.">
+<li>
+<p><m>g(0) =</m> <fillin characters="2" name="AnSwEr0001"/></p>
+</li>
+<li>
+<p><m>g(-5) =</m> <fillin characters="2" name="AnSwEr0002"/></p>
+</li>
+<li>
+<p><m>g \big(</m>  <fillin characters="2" name="AnSwEr0003"/> <m>\big) = 0</m></p>
+</li>
+<li>
+<p><m>g \big(</m>  <fillin characters="2" name="AnSwEr0004"/> <m>\big) = -5</m></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>10</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>0</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>-5</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>5</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data problemSource="Applied_Precalculus/1-Introduction_to_Functions/1_3-Functions_Given_Numerically/1_3_1.pg" origin="generated" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg><![CDATA[
+
+DOCUMENT(); 
+
+loadMacros(
+  "PGstandard.pl",
+  "PGchoicemacros.pl",
+  "MathObjects.pl",
+  "PGcourse.pl",
+  "PGML.pl",
+  "niceTables.pl"
+);
+
+TEXT(beginproblem());
+
+Context("Numeric")->flags->set(tolerance => 0.0000001, tolType => "absolute");
+
+
+@y = (-10,-5,0,5,10);
+@perm = shuffle(5);
+@inv = invert(@perm);
+@gy = @y[@perm];
+
+$i = 2+non_zero_random(-2,2,1);
+
+# avoid fixed points
+while ($y[2]==$gy[2] || $y[$i]==$gy[$i]) {
+  @perm = shuffle(5);
+  @inv = invert(@perm);
+  @gy = @y[@perm];
+}
+
+$answera = List($y[$perm[2]]);
+$answerb = List($y[$perm[$i]]);
+$answerc = List($y[$inv[2]]);
+$answerd = List($y[$inv[$i]]);
+
+
+$table = 
+DataTable(
+    [
+        ["\(x\)", "\($y[0]\)", "\($y[1]\)", "\($y[2]\)", "\($y[3]\)", "\($y[4]\)"],
+        ["\(g(x)\)", "\($gy[0]\)", "\($gy[1]\)", "\($gy[2]\)", "\($gy[3]\)", "\($gy[4]\)"]
+    ],
+    midrules => 1,
+    align => "| c | c | c| c| c| c|"
+);
+
+
+BEGIN_PGML
+
+The function [`g(x)`] is given by the following table of values.
+
+[$table]***
+
+Use the table to fill in the missing values.
+Separate multiple answers with a comma.
+
+a. [`g(0) =`] [__]{$answera}
+
+b. [`g([$y[$i]]) = `] [__]{$answerb}
+
+c. [`g \big( `]  [__]{$answerc} [`\big) = 0`]
+
+d. [`g \big( `]  [__]{$answerd} [` \big) = [$y[$i]] `]
+
+END_PGML
+
+ENDDOCUMENT();]]></pg>
+</webwork-reps>
