@@ -2761,7 +2761,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.1",
   "title": "Algebra of Powers: Integral Exponents",
-  "body": " Algebra of Powers: Integral Exponents    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In the next two sections we review algebra of power expressions of the form: where and are given numbers. The number is called the base in the expression and the power that the base is being raised to is called the exponent .  We begin with integral exponents; that is, exponents that are integers. If is a positive integer , then is a short way of writing repeated multiplication: In particular, for ,   This definition can be expanded to the exponent by defining for any number , Note that, by definition, this means We can also extend this definition to negative integer exponents by defining for every and every , In particular:   These definitions lead to the basic properties of power expressions.   Rules of Exponents Integral Exponents   Let and be given numbers, and let and be integers. Then the following equalities hold provided both sides are defined:                              Note that an expression in the formulas above may not be defined if there is a zero in the denominator. For example, in Property , is not defined if and . That means that Property holds for any .  The properties of exponents listed above follow from the definitions at the beginning of this section. This is illustrated for Property below:     Rewrite each expression given below as a power of 3; that is, in the form for some constant .                                 By Property : We rewrote the expression as for .    By Property :     By Property and Property :     As we have:     Note that . Using Property :          Use Rules of Exponents to simplify the following expressions if possible:                             We use Property to simplify the expression under the outside power 2. Then we use Property :     We begin by simplifying the expression under the power using Property : Now we use Property and then Property :     We simplify the expression under the power using Property : By Property and then Property :     There is no rule for the power of a sum or a difference! We cannot simplify using Rules of Exponents. You certainly cannot distribute the power and write the expression as .        Rewriting Expressions   Rewrite the given expression as a power of ; that is, express it in the form for some .                                                     Rewriting Expressions   Rewrite the given expression as a power of ; that is, express it in the form for some .                                                     Simplifying Expressions   Simplify the given expression if possible. If not possible, state so.                                  Cannot be simplified.                       Cannot be simplified.                       Cannot be simplified.       Let and be positive integers. Use the definition of exponentiation to explain why the following formula is valid:           "
+  "body": " Algebra of Powers: Integral Exponents    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In the next two sections we review algebra of power expressions of the form: where and are given numbers. The number is called the base in the expression and the power that the base is being raised to is called the exponent .  We begin with integral exponents; that is, exponents that are integers. If is a positive integer , then is a short way of writing repeated multiplication: In particular, for ,   This definition can be expanded to the exponent by defining for any number , Note that, by definition, this means We can also extend this definition to negative integer exponents by defining for every and every , In particular:   These definitions lead to the basic properties of power expressions.   Rules of Exponents Integral Exponents   Let and be given numbers, and let and be integers. Then the following equalities hold provided both sides are defined:                              Note that an expression in the formulas above may not be defined if there is a zero in the denominator. For example, in Property , is not defined if and . That means that Property holds for any .  The properties of exponents listed above follow from the definitions at the beginning of this section. This is illustrated for Property below:     Rewrite each expression given below as a power of 3; that is, in the form for some constant .                                 By Property : We rewrote the expression as for .    By Property :     By Property and Property :     As we have:     Note that . Using Property :          Use Rules of Exponents to simplify the following expressions if possible:                             Use Property to simplify the expression under the outside exponent , then use Property :     Begin by simplifying the expression under the exponent:     Again, begin by simplifying under the exponent :     There is no rule for the power of a sum or a difference! We cannot simplify using rules of exponents. You certainly cannot distribute the power and write the expression as .        Rewriting Expressions   Rewrite the given expression as a power of ; that is, express it in the form for some .                                                     Rewriting Expressions   Rewrite the given expression as a power of ; that is, express it in the form for some .                                                     Simplifying Expressions   Simplify the given expression if possible. If not possible, state so.                                  Cannot be simplified.                       Cannot be simplified.                       Cannot be simplified.       Let and be positive integers. Use the definition of exponentiation to explain why the following formula is valid:           "
 },
 {
   "id": "sec_4_1-2",
@@ -2797,7 +2797,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.1.3",
   "title": "",
-  "body": "  Use Rules of Exponents to simplify the following expressions if possible:                             We use Property to simplify the expression under the outside power 2. Then we use Property :     We begin by simplifying the expression under the power using Property : Now we use Property and then Property :     We simplify the expression under the power using Property : By Property and then Property :     There is no rule for the power of a sum or a difference! We cannot simplify using Rules of Exponents. You certainly cannot distribute the power and write the expression as .     "
+  "body": "  Use Rules of Exponents to simplify the following expressions if possible:                             Use Property to simplify the expression under the outside exponent , then use Property :     Begin by simplifying the expression under the exponent:     Again, begin by simplifying under the exponent :     There is no rule for the power of a sum or a difference! We cannot simplify using rules of exponents. You certainly cannot distribute the power and write the expression as .     "
 },
 {
   "id": "ex_4_1-1-3",
@@ -2950,7 +2950,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Algebra of Powers: Fractional Exponents",
-  "body": " Algebra of Powers: Fractional Exponents     After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In this section, we will review the concepts of roots and radicals. Please note that in this book we stay within real numbers, and we do not consider complex numbers. In particular, when we talk about roots, we mean real roots.    Roots and Radicals  We say that a number is a root of order 2 (a square root) of a number if . We say that a number is a root of order 3 (a cube root) of if and so on.    Let be a given number and let be a positive integer. We say that is a root of order of , or an th root of , if .    For example, let , . The number has two roots of order : and , since . On the other hand, let and . The number has no roots of order , since there are no numbers whose square is . We say that the square root of  does not exist .  Take and . The number has exactly one root of order 3 which is . Indeed, . Observe that so 4 is not a cube root of .   Roots and Radicals   Let be a given number and be a positive integer.     Suppose is even.    If , then has no th order roots.    If , then has two th roots, one positive and one of the same magnitude but negative. We denote the positive  th root as: (We use the radical symbol .) The two th roots can then be written as    Typically, we might use the notation to denote the positive and negative roots.      Suppose is odd. Then has exactly one th root which we denote as If is negative, the root is negative; if is positive the root is positive.  If , then has one root of any order: .       When , instead of writing we simply drop the and write . This is the only exception to this notation.     Find all (real) roots specified below and write them in terms of radicals.   All roots of order of   All roots of order of   All roots of order of   All roots of order of        We are looking for all numbers such that . The order, , is even. Hence, we have two roots, one positive and one negative. The positive root is denoted by and the two roots are: The positive number whose th power is is . That is: Hence, the two roots of order of are and . Indeed, .     has two roots of order : and . We cannot easily guess them as they are not integers. We can use our calculator, though, and calculate . The two roots are then approximately and .    The order, , is odd. Hence, there is only one root of order of denoted as . As , we have     A negative number has no roots of even order, and is even. Hence, has no roots of order .      By definition, is a root of order of if is a solution to the equation: Hence, roots and radicals appear naturally when solving equations containing powers of the unknown. We saw plenty of radicals in Chapter 3 in the context of quadratic equations.    Solve for . Find all (real) solutions and give their exact as well as approximate values.                            We add to both sides of the equation and then divide both sides by to obtain Solutions to the equation are roots of order of . There are two such roots:     We divide both sides of the equation by and obtain: There is one cube root of . Hence, our equation has one solution:     We subtract from both sides of the equation, then divide by . The equation becomes: We are looking for all roots of order of . As is even, we have two such roots:     We begin by solving for . Subtract from both sides and divide both sides by : Hence, is a root of order 2 of 4. There are two such roots: This gives and . We solve each of the two equations for and obtain two solutions:       Here are a few important properties of roots.   Properties of Radicals   Let , be given numbers. Let , be positive integers. Then the following equalities hold provided that the roots involved exist, and both sides are defined:                    if is even     if is odd        Powers with Fractional Exponents and Arbitrary Exponents  So far, we have defined powers for all integer exponents .  To extend the definition to fractional exponents , we will use roots. In the first step, for every positive integer , we define as: Does this make sense? Recall that . Therefore, which is what Rules of Exponents would dictate. In the next step, we define which seems to make sense. Here is a precise definition of a power with a fractional exponent.    Let be a given number and let and be positive integers. Assume that exists. We define:       Note that exists unless is even and is negative. The combination of negative radicands (numbers under radicals) with even roots causes a number of problems for the behavior of fractional exponents, and the Rules of Exponents do not always hold.  For example, is the following equality always true? It seems reasonable at first, but consider the following: The first number is which is undefined. However, Therefore, when we talk about fractional powers, we will most often assume that bases are positive except for some very simple cases like:     Find:                      By definition . Note that is the positive of the two square roots of as is .   is undefined. An even-order root of a negative number is undefined. Hence, is undefined.   .   .    .     Depending on your calculator, it may be easier to calculate a fractional power than to enter the corresponding radical. You can simply enter 1700^(1\/20) . Be sure to use parentheses!    We have defined powers for integer and fractional exponents . As you may know, not all real numbers can be expressed as fractions (irrational numbers, for example). Can we define powers for all real numbers ? The answer is affirmative provided the base is positive. The construction falls outside the scope of this course. It suffices to know that can be defined for all exponents and Rules of Exponents are preserved. Therefore, we have the following result.   Rules of Exponents Arbitrary Exponents   Let , be given positive numbers, and be real numbers. Then the following equalities hold:                             Rewrite each of the following expressions as a power of 5; that is, in the form for some .                            By definition of fractional powers:     By definition of fractional powers and Property :     Note that . Using Property and Property :     Note that . Using Rules of Exponents we get:         Use Rules of Exponents to simplify the following. Write your answers in terms of powers and not radicals. Assume , , , and are all positive.                                 By computing first, then we have .         We have , , , . Therefore,          Solving Equations   Solve the equation for or for . Be sure to list all solutions. Give exact and approximate values rounded off to three decimal places. If there are no solutions say so.           and             and                        No real solutions.            and                   Rewriting Expressions   Rewrite the expression as a power of ; that is, in the form for some . If it is not possible, say so.                                                     Simplifying   Simplify the given expression. If it is not possible, say so. and are assumed to be positive.          Cannot be simplified.                                   Cannot be simplified.      "
+  "body": " Algebra of Powers: Fractional Exponents     After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In this section, we will review the concepts of roots and radicals. Please note that in this book the focus is on real numbers complex numbers are not considered. In particular, when we talk about roots, we mean real roots.    Roots and Radicals  We say that a number is a root of order (a square root) of a number if . Similarly, we say that a number is a root of order (a cube root) of if . The definition of a root of order is given below.    Let be a given number and let be a positive integer. We say that is a root of order of , or an th root of , if .    For example, let and . The number has two roots of order : and , since . However, if and , the situation would be different. The number has no roots of order , since there are no real numbers whose square is . We say that the square root of  does not exist .  Now, take and . The number has exactly one root of order 3, which is . Indeed, . Observe that so 4 is not a cube root of .   Roots and Radicals   Let be a given number and be a positive integer.     Suppose is even.    If , then has no th order roots.    If , then has two th roots, one positive and one of the same magnitude but negative. We denote the positive  th root as: (We use the radical symbol to denote a root.) The two th roots can then be written as    We often use the notation to denote the positive and negative roots.      Suppose is odd. Then has exactly one th root which we denote as If is negative, the root is negative; if is positive the root is positive.  If , then has one root of any order: .       When , instead of writing we simply drop the and write . This is the only exception to this notation.     Find all (real) roots specified below and write them in terms of radicals.   All roots of order of   All roots of order of   All roots of order of   All roots of order of        We are looking for all numbers such that . The order, , is even. Hence, we have two roots, one positive and one negative. The positive root is denoted by and the two roots are: The positive number whose th power is is . That is: Hence, the two roots of order of are and . Indeed, .    The number has two roots of order : and . We cannot easily guess them as they are not integers. Using a calculator, though, . The two roots are then approximately and .    The order, , is odd. Hence, there is only one root of order of denoted as . As , we have     A negative number has no roots of even order, and is even. Hence, has no roots of order .      By definition, is a root of order of if is a solution to the equation: Hence, roots and radicals appear naturally when solving equations containing powers of the unknown. You may recall seeing many radicals in Chapter 3 in the context of quadratic equations.    Solve for . Find all (real) solutions and give their exact as well as approximate values.                            We add to both sides of the equation and then divide both sides by to obtain Solutions to the equation are roots of order of . There are two such roots:     We divide both sides of the equation by and obtain: There is one cube root of . Hence, our equation has one solution:     We subtract from both sides of the equation, then divide by . The equation becomes: We are looking for all roots of order of . As is even, we have two such roots:     We begin by solving for . Subtract from both sides and divide both sides by : Hence, is a root of order 2 of 4. There are two such roots: This gives and . We solve each of the two equations for and obtain two solutions:       Here are a few important properties of roots.   Properties of Radicals   Let , be given numbers. Let , be positive integers. Then the following equalities hold provided that the roots involved exist, and both sides are defined:                    if is even     if is odd        Powers with Fractional Exponents and Arbitrary Exponents  So far, we have defined powers for all integer exponents .  To extend the definition to fractional exponents , we will use roots. In the first step, for every positive integer , we define as: Does this make sense? Recall that . Therefore, which is what Rules of Exponents would dictate. In the next step, we define . Here is a precise definition of a power with a fractional exponent.    Let be a given number and let and be positive integers. Assume that exists. We define:       Using properties of exponents, we also have   Note that exists unless is even and is negative. The combination of negative radicands (numbers under radicals) with even roots causes a number of problems for the behavior of fractional exponents, and the Rules of Exponents do not always hold.  For example, is the following equality always true? It seems reasonable at first, but consider the following: The first number is which is undefined. However, Therefore, when we talk about fractional powers, we will most often assume that bases are positive except for some simple cases where no issues arise, such as     Find:                      By definition . Note that is the positive of the two square roots of as is .   is undefined. An even-order root of a negative number is undefined. Hence, is undefined.   .   .    .        Depending on your calculator, it may be easier to calculate a fractional power than to enter the corresponding radical. You can simply enter 1700^(1\/20) . Be sure to use parentheses!   We have defined powers for integer and fractional exponents . As you may know, not all real numbers can be expressed as fractions (irrational numbers, for example). Can we define powers for all real numbers ? The answer is yes, provided the base is positive. The construction falls outside the scope of this course. It suffices to know that can be defined for all exponents and Rules of Exponents are preserved. Therefore, we have the following result.   Rules of Exponents Arbitrary Exponents   Let , be given positive numbers, and be real numbers. Then the following equalities hold:                             Rewrite each of the following expressions as a power of 5; that is, in the form for some .                            By definition of fractional powers,     By definition of fractional powers and the properties above,     Use the fact that to simplify the expression:     Note that . Therefore:         Use Rules of Exponents to simplify the following. Write your answers in terms of powers and not radicals. Assume , , , and are all positive.                                 First, compute Applying properties of exponents: .    Applying rules of exponents directly yields:     First, observe that and . This allows us to simplify the fraction as . Since and , then          Solving Equations   Solve the equation for or for . Be sure to list all solutions. Give exact and approximate values rounded off to three decimal places. If there are no solutions say so.           and             and                        No real solutions.            and                   Rewriting Expressions   Rewrite the expression as a power of ; that is, in the form for some . If it is not possible, say so.                                                     Simplifying   Simplify the given expression. If it is not possible, say so. and are assumed to be positive.          Cannot be simplified.                                   Cannot be simplified.      "
 },
 {
   "id": "sec_4_2-2-1",
@@ -2977,7 +2977,7 @@ var ptx_lunr_docs = [
   "type": "Result",
   "number": "4.2.2",
   "title": "Roots and Radicals.",
-  "body": " Roots and Radicals   Let be a given number and be a positive integer.     Suppose is even.    If , then has no th order roots.    If , then has two th roots, one positive and one of the same magnitude but negative. We denote the positive  th root as: (We use the radical symbol .) The two th roots can then be written as    Typically, we might use the notation to denote the positive and negative roots.      Suppose is odd. Then has exactly one th root which we denote as If is negative, the root is negative; if is positive the root is positive.  If , then has one root of any order: .     "
+  "body": " Roots and Radicals   Let be a given number and be a positive integer.     Suppose is even.    If , then has no th order roots.    If , then has two th roots, one positive and one of the same magnitude but negative. We denote the positive  th root as: (We use the radical symbol to denote a root.) The two th roots can then be written as    We often use the notation to denote the positive and negative roots.      Suppose is odd. Then has exactly one th root which we denote as If is negative, the root is negative; if is positive the root is positive.  If , then has one root of any order: .     "
 },
 {
   "id": "sec_4_2-3-8",
@@ -2986,7 +2986,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.2.3",
   "title": "",
-  "body": "  Find all (real) roots specified below and write them in terms of radicals.   All roots of order of   All roots of order of   All roots of order of   All roots of order of        We are looking for all numbers such that . The order, , is even. Hence, we have two roots, one positive and one negative. The positive root is denoted by and the two roots are: The positive number whose th power is is . That is: Hence, the two roots of order of are and . Indeed, .     has two roots of order : and . We cannot easily guess them as they are not integers. We can use our calculator, though, and calculate . The two roots are then approximately and .    The order, , is odd. Hence, there is only one root of order of denoted as . As , we have     A negative number has no roots of even order, and is even. Hence, has no roots of order .     "
+  "body": "  Find all (real) roots specified below and write them in terms of radicals.   All roots of order of   All roots of order of   All roots of order of   All roots of order of        We are looking for all numbers such that . The order, , is even. Hence, we have two roots, one positive and one negative. The positive root is denoted by and the two roots are: The positive number whose th power is is . That is: Hence, the two roots of order of are and . Indeed, .    The number has two roots of order : and . We cannot easily guess them as they are not integers. Using a calculator, though, . The two roots are then approximately and .    The order, , is odd. Hence, there is only one root of order of denoted as . As , we have     A negative number has no roots of even order, and is even. Hence, has no roots of order .     "
 },
 {
   "id": "sec_4_2-3-10",
@@ -3025,40 +3025,40 @@ var ptx_lunr_docs = [
   "body": "  Let be a given number and let and be positive integers. Assume that exists. We define:      "
 },
 {
-  "id": "sec_4_2-4-7",
+  "id": "sec_4_2-4-8",
   "level": "2",
-  "url": "sec_4_2.html#sec_4_2-4-7",
+  "url": "sec_4_2.html#sec_4_2-4-8",
   "type": "Example",
   "number": "4.2.7",
   "title": "",
-  "body": "  Find:                      By definition . Note that is the positive of the two square roots of as is .   is undefined. An even-order root of a negative number is undefined. Hence, is undefined.   .   .    .     Depending on your calculator, it may be easier to calculate a fractional power than to enter the corresponding radical. You can simply enter 1700^(1\/20) . Be sure to use parentheses!   "
+  "body": "  Find:                      By definition . Note that is the positive of the two square roots of as is .   is undefined. An even-order root of a negative number is undefined. Hence, is undefined.   .   .    .      "
 },
 {
-  "id": "sec_4_2-4-9",
+  "id": "sec_4_2-4-11",
   "level": "2",
-  "url": "sec_4_2.html#sec_4_2-4-9",
+  "url": "sec_4_2.html#sec_4_2-4-11",
   "type": "Result",
   "number": "4.2.8",
   "title": "Rules of Exponents — Arbitrary Exponents.",
   "body": " Rules of Exponents Arbitrary Exponents   Let , be given positive numbers, and be real numbers. Then the following equalities hold:                          "
 },
 {
-  "id": "sec_4_2-4-10",
+  "id": "sec_4_2-4-12",
   "level": "2",
-  "url": "sec_4_2.html#sec_4_2-4-10",
+  "url": "sec_4_2.html#sec_4_2-4-12",
   "type": "Example",
   "number": "4.2.9",
   "title": "",
-  "body": "  Rewrite each of the following expressions as a power of 5; that is, in the form for some .                            By definition of fractional powers:     By definition of fractional powers and Property :     Note that . Using Property and Property :     Note that . Using Rules of Exponents we get:      "
+  "body": "  Rewrite each of the following expressions as a power of 5; that is, in the form for some .                            By definition of fractional powers,     By definition of fractional powers and the properties above,     Use the fact that to simplify the expression:     Note that . Therefore:      "
 },
 {
-  "id": "sec_4_2-4-11",
+  "id": "sec_4_2-4-13",
   "level": "2",
-  "url": "sec_4_2.html#sec_4_2-4-11",
+  "url": "sec_4_2.html#sec_4_2-4-13",
   "type": "Example",
   "number": "4.2.10",
   "title": "",
-  "body": "  Use Rules of Exponents to simplify the following. Write your answers in terms of powers and not radicals. Assume , , , and are all positive.                                 By computing first, then we have .         We have , , , . Therefore,      "
+  "body": "  Use Rules of Exponents to simplify the following. Write your answers in terms of powers and not radicals. Assume , , , and are all positive.                                 First, compute Applying properties of exponents: .    Applying rules of exponents directly yields:     First, observe that and . This allows us to simplify the fraction as . Since and , then      "
 },
 {
   "id": "ex_4_2-1-3",
@@ -3193,7 +3193,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "Power Functions: Positive Integral Exponents",
-  "body": " Power Functions: Positive Integral Exponents     After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In the next two sections we look at the properties and the graphs of the so-called power functions.   Power Function   A function is called a power function if can be expressed in the form: where and are constants and . The constant is called the coefficient of the power function and is called the exponent .     Note: When depends on according to the formula , we say that is directly proportional (or proportional) to with the coefficient of proportionality . If , we say that is inversely proportional to with the coefficient of proportionality . So power functions express proportionality of the dependent variable to powers of the independent variable.  As the title suggests, in this section we look at the case when the exponent is a positive integer.    Which of the functions below are power functions? For those which are, rewrite in the standard form . Identify the coefficient and the exponent.                                      The function is a power function. Using Rules of Exponents from Section 4.1, we can rewrite: The coefficient is and the exponent is .     is a power function: The coefficient is and the exponent is .     is a power function as well: The coefficient is and the exponent is .    The function is not a power function. It cannot be rewritten as . The function is a sum of two power functions, and . A function that is a sum of power functions is called a polynomial function.    The function is a power function. Remember that is just a constant. The coefficient is and the exponent is .     is not a power function. Observe that in the base of the power expression is constant and equal to 2. The exponent is a variable. In a power function, it is the other way around: the base is a variable and the exponent is constant.   Functions like where the variable is in the exponent is the topic of discussion in Chapter 5.         A ball dropped from the Empire State Building has traveled down the distance of feet after seconds where:     Is the function a power function? If yes, identify the exponent and the coefficient.    The Empire State Building is ft tall. How long will it take for the ball to hit the ground?         is a power function with and .    The ball will hit the ground when it has traveled feet. That is, for a positive such that: To solve the equation for we divide both sides by : The two solutions to this quadratic equation are: Since has to be positive, then the solution is Hence, the ball will hit the ground after:     Note that in terms of proportionality, we can say that the distance is directly proportional to with the coefficient of proportionality .      Let be the volume of a sphere of radius . We know from elementary geometry that:     Is a power function? If yes, find the coefficient and the exponent.    What radius is required for the volume to be 25 cm ?        Yes, is a power function. The coefficient is and the exponent is .    We are looking for the radius , in centimeters, such that: Dividing both sides by and multiplying by 3, then Now we take the power of both sides (in other words, the cube root) and obtain: Since , then The volume is when the radius is cm.        Graphs of Power Functions: Positive Integral Exponents  Graphs of power functions with exponents that are positive integers are different for even and for odd.   Even Positive Exponents   If is even, then is positive for all except for where . For example, if then , , , , and so on. Hence, the graph of the power function for any even is symmetric about the -axis as .  Here are the graphs of the functions for and . All graphs are U-shaped and reminiscent of the quadratic parabola .   A short description.    The coefficient in , stretches or shrinks the graph of vertically. Additionally, if , the graph is reflected over the -axis.   A short description.     Odd Positive Exponents   If is odd, then is positive for , it is for , and negative for . For example, let . Then , , , , and so on. Hence, the graph of the power function for any odd is symmetric about the origin as .  Here are the graphs of the functions for and . This time, the graphs are S-shaped.   A short description.    The coefficient in , stretches or shrinks the graph of vertically. Additionally, if , the graph is reflected over the -axis.   A short description.    Here is a summary of how graphs of power functions look for positive integer exponents , even and odd, and for coefficients positive and negative.    even  odd    Positive coefficient,   Graph of a representative power function with even exponent and positive coefficient.     Graph of a representative power function with odd exponent and positive coefficient.      Negative coefficient,   Graph of a representative power function with even exponent and negative coefficient.     Graph of a representative power function with odd exponent and negative coefficient.        Power Functions   Determine whether a given function is a power function. If yes, identify the coefficient and the exponent . If not, say so.           ; ;             ; ;            Not a power function.            ; ;            Not a power function.            ; ;       Braking Distance    Braking distance or stopping distance refers to the distance a car will travel from the point when its brakes are fully applied to when it comes to a complete stop http:\/\/hyperphysics.phy-astr.gsu.edu\/hbase\/crstp.html , accessed: 7\/5\/20 . The braking distance is proportional to the square of the car's speed and it depends on the coefficient of friction, , between the tires and the road surface. Let denote distance, in feet, and speed in mph. The formula for the braking distance is: Note that the braking distance does not include a driver's reaction time https:\/\/en.wikipedia.org\/wiki\/Braking_distance , accessed: 7\/5\/20 .     Is the braking distance a power function of speed? If yes, give the coefficient and the exponent . Assume that is a given constant.    Yes; ;       The coefficient of friction under normal conditions when the road is dry is . What is the braking distance of a car that travels on a dry road at mph? What is the braking distance at mph?     feet; feet      By what factor does the braking distance increase when speed doubles?    Factor of .      The coefficient of friction on a wet road is . Calculate the braking distance of a car traveling at mph on a wet road.     feet       Below are the graphs of four power functions where is a positive integer. In each of the graphs, is the exponent even or odd? Is the coefficient positive or negative?    A short description.     A short description.     A short description.     A short description.       From left to right:     is even and is positive.   is odd and is positive.   is odd and is negative.   is even and is negative.        Which of the following is a graph of ?    A short description.     A short description.     A short description.       The graph in the middle.      Which of the following is a graph of ?    A short description.     A short description.     A short description.       The second graph.      Below you see graphs of the functions , , and . Decide which is which.   A short description.      A is ; B is ; C is .      The area, , of a unilateral triangle whose sides have length is given by: Find the side length , in cm, which gives the area equal to . Round off your answer to three decimal places.     cm     "
+  "body": " Power Functions: Positive Integral Exponents     After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In the next two sections we look at the properties and the graphs of the so-called power functions.   Power Function   A function is called a power function if can be expressed in the form where and are constants and . The constant is called the coefficient of the power function and is called the exponent .     Note: When depends on according to the formula , we say that is directly proportional (or proportional) to with the coefficient of proportionality . If , we say that is inversely proportional to with the coefficient of proportionality . So power functions express proportionality of the dependent variable to powers of the independent variable.  As the title suggests, in this section we look at the case when the exponent is a positive integer.    Which of the functions below are power functions? For those which are, rewrite in the standard form . Identify the coefficient and the exponent.                                      The function is a power function. Using Rules of Exponents from Section 4.1, we can rewrite: The coefficient is and the exponent is .    The function is a power function: The coefficient is and the exponent is .    The function is a power function as well: The coefficient is and the exponent is .    The function is not a power function. It cannot be rewritten as , since is a sum of two power functions with differing exponents namely and . A function that is a sum of power functions with non-negative integer coefficients is called a polynomial function .    The function is a power function. Remember that is just a constant. The coefficient is and the exponent is .    The function is not a power function. Observe that in the base of the power expression is constant and equal to . The exponent is a variable. In a power function, it is the other way around: the base is a variable and the exponent is constant.   Functions like where the variable is in the exponent is the topic of discussion in Chapter 5.          A ball dropped from the Empire State Building has traveled down the distance of feet after seconds where     Is the function a power function? If yes, identify the exponent and the coefficient.    The Empire State Building is ft tall. How long will it take for the ball to hit the ground?         is a power function with and .    The ball will hit the ground when it has traveled feet. That is, for a positive such that: To solve the equation for we divide both sides by : The two solutions to this quadratic equation are: Since has to be positive, then the solution is Hence, the ball will hit the ground after:      Note that in terms of proportionality, we can say that the distance is directly proportional to with the coefficient of proportionality .       Let be the volume of a sphere of radius centimeters. We know from elementary geometry that:     Is a power function? If yes, find the coefficient and the exponent.    What radius is required for the volume to be 25 cm ?        Yes, is a power function. The coefficient is and the exponent is .    We are looking for the radius , in centimeters, such that Dividing both sides by and multiplying by , then Now we take the power of both sides (in other words, the cube root) and obtain: Since , then The volume is when the radius is cm.        Graphs of Power Functions: Positive Integral Exponents  Graphs of power functions with exponents that are positive integers are different for even and for odd.   Even Positive Exponents   If is even, then is positive for all except for where . For example, if then , , , , and so on. Hence, the graph of the power function for any even is symmetric about the -axis as .  Here are the graphs of the functions for and . All graphs are U-shaped and reminiscent of the quadratic parabola .   A short description.    The coefficient in , stretches or shrinks the graph of vertically. Additionally, if , the graph is reflected over the -axis.   A short description.     Odd Positive Exponents   If is odd, then is positive for , it is for , and negative for . For example, let . Then , , , , and so on. Hence, the graph of the power function for any odd is symmetric about the origin as .  Here are the graphs of the functions for and . This time, the graphs are S-shaped.   A short description.    The coefficient in , stretches or shrinks the graph of vertically. Additionally, if , the graph is reflected over the -axis.   A short description.    Here is a summary of how graphs of power functions look for positive integer exponents , even and odd, and for coefficients positive and negative.    even  odd    Positive coefficient,    Graph of a representative power function with even exponent and positive coefficient.     Graph of a representative power function with odd exponent and positive coefficient.      Negative coefficient,   Graph of a representative power function with even exponent and negative coefficient.     Graph of a representative power function with odd exponent and negative coefficient.        Power Functions   Determine whether a given function is a power function. If yes, identify the coefficient and the exponent . If not, say so.           ; ;             ; ;            Not a power function.            ; ;            Not a power function.            ; ;       Braking Distance    Braking distance or stopping distance refers to the distance a car will travel from the point when its brakes are fully applied to when it comes to a complete stop http:\/\/hyperphysics.phy-astr.gsu.edu\/hbase\/crstp.html , accessed: 7\/5\/20 . The braking distance is proportional to the square of the car's speed and it depends on the coefficient of friction, , between the tires and the road surface. Let denote distance, in feet, and speed in mph. The formula for the braking distance is: Note that the braking distance does not include a driver's reaction time https:\/\/en.wikipedia.org\/wiki\/Braking_distance , accessed: 7\/5\/20 .     Is the braking distance a power function of speed? If yes, give the coefficient and the exponent . Assume that is a given constant.    Yes; ;       The coefficient of friction under normal conditions when the road is dry is . What is the braking distance of a car that travels on a dry road at mph? What is the braking distance at mph?     feet; feet      By what factor does the braking distance increase when speed doubles?    Factor of .      The coefficient of friction on a wet road is . Calculate the braking distance of a car traveling at mph on a wet road.     feet       Below are the graphs of four power functions where is a positive integer. In each of the graphs, is the exponent even or odd? Is the coefficient positive or negative?    A short description.     A short description.     A short description.     A short description.       From left to right:     is even and is positive.   is odd and is positive.   is odd and is negative.   is even and is negative.        Which of the following is a graph of ?    A short description.     A short description.     A short description.       The graph in the middle.      Which of the following is a graph of ?    A short description.     A short description.     A short description.       The second graph.      Below you see graphs of the functions , , and . Decide which is which.   A short description.      A is ; B is ; C is .      The area, , of a unilateral triangle whose sides have length is given by: Find the side length , in cm, which gives the area equal to . Round off your answer to three decimal places.     cm     "
 },
 {
   "id": "sec_4_3-2-1",
@@ -3211,7 +3211,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "4.3.1",
   "title": "Power Function.",
-  "body": " Power Function   A function is called a power function if can be expressed in the form: where and are constants and . The constant is called the coefficient of the power function and is called the exponent .   "
+  "body": " Power Function   A function is called a power function if can be expressed in the form where and are constants and . The constant is called the coefficient of the power function and is called the exponent .   "
 },
 {
   "id": "sec_4_3-2-4",
@@ -3229,7 +3229,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.3.2",
   "title": "",
-  "body": "  Which of the functions below are power functions? For those which are, rewrite in the standard form . Identify the coefficient and the exponent.                                      The function is a power function. Using Rules of Exponents from Section 4.1, we can rewrite: The coefficient is and the exponent is .     is a power function: The coefficient is and the exponent is .     is a power function as well: The coefficient is and the exponent is .    The function is not a power function. It cannot be rewritten as . The function is a sum of two power functions, and . A function that is a sum of power functions is called a polynomial function.    The function is a power function. Remember that is just a constant. The coefficient is and the exponent is .     is not a power function. Observe that in the base of the power expression is constant and equal to 2. The exponent is a variable. In a power function, it is the other way around: the base is a variable and the exponent is constant.   Functions like where the variable is in the exponent is the topic of discussion in Chapter 5.      "
+  "body": "  Which of the functions below are power functions? For those which are, rewrite in the standard form . Identify the coefficient and the exponent.                                      The function is a power function. Using Rules of Exponents from Section 4.1, we can rewrite: The coefficient is and the exponent is .    The function is a power function: The coefficient is and the exponent is .    The function is a power function as well: The coefficient is and the exponent is .    The function is not a power function. It cannot be rewritten as , since is a sum of two power functions with differing exponents namely and . A function that is a sum of power functions with non-negative integer coefficients is called a polynomial function .    The function is a power function. Remember that is just a constant. The coefficient is and the exponent is .    The function is not a power function. Observe that in the base of the power expression is constant and equal to . The exponent is a variable. In a power function, it is the other way around: the base is a variable and the exponent is constant.   Functions like where the variable is in the exponent is the topic of discussion in Chapter 5.       "
 },
 {
   "id": "sec_4_3-2-7",
@@ -3238,7 +3238,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.3.3",
   "title": "",
-  "body": "  A ball dropped from the Empire State Building has traveled down the distance of feet after seconds where:     Is the function a power function? If yes, identify the exponent and the coefficient.    The Empire State Building is ft tall. How long will it take for the ball to hit the ground?         is a power function with and .    The ball will hit the ground when it has traveled feet. That is, for a positive such that: To solve the equation for we divide both sides by : The two solutions to this quadratic equation are: Since has to be positive, then the solution is Hence, the ball will hit the ground after:     Note that in terms of proportionality, we can say that the distance is directly proportional to with the coefficient of proportionality .   "
+  "body": "  A ball dropped from the Empire State Building has traveled down the distance of feet after seconds where     Is the function a power function? If yes, identify the exponent and the coefficient.    The Empire State Building is ft tall. How long will it take for the ball to hit the ground?         is a power function with and .    The ball will hit the ground when it has traveled feet. That is, for a positive such that: To solve the equation for we divide both sides by : The two solutions to this quadratic equation are: Since has to be positive, then the solution is Hence, the ball will hit the ground after:      Note that in terms of proportionality, we can say that the distance is directly proportional to with the coefficient of proportionality .    "
 },
 {
   "id": "sec_4_3-2-8",
@@ -3247,7 +3247,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.3.4",
   "title": "",
-  "body": "  Let be the volume of a sphere of radius . We know from elementary geometry that:     Is a power function? If yes, find the coefficient and the exponent.    What radius is required for the volume to be 25 cm ?        Yes, is a power function. The coefficient is and the exponent is .    We are looking for the radius , in centimeters, such that: Dividing both sides by and multiplying by 3, then Now we take the power of both sides (in other words, the cube root) and obtain: Since , then The volume is when the radius is cm.     "
+  "body": "  Let be the volume of a sphere of radius centimeters. We know from elementary geometry that:     Is a power function? If yes, find the coefficient and the exponent.    What radius is required for the volume to be 25 cm ?        Yes, is a power function. The coefficient is and the exponent is .    We are looking for the radius , in centimeters, such that Dividing both sides by and multiplying by , then Now we take the power of both sides (in other words, the cube root) and obtain: Since , then The volume is when the radius is cm.     "
 },
 {
   "id": "sec_4_3-3-3",
@@ -3409,7 +3409,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Power Functions: Fractional and Negative Integral Exponents",
-  "body": " Power Functions: Fractional and Negative Integral Exponents     After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In the previous section, we considered power functions in the case when is a positive integer. When is a negative integer, power functions behave quite differently.    Negative Integral Exponents  Consider a power function in the case when the exponent is a negative integer. The behavior and graphs of such functions are very different from those of power functions with positive integral exponents.  A negative exponent means the reciprocal . So now the independent variable is in the denominator. The domain of a power function in this case is no longer the set of all real numbers as cannot be .  We now look more closely at these graphs.    Which of the functions below are power functions? Rewrite those which are in standard form . Identify the coefficient and the exponent.                       The function is a power function. Using Rules of Exponents from Section 4.1, we can rewrite: The coefficient is and the exponent is .     is a power function: The coefficient is and the exponent is .     is not a power function. Using rules of exponents for arbitrary exponents, we can rewrite: The function is not a power function. Indeed, the base of the power expression is constant at , meanwhile the exponent varies.        Body mass index (BMI) is an easy screening method for weight category underweight, healthy weight, overweight, and obesity. BMI is calculated as follows:   A person who weighs 170 lb may be underweight or obese it depends on the person's height. Let denote body mass index of a person who weighs 170 lb and whose height is . Then, according to the formula, Note that with the weight fixed at 170 lb, body mass index is a power function of height: . (In terms of proportionality, BMI is inversely proportional to the square of height.) The obese category is defined as BMI of 30.0 or above. The normal weight category corresponds to BMI between 18.5 and 24.9.  Find the height at and below which a person weighing 170 lb is obese.    We want to find such that : After multiplying both sides by and dividing by 30, then which gives: Since in our problem has to be positive, the solution is: At the height inches and below a person weighing 170 lb is obese.  Note that when increases decreases as the denominator of the expression becomes larger. On the other hand, when gets smaller, gets larger. Hence, every person shorter than inches who weighs 170 lb is also obese.      Graphs of Power Functions: Negative Integral Exponents  Graphs of power functions with exponents that are negative integers have a different shape depending on whether is even or is odd.   Odd Negative Exponents   We begin with the case and . The graph of the function looks as follows:   A short description.    Observe that when gets larger and larger, say: the values become very close to 0. Indeed, they are:   In terms of the graph, this behavior translates to the graph getting very close, arbitrarily close, to the -axis. We say that the -axis, or equivalently the horizontal line , is a horizontal asymptote of the function .  Observe that as is getting close to 0 from the right, the values are becoming very large. We test a few positive inputs close to : The corresponding values are: In terms of the graph, this behavior translates to the graph getting very close to the -axis with the values of the function becoming arbitrarily large. We say that the -axis, or equivalently the vertical line , is a vertical asymptote of the function .  The portion of the graph corresponding to negative inputs , is symmetric about the origin to the portion of the graph corresponding to positive inputs. Indeed, when changes sign changes sign:   Graphs of other power functions in which the exponent is an odd negative integer have a similar shape to the graph of . For example:   A short description.    As always, the coefficient in stretches or shrinks the graph of vertically. Additionally, if is negative, the graph is reflected about the -axis.    A short description.     A short description.      Even Negative Exponents   When is a negative even integer, the graph of is entirely above the -axis and it is symmetric about the -axis, since when is even.   A short description.    The graphs of the functions for other even negative integers have a similar shape:   A short description.    The -axis is still a horizontal asymptote and the -axis is a vertical asymptote. The coefficient is responsible for vertical scaling and a reflection about the -axis if is negative. For example:   A short description.     Summary   Here is a summary of how graphs of power functions look for negative integer exponents , even and odd, and for coefficients positive and negative.    even and negative  odd and negative    Positive coefficient,   Graph of a representative power function with even negative exponent and positive coefficient.     Graph of a representative power function with odd negative exponent and positive coefficient.      Negative coefficient,   Graph of a representative power function with even negative exponent and negative coefficient.     Graph of a representative power function with odd negative exponent and negative coefficient.       Fractional Exponents    Which of the functions below are power functions? Those which are, rewrite in standard form . Identify the coefficient and the exponent.                       The function is a power function. Using rules of exponents for arbitrary exponents, we can rewrite: The coefficient is and the exponent is .     is a power function: The coefficient is and the exponent is .     is a power function as well. Using rules of exponents for arbitrary exponents and properties of the square root, we can rewrite:     The coefficient is and the exponent is .        Body surface area (BSA) is the total surface area of the human body. The body surface area is used in many measurements in medicine, including the calculation of drug dosages and the amount of fluids to be administered intravenously. There are several accepted formulas to calculate BSA. One of the most commonly used is the Du Bois formula: where is weight in kilograms (kg) and is height in centimeters (cm). The formula gives BSA in square meters, .    Calculate BSA of a female who stands 158 cm tall and weighs 60 kg. Give units with your answer.    Let weight be fixed at 70 kg. Then BSA depends on height only— with weight fixed at 70, BSA is a function of only. Denote this function by . Find a formula for . Is it a power function? If yes, identify the coefficient and the exponent.    Use your formula for to calculate BSA for a female that weighs 70 kg and is 158 cm tall. Give units with your answer.        We want to calculate BSA for and . We substitute the values into the Du Bois formula: The total body surface area of a person who weighs kg and is cm tall is .    Fix . Then BSA as a function of is:  is a power function of with the coefficient and exponent .    BSA of a female who weighs kg and is cm tall is . The total body surface area of a person who weighs kg and is cm tall is .        Graphs of Power Functions: Fractional Exponents  When considering power functions with fractional exponents or, more general, with exponents which are not integers, we restrict the domain to (or to if a non-integral exponent is negative). The graphs of and are given below as an example. Traditionally, roots of odd orders like or are considered and graphed for all .    A short description.     A short description.        Power Functions   Determine whether the given function is a power function. If yes, identify the coefficient and the exponent . If not, say so.           ; ;             ; ;             ; ;            Not a power function.            ; ;            Not a power function.       Four power functions are graphed below, where is a negative integer. In each of the graphs, is the exponent even or odd? Is the coefficient positive or negative?    A short description.     A short description.     A short description.     A short description.       From left to right:    is odd; is positive.  is even; is negative.  is odd; is negative.  is even; is positive.        Which of the following is a graph of ?    A short description.     A short description.     A short description.       The graph on the right.      Which of the following is a graph of ?    A short description.     A short description.     A short description.       The graph on the left.      Below you see graphs of the functions , , and . Decide which is which.   A short description.      Graph A is , graph B is , and graph C is .      Find a formula for a power function given numerically by:                                Find a formula for a power function given numerically by:               undefined                  Consider a pendulum depicted below Modified from a public domain image at https:\/\/en.wikipedia.org\/wiki\/Pendulum , accessed: 7\/8\/20 .   A short description.   When the pendulum is displaced sideways from its resting position called the equilibrium position the force due to gravity will cause the pendulum to oscillate back and forth about the equilibrium position. The time, , needed to execute one full cycle a left swing and the right swing is called the pendulum's period. The period depends on the length of the pendulum https:\/\/en.wikipedia.org\/wiki\/Pendulum , accessed: 7\/8\/20 and the local acceleration due to gravity :    With fixed, is a power function of ? In other words, is ? If yes, find the coefficient and the exponent.  On the surface of the Earth, the acceleration due to gravity, , is equal to where m stands for meters. Calculate the period of a pendulum of length that happily oscillates in Kingston, RI.  An astronaut is standing on the surface of a faraway asteroid wondering about the acceleration due to gravity on the asteroid. The astronaut has a watch and a pendulum whose length is . The astronaut measures the period of the pendulum which turns out to be seconds. What is the acceleration due to gravity on the asteroid?        yes; where the coefficient is and the exponent is .   approximately seconds.  approximately .       "
+  "body": " Power Functions: Fractional and Negative Integral Exponents     After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     In the previous section, we considered power functions in the case when is a positive integer. When is a negative integer, power functions behave quite differently.    Negative Integral Exponents  Consider a power function in the case when the exponent is a negative integer. The behavior and graphs of such functions are very different from those of power functions with positive integral exponents.  A negative exponent means the reciprocal . So now the independent variable is in the denominator. The domain of a power function in this case is no longer the set of all real numbers as cannot be .  Let's look more closely at these graphs.    Which of the functions below are power functions? Rewrite those which are in standard form . Identify the coefficient and the exponent.                       The function is a power function. Using Rules of Exponents from Section 4.1, we can rewrite: The coefficient is and the exponent is .    The function is a power function: The coefficient is and the exponent is .    The function is not a power function. Using rules of exponents for arbitrary exponents, we can rewrite: The function is not a power function. Indeed, the base of the power expression is constant at , meanwhile the exponent varies.        Body mass index (BMI) is an easy screening method for weight category underweight, healthy weight, overweight, and obesity. BMI is calculated as follows:   A person who weighs 170 lb may fall in any of hte above weight categories it depends on their height. Let denote body mass index of a person who weighs 170 lb and whose height is . Then, according to the formula, Note that with the weight fixed at 170 lb, body mass index is a power function of height: . (In terms of proportionality, BMI is inversely proportional to the square of height.) The obese category is defined as BMI of 30.0 or above. The normal weight category corresponds to BMI between 18.5 and 24.9.  Find the height at and below which a person weighing 170 lb is obese.    We want to find such that : After multiplying both sides by and dividing by 30, then which gives: Since in our problem has to be positive, the solution is: At the height inches and below a person weighing 170 lb is obese.  Note that when increases decreases as the denominator of the expression becomes larger. On the other hand, when gets smaller, gets larger. Hence, every person shorter than inches who weighs 170 lb is also obese.      Graphs of Power Functions: Negative Integral Exponents  Graphs of power functions with exponents that are negative integers have a different shape depending on whether is even or is odd.   Odd Negative Exponents   We begin with the case and . The graph of the function looks as follows:   A short description.    Observe that when gets larger and larger, say: the values become very close to 0. Indeed, they are:   In terms of the graph, this behavior translates to the graph getting very close, arbitrarily close , to the -axis as increases. We say that the -axis, or equivalently the horizontal line , is a horizontal asymptote of the function .  Observe that as is getting close to 0 from the right, the values are becoming very large. We test a few positive inputs close to : The corresponding values are: In terms of the graph, this behavior translates to the graph getting very close to the -axis, as approaches from the right, with the values of the function becoming arbitrarily large. We say that the -axis, or equivalently the vertical line , is a vertical asymptote of the function .  The portion of the graph corresponding to negative inputs , is symmetric about the origin to the portion of the graph corresponding to positive inputs. Indeed, when changes sign changes sign:   Graphs of other power functions in which the exponent is an odd negative integer have a similar shape to the graph of . For example:   A short description.    As always, the coefficient in stretches or shrinks the graph of vertically. Additionally, if is negative, the graph is reflected about the -axis.    A short description.     A short description.      Even Negative Exponents   When is a negative even integer, the graph of is entirely above the -axis and it is symmetric about the -axis, since when is even.   A short description.    The graphs of the functions for other even negative integers have a similar shape:   A short description.    The -axis is still a horizontal asymptote and the -axis is a vertical asymptote. The coefficient is responsible for vertical scaling and a reflection about the -axis if is negative. For example:   A short description.     Summary   Here is a summary of how graphs of power functions look for negative integer exponents , even and odd, and for coefficients positive and negative.    even & negative  odd & negative    Positive coefficient,   Graph of a representative power function with even negative exponent and positive coefficient.     Graph of a representative power function with odd negative exponent and positive coefficient.      Negative coefficient,   Graph of a representative power function with even negative exponent and negative coefficient.     Graph of a representative power function with odd negative exponent and negative coefficient.       Fractional Exponents    Which of the functions below are power functions? Those which are, rewrite in standard form . Identify the coefficient and the exponent.                       The function is a power function. Using rules of exponents for arbitrary exponents, we can rewrite: The coefficient is and the exponent is .    The function is a power function: The coefficient is and the exponent is .    The function is a power function as well. Using rules of exponents for arbitrary exponents and properties of the square root, we can rewrite:     The coefficient is and the exponent is .        Body surface area (BSA) is the total surface area of the human body. The body surface area is used in many measurements in medicine, including the calculation of drug dosages and the amount of fluids to be administered intravenously. There are several accepted formulas to calculate BSA. One of the most commonly used is the Du Bois formula: where is weight in kilograms (kg) and is height in centimeters (cm). The formula gives BSA in square meters, .    Calculate BSA of a female who stands 158 cm tall and weighs 60 kg. Give units with your answer.    Let weight be fixed at 70 kg. Then BSA depends on height only— with weight fixed at 70, BSA is a function of only. Denote this function by . Find a formula for . Is it a power function? If yes, identify the coefficient and the exponent.    Use your formula for to calculate BSA for a female that weighs 70 kg and is 158 cm tall. Give units with your answer.        We want to calculate BSA for and . We substitute the values into the Du Bois formula: The total body surface area of a person who weighs kg and is cm tall is .    Fix . Then BSA as a function of is:  is a power function of with the coefficient and exponent .    BSA of a female who weighs kg and is cm tall is . The total body surface area of a person who weighs kg and is cm tall is .        Graphs of Power Functions: Fractional Exponents  When considering power functions with fractional exponents or, more generally, with exponents which are not integers, we restrict the domain to (or to if a non-integral exponent is negative). The graphs of and are given below as an example. Traditionally, roots of odd orders like or are considered and graphed for all .    A short description.     A short description.        Power Functions   Determine whether the given function is a power function. If yes, identify the coefficient and the exponent . If not, say so.           ; ;             ; ;             ; ;            Not a power function.            ; ;            Not a power function.       Four power functions are graphed below, where is a negative integer. In each of the graphs, is the exponent even or odd? Is the coefficient positive or negative?    A short description.     A short description.     A short description.     A short description.       From left to right:    is odd; is positive.  is even; is negative.  is odd; is negative.  is even; is positive.        Which of the following is a graph of ?    A short description.     A short description.     A short description.       The graph on the right.      Which of the following is a graph of ?    A short description.     A short description.     A short description.       The graph on the left.      Below you see graphs of the functions , , and . Decide which is which.   A short description.      Graph A is , graph B is , and graph C is .      Find a formula for a power function given numerically by:                                Find a formula for a power function given numerically by:               undefined                  Consider a pendulum depicted below Modified from a public domain image at https:\/\/en.wikipedia.org\/wiki\/Pendulum , accessed: 7\/8\/20 .   A short description.   When the pendulum is displaced sideways from its resting position called the equilibrium position the force due to gravity will cause the pendulum to oscillate back and forth about the equilibrium position. The time, , needed to execute one full cycle a left swing and the right swing is called the pendulum's period. The period depends on the length of the pendulum https:\/\/en.wikipedia.org\/wiki\/Pendulum , accessed: 7\/8\/20 and the local acceleration due to gravity :    With fixed, is a power function of ? In other words, is ? If yes, find the coefficient and the exponent.  On the surface of the Earth, the acceleration due to gravity, , is equal to where m stands for meters. Calculate the period of a pendulum of length that happily oscillates in Kingston, RI.  An astronaut is standing on the surface of a faraway asteroid wondering about the acceleration due to gravity on the asteroid. The astronaut has a watch and a pendulum whose length is . The astronaut measures the period of the pendulum which turns out to be seconds. What is the acceleration due to gravity on the asteroid?        yes; where the coefficient is and the exponent is .   approximately seconds.  approximately .       "
 },
 {
   "id": "sec_4_4-2-1",
@@ -3427,7 +3427,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.4.1",
   "title": "",
-  "body": "  Which of the functions below are power functions? Rewrite those which are in standard form . Identify the coefficient and the exponent.                       The function is a power function. Using Rules of Exponents from Section 4.1, we can rewrite: The coefficient is and the exponent is .     is a power function: The coefficient is and the exponent is .     is not a power function. Using rules of exponents for arbitrary exponents, we can rewrite: The function is not a power function. Indeed, the base of the power expression is constant at , meanwhile the exponent varies.     "
+  "body": "  Which of the functions below are power functions? Rewrite those which are in standard form . Identify the coefficient and the exponent.                       The function is a power function. Using Rules of Exponents from Section 4.1, we can rewrite: The coefficient is and the exponent is .    The function is a power function: The coefficient is and the exponent is .    The function is not a power function. Using rules of exponents for arbitrary exponents, we can rewrite: The function is not a power function. Indeed, the base of the power expression is constant at , meanwhile the exponent varies.     "
 },
 {
   "id": "sec_4_4-3-6",
@@ -3436,7 +3436,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.4.2",
   "title": "",
-  "body": "  Body mass index (BMI) is an easy screening method for weight category underweight, healthy weight, overweight, and obesity. BMI is calculated as follows:   A person who weighs 170 lb may be underweight or obese it depends on the person's height. Let denote body mass index of a person who weighs 170 lb and whose height is . Then, according to the formula, Note that with the weight fixed at 170 lb, body mass index is a power function of height: . (In terms of proportionality, BMI is inversely proportional to the square of height.) The obese category is defined as BMI of 30.0 or above. The normal weight category corresponds to BMI between 18.5 and 24.9.  Find the height at and below which a person weighing 170 lb is obese.    We want to find such that : After multiplying both sides by and dividing by 30, then which gives: Since in our problem has to be positive, the solution is: At the height inches and below a person weighing 170 lb is obese.  Note that when increases decreases as the denominator of the expression becomes larger. On the other hand, when gets smaller, gets larger. Hence, every person shorter than inches who weighs 170 lb is also obese.   "
+  "body": "  Body mass index (BMI) is an easy screening method for weight category underweight, healthy weight, overweight, and obesity. BMI is calculated as follows:   A person who weighs 170 lb may fall in any of hte above weight categories it depends on their height. Let denote body mass index of a person who weighs 170 lb and whose height is . Then, according to the formula, Note that with the weight fixed at 170 lb, body mass index is a power function of height: . (In terms of proportionality, BMI is inversely proportional to the square of height.) The obese category is defined as BMI of 30.0 or above. The normal weight category corresponds to BMI between 18.5 and 24.9.  Find the height at and below which a person weighing 170 lb is obese.    We want to find such that : After multiplying both sides by and dividing by 30, then which gives: Since in our problem has to be positive, the solution is: At the height inches and below a person weighing 170 lb is obese.  Note that when increases decreases as the denominator of the expression becomes larger. On the other hand, when gets smaller, gets larger. Hence, every person shorter than inches who weighs 170 lb is also obese.   "
 },
 {
   "id": "sec_4_4-4-3",
@@ -3490,7 +3490,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.4.3",
   "title": "",
-  "body": "  Which of the functions below are power functions? Those which are, rewrite in standard form . Identify the coefficient and the exponent.                       The function is a power function. Using rules of exponents for arbitrary exponents, we can rewrite: The coefficient is and the exponent is .     is a power function: The coefficient is and the exponent is .     is a power function as well. Using rules of exponents for arbitrary exponents and properties of the square root, we can rewrite:     The coefficient is and the exponent is .     "
+  "body": "  Which of the functions below are power functions? Those which are, rewrite in standard form . Identify the coefficient and the exponent.                       The function is a power function. Using rules of exponents for arbitrary exponents, we can rewrite: The coefficient is and the exponent is .    The function is a power function: The coefficient is and the exponent is .    The function is a power function as well. Using rules of exponents for arbitrary exponents and properties of the square root, we can rewrite:     The coefficient is and the exponent is .     "
 },
 {
   "id": "sec_4_4-5-3",
@@ -3617,6 +3617,312 @@ var ptx_lunr_docs = [
   "number": "13",
   "title": "",
   "body": "  Consider a pendulum depicted below Modified from a public domain image at https:\/\/en.wikipedia.org\/wiki\/Pendulum , accessed: 7\/8\/20 .   A short description.   When the pendulum is displaced sideways from its resting position called the equilibrium position the force due to gravity will cause the pendulum to oscillate back and forth about the equilibrium position. The time, , needed to execute one full cycle a left swing and the right swing is called the pendulum's period. The period depends on the length of the pendulum https:\/\/en.wikipedia.org\/wiki\/Pendulum , accessed: 7\/8\/20 and the local acceleration due to gravity :    With fixed, is a power function of ? In other words, is ? If yes, find the coefficient and the exponent.  On the surface of the Earth, the acceleration due to gravity, , is equal to where m stands for meters. Calculate the period of a pendulum of length that happily oscillates in Kingston, RI.  An astronaut is standing on the surface of a faraway asteroid wondering about the acceleration due to gravity on the asteroid. The astronaut has a watch and a pendulum whose length is . The astronaut measures the period of the pendulum which turns out to be seconds. What is the acceleration due to gravity on the asteroid?        yes; where the coefficient is and the exponent is .   approximately seconds.  approximately .     "
+},
+{
+  "id": "sec_5_1",
+  "level": "1",
+  "url": "sec_5_1.html",
+  "type": "Section",
+  "number": "5.1",
+  "title": "Exponential Functions: Practical Meaning",
+  "body": " Exponential Functions: Practical Meaning    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_5_1-2",
+  "level": "2",
+  "url": "sec_5_1.html#sec_5_1-2",
+  "type": "Objectives",
+  "number": "5.1",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_5_2",
+  "level": "1",
+  "url": "sec_5_2.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "Graphs of Exponential Functions",
+  "body": " Graphs of Exponential Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_5_2-2",
+  "level": "2",
+  "url": "sec_5_2.html#sec_5_2-2",
+  "type": "Objectives",
+  "number": "5.2",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_5_3",
+  "level": "1",
+  "url": "sec_5_3.html",
+  "type": "Section",
+  "number": "5.3",
+  "title": "Exponential Functions Numerically, Modeling",
+  "body": " Exponential Functions Numerically, Modeling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_5_3-2",
+  "level": "2",
+  "url": "sec_5_3.html#sec_5_3-2",
+  "type": "Objectives",
+  "number": "5.3",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_5_4",
+  "level": "1",
+  "url": "sec_5_4.html",
+  "type": "Section",
+  "number": "5.4",
+  "title": "Doubling Time and Half-Life",
+  "body": " Doubling Time and Half-Life    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_5_4-2",
+  "level": "2",
+  "url": "sec_5_4.html#sec_5_4-2",
+  "type": "Objectives",
+  "number": "5.4",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_5_5",
+  "level": "1",
+  "url": "sec_5_5.html",
+  "type": "Section",
+  "number": "5.5",
+  "title": "The Natural Base e",
+  "body": " The Natural Base e    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_5_5-2",
+  "level": "2",
+  "url": "sec_5_5.html#sec_5_5-2",
+  "type": "Objectives",
+  "number": "5.5",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_6_1",
+  "level": "1",
+  "url": "sec_6_1.html",
+  "type": "Section",
+  "number": "6.1",
+  "title": "What Are Logarithms?",
+  "body": " What Are Logarithms?    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_6_1-2",
+  "level": "2",
+  "url": "sec_6_1.html#sec_6_1-2",
+  "type": "Objectives",
+  "number": "6.1",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_6_2",
+  "level": "1",
+  "url": "sec_6_2.html",
+  "type": "Section",
+  "number": "6.2",
+  "title": "Properties of Logarithms, Solving Equations Using Logarithms",
+  "body": " Properties of Logarithms, Solving Equations Using Logarithms    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_6_2-2",
+  "level": "2",
+  "url": "sec_6_2.html#sec_6_2-2",
+  "type": "Objectives",
+  "number": "6.2",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_6_3",
+  "level": "1",
+  "url": "sec_6_3.html",
+  "type": "Section",
+  "number": "6.3",
+  "title": "Logarithms in Applications",
+  "body": " Logarithms in Applications    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_6_3-2",
+  "level": "2",
+  "url": "sec_6_3.html#sec_6_3-2",
+  "type": "Objectives",
+  "number": "6.3",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_7_1",
+  "level": "1",
+  "url": "sec_7_1.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Vertical and Horizontal Shifts",
+  "body": " Vertical and Horizontal Shifts    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_7_1-2",
+  "level": "2",
+  "url": "sec_7_1.html#sec_7_1-2",
+  "type": "Objectives",
+  "number": "7.1",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_7_2",
+  "level": "1",
+  "url": "sec_7_2.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "Vertical and Horizontal Scaling",
+  "body": " Vertical and Horizontal Scaling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_7_2-2",
+  "level": "2",
+  "url": "sec_7_2.html#sec_7_2-2",
+  "type": "Objectives",
+  "number": "7.2",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_7_3",
+  "level": "1",
+  "url": "sec_7_3.html",
+  "type": "Section",
+  "number": "7.3",
+  "title": "Composing and Decomposing Functions",
+  "body": " Composing and Decomposing Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_7_3-2",
+  "level": "2",
+  "url": "sec_7_3.html#sec_7_3-2",
+  "type": "Objectives",
+  "number": "7.3",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_7_4",
+  "level": "1",
+  "url": "sec_7_4.html",
+  "type": "Section",
+  "number": "7.4",
+  "title": "Inverse Functions",
+  "body": " Inverse Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_7_4-2",
+  "level": "2",
+  "url": "sec_7_4.html#sec_7_4-2",
+  "type": "Objectives",
+  "number": "7.4",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_8_1",
+  "level": "1",
+  "url": "sec_8_1.html",
+  "type": "Section",
+  "number": "8.1",
+  "title": "Periodic Functions",
+  "body": " Periodic Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_8_1-2",
+  "level": "2",
+  "url": "sec_8_1.html#sec_8_1-2",
+  "type": "Objectives",
+  "number": "8.1",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_8_2",
+  "level": "1",
+  "url": "sec_8_2.html",
+  "type": "Section",
+  "number": "8.2",
+  "title": "Angles Using the Unit Circle, Radian Measure",
+  "body": " Angles Using the Unit Circle, Radian Measure    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_8_2-2",
+  "level": "2",
+  "url": "sec_8_2.html#sec_8_2-2",
+  "type": "Objectives",
+  "number": "8.2",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_8_3",
+  "level": "1",
+  "url": "sec_8_3.html",
+  "type": "Section",
+  "number": "8.3",
+  "title": "Values of Sine and Cosine for Angles on the Unit Circle",
+  "body": " Values of Sine and Cosine for Angles on the Unit Circle    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_8_3-2",
+  "level": "2",
+  "url": "sec_8_3.html#sec_8_3-2",
+  "type": "Objectives",
+  "number": "8.3",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_8_4",
+  "level": "1",
+  "url": "sec_8_4.html",
+  "type": "Section",
+  "number": "8.4",
+  "title": "Sine and Cosine Functions",
+  "body": " Sine and Cosine Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_8_4-2",
+  "level": "2",
+  "url": "sec_8_4.html#sec_8_4-2",
+  "type": "Objectives",
+  "number": "8.4",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "sec_8_5",
+  "level": "1",
+  "url": "sec_8_5.html",
+  "type": "Section",
+  "number": "8.5",
+  "title": "Families of Sine and Cosine Functions, Modeling",
+  "body": " Families of Sine and Cosine Functions, Modeling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+},
+{
+  "id": "sec_8_5-2",
+  "level": "2",
+  "url": "sec_8_5.html#sec_8_5-2",
+  "type": "Objectives",
+  "number": "8.5",
+  "title": "",
+  "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
   "id": "backmatter-2",
