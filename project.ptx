@@ -12,14 +12,15 @@
 </target>
 
 <!-- <target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-html.xsl" deploy-dir="supplement"> -->
-<target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-supplement.xsl" compression="scorm">
+<!-- compression="scorm" -->
+<target name="supplement" format="html" source="main-supplement.ptx" publication="publication-supplement.ptx" xsl="pretext-supplement.xsl">
 <stringparams html.css.extra="external/custom.css" />
 <!-- <stringparams author.tools="yes"/> -->
 </target>
 
 <!-- <target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl" deploy-dir="print"> -->
 <target name="print" format="pdf" output-dir="print" output-filename="applied-precalculus.pdf" publication="print.ptx" xsl="pretext-latex.xsl">
-<stringparams draft="yes"/>
+<!-- <stringparams draft="yes"/> -->
 </target>
 
 
