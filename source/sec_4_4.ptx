@@ -52,11 +52,11 @@
     </p>
 
     <p>
-        A negative exponent <m>x^{-m}</m> means the reciprocal <m>\frac{1}{x^m}</m>. So now the independent variable is in the denominator. The domain of a power function in this case is no longer the set of all real numbers as <m>x</m> cannot be <m>0</m>.
+        A negative exponent <m>x^{-m}</m> means the reciprocal <m>\dfrac{1}{x^m}</m>. So now the independent variable is in the denominator. The domain of a power function in this case is no longer the set of all real numbers as <m>x</m> cannot be <m>0</m>.
     </p>
 
     <p>
-        We now look more closely at these graphs.
+        Let's look more closely at these graphs.
     </p>
 
 <example>
@@ -98,13 +98,13 @@ Which of the functions below are power functions? Rewrite those which are in sta
 
 <li>
 <p>
-    <m>g(x)</m> is a power function: <md>g(x) = \frac{-\pi}{x^4} = -\pi x^{-4}.</md> The coefficient is <m>k = -\pi</m> and the exponent is <m>p = -4</m>.
+The function <m>g(x)</m> is a power function: <md>g(x) = \frac{-\pi}{x^4} = -\pi x^{-4}.</md> The coefficient is <m>k = -\pi</m> and the exponent is <m>p = -4</m>.
 </p>
 </li>
 
 <li>
 <p>
-    <m>h(x)</m> is not a power function. Using rules of exponents for arbitrary exponents, we can rewrite: <md>h(x) = \frac{70}{3^x} = 70 \cdot 3^{-x}.</md> The function <m>h(x) = 70 \cdot 3^{-x}</m> is not a power function. Indeed, the base of the power expression <m>3^{-x}</m> is constant at <m>3</m>, meanwhile the exponent <m>-x</m> varies.
+    The function <m>h(x)</m> is not a power function. Using rules of exponents for arbitrary exponents, we can rewrite: <md>h(x) = \frac{70}{3^x} = 70 \cdot 3^{-x}.</md> The function <m>h(x) = 70 \cdot 3^{-x}</m> is not a power function. Indeed, the base of the power expression <m>3^{-x}</m> is constant at <m>3</m>, meanwhile the exponent <m>-x</m> varies.
 </p>
 </li>
 
@@ -119,7 +119,8 @@ Which of the functions below are power functions? Rewrite those which are in sta
 </p>
 
 <p>
-    A person who weighs 170 lb may be underweight or obese<mdash/>it depends on the person's height. Let <m>I(h)</m> denote body mass index of a person who weighs 170 lb and whose height is <m>h</m>. Then, according to the formula, <md>I(h) = \frac{170 \cdot 703}{h^2}</md> Note that with the weight fixed at 170 lb, body mass index is a power function of height: <m>\displaystyle I = 119510 \cdot h^{-2}</m>. (In terms of proportionality, BMI is inversely proportional to the square of height.) The obese category is defined as BMI of 30.0 or above. The normal weight category corresponds to BMI between 18.5 and 24.9.
+A person who weighs 170 lb may fall in any of hte above weight categories<mdash/>it depends on their height.
+Let <m>I(h)</m> denote body mass index of a person who weighs 170 lb and whose height is <m>h</m>. Then, according to the formula, <md>I(h) = \frac{170 \cdot 703}{h^2}</md> Note that with the weight fixed at 170 lb, body mass index is a power function of height: <m>\displaystyle I = 119510 \cdot h^{-2}</m>. (In terms of proportionality, BMI is inversely proportional to the square of height.) The obese category is defined as BMI of 30.0 or above. The normal weight category corresponds to BMI between 18.5 and 24.9.
 </p>
 
 <p>
@@ -189,15 +190,15 @@ xlabel=\(x\), ylabel=\(y\),
     </p>
 
     <p>
-        In terms of the graph, this behavior translates to the graph getting very close, arbitrarily close, to the <m>x</m>-axis. We say that the <m>x</m>-axis, or equivalently the horizontal line <m>y = 0</m>, is a <term>horizontal asymptote</term> of the function <m>y = \dfrac{1}{x}</m>.
+In terms of the graph, this behavior translates to the graph getting very close, <em>arbitrarily close</em>, to the <m>x</m>-axis as <m>x</m> increases. We say that the <m>x</m>-axis, or equivalently the horizontal line <m>y = 0</m>, is a <term>horizontal asymptote</term> of the function <m>y = \dfrac{1}{x}</m>.
     </p>
 
     <p>
-        Observe that as <m>x</m> is getting close to 0 from the right, the values are becoming very large. We test a few positive inputs close to <m>0</m>: <md>x = \frac{1}{2}, \hspace{2pt} \frac{1}{3}, \hspace{2pt} \frac{1}{4}, \hspace{2pt} \frac{1}{5}, \hspace{2pt} \dots \frac{1}{1000}\dots</md> The corresponding values <m>\displaystyle y = \frac{1}{x}</m> are: <md>y = 2, \hspace{2pt} 3, \hspace{2pt} 4, \hspace{2pt} 5, \hspace{2pt} \dots 1000 \hspace{2pt} \dots</md> In terms of the graph, this behavior translates to the graph getting very close to the <m>y</m>-axis with the values of the function becoming arbitrarily large. We say that the <m>y</m>-axis, or equivalently the vertical line <m>x = 0</m>, is a <term>vertical asymptote</term> of the function <m>\displaystyle y = \frac{1}{x}</m>.
+        Observe that as <m>x</m> is getting close to 0 from the right, the values are becoming very large. We test a few positive inputs close to <m>0</m>: <md>x = \frac{1}{2}, \hspace{2pt} \frac{1}{3}, \hspace{2pt} \frac{1}{4}, \hspace{2pt} \frac{1}{5}, \hspace{2pt} \dots \frac{1}{1000}\dots</md> The corresponding values <m>\displaystyle y = \frac{1}{x}</m> are: <md>y = 2, \hspace{2pt} 3, \hspace{2pt} 4, \hspace{2pt} 5, \hspace{2pt} \dots 1000 \hspace{2pt} \dots</md> In terms of the graph, this behavior translates to the graph getting very close to the <m>y</m>-axis, as <m>x</m> approaches <m>0</m> from the right, with the values of the function becoming arbitrarily large. We say that the <m>y</m>-axis, or equivalently the vertical line <m>x = 0</m>, is a <term>vertical asymptote</term> of the function <m>\displaystyle y = \frac{1}{x}</m>.
     </p>
 
     <p>
-        The portion of the graph corresponding to negative inputs <m>x</m>, is symmetric about the origin to the portion of the graph corresponding to positive inputs. Indeed, when <m>x</m> changes sign <m>y = \frac{1}{x}</m> changes sign: <md>\frac{1}{-x} = -\frac{1}{x}.</md>
+        The portion of the graph corresponding to negative inputs <m>x</m>, is symmetric about the origin to the portion of the graph corresponding to positive inputs. Indeed, when <m>x</m> changes sign <m>y = \dfrac{1}{x}</m> changes sign: <md>\frac{1}{-x} = -\frac{1}{x}.</md>
     </p>
 
     <p>
@@ -390,20 +391,18 @@ xlabel=\(x\), ylabel=\(y\),
 </p>
 
 
-<sidebyside widths="20% 40% 40%" margins="0% 0%"
-    valigns="middle middle middle">
+<sidebyside widths="48% 30% 22%" margins="0% 0%" valigns="middle middle middle">
 <p><m>f(x)=kx^p</m></p>
-<p><m>p</m> even and negative</p>
-<p><m>p</m> odd and negative</p>
+<p><m>p</m> even &amp; negative</p>
+<p><m>p</m> odd &amp; negative</p>
 </sidebyside>
 
-<sidebyside widths="20% 40% 40%" margins="0% 0%"
-    valigns="middle middle middle">
+<sidebyside widths="38% 32% 30%" margins="0% 0%" valigns="middle middle middle">
 <p>Positive coefficient, <m>k \gt 0</m></p>
 <image width="100%" xml:id="fig_4_4_summary_even_neg_pos">
 <shortdescription>Graph of a representative power function with even negative exponent and positive coefficient.</shortdescription>
 <latex-image label="4_4_summary_even_neg_pos_fig">
-\begin{tikzpicture}[scale=0.55]
+\begin{tikzpicture}[scale=0.5]
 \begin{axis}[grid=none,
 xmin=-4,xmax=4,
 ymin=-4,ymax=4,
@@ -420,7 +419,7 @@ samples=250]
 <image width="100%" xml:id="fig_4_4_summary_odd_neg_pos">
 <shortdescription>Graph of a representative power function with odd negative exponent and positive coefficient.</shortdescription>
 <latex-image label="4_4_summary_odd_neg_pos_fig">
-\begin{tikzpicture}[scale=0.55]
+\begin{tikzpicture}[scale=0.5]
 \begin{axis}[grid=none,
 xmin=-4,xmax=4,
 ymin=-4,ymax=4,
@@ -436,13 +435,12 @@ samples=250]
 </image>
 </sidebyside>
 
-<sidebyside widths="20% 40% 40%" margins="0% 0%"
-    valigns="middle middle middle">
+<sidebyside widths="38% 32% 30%" margins="0% 0%" valigns="middle middle middle">
 <p>Negative coefficient, <m>k \lt 0</m></p>
 <image width="100%" xml:id="fig_4_4_summary_even_neg_neg">
 <shortdescription>Graph of a representative power function with even negative exponent and negative coefficient.</shortdescription>
 <latex-image label="4_4_summary_even_neg_neg_fig">
-\begin{tikzpicture}[scale=0.55]
+\begin{tikzpicture}[scale=0.5]
 \begin{axis}[grid=none,
 xmin=-4,xmax=4,
 ymin=-4,ymax=4,
@@ -459,7 +457,7 @@ samples=250]
 <image width="100%" xml:id="fig_4_4_summary_odd_neg_neg">
 <shortdescription>Graph of a representative power function with odd negative exponent and negative coefficient.</shortdescription>
 <latex-image label="4_4_summary_odd_neg_neg_fig">
-\begin{tikzpicture}[scale=0.55]
+\begin{tikzpicture}[scale=0.5]
 \begin{axis}[grid=none,
 xmin=-4,xmax=4,
 ymin=-4,ymax=4,
@@ -525,19 +523,31 @@ samples=250]
 
 <li>
 <p>
-    <m>g(x)</m> is a power function: <md>g(x) = \frac{2x^{1/3}}{x^4} = 2x^{\frac{1}{3} - 4} = 2x^{-\frac{11}{3}}</md> The coefficient is <m>k = 2</m> and the exponent is <m>p = -\frac{11}{3}</m>.
+The function <m>g(x)</m> is a power function: <md>g(x) = \frac{2x^{1/3}}{x^4} = 2x^{\frac{1}{3} - 4} = 2x^{-\frac{11}{3}}</md> The coefficient is <m>k = 2</m> and the exponent is <m>p = -\frac{11}{3}</m>.
 </p>
 </li>
 
 <li>
 <p>
-    <m>h(x)</m> is a power function as well. Using rules of exponents for arbitrary exponents and properties of the square root, we can rewrite:
+The function <m>h(x)</m> is a power function as well. Using rules of exponents for arbitrary exponents and properties of the square root, we can rewrite:
 </p>
 <p>
 <md>
-<mrow>h(x) \amp = \sqrt{\frac{2x}{x^{-2}}} = \frac{\sqrt{2x}}{\sqrt{x^{-2}}} = \frac{\sqrt{2} \cdot x^{1/2}}{(x^{-2})^{1/2}} </mrow>
-<mrow>\amp= \frac{\sqrt{2} \cdot x^{1/2}}{x^{-1}} = \sqrt{2} \cdot x^{(1/2 - (-1))} </mrow>
-<mrow>\amp = \sqrt{2} \cdot x^{\frac{3}{2}}</mrow>
+<mrow>
+h(x) \amp = \sqrt{\frac{2x}{x^{-2}}} = \frac{\sqrt{2x}}{\sqrt{x^{-2}}} = \frac{\sqrt{2} \cdot x^{1/2}}{(x^{-2})^{1/2}}
+</mrow>
+<mrow>
+\amp= \frac{\sqrt{2} \cdot x^{1/2}}{x^{-2 \cdot 1/2}}
+</mrow>
+<mrow>
+\amp= \frac{\sqrt{2} \cdot x^{1/2}}{x^{-1}}
+</mrow>
+<mrow>
+\amp= \sqrt{2} \cdot x^{(1/2 - (-1))}
+</mrow>
+<mrow>
+\amp = \sqrt{2} \cdot x^{\frac{3}{2}}
+</mrow>
 </md>
 </p>
 <p>
@@ -609,7 +619,7 @@ The coefficient is <m>k = \sqrt{2}</m> and the exponent is <m>p = \frac{3}{2}</m
     <title>Graphs of Power Functions: Fractional Exponents</title>
 
 <p>
-    When considering power functions with fractional exponents or, more general, with exponents which are not integers, we restrict the domain to <m>x \geq 0</m> (or to <m>x \gt 0</m> if a non-integral exponent is negative). The graphs of <m>x^{1/2}</m> and <m>x^{3/2}</m> are given below as an example. Traditionally, roots of odd orders like <m>\sqrt[3]{x}</m> or <m>\sqrt[5]{x}</m> are considered and graphed for all <m>x</m>.
+    When considering power functions with fractional exponents or, more generally, with exponents which are not integers, we restrict the domain to <m>x \geq 0</m> (or to <m>x \gt 0</m> if a non-integral exponent is negative). The graphs of <m>x^{1/2}</m> and <m>x^{3/2}</m> are given below as an example. Traditionally, roots of odd orders like <m>\sqrt[3]{x}</m> or <m>\sqrt[5]{x}</m> are considered and graphed for all <m>x</m>.
 </p>
 
 

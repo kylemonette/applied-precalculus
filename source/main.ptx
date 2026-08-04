@@ -17,6 +17,10 @@
     <xi:include href="./ch-2.ptx" />
     <xi:include href="./ch-3.ptx" />
     <xi:include href="./ch-4.ptx" />
+<xi:include href="./ch-5.ptx" />
+<xi:include href="./ch-6.ptx" />
+<xi:include href="./ch-7.ptx" />
+<xi:include href="./ch-8.ptx" />
 
 
     <!-- Include backmatter -->

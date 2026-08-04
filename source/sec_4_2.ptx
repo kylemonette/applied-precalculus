@@ -33,7 +33,9 @@
 </objectives>
 
 <p>
-In this section, we will review the concepts of roots and radicals. Please note that in this book we stay within real numbers, and we do not consider complex numbers. In particular, when we talk about roots, we mean real roots.
+In this section, we will review the concepts of roots and radicals.
+Please note that in this book the focus is on real numbers<mdash/>complex numbers are not considered.
+In particular, when we talk about roots, we mean <em>real</em> roots.
 </p>
 
 </introduction>
@@ -42,24 +44,30 @@ In this section, we will review the concepts of roots and radicals. Please note 
 <subsection>
 <title>Roots and Radicals</title>
 
-    <p>
-        We say that a number <m>y</m> is a root of order 2 (a square root) of a number <m>a</m> if <m>y^2 = a</m>. We say that a number <m>y</m> is a root of order 3 (a cube root) of <m>a</m> if <m>y^3 = a</m> and so on.
-    </p>
+<p>
+We say that a number <m>y</m> is a root of order <m>2</m> (a square root) of a number <m>a</m> if <m>y^2 = a</m>.
+Similarly, we say that a number <m>y</m> is a root of order <m>3</m> (a cube root) of <m>a</m> if <m>y^3 = a</m>.
+The definition of a root of order <m>n</m> is given below.
+</p>
 
 <definition>
 <statement>
-    <p>
-        Let <m>a</m> be a given number and let <m>n</m> be a positive integer. We say that <m>y</m> is a root of order <m>n</m> of <m>a</m>, or an <m>n</m>th root of <m>a</m>, if <m>y^n = a</m>.
-    </p>
+<p>
+Let <m>a</m> be a given number and let <m>n</m> be a positive integer.
+We say that <m>y</m> is a root of order <m>n</m> of <m>a</m>, or an <m>n</m>th root of <m>a</m>, if <m>y^n = a</m>.
+</p>
 </statement>
 </definition>
 
 <p>
-    For example, let <m>a = 4</m>, <m>n = 2</m>. The number <m>4</m> has two roots of order <m>2</m>: <m>y = 2</m> and <m>y = -2</m>, since <m>2^2 = (-2)^2 = 4</m>. On the other hand, let <m>a = -4</m> and <m>n = 2</m>. The number <m>-4</m> has no roots of order <m>2</m>, since there are no numbers whose square is <m>-4</m>. We say that the square root of <m>-4</m> <em>does not exist</em>.
+For example, let <m>a = 4</m> and <m>n = 2</m>. The number <m>4</m> has two roots of order <m>2</m>: <m>y = 2</m> and <m>y = -2</m>, since <m>2^2 = (-2)^2 = 4</m>.
+However, if <m>a = -4</m> and <m>n = 2</m>, the situation would be different.
+The number <m>-4</m> has no roots of order <m>2</m>, since there are no real numbers whose square is <m>-4</m>.
+We say that the square root of <m>-4</m> <em>does not exist</em>.
 </p>
 
 <p>
-    Take <m>a = -64</m> and <m>n = 3</m>. The number <m>-64</m> has <em>exactly one</em> root of order 3 which is <m>y = -4</m>. Indeed, <m>(-4)^3 = -64</m>. Observe that <m>4^3 = 64</m> so 4 is <em>not</em> a cube root of <m>-64</m>.
+Now, take <m>a = -64</m> and <m>n = 3</m>. The number <m>-64</m> has <em>exactly one</em> root of order 3, which is <m>y = -4</m>. Indeed, <m>(-4)^3 = -64</m>. Observe that <m>4^3 = 64</m> so 4 is <em>not</em> a cube root of <m>-64</m>.
 </p>
 
 <theorem>
@@ -84,14 +92,14 @@ Let <m>a</m> be a given number and <m>n</m> be a positive integer.
                     <p>
                     If <m>a \gt 0</m>, then <m>a</m> has two <m>n</m>th roots, one positive and one of the same magnitude but negative. We denote the <term>positive</term> <m>n</m>th root as:
                     <md>\sqrt[n]{a}</md>
-                    (We use the <q>radical</q> symbol <m>\sqrt{\,\,}</m>.)
+                    (We use the <q>radical</q> symbol <m>\sqrt{\,\,}</m> to denote a root.)
                     The two <m>n</m>th roots can then be written as
                     <md>\sqrt[n]{a} \hspace{15pt} \text{and} \hspace{12pt}  -\sqrt[n]{a}
                     .</md>
                     </p>
                     <aside>
                     <p>
-                    Typically, we might use the notation <m>\pm \sqrt[n]{a}</m> to denote the positive and negative roots.
+                    We often use the notation <m>\pm \sqrt[n]{a}</m> to denote the positive and negative roots.
                     </p>
                     </aside>
                 </li>
@@ -99,7 +107,7 @@ Let <m>a</m> be a given number and <m>n</m> be a positive integer.
         </li>
 
         <li>
-        Suppose <m>n</m> is odd. Then <m>a</m> has exactly one <m>n</m>th root which we denote as <md>\sqrt[n]{a}</md> If <m>a</m> is negative, the root is negative; if <m>a</m> is positive the root is positive.
+        Suppose <m>n</m> is odd. Then <m>a</m> has exactly one <m>n</m>th root which we denote as <md>\sqrt[n]{a}.</md> If <m>a</m> is negative, the root is negative; if <m>a</m> is positive the root is positive.
         </li>
 
         <li>
@@ -154,7 +162,10 @@ We are looking for all numbers <m>y</m> such that <m>y^4 = 81</m>. The order, <m
 
 <li>
 <p>
-<m>7</m> has two roots of order <m>2</m>: <m>\sqrt{7}</m> and <m>-\sqrt{7}</m>. We cannot easily guess them as they are not integers. We can use our calculator, though, and calculate <m>\sqrt{7} \approx 2.65</m>. The two roots are then approximately <m>2.65</m> and <m>-2.65</m>.
+The number <m>7</m> has two roots of order <m>2</m>: <m>\sqrt{7}</m> and <m>-\sqrt{7}</m>.
+We cannot easily guess them as they are not integers.
+Using a calculator, though, <m>\sqrt{7} \approx 2.65</m>.
+The two roots are then approximately <m>2.65</m> and <m>-2.65</m>.
 </p>
 </li>
 
@@ -179,7 +190,8 @@ A negative number <m>a = -81</m> has no roots of even order, and <m>4</m> is eve
 
 
 <p>
-By definition, <m>x</m> is a root of order <m>n</m> of <m>a</m> if <m>x</m> is a solution to the equation: <md>x^n = a</md> Hence, roots and radicals appear naturally when solving equations containing powers of the unknown. We saw plenty of radicals in Chapter 3 in the context of quadratic equations.
+By definition, <m>x</m> is a root of order <m>n</m> of <m>a</m> if <m>x</m> is a solution to the equation: <md>x^n = a</md> Hence, roots and radicals appear naturally when solving equations containing powers of the unknown.
+You may recall seeing many radicals in Chapter 3 in the context of quadratic equations.
 </p>
 
 <example>
@@ -309,7 +321,8 @@ We begin by <q>solving</q> for <m>(x - 1)</m>. Subtract <m>3</m> from both sides
 <p>
 To extend the definition to fractional exponents <m>a^{\frac{m}{n}}</m>, we will use roots. In the first step, for every positive integer <m>n</m>, we define <m>a^{\frac{1}{n}}</m> as: <md>a^{\frac{1}{n}} = \sqrt[n]{a}</md> Does this make sense?
 Recall that <m>\left(\sqrt[n]{a}\right)^n = a</m>.
-Therefore, <md>(a^{\frac{1}{n}})^n = a</md> which is what Rules of Exponents would dictate. In the next step, we define <m>a^{\frac{m}{n}} = (a^{\frac{1}{n}})^m = (\sqrt[n]{a})^m</m> which seems to make sense. Here is a precise definition of a power with a fractional exponent.
+Therefore, <md>(a^{\frac{1}{n}})^n = a</md> which is what Rules of Exponents would dictate. In the next step, we define <m>a^{\frac{m}{n}} = (a^{\frac{1}{n}})^m = (\sqrt[n]{a})^m</m>.
+Here is a precise definition of a power with a fractional exponent.
 </p>
 
 <definition>
@@ -321,11 +334,17 @@ Let <m>a</m> be a given number and let <m>m</m> and <m>n</m> be positive integer
 <md>
 <mrow>a^{\frac{1}{n}} \amp = \sqrt[n]{a} </mrow>
 <mrow>a^{\frac{m}{n}} \amp = (\sqrt[n]{a})^m = \sqrt[n]{a^m} </mrow>
-<mrow>a^{-\frac{m}{n}} \amp = \frac{1}{a^{m/n}} \hspace{7pt} \text{provided} \hspace{7pt} a \neq 0.</mrow>
 </md>
 </p>
 </statement>
 </definition>
+
+<p>
+Using properties of exponents, we also have
+<md>
+a^{-\frac{m}{n}} = \frac{1}{a^{m/n}} \hspace{7pt} \text{provided} \hspace{7pt} a \neq 0.
+</md>
+</p>
 
 <p>
     Note that <m>\sqrt[n]{a}</m> exists unless <m>n</m> is even and <m>a</m> is negative. The combination of negative radicands (numbers under radicals) with even roots causes a number of problems for the behavior of fractional exponents, and the Rules of Exponents do not always hold.
@@ -336,7 +355,7 @@ For example, is the following equality <em>always</em> true?
 <md>\left( a^{\frac{1}{n}} \right)^m = \left( a^m \right)^{\frac{1}{n}}</md>
 It seems reasonable at first, but consider the following:
 <md>\left( (-4)^{\frac{1}{4}} \right)^2 \quad \text{and} \quad \left( (-4)^2 \right)^{\frac{1}{4}}.</md> The first number is <m>\left( (-4)^{\frac{1}{4}} \right)^2 = (\sqrt[4]{-4})^2</m> which is undefined. However, <md>\left( (-4)^2 \right)^{\frac{1}{4}} = 16^{\frac{1}{4}} = \sqrt[4]{16} = 2.</md>
-Therefore, when we talk about fractional powers, we will most often assume that bases are positive except for some very simple cases like: <md>a^{\frac{1}{3}} = \sqrt[3]{a}.</md>
+Therefore, when we talk about fractional powers, we will most often assume that bases are positive except for some simple cases where no issues arise, such as <md>a^{\frac{1}{3}} = \sqrt[3]{a}.</md>
 </p>
 
 <example>
@@ -395,18 +414,19 @@ Therefore, when we talk about fractional powers, we will most often assume that 
 </ol>
 </p>
 
-<p>
-    Depending on your calculator, it may be easier to calculate a fractional power than to enter the corresponding radical. You can simply enter <c>1700^(1/20)</c>. Be sure to use parentheses!
-</p>
-
 </solution>
 </example>
 
+<aside>
+<p>
+    Depending on your calculator, it may be easier to calculate a fractional power than to enter the corresponding radical. You can simply enter <c>1700^(1/20)</c>. Be sure to use parentheses!
+</p>
+</aside>
 
 
 
 <p>
-We have defined powers <m>a^p</m> for integer and fractional exponents <m>p</m>. As you may know, not all real numbers can be expressed as fractions (irrational numbers, for example). Can we define powers <m>a^p</m> for all real numbers <m>p</m>? The answer is affirmative provided the base <m>a</m> is positive. The construction falls outside the scope of this course. It suffices to know that <m>a^p</m> can be defined for all exponents and Rules of Exponents are preserved. Therefore, we have the following result.
+We have defined powers <m>a^p</m> for integer and fractional exponents <m>p</m>. As you may know, not all real numbers can be expressed as fractions (irrational numbers, for example). Can we define powers <m>a^p</m> for all real numbers <m>p</m>? The answer is yes, provided the base <m>a</m> is positive. The construction falls outside the scope of this course. It suffices to know that <m>a^p</m> can be defined for all exponents and Rules of Exponents are preserved. Therefore, we have the following result.
 </p>
 
 <theorem>
@@ -487,25 +507,55 @@ Rewrite each of the following expressions as a power of 5; that is, in the form 
 <p><ol>
 <li>
 <p>
-    By definition of fractional powers: <md>\sqrt[3]{5} = 5^{\frac{1}{3}}.</md>
+By definition of fractional powers, <md>\sqrt[3]{5} = 5^{\frac{1}{3}}.</md>
 </p>
 </li>
 
 <li>
 <p>
-    By definition of fractional powers and <xref ref="int-exps-prop2">Property</xref>: <md>5\sqrt{5} = 5 \cdot 5^{\frac{1}{2}} = 5^{1 + \frac{1}{2}} = 5^{\frac{3}{2}}.</md>
+By definition of fractional powers and the properties above,
+<md>
+5\sqrt{5}
+=
+5 \cdot 5^{\frac{1}{2}}
+\overset{<xref ref="int-exps-prop2">Property</xref>}{=}
+5^{1 + \frac{1}{2}}
+=
+5^{\frac{3}{2}}.
+</md>
 </p>
 </li>
 
 <li>
 <p>
-    Note that <m>25 = 5^2</m>. Using <xref ref="int-exps-prop2">Property</xref> and <xref ref="int-exps-prop3">Property</xref>: <md>\frac{5\sqrt{5}}{25} = \frac{5 \cdot 5^{\frac{1}{2}}}{5^2} = \frac{5^{\frac{3}{2}}}{5^2} = 5^{\frac{3}{2} - 2} = 5^{-\frac{1}{2}}.</md>
+Use the fact that <m>25 = 5^2</m> to simplify the expression:
+<md>
+\frac{5\sqrt{5}}{25}
+=
+\frac{5 \cdot 5^{\frac{1}{2}}}{5^2}
+\overset{<xref ref="int-exps-prop2">Property</xref>}{=}
+\frac{5^{\frac{3}{2}}}{5^2}
+\overset{<xref ref="int-exps-prop4">Property</xref>}{=}
+5^{\frac{3}{2} - 2}
+=
+5^{-\frac{1}{2}}.</md>
 </p>
 </li>
 
 <li>
 <p>
-    Note that <m>\sqrt[3]{5} = 5^{\frac{1}{3}}</m>. Using Rules of Exponents we get: <md>\left( \frac{5}{\sqrt[3]{5}} \right)^2 = \left( \frac{5}{5^{\frac{1}{3}}} \right)^2 = \left( 5^{\frac{2}{3}} \right)^2 = 5^{\frac{2}{3} \cdot 2} = 5^{\frac{4}{3}}.</md>
+Note that <m>\sqrt[3]{5} = 5^{\frac{1}{3}}</m>.
+Therefore:
+<md>
+\left( \frac{5}{\sqrt[3]{5}} \right)^2
+=
+\left( \frac{5}{5^{\frac{1}{3}}} \right)^2
+\overset{<xref ref="int-exps-prop3">Property</xref>}{=}
+\left( 5^{\frac{2}{3}} \right)^2
+\overset{<xref ref="int-exps-prop4">Property</xref>}{=}
+5^{\frac{2}{3} \cdot 2}
+=
+5^{\frac{4}{3}}.</md>
 </p>
 </li>
 
@@ -563,21 +613,34 @@ Use Rules of Exponents to simplify the following. Write your answers in terms of
 
 <li>
 <p>
-By computing <m>\sqrt[3]{8x^2y^6} = \sqrt[3]{8} \cdot \sqrt[3]{x^2} \cdot \sqrt[3]{y^6} = 2 \cdot (x^2)^{1/3} \cdot (y^6)^{1/3}</m> first, then we have <m>2 \cdot x^{2/3} \cdot y^{6/3} = 2x^{2/3}y^2</m>.
+First, compute
+<md>
+\sqrt[3]{8x^2y^6} = \sqrt[3]{8} \cdot \sqrt[3]{x^2} \cdot \sqrt[3]{y^6} = 2 \cdot (x^2)^{1/3} \cdot (y^6)^{1/3}
+.</md>
+Applying properties of exponents:
+<md>
+2 \cdot x^{2/3} \cdot y^{6/3} = 2x^{2/3}y^2
+</md>.
 </p>
 </li>
 
 <li>
 <p>
-<m>\displaystyle
-\frac{b^{\frac{3}{2}}\sqrt{a^3}}{ba^2} = \frac{b^{\frac{3}{2}} a^{\frac{3}{2}}}{b a^2} = b^{\frac{3}{2} - 1} a^{\frac{3}{2} - 2} = b^{1/2}a^{-(1/2)}.</m>
+Applying rules of exponents directly yields:
+<md>
+\frac{b^{\frac{3}{2}}\sqrt{a^3}}{ba^2} = \frac{b^{\frac{3}{2}} a^{\frac{3}{2}}}{b a^2} = b^{\frac{3}{2} - 1} a^{\frac{3}{2} - 2} = b^{1/2}a^{-(1/2)}.
+</md>
 </p>
 </li>
 
 <li>
 <p>
-We have <m>14 = 2 \cdot 7</m>, <m>21 = 3 \cdot 7</m>, <m>x^{-2} = \dfrac{1}{x^2}</m>, <m>\sqrt{x^7} = x^{7/2}</m>. Therefore, <m>\displaystyle 
-\frac{14x^{-2}}{21\sqrt{x^7}} = \frac{2}{3x^2x^{7/2}} = \frac{2}{3}x^{-(11/2)}.</m>
+First, observe that <m>14 = 2 \cdot 7</m> and <m>21 = 3 \cdot 7</m>.
+This allows us to simplify the fraction <m>14/21</m> as <m>2/3</m>.
+Since <m>x^{-2} = \dfrac{1}{x^2}</m> and <m>\sqrt{x^7} = x^{7/2}</m>, then 
+<md>
+\frac{14x^{-2}}{21\sqrt{x^7}} = \frac{2}{3x^2x^{7/2}} = \frac{2}{3}x^{-(11/2)}.
+</md>
 </p>
 </li>
 

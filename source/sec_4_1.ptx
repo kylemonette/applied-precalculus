@@ -110,7 +110,7 @@ Let <m>a</m> and <m>b</m> be given numbers, and let <m>p</m> and <m>r</m> be int
 </theorem>
 
 <p>
-Note that an expression in the formulas above may not be defined if there is a zero in the denominator. For example, in <xref ref="int-exps-prop2">Property</xref>, <m>\frac{1}{a^p}</m> is not defined if <m>a = 0</m> and <m>p \neq 0</m>. That means that <xref ref="int-exps-prop2">Property</xref> holds for any <m>a \neq 0</m>.
+Note that an expression in the formulas above may not be defined if there is a zero in the denominator. For example, in <xref ref="int-exps-prop2">Property</xref>, <m>\dfrac{1}{a^p}</m> is not defined if <m>a = 0</m> and <m>p \neq 0</m>. That means that <xref ref="int-exps-prop2">Property</xref> holds for any <m>a \neq 0</m>.
 </p>
 
 <p>
@@ -186,7 +186,25 @@ a^p \cdot a^r =
 
 <li>
 <p>
-    As <m>\displaystyle 3^{-3} = \frac{1}{3^3}</m> we have: <md>\left( \frac{3^{-3}}{3^{4}} \right)^2 = \left( \frac{1}{3^3 \cdot 3^{4}} \right)^2 = \left( \frac{1}{3^7} \right)^2 = (3^{-7})^2 = 3^{-14}.</md>
+    As <m>\displaystyle 3^{-3} = \frac{1}{3^3}</m> we have:
+<md>
+<mrow>
+\left( \frac{3^{-3}}{3^{4}} \right)^2
+\overset{<xref ref="int-exps-prop2">Property</xref>}{=}
+\left( \frac{1}{3^3 \cdot 3^{4}} \right)^2
+\amp
+\overset{<xref ref="int-exps-prop3">Property</xref>}{=}
+\left( \frac{1}{3^7} \right)^2
+</mrow>
+<mrow>
+\amp \overset{<xref ref="int-exps-prop2">Property</xref>}{=}
+(3^{-7})^2
+</mrow>
+<mrow>
+\amp \overset{<xref ref="int-exps-prop5">Property</xref>}{=}
+3^{-14}.
+</mrow>
+</md>
 </p>
 </li>
 
@@ -239,25 +257,51 @@ a^p \cdot a^r =
 <p><ol>
 <li>
 <p>
-    We use <xref ref="int-exps-prop3">Property</xref> to simplify the expression under the outside power 2. Then we use <xref ref="int-exps-prop5">Property</xref>: <md>(x^2 \cdot x^3)^2 = (x^5)^2 = x^{10}.</md>
+Use <xref ref="int-exps-prop3">Property</xref> to simplify the expression under the outside exponent <m>2</m>, then use <xref ref="int-exps-prop5">Property</xref>:
+<md>(x^2 \cdot x^3)^2 = (x^5)^2 = x^{10}.</md>
 </p>
 </li>
 
 <li>
 <p>
-    We begin by simplifying the expression under the power <m>-3</m> using <xref ref="int-exps-prop4">Property</xref>: <md>\left( \frac{x^2 y^5}{x^4} \right)^{-3} = \left( \frac{y^5}{x^2} \right)^{-3}.</md> Now we use <xref ref="int-exps-prop8">Property</xref> and then <xref ref="int-exps-prop7">Property</xref>: <md>\left( \frac{y^5}{x^2} \right)^{-3} = \left( \frac{x^2}{y^5} \right)^{3} = \frac{(x^2)^3}{(y^5)^3} = \frac{x^6}{y^{15}}.</md>
+Begin by simplifying the expression under the exponent:
+<md>
+<mrow>
+\left( \frac{x^2 y^5}{x^4} \right)^{-3}
+\amp \overset{<xref ref="int-exps-prop4">Property</xref>}{=}
+\left( \frac{y^5}{x^2} \right)^{-3}
+</mrow>
+<mrow>
+\amp \overset{<xref ref="int-exps-prop8">Property</xref>}{=}
+\left( \frac{x^2}{y^5} \right)^{3}
+</mrow>
+<mrow>
+\amp \overset{<xref ref="int-exps-prop7">Property</xref>}{=}
+\frac{(x^2)^3}{(y^5)^3} = \frac{x^6}{y^{15}}
+</mrow>
+</md>
 </p>
 </li>
 
 <li>
 <p>
-    We simplify the expression under the power <m>-1</m> using <xref ref="int-exps-prop2">Property</xref>: <md>\left( \frac{x^{-2} y^5}{x^{-3} y^2} \right)^{-1} = \left( \frac{x^{3} y^5}{x^{2} y^2} \right)^{-1}.</md> By <xref ref="int-exps-prop4">Property</xref> and then <xref ref="int-exps-prop2">Property</xref>: <md>\left( \frac{x^{3} y^5}{x^{2} y^2} \right)^{-1} = (x y^3)^{-1} = \frac{1}{x y^3}.</md>
+Again, begin by simplifying under the exponent <m>-1</m>:
+<md>
+\left( \frac{x^{-2} y^5}{x^{-3} y^2} \right)^{-1}
+\overset{<xref ref="int-exps-prop2">Property</xref>}{=}
+\left( \frac{x^{3} y^5}{x^{2} y^2} \right)^{-1}
+\overset{<xref ref="int-exps-prop4">Property</xref>}{=}
+(x y^3)^{-1}
+\overset{<xref ref="int-exps-prop2">Property</xref>}{=}
+\frac{1}{x y^3}
+.
+</md>
 </p>
 </li>
 
 <li>
 <p>
-    There is no rule for the power of a sum or a difference! We cannot simplify <m>(a + b)^7</m> using Rules of Exponents. You certainly <term>cannot</term> distribute the power <m>7</m> and write the expression as <m>a^7 + b^7</m>.
+    There is no rule for the power of a sum or a difference! We cannot simplify <m>(a + b)^7</m> using rules of exponents. You certainly <term>cannot</term> distribute the power <m>7</m> and write the expression as <m>a^7 + b^7</m>.
 </p>
 </li>
 

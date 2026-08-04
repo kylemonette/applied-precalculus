@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter_6" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Logarithms and Their Applications</title>
+
+  <introduction>
+    <p>
+        Intro about Chapter 6.
+    </p>
+</introduction>
+
+<xi:include href="sec_6_1.ptx" />
+<xi:include href="sec_6_2.ptx" />
+<xi:include href="sec_6_3.ptx" />
+</chapter>

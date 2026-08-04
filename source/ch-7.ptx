@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="chapter_7" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>New Functions from Old</title>
+
+  <introduction>
+    <p>
+        Intro about Chapter 7.
+    </p>
+</introduction>
+
+<xi:include href="sec_7_1.ptx" />
+<xi:include href="sec_7_2.ptx" />
+<xi:include href="sec_7_3.ptx" />
+<xi:include href="sec_7_4.ptx" />
+</chapter>
