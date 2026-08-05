@@ -3922,7 +3922,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "Values of Sine and Cosine for Angles on the Unit Circle",
-  "body": " Values of Sine and Cosine for Angles on the Unit Circle    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Values of Sine and Cosine for Angles on the Unit Circle    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.        "
 },
 {
   "id": "sec_8_3-2",
@@ -3932,6 +3932,15 @@ var ptx_lunr_docs = [
   "number": "8.3",
   "title": "",
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "fig_8_3_sin_cos",
+  "level": "2",
+  "url": "sec_8_3.html#fig_8_3_sin_cos",
+  "type": "Figure",
+  "number": "8.3.1",
+  "title": "",
+  "body": "  "
 },
 {
   "id": "sec_8_4",
