@@ -32,4 +32,14 @@
 </objectives>
 
 
+<figure xml:id="fig_8_3_sin_cos">
+<interactive platform="jsxgraph" source="jsxgraph/jsx_8_3_sin_cos.js" width="60%">
+    <slate xml:id="jsx_8_3_sin_cos_fig" surface="jsxboard"/>
+    <instructions>
+        <p>Drag the point <m>P = (x,y) = (\cos \theta, \sin \theta)</m> around the circle.</p>
+    </instructions>
+</interactive>
+</figure>
+
+
 </section>
