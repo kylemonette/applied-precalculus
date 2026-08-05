@@ -3643,7 +3643,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Graphs of Exponential Functions",
-  "body": " Graphs of Exponential Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Graphs of Exponential Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.        "
 },
 {
   "id": "sec_5_2-2",
@@ -3653,6 +3653,15 @@ var ptx_lunr_docs = [
   "number": "5.2",
   "title": "",
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "fig_5_2_exp_fun",
+  "level": "2",
+  "url": "sec_5_2.html#fig_5_2_exp_fun",
+  "type": "Figure",
+  "number": "5.2.1",
+  "title": "",
+  "body": "  "
 },
 {
   "id": "sec_5_3",
@@ -3769,7 +3778,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "Vertical and Horizontal Shifts",
-  "body": " Vertical and Horizontal Shifts    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Vertical and Horizontal Shifts    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.           "
 },
 {
   "id": "sec_7_1-2",
@@ -3781,13 +3790,31 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "fig_7_1_vert_shift",
+  "level": "2",
+  "url": "sec_7_1.html#fig_7_1_vert_shift",
+  "type": "Figure",
+  "number": "7.1.1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "fig_7_1_hor_shift",
+  "level": "2",
+  "url": "sec_7_1.html#fig_7_1_hor_shift",
+  "type": "Figure",
+  "number": "7.1.2",
+  "title": "",
+  "body": "  "
+},
+{
   "id": "sec_7_2",
   "level": "1",
   "url": "sec_7_2.html",
   "type": "Section",
   "number": "7.2",
   "title": "Vertical and Horizontal Scaling",
-  "body": " Vertical and Horizontal Scaling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Vertical and Horizontal Scaling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.           "
 },
 {
   "id": "sec_7_2-2",
@@ -3797,6 +3824,24 @@ var ptx_lunr_docs = [
   "number": "7.2",
   "title": "",
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "fig_7_2_vert_scal",
+  "level": "2",
+  "url": "sec_7_2.html#fig_7_2_vert_scal",
+  "type": "Figure",
+  "number": "7.2.1",
+  "title": "",
+  "body": "  "
+},
+{
+  "id": "fig_7_2_hor_scal",
+  "level": "2",
+  "url": "sec_7_2.html#fig_7_2_hor_scal",
+  "type": "Figure",
+  "number": "7.2.2",
+  "title": "",
+  "body": "  "
 },
 {
   "id": "sec_7_3",
