@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Average Rate of Change</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="external/custom.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: true,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+lang: "en-US",
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Applied Precalculus">
+<meta property="og:title" content="Applied Precalculus">
+<meta property="book:title" content="Applied Precalculus">
+<meta name="twitter:description" content="Applied Precalculus Description">
+<meta property="og:description" content="Applied Precalculus Description">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.2';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.ed2cce180827a7ad.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.18fa7ea1d9f376c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="apc" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="apc.html"><span class="title">Applied Precalculus</span></a></div>
+<p class="byline">Erin Denette &amp; Barbara Kaskosz</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-2.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-embed-button" class="ptx-embed-button button" title="Embed this page"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe86f;</span><span class="name">Embed</span></button><dialog class="ptx-dialog ptx-embed-popup" id="ptx-embed-popup"><div class="ptx-embed-popup-controls">
+<p>Copy the code below to embed this page in your own website or LMS page.</p>
+<button class="ptx-embed-close-button button" id="ptx-embed-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-embed-code-container">
+<textarea class="ptx-embed-code-textbox" id="ptx-embed-code-textbox" readonly aria-label="Embed"><iframe src="https://example.com/embed" width="100%" height="1000"></iframe></textarea><button autofocus="autofocus" class="ptx-embed-copy-button button" id="ptx-embed-copy-button" title="Copy"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe14d;</span><span class="name">Copy</span></button>
+</div></dialog><button id="ptx-read-aloud-button" class="ptx-read-aloud-button button" title="Read aloud" aria-expanded="false"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf1bc;</span><span class="name">Read aloud</span></button><div id="ptx-read-aloud-player" class="ptx-read-aloud-player" hidden="hidden" role="group" aria-label="Read aloud">
+<button id="ptx-read-aloud-prev" class="button" title="Previous sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe045;</span></button><button id="ptx-read-aloud-toggle" class="ptx-read-aloud-toggle button" title="Play"><span class="ptx-read-aloud-icon-play"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></span><span class="ptx-read-aloud-icon-pause"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe034;</span></span></button><button id="ptx-read-aloud-next" class="button" title="Next sentence"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe044;</span></button><a id="ptx-read-aloud-continue" class="ptx-read-aloud-continue button" hidden="hidden">Continue<span class="icon material-symbols-outlined" aria-hidden="true">&#xe037;</span></a><button id="ptx-read-aloud-settings-button" class="ptx-read-aloud-settings-button button" title="Reading settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe429;</span></button>
+</div>
+<dialog class="ptx-dialog ptx-read-aloud-settings-popup" id="ptx-read-aloud-settings-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Read aloud settings</h2>
+<button class="ptx-read-aloud-settings-close-button button" id="ptx-read-aloud-settings-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label for="ptx-read-aloud-voice"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe91f;</span><span>Voice</span></label><select id="ptx-read-aloud-voice"></select><label class="ptx-readability-slider-label" for="ptx-read-aloud-rate"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe9e4;</span><span>Reading speed</span><output id="ptx-read-aloud-rate-value" for="ptx-read-aloud-rate">1×</output></label><input type="range" id="ptx-read-aloud-rate" min="0.5" max="2" step="0.1" value="1"><label for="ptx-read-aloud-asides"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d7;</span><span>Collapsed content</span></label><select id="ptx-read-aloud-asides"><option value="skip">Announce, do not read</option>
+<option value="read">Read automatically</option></select><label for="ptx-read-aloud-autoscroll"><input type="checkbox" id="ptx-read-aloud-autoscroll" checked><span>Follow along (auto-scroll)</span></label><label for="ptx-read-aloud-autocontinue"><input type="checkbox" id="ptx-read-aloud-autocontinue"><span>Continue to the next page automatically</span></label>
+</div></dialog><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec_1_4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="chapter_1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="chapter_2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\usepackage{xcolor,color}
+\newcommand{\aroc}{\text{ARC}}
+\newcommand{\pbr}[1]{\left( #1 \right)}
+\newcommand{\sbr}[1]{\left\{ #1 \right\}}
+\newcommand{\cbr}[1]{\left[ #1 \right]}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\markcell}[2]{
+\tikz[remember picture, baseline=(#1.base)] \node[inner sep=0pt] (#1) {#2};
+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul id="ptx-toc-group-frontmatter" class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">About the Authors</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="chapter_1.html" class="internal"><span class="codenumber">1</span> <span class="title">Introduction to Functions</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-chapter_1">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_1-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_1_1.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Concept of a Function</span></a></div>
+<ul id="ptx-toc-group-sec_1_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-4" class="internal"><span class="title">Functions in General</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-5" class="internal"><span class="title">Functions in Applied Settings</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-6" class="internal"><span class="title">Increasing and Decreasing Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_1.html#sec_1_1-7" class="internal"><span class="title">Functions as a Sequence of Operations</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_1.html#practice_1_1" class="internal"><span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_1.html#ex_1_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_1_2.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The Graph of a Function</span></a></div>
+<ul id="ptx-toc-group-sec_1_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_2.html#sec_1_2-4" class="internal"><span class="title">Graphs of Increasing and Decreasing Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_1_2.html#sec_1_2-5" class="internal"><span class="title">Vertical Line Test</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_2.html#ex_1_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_1_3.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Functions Given Numerically</span></a></div>
+<ul id="ptx-toc-group-sec_1_3" class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_3.html#practice_1_3" class="internal"><span class="codenumber">1.3</span> <span class="title">Practice Problems</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_3.html#ex_1_3" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_1_4.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Vertical and Horizontal Intercepts</span></a></div>
+<ul id="ptx-toc-group-sec_1_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_4.html#ex_1_4" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec_1_5.html" class="internal"><span class="codenumber">1.5</span> <span class="title">The Average Rate of Change</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec_1_5"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_1_5.html#ex_1_5" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_2.html" class="internal"><span class="codenumber">2</span> <span class="title">Linear Functions</span></a></div>
+<ul id="ptx-toc-group-chapter_2" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_2-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_2_1.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Properties of Linear Functions</span></a></div>
+<ul id="ptx-toc-group-sec_2_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-4" class="internal"><span class="title">Practical Interpretation of the Slope and Vertical Intercept</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-5" class="internal"><span class="title">Graphs of Linear Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-6" class="internal"><span class="title">The Slope Formula</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_1.html#sec_2_1-7" class="internal"><span class="title">Constant Functions, Horizontal and Vertical Lines</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_2_1.html#ex_2_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_2_2.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Working with Linear Functions and Linear Equations</span></a></div>
+<ul id="ptx-toc-group-sec_2_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_2.html#sec_2_2-4" class="internal"><span class="title">Linear Functions and Linear Equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_2_2.html#sec_2_2-5" class="internal"><span class="title">Number of Solutions to a Linear Equation in One Variable</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_2_2.html#ex_2_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_2_3.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Modeling and Numerically Given Functions</span></a></div>
+<ul id="ptx-toc-group-sec_2_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_2_3.html#ex_2_3" class="internal"><span class="codenumber">2.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_3.html" class="internal"><span class="codenumber">3</span> <span class="title">Quadratic Functions</span></a></div>
+<ul id="ptx-toc-group-chapter_3" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_3-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_3_1.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Introduction to Quadratic Functions</span></a></div>
+<ul id="ptx-toc-group-sec_3_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_1.html#sec_3_1-4" class="internal"><span class="title">Graphs of Quadratic Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_1.html#sec_3_1-5" class="internal"><span class="title">Quadratic Functions and Their Graphs in Applications</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_1.html#ex_3_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_3_2.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Factoring Quadratic Expressions</span></a></div>
+<ul id="ptx-toc-group-sec_3_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_2.html#sec_3_2-4" class="internal"><span class="title">Quadratic Functions and Projectile Motion</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_2.html#ex_3_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_3_3.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Vertex Form and Completing the Square</span></a></div>
+<ul id="ptx-toc-group-sec_3_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_3.html#sec_3_3-4" class="internal"><span class="title">Converting from Vertex Form to Standard Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_3.html#sec_3_3-5" class="internal"><span class="title">Converting from Standard Form to Vertex Form</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_3.html#sec_3_3-6" class="internal"><span class="title">Using Vertex Form to Find Horizontal Intercepts</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_3.html#ex_3_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_3_4.html" class="internal"><span class="codenumber">3.4</span> <span class="title">The Quadratic Formula</span></a></div>
+<ul id="ptx-toc-group-sec_3_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_4.html#sec_3_4-4" class="internal"><span class="title">The Discriminant</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_4.html#sec_3_4-5" class="internal"><span class="title">Using Horizontal Intercepts to Find the Vertex</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_3_4.html#sec_3_4-6" class="internal"><span class="title">Factored Form of a Quadratic Function</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_3_4.html#ex_3_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_4.html" class="internal"><span class="codenumber">4</span> <span class="title">Power Functions</span></a></div>
+<ul id="ptx-toc-group-chapter_4" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_4-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4_1.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Algebra of Powers: Integral Exponents</span></a></div>
+<ul id="ptx-toc-group-sec_4_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_1.html#ex_4_1" class="internal"><span class="codenumber">4.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4_2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Algebra of Powers: Fractional Exponents</span></a></div>
+<ul id="ptx-toc-group-sec_4_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-3" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_2.html#ex_4_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4_3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Power Functions: Positive Integral Exponents</span></a></div>
+<ul id="ptx-toc-group-sec_4_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-3" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_3.html#ex_4_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec_4_4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Power Functions: Fractional and Negative Integral Exponents</span></a></div>
+<ul id="ptx-toc-group-sec_4_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-3" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_4.html#ex_4_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_5.html" class="internal"><span class="codenumber">5</span> <span class="title">Exponential Functions</span></a></div>
+<ul id="ptx-toc-group-chapter_5" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_5-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_5_1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Exponential Functions: Practical Meaning</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_5_2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Graphs of Exponential Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_5_3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Functions Numerically, Modeling</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_5_4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Doubling Time and Half-Life</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_5_5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">The Natural Base e</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_6.html" class="internal"><span class="codenumber">6</span> <span class="title">Logarithms and Their Applications</span></a></div>
+<ul id="ptx-toc-group-chapter_6" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_6-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_6_1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">What Are Logarithms?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_6_2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Properties of Logarithms, Solving Equations Using Logarithms</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_6_3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Logarithms in Applications</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_7.html" class="internal"><span class="codenumber">7</span> <span class="title">New Functions from Old</span></a></div>
+<ul id="ptx-toc-group-chapter_7" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_7-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_7_1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Vertical and Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_7_2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Vertical and Horizontal Scaling</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_7_3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Composing and Decomposing Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_7_4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Inverse Functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="chapter_8.html" class="internal"><span class="codenumber">8</span> <span class="title">Trigonometric Functions</span></a></div>
+<ul id="ptx-toc-group-chapter_8" class="structural toc-item-list">
+<li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_8-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_8_1.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Periodic Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_8_2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Angles Using the Unit Circle, Radian Measure</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_8_3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Values of Sine and Cosine for Angles on the Unit Circle</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_8_4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Sine and Cosine Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec_8_5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Families of Sine and Cosine Functions, Modeling</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul id="ptx-toc-group-backmatter" class="structural toc-item-list">
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-2.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec_1_5">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Average Rate of Change</span>
+</h1>
+<article class="objectives goal-like" id="sec_1_5-2"><h2 class="heading"><span class="type">Objectives</span></h2>
+<div class="introduction" id="sec_1_5-2-1">
+<div class="para" id="sec_1_5-2-1-1">After completing this section, you should be able to do the following.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<ol class="decimal" id="sec_1_5-2-2">
+<li id="sec_1_5-2-2-1">
+<div class="para" id="sec_1_5-2-2-1-1">First objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Objective 1.5.1"><a tabindex="-1" href="#sec_1_5-2-2-1" title="Copy heading and permalink for Objective 1.5.1" aria-label="Copy heading and permalink for Objective 1.5.1">🔗</a></div>
+</li>
+<li id="sec_1_5-2-2-2">
+<div class="para" id="sec_1_5-2-2-2-1">Second objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Objective 1.5.2"><a tabindex="-1" href="#sec_1_5-2-2-2" title="Copy heading and permalink for Objective 1.5.2" aria-label="Copy heading and permalink for Objective 1.5.2">🔗</a></div>
+</li>
+<li id="sec_1_5-2-2-3">
+<div class="para" id="sec_1_5-2-2-3-1">Third objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Objective 1.5.3"><a tabindex="-1" href="#sec_1_5-2-2-3" title="Copy heading and permalink for Objective 1.5.3" aria-label="Copy heading and permalink for Objective 1.5.3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Objectives 1.5"><a tabindex="-1" href="#sec_1_5-2" title="Copy heading and permalink for Objectives 1.5" aria-label="Copy heading and permalink for Objectives 1.5">🔗</a></div>
+</article>
+<div class="para" id="sec_1_5-3">The notion of a rate of change is central to mathematics and its applications. Roughly speaking, a rate of change tells us how fast and in what manner a given quantity is changing with respect to another changing quantity. We will consider three examples below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_1_5-4">
+<ul class="disc" id="sec_1_5-4-1">
+<li id="sec_1_5-4-1-1">
+<div class="para" id="p-derived-sec_1_5-4-1-1">Suppose that a population of a town grows by <span class="process-math">\(200\)</span> people each year. Here, the rate of change of the population with respect to time is constant and equal to <span class="process-math">\(200\)</span> people/year.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_1_5-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_1_5-4-1-2">
+<div class="para" id="sec_1_5-4-1-2-1">Recall <a href="sec_1_1.html#example-ch1-amox" class="internal" title="Example 1.1.6">Example 1.1.6</a>. A daily pediatric dose of Amoxicillin, <span class="process-math">\(D\text{,}\)</span> in milligrams, depends on the weight of a patient, <span class="process-math">\(w\text{,}\)</span> in kilograms. More precisely, <span class="process-math">\(D=50w\text{.}\)</span> How fast does the dose increase as the weight increases? The formula for <span class="process-math">\(D\)</span> clearly shows that for each 1 kilogram increase in weight, the dose increases by 50 milligrams. In this case, the rate of change of <span class="process-math">\(D\)</span> with respect to weight <span class="process-math">\(w\)</span> is <span class="process-math">\(50\)</span> milligrams/kilogram.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_1_5-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_1_5-4-1-3">
+<div class="para" id="sec_1_5-4-1-3-1">Suppose that the value of your car changes at the rate <span class="process-math">\(-1500\)</span> dollars/year. The rate of change is negative, meaning that the value of the car <em class="emphasis">decreases</em> by <span class="process-math">\(1500\)</span> dollars each year. In general, a quantity that changes at a negative rate is decreasing while one that changes at a positive rate is increasing.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_1_5-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-5">In the three examples above, the rate of change of the dependent variable with respect to the independent variable is constant. In real-life processes, this is rarely the case.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-6">Consider the following example of two students, Amir and Nick, who went to the library to study for a precalculus exam. After <span class="process-math">\(t\)</span> hours of uninterrupted study, Amir mastered <span class="process-math">\(P=a(t)\)</span> pages of new material from the textbook while Nick mastered <span class="process-math">\(P=n(t)\)</span> pages. The graphs of the two functions <span class="process-math">\(a(t)\)</span> and <span class="process-math">\(n(t)\)</span> are in <a href="sec_1_5.html#fig-ch1-studying" class="internal" title="Figure 1.5.1">Figure 1.5.1</a>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig-ch1-studying">
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:48% 48%;column-gap:4%;">
+<div class="sbspanel sbspanel--bottom bottom" style=""><div class="image-box"><img src="generated/latex-image/1_5_1_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+<div class="sbspanel sbspanel--top top" style=""><div class="image-box"><img src="generated/latex-image/1_5_2_fig.svg" role="img" class="contained" alt="A short description."></div></div>
+</div>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Figure 1.5.1"><a tabindex="-1" href="#fig-ch1-studying" title="Copy heading and permalink for Figure 1.5.1" aria-label="Copy heading and permalink for Figure 1.5.1">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec_1_5-8">According to the graphs, both students stayed in the library for 5 hours. We can see that during the 5-hour session, both students learned about 30 new pages, as <span class="process-math">\(a(5)\approx 30\)</span> and <span class="process-math">\(n(5)\approx 30\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_1_5-9">
+<div class="para">During the first hour, Amir mastered approximately</div>
+<div class="displaymath process-math" id="sec_1_5-9-1">
+\begin{equation*}
+a(1)-a(0)=15-0=15
+\end{equation*}
+</div>
+<div class="para">pages of new material, while Nick mastered approximately</div>
+<div class="displaymath process-math" id="sec_1_5-9-2">
+\begin{equation*}
+n(1)-n(0)=3-0=3
+\end{equation*}
+</div>
+<div class="para">pages. Comparatively speaking, Amir learned quickly during the first hour, while Nick learned more slowly.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_1_5-10">
+<div class="para">During the last hour, Amir mastered approximately</div>
+<div class="displaymath process-math" id="sec_1_5-10-1">
+\begin{equation*}
+a(5)-a(4)=30-27=3
+\end{equation*}
+</div>
+<div class="para">pages of new material, while Nick mastered approximately</div>
+<div class="displaymath process-math" id="sec_1_5-10-2">
+\begin{equation*}
+n(5)-n(4)=30-20=10
+\end{equation*}
+</div>
+<div class="para">pages.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-11">This means that Amir went from learning quickly at the beginning of the study session to learning more slowly as time went on. Nick, on the other hand, got off to a slow start but picked up the pace as time went on. Their learning patterns are clearly not identical.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-12">Does it make sense to ask how quickly—or at what rate in pages per hour—each student learned during the 5-hour session? Not really. The question is ambiguous. When exactly in the study session should we focus on? The beginning? The end? For both students, the rate at which they were learning during the session changed, with Amir learning more and more slowly over time and Nick learning faster and faster.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-13">What <em class="emphasis">does</em> make sense is to consider how quickly each student learned during the 5-hour session <em class="alert">on average</em>. Amir learned quickly at first and then more slowly later, but overall he mastered 30 pages of new material in 5 hours. He learned at an <em class="alert">average</em> rate of <span class="process-math">\(\frac{30}{5}=6\)</span> pages/hour. Nick, on the other hand, learned slowly at first, then faster, but he also mastered 30 pages in 5 hours. So, he too learned at an <em class="alert">average</em> rate of <span class="process-math">\(\frac{30}{5}=6\)</span> pages/hour.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-14">Readers who proceed to Calculus will study instantaneous rate of change—how quickly a quantity changes at a specific input. For now, the <em class="alert">average</em> rate of change is the best we can do.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec_1_5-15"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Average Rate of Change.</span>
+</h2>
+<div class="para logical" id="sec_1_5-15-2-1">
+<div class="para">Let <span class="process-math">\(y\)</span> be a function of <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y=f(x)\text{.}\)</span> Let <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> be given. The average rate of change of <span class="process-math">\(y\)</span> between <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\)</span> is given by</div>
+<div class="displaymath process-math" id="sec_1_5-15-2-1-9">
+\begin{equation*}
+\aroc = \dfrac{\text{Change in } y}{\text{Change in } x}=\dfrac{\Delta y}{\Delta x}=\dfrac{f(b)-f(a)}{b-a}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 1.5.2: Average Rate of Change"><a tabindex="-1" href="#sec_1_5-15" title="Copy heading and permalink for Definition 1.5.2: Average Rate of Change" aria-label="Copy heading and permalink for Definition 1.5.2: Average Rate of Change">🔗</a></div>
+</article>
+<div class="para" id="sec_1_5-16">We’ll use <span class="process-math">\(\aroc\)</span> to abbreviate Average Rate of Change.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-17">Typically, the symbol <span class="process-math">\(\Delta\)</span> (the Greek letter Delta) is used to mean “change in.” So, <span class="process-math">\(\Delta y\)</span> stands for a change in <span class="process-math">\(y\)</span> while <span class="process-math">\(\Delta x\)</span> stands for a change in <span class="process-math">\(x\text{.}\)</span> In the definition above, <span class="process-math">\(\Delta x\)</span> stands for the change in <span class="process-math">\(x\)</span> between <span class="process-math">\(x=a\)</span> and <span class="process-math">\(x=b\text{.}\)</span> This can be thought of as the distance between the numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> which is given by <span class="process-math">\(\Delta x=b-a\text{.}\)</span> The notation <span class="process-math">\(\Delta y\)</span> stands for the change in <span class="process-math">\(y=f(x)\)</span> that takes place as <span class="process-math">\(x\)</span> changes from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span> That change is given by <span class="process-math">\(\Delta y=f(b)-f(a)\text{.}\)</span> The graph below illustrates the changes in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig_1_5_arc_graph"><div class="interactive-iframe-container"><iframe id="fig_1_5_arc_graph-1" style="width:360px; height:360px; display: block; " src="fig_1_5_arc_graph-1-if.html"></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="fig_1_5_arc_graph-1.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="instructions interactive__instructions">
+<details id="fig_1_5_arc_graph-1-2" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Instructions<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2></summary>
+<div class="solution-like knowl__content">
+<div class="para" id="fig_1_5_arc_graph-1-2-1">Change the values of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> to see how the <span class="process-math">\(\aroc\)</span> changes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_1_5_arc_graph-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Instructions"><a tabindex="-1" href="#fig_1_5_arc_graph-1-2" title="Copy heading and permalink for Instructions" aria-label="Copy heading and permalink for Instructions">🔗</a></div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Figure 1.5.3"><a tabindex="-1" href="#fig_1_5_arc_graph" title="Copy heading and permalink for Figure 1.5.3" aria-label="Copy heading and permalink for Figure 1.5.3">🔗</a></div></figcaption>
+</figure>
+<article class="example example-like" id="sec_1_5-19"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2>
+<div class="para" id="sec_1_5-19-1-1">Let <span class="process-math">\(y=f(x)=x^{2}-2\text{.}\)</span> Find the average rate of change of <span class="process-math">\(y\)</span> between <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=3\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_1_5-19-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_1_5-19-2-1">
+<div class="para">We use the definition of the average rate of change with <span class="process-math">\(a=1\text{,}\)</span> <span class="process-math">\(b=3\)</span> and <span class="process-math">\(y=f(x)=x^{2}-2\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_1_5-19-2-1-4">
+\begin{equation*}
+\dfrac{\Delta y}{\Delta x}=\dfrac{f(3)-f(1)}{3-1}=\dfrac{(3^2-2)-(1^2-2)}{3-1}=\dfrac{7-(-1)}{2}=\dfrac{8}{2}=4
+\end{equation*}
+</div>
+<div class="para">Therefore, the average rate of change of <span class="process-math">\(y\)</span> between <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=3\)</span> is <span class="process-math">\(4\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.4.1"><a tabindex="-1" href="#sec_1_5-19-2" title="Copy heading and permalink for Solution 1.5.4.1" aria-label="Copy heading and permalink for Solution 1.5.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.5.4"><a tabindex="-1" href="#sec_1_5-19" title="Copy heading and permalink for Example 1.5.4" aria-label="Copy heading and permalink for Example 1.5.4">🔗</a></div>
+</article>
+<div class="para logical" id="sec_1_5-20">
+<div class="para">This is not an applied example so <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> don’t have real-life units. In general, the average rate of change <span class="process-math">\(\dfrac{\Delta y}{\Delta x}\)</span> is measured in</div>
+<div class="displaymath process-math" id="sec_1_5-20-4">
+\begin{equation*}
+\text{units of }\aroc = \frac{\text{units for } y}{\text{unit for } x}
+\end{equation*}
+</div>
+<div class="para">Were units associated with <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> in the last example, we would write that the average rate of change of <span class="process-math">\(y\)</span> between <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=3\)</span> is <span class="process-math">\(4 \; \frac{\text{units for } y}{\text{units for } x}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-21">Let’s revisit <a href="sec_1_1.html#example-ch1-nicotine" class="internal" title="Example 1.1.5">Example 1.1.5</a> about nicotine leaving the body after a cigarette is smoked.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_1_5-22"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2>
+<div class="para" id="sec_1_5-22-1-1">The amount of nicotine in a person’s bloodstream, <span class="process-math">\(N = f (t)\text{,}\)</span> in milligrams, is a function of the time <span class="process-math">\(t\text{,}\)</span> in hours, that has passed since the person smoked a single cigarette. The graph of the function <span class="process-math">\(f(t)\)</span> is shown below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/1_5_4_fig.svg" role="img" class="contained" alt="A short description."></div> 
+<div class="para logical" id="sec_1_5-22-1-3">
+<div class="para">Use the graph to find and interpret the average rate of change of <span class="process-math">\(N\)</span> between:</div>
+<ol class="decimal" id="sec_1_5-22-1-3-2">
+<li id="sec_1_5-22-1-3-2-1">
+<div class="para" id="p-derived-sec_1_5-22-1-3-2-1">
+<span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=4\text{;}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_1_5-22-1-3-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_1_5-22-1-3-2-2">
+<div class="para" id="p-derived-sec_1_5-22-1-3-2-2">
+<span class="process-math">\(t=2\)</span> and <span class="process-math">\(t=4\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_1_5-22-1-3-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">Include units with your answers.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-22-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_1_5-22-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_1_5-22-2-1">
+<ol class="decimal" id="sec_1_5-22-2-1-1">
+<li id="sec_1_5-22-2-1-1-1">
+<div class="para logical" id="sec_1_5-22-2-1-1-1-1">
+<div class="para">To find the average rate of change between <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=4\text{,}\)</span> we use the graph to find the values of the function <span class="process-math">\(f(t)\)</span> at <span class="process-math">\(t=0\)</span> and at <span class="process-math">\(t=4\text{.}\)</span> At <span class="process-math">\(t=0\text{,}\)</span> we have <span class="process-math">\(N=f(0) = 2\)</span> milligrams. At <span class="process-math">\(t=4\text{,}\)</span> <span class="process-math">\(N = f(4)= 0.5\)</span> milligrams. Thus:</div>
+<div class="displaymath process-math" id="sec_1_5-22-2-1-1-1-1-10">
+\begin{equation*}
+\aroc =\dfrac{\Delta N}{\Delta t}=\dfrac{f(4)-f(0)}{4-0}=\dfrac{0.5-2}{4-0}=\dfrac{-1.5}{4}=-0.375.
+\end{equation*}
+</div>
+<div class="para">Here the variables are associated with units: <span class="process-math">\(N\)</span> is measured in milligrams while <span class="process-math">\(t\)</span> is measured in hours. Hence, <span class="process-math">\(\Delta N\)</span> is measured in milligrams and <span class="process-math">\(\Delta t\)</span> is measured in hours. The average rate of change has units <span class="process-math">\(\frac{\text{milligrams}}{\text{hour}}\)</span> which can be written as <span class="process-math">\(\frac{\text{mg}}{\text{hr}}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-22-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_1_5-22-2-1-1-1-2">
+<div class="para">Therefore, the average rate of change of <span class="process-math">\(N\)</span> between <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=4\)</span> is</div>
+<div class="displaymath process-math" id="sec_1_5-22-2-1-1-1-2-4">
+\begin{equation*}
+-0.375 \, \frac{\text{mg}}{\text{hr}}.
+\end{equation*}
+</div>
+<div class="para">The rate is negative as the amount of nicotine decreased between <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=4\text{.}\)</span> For the interpretation, we would say that on the interval <span class="process-math">\(0\leq t \leq 4\text{,}\)</span> nicotine leaves the body at the average rate of <span class="process-math">\(0.375\)</span> milligrams per hour.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-22-2-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_1_5-22-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_1_5-22-2-1-1-2">
+<div class="para logical" id="sec_1_5-22-2-1-1-2-1">
+<div class="para">We need values <span class="process-math">\(f(2)\)</span> and <span class="process-math">\(f(4)\text{,}\)</span> which are obtained from the graph: <span class="process-math">\(f(2)=1\)</span> and <span class="process-math">\(f(4)=0.5\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math" id="sec_1_5-22-2-1-1-2-1-5">
+\begin{equation*}
+\aroc =\dfrac{\Delta N}{\Delta t}=\dfrac{f(4)-f(2)}{4-2}=\dfrac{0.5-1}{2}=\dfrac{-0.5}{2}=-0.25 \, \frac{\text{mg}}{\text{hr}}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-22-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-22-2-1-1-2-2">On the interval <span class="process-math">\(2\leq t \leq 4\text{,}\)</span> nicotine leaves the body at the average rate of <span class="process-math">\(0.25\)</span> milligrams per hour.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-22-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_1_5-22-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-22-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.5.1"><a tabindex="-1" href="#sec_1_5-22-2" title="Copy heading and permalink for Solution 1.5.5.1" aria-label="Copy heading and permalink for Solution 1.5.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.5.5"><a tabindex="-1" href="#sec_1_5-22" title="Copy heading and permalink for Example 1.5.5" aria-label="Copy heading and permalink for Example 1.5.5">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_1_5-23"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2>
+<div class="para" id="sec_1_5-23-1-1">A population <span class="process-math">\(P\)</span> of a small village at time <span class="process-math">\(t\text{,}\)</span> measured in years since the year 2010, is given by <span class="process-math">\(P=P(t)\text{.}\)</span> Here are the annual readings:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<figure class="table table-like" id="table-ch1-village"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Table 1.5.7: "><a tabindex="-1" href="#table-ch1-village" title="Copy heading and permalink for Table 1.5.7: " aria-label="Copy heading and permalink for Table 1.5.7: ">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">
+<span class="process-math">\(t\)</span> (years)</td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(1\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(4\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(5\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(6\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(7\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(8\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(9\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(10\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">
+<span class="process-math">\(P(t)\)</span> (people)</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(150\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(160\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(140\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(180\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(210\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(200\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(250\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(290\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(300\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(350\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(400\)</span></td>
+</tr>
+</table></div>
+</figure> 
+<div class="para logical" id="sec_1_5-23-1-3">
+<ol class="decimal" id="sec_1_5-23-1-3-1">
+<li id="sec_1_5-23-1-3-1-1">
+<div class="para" id="sec_1_5-23-1-3-1-1-1">Find the change in the population <span class="process-math">\(\Delta P\)</span> between <span class="process-math">\(t=2\)</span> and <span class="process-math">\(t=6\text{.}\)</span> What are the units of <span class="process-math">\(\Delta P\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-23-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_1_5-23-1-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_1_5-23-1-3-1-2">
+<div class="para" id="sec_1_5-23-1-3-1-2-1">Find the average rate of change in the population between <span class="process-math">\(t=2\)</span> and <span class="process-math">\(t=6\text{.}\)</span> What are the units of this rate of change?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-23-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_1_5-23-1-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-23-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_1_5-23-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_1_5-23-2-1">
+<ol class="decimal" id="sec_1_5-23-2-1-1">
+<li id="sec_1_5-23-2-1-1-1">
+<div class="para logical" id="sec_1_5-23-2-1-1-1-1">
+<div class="para">The change in <span class="process-math">\(P\)</span> between <span class="process-math">\(t=2\)</span> and <span class="process-math">\(t=6\text{,}\)</span> <span class="process-math">\(\Delta P\text{,}\)</span> tells us by how much the population changed from <span class="process-math">\(t=2\)</span> and <span class="process-math">\(t=6\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_1_5-23-2-1-1-1-1-7">
+\begin{equation*}
+\Delta P=P(6)-P(2)=250-140=110.
+\end{equation*}
+</div>
+<div class="para">The population increased by <span class="process-math">\(110\)</span> people from <span class="process-math">\(t=2\)</span> to <span class="process-math">\(t=6\)</span> (from 2012 to 2016).</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-23-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_1_5-23-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_1_5-23-2-1-1-2">
+<div class="para logical" id="sec_1_5-23-2-1-1-2-1">
+<div class="para">The average <em class="alert">rate</em> of change tells us how fast the population was changing between <span class="process-math">\(t=2\)</span> and <span class="process-math">\(t=6\)</span> and is measured in people/year:</div>
+<div class="displaymath process-math" id="sec_1_5-23-2-1-1-2-1-4">
+\begin{equation*}
+\aroc =\dfrac{\Delta P}{\Delta t}=\dfrac{P(6)-P(2)}{6-2}=\dfrac{250-140}{6-2}=\dfrac{110}{4}= 27.5 \, \frac{\text{people}}{\text{year}}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-23-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_1_5-23-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-23-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.6.1"><a tabindex="-1" href="#sec_1_5-23-2" title="Copy heading and permalink for Solution 1.5.6.1" aria-label="Copy heading and permalink for Solution 1.5.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.5.6"><a tabindex="-1" href="#sec_1_5-23" title="Copy heading and permalink for Example 1.5.6" aria-label="Copy heading and permalink for Example 1.5.6">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_1_5-24"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.5.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2>
+<div class="para logical" id="sec_1_5-24-1-1">
+<div class="para">A ball is dropped from the rooftop of a building 150 feet tall. The height of the ball above the ground, <span class="process-math">\(h(t)\text{,}\)</span> in feet, <span class="process-math">\(t\)</span> seconds after the ball is dropped is:</div>
+<div class="displaymath process-math" id="sec_1_5-24-1-1-3">
+\begin{equation*}
+h(t)=150-16t^{2}.
+\end{equation*}
+</div>
+<ol class="decimal" id="sec_1_5-24-1-1-4">
+<li id="sec_1_5-24-1-1-4-1">
+<div class="para" id="sec_1_5-24-1-1-4-1-1">Find the average rate of change of <span class="process-math">\(h(t)\)</span> between <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-24-1-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_1_5-24-1-1-4-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_1_5-24-1-1-4-2">
+<div class="para" id="sec_1_5-24-1-1-4-2-1">When will the ball hit the ground?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-24-1-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_1_5-24-1-1-4-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_1_5-24-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_1_5-24-2-1">
+<ol class="decimal" id="sec_1_5-24-2-1-1">
+<li id="sec_1_5-24-2-1-1-1">
+<div class="para logical" id="sec_1_5-24-2-1-1-1-1">
+<div class="para">We use the definition of the average rate of change:</div>
+<div class="displaymath process-math" id="sec_1_5-24-2-1-1-1-1-1">
+\begin{align*}
+\aroc \amp \;=\; \dfrac{\Delta h}{\Delta t}\;=\; \dfrac{h(2)-h(0)}{2-0} \\
+\amp \;=\; \dfrac{(150-16\cdot 2^2)-(150-16\cdot 0^2)}{2}\\
+\amp \;=\; \dfrac{86-150}{2}= -32 \, \frac{\text{ft}}{\text{sec}}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-24-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-24-2-1-1-1-2">This can also be thought of as the average velocity of the ball between <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=2\text{.}\)</span> The velocity is negative because the height is decreasing.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-24-2-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_1_5-24-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_1_5-24-2-1-1-2">
+<div class="para logical" id="sec_1_5-24-2-1-1-2-1">
+<div class="para">The ball hits the ground when it falls to a height of <span class="process-math">\(0\)</span> feet, so we solve the equation <span class="process-math">\(h(t)=150-16t^{2}=0\)</span> for <span class="process-math">\(t\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_1_5-24-2-1-1-2-1-4">
+\begin{align*}
+150-16t^{2} \amp \; = \; 0 \\
+150 \amp \; = \; 16t^{2}\\
+\dfrac{150}{16} \amp \; = \; t^{2}\\
+t^{2} \amp \; = \; 9.375 \\
+t \amp \; = \; \pm\sqrt{9.375}
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-24-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_1_5-24-2-1-1-2-2">Mathematically, we get two solutions: <span class="process-math">\(t=\sqrt{9.375}\)</span> and <span class="process-math">\(t=-\sqrt{9.375}\text{.}\)</span> However, only one makes sense in the applied context for our problem. As <span class="process-math">\(t\)</span> is the number of seconds after the ball is dropped, a negative answer does not make sense—the ball can’t hit the ground before it was dropped! Hence, the ball hits the ground <span class="process-math">\(t=\sqrt{9.375}\approx 3.062\)</span> seconds after it is dropped.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-24-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_1_5-24-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_1_5-24-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.8.1"><a tabindex="-1" href="#sec_1_5-24-2" title="Copy heading and permalink for Solution 1.5.8.1" aria-label="Copy heading and permalink for Solution 1.5.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.5.8"><a tabindex="-1" href="#sec_1_5-24" title="Copy heading and permalink for Example 1.5.8" aria-label="Copy heading and permalink for Example 1.5.8">🔗</a></div>
+</article>
+<section class="exercises" id="ex_1_5">
+<h2 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h2>
+<article class="exercise exercise-like" id="ex_1_5-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_1_5-1-1-1">Find the average rate of change of each function over the indicated interval. Give your answers to two decimal places.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-1-1-2">
+<li id="ex_1_5-1-1-2-1">
+<div class="para" id="p-derived-ex_1_5-1-1-2-1">
+<span class="process-math">\(f(x)=1+x^2\)</span> between <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=5\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.a"><a tabindex="-1" href="#ex_1_5-1-1-2-1" title="Copy heading and permalink for Item 1.5.1.a" aria-label="Copy heading and permalink for Item 1.5.1.a">🔗</a></div>
+</li>
+<li id="ex_1_5-1-1-2-2">
+<div class="para" id="p-derived-ex_1_5-1-1-2-2">
+<span class="process-math">\(f(x)=1+x^2\)</span> between <span class="process-math">\(x=-3\)</span> and <span class="process-math">\(x=0\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.b"><a tabindex="-1" href="#ex_1_5-1-1-2-2" title="Copy heading and permalink for Item 1.5.1.b" aria-label="Copy heading and permalink for Item 1.5.1.b">🔗</a></div>
+</li>
+<li id="ex_1_5-1-1-2-3">
+<div class="para" id="p-derived-ex_1_5-1-1-2-3">
+<span class="process-math">\(g(t)=\dfrac{1}{t}\)</span> between <span class="process-math">\(t=1\)</span> and <span class="process-math">\(t=3\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.c"><a tabindex="-1" href="#ex_1_5-1-1-2-3" title="Copy heading and permalink for Item 1.5.1.c" aria-label="Copy heading and permalink for Item 1.5.1.c">🔗</a></div>
+</li>
+<li id="ex_1_5-1-1-2-4">
+<div class="para" id="p-derived-ex_1_5-1-1-2-4">
+<span class="process-math">\(p(x)=2-3x\)</span> between <span class="process-math">\(x=1\)</span> and <span class="process-math">\(x=5\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.d"><a tabindex="-1" href="#ex_1_5-1-1-2-4" title="Copy heading and permalink for Item 1.5.1.d" aria-label="Copy heading and permalink for Item 1.5.1.d">🔗</a></div>
+</li>
+<li id="ex_1_5-1-1-2-5">
+<div class="para" id="p-derived-ex_1_5-1-1-2-5">
+<span class="process-math">\(p(x)=2-3x\)</span> between <span class="process-math">\(x=-1\)</span> and <span class="process-math">\(x=2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.e"><a tabindex="-1" href="#ex_1_5-1-1-2-5" title="Copy heading and permalink for Item 1.5.1.e" aria-label="Copy heading and permalink for Item 1.5.1.e">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="ex_1_5-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex_1_5-1-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-1-2-1-1">
+<li id="ex_1_5-1-2-1-1-1">
+<div class="para" id="p-derived-ex_1_5-1-2-1-1-1"><span class="process-math">\(\displaystyle 6\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.a"><a tabindex="-1" href="#ex_1_5-1-2-1-1-1" title="Copy heading and permalink for Item 1.5.1.a" aria-label="Copy heading and permalink for Item 1.5.1.a">🔗</a></div>
+</li>
+<li id="ex_1_5-1-2-1-1-2">
+<div class="para" id="p-derived-ex_1_5-1-2-1-1-2"><span class="process-math">\(\displaystyle -3\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.b"><a tabindex="-1" href="#ex_1_5-1-2-1-1-2" title="Copy heading and permalink for Item 1.5.1.b" aria-label="Copy heading and permalink for Item 1.5.1.b">🔗</a></div>
+</li>
+<li id="ex_1_5-1-2-1-1-3">
+<div class="para" id="p-derived-ex_1_5-1-2-1-1-3"><span class="process-math">\(\displaystyle -1/3\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.c"><a tabindex="-1" href="#ex_1_5-1-2-1-1-3" title="Copy heading and permalink for Item 1.5.1.c" aria-label="Copy heading and permalink for Item 1.5.1.c">🔗</a></div>
+</li>
+<li id="ex_1_5-1-2-1-1-4">
+<div class="para" id="p-derived-ex_1_5-1-2-1-1-4"><span class="process-math">\(\displaystyle -3\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.d"><a tabindex="-1" href="#ex_1_5-1-2-1-1-4" title="Copy heading and permalink for Item 1.5.1.d" aria-label="Copy heading and permalink for Item 1.5.1.d">🔗</a></div>
+</li>
+<li id="ex_1_5-1-2-1-1-5">
+<div class="para" id="p-derived-ex_1_5-1-2-1-1-5"><span class="process-math">\(\displaystyle -3\)</span></div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.1.e"><a tabindex="-1" href="#ex_1_5-1-2-1-1-5" title="Copy heading and permalink for Item 1.5.1.e" aria-label="Copy heading and permalink for Item 1.5.1.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.1.1"><a tabindex="-1" href="#ex_1_5-1-2" title="Copy heading and permalink for Solution 1.5.1.1" aria-label="Copy heading and permalink for Solution 1.5.1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.1"><a tabindex="-1" href="#ex_1_5-1" title="Copy heading and permalink for Exercise 1.5.1" aria-label="Copy heading and permalink for Exercise 1.5.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_1_5-2"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_1_5-2-1-1">In <a href="sec_1_3.html#exercise-1_3-population" class="internal" title="Exercise 1.3.8">Exercise 1.3.8</a>, data about the world population, in billions, between the years 2010 and 2018, was given in the table shown below. Use the data to answer the following questions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Year</td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2010\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2011\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2012\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2013\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2014\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2015\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2016\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2017\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2018\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Population</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6.957\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.041\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.126\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.211\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.296\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.380\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.464\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.548\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.631\)</span></td>
+</tr>
+</table></div> 
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-2-1-3">
+<li id="ex_1_5-2-1-3-1">
+<div class="para" id="p-derived-ex_1_5-2-1-3-1">What was the average rate of change of the world population between 2010 and 2012? Between 2016 and 2018? Give your answers to four decimal places and include units with your answers.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.2.a"><a tabindex="-1" href="#ex_1_5-2-1-3-1" title="Copy heading and permalink for Item 1.5.2.a" aria-label="Copy heading and permalink for Item 1.5.2.a">🔗</a></div>
+</li>
+<li id="ex_1_5-2-1-3-2">
+<div class="para" id="p-derived-ex_1_5-2-1-3-2">Is there a one-year interval in the time period from 2010 to 2018 during which the average rate of change of the population was negative?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.2.b"><a tabindex="-1" href="#ex_1_5-2-1-3-2" title="Copy heading and permalink for Item 1.5.2.b" aria-label="Copy heading and permalink for Item 1.5.2.b">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="ex_1_5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex_1_5-2-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-2-2-1-1">
+<li id="ex_1_5-2-2-1-1-1">
+<div class="para" id="p-derived-ex_1_5-2-2-1-1-1">
+<span class="process-math">\(0.0845\)</span> billion people per year; <span class="process-math">\(0.0835\)</span> billion people per year</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.2.a"><a tabindex="-1" href="#ex_1_5-2-2-1-1-1" title="Copy heading and permalink for Item 1.5.2.a" aria-label="Copy heading and permalink for Item 1.5.2.a">🔗</a></div>
+</li>
+<li id="ex_1_5-2-2-1-1-2">
+<div class="para" id="p-derived-ex_1_5-2-2-1-1-2">No.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.2.b"><a tabindex="-1" href="#ex_1_5-2-2-1-1-2" title="Copy heading and permalink for Item 1.5.2.b" aria-label="Copy heading and permalink for Item 1.5.2.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.2.1"><a tabindex="-1" href="#ex_1_5-2-2" title="Copy heading and permalink for Solution 1.5.2.1" aria-label="Copy heading and permalink for Solution 1.5.2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.2"><a tabindex="-1" href="#ex_1_5-2" title="Copy heading and permalink for Exercise 1.5.2" aria-label="Copy heading and permalink for Exercise 1.5.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_1_5-3"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="ex_1_5-3-1-1">
+<div class="para">A ball is dropped from a cliff above a lake. The ball’s height above the surface of the lake, <span class="process-math">\(h(t)\text{,}\)</span> in feet, <span class="process-math">\(t\)</span> seconds after the ball is dropped, is given by</div>
+<div class="displaymath process-math" id="ex_1_5-3-1-1-3">
+\begin{equation*}
+h(t)=300-16t^2.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-3-1-2">
+<li id="ex_1_5-3-1-2-1">
+<div class="para" id="p-derived-ex_1_5-3-1-2-1">What is the average rate of change in height <span class="process-math">\(h(t)\)</span> between <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=3\text{?}\)</span> Between <span class="process-math">\(t=1\)</span> and <span class="process-math">\(t=4\text{?}\)</span> Give units with your answers.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.3.a"><a tabindex="-1" href="#ex_1_5-3-1-2-1" title="Copy heading and permalink for Item 1.5.3.a" aria-label="Copy heading and permalink for Item 1.5.3.a">🔗</a></div>
+</li>
+<li id="ex_1_5-3-1-2-2">
+<div class="para" id="p-derived-ex_1_5-3-1-2-2">Are your answers in part (a) positive or negative? Explain why.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.3.b"><a tabindex="-1" href="#ex_1_5-3-1-2-2" title="Copy heading and permalink for Item 1.5.3.b" aria-label="Copy heading and permalink for Item 1.5.3.b">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="ex_1_5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex_1_5-3-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-3-2-1-1">
+<li id="ex_1_5-3-2-1-1-1">
+<div class="para" id="p-derived-ex_1_5-3-2-1-1-1">
+<span class="process-math">\(-48\)</span> feet per second; <span class="process-math">\(-80\)</span> feet per second</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.3.a"><a tabindex="-1" href="#ex_1_5-3-2-1-1-1" title="Copy heading and permalink for Item 1.5.3.a" aria-label="Copy heading and permalink for Item 1.5.3.a">🔗</a></div>
+</li>
+<li id="ex_1_5-3-2-1-1-2">
+<div class="para" id="p-derived-ex_1_5-3-2-1-1-2">negative; the height of the ball is decreasing as time progresses (as it was dropped)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.3.b"><a tabindex="-1" href="#ex_1_5-3-2-1-1-2" title="Copy heading and permalink for Item 1.5.3.b" aria-label="Copy heading and permalink for Item 1.5.3.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.3.1"><a tabindex="-1" href="#ex_1_5-3-2" title="Copy heading and permalink for Solution 1.5.3.1" aria-label="Copy heading and permalink for Solution 1.5.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.3"><a tabindex="-1" href="#ex_1_5-3" title="Copy heading and permalink for Exercise 1.5.3" aria-label="Copy heading and permalink for Exercise 1.5.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_1_5-4"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_1_5-4-1-1">In <a href="sec_1_2.html#exercise-1_2-caff" class="internal" title="Exercise 12">Exercise 12</a>, the graph of a function <span class="process-math">\(C(t)\)</span> (provided again below) was given.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ex_1_5_1_fig.svg" role="img" class="contained" alt="A short description."></div> 
+<div class="para" id="ex_1_5-4-1-3">Recall that this graph that models the amount of caffeine, in milligrams, remaining in the body <span class="process-math">\(t\)</span> hours after drinking a cup of coffee. Use the graph to do the following.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-4-1-4">
+<li id="ex_1_5-4-1-4-1">
+<div class="para" id="p-derived-ex_1_5-4-1-4-1">Estimate the average rate of change of <span class="process-math">\(C(t)\)</span> between <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=5\text{.}\)</span> Give units with your answer.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.a"><a tabindex="-1" href="#ex_1_5-4-1-4-1" title="Copy heading and permalink for Item 1.5.4.a" aria-label="Copy heading and permalink for Item 1.5.4.a">🔗</a></div>
+</li>
+<li id="ex_1_5-4-1-4-2">
+<div class="para" id="p-derived-ex_1_5-4-1-4-2">Estimate the average rate of change of <span class="process-math">\(C(t)\)</span> between <span class="process-math">\(t=10\)</span> and <span class="process-math">\(t=15\text{.}\)</span> Give units with your answer.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.b"><a tabindex="-1" href="#ex_1_5-4-1-4-2" title="Copy heading and permalink for Item 1.5.4.b" aria-label="Copy heading and permalink for Item 1.5.4.b">🔗</a></div>
+</li>
+<li id="ex_1_5-4-1-4-3">
+<div class="para" id="p-derived-ex_1_5-4-1-4-3">Compare the magnitudes of your answers in (a) and (b). Can you explain the difference by what you see on the graph?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.c"><a tabindex="-1" href="#ex_1_5-4-1-4-3" title="Copy heading and permalink for Item 1.5.4.c" aria-label="Copy heading and permalink for Item 1.5.4.c">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="ex_1_5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex_1_5-4-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-4-2-1-1">
+<li id="ex_1_5-4-2-1-1-1">
+<div class="para" id="p-derived-ex_1_5-4-2-1-1-1">
+<span class="process-math">\(-9.6\)</span> mg/hr</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.a"><a tabindex="-1" href="#ex_1_5-4-2-1-1-1" title="Copy heading and permalink for Item 1.5.4.a" aria-label="Copy heading and permalink for Item 1.5.4.a">🔗</a></div>
+</li>
+<li id="ex_1_5-4-2-1-1-2">
+<div class="para" id="p-derived-ex_1_5-4-2-1-1-2">
+<span class="process-math">\(-2.4\)</span> mg/hr</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.b"><a tabindex="-1" href="#ex_1_5-4-2-1-1-2" title="Copy heading and permalink for Item 1.5.4.b" aria-label="Copy heading and permalink for Item 1.5.4.b">🔗</a></div>
+</li>
+<li id="ex_1_5-4-2-1-1-3">
+<div class="para" id="ex_1_5-4-2-1-1-3-1">The average rate of change from <span class="process-math">\(t = 0\)</span> to <span class="process-math">\(t = 5\)</span> hours is larger than the average rate of change from <span class="process-math">\(t=10\)</span> to <span class="process-math">\(t=15\)</span> hours. It can be seen that the rate at which the amount of caffeine in the bloodstream is changing gets smaller and smaller as time progresses.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-4-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.4.c"><a tabindex="-1" href="#ex_1_5-4-2-1-1-3" title="Copy heading and permalink for Item 1.5.4.c" aria-label="Copy heading and permalink for Item 1.5.4.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.4.1"><a tabindex="-1" href="#ex_1_5-4-2" title="Copy heading and permalink for Solution 1.5.4.1" aria-label="Copy heading and permalink for Solution 1.5.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.4"><a tabindex="-1" href="#ex_1_5-4" title="Copy heading and permalink for Exercise 1.5.4" aria-label="Copy heading and permalink for Exercise 1.5.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_1_5-5"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_1_5-5-1-1">The graph of a function <span class="process-math">\(y=f(t)\)</span> is shown below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ex_1_5_2_fig.svg" role="img" class="contained" alt="A short description."></div> 
+<div class="para" id="ex_1_5-5-1-3">Without performing any calculations, answer the following questions.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-5-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-5-1-4">
+<li id="ex_1_5-5-1-4-1">
+<div class="para" id="p-derived-ex_1_5-5-1-4-1">Is the average rate of change of <span class="process-math">\(f(t)\)</span> between  <span class="process-math">\(t=0\)</span> and <span class="process-math">\(t=3\)</span> positive or negative? Explain your answer.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.5.a"><a tabindex="-1" href="#ex_1_5-5-1-4-1" title="Copy heading and permalink for Item 1.5.5.a" aria-label="Copy heading and permalink for Item 1.5.5.a">🔗</a></div>
+</li>
+<li id="ex_1_5-5-1-4-2">
+<div class="para" id="p-derived-ex_1_5-5-1-4-2">Is the average rate of change of <span class="process-math">\(f(t)\)</span> between  <span class="process-math">\(t=3\)</span> and <span class="process-math">\(t=6\)</span> positive or negative? Explain your answer.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.5.b"><a tabindex="-1" href="#ex_1_5-5-1-4-2" title="Copy heading and permalink for Item 1.5.5.b" aria-label="Copy heading and permalink for Item 1.5.5.b">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="ex_1_5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex_1_5-5-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-5-2-1-1">
+<li id="ex_1_5-5-2-1-1-1">
+<div class="para" id="p-derived-ex_1_5-5-2-1-1-1">positive since the graph is increasing on this interval</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.5.a"><a tabindex="-1" href="#ex_1_5-5-2-1-1-1" title="Copy heading and permalink for Item 1.5.5.a" aria-label="Copy heading and permalink for Item 1.5.5.a">🔗</a></div>
+</li>
+<li id="ex_1_5-5-2-1-1-2">
+<div class="para" id="p-derived-ex_1_5-5-2-1-1-2">negative since the graph is decreasing on this interval</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.5.b"><a tabindex="-1" href="#ex_1_5-5-2-1-1-2" title="Copy heading and permalink for Item 1.5.5.b" aria-label="Copy heading and permalink for Item 1.5.5.b">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.5.1"><a tabindex="-1" href="#ex_1_5-5-2" title="Copy heading and permalink for Solution 1.5.5.1" aria-label="Copy heading and permalink for Solution 1.5.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.5"><a tabindex="-1" href="#ex_1_5-5" title="Copy heading and permalink for Exercise 1.5.5" aria-label="Copy heading and permalink for Exercise 1.5.5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_1_5-6"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_1_5-6-1-1">A person’s weight, <span class="process-math">\(W\text{,}\)</span> in pounds, depends on the number of minutes <span class="process-math">\(m\)</span> of daily exercise. Hence, <span class="process-math">\(W=W(m)\)</span> is a function of <span class="process-math">\(m\text{.}\)</span> Below is a numerical representation of <span class="process-math">\(W(m)\text{:}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">
+<span class="process-math">\(m\)</span> (minutes)</td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(20\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(40\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(60\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(80\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(100\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(120\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">
+<span class="process-math">\(W\)</span> (pounds)</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(159\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(152\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(146\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(141\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(137\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(136\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(135.6\)</span></td>
+</tr>
+</table></div> 
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-6-1-3">
+<li id="ex_1_5-6-1-3-1">
+<div class="para" id="p-derived-ex_1_5-6-1-3-1">Find the average rate of change of <span class="process-math">\(W(m)\)</span> between <span class="process-math">\(m=0\)</span> and <span class="process-math">\(m=40\text{.}\)</span> Give units with your answer.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.6.a"><a tabindex="-1" href="#ex_1_5-6-1-3-1" title="Copy heading and permalink for Item 1.5.6.a" aria-label="Copy heading and permalink for Item 1.5.6.a">🔗</a></div>
+</li>
+<li id="ex_1_5-6-1-3-2">
+<div class="para" id="p-derived-ex_1_5-6-1-3-2">Find the average rate of change of <span class="process-math">\(W(m)\)</span> between <span class="process-math">\(m=80\)</span> and <span class="process-math">\(m=120\text{.}\)</span> Give units with your answer.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.6.b"><a tabindex="-1" href="#ex_1_5-6-1-3-2" title="Copy heading and permalink for Item 1.5.6.b" aria-label="Copy heading and permalink for Item 1.5.6.b">🔗</a></div>
+</li>
+<li id="ex_1_5-6-1-3-3">
+<div class="para" id="p-derived-ex_1_5-6-1-3-3">Based on your answers and the data in the table, what can you say about the rate of weight loss with increasing amount of exercise?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.6.c"><a tabindex="-1" href="#ex_1_5-6-1-3-3" title="Copy heading and permalink for Item 1.5.6.c" aria-label="Copy heading and permalink for Item 1.5.6.c">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="ex_1_5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex_1_5-6-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-6-2-1-1">
+<li id="ex_1_5-6-2-1-1-1">
+<div class="para" id="p-derived-ex_1_5-6-2-1-1-1">
+<span class="process-math">\(-0.325\)</span> pounds/minute</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.6.a"><a tabindex="-1" href="#ex_1_5-6-2-1-1-1" title="Copy heading and permalink for Item 1.5.6.a" aria-label="Copy heading and permalink for Item 1.5.6.a">🔗</a></div>
+</li>
+<li id="ex_1_5-6-2-1-1-2">
+<div class="para" id="p-derived-ex_1_5-6-2-1-1-2">
+<span class="process-math">\(-0.035\)</span> pounds/minute</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.6.b"><a tabindex="-1" href="#ex_1_5-6-2-1-1-2" title="Copy heading and permalink for Item 1.5.6.b" aria-label="Copy heading and permalink for Item 1.5.6.b">🔗</a></div>
+</li>
+<li id="ex_1_5-6-2-1-1-3">
+<div class="para" id="p-derived-ex_1_5-6-2-1-1-3">The rate of weight loss slows as the daily amount of exercise increases.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.6.c"><a tabindex="-1" href="#ex_1_5-6-2-1-1-3" title="Copy heading and permalink for Item 1.5.6.c" aria-label="Copy heading and permalink for Item 1.5.6.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.6.1"><a tabindex="-1" href="#ex_1_5-6-2" title="Copy heading and permalink for Solution 1.5.6.1" aria-label="Copy heading and permalink for Solution 1.5.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.6"><a tabindex="-1" href="#ex_1_5-6" title="Copy heading and permalink for Exercise 1.5.6" aria-label="Copy heading and permalink for Exercise 1.5.6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="ex_1_5-7"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="ex_1_5-7-1-1">Worldwide sales of passenger cars fluctuated between 2012 and 2019, as can be seen in the table below. <div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines">Year</td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2010\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2011\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2012\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2013\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2014\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2015\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2016\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2017\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2018\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(2019\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines">Cars Sold (millions)</td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(55.82\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(57.84\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(60.94\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(63.43\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(65.71\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(66.31\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(69.46\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(70.69\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(68.68\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(64.34\)</span></td>
+</tr>
+</table></div> 
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-7-1-3">
+<li id="ex_1_5-7-1-3-1">
+<div class="para" id="p-derived-ex_1_5-7-1-3-1">Calculate the average rate of change in sales of passenger cars between the years 2010 and 2017. Give units with your answer.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.7.a"><a tabindex="-1" href="#ex_1_5-7-1-3-1" title="Copy heading and permalink for Item 1.5.7.a" aria-label="Copy heading and permalink for Item 1.5.7.a">🔗</a></div>
+</li>
+<li id="ex_1_5-7-1-3-2">
+<div class="para" id="p-derived-ex_1_5-7-1-3-2">Calculate the average rate of change in sales of passenger cars between the years 2017 and 2019. Give units with your answer.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.7.b"><a tabindex="-1" href="#ex_1_5-7-1-3-2" title="Copy heading and permalink for Item 1.5.7.b" aria-label="Copy heading and permalink for Item 1.5.7.b">🔗</a></div>
+</li>
+<li id="ex_1_5-7-1-3-3">
+<div class="para" id="p-derived-ex_1_5-7-1-3-3">In what one-year intervals was the average rate of change negative?</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.7.c"><a tabindex="-1" href="#ex_1_5-7-1-3-3" title="Copy heading and permalink for Item 1.5.7.c" aria-label="Copy heading and permalink for Item 1.5.7.c">🔗</a></div>
+</li>
+</ol>
+<div class="solutions">
+<details id="ex_1_5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="ex_1_5-7-2-1">
+<ol class="lower-alpha lower-alpha-level-1" id="ex_1_5-7-2-1-1">
+<li id="ex_1_5-7-2-1-1-1">
+<div class="para" id="p-derived-ex_1_5-7-2-1-1-1">approximately 2.124 million cars sold per year</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.7.a"><a tabindex="-1" href="#ex_1_5-7-2-1-1-1" title="Copy heading and permalink for Item 1.5.7.a" aria-label="Copy heading and permalink for Item 1.5.7.a">🔗</a></div>
+</li>
+<li id="ex_1_5-7-2-1-1-2">
+<div class="para" id="p-derived-ex_1_5-7-2-1-1-2">
+<span class="process-math">\(-3.175\)</span> million cars sold per year</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.7.b"><a tabindex="-1" href="#ex_1_5-7-2-1-1-2" title="Copy heading and permalink for Item 1.5.7.b" aria-label="Copy heading and permalink for Item 1.5.7.b">🔗</a></div>
+</li>
+<li id="ex_1_5-7-2-1-1-3">
+<div class="para" id="p-derived-ex_1_5-7-2-1-1-3">from 2017 to 2018 and from 2018 to 2019</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.5.7.c"><a tabindex="-1" href="#ex_1_5-7-2-1-1-3" title="Copy heading and permalink for Item 1.5.7.c" aria-label="Copy heading and permalink for Item 1.5.7.c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_1_5-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.5.7.1"><a tabindex="-1" href="#ex_1_5-7-2" title="Copy heading and permalink for Solution 1.5.7.1" aria-label="Copy heading and permalink for Solution 1.5.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.5.7"><a tabindex="-1" href="#ex_1_5-7" title="Copy heading and permalink for Exercise 1.5.7" aria-label="Copy heading and permalink for Exercise 1.5.7">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercises 1.5"><a tabindex="-1" href="#ex_1_5" title="Copy heading and permalink for Exercises 1.5" aria-label="Copy heading and permalink for Exercises 1.5">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 1.5: The Average Rate of Change"><a tabindex="-1" href="#sec_1_5" title="Copy heading and permalink for Section 1.5: The Average Rate of Change" aria-label="Copy heading and permalink for Section 1.5: The Average Rate of Change">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec_1_4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="chapter_2.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="mailto:mth103videos@gmail.com" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
