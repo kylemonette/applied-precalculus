@@ -3,13 +3,9 @@
 <pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
   <xi:include href="./docinfo-supplement.ptx" />
 
-
     <book xml:id="apc-sup">
-    <title>Applied Precalculus</title>
+    <title>MTH 103</title>
     <subtitle>Supplementary Material</subtitle>
-
-    <!-- Include frontmatter -->
-    <!-- <xi:include href="./frontmatter.ptx" /> -->
 
     <part xml:id="part_1" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Practice Worksheets</title>
