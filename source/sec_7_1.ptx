@@ -31,5 +31,24 @@
     </ol>
 </objectives>
 
+<figure xml:id="fig_7_1_vert_shift">
+<interactive platform="jsxgraph" source="jsxgraph/jsx_7_1_vert_shift.js" width="60%">
+    <slate xml:id="jsx_7_1_vert_shift_fig" surface="jsxboard"/>
+    <instructions>
+        <p>Drag the dot to see the effect of vertical shifts on <m>f(x) = x^2</m>.</p>
+    </instructions>
+</interactive>
+</figure>
+
+
+
+<figure xml:id="fig_7_1_hor_shift">
+<interactive platform="jsxgraph" source="jsxgraph/jsx_7_1_hor_shift.js" width="60%">
+    <slate xml:id="jsx_7_1_hor_shift_fig" surface="jsxboard"/>
+    <instructions>
+        <p>Drag the dot to see the effect of horizontal shifts on <m>f(x) = \sqrt{x}</m>.</p>
+    </instructions>
+</interactive>
+</figure>
 
 </section>

@@ -32,4 +32,26 @@
 </objectives>
 
 
+
+<figure xml:id="fig_7_2_vert_scal">
+<interactive platform="jsxgraph" source="jsxgraph/jsx_7_2_vert_scal.js" width="60%">
+    <slate xml:id="jsx_7_2_vert_scal_fig" surface="jsxboard"/>
+    <instructions>
+        <p>Adjust the vertical scale factor <m>a</m> to change the graph of <m>f(x) = x^3</m>.</p>
+    </instructions>
+</interactive>
+</figure>
+
+
+<figure xml:id="fig_7_2_hor_scal">
+<interactive platform="jsxgraph" source="jsxgraph/jsx_7_2_hor_scal.js" width="60%">
+    <slate xml:id="jsx_7_2_hor_scal_fig" surface="jsxboard"/>
+    <instructions>
+        <p>Adjust the vertical scale factor <m>b</m> to change the graph of <m>f(x) = 2^x</m>.</p>
+    </instructions>
+</interactive>
+</figure>
+
+
+
 </section>

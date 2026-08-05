@@ -32,4 +32,13 @@
 </objectives>
 
 
+<figure xml:id="fig_5_2_exp_fun">
+<interactive platform="jsxgraph" source="jsxgraph/jsx_5_2_exp_fun.js" width="60%">
+    <slate xml:id="jsx_5_2_exp_fun_fig" surface="jsxboard"/>
+    <instructions>
+        <p>Change the values of <m>A</m> and <m>b</m> to see how <m>f(x) = A \cdot b^x</m> changes.</p>
+    </instructions>
+</interactive>
+</figure>
+
 </section>
