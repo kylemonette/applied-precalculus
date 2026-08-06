@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "The Graph of a Function",
-  "body": " The Graph of a Function    After completing this section, you should be able to do the following.     Sketch or interpret the graph of a function given algebraically, numerically, or graphically, including in applied contexts.    Identify the interval(s) on which a function is increasing or decreasing from its graph.    Use the Vertical Line Test to determine whether a given curve is the graph of a function.      One way to visualize a function is by graphing it. The graph of a function is the set of all ordered pairs or points in the -plane such that is in the domain of the function and is the output assigned to the input by .  This graph is often a curve in the -plane. Specifically, it is the set of all ordered pairs for which the second coordinate is the value of the function at the first coordinate ; that is, the graph is the set of all points that satisfy the equation :      It is not always reasonable or even possible to plot the ordered pair associated with each in the domain of a given function . This is because functions can have many (sometimes even infinitely many) possible inputs. When drawing the graph of a function by hand, we customarily take relatively few points , plot the corresponding ordered pairs in the -plane, and then join neighboring ordered pairs with straight line segments. The result is an approximation of the graph of the function. Graphing calculators and other graphing tools do exactly this they just use a greater number of inputs than we typically would when graphing by hand.  It is useful to state a precise definition of the graph of a function as similar definitions appear in other contexts in mathematics.   Graph of a Function   The graph of a function is the collection of all points in the -plane for which . In other words, the graph is the collection of points for all inputs in the domain of .      Sketch the graph of the function where by hand. Plot points on the graph for .    The below table gives each input , the corresponding output obtained by calculating , and then the associated point .              pair                                                                                                       Plotting these points on the -plane and joining neighboring points by straight line segments results in the following rough sketch of :   A short description.    This is a decent approximation of the graph of . A better graph of can be obtained from a graphing calculator, graphing software package, or other similar tool.   A short description.      In , the function was given algebraically . That is, we were provided the algebraic formula for the function.  Sometimes, a function is given graphically . That is, we are given only the graph of the function. The following examples illustrate that a great deal of information can be extracted from the graph of a function.    The amount of nicotine in a person's bloodstream, , in milligrams, is a function of the time , in hours, that has passed since the person smoked a single cigarette. The graph of the function is given in .     A short description.       How much nicotine is absorbed from a single cigarette?  How much nicotine is left in the person's bloodstream hours after smoking a single cigarette? What about after hours?        Note that (as the point belongs to the graph of ). Thus, at hours so immediately after a person finishes smoking a cigarette the amount of nicotine in their bloodstream is milligrams. This is the amount absorbed from the cigarette.   As time goes on, the amount of nicotine decreases. We see from the grid on the -plane that ; in other words, the point lies on the graph. This tells us that hours after smoking a single cigarette there is milligram of nicotine left in the bloodstream.  Similarly, we observe that and conclude that hours after smoking a single cigarette there is only milligram of nicotine left in the bloodstream.         A woman is driving to visit with her family in a town miles from her home. Let be the time, in hours, since she left her home. Let be the distance, in miles, to her destination. Here, is a function of : . The graph of the function is given in .     A short description.       What is her distance from her destination hour after she leaves home?  Estimate the time at which her distance from her destination is miles.  When will she reach her destination?  How fast is she driving?        The point on the graph above is . In function notation, this can be written as . The practical meaning of this notation is that the distance to her destination after hour of driving is miles.  We look for the point on the graph for which the second coordinate is . The -coordinate of that point seems to be at . We conclude that the point lies on the graph, and that the associated function notation is . This means that after hours, the woman is 60 miles from her destination.  The woman reaches her destination when ; that is, when . From the graph, it is clear that . Hence the woman arrives at her destination after hours.  In the first hour of driving, her distance from her destination drops from miles to miles. After the next hour, it drops from miles to miles, and then from miles to miles during the hour after that. This pattern reveals that the woman is traveling at miles per hour.       Graphs of Increasing and Decreasing Functions  In graphical terms:    A function is increasing if its graph climbs as the independent variable increases; that is, as we move from left to right.  A function is decreasing if its graph falls as the independent variable increases; that is, as we move from left to right.    The function in is decreasing its graph is falling as increases. The amount of nicotine decreases as the amount of time after smoking a cigarette increases. In the distance to the destination decreases as the time spent driving increases. The function in is neither increasing nor decreasing in its domain. At first, over the negative -axis the graph is falling; the values decrease as increases. Then, over the positive -axis, the graph is climbing; the values increase as increases. We can say that is decreasing on the interval and increasing on the interval .   We typically require that these intervals be open : . Why? You'll see in calculus.    Functions Increasing or Decreasing on Intervals     A function is increasing on an interval if the values increase as increases along .  A function is decreasing on an interval if the values decrease as increases along .        Identify the interval(s) on which the function depicted below is increasing and the interval(s) on which it is decreasing.   A short description.      The graph of is climbing on the interval and on the interval . Hence, the function is increasing on these intervals. In interval notation, we would write that the function is increasing on .  The graph of is falling and thus is decreasing on the interval . In interval notation, we would write that the function is decreasing on .   Note that we do not use a bracket or around any of the endpoints , , or that appear in the interval notation here. This is because a function is neither increasing nor decreasing at these endpoints it either stops at them, or turns around.       Vertical Line Test  We have established that the graph of a function is often a curve in the -plane. However, not every curve in the -plane is the graph of a function. The definition of a function requires that for each input in the domain there is exactly one output . That is, there cannot be two different outputs corresponding to the same input.  The Vertical Line Test is a simple visual way of determining if a given curve is or is not the graph of a function.  Vertical Line Test   Let a curve in the -plane be given. If there is a vertical line that intersects the curve more than once, then the curve does not represent a function. If every vertical line intersects the curve at most once, then the curve represents the graph of a function.     This test clearly requires having the graph of a curve. In the next section, when a table of values is given, we cannot use this test.     Is the circle of radius centered at the origin in the -plane the graph of a function?    Consider the vertical line corresponding to ; that is, the vertical line passing through the point on the -axis.   A short description.     It takes only one vertical line intersecting the curve twice to conclude that the curve is not a function!   This vertical line intersects the circle at two points with two different values of , meaning there are two outputs corresponding to the input . This violates the definition of a function. Hence, the circle is NOT the graph of a function.    In utilizing the Vertical Line Test, it doesn't matter if the coordinates on the plane are labeled with , , or other letters. The idea is the same.    Is the graph of a straight line segment between the ordered pairs and in the -plane the graph of a function?   A short description.      The line segment is the graph of a function whose domain is the interval . Using the Vertical Line Test, we can see that each individual vertical line that passes through a specific value of with on the horizontal axis crosses the line segment at exactly one point. Any vertical line that passes through a value of outside the interval does not intersect the segment.    Note that, in general, a function can have the same output for two different inputs. In , the function gives the same output for both and . Still, for each , we have only one value of .  Having the same output for two different inputs means that some horizontal lines intersect the graph more than once which is perfectly fine for a function:   A short description.    We will revisit graphs of functions in Section 1.4.      Create a table of values and sketch the graph of the function for . Then use a graphing calculator or other graphing utility to check your graph.                       A short description.        Create a table of values and sketch the graph of the function for . Then use your calculator or any other graphing utility to check your graph.                     A short description.        Create a table of values and sketch the graph of the function for . Then use a graphing calculator or other graphing utility to check your graph.                     A short description.        The total cost of a meal in a restaurant, , in dollars, as a function of the price of the meal, , in dollars is given by: where the term corresponds to the tip. Create a table of values and sketch the graph of the function for . Then use your calculator or any other graphing utility to check your graph.                         A short description.        Use the graph of the function below to estimate each of the following.   A short description.                                            For the function whose graph is given in , estimate all values for which .     , , and .      For the function whose graph is given in , estimate all values of for which .     , , and .      Use the graph of the function shown below to estimate each of the following.   A short description.                                            For the function whose graph is given in , estimate all values of for which .     and       For the function whose graph is given in , estimate all values of for which .     , , , and       A driver of a 2019 Toyota Corolla fills his gas tank and embarks on a highway trip. The amount of gas left in the tank, , in gallons, is a function of the number of miles driven, . Use the graph of given below to answer the following questions.   A short description.       What is the fuel tank capacity of the 2019 Toyota Corolla?     gallons.      How much fuel is left after 200 miles?     gallons.      What happens after 528 miles?    The gas tank is empty.      What is the fuel efficiency of the 2019 Toyota Corolla on the highway?    Approximately miles per gallon.       The amount of caffeine remaining in the body, , in milligrams, hours after drinking a cup of coffee, is given by the graph below.   A short description.       How much caffeine was absorbed into the bloodstream from the cup of coffee?     mg.      How much caffeine is left after hours? After hours?    After hours, there are mg left. After hours, mg.      Is the function increasing, decreasing or neither on the interval ?    Decreasing.       A man deposited money into a savings account. His balance , in dollars, after years is given by the graph below.   A short description.       What was his initial deposit?     .      How much money was in his account after 10 years? After 20 years?    After 10 years, . After 20 years, .      Is the function increasing, decreasing or neither in the interval ?    Increasing.       Is the curve below the graph of a function ? Explain your answer.   A short description.      No, because it fails the vertical line test (in many places!).      The graph of a function is given below. Use it to find the following.   A short description.       Estimate .     .      Estimate all values of for which .     and .      Estimate all values of for which .     and .       For the function whose graph is depicted below, identify the intervals on the -axis for which the function is increasing and for which the function is decreasing.   A short description.      Increasing on the intervals . Or, write as and . Decreasing on the interval . Or, write as .      "
+  "body": " The Graph of a Function    After completing this section, you should be able to do the following.     Sketch or interpret the graph of a function given algebraically, numerically, or graphically, including in applied contexts.    Identify the interval(s) on which a function is increasing or decreasing from its graph.    Use the Vertical Line Test to determine whether a given curve is the graph of a function.      One way to visualize a function is by graphing it. The graph of a function is the set of all ordered pairs or points in the -plane such that is in the domain of the function and is the output assigned to the input by .  This graph is often a curve in the -plane. Specifically, it is the set of all ordered pairs for which the second coordinate is the value of the function at the first coordinate ; that is, the graph is the set of all points that satisfy the equation :      It is not always reasonable or even possible to plot the ordered pair associated with each in the domain of a given function . This is because functions can have many (sometimes even infinitely many) possible inputs. When drawing the graph of a function by hand, we customarily take relatively few points , plot the corresponding ordered pairs in the -plane, and then join neighboring ordered pairs with straight line segments. The result is an approximation of the graph of the function. Graphing calculators and other graphing tools do exactly this they just use a greater number of inputs than we typically would when graphing by hand.  It is useful to state a precise definition of the graph of a function as similar definitions appear in other contexts in mathematics.   Graph of a Function   The graph of a function is the collection of all points in the -plane for which . In other words, the graph is the collection of points for all inputs in the domain of .      Sketch the graph of the function where by hand. Plot points on the graph for .    The below table gives each input , the corresponding output obtained by calculating , and then the associated point .              pair                                                                                                       Plotting these points on the -plane and joining neighboring points by straight line segments results in the following rough sketch of :   A short description.    This is a decent approximation of the graph of . A better graph of can be obtained from a graphing calculator, graphing software package, or other similar tool.   A short description.      In , the function was given algebraically . That is, we were provided the algebraic formula for the function.  Sometimes, a function is given graphically . That is, we are given only the graph of the function. The following examples illustrate that a great deal of information can be extracted from the graph of a function.    The amount of nicotine in a person's bloodstream, , in milligrams, is a function of the time , in hours, that has passed since the person smoked a single cigarette. The graph of the function is given in .     A short description.       How much nicotine is absorbed from a single cigarette?  How much nicotine is left in the person's bloodstream hours after smoking a single cigarette? What about after hours?        Note that (as the point belongs to the graph of ). Thus, at hours so immediately after a person finishes smoking a cigarette the amount of nicotine in their bloodstream is milligrams. This is the amount absorbed from the cigarette.   As time goes on, the amount of nicotine decreases. We see from the grid on the -plane that ; in other words, the point lies on the graph. This tells us that hours after smoking a single cigarette there is milligram of nicotine left in the bloodstream.  Similarly, we observe that and conclude that hours after smoking a single cigarette there is only milligram of nicotine left in the bloodstream.         A woman is driving to visit with her family in a town miles from her home. Let be the time, in hours, since she left her home. Let be the distance, in miles, to her destination. Here, is a function of : . The graph of the function is given in .     A short description.       What is her distance from her destination hour after she leaves home?  Estimate the time at which her distance from her destination is miles.  When will she reach her destination?  How fast is she driving?        The point on the graph above is . In function notation, this can be written as . The practical meaning of this notation is that the distance to her destination after hour of driving is miles.  We look for the point on the graph for which the second coordinate is . The -coordinate of that point seems to be at . We conclude that the point lies on the graph, and that the associated function notation is . This means that after hours, the woman is 60 miles from her destination.  The woman reaches her destination when ; that is, when . From the graph, it is clear that . Hence the woman arrives at her destination after hours.  In the first hour of driving, her distance from her destination drops from miles to miles. After the next hour, it drops from miles to miles, and then from miles to miles during the hour after that. This pattern reveals that the woman is traveling at miles per hour.       Graphs of Increasing and Decreasing Functions  In graphical terms:    A function is increasing if its graph climbs as the independent variable increases; that is, as we move from left to right.  A function is decreasing if its graph falls as the independent variable increases; that is, as we move from left to right.    The function in is decreasing its graph is falling as increases. The amount of nicotine decreases as the amount of time after smoking a cigarette increases. In the distance to the destination decreases as the time spent driving increases. The function in is neither increasing nor decreasing in its domain. At first, over the negative -axis the graph is falling; the values decrease as increases. Then, over the positive -axis, the graph is climbing; the values increase as increases. We can say that is decreasing on the interval and increasing on the interval .   We typically require that these intervals be open : . Why? You'll see in calculus.    Functions Increasing or Decreasing on Intervals     A function is increasing on an interval if the values increase as increases along .  A function is decreasing on an interval if the values decrease as increases along .        Identify the interval(s) on which the function depicted below is increasing and the interval(s) on which it is decreasing.   A short description.      The graph of is climbing on the interval and on the interval . Hence, the function is increasing on these intervals. In interval notation, we would write that the function is increasing on .  The graph of is falling and thus is decreasing on the interval . In interval notation, we would write that the function is decreasing on .   Note that we do not use a bracket or around any of the endpoints , , or that appear in the interval notation here. This is because a function is neither increasing nor decreasing at these endpoints it either stops at them, or turns around.       Vertical Line Test  We have established that the graph of a function is often a curve in the -plane. However, not every curve in the -plane is the graph of a function. The definition of a function requires that for each input in the domain there is exactly one output . That is, there cannot be two different outputs corresponding to the same input.  The Vertical Line Test is a simple visual way of determining if a given curve is or is not the graph of a function.  Vertical Line Test   Let a curve in the -plane be given. If there is a vertical line that intersects the curve more than once, then the curve does not represent a function. If every vertical line intersects the curve at most once, then the curve represents the graph of a function.     This test clearly requires having the graph of a curve. In the next section, when a table of values is given, we cannot use this test.     Is the circle of radius centered at the origin in the -plane the graph of a function?    Consider the vertical line corresponding to ; that is, the vertical line passing through the point on the -axis.   A short description.     It takes only one vertical line intersecting the curve twice to conclude that the curve is not a function!   This vertical line intersects the circle at two points with two different values of , meaning there are two outputs corresponding to the input . This violates the definition of a function. Hence, the circle is NOT the graph of a function.    In utilizing the Vertical Line Test, it doesn't matter if the coordinates on the plane are labeled with , , or other letters. The idea is the same.    Is the graph of a straight line segment between the ordered pairs and in the -plane the graph of a function?   A short description.      The line segment is the graph of a function whose domain is the interval . Using the Vertical Line Test, we can see that each individual vertical line that passes through a specific value of with on the horizontal axis crosses the line segment at exactly one point. Any vertical line that passes through a value of outside the interval does not intersect the segment.    Note that, in general, a function can have the same output for two different inputs. In , the function gives the same output for both and . Still, for each , we have only one value of .  Having the same output for two different inputs means that some horizontal lines intersect the graph more than once which is perfectly fine for a function:   A short description.    We will revisit graphs of functions in Section 1.4.      Create a table of values and sketch the graph of the function for . Then use a graphing calculator or other graphing utility to check your graph.                       A short description.        Create a table of values and sketch the graph of the function for . Then use your calculator or any other graphing utility to check your graph.                     A short description.        Create a table of values and sketch the graph of the function for . Then use a graphing calculator or other graphing utility to check your graph.                     A short description.        The total cost of a meal in a restaurant, , in dollars, as a function of the price of the meal, , in dollars is given by: where the term corresponds to the tip. Create a table of values and sketch the graph of the function for . Then use your calculator or any other graphing utility to check your graph.                         A short description.        Use the graph of the function below to estimate each of the following.   A short description.                                            For the function whose graph is given in , estimate all values for which .     , , and .      For the function whose graph is given in , estimate all values of for which .     , , and .      Use the graph of the function shown below to estimate each of the following.   A short description.                                            For the function whose graph is given in , estimate all values of for which .     and       For the function whose graph is given in , estimate all values of for which .     , , , and       A driver of a 2019 Toyota Corolla fills his gas tank and embarks on a highway trip. The amount of gas left in the tank, , in gallons, is a function of the number of miles driven, . Use the graph of given below to answer the following questions.   A short description.       What is the fuel tank capacity of the 2019 Toyota Corolla?     gallons.      How much fuel is left after 200 miles?     gallons.      What happens after 528 miles?    The gas tank is empty.      What is the fuel efficiency of the 2019 Toyota Corolla on the highway?    Approximately miles per gallon.       The amount of caffeine remaining in the body, , in milligrams, hours after drinking a cup of coffee, is given by the graph below.   A short description.       How much caffeine was absorbed into the bloodstream from the cup of coffee?     mg.      How much caffeine is left after hours? After hours?    After hours, there are mg left. After hours, mg.      Is the function increasing, decreasing or neither on the interval ?    Decreasing.       A man deposited money into a savings account. His balance , in dollars, after years is given by the graph below.   A short description.       What was his initial deposit?     .      How much money was in his account after 10 years? After 20 years?    After 10 years, . After 20 years, .      Is the function increasing, decreasing or neither in the interval ?    Increasing.       Is the curve below the graph of a function ? Explain your answer.   A short description.      No, because it fails the vertical line test (in many places!).      The graph of a function is given below. Use it to find the following.   A short description.       Estimate .     .      Estimate all values of for which .     and .      Estimate all values of for which .     and .       For the function whose graph is depicted below, identify the intervals on the -axis for which the function is increasing and for which the function is decreasing.   A short description.      Increasing on the intervals . Or, write as and .  Decreasing on the interval . Or, write as .      "
 },
 {
   "id": "sec_1_2-2",
@@ -610,7 +610,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "16",
   "title": "",
-  "body": "  For the function whose graph is depicted below, identify the intervals on the -axis for which the function is increasing and for which the function is decreasing.   A short description.      Increasing on the intervals . Or, write as and . Decreasing on the interval . Or, write as .   "
+  "body": "  For the function whose graph is depicted below, identify the intervals on the -axis for which the function is increasing and for which the function is decreasing.   A short description.      Increasing on the intervals . Or, write as and .  Decreasing on the interval . Or, write as .   "
 },
 {
   "id": "sec_1_3",
@@ -3625,7 +3625,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Exponential Functions: Practical Meaning",
-  "body": " Exponential Functions: Practical Meaning    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Exponential Functions: Practical Meaning    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Exponential Growth or Decay   For each of the following, decide if a given exponential function represents a process of exponential growth or decay. For each function identify the initial value and the growth factor.          exponential growth; initial value: ; growth factor:            exponential decay; initial value: ; growth factor:            exponential decay; initial value: ; growth factor:            exponential growth; initial value: ; growth factor:        You deposit dollars into a savings account that pays annually. Let be your balance years later.     Find a formula for in the form .     ; exponential function      Find your balance after years.           Find the growth factor and the percent growth rate of the function .    growth factor: ; growth rate:        Let be the value, in dollars, of an antique desk years after its purchase. The desk was purchased for and its value increases by per year.     Find a formula for the function . What kind of function is it?     ; linear function      What is the rate of increase of in dollars per year?     dollars per year      What is the value of the desk after years?            Let be the value, in dollars, of an antique desk, years after its purchase. The desk was purchased for and its value increases by per year.     Find a formula for the function . What kind of function is it?     ; exponential function      What is the growth factor and the percent growth rate of ?    growth factor: ; growth rate:       What is the value of the desk after years?            Let be the population of a town years after the year . The population was people in , that is, at , and it has been increasing by people each year.     Write a formula for the function . What kind of function is it?     ; linear function      What is the rate of increase of the population in people per year?     people per year       Let be the population of a town years after the year . The population was people in , that is, at , and it has been increasing by the factor each year.     Write a formula for the function . What kind of function is it?     ; exponential function      What is the growth factor and the annual percent growth rate of the population?    growth factor: ; growth rate:        A biologist studies the effects of three different nutrients, , , and , on the growth of a particular kind of bacterium. hours after the experiment began, the number of bacteria in the culture fed nutrient is , the number of bacteria in the culture fed nutrient is , the number of bacteria in the culture fed nutrient is . The biologist observes that the functions , and are given by the following formulas:      Which of the nutrients stimulates growth of the bacteria the most? What is the hourly percent growth rate of the culture fed that nutrient?    nutrient b;       One of the nutrients proves toxic to the bacterium. Which one is it? What is the percent growth rate of the culture fed that nutrient?    nutrient c;        Following a dose of mg, a medication leaves a patient's body at an hourly percent rate of .     Write a formula for the amount of the medication, in mg, left in the body hours after the dose. What is the growth factor of ?     ; growth factor:       How much of the medication remains in the body after hours?    approximately mg       Cesium-137, a radioactive isotope of Cesium, decays very slowly. Let mg of Cesium-137 be present initially and let be the amount, in mg, remaining after years. Then:      What is the growth factor of Cesium-137?           What is the percent growth rate?           How much Cesium-137 remains after years?    approximately mg      Simplifying Exponential Functions   For each of the following, decide whether a given function is exponential. If yes, rewrite the function in the form . Identify the initial value, the growth factor, and decide if the function is increasing or decreasing. Round off your answers to four decimal places.           ; initial value: ; growth factor: ; decreasing            ; initial value: ; growth factor: ; increasing           Not an exponential function.            ; initial value: ; growth factor: ; increasing            ; initial value: ; growth factor: ; increasing            ; initial value: ; growth factor: ; decreasing      "
 },
 {
   "id": "sec_5_1-2",
@@ -3637,13 +3637,175 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-5_1_1",
+  "level": "2",
+  "url": "sec_5_1.html#exercise-5_1_1",
+  "type": "Exercise",
+  "number": "5.1.1",
+  "title": "",
+  "body": "       exponential growth; initial value: ; growth factor:    "
+},
+{
+  "id": "ex_5_1-1-4",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-1-4",
+  "type": "Exercise",
+  "number": "5.1.2",
+  "title": "",
+  "body": "       exponential decay; initial value: ; growth factor:    "
+},
+{
+  "id": "ex_5_1-1-5",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-1-5",
+  "type": "Exercise",
+  "number": "5.1.3",
+  "title": "",
+  "body": "       exponential decay; initial value: ; growth factor:    "
+},
+{
+  "id": "exercise-5_1_4",
+  "level": "2",
+  "url": "sec_5_1.html#exercise-5_1_4",
+  "type": "Exercise",
+  "number": "5.1.4",
+  "title": "",
+  "body": "       exponential growth; initial value: ; growth factor:    "
+},
+{
+  "id": "ex_5_1-2",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-2",
+  "type": "Exercise",
+  "number": "5.1.5",
+  "title": "",
+  "body": "  You deposit dollars into a savings account that pays annually. Let be your balance years later.     Find a formula for in the form .     ; exponential function      Find your balance after years.           Find the growth factor and the percent growth rate of the function .    growth factor: ; growth rate:     "
+},
+{
+  "id": "ex_5_1-3",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-3",
+  "type": "Exercise",
+  "number": "5.1.6",
+  "title": "",
+  "body": "  Let be the value, in dollars, of an antique desk years after its purchase. The desk was purchased for and its value increases by per year.     Find a formula for the function . What kind of function is it?     ; linear function      What is the rate of increase of in dollars per year?     dollars per year      What is the value of the desk after years?         "
+},
+{
+  "id": "ex_5_1-4",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-4",
+  "type": "Exercise",
+  "number": "5.1.7",
+  "title": "",
+  "body": "  Let be the value, in dollars, of an antique desk, years after its purchase. The desk was purchased for and its value increases by per year.     Find a formula for the function . What kind of function is it?     ; exponential function      What is the growth factor and the percent growth rate of ?    growth factor: ; growth rate:       What is the value of the desk after years?         "
+},
+{
+  "id": "ex_5_1-5",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-5",
+  "type": "Exercise",
+  "number": "5.1.8",
+  "title": "",
+  "body": "  Let be the population of a town years after the year . The population was people in , that is, at , and it has been increasing by people each year.     Write a formula for the function . What kind of function is it?     ; linear function      What is the rate of increase of the population in people per year?     people per year    "
+},
+{
+  "id": "ex_5_1-6",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-6",
+  "type": "Exercise",
+  "number": "5.1.9",
+  "title": "",
+  "body": "  Let be the population of a town years after the year . The population was people in , that is, at , and it has been increasing by the factor each year.     Write a formula for the function . What kind of function is it?     ; exponential function      What is the growth factor and the annual percent growth rate of the population?    growth factor: ; growth rate:     "
+},
+{
+  "id": "ex_5_1-7",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-7",
+  "type": "Exercise",
+  "number": "5.1.10",
+  "title": "",
+  "body": "  A biologist studies the effects of three different nutrients, , , and , on the growth of a particular kind of bacterium. hours after the experiment began, the number of bacteria in the culture fed nutrient is , the number of bacteria in the culture fed nutrient is , the number of bacteria in the culture fed nutrient is . The biologist observes that the functions , and are given by the following formulas:      Which of the nutrients stimulates growth of the bacteria the most? What is the hourly percent growth rate of the culture fed that nutrient?    nutrient b;       One of the nutrients proves toxic to the bacterium. Which one is it? What is the percent growth rate of the culture fed that nutrient?    nutrient c;     "
+},
+{
+  "id": "ex_5_1-8",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-8",
+  "type": "Exercise",
+  "number": "5.1.11",
+  "title": "",
+  "body": "  Following a dose of mg, a medication leaves a patient's body at an hourly percent rate of .     Write a formula for the amount of the medication, in mg, left in the body hours after the dose. What is the growth factor of ?     ; growth factor:       How much of the medication remains in the body after hours?    approximately mg    "
+},
+{
+  "id": "ex_5_1-9",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-9",
+  "type": "Exercise",
+  "number": "5.1.12",
+  "title": "",
+  "body": "  Cesium-137, a radioactive isotope of Cesium, decays very slowly. Let mg of Cesium-137 be present initially and let be the amount, in mg, remaining after years. Then:      What is the growth factor of Cesium-137?           What is the percent growth rate?           How much Cesium-137 remains after years?    approximately mg    "
+},
+{
+  "id": "exercise-5_1_13",
+  "level": "2",
+  "url": "sec_5_1.html#exercise-5_1_13",
+  "type": "Exercise",
+  "number": "5.1.13",
+  "title": "",
+  "body": "        ; initial value: ; growth factor: ; decreasing   "
+},
+{
+  "id": "ex_5_1-10-4",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-10-4",
+  "type": "Exercise",
+  "number": "5.1.14",
+  "title": "",
+  "body": "        ; initial value: ; growth factor: ; increasing   "
+},
+{
+  "id": "ex_5_1-10-5",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-10-5",
+  "type": "Exercise",
+  "number": "5.1.15",
+  "title": "",
+  "body": "       Not an exponential function.   "
+},
+{
+  "id": "ex_5_1-10-6",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-10-6",
+  "type": "Exercise",
+  "number": "5.1.16",
+  "title": "",
+  "body": "        ; initial value: ; growth factor: ; increasing   "
+},
+{
+  "id": "ex_5_1-10-7",
+  "level": "2",
+  "url": "sec_5_1.html#ex_5_1-10-7",
+  "type": "Exercise",
+  "number": "5.1.17",
+  "title": "",
+  "body": "        ; initial value: ; growth factor: ; increasing   "
+},
+{
+  "id": "exercise-5_1_18",
+  "level": "2",
+  "url": "sec_5_1.html#exercise-5_1_18",
+  "type": "Exercise",
+  "number": "5.1.18",
+  "title": "",
+  "body": "        ; initial value: ; growth factor: ; decreasing   "
+},
+{
   "id": "sec_5_2",
   "level": "1",
   "url": "sec_5_2.html",
   "type": "Section",
   "number": "5.2",
   "title": "Graphs of Exponential Functions",
-  "body": " Graphs of Exponential Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.        "
+  "body": " Graphs of Exponential Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.           Complete the table of values below and use it to graph the exponential function in the interval .                                                    Complete the table of values below and use it to graph the exponential function in the interval .                                                    Below you see a graph of an exponential function . What is its initial value ? Is its growth factor greater than or less than ?        ;       Which of the graphs below could be a graph of the function ? Explain your answer!                                            Which of the graphs below could be a graph of the function ? Explain your answer!                                            Find a formula in the form for the exponential function whose graph is given below:              Find a formula in the form for the exponential function whose graph is given below:              Find a function whose graph contains points and .           Find a function whose graph contains points and .           A medication is eliminated from the body at the daily percent rate of . A patient takes a single dose of mg of the medication. Let be the amount, in mg, remaining in the patient's body days after the dose.     Find a formula for the function .           Fill in the missing entries in the following table of values:    (days)         mg             (days)         mg             Use the table to plot the points corresponding to that are on the graph of . Sketch a graph of the function in the coordinate system below.               The number of diagnosed cases of a new virus doubles every week. Let be the number of diagnosed cases weeks after an epidemic began. Here are the measurements during the first weeks:    (weeks)          (cases)             Mark the points corresponding to the data in the table on the graph of the function :              Is the function exponential? If yes, find a formula for and check with the table of values.    Yes;       "
 },
 {
   "id": "sec_5_2-2",
@@ -3664,13 +3826,112 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "ex_5_2-1",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-1",
+  "type": "Exercise",
+  "number": "5.2.1",
+  "title": "",
+  "body": "  Complete the table of values below and use it to graph the exponential function in the interval .                                                 "
+},
+{
+  "id": "ex_5_2-2",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-2",
+  "type": "Exercise",
+  "number": "5.2.2",
+  "title": "",
+  "body": "  Complete the table of values below and use it to graph the exponential function in the interval .                                                 "
+},
+{
+  "id": "ex_5_2-3",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-3",
+  "type": "Exercise",
+  "number": "5.2.3",
+  "title": "",
+  "body": "  Below you see a graph of an exponential function . What is its initial value ? Is its growth factor greater than or less than ?        ;    "
+},
+{
+  "id": "ex_5_2-4",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-4",
+  "type": "Exercise",
+  "number": "5.2.4",
+  "title": "",
+  "body": "  Which of the graphs below could be a graph of the function ? Explain your answer!                                         "
+},
+{
+  "id": "ex_5_2-5",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-5",
+  "type": "Exercise",
+  "number": "5.2.5",
+  "title": "",
+  "body": "  Which of the graphs below could be a graph of the function ? Explain your answer!                                         "
+},
+{
+  "id": "ex_5_2-6",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-6",
+  "type": "Exercise",
+  "number": "5.2.6",
+  "title": "",
+  "body": "  Find a formula in the form for the exponential function whose graph is given below:           "
+},
+{
+  "id": "ex_5_2-7",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-7",
+  "type": "Exercise",
+  "number": "5.2.7",
+  "title": "",
+  "body": "  Find a formula in the form for the exponential function whose graph is given below:           "
+},
+{
+  "id": "ex_5_2-8",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-8",
+  "type": "Exercise",
+  "number": "5.2.8",
+  "title": "",
+  "body": "  Find a function whose graph contains points and .        "
+},
+{
+  "id": "ex_5_2-9",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-9",
+  "type": "Exercise",
+  "number": "5.2.9",
+  "title": "",
+  "body": "  Find a function whose graph contains points and .        "
+},
+{
+  "id": "ex_5_2-10",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-10",
+  "type": "Exercise",
+  "number": "5.2.10",
+  "title": "",
+  "body": "  A medication is eliminated from the body at the daily percent rate of . A patient takes a single dose of mg of the medication. Let be the amount, in mg, remaining in the patient's body days after the dose.     Find a formula for the function .           Fill in the missing entries in the following table of values:    (days)         mg             (days)         mg             Use the table to plot the points corresponding to that are on the graph of . Sketch a graph of the function in the coordinate system below.            "
+},
+{
+  "id": "ex_5_2-11",
+  "level": "2",
+  "url": "sec_5_2.html#ex_5_2-11",
+  "type": "Exercise",
+  "number": "5.2.11",
+  "title": "",
+  "body": "  The number of diagnosed cases of a new virus doubles every week. Let be the number of diagnosed cases weeks after an epidemic began. Here are the measurements during the first weeks:    (weeks)          (cases)             Mark the points corresponding to the data in the table on the graph of the function :              Is the function exponential? If yes, find a formula for and check with the table of values.    Yes;     "
+},
+{
   "id": "sec_5_3",
   "level": "1",
   "url": "sec_5_3.html",
   "type": "Section",
   "number": "5.3",
   "title": "Exponential Functions Numerically, Modeling",
-  "body": " Exponential Functions Numerically, Modeling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Exponential Functions Numerically, Modeling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Exponential Functions   For each of the following data tables, check if the data can possibly correspond to an exponential function or not. If yes, give a formula for the function in the form . Identify the initial value and the growth factor.                           possible exponential function; ; initial value: ; growth factor:                             possible exponential function; ; initial value: ; growth factor:                             not an exponential function                          possible exponential function; ; initial value: ; growth factor:                             not an exponential function      Exponential Functions   For each of the following data tables, check if the data can possibly correspond to an exponential function or not. If yes, give a formula for the function in the form . Give both the exact and the approximate value for the growth factor. Round off to at least three decimal places.                         possible exponential function;                             possible exponential function;       Finding a Function   For each of the following, find a function that corresponds to the data given in each table. Fill in the missing entries.                          ;                            ;        Barometric pressure https:\/\/en.wikipedia.org\/wiki\/Barometric_formula , accessed: 7\/10\/20 the pressure of the air depends on the altitude above sea level. Let be altitude above sea level measured in kilometers. Let be barometric pressure measured in mmHg millimeters of mercury. Here are readings of barometric pressure at different altitudes:    (km)         (mmHg)            Can you see from the data that the function is exponential?    Yes.      What is the barometric pressure, , at sea level?     mmHg      Find a formula for in the form . When calculating , round off to three decimal places.           The summit of Mount Everest is at meters above sea level. What is the barometric pressure at the top of Mount Everest?    approximately mmHg      "
 },
 {
   "id": "sec_5_3-2",
@@ -3682,13 +3943,103 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-5_3_1",
+  "level": "2",
+  "url": "sec_5_3.html#exercise-5_3_1",
+  "type": "Exercise",
+  "number": "5.3.1",
+  "title": "",
+  "body": "                        possible exponential function; ; initial value: ; growth factor:    "
+},
+{
+  "id": "ex_5_3-1-4",
+  "level": "2",
+  "url": "sec_5_3.html#ex_5_3-1-4",
+  "type": "Exercise",
+  "number": "5.3.2",
+  "title": "",
+  "body": "                        possible exponential function; ; initial value: ; growth factor:    "
+},
+{
+  "id": "ex_5_3-1-5",
+  "level": "2",
+  "url": "sec_5_3.html#ex_5_3-1-5",
+  "type": "Exercise",
+  "number": "5.3.3",
+  "title": "",
+  "body": "                        not an exponential function   "
+},
+{
+  "id": "ex_5_3-1-6",
+  "level": "2",
+  "url": "sec_5_3.html#ex_5_3-1-6",
+  "type": "Exercise",
+  "number": "5.3.4",
+  "title": "",
+  "body": "                      possible exponential function; ; initial value: ; growth factor:    "
+},
+{
+  "id": "exercise-5_3_5",
+  "level": "2",
+  "url": "sec_5_3.html#exercise-5_3_5",
+  "type": "Exercise",
+  "number": "5.3.5",
+  "title": "",
+  "body": "                        not an exponential function   "
+},
+{
+  "id": "exercise-5_3_6",
+  "level": "2",
+  "url": "sec_5_3.html#exercise-5_3_6",
+  "type": "Exercise",
+  "number": "5.3.6",
+  "title": "",
+  "body": "                      possible exponential function;    "
+},
+{
+  "id": "exercise-5_3_7",
+  "level": "2",
+  "url": "sec_5_3.html#exercise-5_3_7",
+  "type": "Exercise",
+  "number": "5.3.7",
+  "title": "",
+  "body": "                        possible exponential function;    "
+},
+{
+  "id": "exercise-5_3_8",
+  "level": "2",
+  "url": "sec_5_3.html#exercise-5_3_8",
+  "type": "Exercise",
+  "number": "5.3.8",
+  "title": "",
+  "body": "                       ;    "
+},
+{
+  "id": "exercise-5_3_9",
+  "level": "2",
+  "url": "sec_5_3.html#exercise-5_3_9",
+  "type": "Exercise",
+  "number": "5.3.9",
+  "title": "",
+  "body": "                       ;    "
+},
+{
+  "id": "ex_5_3-4",
+  "level": "2",
+  "url": "sec_5_3.html#ex_5_3-4",
+  "type": "Exercise",
+  "number": "5.3.10",
+  "title": "",
+  "body": "  Barometric pressure https:\/\/en.wikipedia.org\/wiki\/Barometric_formula , accessed: 7\/10\/20 the pressure of the air depends on the altitude above sea level. Let be altitude above sea level measured in kilometers. Let be barometric pressure measured in mmHg millimeters of mercury. Here are readings of barometric pressure at different altitudes:    (km)         (mmHg)            Can you see from the data that the function is exponential?    Yes.      What is the barometric pressure, , at sea level?     mmHg      Find a formula for in the form . When calculating , round off to three decimal places.           The summit of Mount Everest is at meters above sea level. What is the barometric pressure at the top of Mount Everest?    approximately mmHg    "
+},
+{
   "id": "sec_5_4",
   "level": "1",
   "url": "sec_5_4.html",
   "type": "Section",
   "number": "5.4",
   "title": "Doubling Time and Half-Life",
-  "body": " Doubling Time and Half-Life    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Doubling Time and Half-Life    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Finding the Doubling Time   For each exponential function, find the initial amount (in units of ) and the doubling time (in units of ).          initial amount: ; doubling time:            initial amount: ; doubling time:            initial amount: ; doubling time:            initial amount: ; doubling time:       Finding the Half-Life   For each of the following, for each exponential function, find the initial amount (in units of ) and the half-life (in units of ).          initial amount: ; half-life:            initial amount: ; half-life:            initial amount: ; half-life:            initial amount: ; half-life:       Doubling Time & Half-Life Formulas   For each of the following, write a formula for an exponential function in the form that describes the given scenario. Then convert the function to the form .     The population of a town begins with people at and doubles every years.           The population of a town begins with people at and triples every years.           The initial amount of mg of a radioactive element is halved every days.           The initial amount of mg of a radioactive element is cut by one-third every months.           Estimating Doubling Time & Half-Life   For each of the following, estimate the half-life or the doubling time whichever applies.                               doubling time:                                 half-life: approximately        The graph of an exponential function below shows the population of bacteria, , in a laboratory experiment minutes after the experiment began.        What is the initial amount, , of bacteria?     bacteria      Estimate the doubling time of the population.     minutes      Write a formula for in the form . Then rewrite the formula in the form . Round off to four decimal places. What is the percent growth rate?     ; growth rate:        The amount of caffeine remaining in the body, , in milligrams, hours after drinking a cup of coffee, is an exponential function and its graph is given below:        Estimate the amount of caffeine, , absorbed by the body from a cup of coffee.     mg      Estimate the half-life of caffeine.     hours      Write a formula for in the form . Rewrite the formula in the form . Round off to three decimal places. What is the percent growth rate?     ; growth rate:       "
 },
 {
   "id": "sec_5_4-2",
@@ -3700,13 +4051,157 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-5_4_1",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_1",
+  "type": "Exercise",
+  "number": "5.4.1",
+  "title": "",
+  "body": "       initial amount: ; doubling time:    "
+},
+{
+  "id": "ex_5_4-1-4",
+  "level": "2",
+  "url": "sec_5_4.html#ex_5_4-1-4",
+  "type": "Exercise",
+  "number": "5.4.2",
+  "title": "",
+  "body": "       initial amount: ; doubling time:    "
+},
+{
+  "id": "ex_5_4-1-5",
+  "level": "2",
+  "url": "sec_5_4.html#ex_5_4-1-5",
+  "type": "Exercise",
+  "number": "5.4.3",
+  "title": "",
+  "body": "       initial amount: ; doubling time:    "
+},
+{
+  "id": "exercise-5_4_4",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_4",
+  "type": "Exercise",
+  "number": "5.4.4",
+  "title": "",
+  "body": "       initial amount: ; doubling time:    "
+},
+{
+  "id": "exercise-5_4_5",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_5",
+  "type": "Exercise",
+  "number": "5.4.5",
+  "title": "",
+  "body": "       initial amount: ; half-life:    "
+},
+{
+  "id": "ex_5_4-2-4",
+  "level": "2",
+  "url": "sec_5_4.html#ex_5_4-2-4",
+  "type": "Exercise",
+  "number": "5.4.6",
+  "title": "",
+  "body": "       initial amount: ; half-life:    "
+},
+{
+  "id": "ex_5_4-2-5",
+  "level": "2",
+  "url": "sec_5_4.html#ex_5_4-2-5",
+  "type": "Exercise",
+  "number": "5.4.7",
+  "title": "",
+  "body": "       initial amount: ; half-life:    "
+},
+{
+  "id": "exercise-5_4_8",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_8",
+  "type": "Exercise",
+  "number": "5.4.8",
+  "title": "",
+  "body": "       initial amount: ; half-life:    "
+},
+{
+  "id": "exercise-5_4_9",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_9",
+  "type": "Exercise",
+  "number": "5.4.9",
+  "title": "",
+  "body": "  The population of a town begins with people at and doubles every years.        "
+},
+{
+  "id": "ex_5_4-3-4",
+  "level": "2",
+  "url": "sec_5_4.html#ex_5_4-3-4",
+  "type": "Exercise",
+  "number": "5.4.10",
+  "title": "",
+  "body": "  The population of a town begins with people at and triples every years.        "
+},
+{
+  "id": "ex_5_4-3-5",
+  "level": "2",
+  "url": "sec_5_4.html#ex_5_4-3-5",
+  "type": "Exercise",
+  "number": "5.4.11",
+  "title": "",
+  "body": "  The initial amount of mg of a radioactive element is halved every days.        "
+},
+{
+  "id": "exercise-5_4_12",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_12",
+  "type": "Exercise",
+  "number": "5.4.12",
+  "title": "",
+  "body": "  The initial amount of mg of a radioactive element is cut by one-third every months.        "
+},
+{
+  "id": "exercise-5_4_13",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_13",
+  "type": "Exercise",
+  "number": "5.4.13",
+  "title": "",
+  "body": "                            doubling time:    "
+},
+{
+  "id": "exercise-5_4_14",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_14",
+  "type": "Exercise",
+  "number": "5.4.14",
+  "title": "",
+  "body": "                            half-life: approximately    "
+},
+{
+  "id": "exercise-5_4_15",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_15",
+  "type": "Exercise",
+  "number": "5.4.15",
+  "title": "",
+  "body": "  The graph of an exponential function below shows the population of bacteria, , in a laboratory experiment minutes after the experiment began.        What is the initial amount, , of bacteria?     bacteria      Estimate the doubling time of the population.     minutes      Write a formula for in the form . Then rewrite the formula in the form . Round off to four decimal places. What is the percent growth rate?     ; growth rate:     "
+},
+{
+  "id": "exercise-5_4_16",
+  "level": "2",
+  "url": "sec_5_4.html#exercise-5_4_16",
+  "type": "Exercise",
+  "number": "5.4.16",
+  "title": "",
+  "body": "  The amount of caffeine remaining in the body, , in milligrams, hours after drinking a cup of coffee, is an exponential function and its graph is given below:        Estimate the amount of caffeine, , absorbed by the body from a cup of coffee.     mg      Estimate the half-life of caffeine.     hours      Write a formula for in the form . Rewrite the formula in the form . Round off to three decimal places. What is the percent growth rate?     ; growth rate:     "
+},
+{
   "id": "sec_5_5",
   "level": "1",
   "url": "sec_5_5.html",
   "type": "Section",
   "number": "5.5",
   "title": "The Natural Base e",
-  "body": " The Natural Base e    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " The Natural Base e    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Evaluating Expressions   For each of the following, use your calculator to evaluate the given expression. Round off your answer to three decimal places.                                                      Match each function below to its corresponding graph.           Graph A       Graph B       Graph C     Graph A is ; Graph B is ; Graph C is .     Identifying Exponential Functions   For each of the following, determine if the given exponential function is increasing or decreasing. For each function, identify its continuous growth rate.          increasing; continuous growth rate:            decreasing; continuous growth rate:            increasing; continuous growth rate:            decreasing; continuous growth rate:       Rewriting Exponential Functions   For each of the following, rewrite the given exponential function in the form . Round off the base to four decimal places.                                                      A common antidepressant Paxil has a continuous hourly growth rate of . A patient takes an initial dose of mg. Let be the amount of Paxil left in a patient's body from the initial dose hours later.     Write a formula for in terms of the natural base .           How much Paxil is left in the patient's body hours after the dose?    approximately mg       A radioactive isotope of Iodine, Iodine-123, is often used in medical imagining as a contrast. An initial amount of  g of Iodine-123 is administered to a patient. Let be the amount of Iodine-123, in g, remaining in the patient's body after hours. Given that the continuous hourly decay rate of Iodine-123 is , write a formula for . How much Iodine-123 is left after hours?     ; approximately  g     "
 },
 {
   "id": "sec_5_5-2",
@@ -3718,13 +4213,148 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-5_5_1",
+  "level": "2",
+  "url": "sec_5_5.html#exercise-5_5_1",
+  "type": "Exercise",
+  "number": "5.5.1",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_5_5-1-4",
+  "level": "2",
+  "url": "sec_5_5.html#ex_5_5-1-4",
+  "type": "Exercise",
+  "number": "5.5.2",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_5_5-1-5",
+  "level": "2",
+  "url": "sec_5_5.html#ex_5_5-1-5",
+  "type": "Exercise",
+  "number": "5.5.3",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-5_5_4",
+  "level": "2",
+  "url": "sec_5_5.html#exercise-5_5_4",
+  "type": "Exercise",
+  "number": "5.5.4",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_5_5-2",
+  "level": "2",
+  "url": "sec_5_5.html#ex_5_5-2",
+  "type": "Exercise",
+  "number": "5.5.5",
+  "title": "",
+  "body": "  Match each function below to its corresponding graph.           Graph A       Graph B       Graph C     Graph A is ; Graph B is ; Graph C is .   "
+},
+{
+  "id": "exercise-5_5_6",
+  "level": "2",
+  "url": "sec_5_5.html#exercise-5_5_6",
+  "type": "Exercise",
+  "number": "5.5.6",
+  "title": "",
+  "body": "       increasing; continuous growth rate:    "
+},
+{
+  "id": "ex_5_5-3-4",
+  "level": "2",
+  "url": "sec_5_5.html#ex_5_5-3-4",
+  "type": "Exercise",
+  "number": "5.5.7",
+  "title": "",
+  "body": "       decreasing; continuous growth rate:    "
+},
+{
+  "id": "ex_5_5-3-5",
+  "level": "2",
+  "url": "sec_5_5.html#ex_5_5-3-5",
+  "type": "Exercise",
+  "number": "5.5.8",
+  "title": "",
+  "body": "       increasing; continuous growth rate:    "
+},
+{
+  "id": "exercise-5_5_9",
+  "level": "2",
+  "url": "sec_5_5.html#exercise-5_5_9",
+  "type": "Exercise",
+  "number": "5.5.9",
+  "title": "",
+  "body": "       decreasing; continuous growth rate:    "
+},
+{
+  "id": "exercise-5_5_10",
+  "level": "2",
+  "url": "sec_5_5.html#exercise-5_5_10",
+  "type": "Exercise",
+  "number": "5.5.10",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_5_5-4-4",
+  "level": "2",
+  "url": "sec_5_5.html#ex_5_5-4-4",
+  "type": "Exercise",
+  "number": "5.5.11",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_5_5-4-5",
+  "level": "2",
+  "url": "sec_5_5.html#ex_5_5-4-5",
+  "type": "Exercise",
+  "number": "5.5.12",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-5_5_13",
+  "level": "2",
+  "url": "sec_5_5.html#exercise-5_5_13",
+  "type": "Exercise",
+  "number": "5.5.13",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_5_5-5",
+  "level": "2",
+  "url": "sec_5_5.html#ex_5_5-5",
+  "type": "Exercise",
+  "number": "5.5.14",
+  "title": "",
+  "body": "  A common antidepressant Paxil has a continuous hourly growth rate of . A patient takes an initial dose of mg. Let be the amount of Paxil left in a patient's body from the initial dose hours later.     Write a formula for in terms of the natural base .           How much Paxil is left in the patient's body hours after the dose?    approximately mg    "
+},
+{
+  "id": "ex_5_5-6",
+  "level": "2",
+  "url": "sec_5_5.html#ex_5_5-6",
+  "type": "Exercise",
+  "number": "5.5.15",
+  "title": "",
+  "body": "  A radioactive isotope of Iodine, Iodine-123, is often used in medical imagining as a contrast. An initial amount of  g of Iodine-123 is administered to a patient. Let be the amount of Iodine-123, in g, remaining in the patient's body after hours. Given that the continuous hourly decay rate of Iodine-123 is , write a formula for . How much Iodine-123 is left after hours?     ; approximately  g   "
+},
+{
   "id": "sec_6_1",
   "level": "1",
   "url": "sec_6_1.html",
   "type": "Section",
   "number": "6.1",
   "title": "What Are Logarithms?",
-  "body": " What Are Logarithms?    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " What Are Logarithms?    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Evaluating Logarithms   For each of the following, evaluate the given expression without a calculator. If the expression is undefined, say so.                      undefined           undefined                                                                                   undefined                                               undefined                       undefined                              Estimating Logarithms   For each of the following, use the graphs of and to give a rough estimate.           approximately            approximately            approximately            approximately       Logarithms on a Calculator   For each of the following, use your calculator to evaluate the given expression. Round off to four decimal places. For undefined expressions, state undefined .                                                     "
 },
 {
   "id": "sec_6_1-2",
@@ -3736,13 +4366,247 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-6_1_1",
+  "level": "2",
+  "url": "sec_6_1.html#exercise-6_1_1",
+  "type": "Exercise",
+  "number": "6.1.1",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-4",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-4",
+  "type": "Exercise",
+  "number": "6.1.2",
+  "title": "",
+  "body": "       undefined   "
+},
+{
+  "id": "ex_6_1-1-5",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-5",
+  "type": "Exercise",
+  "number": "6.1.3",
+  "title": "",
+  "body": "       undefined   "
+},
+{
+  "id": "ex_6_1-1-6",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-6",
+  "type": "Exercise",
+  "number": "6.1.4",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-7",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-7",
+  "type": "Exercise",
+  "number": "6.1.5",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-8",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-8",
+  "type": "Exercise",
+  "number": "6.1.6",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-9",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-9",
+  "type": "Exercise",
+  "number": "6.1.7",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-10",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-10",
+  "type": "Exercise",
+  "number": "6.1.8",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-11",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-11",
+  "type": "Exercise",
+  "number": "6.1.9",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-12",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-12",
+  "type": "Exercise",
+  "number": "6.1.10",
+  "title": "",
+  "body": "       undefined   "
+},
+{
+  "id": "ex_6_1-1-13",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-13",
+  "type": "Exercise",
+  "number": "6.1.11",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-14",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-14",
+  "type": "Exercise",
+  "number": "6.1.12",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-15",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-15",
+  "type": "Exercise",
+  "number": "6.1.13",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-16",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-16",
+  "type": "Exercise",
+  "number": "6.1.14",
+  "title": "",
+  "body": "       undefined   "
+},
+{
+  "id": "ex_6_1-1-17",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-17",
+  "type": "Exercise",
+  "number": "6.1.15",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-1-18",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-18",
+  "type": "Exercise",
+  "number": "6.1.16",
+  "title": "",
+  "body": "       undefined   "
+},
+{
+  "id": "ex_6_1-1-19",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-1-19",
+  "type": "Exercise",
+  "number": "6.1.17",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_1_18",
+  "level": "2",
+  "url": "sec_6_1.html#exercise-6_1_18",
+  "type": "Exercise",
+  "number": "6.1.18",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_1_19",
+  "level": "2",
+  "url": "sec_6_1.html#exercise-6_1_19",
+  "type": "Exercise",
+  "number": "6.1.19",
+  "title": "",
+  "body": "       approximately    "
+},
+{
+  "id": "ex_6_1-2-4",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-2-4",
+  "type": "Exercise",
+  "number": "6.1.20",
+  "title": "",
+  "body": "       approximately    "
+},
+{
+  "id": "ex_6_1-2-5",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-2-5",
+  "type": "Exercise",
+  "number": "6.1.21",
+  "title": "",
+  "body": "       approximately    "
+},
+{
+  "id": "exercise-6_1_22",
+  "level": "2",
+  "url": "sec_6_1.html#exercise-6_1_22",
+  "type": "Exercise",
+  "number": "6.1.22",
+  "title": "",
+  "body": "       approximately    "
+},
+{
+  "id": "exercise-6_1_23",
+  "level": "2",
+  "url": "sec_6_1.html#exercise-6_1_23",
+  "type": "Exercise",
+  "number": "6.1.23",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-3-4",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-3-4",
+  "type": "Exercise",
+  "number": "6.1.24",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_1-3-5",
+  "level": "2",
+  "url": "sec_6_1.html#ex_6_1-3-5",
+  "type": "Exercise",
+  "number": "6.1.25",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_1_26",
+  "level": "2",
+  "url": "sec_6_1.html#exercise-6_1_26",
+  "type": "Exercise",
+  "number": "6.1.26",
+  "title": "",
+  "body": "           "
+},
+{
   "id": "sec_6_2",
   "level": "1",
   "url": "sec_6_2.html",
   "type": "Section",
   "number": "6.2",
   "title": "Properties of Logarithms, Solving Equations Using Logarithms",
-  "body": " Properties of Logarithms, Solving Equations Using Logarithms    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Properties of Logarithms, Solving Equations Using Logarithms    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Properties of Logarithms   For each of the following, use properties of logarithms to expand a given expression as much as possible and write it in terms of , and , if possible. Assume that , , and are positive.                                                          Cannot simplify.           Cannot simplify.                              Expanding Logarithms   For each of the following, use properties of logarithms to expand a given expression as much as possible and write it in terms of , and , if possible. Assume that , , and are positive.                                  Cannot simplify.                                                                  Simplifying Logarithms   For each of the following, combine the expression into one logarithm, if possible. Assume that , , and are positive.          Not possible.                                   Not possible.                       Not possible.      Solving Exponential Equations   For each of the following, solve a given equation for or for . Give the exact answer as well as its approximation rounded off to three decimal places.                                                                             Using the Change of Base Formula   For each of the following, rewrite a given logarithm in terms of the natural logarithm and calculate its value using your calculator. Round off to three decimal places.                             "
 },
 {
   "id": "sec_6_2-2",
@@ -3754,13 +4618,283 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-6_2_1",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_1",
+  "type": "Exercise",
+  "number": "6.2.1",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-1-4",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-1-4",
+  "type": "Exercise",
+  "number": "6.2.2",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-1-5",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-1-5",
+  "type": "Exercise",
+  "number": "6.2.3",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-1-6",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-1-6",
+  "type": "Exercise",
+  "number": "6.2.4",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-1-7",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-1-7",
+  "type": "Exercise",
+  "number": "6.2.5",
+  "title": "",
+  "body": "       Cannot simplify.   "
+},
+{
+  "id": "ex_6_2-1-8",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-1-8",
+  "type": "Exercise",
+  "number": "6.2.6",
+  "title": "",
+  "body": "       Cannot simplify.   "
+},
+{
+  "id": "ex_6_2-1-9",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-1-9",
+  "type": "Exercise",
+  "number": "6.2.7",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_2_8",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_8",
+  "type": "Exercise",
+  "number": "6.2.8",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_2_9",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_9",
+  "type": "Exercise",
+  "number": "6.2.9",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-2-4",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-2-4",
+  "type": "Exercise",
+  "number": "6.2.10",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-2-5",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-2-5",
+  "type": "Exercise",
+  "number": "6.2.11",
+  "title": "",
+  "body": "       Cannot simplify.   "
+},
+{
+  "id": "ex_6_2-2-6",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-2-6",
+  "type": "Exercise",
+  "number": "6.2.12",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-2-7",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-2-7",
+  "type": "Exercise",
+  "number": "6.2.13",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-2-8",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-2-8",
+  "type": "Exercise",
+  "number": "6.2.14",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-2-9",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-2-9",
+  "type": "Exercise",
+  "number": "6.2.15",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_2_16",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_16",
+  "type": "Exercise",
+  "number": "6.2.16",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_2_17",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_17",
+  "type": "Exercise",
+  "number": "6.2.17",
+  "title": "",
+  "body": "       Not possible.   "
+},
+{
+  "id": "ex_6_2-3-4",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-3-4",
+  "type": "Exercise",
+  "number": "6.2.18",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-3-5",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-3-5",
+  "type": "Exercise",
+  "number": "6.2.19",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-3-6",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-3-6",
+  "type": "Exercise",
+  "number": "6.2.20",
+  "title": "",
+  "body": "       Not possible.   "
+},
+{
+  "id": "ex_6_2-3-7",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-3-7",
+  "type": "Exercise",
+  "number": "6.2.21",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_2_22",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_22",
+  "type": "Exercise",
+  "number": "6.2.22",
+  "title": "",
+  "body": "       Not possible.   "
+},
+{
+  "id": "exercise-6_2_23",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_23",
+  "type": "Exercise",
+  "number": "6.2.23",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-4-4",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-4-4",
+  "type": "Exercise",
+  "number": "6.2.24",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-4-5",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-4-5",
+  "type": "Exercise",
+  "number": "6.2.25",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-4-6",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-4-6",
+  "type": "Exercise",
+  "number": "6.2.26",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_2-4-7",
+  "level": "2",
+  "url": "sec_6_2.html#ex_6_2-4-7",
+  "type": "Exercise",
+  "number": "6.2.27",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_2_28",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_28",
+  "type": "Exercise",
+  "number": "6.2.28",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_2_29",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_29",
+  "type": "Exercise",
+  "number": "6.2.29",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_2_30",
+  "level": "2",
+  "url": "sec_6_2.html#exercise-6_2_30",
+  "type": "Exercise",
+  "number": "6.2.30",
+  "title": "",
+  "body": "           "
+},
+{
   "id": "sec_6_3",
   "level": "1",
   "url": "sec_6_3.html",
   "type": "Section",
   "number": "6.3",
   "title": "Logarithms in Applications",
-  "body": " Logarithms in Applications    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Logarithms in Applications    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Rewriting Exponential Functions   For each of the following, rewrite a given exponential function in terms of the natural base; that is, in the form . Round off to four decimal places.                                                      If a bank offers an interest rate of with interest compounded continuously (rather than once a year), your balance after years is: where is your initial deposit, in dollars.     How long will it take for your money to double?    approximately years      How long will it take for your money to triple?    approximately years       A laboratory culture of Salmonella enterica starts with bacteria at and doubles every minutes. https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC6015860\/ , accessed: 6\/26\/20 Let be the number of bacteria in the culture at time , in minutes.     Write a formula for in terms of the natural base .           How long will it take for to triple? Does the tripling time depend on the initial amount ?    approximately minutes; no       Bacterial population dynamics is not as simple as measuring the doubling time of a bacterium in the laboratory, under optimal growth conditions. A more challenging question is to find the doubling time of a bacterium in its natural environment, for example, in the gut. The doubling time of Salmonella enterica in the gut is hours https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC6015860\/ , accessed: 6\/26\/20 . Let be an initial amount of Salmonella enterica in a patient's gut at . Let be the amount hours later.     Find a formula for in base- form.           How long will it take for the bacteria to reach of the initial amount?    approximately hours       Let be the amount of nicotine, in milligrams, in the bloodstream of a person after a cigarette is smoked. Time is measured in hours. As with most drugs, the process of elimination of nicotine from the body is a process of exponential decay. The half-life of nicotine is hours and the amount of nicotine absorbed from a cigarette is mg.     Find a formula in the form for the function .           How long will it take for the initial amount of nicotine to be reduced to mg?    approximately hours       Let be the amount of caffeine that remains in the person's body hours after finishing a cup of coffee. The amount of caffeine absorbed from a cup of coffee is mg. The continuous growth rate of caffeine in the body is .     Find a formula for in terms of the natural base.           Find the half-life of caffeine in the body. Round off your answer to two decimal places. Include units with your answer.    approximately hours      How long will it take for to be reduced to of the initial amount? Does the answer depend on the initial amount?    approximately hours; no      How long will it take for to be reduced to mg? Does the answer depend on the initial amount?    approximately hours; yes       The value of an antique chair, , years after it was purchased for increases by per year.     Write a formula for in the form .           When will the value reach ?    approximately years       The of orange juice is . Find the hydrogen ion concentration in orange juice.            The hydrogen ion concentration in tomato juice is moles per liter. Find the of tomato juice.    The pH is .     "
 },
 {
   "id": "sec_6_3-2",
@@ -3772,13 +4906,121 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-6_3_1",
+  "level": "2",
+  "url": "sec_6_3.html#exercise-6_3_1",
+  "type": "Exercise",
+  "number": "6.3.1",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_3-1-4",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-1-4",
+  "type": "Exercise",
+  "number": "6.3.2",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_3-1-5",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-1-5",
+  "type": "Exercise",
+  "number": "6.3.3",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-6_3_4",
+  "level": "2",
+  "url": "sec_6_3.html#exercise-6_3_4",
+  "type": "Exercise",
+  "number": "6.3.4",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_6_3-2",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-2",
+  "type": "Exercise",
+  "number": "6.3.5",
+  "title": "",
+  "body": "  If a bank offers an interest rate of with interest compounded continuously (rather than once a year), your balance after years is: where is your initial deposit, in dollars.     How long will it take for your money to double?    approximately years      How long will it take for your money to triple?    approximately years    "
+},
+{
+  "id": "ex_6_3-3",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-3",
+  "type": "Exercise",
+  "number": "6.3.6",
+  "title": "",
+  "body": "  A laboratory culture of Salmonella enterica starts with bacteria at and doubles every minutes. https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC6015860\/ , accessed: 6\/26\/20 Let be the number of bacteria in the culture at time , in minutes.     Write a formula for in terms of the natural base .           How long will it take for to triple? Does the tripling time depend on the initial amount ?    approximately minutes; no    "
+},
+{
+  "id": "ex_6_3-4",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-4",
+  "type": "Exercise",
+  "number": "6.3.7",
+  "title": "",
+  "body": "  Bacterial population dynamics is not as simple as measuring the doubling time of a bacterium in the laboratory, under optimal growth conditions. A more challenging question is to find the doubling time of a bacterium in its natural environment, for example, in the gut. The doubling time of Salmonella enterica in the gut is hours https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC6015860\/ , accessed: 6\/26\/20 . Let be an initial amount of Salmonella enterica in a patient's gut at . Let be the amount hours later.     Find a formula for in base- form.           How long will it take for the bacteria to reach of the initial amount?    approximately hours    "
+},
+{
+  "id": "ex_6_3-5",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-5",
+  "type": "Exercise",
+  "number": "6.3.8",
+  "title": "",
+  "body": "  Let be the amount of nicotine, in milligrams, in the bloodstream of a person after a cigarette is smoked. Time is measured in hours. As with most drugs, the process of elimination of nicotine from the body is a process of exponential decay. The half-life of nicotine is hours and the amount of nicotine absorbed from a cigarette is mg.     Find a formula in the form for the function .           How long will it take for the initial amount of nicotine to be reduced to mg?    approximately hours    "
+},
+{
+  "id": "ex_6_3-6",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-6",
+  "type": "Exercise",
+  "number": "6.3.9",
+  "title": "",
+  "body": "  Let be the amount of caffeine that remains in the person's body hours after finishing a cup of coffee. The amount of caffeine absorbed from a cup of coffee is mg. The continuous growth rate of caffeine in the body is .     Find a formula for in terms of the natural base.           Find the half-life of caffeine in the body. Round off your answer to two decimal places. Include units with your answer.    approximately hours      How long will it take for to be reduced to of the initial amount? Does the answer depend on the initial amount?    approximately hours; no      How long will it take for to be reduced to mg? Does the answer depend on the initial amount?    approximately hours; yes    "
+},
+{
+  "id": "ex_6_3-7",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-7",
+  "type": "Exercise",
+  "number": "6.3.10",
+  "title": "",
+  "body": "  The value of an antique chair, , years after it was purchased for increases by per year.     Write a formula for in the form .           When will the value reach ?    approximately years    "
+},
+{
+  "id": "ex_6_3-8",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-8",
+  "type": "Exercise",
+  "number": "6.3.11",
+  "title": "",
+  "body": "  The of orange juice is . Find the hydrogen ion concentration in orange juice.         "
+},
+{
+  "id": "ex_6_3-9",
+  "level": "2",
+  "url": "sec_6_3.html#ex_6_3-9",
+  "type": "Exercise",
+  "number": "6.3.12",
+  "title": "",
+  "body": "  The hydrogen ion concentration in tomato juice is moles per liter. Find the of tomato juice.    The pH is .   "
+},
+{
   "id": "sec_7_1",
   "level": "1",
   "url": "sec_7_1.html",
   "type": "Section",
   "number": "7.1",
   "title": "Vertical and Horizontal Shifts",
-  "body": " Vertical and Horizontal Shifts    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.           "
+  "body": " Vertical and Horizontal Shifts    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.             Translating Functions   For each of the following, give the formula for the function satisfying the given condition.     The graph of is the graph of shifted down units.           The graph of is the graph of shifted up units.           The graph of is the graph of shifted right units.           The graph of is the graph of shifted left units.           The graph of is the graph of shifted up units and shifted right units.           The graph of is the graph of shifted down units and right units.           The graph of is the graph of shifted up units and right units.           The graph of is the graph of shifted down units and left units.           Identifying Transformations   For each of the following, identify the function being transformed and describe the transformations being applied to it.          The graph of is the graph of shifted left units.           The graph of is the graph of shifted down units.           The graph of is the graph of shifted right units and up units.           The graph of is the graph of shifted left unit and down units.      Sketching Graphs   Use the graph of shown below to sketch the graph of each of the following transformations of .                                                        Transformations done Numerically   Use the table of values of shown below to write the table of values for each of the following transformations of .                                                                                                                          The function gives the temperature (in degrees Fahrenheit) of the water in a spa minutes after the spa heater has been turned on.     Write the formula for a function that represents the temperature (in degrees Fahrenheit) of the water in the spa if the spa heater is turned on minutes earlier.           Write a formula for the function that represents the temperature (in degrees Fahrenheit) of the water in the spa if the temperature of the water in the spa were degrees warmer at the time that the heater was turned on.            The function gives the concentration (in nanograms per milliliter) of a certain medication in a patient's bloodstream minutes after a dose of the medication has been administered to a patient, assuming that the patient has nanograms per milliliter in their bloodstream at time . Write the formula for the function that supposes that at time the patient had nanograms per milliliter of the medication in their bloodstream.          "
 },
 {
   "id": "sec_7_1-2",
@@ -3808,13 +5050,211 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "exercise-7_1_1",
+  "level": "2",
+  "url": "sec_7_1.html#exercise-7_1_1",
+  "type": "Exercise",
+  "number": "7.1.1",
+  "title": "",
+  "body": "  The graph of is the graph of shifted down units.        "
+},
+{
+  "id": "ex_7_1-1-4",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-1-4",
+  "type": "Exercise",
+  "number": "7.1.2",
+  "title": "",
+  "body": "  The graph of is the graph of shifted up units.        "
+},
+{
+  "id": "ex_7_1-1-5",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-1-5",
+  "type": "Exercise",
+  "number": "7.1.3",
+  "title": "",
+  "body": "  The graph of is the graph of shifted right units.        "
+},
+{
+  "id": "ex_7_1-1-6",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-1-6",
+  "type": "Exercise",
+  "number": "7.1.4",
+  "title": "",
+  "body": "  The graph of is the graph of shifted left units.        "
+},
+{
+  "id": "ex_7_1-1-7",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-1-7",
+  "type": "Exercise",
+  "number": "7.1.5",
+  "title": "",
+  "body": "  The graph of is the graph of shifted up units and shifted right units.        "
+},
+{
+  "id": "ex_7_1-1-8",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-1-8",
+  "type": "Exercise",
+  "number": "7.1.6",
+  "title": "",
+  "body": "  The graph of is the graph of shifted down units and right units.        "
+},
+{
+  "id": "ex_7_1-1-9",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-1-9",
+  "type": "Exercise",
+  "number": "7.1.7",
+  "title": "",
+  "body": "  The graph of is the graph of shifted up units and right units.        "
+},
+{
+  "id": "exercise-7_1_8",
+  "level": "2",
+  "url": "sec_7_1.html#exercise-7_1_8",
+  "type": "Exercise",
+  "number": "7.1.8",
+  "title": "",
+  "body": "  The graph of is the graph of shifted down units and left units.        "
+},
+{
+  "id": "exercise-7_1_9",
+  "level": "2",
+  "url": "sec_7_1.html#exercise-7_1_9",
+  "type": "Exercise",
+  "number": "7.1.9",
+  "title": "",
+  "body": "       The graph of is the graph of shifted left units.   "
+},
+{
+  "id": "ex_7_1-2-4",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-2-4",
+  "type": "Exercise",
+  "number": "7.1.10",
+  "title": "",
+  "body": "       The graph of is the graph of shifted down units.   "
+},
+{
+  "id": "ex_7_1-2-5",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-2-5",
+  "type": "Exercise",
+  "number": "7.1.11",
+  "title": "",
+  "body": "       The graph of is the graph of shifted right units and up units.   "
+},
+{
+  "id": "exercise-7_1_12",
+  "level": "2",
+  "url": "sec_7_1.html#exercise-7_1_12",
+  "type": "Exercise",
+  "number": "7.1.12",
+  "title": "",
+  "body": "       The graph of is the graph of shifted left unit and down units.   "
+},
+{
+  "id": "exercise-7_1_13",
+  "level": "2",
+  "url": "sec_7_1.html#exercise-7_1_13",
+  "type": "Exercise",
+  "number": "7.1.13",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_1-3-4",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-3-4",
+  "type": "Exercise",
+  "number": "7.1.14",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_1-3-5",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-3-5",
+  "type": "Exercise",
+  "number": "7.1.15",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-7_1_16",
+  "level": "2",
+  "url": "sec_7_1.html#exercise-7_1_16",
+  "type": "Exercise",
+  "number": "7.1.16",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-7_1_17",
+  "level": "2",
+  "url": "sec_7_1.html#exercise-7_1_17",
+  "type": "Exercise",
+  "number": "7.1.17",
+  "title": "",
+  "body": "                        "
+},
+{
+  "id": "ex_7_1-4-4",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-4-4",
+  "type": "Exercise",
+  "number": "7.1.18",
+  "title": "",
+  "body": "                        "
+},
+{
+  "id": "ex_7_1-4-5",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-4-5",
+  "type": "Exercise",
+  "number": "7.1.19",
+  "title": "",
+  "body": "                        "
+},
+{
+  "id": "exercise-7_1_20",
+  "level": "2",
+  "url": "sec_7_1.html#exercise-7_1_20",
+  "type": "Exercise",
+  "number": "7.1.20",
+  "title": "",
+  "body": "                        "
+},
+{
+  "id": "ex_7_1-5",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-5",
+  "type": "Exercise",
+  "number": "7.1.21",
+  "title": "",
+  "body": "  The function gives the temperature (in degrees Fahrenheit) of the water in a spa minutes after the spa heater has been turned on.     Write the formula for a function that represents the temperature (in degrees Fahrenheit) of the water in the spa if the spa heater is turned on minutes earlier.           Write a formula for the function that represents the temperature (in degrees Fahrenheit) of the water in the spa if the temperature of the water in the spa were degrees warmer at the time that the heater was turned on.         "
+},
+{
+  "id": "ex_7_1-6",
+  "level": "2",
+  "url": "sec_7_1.html#ex_7_1-6",
+  "type": "Exercise",
+  "number": "7.1.22",
+  "title": "",
+  "body": "  The function gives the concentration (in nanograms per milliliter) of a certain medication in a patient's bloodstream minutes after a dose of the medication has been administered to a patient, assuming that the patient has nanograms per milliliter in their bloodstream at time . Write the formula for the function that supposes that at time the patient had nanograms per milliliter of the medication in their bloodstream.        "
+},
+{
   "id": "sec_7_2",
   "level": "1",
   "url": "sec_7_2.html",
   "type": "Section",
   "number": "7.2",
   "title": "Vertical and Horizontal Scaling",
-  "body": " Vertical and Horizontal Scaling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.           "
+  "body": " Vertical and Horizontal Scaling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.             Transforming Functions   For each of the following, give the formula for the function satisfying the given condition.     The graph of is the graph of stretched vertically by a factor of .           The graph of is the graph of compressed vertically by a factor of .           The graph of is the graph of stretched vertically by a factor of and reflected over the -axis.           The graph of is the graph of shifted to the right units and compressed vertically by a factor of .           The graph of is the graph of reflected over the -axis, compressed vertically by a factor of , and shifted up units.           The graph of is the graph of stretched horizontally by a factor of .           The graph of is the graph of compressed horizontally by a factor of .           The graph of is the graph of shifted to the right units, stretched horizontally by a factor of , reflected over the axis, stretched vertically by a factor of , and shifted up units.           Identifying Transformations   For each of the following, identify the function being transformed and describe the transformations being applied to it.          The graph of is the graph of shifted left units, scaled vertically by a factor of , and reflected over the -axis.           The graph of is the graph of shifted right units, compressed horizontally by a factor of , and shifted up units.           The graph of is the graph of compressed horizontally by a factor of , reflected over the -axis, compressed vertically by a factor of , and shifted down units.           The graph of is the graph of shifted left unit, compressed horizontally by a factor of , and shifted down units.      Sketching a Transformation   Use the graph of shown below to sketch the graph of each of the following transformations of .                                                                                Transformations Done Numerically   Use the table of values of shown below to write the table of values for each of the following transformations of .                                                                                                                         "
 },
 {
   "id": "sec_7_2-2",
@@ -3844,13 +5284,211 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "exercise-7_2_1",
+  "level": "2",
+  "url": "sec_7_2.html#exercise-7_2_1",
+  "type": "Exercise",
+  "number": "7.2.1",
+  "title": "",
+  "body": "  The graph of is the graph of stretched vertically by a factor of .        "
+},
+{
+  "id": "ex_7_2-1-4",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-1-4",
+  "type": "Exercise",
+  "number": "7.2.2",
+  "title": "",
+  "body": "  The graph of is the graph of compressed vertically by a factor of .        "
+},
+{
+  "id": "ex_7_2-1-5",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-1-5",
+  "type": "Exercise",
+  "number": "7.2.3",
+  "title": "",
+  "body": "  The graph of is the graph of stretched vertically by a factor of and reflected over the -axis.        "
+},
+{
+  "id": "ex_7_2-1-6",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-1-6",
+  "type": "Exercise",
+  "number": "7.2.4",
+  "title": "",
+  "body": "  The graph of is the graph of shifted to the right units and compressed vertically by a factor of .        "
+},
+{
+  "id": "ex_7_2-1-7",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-1-7",
+  "type": "Exercise",
+  "number": "7.2.5",
+  "title": "",
+  "body": "  The graph of is the graph of reflected over the -axis, compressed vertically by a factor of , and shifted up units.        "
+},
+{
+  "id": "ex_7_2-1-8",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-1-8",
+  "type": "Exercise",
+  "number": "7.2.6",
+  "title": "",
+  "body": "  The graph of is the graph of stretched horizontally by a factor of .        "
+},
+{
+  "id": "ex_7_2-1-9",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-1-9",
+  "type": "Exercise",
+  "number": "7.2.7",
+  "title": "",
+  "body": "  The graph of is the graph of compressed horizontally by a factor of .        "
+},
+{
+  "id": "exercise-7_2_8",
+  "level": "2",
+  "url": "sec_7_2.html#exercise-7_2_8",
+  "type": "Exercise",
+  "number": "7.2.8",
+  "title": "",
+  "body": "  The graph of is the graph of shifted to the right units, stretched horizontally by a factor of , reflected over the axis, stretched vertically by a factor of , and shifted up units.        "
+},
+{
+  "id": "exercise-7_2_9",
+  "level": "2",
+  "url": "sec_7_2.html#exercise-7_2_9",
+  "type": "Exercise",
+  "number": "7.2.9",
+  "title": "",
+  "body": "       The graph of is the graph of shifted left units, scaled vertically by a factor of , and reflected over the -axis.   "
+},
+{
+  "id": "ex_7_2-2-4",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-2-4",
+  "type": "Exercise",
+  "number": "7.2.10",
+  "title": "",
+  "body": "       The graph of is the graph of shifted right units, compressed horizontally by a factor of , and shifted up units.   "
+},
+{
+  "id": "ex_7_2-2-5",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-2-5",
+  "type": "Exercise",
+  "number": "7.2.11",
+  "title": "",
+  "body": "       The graph of is the graph of compressed horizontally by a factor of , reflected over the -axis, compressed vertically by a factor of , and shifted down units.   "
+},
+{
+  "id": "exercise-7_2_12",
+  "level": "2",
+  "url": "sec_7_2.html#exercise-7_2_12",
+  "type": "Exercise",
+  "number": "7.2.12",
+  "title": "",
+  "body": "       The graph of is the graph of shifted left unit, compressed horizontally by a factor of , and shifted down units.   "
+},
+{
+  "id": "exercise-7_2_13",
+  "level": "2",
+  "url": "sec_7_2.html#exercise-7_2_13",
+  "type": "Exercise",
+  "number": "7.2.13",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_2-3-4",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-3-4",
+  "type": "Exercise",
+  "number": "7.2.14",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_2-3-5",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-3-5",
+  "type": "Exercise",
+  "number": "7.2.15",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_2-3-6",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-3-6",
+  "type": "Exercise",
+  "number": "7.2.16",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_2-3-7",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-3-7",
+  "type": "Exercise",
+  "number": "7.2.17",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-7_2_18",
+  "level": "2",
+  "url": "sec_7_2.html#exercise-7_2_18",
+  "type": "Exercise",
+  "number": "7.2.18",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-7_2_19",
+  "level": "2",
+  "url": "sec_7_2.html#exercise-7_2_19",
+  "type": "Exercise",
+  "number": "7.2.19",
+  "title": "",
+  "body": "                        "
+},
+{
+  "id": "ex_7_2-4-4",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-4-4",
+  "type": "Exercise",
+  "number": "7.2.20",
+  "title": "",
+  "body": "                        "
+},
+{
+  "id": "ex_7_2-4-5",
+  "level": "2",
+  "url": "sec_7_2.html#ex_7_2-4-5",
+  "type": "Exercise",
+  "number": "7.2.21",
+  "title": "",
+  "body": "                        "
+},
+{
+  "id": "exercise-7_2_22",
+  "level": "2",
+  "url": "sec_7_2.html#exercise-7_2_22",
+  "type": "Exercise",
+  "number": "7.2.22",
+  "title": "",
+  "body": "                        "
+},
+{
   "id": "sec_7_3",
   "level": "1",
   "url": "sec_7_3.html",
   "type": "Section",
   "number": "7.3",
   "title": "Composing and Decomposing Functions",
-  "body": " Composing and Decomposing Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Composing and Decomposing Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Computing a Composition   For each of the following, find and .      and      ;        and      ;        and      ;        and      ;        and      ;        and      ;        and      ;        and      ;        and      ;        and      ;       Evaluating a Composition   For each of the following, find for the functions and given.      and             and             and             and            Decomposing a Function   For each of the following, express it as a composition of two functions and so that .           ;             ;             ;             ;             ;             ;             ;             ;       "
 },
 {
   "id": "sec_7_3-2",
@@ -3862,13 +5500,211 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-7_3_1",
+  "level": "2",
+  "url": "sec_7_3.html#exercise-7_3_1",
+  "type": "Exercise",
+  "number": "7.3.1",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "ex_7_3-1-4",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-1-4",
+  "type": "Exercise",
+  "number": "7.3.2",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "ex_7_3-1-5",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-1-5",
+  "type": "Exercise",
+  "number": "7.3.3",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "ex_7_3-1-6",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-1-6",
+  "type": "Exercise",
+  "number": "7.3.4",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "ex_7_3-1-7",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-1-7",
+  "type": "Exercise",
+  "number": "7.3.5",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "ex_7_3-1-8",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-1-8",
+  "type": "Exercise",
+  "number": "7.3.6",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "ex_7_3-1-9",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-1-9",
+  "type": "Exercise",
+  "number": "7.3.7",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "ex_7_3-1-10",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-1-10",
+  "type": "Exercise",
+  "number": "7.3.8",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "ex_7_3-1-11",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-1-11",
+  "type": "Exercise",
+  "number": "7.3.9",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "exercise-7_3_10",
+  "level": "2",
+  "url": "sec_7_3.html#exercise-7_3_10",
+  "type": "Exercise",
+  "number": "7.3.10",
+  "title": "",
+  "body": "   and      ;    "
+},
+{
+  "id": "exercise-7_3_11",
+  "level": "2",
+  "url": "sec_7_3.html#exercise-7_3_11",
+  "type": "Exercise",
+  "number": "7.3.11",
+  "title": "",
+  "body": "   and         "
+},
+{
+  "id": "ex_7_3-2-4",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-2-4",
+  "type": "Exercise",
+  "number": "7.3.12",
+  "title": "",
+  "body": "   and         "
+},
+{
+  "id": "ex_7_3-2-5",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-2-5",
+  "type": "Exercise",
+  "number": "7.3.13",
+  "title": "",
+  "body": "   and         "
+},
+{
+  "id": "exercise-7_3_14",
+  "level": "2",
+  "url": "sec_7_3.html#exercise-7_3_14",
+  "type": "Exercise",
+  "number": "7.3.14",
+  "title": "",
+  "body": "   and         "
+},
+{
+  "id": "exercise-7_3_15",
+  "level": "2",
+  "url": "sec_7_3.html#exercise-7_3_15",
+  "type": "Exercise",
+  "number": "7.3.15",
+  "title": "",
+  "body": "        ;    "
+},
+{
+  "id": "ex_7_3-3-4",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-3-4",
+  "type": "Exercise",
+  "number": "7.3.16",
+  "title": "",
+  "body": "        ;    "
+},
+{
+  "id": "ex_7_3-3-5",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-3-5",
+  "type": "Exercise",
+  "number": "7.3.17",
+  "title": "",
+  "body": "        ;    "
+},
+{
+  "id": "ex_7_3-3-6",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-3-6",
+  "type": "Exercise",
+  "number": "7.3.18",
+  "title": "",
+  "body": "        ;    "
+},
+{
+  "id": "ex_7_3-3-7",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-3-7",
+  "type": "Exercise",
+  "number": "7.3.19",
+  "title": "",
+  "body": "        ;    "
+},
+{
+  "id": "ex_7_3-3-8",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-3-8",
+  "type": "Exercise",
+  "number": "7.3.20",
+  "title": "",
+  "body": "        ;    "
+},
+{
+  "id": "ex_7_3-3-9",
+  "level": "2",
+  "url": "sec_7_3.html#ex_7_3-3-9",
+  "type": "Exercise",
+  "number": "7.3.21",
+  "title": "",
+  "body": "        ;    "
+},
+{
+  "id": "exercise-7_3_22",
+  "level": "2",
+  "url": "sec_7_3.html#exercise-7_3_22",
+  "type": "Exercise",
+  "number": "7.3.22",
+  "title": "",
+  "body": "        ;    "
+},
+{
   "id": "sec_7_4",
   "level": "1",
   "url": "sec_7_4.html",
   "type": "Section",
   "number": "7.4",
   "title": "Inverse Functions",
-  "body": " Inverse Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Inverse Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Identifying Inverse Functions   For each of the following, find and for the pair of functions and given. Use your results to determine whether and are inverses of each other.      and     Not inverses.       and     Not inverses.       and     Inverses.       and     Not Inverses.       and     Inverses.       and     Inverses.      Computing an Inverse Function   For each of the following, find the inverse of each function, if possible. If not possible, state this to be the case.                                              No inverse function.                                   No inverse function.                                                                               The function is used to convert an input in degrees Celsius to an output in degrees Fahrenheit. Find the inverse function, which is the formula used to convert an input in degrees Fahrenheit to an output in degrees Celsius.          "
 },
 {
   "id": "sec_7_4-2",
@@ -3880,13 +5716,193 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-7_4_1",
+  "level": "2",
+  "url": "sec_7_4.html#exercise-7_4_1",
+  "type": "Exercise",
+  "number": "7.4.1",
+  "title": "",
+  "body": "   and     Not inverses.   "
+},
+{
+  "id": "ex_7_4-1-4",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-1-4",
+  "type": "Exercise",
+  "number": "7.4.2",
+  "title": "",
+  "body": "   and     Not inverses.   "
+},
+{
+  "id": "ex_7_4-1-5",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-1-5",
+  "type": "Exercise",
+  "number": "7.4.3",
+  "title": "",
+  "body": "   and     Inverses.   "
+},
+{
+  "id": "ex_7_4-1-6",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-1-6",
+  "type": "Exercise",
+  "number": "7.4.4",
+  "title": "",
+  "body": "   and     Not Inverses.   "
+},
+{
+  "id": "ex_7_4-1-7",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-1-7",
+  "type": "Exercise",
+  "number": "7.4.5",
+  "title": "",
+  "body": "   and     Inverses.   "
+},
+{
+  "id": "exercise-7_4_6",
+  "level": "2",
+  "url": "sec_7_4.html#exercise-7_4_6",
+  "type": "Exercise",
+  "number": "7.4.6",
+  "title": "",
+  "body": "   and     Inverses.   "
+},
+{
+  "id": "exercise-7_4_7",
+  "level": "2",
+  "url": "sec_7_4.html#exercise-7_4_7",
+  "type": "Exercise",
+  "number": "7.4.7",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-2-4",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-4",
+  "type": "Exercise",
+  "number": "7.4.8",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-2-5",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-5",
+  "type": "Exercise",
+  "number": "7.4.9",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-2-6",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-6",
+  "type": "Exercise",
+  "number": "7.4.10",
+  "title": "",
+  "body": "       No inverse function.   "
+},
+{
+  "id": "ex_7_4-2-7",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-7",
+  "type": "Exercise",
+  "number": "7.4.11",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-2-8",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-8",
+  "type": "Exercise",
+  "number": "7.4.12",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-2-9",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-9",
+  "type": "Exercise",
+  "number": "7.4.13",
+  "title": "",
+  "body": "       No inverse function.   "
+},
+{
+  "id": "ex_7_4-2-10",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-10",
+  "type": "Exercise",
+  "number": "7.4.14",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-2-11",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-11",
+  "type": "Exercise",
+  "number": "7.4.15",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-2-12",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-12",
+  "type": "Exercise",
+  "number": "7.4.16",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-2-13",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-13",
+  "type": "Exercise",
+  "number": "7.4.17",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-2-14",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-2-14",
+  "type": "Exercise",
+  "number": "7.4.18",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-7_4_19",
+  "level": "2",
+  "url": "sec_7_4.html#exercise-7_4_19",
+  "type": "Exercise",
+  "number": "7.4.19",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_7_4-3",
+  "level": "2",
+  "url": "sec_7_4.html#ex_7_4-3",
+  "type": "Exercise",
+  "number": "7.4.20",
+  "title": "",
+  "body": "  The function is used to convert an input in degrees Celsius to an output in degrees Fahrenheit. Find the inverse function, which is the formula used to convert an input in degrees Fahrenheit to an output in degrees Celsius.        "
+},
+{
   "id": "sec_8_1",
   "level": "1",
   "url": "sec_8_1.html",
   "type": "Section",
   "number": "8.1",
   "title": "Periodic Functions",
-  "body": " Periodic Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Periodic Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.        Determine whether each function graphed below is a periodic function. For those that are periodic, approximate the amplitude, midline, and period.                                                : perodic with amplitude ; midline ; period .     : not periodic.     : perodic with amplitude ; midline ; period ;     : not periodic.     : not periodic.     : periodic with amplitude ; midline ; period .         Each day, the tide in a harbor continuously goes in and out, raising and lowering a boat anchored there. At low tide, the boat is only meters above the ocean floor. Six hours later, at peak high tide, the boat is meters above the ocean floor. Six hours after peak high tide, it is low tide again. Suppose the boat is at high tide at midnight.     Sketch and label a periodic function modeling the boat's distance above the ocean floor as a function of time hours since midnight.    Answers will vary; a correct sketch is periodic with the period, amplitude, and midline identified in part (b).      Identify the period, amplitude, and midline of the periodic function.    period: ; amplitude: ; midline:        You decide to ride the Ferris wheel at the local carnival. You are feet above the ground at the bottom of the Ferris wheel and feet above the ground at the top. It takes seconds for you to reach the maximum height from the minimum height and seconds to reach the minimum height from the maximum height. Suppose you are at the bottom of the ride at time seconds.     Sketch and label a periodic function modeling your height above the ground seconds into your Ferris wheel ride.           Identify the period, amplitude, and midline of the periodic function.    period: ; amplitude: ; midline:       "
 },
 {
   "id": "sec_8_1-2",
@@ -3898,13 +5914,40 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "ex_8_1-1",
+  "level": "2",
+  "url": "sec_8_1.html#ex_8_1-1",
+  "type": "Exercise",
+  "number": "8.1.1",
+  "title": "",
+  "body": "  Determine whether each function graphed below is a periodic function. For those that are periodic, approximate the amplitude, midline, and period.                                                : perodic with amplitude ; midline ; period .     : not periodic.     : perodic with amplitude ; midline ; period ;     : not periodic.     : not periodic.     : periodic with amplitude ; midline ; period .      "
+},
+{
+  "id": "ex_8_1-2",
+  "level": "2",
+  "url": "sec_8_1.html#ex_8_1-2",
+  "type": "Exercise",
+  "number": "8.1.2",
+  "title": "",
+  "body": "  Each day, the tide in a harbor continuously goes in and out, raising and lowering a boat anchored there. At low tide, the boat is only meters above the ocean floor. Six hours later, at peak high tide, the boat is meters above the ocean floor. Six hours after peak high tide, it is low tide again. Suppose the boat is at high tide at midnight.     Sketch and label a periodic function modeling the boat's distance above the ocean floor as a function of time hours since midnight.    Answers will vary; a correct sketch is periodic with the period, amplitude, and midline identified in part (b).      Identify the period, amplitude, and midline of the periodic function.    period: ; amplitude: ; midline:     "
+},
+{
+  "id": "ex_8_1-3",
+  "level": "2",
+  "url": "sec_8_1.html#ex_8_1-3",
+  "type": "Exercise",
+  "number": "8.1.3",
+  "title": "",
+  "body": "  You decide to ride the Ferris wheel at the local carnival. You are feet above the ground at the bottom of the Ferris wheel and feet above the ground at the top. It takes seconds for you to reach the maximum height from the minimum height and seconds to reach the minimum height from the maximum height. Suppose you are at the bottom of the ride at time seconds.     Sketch and label a periodic function modeling your height above the ground seconds into your Ferris wheel ride.           Identify the period, amplitude, and midline of the periodic function.    period: ; amplitude: ; midline:     "
+},
+{
   "id": "sec_8_2",
   "level": "1",
   "url": "sec_8_2.html",
   "type": "Section",
   "number": "8.2",
   "title": "Angles Using the Unit Circle, Radian Measure",
-  "body": " Angles Using the Unit Circle, Radian Measure    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Angles Using the Unit Circle, Radian Measure    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Converting to Radians   For each of the following, convert the angle from degrees to radians. Give both exact answers and, when appropriate, approximations to three decimal places. Also identify which quadrant each angle lies in.           radians; Quadrant I            radians; Quadrant IV            radians; Quadrant III            radians; Quadrant II      Computing to Degrees   For each of the following, convert the angle from radians to degrees. Give both exact answers and, when appropriate, approximations to three decimal places. Also identify which quadrant each angle lies in.      radians     ; Quadrant I       radians     ; Quadrant IV       radians     ; Quadrant II       radians     ; Quadrant III       What is the arc length spanned by the angle radians on the circle of radius inches?     inches      What is the arc length spanned by the angle on the circle of radius centimeters?     centimeters     "
 },
 {
   "id": "sec_8_2-2",
@@ -3916,13 +5959,103 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-8_2_1",
+  "level": "2",
+  "url": "sec_8_2.html#exercise-8_2_1",
+  "type": "Exercise",
+  "number": "8.2.1",
+  "title": "",
+  "body": "        radians; Quadrant I   "
+},
+{
+  "id": "ex_8_2-1-4",
+  "level": "2",
+  "url": "sec_8_2.html#ex_8_2-1-4",
+  "type": "Exercise",
+  "number": "8.2.2",
+  "title": "",
+  "body": "        radians; Quadrant IV   "
+},
+{
+  "id": "ex_8_2-1-5",
+  "level": "2",
+  "url": "sec_8_2.html#ex_8_2-1-5",
+  "type": "Exercise",
+  "number": "8.2.3",
+  "title": "",
+  "body": "        radians; Quadrant III   "
+},
+{
+  "id": "exercise-8_2_4",
+  "level": "2",
+  "url": "sec_8_2.html#exercise-8_2_4",
+  "type": "Exercise",
+  "number": "8.2.4",
+  "title": "",
+  "body": "        radians; Quadrant II   "
+},
+{
+  "id": "exercise-8_2_5",
+  "level": "2",
+  "url": "sec_8_2.html#exercise-8_2_5",
+  "type": "Exercise",
+  "number": "8.2.5",
+  "title": "",
+  "body": "   radians     ; Quadrant I   "
+},
+{
+  "id": "ex_8_2-2-4",
+  "level": "2",
+  "url": "sec_8_2.html#ex_8_2-2-4",
+  "type": "Exercise",
+  "number": "8.2.6",
+  "title": "",
+  "body": "   radians     ; Quadrant IV   "
+},
+{
+  "id": "ex_8_2-2-5",
+  "level": "2",
+  "url": "sec_8_2.html#ex_8_2-2-5",
+  "type": "Exercise",
+  "number": "8.2.7",
+  "title": "",
+  "body": "   radians     ; Quadrant II   "
+},
+{
+  "id": "exercise-8_2_8",
+  "level": "2",
+  "url": "sec_8_2.html#exercise-8_2_8",
+  "type": "Exercise",
+  "number": "8.2.8",
+  "title": "",
+  "body": "   radians     ; Quadrant III   "
+},
+{
+  "id": "ex_8_2-3",
+  "level": "2",
+  "url": "sec_8_2.html#ex_8_2-3",
+  "type": "Exercise",
+  "number": "8.2.9",
+  "title": "",
+  "body": "  What is the arc length spanned by the angle radians on the circle of radius inches?     inches   "
+},
+{
+  "id": "ex_8_2-4",
+  "level": "2",
+  "url": "sec_8_2.html#ex_8_2-4",
+  "type": "Exercise",
+  "number": "8.2.10",
+  "title": "",
+  "body": "  What is the arc length spanned by the angle on the circle of radius centimeters?     centimeters   "
+},
+{
   "id": "sec_8_3",
   "level": "1",
   "url": "sec_8_3.html",
   "type": "Section",
   "number": "8.3",
   "title": "Values of Sine and Cosine for Angles on the Unit Circle",
-  "body": " Values of Sine and Cosine for Angles on the Unit Circle    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.        "
+  "body": " Values of Sine and Cosine for Angles on the Unit Circle    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.          Evaluating Sine and Cosine   For each of the following, find the exact value without using a calculator.                                                                                                                             "
 },
 {
   "id": "sec_8_3-2",
@@ -3943,13 +6076,103 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "exercise-8_3_1",
+  "level": "2",
+  "url": "sec_8_3.html#exercise-8_3_1",
+  "type": "Exercise",
+  "number": "8.3.1",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_8_3-1-4",
+  "level": "2",
+  "url": "sec_8_3.html#ex_8_3-1-4",
+  "type": "Exercise",
+  "number": "8.3.2",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_8_3-1-5",
+  "level": "2",
+  "url": "sec_8_3.html#ex_8_3-1-5",
+  "type": "Exercise",
+  "number": "8.3.3",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_8_3-1-6",
+  "level": "2",
+  "url": "sec_8_3.html#ex_8_3-1-6",
+  "type": "Exercise",
+  "number": "8.3.4",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_8_3-1-7",
+  "level": "2",
+  "url": "sec_8_3.html#ex_8_3-1-7",
+  "type": "Exercise",
+  "number": "8.3.5",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_8_3-1-8",
+  "level": "2",
+  "url": "sec_8_3.html#ex_8_3-1-8",
+  "type": "Exercise",
+  "number": "8.3.6",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_8_3-1-9",
+  "level": "2",
+  "url": "sec_8_3.html#ex_8_3-1-9",
+  "type": "Exercise",
+  "number": "8.3.7",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_8_3-1-10",
+  "level": "2",
+  "url": "sec_8_3.html#ex_8_3-1-10",
+  "type": "Exercise",
+  "number": "8.3.8",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "ex_8_3-1-11",
+  "level": "2",
+  "url": "sec_8_3.html#ex_8_3-1-11",
+  "type": "Exercise",
+  "number": "8.3.9",
+  "title": "",
+  "body": "           "
+},
+{
+  "id": "exercise-8_3_10",
+  "level": "2",
+  "url": "sec_8_3.html#exercise-8_3_10",
+  "type": "Exercise",
+  "number": "8.3.10",
+  "title": "",
+  "body": "           "
+},
+{
   "id": "sec_8_4",
   "level": "1",
   "url": "sec_8_4.html",
   "type": "Section",
   "number": "8.4",
   "title": "Sine and Cosine Functions",
-  "body": " Sine and Cosine Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Sine and Cosine Functions    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.       Identifying Period, Amplitude, and Midline   For each of the following, use a graph to identify the period, amplitude, and midline of the given function. Also identify what transformations have been applied to either or to obtain the given function.          period: ; amplitude: ; midline: . is the graph of stretched vertically by a factor of            period: ; amplitude: ; midline: . is the graph of stretched vertically by a factor of and reflected over the -axis           period ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of            period: ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of and stretched horizontally by a factor of            period: ; amplitude: ; midline: . is the graph of shifted up units           period: ; amplitude: ; midline: . is the graph of shifted down units           period: ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of and stretched horizontally by a factor of            period: ; amplitude: ; midline: . is the graph of stretched vertically by a factor of and shifted down units           period: ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of , stretched vertically by a factor of , and reflected over the -axis           period: ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of , stretched horizontally by a factor of , stretched vertically by a factor of , and shifted up units      "
 },
 {
   "id": "sec_8_4-2",
@@ -3961,13 +6184,103 @@ var ptx_lunr_docs = [
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
 },
 {
+  "id": "exercise-8_4_1",
+  "level": "2",
+  "url": "sec_8_4.html#exercise-8_4_1",
+  "type": "Exercise",
+  "number": "8.4.1",
+  "title": "",
+  "body": "       period: ; amplitude: ; midline: . is the graph of stretched vertically by a factor of    "
+},
+{
+  "id": "ex_8_4-1-4",
+  "level": "2",
+  "url": "sec_8_4.html#ex_8_4-1-4",
+  "type": "Exercise",
+  "number": "8.4.2",
+  "title": "",
+  "body": "       period: ; amplitude: ; midline: . is the graph of stretched vertically by a factor of and reflected over the -axis   "
+},
+{
+  "id": "ex_8_4-1-5",
+  "level": "2",
+  "url": "sec_8_4.html#ex_8_4-1-5",
+  "type": "Exercise",
+  "number": "8.4.3",
+  "title": "",
+  "body": "       period ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of    "
+},
+{
+  "id": "ex_8_4-1-6",
+  "level": "2",
+  "url": "sec_8_4.html#ex_8_4-1-6",
+  "type": "Exercise",
+  "number": "8.4.4",
+  "title": "",
+  "body": "       period: ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of and stretched horizontally by a factor of    "
+},
+{
+  "id": "ex_8_4-1-7",
+  "level": "2",
+  "url": "sec_8_4.html#ex_8_4-1-7",
+  "type": "Exercise",
+  "number": "8.4.5",
+  "title": "",
+  "body": "       period: ; amplitude: ; midline: . is the graph of shifted up units   "
+},
+{
+  "id": "ex_8_4-1-8",
+  "level": "2",
+  "url": "sec_8_4.html#ex_8_4-1-8",
+  "type": "Exercise",
+  "number": "8.4.6",
+  "title": "",
+  "body": "       period: ; amplitude: ; midline: . is the graph of shifted down units   "
+},
+{
+  "id": "ex_8_4-1-9",
+  "level": "2",
+  "url": "sec_8_4.html#ex_8_4-1-9",
+  "type": "Exercise",
+  "number": "8.4.7",
+  "title": "",
+  "body": "       period: ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of and stretched horizontally by a factor of    "
+},
+{
+  "id": "ex_8_4-1-10",
+  "level": "2",
+  "url": "sec_8_4.html#ex_8_4-1-10",
+  "type": "Exercise",
+  "number": "8.4.8",
+  "title": "",
+  "body": "       period: ; amplitude: ; midline: . is the graph of stretched vertically by a factor of and shifted down units   "
+},
+{
+  "id": "ex_8_4-1-11",
+  "level": "2",
+  "url": "sec_8_4.html#ex_8_4-1-11",
+  "type": "Exercise",
+  "number": "8.4.9",
+  "title": "",
+  "body": "       period: ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of , stretched vertically by a factor of , and reflected over the -axis   "
+},
+{
+  "id": "exercise-8_4_10",
+  "level": "2",
+  "url": "sec_8_4.html#exercise-8_4_10",
+  "type": "Exercise",
+  "number": "8.4.10",
+  "title": "",
+  "body": "       period: ; amplitude: ; midline: . is the graph of compressed horizontally by a factor of , stretched horizontally by a factor of , stretched vertically by a factor of , and shifted up units   "
+},
+{
   "id": "sec_8_5",
   "level": "1",
   "url": "sec_8_5.html",
   "type": "Section",
   "number": "8.5",
   "title": "Families of Sine and Cosine Functions, Modeling",
-  "body": " Families of Sine and Cosine Functions, Modeling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.     "
+  "body": " Families of Sine and Cosine Functions, Modeling    After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.        Find the amplitude, period, and midline of each of the following functions.          amplitude: ; period: ; midline:            amplitude: ; period: ; midline:            amplitude: ; period: ; midline:            amplitude: ; period: ; midline:            amplitude: ; period: ; midline:            amplitude: ; period: ; midline:        For each of the periodic functions graphed below, find a formula in the form or that represents the graph.                                                                              The average number of daylight hours that Kingston, Rhode Island experiences is a periodic function , where corresponds to the month of December. A graph modeling is given below.        Identify the amplitude, midline, and period for the periodic function modeling the average number of daylight hours in Kingston.    amplitude: ; midline: ; period:       Give a possible formula for the periodic function modeling the average number of daylight hours in Kingston.           What is the average number of daylight hours in Kingston during the month of March?     hours       The average number of daylight hours that Anchorage, Alaska experiences is a periodic function , where corresponds to the month of June. The graph of is given below.        Identify the amplitude, midline, and period for the periodic function modeling the average number of daylight hours in Anchorage.    amplitude: ; midline: ; period:       Give a possible formula for the periodic function modeling the average number of daylight hours in Anchorage.           What is the average number of daylight hours in Anchorage during the month of November?    approximately hours       The number of bird species in a Rhode Island preserve oscillates between a high of in June and a low of in December. Write a formula for the number of bird species, , as a function of the number of months since December. Your answer should be of the form or .           The volume of air in the lungs of a woman at rest at certain times is shown in the following table. Assuming that the maximum volume of air in her lungs occurs at time seconds and the minimum volume of air in her lungs occurs at time seconds, give the formula for a periodic function modeling the volume of air in the woman's lungs at any given time. Your answer should be of the form or .    time (seconds)         volume (liters)                  Each day, the tide in a harbor continuously goes in and out, raising and lowering a boat anchored there. At low tide, the boat is only meters above the ocean floor. Six hours later, at peak high tide, the boat is meters above the ocean floor. Six hours after peak high tide, it is low tide again. Suppose the boat is at high tide at midnight. Give a formula for a periodic function modeling the boat's distance above the ocean floor as a function of time hours since midnight. Your answer should be of the form or .           You decide to ride the Ferris wheel at the local carnival. You are feet above the ground at the bottom of the Ferris wheel and feet above the ground at the top. It takes seconds for you to reach the maximum height from the minimum height and seconds to reach the minimum height from the maximum height. Suppose you are at the bottom of the ride at time seconds. Give a formula for a periodic function modeling your height above the ground seconds into your Ferris wheel ride. Your answer should be of the form or .          "
 },
 {
   "id": "sec_8_5-2",
@@ -3977,6 +6290,78 @@ var ptx_lunr_docs = [
   "number": "8.5",
   "title": "",
   "body": "  After completing this section, you should be able to do the following.     First objective.    Second objective.    Third objective.    "
+},
+{
+  "id": "ex_8_5-1",
+  "level": "2",
+  "url": "sec_8_5.html#ex_8_5-1",
+  "type": "Exercise",
+  "number": "8.5.1",
+  "title": "",
+  "body": "  Find the amplitude, period, and midline of each of the following functions.          amplitude: ; period: ; midline:            amplitude: ; period: ; midline:            amplitude: ; period: ; midline:            amplitude: ; period: ; midline:            amplitude: ; period: ; midline:            amplitude: ; period: ; midline:     "
+},
+{
+  "id": "ex_8_5-2",
+  "level": "2",
+  "url": "sec_8_5.html#ex_8_5-2",
+  "type": "Exercise",
+  "number": "8.5.2",
+  "title": "",
+  "body": "  For each of the periodic functions graphed below, find a formula in the form or that represents the graph.                                                                           "
+},
+{
+  "id": "ex_8_5-3",
+  "level": "2",
+  "url": "sec_8_5.html#ex_8_5-3",
+  "type": "Exercise",
+  "number": "8.5.3",
+  "title": "",
+  "body": "  The average number of daylight hours that Kingston, Rhode Island experiences is a periodic function , where corresponds to the month of December. A graph modeling is given below.        Identify the amplitude, midline, and period for the periodic function modeling the average number of daylight hours in Kingston.    amplitude: ; midline: ; period:       Give a possible formula for the periodic function modeling the average number of daylight hours in Kingston.           What is the average number of daylight hours in Kingston during the month of March?     hours    "
+},
+{
+  "id": "ex_8_5-4",
+  "level": "2",
+  "url": "sec_8_5.html#ex_8_5-4",
+  "type": "Exercise",
+  "number": "8.5.4",
+  "title": "",
+  "body": "  The average number of daylight hours that Anchorage, Alaska experiences is a periodic function , where corresponds to the month of June. The graph of is given below.        Identify the amplitude, midline, and period for the periodic function modeling the average number of daylight hours in Anchorage.    amplitude: ; midline: ; period:       Give a possible formula for the periodic function modeling the average number of daylight hours in Anchorage.           What is the average number of daylight hours in Anchorage during the month of November?    approximately hours    "
+},
+{
+  "id": "ex_8_5-5",
+  "level": "2",
+  "url": "sec_8_5.html#ex_8_5-5",
+  "type": "Exercise",
+  "number": "8.5.5",
+  "title": "",
+  "body": "  The number of bird species in a Rhode Island preserve oscillates between a high of in June and a low of in December. Write a formula for the number of bird species, , as a function of the number of months since December. Your answer should be of the form or .        "
+},
+{
+  "id": "ex_8_5-6",
+  "level": "2",
+  "url": "sec_8_5.html#ex_8_5-6",
+  "type": "Exercise",
+  "number": "8.5.6",
+  "title": "",
+  "body": "  The volume of air in the lungs of a woman at rest at certain times is shown in the following table. Assuming that the maximum volume of air in her lungs occurs at time seconds and the minimum volume of air in her lungs occurs at time seconds, give the formula for a periodic function modeling the volume of air in the woman's lungs at any given time. Your answer should be of the form or .    time (seconds)         volume (liters)               "
+},
+{
+  "id": "ex_8_5-7",
+  "level": "2",
+  "url": "sec_8_5.html#ex_8_5-7",
+  "type": "Exercise",
+  "number": "8.5.7",
+  "title": "",
+  "body": "  Each day, the tide in a harbor continuously goes in and out, raising and lowering a boat anchored there. At low tide, the boat is only meters above the ocean floor. Six hours later, at peak high tide, the boat is meters above the ocean floor. Six hours after peak high tide, it is low tide again. Suppose the boat is at high tide at midnight. Give a formula for a periodic function modeling the boat's distance above the ocean floor as a function of time hours since midnight. Your answer should be of the form or .        "
+},
+{
+  "id": "ex_8_5-8",
+  "level": "2",
+  "url": "sec_8_5.html#ex_8_5-8",
+  "type": "Exercise",
+  "number": "8.5.8",
+  "title": "",
+  "body": "  You decide to ride the Ferris wheel at the local carnival. You are feet above the ground at the bottom of the Ferris wheel and feet above the ground at the top. It takes seconds for you to reach the maximum height from the minimum height and seconds to reach the minimum height from the maximum height. Suppose you are at the bottom of the ride at time seconds. Give a formula for a periodic function modeling your height above the ground seconds into your Ferris wheel ride. Your answer should be of the form or .        "
 },
 {
   "id": "backmatter-2",
