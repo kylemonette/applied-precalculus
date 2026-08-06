@@ -15,18 +15,18 @@
     <ol>
         <li>
             <p>
-            First objective.
+            Use the quadratic formula to solve a quadratic equation.
             </p>
         </li>
 
         <li>
             <p>
-        Second objective.
+        Compute the discriminant <m>D=b^2-4ac</m> of a quadratic equation and use its sign to determine the number of real solutions.
             </p>
-        </li> 
+        </li>
         <li>
             <p>
-            Third objective.
+            Use the vertex formula to find the vertex of a quadratic function, and write a quadratic function in factored form using its real zeros.
             </p>
         </li>
     </ol>

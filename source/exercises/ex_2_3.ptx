@@ -2,130 +2,145 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_2_3">
 
 <exercise>
-<statement>
+<introduction>
 <p>
 Decide if each table could represent a linear function and explain your reasoning.  For each table that could represent a linear function, find a formula that matches the data given in the table.
 </p>
+</introduction>
 
-<ol>
-<li>
-<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
-    <row bottom="minor">
-        <cell><m>x</m></cell>
-        <cell><m>0</m></cell>
-        <cell><m>1</m></cell>
-        <cell><m>2</m></cell>
-        <cell><m>3</m></cell>
-    </row>
-    <row>
-        <cell><m>y</m></cell>
-        <cell><m>12.6</m></cell>
-        <cell><m>9.3</m></cell>
-        <cell><m>6.0</m></cell>
-        <cell><m>2.7</m></cell>
-    </row>
-</tabular>
-</li>
-<li>
-<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
-    <row bottom="minor">
-        <cell><m>t</m></cell>
-        <cell><m>-1</m></cell>
-        <cell><m>1</m></cell>
-        <cell><m>3</m></cell>
-        <cell><m>5</m></cell>
-    </row>
-    <row>
-        <cell><m>f(t)</m></cell>
-        <cell><m>0.1</m></cell>
-        <cell><m>0.4</m></cell>
-        <cell><m>0.7</m></cell>
-        <cell><m>1.0</m></cell>
-    </row>
-</tabular>
-</li>
-<li>
-<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
-    <row bottom="minor">
-        <cell><m>n</m></cell>
-        <cell><m>0</m></cell>
-        <cell><m>1.5</m></cell>
-        <cell><m>3</m></cell>
-        <cell><m>4.5</m></cell>
-        <cell><m>6</m></cell>
-    </row>
-    <row>
-        <cell><m>g(n)</m></cell>
-        <cell><m>12</m></cell>
-        <cell><m>18</m></cell>
-        <cell><m>12</m></cell>
-        <cell><m>6</m></cell>
-        <cell><m>12</m></cell>
-    </row>
-</tabular>
-</li>
-<li>
-<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
-    <row bottom="minor">
-        <cell><m>t</m></cell>
-        <cell><m>0</m></cell>
-        <cell><m>2</m></cell>
-        <cell><m>4</m></cell>
-        <cell><m>6</m></cell>
-        <cell><m>8</m></cell>
-    </row>
-    <row>
-        <cell><m>h(t)</m></cell>
-        <cell><m>6.4</m></cell>
-        <cell><m>1.6</m></cell>
-        <cell><m>0.4</m></cell>
-        <cell><m>0.1</m></cell>
-        <cell><m>0.025</m></cell>
-    </row>
-</tabular>
-</li>
-<li>
-<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
-    <row bottom="minor">
-        <cell><m>z</m></cell>
-        <cell><m>-2</m></cell>
-        <cell><m>1</m></cell>
-        <cell><m>4</m></cell>
-        <cell><m>7</m></cell>
-    </row>
-    <row>
-        <cell><m>w(z)</m></cell>
-        <cell><m>6</m></cell>
-        <cell><m>4.8</m></cell>
-        <cell><m>3.6</m></cell>
-        <cell><m>2.4</m></cell>
-    </row>
-</tabular>
-</li>
-</ol>
-</statement>
-
+<task>
+    <statement>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+            <row bottom="minor">
+                <cell><m>x</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>2</m></cell>
+                <cell><m>3</m></cell>
+            </row>
+            <row>
+                <cell><m>y</m></cell>
+                <cell><m>12.6</m></cell>
+                <cell><m>9.3</m></cell>
+                <cell><m>6.0</m></cell>
+                <cell><m>2.7</m></cell>
+            </row>
+        </tabular>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            linear with equation <m>y=-3.3x+12.6</m>
-        </li>
-        <li>
-            linear with equation <m>f(t)=0.15t+0.25</m>
-        </li>
-        <li>
-            not linear
-        </li>
-        <li>
-            not linear
-        </li>
-        <li>
-            linear with equation <m>w(z)=-0.4z+5.2</m>
-        </li>
-    </ol>
-</p>
+    <p>
+        linear with equation <m>y=-3.3x+12.6</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+            <row bottom="minor">
+                <cell><m>t</m></cell>
+                <cell><m>-1</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>5</m></cell>
+            </row>
+            <row>
+                <cell><m>f(t)</m></cell>
+                <cell><m>0.1</m></cell>
+                <cell><m>0.4</m></cell>
+                <cell><m>0.7</m></cell>
+                <cell><m>1.0</m></cell>
+            </row>
+        </tabular>
+    </statement>
+<solution>
+    <p>
+        linear with equation <m>f(t)=0.15t+0.25</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+            <row bottom="minor">
+                <cell><m>n</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>1.5</m></cell>
+                <cell><m>3</m></cell>
+                <cell><m>4.5</m></cell>
+                <cell><m>6</m></cell>
+            </row>
+            <row>
+                <cell><m>g(n)</m></cell>
+                <cell><m>12</m></cell>
+                <cell><m>18</m></cell>
+                <cell><m>12</m></cell>
+                <cell><m>6</m></cell>
+                <cell><m>12</m></cell>
+            </row>
+        </tabular>
+    </statement>
+<solution>
+    <p>
+        not linear
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+            <row bottom="minor">
+                <cell><m>t</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>2</m></cell>
+                <cell><m>4</m></cell>
+                <cell><m>6</m></cell>
+                <cell><m>8</m></cell>
+            </row>
+            <row>
+                <cell><m>h(t)</m></cell>
+                <cell><m>6.4</m></cell>
+                <cell><m>1.6</m></cell>
+                <cell><m>0.4</m></cell>
+                <cell><m>0.1</m></cell>
+                <cell><m>0.025</m></cell>
+            </row>
+        </tabular>
+    </statement>
+<solution>
+    <p>
+        not linear
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+            <row bottom="minor">
+                <cell><m>z</m></cell>
+                <cell><m>-2</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>4</m></cell>
+                <cell><m>7</m></cell>
+            </row>
+            <row>
+                <cell><m>w(z)</m></cell>
+                <cell><m>6</m></cell>
+                <cell><m>4.8</m></cell>
+                <cell><m>3.6</m></cell>
+                <cell><m>2.4</m></cell>
+            </row>
+        </tabular>
+    </statement>
+<solution>
+    <p>
+        linear with equation <m>w(z)=-0.4z+5.2</m>
+    </p>
+</solution>
+</task>
 </exercise>
 
 
@@ -166,7 +181,7 @@ approximately linear with approximate equation <m>C=0.555F-17.76</m>
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 The height of a human individual can be estimated by the length of the femur, as shown for males in the following table.
 </p>
@@ -188,101 +203,128 @@ The height of a human individual can be estimated by the length of the femur, as
         <cell><m>183.85</m></cell>
     </row>
 </tabular>
+</introduction>
 
-
-<ol>
-<li>Use the information in this table to find a possible formula for the height of a human male <m>H</m> as a function of his femur length <m>L</m>.</li>
-<li>What would the approximate height of a human male with femur length 46 cm be?</li>
-<li>Fernando is 175.4 cm tall. What would you expect the approximate length of his femur to be?</li>
-</ol>
-</statement>
-
+<task>
+    <statement>
+        <p>Use the information in this table to find a possible formula for the height of a human male <m>H</m> as a function of his femur length <m>L</m>.</p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>H=2.32L+65.53</m>
-        </li>
-        <li>
-            <m>172.25</m> cm
-        </li>
-        <li>
-            approximately 47.36 cm
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>H=2.32L+65.53</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>What would the approximate height of a human male with femur length 46 cm be?</p>
+    </statement>
+<solution>
+    <p>
+        <m>172.25</m> cm
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>Fernando is 175.4 cm tall. What would you expect the approximate length of his femur to be?</p>
+    </statement>
+<solution>
+    <p>
+        approximately 47.36 cm
+    </p>
+</solution>
+</task>
 </exercise>
 
 
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 The weight of water above a scuba diver as well as the air above the diver exerts pressure on their bodies. The pressure the diver experiences at sea level is <m>14.7</m> PSI (pounds per square inch), and this pressure increases by <m>0.4</m> PSI per each foot of depth.
 </p>
-<ol>
-<li>Write a linear equation expressing the pressure <m>P</m> on a diver at a depth of <m>d</m> feet below sea level.</li>
-<li>The deepest a recreational scuba diver typically dives is <m>130</m> feet. What is the pressure on a diver at this depth?</li>
-</ol>
-</statement>
+</introduction>
 
+<task>
+    <statement>
+        <p>Write a linear equation expressing the pressure <m>P</m> on a diver at a depth of <m>d</m> feet below sea level.</p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>P=0.4d+14.7</m>
-        </li>
-        <li>
-            <m>66.7</m> PSI
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>P=0.4d+14.7</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>The deepest a recreational scuba diver typically dives is <m>130</m> feet. What is the pressure on a diver at this depth?</p>
+    </statement>
+<solution>
+    <p>
+        <m>66.7</m> PSI
+    </p>
+</solution>
+</task>
 </exercise>
 
 
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 A hiker is at a trailhead about to climb a mountain. The temperature at the trailhead is <m>65^{\circ}</m>F. According to the standard atmosphere model
 <fn><url href="https://www.grc.nasa.gov/WWW/K-12/airplane/atmos.html">https://www.grc.nasa.gov/WWW/K-12/airplane/atmos.html</url>, accessed: 6/25/20</fn>
 the temperature drops by <m>0.00356^{\circ}</m>F per each 1 foot increase in altitude. Let <m>T=T(h)</m>  be the temperature, in <m>^{\circ}</m>F, <m>h</m> feet above the hiker.
 </p>
-<ol>
-<li>Write a formula for the function <m>T(h)</m>.</li>
-<li>Find the temperature at the mountaintop that is <m>6210</m> feet above the hiker.</li>
-<li>Is the function <m>T(h)</m> increasing or decreasing?</li>
-</ol>
-</statement>
+</introduction>
 
+<task>
+    <statement>
+        <p>Write a formula for the function <m>T(h)</m>.</p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>T(h)=-0.00356h+65</m>
-        </li>
-        <li>
-            <m>42.89</m> <m>^\circ</m> F
-        </li>
-        <li>
-            The function <m>T(h)</m> is decreasing.
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>T(h)=-0.00356h+65</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>Find the temperature at the mountaintop that is <m>6210</m> feet above the hiker.</p>
+    </statement>
+<solution>
+    <p>
+        <m>42.89</m> <m>^\circ</m> F
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>Is the function <m>T(h)</m> increasing or decreasing?</p>
+    </statement>
+<solution>
+    <p>
+        The function <m>T(h)</m> is decreasing.
+    </p>
+</solution>
+</task>
 </exercise>
 
 
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
-A man goes to a gym to exercise. After <m>t</m> minutes on a treadmill, his pulse (heart rate), <m>H</m>, in beats per minute, is: 
+A man goes to a gym to exercise. After <m>t</m> minutes on a treadmill, his pulse (heart rate), <m>H</m>, in beats per minute, is:
 </p>
 
 
@@ -306,26 +348,27 @@ A man goes to a gym to exercise. After <m>t</m> minutes on a treadmill, his puls
         <cell><m>95</m></cell>
     </row>
 </tabular>
+</introduction>
 
-
-<ol>
-<li>Is it appropriate to model <m>H(t)</m> by a linear function? If yes, find a formula for <m>H(t)</m>.</li>
-<li>If the function <m>H(t)</m> can be modeled by a linear function, give units for the slope and the vertical intercept of <m>H(t)</m>. Then explain their meaning in practical terms.</li>
-</ol>
-</statement>
-
+<task>
+    <statement>
+        <p>Is it appropriate to model <m>H(t)</m> by a linear function? If yes, find a formula for <m>H(t)</m>.</p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            Linear; formula <m>H(t)=\frac{2}{3}t+85</m>
-        </li>
-        <li>
-            <p>The slope is <m>\frac{2}{3}</m> bpm per minute; the practical meaning of the slope is that the man's bpm is increasing at a rate of <m>\frac{2}{3}</m> bpm per minute. The vertical intercept is <m>85</m> bpm; the practical meaning of the vertical intercept is that the man's resting heart rate (heart rate when performing no exercise on the treadmill) is <m>85</m> bpm.</p>
-        </li>
-    </ol>
-</p>
+    <p>
+        Linear; formula <m>H(t)=\frac{2}{3}t+85</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>If the function <m>H(t)</m> can be modeled by a linear function, give units for the slope and the vertical intercept of <m>H(t)</m>. Then explain their meaning in practical terms.</p>
+    </statement>
+<solution>
+    <p>The slope is <m>\frac{2}{3}</m> bpm per minute; the practical meaning of the slope is that the man's bpm is increasing at a rate of <m>\frac{2}{3}</m> bpm per minute. The vertical intercept is <m>85</m> bpm; the practical meaning of the vertical intercept is that the man's resting heart rate (heart rate when performing no exercise on the treadmill) is <m>85</m> bpm.</p>
+</solution>
+</task>
 </exercise>
 
 

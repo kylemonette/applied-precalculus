@@ -227,32 +227,50 @@ A quadratic parabola crosses the <m>x</m>-axis at the point <m>(2,0)</m> and has
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 A lighting company can sell <m>1000-2p</m> units of its specialty chandelier if it charges <m>\$p</m> per specialty chandelier.
 </p>
-<ol>
-<li>Find the formula for the revenue <m>R(p)</m> generated from specialty chandelier sales and graph it.</li>
-<li>At what price will the lighting company sell zero of its specialty chandelier?</li>
-<li>What is the maximum revenue? What price should the lighting company charge per specialty chandelier in order to maximize revenue?</li>
-</ol>
-</statement>
+</introduction>
 
+<task>
+    <statement>
+        <p>
+        Find the formula for the revenue <m>R(p)</m> generated from specialty chandelier sales and graph it.
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>R(p)=p(1000-2p)</m> or <m>R(p)=-2p^2+1000p</m>
-        </li>
-        <li>
-            <m>\$500</m>
-        </li>
-        <li>
-            <p>The maximum revenue is <m>\$125,000</m>. The lighting company should charge <m>\$250</m> per specialty chandelier to maximize revenue.</p>
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>R(p)=p(1000-2p)</m> or <m>R(p)=-2p^2+1000p</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        At what price will the lighting company sell zero of its specialty chandelier?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>\$500</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the maximum revenue? What price should the lighting company charge per specialty chandelier in order to maximize revenue?
+        </p>
+    </statement>
+<solution>
+    <p>
+        The maximum revenue is <m>\$125,000</m>. The lighting company should charge <m>\$250</m> per specialty chandelier to maximize revenue.
+    </p>
+</solution>
+</task>
 </exercise>
 
 </exercises>

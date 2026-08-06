@@ -504,7 +504,7 @@ Find a formula for a power function <m>g(x)=kx^p</m> given numerically by:
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 Consider a pendulum depicted below
 <fn>Modified from a public domain image at <url href="https://en.wikipedia.org/wiki/Pendulum">https://en.wikipedia.org/wiki/Pendulum</url>, accessed: 7/8/20</fn>.
@@ -525,28 +525,44 @@ and the local acceleration due to gravity <m>g</m>:
 T=2\pi\sqrt{\frac{L}{g}}.
 </md>
 </p>
-<ol>
-<li>With <m>g</m> fixed, is <m>T</m> a power function of <m>L</m>? In other words, is <m>T=kL^p</m>? If yes, find the coefficient and the exponent.</li>
-<li>On the surface of the Earth, the acceleration due to gravity, <m>g</m>, is equal to <m>9.81\text{ m}/\text{sec}^2</m> where m stands for meters. Calculate the period of a pendulum of length <m>0.5 \text{ m}</m> that happily oscillates in Kingston, RI.</li>
-<li>An astronaut is standing on the surface of a faraway asteroid wondering about the acceleration due to gravity on the asteroid. The astronaut has a watch and a pendulum whose length is <m>0.3 \text{ m}</m>. The astronaut measures the period of the pendulum which turns out to be <m>5</m> seconds. What is the acceleration due to gravity on the asteroid?</li>
-</ol>
-</statement>
+</introduction>
 
+<task>
+    <statement>
+        <p>
+        With <m>g</m> fixed, is <m>T</m> a power function of <m>L</m>? In other words, is <m>T=kL^p</m>? If yes, find the coefficient and the exponent.
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <p>yes; <m>T=\dfrac{2\pi}{\sqrt{g}}L^\frac{1}{2}</m> where the coefficient is <m>\dfrac{2\pi}{\sqrt{g}}</m> and the exponent is <m>\frac{1}{2}</m>.</p>
-        </li>
-        <li>
-            approximately <m>1.42</m> seconds.
-        </li>
-        <li>
-            approximately <m>0.47 \text{ m}/\text{sec}^2</m>.
-        </li>
-    </ol>
-</p>
+    <p>yes; <m>T=\dfrac{2\pi}{\sqrt{g}}L^\frac{1}{2}</m> where the coefficient is <m>\dfrac{2\pi}{\sqrt{g}}</m> and the exponent is <m>\frac{1}{2}</m>.</p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        On the surface of the Earth, the acceleration due to gravity, <m>g</m>, is equal to <m>9.81\text{ m}/\text{sec}^2</m> where m stands for meters. Calculate the period of a pendulum of length <m>0.5 \text{ m}</m> that happily oscillates in Kingston, RI.
+        </p>
+    </statement>
+<solution>
+    <p>
+        approximately <m>1.42</m> seconds.
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        An astronaut is standing on the surface of a faraway asteroid wondering about the acceleration due to gravity on the asteroid. The astronaut has a watch and a pendulum whose length is <m>0.3 \text{ m}</m>. The astronaut measures the period of the pendulum which turns out to be <m>5</m> seconds. What is the acceleration due to gravity on the asteroid?
+        </p>
+    </statement>
+<solution>
+    <p>
+        approximately <m>0.47 \text{ m}/\text{sec}^2</m>.
+    </p>
+</solution>
+</task>
 </exercise>
 
 

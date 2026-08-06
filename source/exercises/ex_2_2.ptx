@@ -126,7 +126,7 @@ passing through <m>(5,-5)</m> and <m>(5,2)</m>
 <exercise>
 <statement>
 <p>
-with slope 0 and passing through <m>(-3,-1)</m>
+with slope <m>0</m> and passing through <m>(-3,-1)</m>
 </p>
 </statement>
 
@@ -285,18 +285,34 @@ the vertical intercept of <m>f(x)</m> is <m>3</m> and its horizontal intercept i
 <p>
 Which of the following lines is NOT the graph of a linear function?
 </p>
-<ol>
-<li><m>y=-2x-3x+1</m></li>
-<li><m>y=-5</m></li>
-<li><m>x=7</m></li>
-</ol>
 </statement>
 
-<solution>
-<p>
-(c) is not the graph of a linear function.
-</p>
-</solution>
+<choices>
+    <choice>
+        <statement>
+            <p>
+            <m>y=-2x-3x+1</m>
+            </p>
+        </statement>
+    </choice>
+
+<choice>
+        <statement>
+            <p>
+            <m>y=-5</m>
+            </p>
+        </statement>
+    </choice>
+
+<choice correct="yes">
+        <statement>
+            <p>
+            <m>x=7</m>
+            </p>
+        </statement>
+    </choice>
+
+</choices>
 </exercise>
 
 
@@ -304,93 +320,144 @@ Which of the following lines is NOT the graph of a linear function?
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 The distance in miles from the finish line, <m>D(t)</m>, of a bicyclist <m>t</m> hours after beginning a race is given by <m>D(t)=60-20t</m>
 </p>
-<ol>
-<li>Write a complete sentence explaining the practical meaning of the vertical intercept of this linear function. Include units in your answer.</li>
-<li>Write a complete sentence explaining the practical meaning of the horizontal intercept of this linear function. Include units in your answer.</li>
-<li>Write a complete sentence explaining the practical meaning of the slope of this linear function. Include units in your answer.</li>
-</ol>
-</statement>
+</introduction>
+
+
+<task>
+    <statement>
+        <p>
+            Write a complete sentence explaining the practical meaning of the vertical intercept of this linear function. Include units in your answer.
+        </p>
+    </statement>
 
 <solution>
-<p>
-    <ol>
-        <li>
-            <p>The vertical intercept 60 is the distance in miles that the biker is from the finish line at the start of the race.</p>
-        </li>
-        <li>
-            The horizontal intercept 3 is the number of hours that it takes the biker to complete the race.
-        </li>
-        <li>
-            <p>The slope <m>-20</m> indicates that the distance between the biker and the finish line is decreasing at a rate of 20 miles per hour.</p>
-        </li>
-    </ol>
-</p>
+    <p>
+        The vertical intercept <m>60</m> is the distance in miles that the biker is from the finish line at the start of the race.
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Write a complete sentence explaining the practical meaning of the horizontal intercept of this linear function. Include units in your answer.
+        </p>
+    </statement>
+
+<solution>
+    <p>
+        The horizontal intercept <m>3</m> is the number of hours that it takes the biker to complete the race.
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            Write a complete sentence explaining the practical meaning of the slope of this linear function. Include units in your answer.
+        </p>
+    </statement>
+
+<solution>
+    <p>
+        The slope <m>-20</m> indicates that the distance between the biker and the finish line is decreasing at a rate of <m>20</m> miles per hour.
+    </p>
+</solution>
+</task>
 </exercise>
 
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 The value of an antique lamp, <m>V(t)</m>, in dollars, <m>t</m> years after its purchase is given by
 <md>
 V(t)=1900+250t.
 </md>
 </p>
-<ol>
-<li>What was the purchase price of the lamp?</li>
-<li>When will the value of the lamp reach <m>\$4000</m>?</li>
-</ol>
-</statement>
+</introduction>
 
+<task>
+    <statement>
+        <p>
+        What was the purchase price of the lamp?
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>\$1900</m>
-        </li>
-        <li>
-            The lamp will have a value of 4000 dollars 8.4 years after its purchase.
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>\$1900</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            When will the value of the lamp reach <m>\$4000</m>?
+        </p>
+    </statement>
+<solution>
+    <p>
+        The lamp will have a value of <m>\$4000</m> dollars <m>8.4</m> years after its purchase.
+    </p>
+</solution>
+</task>
 </exercise>
 
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 Two mobile phone companies sell an international roaming plan. Company A charges a <m>\$75</m> dollar fixed monthly fee and <m>\$0.20</m> per minute for talk. Company B charges a <m>\$90</m> dollar fixed monthly fee and <m>\$0.10</m> per minute for talk.
 </p>
-<ol>
-<li>Write the linear functions <m>A(m)</m> and <m>B(m)</m> which give the monthly cost charged by Company A and Company B, respectively, with <m>m</m> minutes spent talking on the phone.</li>
-<li>For what value of <m>m</m> is the cost the same with either company?</li>
-<li>Which company gives you a better deal if you plan to talk for hours?</li>
-</ol>
-</statement>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Write the linear functions <m>A(m)</m> and <m>B(m)</m> which give the monthly cost charged by Company A and Company B, respectively, with <m>m</m> minutes spent talking on the phone.
+        </p>
+    </statement>
 
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>A(m)=0.20m+75</m>; <m>B(m)=0.10m+90</m>
-        </li>
-        <li>
-            <m>m=150</m>
-        </li>
-        <li>
-            <m>B(m)</m>
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>A(m)=0.20m+75</m>; <m>B(m)=0.10m+90</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        For what value of <m>m</m> is the cost the same with either company?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>m=150</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            Which company gives you a better deal if you plan to talk for hours?
+        </p>
+    </statement>
+
+<solution>
+    <p>
+        <m>B(m)</m>
+    </p>
+</solution>
+</task>
 </exercise>
 
 

@@ -515,28 +515,38 @@ During the 2019-2020 academic year, a senior lecturer at URI earned a base salar
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 The elevation in feet, <m>E(t)</m>, of a hiker <m>t</m> minutes after beginning her hike is given by <m>E(t)=35t+1350</m>.
 </p>
-<ol>
-<li>Write a complete sentence explaining the practical meaning of the vertical intercept of this linear function. Include units in your answer.</li>
-<li>Write a complete sentence explaining the practical meaning of the slope of this linear function. Include units in your answer.</li>
-</ol>
-</statement>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Write a complete sentence explaining the practical meaning of the vertical intercept of this linear function. Include units in your answer.
+        </p>
+    </statement>
+<solution>
+    <p>
+        The initial elevation of the hiker is 1350 feet.
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            Write a complete sentence explaining the practical meaning of the slope of this linear function. Include units in your answer.
+        </p>
+    </statement>
 
 <solution>
-<p>
-    <ol>
-        <li>
-            The initial elevation of the hiker is 1350 feet.
-        </li>
-        <li>
-            The hiker's elevation is increasing at a rate of 35 feet per minute.
-        </li>
-    </ol>
-</p>
+    <p>
+        The hiker's elevation is increasing at a rate of 35 feet per minute.
+    </p>
 </solution>
+</task>
 </exercise>
 
 
@@ -545,28 +555,39 @@ The elevation in feet, <m>E(t)</m>, of a hiker <m>t</m> minutes after beginning 
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 The distance in miles from the finish line, <m>D(t)</m>, of a bicyclist <m>t</m> hours after beginning a race is given by <m>D(t)=50-25t</m>.
 </p>
-<ol>
-<li>Write a complete sentence explaining the practical meaning of the vertical intercept of this linear function. Include units in your answer.</li>
-<li>Write a complete sentence explaining the practical meaning of the slope of this linear function. Include units in your answer.</li>
-</ol>
-</statement>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Write a complete sentence explaining the practical meaning of the vertical intercept of this linear function. Include units in your answer.
+        </p>
+    </statement>
 
 <solution>
-<p>
-    <ol>
-        <li>
-            The bicyclist's initial distance from the finish line is 50 miles.
-        </li>
-        <li>
-            The bicyclist's distance from the finish line is decreasing at a rate of 25 miles per hour.
-        </li>
-    </ol>
-</p>
+    <p>
+    The bicyclist's initial distance from the finish line is 50 miles.
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            Write a complete sentence explaining the practical meaning of the slope of this linear function. Include units in your answer.
+        </p>
+    </statement>
+
+<solution>
+    <p>
+        The bicyclist's distance from the finish line is decreasing at a rate of 25 miles per hour.
+    </p>
+</solution>
+</task>
 </exercise>
 
 

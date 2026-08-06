@@ -15,18 +15,18 @@
     <ol>
         <li>
             <p>
-            First objective.
+            Identify whether a given function is a power function <m>f(x) = kx^p</m> with a positive integer exponent, and determine its coefficient and exponent.
             </p>
         </li>
 
         <li>
             <p>
-        Second objective.
+        Use power functions with positive integer exponents to model and solve applied proportionality problems.
             </p>
-        </li> 
+        </li>
         <li>
             <p>
-            Third objective.
+            Describe and sketch the graph of <m>y = kx^p</m> for a positive integer exponent <m>p</m>, including its symmetry and the effect of the coefficient <m>k</m>, distinguishing between even and odd <m>p</m>.
             </p>
         </li>
     </ol>

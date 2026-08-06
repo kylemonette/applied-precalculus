@@ -264,28 +264,37 @@ Calculate the discriminant of each quadratic equation and use it to determine wh
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 A baseball is thrown straight up with the initial speed of 50 ft/sec by a player who is 6 feet tall. Let <m>H(t)</m> be the height of the ball above the ground <m>t</m> seconds later.
 </p>
-<ol>
-<li>Find a formula for <m>H(t)</m>.</li>
-<li>When does the ball reach its maximum height and what is its maximum height? Round your answers to two decimal places.</li>
-</ol>
-</statement>
+</introduction>
 
+<task>
+    <statement>
+        <p>
+        Find a formula for <m>H(t)</m>.
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>H(t)=-16t^2+50t+6</m>
-        </li>
-        <li>
-            <p>The ball reaches its maximum height approximately 1.56 seconds after it is thrown straight up and that maximum height is approximately 45.06 feet.</p>
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>H(t)=-16t^2+50t+6</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        When does the ball reach its maximum height and what is its maximum height? Round your answers to two decimal places.
+        </p>
+    </statement>
+<solution>
+    <p>
+        The ball reaches its maximum height approximately 1.56 seconds after it is thrown straight up and that maximum height is approximately 45.06 feet.
+    </p>
+</solution>
+</task>
 </exercise>
 
 

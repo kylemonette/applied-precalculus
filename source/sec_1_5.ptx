@@ -14,18 +14,18 @@
     <ol>
         <li>
             <p>
-            First objective.
+            Explain why the average, rather than instantaneous, rate of change is used to describe how a quantity changes over an interval.
             </p>
         </li>
 
         <li>
             <p>
-        Second objective.
+        Compute the average rate of change of a function between two input values using the formula <m>\dfrac{f(b)-f(a)}{b-a}</m>, given a function algebraically, graphically, or numerically.
             </p>
-        </li> 
+        </li>
         <li>
             <p>
-            Third objective.
+            Determine and interpret the appropriate units and practical meaning of an average rate of change in an applied context.
             </p>
         </li>
     </ol>

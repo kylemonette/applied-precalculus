@@ -230,32 +230,50 @@ horizontal intercepts: <m>0</m>, <m>\frac{2}{5}</m>; vertical intercept: <m>0</m
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 A model rocket is launched vertically from the ground with an initial velocity of <m>168</m> feet per second. Let <m>H(t)</m> be the height, in feet, of the rocket <m>t</m> seconds after launch.
 </p>
-<ol>
-<li>Write a formula for the function <m>H(t)</m>.</li>
-<li>Find <m>t</m> when the model rocket hits the ground.</li>
-<li>Find the maximum height that the model rocket reaches.</li>
-</ol>
-</statement>
+</introduction>
 
+<task>
+    <statement>
+        <p>
+        Write a formula for the function <m>H(t)</m>.
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>H(t)=-16t^2+168t</m>
-        </li>
-        <li>
-            <m>10.5</m> seconds
-        </li>
-        <li>
-            The maximum height that the model rocket reaches is <m>441</m> feet.
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>H(t)=-16t^2+168t</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Find <m>t</m> when the model rocket hits the ground.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>10.5</m> seconds
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Find the maximum height that the model rocket reaches.
+        </p>
+    </statement>
+<solution>
+    <p>
+        The maximum height that the model rocket reaches is <m>441</m> feet.
+    </p>
+</solution>
+</task>
 </exercise>
 
 </exercises>

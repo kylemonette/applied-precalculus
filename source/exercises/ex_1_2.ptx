@@ -235,7 +235,7 @@ y post scale = 1.2
 
 
 <exercise xml:id="exercise-1_2-graph1">
-<statement>
+<introduction>
 <p>
 Use the graph of the function <m>y=f(x)</m> below to estimate each of the following.
 </p>
@@ -261,32 +261,46 @@ y post scale = 1.2
 \end{tikzpicture}
 </latex-image>
 </image>
+</introduction>
 
-<p>
-<ol>
-<li><m>f(2)</m></li>
-<li><m>f(3)</m></li>
-<li><m>f(-1)</m></li>
-</ol>
-</p>
-
-</statement>
-
+<task>
+    <statement>
+        <p>
+        <m>f(2)</m>
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>f(2) = -8</m>
-        </li>
-        <li>
-            <m>f(3) = -10</m>
-        </li>
-        <li>
-            <m>f(-1) = 10</m>
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>f(2) = -8</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            <m>f(3)</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>f(3) = -10</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            <m>f(-1)</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>f(-1) = 10</m>
+    </p>
+</solution>
+</task>
 </exercise>
 
 
@@ -338,17 +352,9 @@ For the function <m>y=f(x)</m> whose graph is given in <xref ref="exercise-1_2-g
 
 
 <exercise xml:id="exercise-1_2-graph2">
-<statement>
+<introduction>
 <p>
 Use the graph of the function <m>y = f(t)</m> shown below to estimate each of the following.
-</p>
-
-<p>
-<ol>
-<li><m>f(0)</m></li>
-<li><m>f(12)</m></li>
-<li><m>f(10)</m></li>
-</ol>
 </p>
 
 <image width="50%" xml:id="ex_1_2_5a">
@@ -356,7 +362,7 @@ Use the graph of the function <m>y = f(t)</m> shown below to estimate each of th
 A short description.
 </shortdescription>
 <latex-image label="ex_1_2_5a_fig">
-\begin{tikzpicture}[scale=.9]
+\begin{tikzpicture}[scale=1]
 \begin{axis}[grid=both,
 axis lines=middle,
 major grid style = {line width = 1.5pt},
@@ -368,30 +374,51 @@ minor tick={1,...,25},
 xlabel=\(t\), ylabel=\(f(t)\),
 x post scale = 1.6,
 samples=250]
-\addplot[domain=0:25] {-3*cos(deg(3.14159/6*x))+12};
+\addplot[domain=0:25] {-3*cos(deg(pi/6*x))+12};
 \end{axis}
 \end{tikzpicture}
 </latex-image>
 </image>
+</introduction>
 
-
-</statement>
-
+<task>
+    <statement>
+        <p>
+        <m>f(0)</m>
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>f(0)=9</m>
-        </li>
-        <li>
-            <m>f(12)=9</m>
-        </li>
-        <li>
-            <m>f(10)\approx 10.5</m>
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>f(0)=9</m>
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            <m>f(12)</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>f(12)=9</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            <m>f(10)</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>f(10)\approx 10.5</m>
+    </p>
+</solution>
+</task>
 </exercise>
 
 
@@ -442,9 +469,9 @@ For the function <m>y = f(t)</m> whose graph is given in <xref ref="exercise-1_2
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
-A driver of a 2019 Toyota Corolla fills his gas tank and embarks on a highway trip. The amount of gas left in the tank, <m>G</m>, in gallons, is a function of the number of miles <m>m</m> driven, <m>G=g(m)</m>. Use the graph of <m>g(m)</m> given below to answer the following questions. 
+A driver of a 2019 Toyota Corolla fills his gas tank and embarks on a highway trip. The amount of gas left in the tank, <m>G</m>, in gallons, is a function of the number of miles <m>m</m> driven, <m>G=g(m)</m>. Use the graph of <m>g(m)</m> given below to answer the following questions.
 </p>
 
 <image width="50%" xml:id="ex_1_2_6">
@@ -469,43 +496,66 @@ y post scale = 1.2
 \end{tikzpicture}
 </latex-image>
 </image>
+</introduction>
 
-<p>
-<ol>
-<li>What is the fuel tank capacity of the 2019 Toyota Corolla?</li>
-<li>How much fuel is left after 200 miles?</li>
-<li>What happens after 528 miles?</li>
-<li>What is the fuel efficiency of the 2019 Toyota Corolla on the highway?</li>
-</ol>
-</p>
-
-</statement>
-
+<task>
+    <statement>
+        <p>
+        What is the fuel tank capacity of the 2019 Toyota Corolla?
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>13.2</m> gallons.
-        </li>
-        <li>
-            <m>8</m> gallons.
-        </li>
-        <li>
-            The gas tank is empty.
-        </li>
-        <li>
-            Approximately <m>40</m> miles per gallon.
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>13.2</m> gallons.
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            How much fuel is left after 200 miles?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>8</m> gallons.
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            What happens after 528 miles?
+        </p>
+    </statement>
+<solution>
+    <p>
+        The gas tank is empty.
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            What is the fuel efficiency of the 2019 Toyota Corolla on the highway?
+        </p>
+    </statement>
+<solution>
+    <p>
+        Approximately <m>40</m> miles per gallon.
+    </p>
+</solution>
+</task>
 </exercise>
 
 
 
 
 <exercise xml:id="exercise-1_2-caff">
-<statement>
+<introduction>
 <p>
 The amount of caffeine remaining in the body, <m>C</m>, in milligrams, <m>t</m> hours after drinking a cup of coffee, <m>C=C(t)</m> is given by the graph below.
 </p>
@@ -531,37 +581,51 @@ y post scale = 1.2
 \end{tikzpicture}
 </latex-image>
 </image>
+</introduction>
 
-<p>
-<ol>
-<li>How much caffeine was absorbed into the bloodstream from the cup of coffee?</li>
-<li>How much caffeine is left after <m>5</m> hours? After <m>10</m> hours?</li>
-<li>Is the function <m>C(t)</m> increasing, decreasing or neither on the interval <m>t\geq 0</m>?</li>
-</ol>
-</p>
-
-</statement>
-
+<task>
+    <statement>
+        <p>
+        How much caffeine was absorbed into the bloodstream from the cup of coffee?
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>96</m> mg.
-        </li>
-        <li>
-            After <m>5</m> hours, there are <m>48</m> mg left. After <m>10</m> hours, <m>24</m> mg.
-        </li>
-        <li>
-            Decreasing.
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>96</m> mg.
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            How much caffeine is left after <m>5</m> hours? After <m>10</m> hours?
+        </p>
+    </statement>
+<solution>
+    <p>
+        After <m>5</m> hours, there are <m>48</m> mg left. After <m>10</m> hours, <m>24</m> mg.
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            Is the function <m>C(t)</m> increasing, decreasing or neither on the interval <m>t\geq 0</m>?
+        </p>
+    </statement>
+<solution>
+    <p>
+        Decreasing.
+    </p>
+</solution>
+</task>
 </exercise>
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 A man deposited money into a savings account. His balance <m>B(t)</m>, in dollars, after <m>t</m> years is given by the graph below.
 </p>
@@ -588,32 +652,46 @@ y post scale = 1.2
 \end{tikzpicture}
 </latex-image>
 </image>
+</introduction>
 
-<p>
-<ol>
-<li>What was his initial deposit?</li>
-<li>How much money was in his account after 10 years? After 20 years?</li>
-<li>Is the function <m>B(t)</m> increasing, decreasing or neither in the interval <m>t\geq 0</m>?</li>
-</ol>
-</p>
-
-</statement>
-
+<task>
+    <statement>
+        <p>
+        What was his initial deposit?
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>\$1000</m>.
-        </li>
-        <li>
-            After 10 years, <m>\$2000</m>. After 20 years, <m>\$4000</m>.
-        </li>
-        <li>
-            Increasing.
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>\$1000</m>.
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            How much money was in his account after 10 years? After 20 years?
+        </p>
+    </statement>
+<solution>
+    <p>
+        After 10 years, <m>\$2000</m>. After 20 years, <m>\$4000</m>.
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            Is the function <m>B(t)</m> increasing, decreasing or neither in the interval <m>t\geq 0</m>?
+        </p>
+    </statement>
+<solution>
+    <p>
+        Increasing.
+    </p>
+</solution>
+</task>
 </exercise>
 
 
@@ -660,7 +738,7 @@ No, because it fails the vertical line test (in many places!).
 
 
 <exercise>
-<statement>
+<introduction>
 <p>
 The graph of a function <m>y=f(x)</m> is given below. Use it to find the following.
 </p>
@@ -686,32 +764,46 @@ y post scale = 1.2
 \end{tikzpicture}
 </latex-image>
 </image>
+</introduction>
 
-<p>
-<ol>
-<li>Estimate <m>f(0)</m>.</li>
-<li>Estimate all values of <m>x</m> for which <m>f(x)=0</m>.</li>
-<li>Estimate all values of <m>x</m> for which <m>f(x)=5</m>.</li>
-</ol>
-</p>
-
-</statement>
-
+<task>
+    <statement>
+        <p>
+        Estimate <m>f(0)</m>.
+        </p>
+    </statement>
 <solution>
-<p>
-    <ol>
-        <li>
-            <m>f(0) = -4</m>.
-        </li>
-        <li>
-            <m>x=-2</m> and <m>x=2</m>.
-        </li>
-        <li>
-            <m>x=-3</m> and <m>x = 3</m>.
-        </li>
-    </ol>
-</p>
+    <p>
+        <m>f(0) = -4</m>.
+    </p>
 </solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            Estimate all values of <m>x</m> for which <m>f(x)=0</m>.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>x=-2</m> and <m>x=2</m>.
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+            Estimate all values of <m>x</m> for which <m>f(x)=5</m>.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>x=-3</m> and <m>x = 3</m>.
+    </p>
+</solution>
+</task>
 </exercise>
 
 
@@ -749,6 +841,8 @@ y post scale = 1.2
 <solution>
 <p>
 Increasing on the intervals <m>(0,3) \cup (9,12)</m>. <em>Or, write as <m>0\lt t\lt 3</m> and <m>9\lt t\lt 12</m></em>.
+</p>
+<p>
 Decreasing on the interval <m>(3,9)</m>. <em>Or, write as <m>3\lt t \lt 9</m></em>.
 </p>
 </solution>
