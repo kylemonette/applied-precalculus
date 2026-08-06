@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_7_3">
+
+
+<exercisegroup>
+<title>Computing a Composition</title>
+<introduction>
+<p>
+For each of the following, find <m>(f\circ g)(x)</m> and <m>(g\circ f)(x)</m>.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-7_3_1">
+<statement>
+<p>
+<m>f(x)=x+1</m> and <m>g(x)=2x</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=2x+1</m>; <m>g(f(x))=2x+2</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=3x-1</m> and <m>g(x)=5-\frac{1}{2}x</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=-\frac{3}{2}x+14</m>; <m>g(f(x))=-\frac{3}{2}x+\frac{11}{2}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=5x-10</m> and <m>g(x)=3x^2-5</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=15x^2-35</m>; <m>g(f(x))=75x^2-300x+295</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=x^2-6x+1</m> and <m>g(x)=8x+1</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=64x^2-32x-4</m>; <m>g(f(x))=8x^2-48x+9</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=\sqrt{x}</m> and <m>g(x)=4-x</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=\sqrt{4-x}</m>; <m>g(f(x))=4-\sqrt{x}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=\sqrt{x-7}</m> and <m>g(x)=\sqrt{x+7}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=\sqrt{\sqrt{x+7}-7}</m>; <m>g(f(x))=\sqrt{\sqrt{x-7}+7}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=\frac{2x+1}{5}</m> and <m>g(x)=2e^x</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=\dfrac{4e^x+1}{5}</m>; <m>g(f(x))=2e^{\frac{2x+1}{5}}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=5^x</m> and <m>g(x)=2x-1</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=5^{2x-1}</m>; <m>g(f(x))=2(5^x)-1</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=\dfrac{x}{x^2-9}</m> and <m>g(x)=3x+1</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=\dfrac{3x+1}{(3x+1)^2-9}</m>; <m>g(f(x))=3\left(\dfrac{x}{x^2-9}\right)+1</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_3_10">
+<statement>
+<p>
+<m>f(x)=\dfrac{2x-3}{x+1}</m> and <m>g(x)=\dfrac{1}{2x-1}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(g(x))=\frac{5}{2x}-3</m>; <m>g(f(x))=\frac{x+1}{3x-7}</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Evaluating a Composition</title>
+<introduction>
+<p>
+For each of the following, find <m>(f\circ g)(2)</m> for the functions <m>f(x)</m> and <m>g(x)</m> given.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-7_3_11">
+<statement>
+<p>
+<m>f(x)=6x-1</m> and <m>g(x)=2x</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>23</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=2x-1</m> and <m>g(x)=\sqrt{8x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>7</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>f(x)=\frac{3x+1}{2}</m> and <m>g(x)=\frac{1}{x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{5}{4}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_3_14">
+<statement>
+<p>
+<m>f(x)=\sqrt{x}</m> and <m>g(x)=2x^2-2x</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Decomposing a Function</title>
+<introduction>
+<p>
+For each of the following, express it as a composition of two functions <m>f(x)</m> and <m>g(x)</m> so that <m>y=(f\circ g)(x)</m>.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-7_3_15">
+<statement>
+<p>
+<m>y=2(x-5)^5+1</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=2x^5+1</m>; <m>g(x)=x-5</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\sqrt[3]{7-x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=\sqrt[3]{x}</m>; <m>g(x)=7-x</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=2^{\sqrt{x}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=2^x</m>; <m>g(x)=\sqrt{x}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\dfrac{1}{5x-7}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=\frac{1}{x}</m>; <m>g(x)=5x-7</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\ln(16x+5x^2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=\ln(x)</m>; <m>g(x)=16x+5x^2</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\left(\dfrac{2x+1}{x-1}\right)^3</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=x^3</m>; <m>g(x)=\dfrac{2x+1}{x-1}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=e^{3x+2}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=e^x</m>; <m>g(x)=3x+2</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_3_22">
+<statement>
+<p>
+<m>y=e^{\sqrt{x-5}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(x)=e^x</m>; <m>g(x)=\sqrt{x-5}</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+</exercises>

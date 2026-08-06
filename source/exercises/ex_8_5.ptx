@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_8_5">
+
+
+<exercise>
+<introduction>
+<p>
+Find the amplitude, period, and midline of each of the following functions.
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        <m>y=\sin(4t)</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        amplitude: <m>1</m>; period: <m>\frac{\pi}{2}</m>; midline: <m>y=0</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        <m>y=-\cos(\pi t)</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        amplitude: <m>1</m>; period: <m>2</m>; midline: <m>y=0</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        <m>y=16\cos\left(\frac{1}{2}t\right)+3</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        amplitude: <m>16</m>; period: <m>4\pi</m>; midline: <m>y=3</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        <m>y=7\sin\left(\frac{\pi}{4}t\right)-8</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        amplitude: <m>7</m>; period: <m>8</m>; midline: <m>y=-8</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        <m>y=1.5\sin(0.6t)-0.1</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        amplitude: <m>1.5</m>; period: <m>\frac{10\pi}{3}</m>; midline: <m>y=-0.1</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        <m>y=\frac{1}{3}\cos\left(\frac{2}{\pi}t\right)+\frac{2}{5}</m>
+        </p>
+    </statement>
+<solution>
+    <p>
+        amplitude: <m>\frac{1}{3}</m>; period: <m>\pi^2</m>; midline: <m>y=\frac{2}{5}</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+For each of the periodic functions graphed below, find a formula in the form <m>y=A\sin(Bt)+C</m> or <m>y=A\cos(Bt)+C</m> that represents the graph.
+</p>
+</introduction>
+
+<task>
+    <statement>
+    <image width="50%" xml:id="ex_8_5_1">
+    <latex-image label="ex_8_5_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=14,
+ymin=-4,ymax=4,
+xtick={pi/2,pi,3*pi/2,2*pi,5*pi/2,3*pi,7*pi/2,4*pi},
+xticklabels = {$\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$, $\frac{5\pi}{2}$, $3\pi$, $\frac{7\pi}{2}$, $4\pi$},
+ytick={-3,...,3},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:4*pi] {-3*sin(x)};
+\end{axis}
+\end{tikzpicture}
+    </latex-image>
+    </image>
+    </statement>
+<solution>
+    <p>
+        <m>y=-3\sin(t)</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+    <image width="50%" xml:id="ex_8_5_2">
+    <latex-image label="ex_8_5_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=14,
+ymin=-5,ymax=5,
+xtick={pi,2*pi,3*pi,4*pi},
+xticklabels = {$\pi$, $2\pi$, $3\pi$, $4\pi$},
+ytick={-4,...,4},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:4*pi] {4*cos(x)};
+\end{axis}
+\end{tikzpicture}
+    </latex-image>
+    </image>
+    </statement>
+<solution>
+    <p>
+        <m>y=4\cos(t)</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+    <image width="50%" xml:id="ex_8_5_3">
+    <latex-image label="ex_8_5_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=14,
+ymin=-2,ymax=4,
+xtick={pi/2,pi,3*pi/2,2*pi,5*pi/2,3*pi,7*pi/2,4*pi},
+xticklabels = {$\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$, $\frac{5\pi}{2}$, $3\pi$, $\frac{7\pi}{2}$, $4\pi$},
+ytick={-4,...,4},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:4*pi] {2*sin(x)+1};
+\end{axis}
+\end{tikzpicture}
+    </latex-image>
+    </image>
+    </statement>
+<solution>
+    <p>
+        <m>y=2\sin(t)+1</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+    <image width="50%" xml:id="ex_8_5_4">
+    <latex-image label="ex_8_5_4_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=9,
+ymin=-6,ymax=6,
+xtick={1,...,8},
+ytick={-5,...,5},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:8] {-5*cos(pi/2*x)};
+\end{axis}
+\end{tikzpicture}
+    </latex-image>
+    </image>
+    </statement>
+<solution>
+    <p>
+        <m>y=-5\cos\left(\frac{\pi}{2}t\right)</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+    <image width="50%" xml:id="ex_8_5_5">
+    <latex-image label="ex_8_5_5_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=20,
+ymin=-4,ymax=4,
+xtick={2,4,...,20},
+ytick={-3,...,3},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:20] {3*sin(pi/5*x)};
+\end{axis}
+\end{tikzpicture}
+    </latex-image>
+    </image>
+    </statement>
+<solution>
+    <p>
+        <m>y=3\sin\left(\frac{\pi}{5}t\right)</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+    <image width="50%" xml:id="ex_8_5_6">
+    <latex-image label="ex_8_5_6_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=13,
+ymin=-4,ymax=2,
+xtick={1,...,12},
+ytick={-3,...,1},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:12] {-2*cos(pi/3*x)-1};
+\end{axis}
+\end{tikzpicture}
+    </latex-image>
+    </image>
+    </statement>
+<solution>
+    <p>
+        <m>y=-2\cos\left(\frac{\pi}{3}t\right)-1</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+The average number of daylight hours <m>H</m> that Kingston, Rhode Island experiences is a periodic function <m>H=f(t)</m>, where <m>t=0</m> corresponds to the month of December. A graph modeling <m>f(t)</m> is given below.
+</p>
+
+<image width="50%" xml:id="ex_8_5_7">
+<latex-image label="ex_8_5_7_fig">
+\begin{tikzpicture}[scale=1]
+\begin{axis}[grid=both,
+axis lines=middle,
+major grid style = {line width = 1.8pt},
+xmin=0,xmax=25,
+ymin=0,ymax=16,
+xtick={5,10,15,20,25},
+ytick={0,5,10,15},
+minor tick={1,...,25},
+xlabel={$t$}, ylabel={$f(t)$},
+x post scale = 1.6]
+\addplot[domain=0:25] {-3*cos(deg(pi/6*x))+12};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Identify the amplitude, midline, and period for the periodic function modeling the average number of daylight hours in Kingston.
+        </p>
+    </statement>
+<solution>
+    <p>
+        amplitude: <m>3</m>; midline: <m>y=12</m>; period: <m>12</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Give a possible formula for the periodic function modeling the average number of daylight hours in Kingston.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>f(t)=-3\cos\left(\frac{\pi}{6}t\right)+12</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the average number of daylight hours in Kingston during the month of March?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>12</m> hours
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+The average number of daylight hours <m>H</m> that Anchorage, Alaska experiences is a periodic function <m>H=f(t)</m>, where <m>t=0</m> corresponds to the month of June. The graph of <m>f(t)</m> is given below.
+</p>
+
+<image width="50%" xml:id="ex_8_5_8">
+<latex-image label="ex_8_5_8_fig">
+\begin{tikzpicture}[scale=1]
+\begin{axis}[grid=both,
+axis lines=middle,
+major grid style = {line width = 1.8pt},
+xmin=0,xmax=24,
+ymin=0,ymax=21,
+xtick={5,10,15,20,25},
+ytick={0,5,10,15,20},
+minor tick={1,...,24},
+xlabel={$t$}, ylabel={$f(t)$},
+x post scale = 1.6,
+trig format = rad]
+\addplot[domain=0:24] {7*cos(2*pi/12*x) + 12};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Identify the amplitude, midline, and period for the periodic function modeling the average number of daylight hours in Anchorage.
+        </p>
+    </statement>
+<solution>
+    <p>
+        amplitude: <m>7</m>; midline: <m>y=12</m>; period: <m>12</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Give a possible formula for the periodic function modeling the average number of daylight hours in Anchorage.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>f(t)=7\cos\left(\frac{\pi}{6}t\right)+12</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the average number of daylight hours in Anchorage during the month of November?
+        </p>
+    </statement>
+<solution>
+    <p>
+        approximately <m>6</m> hours
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+The number of bird species in a Rhode Island preserve oscillates between a high of <m>38</m> in June and a low of <m>12</m> in December. Write a formula for the number of bird species, <m>N</m>, as a function of the number of months <m>t</m> since December. Your answer should be of the form <m>N(t) = A\cos(Bt)+C</m> or <m>N(t) = A\sin(Bt)+C</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>N(t)=-13\cos\left(\frac{\pi}{6}t\right)+25</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+The volume of air in the lungs of a woman at rest at certain times is shown in the following table. Assuming that the maximum volume of air in her lungs occurs at time <m>t=0</m> seconds and the minimum volume of air in her lungs occurs at time <m>t=3</m> seconds, give the formula for a periodic function <m>V(t)</m> modeling the volume of air in the woman's lungs at any given time. Your answer should be of the form <m>V(t) = A\cos(Bt)+C</m> or <m>V(t) = A\sin(Bt)+C</m>.
+</p>
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell>time (seconds)</cell>
+<cell><m>0</m></cell>
+<cell><m>3</m></cell>
+<cell><m>6</m></cell>
+<cell><m>9</m></cell>
+<cell><m>12</m></cell>
+</row>
+<row>
+<cell>volume (liters)</cell>
+<cell><m>2.4</m></cell>
+<cell><m>1.9</m></cell>
+<cell><m>2.4</m></cell>
+<cell><m>1.9</m></cell>
+<cell><m>2.4</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+<m>V(t)=0.25\cos\left(\frac{\pi}{3}t\right)+2.15</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Each day, the tide in a harbor continuously goes in and out, raising and lowering a boat anchored there. At low tide, the boat is only <m>2</m> meters above the ocean floor. Six hours later, at peak high tide, the boat is <m>20</m> meters above the ocean floor. Six hours after peak high tide, it is low tide again. Suppose the boat is at high tide at midnight. Give a formula for a periodic function <m>D(t)</m> modeling the boat's distance above the ocean floor as a function of time <m>t</m> hours since midnight. Your answer should be of the form <m>D(t) = A\cos(Bt)+C</m> or <m>D(t) = A\sin(Bt)+C</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>D(t)=9\cos\left(\frac{\pi}{6}t\right)+11</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+You decide to ride the Ferris wheel at the local carnival. You are <m>3</m> feet above the ground at the bottom of the Ferris wheel and <m>28</m> feet above the ground at the top. It takes <m>8</m> seconds for you to reach the maximum height from the minimum height and <m>8</m> seconds to reach the minimum height from the maximum height. Suppose you are at the bottom of the ride at time <m>t=0</m> seconds. Give a formula for a periodic function <m>H(t)</m> modeling your height above the ground <m>t</m> seconds into your Ferris wheel ride. Your answer should be of the form <m>H(t) = A\cos(Bt)+C</m> or <m>H(t) = A\sin(Bt)+C</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>H(t)=-12.5\cos\left(\frac{\pi}{8}t\right)+15.5</m>
+</p>
+</solution>
+</exercise>
+
+
+</exercises>

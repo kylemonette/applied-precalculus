@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_8_4">
+
+
+<exercisegroup>
+<title>Identifying Period, Amplitude, and Midline</title>
+<introduction>
+<p>
+For each of the following, use a graph to identify the period, amplitude, and midline of the given function. Also identify what transformations have been applied to either <m>f(t)=\cos(t)</m> or <m>f(t)=\sin(t)</m> to obtain the given function.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-8_4_1">
+<statement>
+<p>
+<m>y=5\cos(t)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period: <m>2\pi</m>; amplitude: <m>5</m>; midline: <m>y=0</m>. <m>y</m> is the graph of <m>f(t)=\cos(t)</m> stretched vertically by a factor of <m>5</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=-4\sin(t)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period: <m>2\pi</m>; amplitude: <m>4</m>; midline: <m>y=0</m>. <m>y</m> is the graph of <m>f(t)=\sin(t)</m> stretched vertically by a factor of <m>4</m> and reflected over the <m>t</m>-axis
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\sin\left(5t\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period <m>\frac{2\pi}{5}</m>; amplitude: <m>1</m>; midline: <m>y=0</m>. <m>y</m> is the graph of <m>f(t)=\sin(t)</m> compressed horizontally by a factor of <m>5</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\cos\left(\frac{\pi}{3}t\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period: <m>6</m>; amplitude: <m>1</m>; midline: <m>y=0</m>. <m>y</m> is the graph of <m>f(t)=\cos(t)</m> compressed horizontally by a factor of <m>\pi</m> and stretched horizontally by a factor of <m>3</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\cos(t)+10</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period: <m>2\pi</m>; amplitude: <m>1</m>; midline: <m>y=10</m>. <m>y</m> is the graph of <m>f(t)=\cos(t)</m> shifted up <m>10</m> units
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\sin(t)-6</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period: <m>2\pi</m>; amplitude: <m>1</m>; midline: <m>y=-6</m>. <m>y</m> is the graph of <m>f(t)=\sin(t)</m> shifted down <m>6</m> units
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\sin\left(\frac{3}{5}t\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period: <m>\frac{10\pi}{3}</m>; amplitude: <m>1</m>; midline: <m>y=0</m>. <m>y</m> is the graph of <m>f(t)=\sin(t)</m> compressed horizontally by a factor of <m>3</m> and stretched horizontally by a factor of <m>5</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=2\cos(t)-6</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period: <m>2\pi</m>; amplitude: <m>2</m>; midline: <m>y=-6</m>. <m>y</m> is the graph of <m>f(t)=\cos(t)</m> stretched vertically by a factor of <m>2</m> and shifted down <m>6</m> units
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=-3\sin(2t)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period: <m>\pi</m>; amplitude: <m>3</m>; midline: <m>y=0</m>. <m>y</m> is the graph of <m>f(t)=\sin(t)</m> compressed horizontally by a factor of <m>2</m>, stretched vertically by a factor of <m>3</m>, and reflected over the <m>t</m>-axis
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-8_4_10">
+<statement>
+<p>
+<m>y=10\sin\left(\frac{\pi}{2}t\right)+4</m>
+</p>
+</statement>
+
+<solution>
+<p>
+period: <m>4</m>; amplitude: <m>10</m>; midline: <m>y=4</m>. <m>y</m> is the graph of <m>f(t)=\sin(t)</m> compressed horizontally by a factor of <m>\pi</m>, stretched horizontally by a factor of <m>2</m>, stretched vertically by a factor of <m>10</m>, and shifted up <m>4</m> units
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+</exercises>

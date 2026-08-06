@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_6_3">
+
+
+<exercisegroup>
+<title>Rewriting Exponential Functions</title>
+<introduction>
+<p>
+For each of the following, rewrite a given exponential function <m>y=A\cdot b^t</m> in terms of the natural base; that is, in the form <m>y=A\cdot e^{kt}</m>. Round off <m>k</m> to four decimal places.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-6_3_1">
+<statement>
+<p>
+<m>\displaystyle y=208(0.85)^t</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=208e^{-0.1625t}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=(1.09)^t</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=e^{0.0862t}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y= 700(1.32)^t</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=700e^{0.2776t}</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-6_3_4">
+<statement>
+<p>
+<m>\displaystyle y=2000(0.91)^t</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=2000e^{-0.0943t}</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercise>
+<introduction>
+<p>
+If a bank offers an interest rate of <m>6.1\%</m> with <em>interest compounded continuously</em> (rather than once a year), your balance <m>B(t)</m> after <m>t</m> years is:
+<md>
+B(t)=B_0e^{0.061t}
+</md>
+where <m>B_0</m> is your initial deposit, in dollars.
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+How long will it take for your money to double?
+</p>
+</statement>
+<solution>
+<p>
+approximately <m>11.36</m> years
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<p>
+How long will it take for your money to triple?
+</p>
+</statement>
+<solution>
+<p>
+approximately <m>18.01</m> years
+</p>
+</solution>
+</task>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+A laboratory culture of <em>Salmonella enterica</em> starts with <m>S_0</m> bacteria at <m>t=0</m> and doubles every <m>30</m> minutes.<fn><url href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/</url>, accessed: 6/26/20</fn> Let <m>S(t)</m> be the number of bacteria in the culture at time <m>t</m>, in minutes.
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+Write a formula for <m>S(t)</m> in terms of the natural base <m>e</m>.
+</p>
+</statement>
+<solution>
+<p>
+<m>S(t)=S_0e^{0.0231t}</m>
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<p>
+How long will it take for <m>S(t)</m> to triple? Does the tripling time depend on the initial amount <m>S_0</m>?
+</p>
+</statement>
+<solution>
+<p>
+approximately <m>47.6</m> minutes; no
+</p>
+</solution>
+</task>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+Bacterial population dynamics is not as simple as measuring the doubling time of a bacterium in the laboratory, under optimal growth conditions. A more challenging question is to find the doubling time of a bacterium in its natural environment, for example, in the gut. The doubling time of <em>Salmonella enterica</em> in the gut is <m>25</m> hours<fn><url href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/</url>, accessed: 6/26/20</fn>. Let <m>G_0</m> be an initial amount of <em>Salmonella enterica</em> in a patient's gut at <m>t=0</m>. Let <m>G(t)</m> be the amount <m>t</m> hours later.
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+Find a formula for <m>G(t)</m> in base-<m>e</m> form.
+</p>
+</statement>
+<solution>
+<p>
+<m>G(t)=G_0e^{0.0277t}</m>
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<p>
+How long will it take for the bacteria to reach <m>150\%</m> of the initial amount?
+</p>
+</statement>
+<solution>
+<p>
+approximately <m>14.64</m> hours
+</p>
+</solution>
+</task>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+Let <m>N=N(t)</m> be the amount of nicotine, in milligrams, in the bloodstream of a person after a cigarette is smoked. Time <m>t</m> is measured in hours. As with most drugs, the process of elimination of nicotine from the body is a process of exponential decay. The half-life of nicotine is <m>2</m> hours and the amount of nicotine absorbed from a cigarette is <m>2</m> mg.
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+Find a formula in the form <m>N(t)=A\cdot e^{kt}</m> for the function <m>N(t)</m>.
+</p>
+</statement>
+<solution>
+<p>
+<m>N(t)=2e^{-0.3466t}</m>
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<p>
+How long will it take for the initial amount of nicotine to be reduced to <m>0.7</m> mg?
+</p>
+</statement>
+<solution>
+<p>
+approximately <m>3.03</m> hours
+</p>
+</solution>
+</task>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+Let <m>C(t)</m> be the amount of caffeine that remains in the person's body <m>t</m> hours after finishing a cup of coffee. The amount of caffeine absorbed from a cup of coffee is <m>96</m> mg. The continuous growth rate of caffeine in the body is <m>-13.86\%</m>.
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+Find a formula for <m>C(t)</m> in terms of the natural base.
+</p>
+</statement>
+<solution>
+<p>
+<m>C(t)=96e^{-0.1386t}</m>
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<p>
+Find the half-life of caffeine in the body. Round off your answer to two decimal places. Include units with your answer.
+</p>
+</statement>
+<solution>
+<p>
+approximately <m>5</m> hours
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<p>
+How long will it take for <m>C(t)</m> to be reduced to <m>30\%</m> of the initial amount? Does the answer depend on the initial amount?
+</p>
+</statement>
+<solution>
+<p>
+approximately <m>8.69</m> hours; no
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<p>
+How long will it take for <m>C(t)</m> to be reduced to <m>10</m> mg? Does the answer depend on the initial amount?
+</p>
+</statement>
+<solution>
+<p>
+approximately <m>16.32</m> hours; yes
+</p>
+</solution>
+</task>
+</exercise>
+
+
+
+<exercise>
+<introduction>
+<p>
+The value of an antique chair, <m>V(t)</m>, <m>t</m> years after it was purchased for <m>\$7000</m> increases by <m>15\%</m> per year.
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+Write a formula for <m>V(t)</m> in the form <m>V(t)=A\cdot b^t</m>.
+</p>
+</statement>
+<solution>
+<p>
+<m>V(t)=7000(1.15)^t</m>
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<p>
+When will the value reach <m>\$16000</m>?
+</p>
+</statement>
+<solution>
+<p>
+approximately <m>5.9</m> years
+</p>
+</solution>
+</task>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+The <m>\text{pH}</m> of orange juice is <m>3</m>. Find the hydrogen ion concentration <m>[\text{H}^{+}]</m> in orange juice.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>0.001</m> <m>\dfrac{\text{mol}}{\text{L}}</m>
+</p>
+</solution>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+The hydrogen ion concentration <m>[\text{H}^{+}]</m> in tomato juice is <m>0.0001</m> moles per liter. Find the <m>\text{pH}</m> of tomato juice.
+</p>
+</statement>
+
+<solution>
+<p>
+The pH is <m>4</m>.
+</p>
+</solution>
+</exercise>
+
+</exercises>

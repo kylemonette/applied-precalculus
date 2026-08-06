@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_5_1">
+
+
+<exercisegroup>
+<title>Exponential Growth or Decay</title>
+<introduction>
+<p>
+For each of the following, decide if a given exponential function represents a process of exponential growth or decay. For each function identify the initial value and the growth factor.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_1_1">
+<statement>
+<p>
+<m>\displaystyle f(t)=120(1.7)^t</m>
+</p>
+</statement>
+
+<solution>
+<p>
+exponential growth; initial value: <m>120</m>; growth factor: <m>1.7</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle g(t)=1500(0.95)^t</m>
+</p>
+</statement>
+
+<solution>
+<p>
+exponential decay; initial value: <m>1500</m>; growth factor: <m>0.95</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle h(t)=60(0.83)^t</m>
+</p>
+</statement>
+
+<solution>
+<p>
+exponential decay; initial value: <m>60</m>; growth factor: <m>0.83</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_1_4">
+<statement>
+<p>
+<m>\displaystyle m(t)=130(1.02)^t</m>
+</p>
+</statement>
+
+<solution>
+<p>
+exponential growth; initial value: <m>130</m>; growth factor: <m>1.02</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+You deposit <m>\$2000</m> dollars into a savings account that pays <m>3.5\%</m> annually. Let <m>B=B(t)</m> be your balance <m>t</m> years later.
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Find a formula for <m>B(t)</m> in the form <m>B(t)=A\cdot b^t</m>.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>B(t)=2000(1.035)^t</m>; exponential function
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Find your balance after <m>7</m> years.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>\$2544.56</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Find the growth factor and the percent growth rate of the function <m>B(t)</m>.
+        </p>
+    </statement>
+<solution>
+    <p>
+        growth factor: <m>1.035</m>; growth rate: <m>3.5\%</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+Let <m>V(t)</m> be the value, in dollars, of an antique desk <m>t</m> years after its purchase. The desk was purchased for <m>\$7000</m> and its value <m>V(t)</m> increases by <m>\$500</m> per year.
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Find a formula for the function <m>V(t)</m>. What kind of function is it?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>V(t)=500t+7000</m>; linear function
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the rate of increase of <m>V(t)</m> in dollars per year?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>500</m> dollars per year
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the value of the desk after <m>12</m> years?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>\$13000</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+Let <m>V(t)</m> be the value, in dollars, of an antique desk, <m>t</m> years after its purchase. The desk was purchased for <m>\$7000</m> and its value <m>V(t)</m> increases by <m>9.5\%</m> per year.
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Find a formula for the function <m>V(t)</m>. What kind of function is it?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>V(t)=7000(1.095)^t</m>; exponential function
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the growth factor and the percent growth rate of <m>V(t)</m>?
+        </p>
+    </statement>
+<solution>
+    <p>
+        growth factor: <m>1.095</m>; growth rate: <m>9.5\%</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the value of the desk after <m>12</m> years?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>\$20800.20</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+Let <m>P(t)</m> be the population of a town <m>t</m> years after the year <m>1990</m>. The population <m>P(t)</m> was <m>12000</m> people in <m>1990</m>, that is, at <m>t=0</m>, and it has been increasing by <m>750</m> people each year.
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Write a formula for the function <m>P(t)</m>. What kind of function is it?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>P(t)=750t+12000</m>; linear function
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the rate of increase of the population in people per year?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>750</m> people per year
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+Let <m>P(t)</m> be the population of a town <m>t</m> years after the year <m>1990</m>. The population <m>P(t)</m> was <m>12000</m> people in <m>1990</m>, that is, at <m>t=0</m>, and it has been increasing by the factor <m>1.107</m> each year.
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Write a formula for the function <m>P(t)</m>. What kind of function is it?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>P(t)=12000(1.107)^t</m>; exponential function
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the growth factor and the annual percent growth rate of the population?
+        </p>
+    </statement>
+<solution>
+    <p>
+        growth factor: <m>1.107</m>; growth rate: <m>10.7\%</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+A biologist studies the effects of three different nutrients, <m>a</m>, <m>b</m>, and <m>c</m>, on the growth of a particular kind of bacterium. <m>t</m> hours after the experiment began, the number of bacteria in the culture fed nutrient <m>a</m> is <m>A(t)</m>, the number of bacteria in the culture fed nutrient <m>b</m> is <m>B(t)</m>, the number of bacteria in the culture fed nutrient <m>c</m> is <m>C(t)</m>. The biologist observes that the functions <m>A(t)</m>, <m>B(t)</m> and <m>C(t)</m> are given by the following formulas:
+<md>
+A(t)=500(1.09)^t, \quad B(t)=500(1.15)^t, \quad C(t)=500(0.75)^t.
+</md>
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Which of the nutrients stimulates growth of the bacteria the most? What is the hourly percent growth rate of the culture fed that nutrient?
+        </p>
+    </statement>
+<solution>
+    <p>
+        nutrient b; <m>15\%</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        One of the nutrients proves toxic to the bacterium. Which one is it? What is the percent growth rate of the culture fed that nutrient?
+        </p>
+    </statement>
+<solution>
+    <p>
+        nutrient c; <m>-25\%</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+Following a dose of <m>40</m> mg, a medication leaves a patient's body at an hourly percent rate of <m>3.7\%</m>.
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Write a formula for the amount <m>M(t)</m> of the medication, in mg, left in the body <m>t</m> hours after the dose. What is the growth factor of <m>M(t)</m>?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>M(t)=40(0.963)^t</m>; growth factor: <m>0.963</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        How much of the medication remains in the body after <m>10</m> hours?
+        </p>
+    </statement>
+<solution>
+    <p>
+        approximately <m>27.44</m> mg
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+Cesium-137, a radioactive isotope of Cesium, decays very slowly. Let <m>25</m> mg of Cesium-137 be present initially and let <m>C(t)</m> be the amount, in mg, remaining after <m>t</m> years. Then:
+<md>
+C(t)=25(0.9772)^t
+</md>
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        What is the growth factor of Cesium-137?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>0.9772</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the percent growth rate?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>-2.28\%</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        How much Cesium-137 remains after <m>30</m> years?
+        </p>
+    </statement>
+<solution>
+    <p>
+        approximately <m>12.52</m> mg
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercisegroup>
+<title>Simplifying Exponential Functions</title>
+<introduction>
+<p>
+For each of the following, decide whether a given function is exponential. If yes, rewrite the function in the form <m>y=A\cdot b^t</m>. Identify the initial value, the growth factor, and decide if the function is increasing or decreasing. Round off your answers to four decimal places.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_1_13">
+<statement>
+<p>
+<m>\displaystyle y=30(0.8)^{2t}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=30(0.64)^t</m>; initial value: <m>30</m>; growth factor: <m>0.64</m>; decreasing
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=\sqrt{160(1.09)^{2t}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=12.6491(1.09)^t</m>; initial value: <m>12.6491</m>; growth factor: <m>1.09</m>; increasing
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=30\sqrt{t^4}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Not an exponential function.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=70(2^{\frac{t}{5}})</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=70(1.1487)^t</m>; initial value: <m>70</m>; growth factor: <m>1.1487</m>; increasing
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=5(2^{t-1})</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=2.5(2)^t</m>; initial value: <m>2.5</m>; growth factor: <m>2</m>; increasing
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_1_18">
+<statement>
+<p>
+<m>\displaystyle y=60\left(\frac{1}{2}\right)^{\frac{t}{3}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=60(0.7937)^t</m>; initial value: <m>60</m>; growth factor: <m>0.7937</m>; decreasing
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+</exercises>

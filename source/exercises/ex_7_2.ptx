@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_7_2">
+
+
+<exercisegroup>
+<title>Transforming Functions</title>
+<introduction>
+<p>
+For each of the following, give the formula for the function <m>g(x)</m> satisfying the given condition.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-7_2_1">
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> stretched vertically by a factor of <m>3</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=3f(x)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> compressed vertically by a factor of <m>20</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=\frac{1}{20}f(x)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> stretched vertically by a factor of <m>3</m> and reflected over the <m>x</m>-axis.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=-3f(x)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted to the right <m>2</m> units and compressed vertically by a factor of <m>4</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=\frac{1}{4}f(x-2)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> reflected over the <m>y</m>-axis, compressed vertically by a factor of <m>5</m>, and shifted up <m>3</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=\frac{1}{5}f(-x)+3</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> stretched horizontally by a factor of <m>7</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f\left(\frac{1}{7}x\right)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> compressed horizontally by a factor of <m>2</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f(2x)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_2_8">
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted to the right <m>2</m> units, stretched horizontally by a factor of <m>5</m>, reflected over the <m>y</m> axis, stretched vertically by a factor of <m>6</m>, and shifted up <m>10</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=6f\left(-\frac{1}{5}(x-2)\right)+10</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercisegroup>
+<title>Identifying Transformations</title>
+<introduction>
+<p>
+For each of the following, identify the function being transformed and describe the transformations being applied to it.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-7_2_9">
+<statement>
+<p>
+<m>f(x)=-2(x+4)^3</m>
+</p>
+</statement>
+
+<solution>
+<p>
+The graph of <m>f(x)</m> is the graph of <m>y=x^3</m> shifted left <m>4</m> units, scaled vertically by a factor of <m>2</m>, and reflected over the <m>x</m>-axis.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>g(t)=\sqrt[3]{2(t-5)}+9</m>
+</p>
+</statement>
+
+<solution>
+<p>
+The graph of <m>g(t)</m> is the graph of <m>y=\sqrt[3]{t}</m> shifted right <m>5</m> units, compressed horizontally by a factor of <m>2</m>, and shifted up <m>9</m> units.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>h(w)=\frac{1}{4}e^{-2w}-7</m>
+</p>
+</statement>
+
+<solution>
+<p>
+The graph of <m>h(w)</m> is the graph of <m>y=e^w</m> compressed horizontally by a factor of <m>2</m>, reflected over the <m>y</m>-axis, compressed vertically by a factor of <m>4</m>, and shifted down <m>7</m> units.
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_2_12">
+<statement>
+<p>
+<m>y=2^{7(x+1)}-3</m>
+</p>
+</statement>
+
+<solution>
+<p>
+The graph of <m>y</m> is the graph of <m>f(x)=2^x</m> shifted left <m>1</m> unit, compressed horizontally by a factor of <m>7</m>, and shifted down <m>3</m> units.
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercisegroup>
+<title>Sketching a Transformation</title>
+<introduction>
+<p>
+Use the graph of <m>f(x)</m> shown below to sketch the graph of each of the following transformations of <m>f(x)</m>.
+</p>
+
+<image width="50%" xml:id="ex_7_2_1">
+<latex-image label="ex_7_2_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=6,
+ymin=0,ymax=5,
+xtick={1,...,6},
+ytick={1,...,5},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=2:4] {0.5*(x-2)+2};
+\addplot[domain=4:5] {-1.5*(x-4)+3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</introduction>
+
+<exercise xml:id="exercise-7_2_13">
+<statement>
+<p>
+<m>y=2f(x)</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_2_2">
+<latex-image label="ex_7_2_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=6.5,
+ymin=0,ymax=8,
+xtick={1,...,6},
+ytick={1,...,8},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=2:4] {2*(0.5*(x-2)+2)};
+\addplot[domain=4:5] {2*(-1.5*(x-4)+3)};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=-f(x)</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_2_3">
+<latex-image label="ex_7_2_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=6.5,
+ymin=-4.5,ymax=0,
+xtick={0,1,2,3,4,5,6},
+ytick={-4,-3,-2,-1,0},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=2:4] {-(0.5*(x-2)+2)};
+\addplot[domain=4:5] {-(-1.5*(x-4)+3)};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=f(2x)</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_2_4">
+<latex-image label="ex_7_2_4_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=6.5,
+ymin=0,ymax=4.5,
+xtick={0,1,2,3,4,5,6},
+ytick={0,1,2,3,4},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=1:2] {0.5*(2*x-2)+2};
+\addplot[domain=2:2.5] {-1.5*(2*x-4)+3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=f(-3x)</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_2_5">
+<latex-image label="ex_7_2_5_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=-6,xmax=0,
+ymin=0,ymax=4.5,
+xtick={-6,...,0},
+ytick={0,1,2,3,4},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=-2/3:-4/3] {0.5*(-3*x-2)+2};
+\addplot[domain=-4/3:-5/3] {-1.5*(-3*x-4)+3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=\frac{1}{2}f(x+1)-3</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_2_6">
+<latex-image label="ex_7_2_6_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=-1.5,xmax=5.5,
+ymin=-3,ymax=0.5,
+xtick={-1,0,1,2,3,4,5},
+ytick={-3,-2,-1,0},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=1:3] {0.5*(0.5*(x-1)+2)-3};
+\addplot[domain=3:4] {0.5*(-1.5*(x-3)+3)-3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_2_18">
+<statement>
+<p>
+<m>y=3f(-(x-5))-8</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_2_7">
+<latex-image label="ex_7_2_7_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=4,
+ymin=-4,ymax=2,
+xtick={0,...,4},
+ytick={-4,...,2},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=0:1] {4.5*x-3.5};
+\addplot[domain=1:3] {-1.5*(x-1)+1};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercisegroup>
+<title>Transformations Done Numerically</title>
+<introduction>
+<p>
+Use the table of values of <m>f(x)</m> shown below to write the table of values for each of the following transformations of <m>f(x)</m>.
+</p>
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>2</m></cell>
+<cell><m>4</m></cell>
+<cell><m>6</m></cell>
+</row>
+
+<row>
+<cell><m>f(x)</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>0.5</m></cell>
+<cell><m>6</m></cell>
+<cell><m>-10</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<exercise xml:id="exercise-7_2_19">
+<statement>
+<p>
+<m>y=-2f(x)</m>
+</p>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>2</m></cell>
+<cell><m>4</m></cell>
+<cell><m>6</m></cell>
+</row>
+
+<row>
+<cell><m>y</m></cell>
+<cell><m>4</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>-12</m></cell>
+<cell><m>20</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=0.5f(x)</m>
+</p>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>2</m></cell>
+<cell><m>4</m></cell>
+<cell><m>6</m></cell>
+</row>
+
+<row>
+<cell><m>y</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0.25</m></cell>
+<cell><m>3</m></cell>
+<cell><m>-5</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=-2f(x+1)-3</m>
+</p>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>1</m></cell>
+<cell><m>3</m></cell>
+<cell><m>5</m></cell>
+</row>
+
+<row>
+<cell><m>y</m></cell>
+<cell><m>1</m></cell>
+<cell><m>-4</m></cell>
+<cell><m>-15</m></cell>
+<cell><m>17</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_2_22">
+<statement>
+<p>
+<m>y=3f(-2x)+1</m>
+</p>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>-3</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+</row>
+
+<row>
+<cell><m>y</m></cell>
+<cell><m>-29</m></cell>
+<cell><m>19</m></cell>
+<cell><m>2.5</m></cell>
+<cell><m>-5</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+</exercises>

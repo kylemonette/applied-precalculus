@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_6_2">
+
+
+<exercisegroup>
+<title>Properties of Logarithms</title>
+<introduction>
+<p>
+For each of the following, use properties of logarithms to expand a given expression as much as possible and write it in terms of <m>\log(x)</m>, <m>\log(y)</m> and <m>\log(z)</m>, if possible.
+Assume that <m>x</m>, <m>y</m>, and <m>z</m> are positive.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-6_2_1">
+<statement>
+<p>
+<m>\displaystyle \log\left(\frac{5z}{x}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\log(5)+\log(z)-\log(x)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log(x^5y^3z^2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>5\log(x)+3\log(y)+2\log(z)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log\left(\frac{yz}{6x}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\log(y)+\log(z)-\log(6)-\log(x)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log\left(\frac{y^2z^3}{\sqrt{4x}}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2\log(y)+3\log(z)-\frac{1}{2}\log(4)-\frac{1}{2}\log(x)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log\left(\frac{y^2z}{x}-x^2\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Cannot simplify.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log(x^2+y^2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Cannot simplify.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log(100y\sqrt{x})</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2+\log(y)+\frac{1}{2}\log(x)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-6_2_8">
+<statement>
+<p>
+<m>\displaystyle \log\left(\frac{10x}{zy}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>1+\log(x)-\log(z)-\log(y)</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Expanding Logarithms</title>
+<introduction>
+<p>
+For each of the following, use properties of logarithms to expand a given expression as much as possible and write it in terms of <m>\ln(x)</m>, <m>\ln(y)</m> and <m>\ln(z)</m>, if possible. Assume that <m>x</m>, <m>y</m>, and <m>z</m> are positive.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-6_2_9">
+<statement>
+<p>
+<m>\displaystyle \ln\left(\frac{z^2}{2x}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2\ln(z)-\ln(2)-\ln(x)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln\left( \sqrt{(x^3y^3z)} \right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{3}{2}\ln(x)+\frac{3}{2}\ln(y)+\frac{1}{2}\ln(z)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln(x+y^2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Cannot simplify.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln\left(\frac{exy}{3z}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>1+\ln(x)+\ln(y)-\ln(3)-\ln(z)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln(e^2yz^{-3})</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2+\ln(y)-3\ln(z)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln\left(\frac{x}{3e}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\ln(x)-\ln(3)-1</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln\left(\frac{1}{x^3y}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-3\ln(x)-\ln(y)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-6_2_16">
+<statement>
+<p>
+<m>\displaystyle \ln\left(\frac{\sqrt{e}}{xz}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{1}{2}-\ln(x)-\ln(z)</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Simplifying Logarithms</title>
+<introduction>
+<p>
+For each of the following, combine the expression into one logarithm, if possible. Assume that <m>A</m>, <m>B</m>, and <m>C</m> are positive.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-6_2_17">
+<statement>
+<p>
+<m>\displaystyle \frac{\log(A)}{\log(B)}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Not possible.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle 2\log(A)-3\log(B)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\log\left(\frac{A^2}{B^3}\right)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle -3\ln(B)+\frac{1}{2}\ln(AB)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\ln\left(B^{-3}\sqrt{AB}\right)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log(A)\cdot \log(B)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Not possible.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{1}{3}\ln(A)+2\ln(B)-\ln(10)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\ln\left(\frac{\sqrt[3]{A}B^2}{10}\right)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-6_2_22">
+<statement>
+<p>
+<m>\displaystyle \log(5)\cdot\log(AB)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+Not possible.
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Solving Exponential Equations</title>
+<introduction>
+<p>
+For each of the following, solve a given equation for <m>x</m> or for <m>t</m>. Give the exact answer as well as its approximation rounded off to three decimal places.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-6_2_23">
+<statement>
+<p>
+<m>\displaystyle 5^x=500</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=\dfrac{\log(500)}{\log(5)}\approx3.861</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle 1200\cdot 1.15^t=2400</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>t=\dfrac{\log(2)}{\log(1.15)}\approx 4.959</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle 250\cdot 0.81^t=125</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>t=\dfrac{\log\left(\frac{1}{2}\right)}{\log(0.81)}\approx3.289</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle 3\cdot 7^x=4\cdot 5^x</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>x=\dfrac{\log\left(\frac{4}{3}\right)}{\log\left(\frac{7}{5}\right)}\approx0.855</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle 90(0.5)^{t/10}=40</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>t=\dfrac{10\log\left(\frac{4}{9}\right)}{\log(0.5)}\approx11.69</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-6_2_28">
+<statement>
+<p>
+<m>\displaystyle 490e^{-0.098t}=100</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>t=-\dfrac{\ln\left(\frac{10}{49}\right)}{0.098}\approx16.217</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Using the Change of Base Formula</title>
+<introduction>
+<p>
+For each of the following, rewrite a given logarithm in terms of the natural logarithm and calculate its value using your calculator. Round off to three decimal places.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-6_2_29">
+<statement>
+<p>
+<m>\displaystyle \log_5 (8)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\dfrac{\ln(8)}{\ln(5)}\approx1.292</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-6_2_30">
+<statement>
+<p>
+<m>\displaystyle \log_3 (12)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\dfrac{\ln(12)}{\ln(3)}\approx2.262</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+</exercises>

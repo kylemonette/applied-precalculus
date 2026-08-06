@@ -32,4 +32,7 @@
 </objectives>
 
 
+
+<xi:include href="exercises/ex_5_1.ptx"/>
+
 </section>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_8_2">
+
+
+<exercisegroup>
+<title>Converting to Radians</title>
+<introduction>
+<p>
+For each of the following, convert the angle from degrees to radians. Give both exact answers and, when appropriate, approximations to three decimal places. Also identify which quadrant each angle lies in.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-8_2_1">
+<statement>
+<p>
+<m>27^{\circ}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{3\pi}{20}\approx0.471</m> radians; Quadrant I
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>-10^{\circ}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-\frac{\pi}{18}\approx-0.175</m> radians; Quadrant IV
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>600^{\circ}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{10\pi}{3}\approx10.472</m> radians; Quadrant III
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-8_2_4">
+<statement>
+<p>
+<m>-562^{\circ}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-\frac{281\pi}{90}\approx-9.809</m> radians; Quadrant II
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercisegroup>
+<title>Computing to Degrees</title>
+<introduction>
+<p>
+For each of the following, convert the angle from radians to degrees. Give both exact answers and, when appropriate, approximations to three decimal places. Also identify which quadrant each angle lies in.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-8_2_5">
+<statement>
+<p>
+<m>\frac{\pi}{18}</m> radians
+</p>
+</statement>
+
+<solution>
+<p>
+<m>10^{\circ}</m>; Quadrant I
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>-\frac{\pi}{10}</m> radians
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-18^{\circ}</m>; Quadrant IV
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>8</m> radians
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{1440}{\pi}\approx458.366^{\circ}</m>; Quadrant II
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-8_2_8">
+<statement>
+<p>
+<m>\frac{6\pi}{5}</m> radians
+</p>
+</statement>
+
+<solution>
+<p>
+<m>216^{\circ}</m>; Quadrant III
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercise>
+<statement>
+<p>
+What is the arc length spanned by the angle <m>\frac{3\pi}{4}</m> radians on the circle of radius <m>4</m> inches?
+</p>
+</statement>
+
+<solution>
+<p>
+<m>3\pi\approx9.425</m> inches
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+What is the arc length spanned by the angle <m>300^{\circ}</m> on the circle of radius <m>2</m> centimeters?
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{10\pi}{3}\approx10.472</m> centimeters
+</p>
+</solution>
+</exercise>
+
+
+</exercises>

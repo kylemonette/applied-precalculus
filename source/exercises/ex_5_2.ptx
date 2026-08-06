@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_5_2">
+
+
+<exercise>
+<statement>
+<p>
+Complete the table of values below and use it to graph the exponential function <m>\displaystyle y=3^x</m> in the interval <m>-3\leq x \leq 3</m>.
+</p>
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>-3</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell><m>y=3^x</m></cell>
+<cell><m>\frac{1}{27}</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>-3</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell><m>y=3^x</m></cell>
+<cell><m>\frac{1}{27}</m></cell>
+<cell><m>\frac{1}{9}</m></cell>
+<cell><m>\frac{1}{3}</m></cell>
+<cell><m>1</m></cell>
+<cell><m>3</m></cell>
+<cell><m>9</m></cell>
+<cell><m>27</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Complete the table of values below and use it to graph the exponential function <m>\displaystyle y=\left(\frac{1}{3}\right)^x</m> in the interval <m>-3\leq x \leq 3</m>.
+</p>
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>-3</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell><m>y=\left(\frac{1}{3}\right)^x</m></cell>
+<cell><m>27</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+<cell><m>?</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>-3</m></cell>
+<cell><m>-2</m></cell>
+<cell><m>-1</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+</row>
+<row>
+<cell><m>y=\left(\frac{1}{3}\right)^x</m></cell>
+<cell><m>27</m></cell>
+<cell><m>9</m></cell>
+<cell><m>3</m></cell>
+<cell><m>1</m></cell>
+<cell><m>\frac{1}{3}</m></cell>
+<cell><m>\frac{1}{9}</m></cell>
+<cell><m>\frac{1}{27}</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Below you see a graph of an exponential function <m>y=A\cdot b^t</m>. What is its initial value <m>A</m>? Is its growth factor <m>b</m> greater than <m>1</m> or less than <m>1</m>?
+</p>
+
+<image width="50%" xml:id="ex_5_2_1">
+<latex-image label="ex_5_2_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=-0.5,xmax=5,
+ymin=0,ymax=120,
+xtick={0,1,2,3,4,5},
+ytick={0,20,40,60,80,100,120},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+]
+\addplot[domain=0:5] {100*0.5^x};
+\node[rpoint with label={0:{}}] at (axis cs:0,100) {};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</statement>
+
+<solution>
+<p>
+<m>A=100</m>; <m>b\lt 1</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Which of the graphs below could be a graph of the function <m>y=3(1.5)^t</m>? Explain your answer!
+</p>
+</statement>
+
+<choices>
+    <choice>
+        <statement>
+            <p>
+            <image width="40%" xml:id="ex_5_2_2">
+            <latex-image label="ex_5_2_2_fig">
+            \begin{tikzpicture}[scale=0.7]
+            \begin{axis}[grid=none,
+            xmin=-0.5, xmax=4,
+            ymin=0, ymax=5,
+            xtick={0,1,2,3,4},
+            ytick={1,...,5},
+            minor tick={},
+            xlabel={$t$}, ylabel={$y$}
+            ]
+            \addplot[domain=0:4] {1.5*0.5^x};
+            \node[rpoint with label={0:{}}] at (axis cs:0,1.5) {};
+            \end{axis}
+            \end{tikzpicture}
+            </latex-image>
+            </image>
+            </p>
+        </statement>
+    </choice>
+
+    <choice>
+        <statement>
+            <p>
+            <image width="40%" xml:id="ex_5_2_3">
+            <latex-image label="ex_5_2_3_fig">
+            \begin{tikzpicture}[scale=0.7]
+            \begin{axis}[grid=none,
+            xmin=-0.5, xmax=4,
+            ymin=0, ymax=5,
+            xtick={0,1,2,3,4},
+            ytick={1,...,5},
+            minor tick={},
+            xlabel={$t$}, ylabel={$y$}
+            ]
+            \addplot[domain=0:4] {3*0.5^x};
+            \node[rpoint with label={0:{}}] at (axis cs:0,3) {};
+            \end{axis}
+            \end{tikzpicture}
+            </latex-image>
+            </image>
+            </p>
+        </statement>
+    </choice>
+
+    <choice correct="yes">
+        <statement>
+            <p>
+            <image width="40%" xml:id="ex_5_2_4">
+            <latex-image label="ex_5_2_4_fig">
+            \begin{tikzpicture}[scale=0.7]
+            \begin{axis}[grid=none,
+            xmin=-0.5, xmax=4,
+            ymin=0, ymax=6,
+            xtick={0,1,2,3,4},
+            ytick={1,...,6},
+            minor tick={},
+            xlabel={$t$}, ylabel={$y$}
+            ]
+            \addplot[domain=0:4] {3*1.5^x};
+            \node[rpoint with label={0:{}}] at (axis cs:0,3) {};
+            \end{axis}
+            \end{tikzpicture}
+            </latex-image>
+            </image>
+            </p>
+        </statement>
+    </choice>
+
+    <choice>
+        <statement>
+            <p>
+            <image width="40%" xml:id="ex_5_2_5">
+            <latex-image label="ex_5_2_5_fig">
+            \begin{tikzpicture}[scale=0.7]
+            \begin{axis}[grid=none,
+            xmin=-0.5, xmax=4,
+            ymin=0, ymax=6,
+            xtick={0,1,2,3,4},
+            ytick={1,...,6},
+            minor tick={},
+            xlabel={$t$}, ylabel={$y$}
+            ]
+            \addplot[domain=0:4] {1.5*1.5^x};
+            \node[rpoint with label={0:{}}] at (axis cs:0,1.5) {};
+            \end{axis}
+            \end{tikzpicture}
+            </latex-image>
+            </image>
+            </p>
+        </statement>
+    </choice>
+
+</choices>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Which of the graphs below could be a graph of the function <m>y=0.8(0.75)^t</m>? Explain your answer!
+</p>
+</statement>
+
+<choices>
+    <choice>
+        <statement>
+            <p>
+            <image width="40%" xml:id="ex_5_2_6">
+            <latex-image label="ex_5_2_6_fig">
+            \begin{tikzpicture}[scale=0.7]
+            \begin{axis}[grid=none,
+            xmin=-0.5, xmax=5,
+            ymin=0, ymax=3,
+            xtick={1,...,5},
+            ytick={1,...,5},
+            minor tick={},
+            xlabel={$t$}, ylabel={$y$}
+            ]
+            \addplot[domain=0:5] {0.8*1.5^x};
+            \node[rpoint with label={0:{}}] at (axis cs:0,0.8) {};
+            \end{axis}
+            \end{tikzpicture}
+            </latex-image>
+            </image>
+            </p>
+        </statement>
+    </choice>
+
+    <choice correct="yes">
+        <statement>
+            <p>
+            <image width="40%" xml:id="ex_5_2_7">
+            <latex-image label="ex_5_2_7_fig">
+            \begin{tikzpicture}[scale=0.7]
+            \begin{axis}[grid=none,
+            xmin=-0.5, xmax=5,
+            ymin=0, ymax=3,
+            xtick={1,...,5},
+            ytick={1,...,5},
+            minor tick={},
+            xlabel={$t$}, ylabel={$y$}
+            ]
+            \addplot[domain=0:5] {0.8*0.75^x};
+            \node[rpoint with label={0:{}}] at (axis cs:0,0.8) {};
+            \end{axis}
+            \end{tikzpicture}
+            </latex-image>
+            </image>
+            </p>
+        </statement>
+    </choice>
+
+    <choice>
+        <statement>
+            <p>
+            <image width="40%" xml:id="ex_5_2_8">
+            <latex-image label="ex_5_2_8_fig">
+            \begin{tikzpicture}[scale=0.7]
+            \begin{axis}[grid=none,
+            xmin=0, xmax=5,
+            ymin=0, ymax=3,
+            xtick={1,...,5},
+            ytick={1,...,3},
+            minor tick={},
+            xlabel={$t$}, ylabel={$y$}
+            ]
+            \addplot[domain=0:5] {0.6*0.5^x};
+            \node[rpoint with label={0:{}}] at (axis cs:0,0.6) {};
+            \end{axis}
+            \end{tikzpicture}
+            </latex-image>
+            </image>
+            </p>
+        </statement>
+    </choice>
+
+    <choice>
+        <statement>
+            <p>
+            <image width="40%" xml:id="ex_5_2_9">
+            <latex-image label="ex_5_2_9_fig">
+            \begin{tikzpicture}[scale=0.7]
+            \begin{axis}[grid=none,
+            xmin=-0.5, xmax=5,
+            ymin=0, ymax=3,
+            xtick={1,...,5},
+            ytick={1,...,3},
+            minor tick={},
+            xlabel={$t$}, ylabel={$y$}
+            ]
+            \addplot[domain=0:5] {0.6*1.5^x};
+            \node[rpoint with label={0:{}}] at (axis cs:0,0.6) {};
+            \end{axis}
+            \end{tikzpicture}
+            </latex-image>
+            </image>
+            </p>
+        </statement>
+    </choice>
+
+</choices>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find a formula in the form <m>y=A\cdot b^t</m> for the exponential function whose graph is given below:
+</p>
+
+<image width="50%" xml:id="ex_5_2_10">
+<latex-image label="ex_5_2_10_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=0,xmax=5,
+ymin=0,ymax=30,
+xtick={0,1,2,3,4,5},
+ytick={0,5,10,15,20,25,30},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+x post scale = 1.2,
+]
+\addplot[domain=0:5] {10*1.2^x};
+\node[rpoint with label={-45:{$(2,14.4)$}}] at (axis cs:2,14.4) {};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</statement>
+
+<solution>
+<p>
+<m>y=10(1.2)^t</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find a formula in the form <m>y=A\cdot b^t</m> for the exponential function whose graph is given below:
+</p>
+
+<image width="50%" xml:id="ex_5_2_11">
+<latex-image label="ex_5_2_11_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=0,xmax=5,
+ymin=0,ymax=240,
+xtick={0,1,2,3,4,5},
+ytick={0,40,80,120,160,200,240},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+x post scale = 1.2,
+]
+\addplot[domain=0:5] {200*0.8^x};
+\node[rpoint with label={45:{$(1,160)$}}] at (axis cs:1,160) {};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</statement>
+
+<solution>
+<p>
+<m>y=200(0.8)^t</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find a function <m>f(x)=A\cdot b^x</m> whose graph contains points <m>(0,500)</m> and <m>(4,120.05)</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=500(0.7)^x</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+Find a function <m>g(x)=A\cdot b^x</m> whose graph contains points <m>(1,48)</m> and <m>(2,76.8)</m>.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=30(1.6)^x</m>
+</p>
+</solution>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+A medication is eliminated from the body at the daily percent rate of <m>50\%</m>. A patient takes a single dose of <m>64</m> mg of the medication. Let <m>M(t)</m> be the amount, in mg, remaining in the patient's body <m>t</m> days after the dose.
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Find a formula for the function <m>M(t)</m>.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>M(t)=64(0.5)^t</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Fill in the missing entries in the following table of values:
+        </p>
+
+        <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+        <row bottom="minor">
+        <cell><m>t</m> (days)</cell>
+        <cell><m>0</m></cell>
+        <cell><m>1</m></cell>
+        <cell><m>2</m></cell>
+        <cell><m>3</m></cell>
+        <cell><m>4</m></cell>
+        </row>
+        <row>
+        <cell><m>M(t)</m> mg</cell>
+        <cell><m>?</m></cell>
+        <cell><m>?</m></cell>
+        <cell><m>?</m></cell>
+        <cell><m>?</m></cell>
+        <cell><m>?</m></cell>
+        </row>
+        </tabular>
+    </statement>
+<solution>
+    <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+    <row bottom="minor">
+    <cell><m>t</m> (days)</cell>
+    <cell><m>0</m></cell>
+    <cell><m>1</m></cell>
+    <cell><m>2</m></cell>
+    <cell><m>3</m></cell>
+    <cell><m>4</m></cell>
+    </row>
+    <row>
+    <cell><m>M(t)</m> mg</cell>
+    <cell><m>64</m></cell>
+    <cell><m>32</m></cell>
+    <cell><m>16</m></cell>
+    <cell><m>8</m></cell>
+    <cell><m>4</m></cell>
+    </row>
+    </tabular>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Use the table to plot the points corresponding to <m>t=0,1,2,3,4</m> that are on the graph of <m>M(t)</m>. Sketch a graph of the function <m>M=M(t)</m> in the coordinate system below.
+        </p>
+
+        <image width="50%" xml:id="ex_5_2_12">
+        <latex-image label="ex_5_2_12_fig">
+        \begin{tikzpicture}[scale=0.8]
+        \begin{axis}[grid=major,
+        xmin=0,xmax=5,
+        ymin=0,ymax=70,
+        xtick={0,1,2,3,4,5},
+        ytick={0,16,32,48,64},
+        minor tick={},
+        xlabel={$t$ (days)}, ylabel={$M$ (mg)},
+        x post scale = 1.2
+        ]
+        \end{axis}
+        \end{tikzpicture}
+        </latex-image>
+        </image>
+    </statement>
+<solution>
+        <image width="50%" xml:id="ex_5_2_13">
+        <latex-image label="ex_5_2_13_fig">
+        \begin{tikzpicture}[scale=0.8]
+        \begin{axis}[grid=major,
+        xmin=0,xmax=5,
+        ymin=0,ymax=70,
+        xtick={0,1,2,3,4,5},
+        ytick={0,16,32,48,64},
+        minor tick={},
+        xlabel={$t$ (days)}, ylabel={$M$ (mg)},
+        x post scale = 1.2
+        ]
+        \addplot[domain=0:5] {64*0.5^x};
+        \addplot+[only marks,mark=*,mark options={color=red}] plot coordinates {
+        (0,64)
+        (1,32)
+        (2,16)
+        (3,8)
+        (4,4)
+        };
+        \end{axis}
+        \end{tikzpicture}
+        </latex-image>
+        </image>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+The number of diagnosed cases of a new virus doubles every week. Let <m>C(t)</m> be the number of diagnosed cases <m>t</m> weeks after an epidemic began. Here are the measurements during the first weeks:
+</p>
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m> (weeks)</cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+</row>
+<row>
+<cell><m>C(t)</m> (cases)</cell>
+<cell><m>100</m></cell>
+<cell><m>200</m></cell>
+<cell><m>400</m></cell>
+<cell><m>800</m></cell>
+<cell><m>1600</m></cell>
+<cell><m>3200</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Mark the points corresponding to the data in the table on the graph of the function <m>C(t)</m>:
+        </p>
+
+        <image width="50%" xml:id="ex_5_2_14">
+        <latex-image label="ex_5_2_14_fig">
+        \begin{tikzpicture}[scale=0.8]
+        \begin{axis}[grid=major,
+        xmin=0,xmax=5.5,
+        ymin=0,ymax=35,
+        xtick={1,2,3,4,5},
+        ytick={5,10,15,20,25,30,35},
+        yticklabels = {500,1000,1500,2000,2500,3000,3500},
+        minor tick={},
+        xlabel={$t$ (weeks)}, ylabel={$C(t)$ (cases)},
+        x post scale = 1.2
+        ]
+        \addplot[domain=0:5] {2^x};
+        \end{axis}
+        \end{tikzpicture}
+        </latex-image>
+        </image>
+    </statement>
+<solution>
+        <image width="50%" xml:id="ex_5_2_15">
+        <latex-image label="ex_5_2_15_fig">
+        \begin{tikzpicture}[scale=0.8]
+        \begin{axis}[grid=major,
+        xmin=0,xmax=5.5,
+        ymin=0,ymax=35,
+        xtick={1,2,3,4,5},
+        ytick={5,10,15,20,25,30,35},
+        yticklabels = {500,1000,1500,2000,2500,3000,3500},
+        minor tick={},
+        xlabel={$t$ (weeks)}, ylabel={$C(t)$ (cases)},
+        x post scale = 1.2
+        ]
+        \addplot[domain=0:5] {2^x};
+        \addplot[only marks, mark=*, mark options={color=red}]
+        coordinates {(0,1) (1,2) (2,4) (3,8) (4,16) (5,32)};
+        \end{axis}
+        \end{tikzpicture}
+        </latex-image>
+        </image>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Is the function <m>C=C(t)</m> exponential? If yes, find a formula for <m>C(t)</m> and check with the table of values.
+        </p>
+    </statement>
+<solution>
+    <p>
+        Yes; <m>C(t)=100(2)^t</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+</exercises>

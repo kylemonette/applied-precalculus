@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_7_1">
+
+
+<exercisegroup>
+<title>Translating Functions</title>
+<introduction>
+<p>
+For each of the following, give the formula for the function <m>g(x)</m> satisfying the given condition.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-7_1_1">
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted down <m>7</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f(x)-7</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted up <m>1.5</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f(x)+1.5</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted right <m>2</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f(x-2)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted left <m>3</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f(x+3)</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted up <m>2.3</m> units and shifted right <m>6</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f(x-6)+2.3</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted down <m>1.63</m> units and right <m>0.5</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f(x-0.5)-1.63</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted up <m>12</m> units and right <m>10</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f(x-10)+12</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_1_8">
+<statement>
+<p>
+The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted down <m>3.2</m> units and left <m>7.1</m> units.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(x)=f(x+7.1)-3.2</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercisegroup>
+<title>Identifying Transformations</title>
+<introduction>
+<p>
+For each of the following, identify the function being transformed and describe the transformations being applied to it.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-7_1_9">
+<statement>
+<p>
+<m>f(x)=(x+4)^2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+The graph of <m>f(x)</m> is the graph of <m>y=x^2</m> shifted left <m>4</m> units.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>g(t)=e^{t}-3.2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+The graph of <m>g(t)</m> is the graph of <m>y=e^t</m> shifted down <m>3.2</m> units.
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>h(w)=\sqrt{w-4.1}+5.2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+The graph of <m>h(w)</m> is the graph of <m>y=\sqrt{w}</m> shifted right <m>4.1</m> units and up <m>5.2</m> units.
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_1_12">
+<statement>
+<p>
+<m>y=(0.9)^{t+1}-3</m>
+</p>
+</statement>
+
+<solution>
+<p>
+The graph of <m>y</m> is the graph of <m>f(t)=(0.9)^t</m> shifted left <m>1</m> unit and down <m>3</m> units.
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercisegroup>
+<title>Sketching Graphs</title>
+<introduction>
+<p>
+Use the graph of <m>f(x)</m> shown below to sketch the graph of each of the following transformations of <m>f(x)</m>.
+</p>
+
+<image width="50%" xml:id="ex_7_1_1">
+<latex-image label="ex_7_1_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=6,
+ymin=0,ymax=5,
+xtick={0,1,2,3,4,5,6},
+ytick={0,1,2,3,4},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=1:3] {(x-2)^2+2};
+\addplot[domain=3:5] {-1*(x-3)+3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</introduction>
+
+<exercise xml:id="exercise-7_1_13">
+<statement>
+<p>
+<m>y=f(x)+3</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_1_2">
+<latex-image label="ex_7_1_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=6,
+ymin=0,ymax=7,
+xtick={0,1,2,3,4,5,6},
+ytick={1,...,9},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=1:3] {(x-2)^2+5};
+\addplot[domain=3:5] {-1*(x-3)+6};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=f(x-2)</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_1_3">
+<latex-image label="ex_7_1_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=7,
+ymin=0,ymax=7,
+xtick={1,...,7},
+ytick={1,...,7},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=3:5] {(x-4)^2+2};
+\addplot[domain=5:7] {-1*(x-5)+3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=f(x+1)-2</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_1_4">
+<latex-image label="ex_7_1_4_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=7,
+ymin=-2,ymax=5,
+xtick={1,...,7},
+ytick={-2,...,5},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=0:2] {(x-1)^2};
+\addplot[domain=2:4] {-1*(x-2)+1};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_1_16">
+<statement>
+<p>
+<m>y=f(x-6)+1.5</m>
+</p>
+</statement>
+
+<solution>
+<image width="50%" xml:id="ex_7_1_5">
+<latex-image label="ex_7_1_5_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=major,
+xmin=0,xmax=12,
+ymin=0,ymax=8,
+xtick={1,...,12},
+ytick={1,...,8},
+minor tick={},
+xlabel={$x$}, ylabel={$y$}
+]
+\addplot[domain=7:9] {(x-8)^2+3.5};
+\addplot[domain=9:11] {-1*(x-9)+4.5};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercisegroup>
+<title>Transformations done Numerically</title>
+<introduction>
+<p>
+Use the table of values of <m>f(t)</m> shown below to write the table of values for each of the following transformations of <m>f(t)</m>.
+</p>
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>5</m></cell>
+<cell><m>10</m></cell>
+<cell><m>15</m></cell>
+</row>
+
+<row>
+<cell><m>f(t)</m></cell>
+<cell><m>0.1</m></cell>
+<cell><m>0.2</m></cell>
+<cell><m>0.4</m></cell>
+<cell><m>0.8</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<exercise xml:id="exercise-7_1_17">
+<statement>
+<p>
+<m>y=f(t+3)</m>
+</p>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>-3</m></cell>
+<cell><m>2</m></cell>
+<cell><m>7</m></cell>
+<cell><m>12</m></cell>
+</row>
+
+<row>
+<cell><m>y</m></cell>
+<cell><m>0.1</m></cell>
+<cell><m>0.2</m></cell>
+<cell><m>0.4</m></cell>
+<cell><m>0.8</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=f(t)-2</m>
+</p>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>5</m></cell>
+<cell><m>10</m></cell>
+<cell><m>15</m></cell>
+</row>
+
+<row>
+<cell><m>y</m></cell>
+<cell><m>-1.9</m></cell>
+<cell><m>-1.8</m></cell>
+<cell><m>-1.6</m></cell>
+<cell><m>-1.2</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>y=f(t-2)+6</m>
+</p>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>2</m></cell>
+<cell><m>7</m></cell>
+<cell><m>12</m></cell>
+<cell><m>17</m></cell>
+</row>
+
+<row>
+<cell><m>y</m></cell>
+<cell><m>6.1</m></cell>
+<cell><m>6.2</m></cell>
+<cell><m>6.4</m></cell>
+<cell><m>6.8</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-7_1_20">
+<statement>
+<p>
+<m>y=f(t+3.1)+1.1</m>
+</p>
+</statement>
+
+<solution>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>-3.1</m></cell>
+<cell><m>1.9</m></cell>
+<cell><m>6.9</m></cell>
+<cell><m>11.9</m></cell>
+</row>
+
+<row>
+<cell><m>y</m></cell>
+<cell><m>1.2</m></cell>
+<cell><m>1.3</m></cell>
+<cell><m>1.5</m></cell>
+<cell><m>1.9</m></cell>
+</row>
+</tabular>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+The function <m>H=f(t)</m> gives the temperature (in degrees Fahrenheit) of the water in a spa <m>t</m> minutes after the spa heater has been turned on.
+</p>
+</introduction>
+
+<task>
+<statement>
+<p>
+Write the formula for a function <m>g(t)</m> that represents the temperature (in degrees Fahrenheit) of the water in the spa if the spa heater is turned on <m>15</m> minutes earlier.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(t)=f(t+15)</m>
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<p>
+Write a formula for the function <m>h(t)</m> that represents the temperature (in degrees Fahrenheit) of the water in the spa if the temperature of the water in the spa were <m>5</m> degrees warmer at the time that the heater was turned on.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>h(t)=f(t)+5</m>
+</p>
+</solution>
+</task>
+</exercise>
+
+
+
+
+<exercise>
+<statement>
+<p>
+The function <m>C(t)</m> gives the concentration (in nanograms per milliliter) of a certain medication in a patient's bloodstream <m>t</m> minutes after a dose of the medication has been administered to a patient, assuming that the patient has <m>0</m> nanograms per milliliter in their bloodstream at time <m>t=0</m>. Write the formula for the function <m>g(t)</m> that supposes that at time <m>t=0</m> the patient had <m>2.3</m> nanograms per milliliter of the medication in their bloodstream.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>g(t)=C(t)+2.3</m>
+</p>
+</solution>
+</exercise>
+
+</exercises>

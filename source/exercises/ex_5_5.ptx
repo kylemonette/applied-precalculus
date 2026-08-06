@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_5_5">
+
+
+<exercisegroup>
+<title>Evaluating Expressions</title>
+<introduction>
+<p>
+For each of the following, use your calculator to evaluate the given expression. Round off your answer to three decimal places.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_5_1">
+<statement>
+<p>
+<m>\displaystyle e^2</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>7.389</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle e^{1.5}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>4.482</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle e^{-1}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>0.368</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_5_4">
+<statement>
+<p>
+<m>\displaystyle \frac{e^3+1}{e^2}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2.854</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercise>
+<statement>
+<p>
+Match each function below to its corresponding graph.
+</p>
+
+<image width="50%" xml:id="ex_5_5_5">
+<latex-image label="ex_5_5_5_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=3.5,
+ymin=0,ymax=1.2,
+xtick={0,1,2,3},
+ytick={0,0.25,0.5,0.75,1},
+minor tick={},
+xlabel={$x$}, ylabel={$y$},
+legend entries={A, B, C},
+]
+\addplot[domain=0:3,color=red] {exp(-x)};
+\addlegendentry{A}
+\addplot[domain=0:3,color=blue] {2^(-x)};
+\addlegendentry{B}
+\addplot[domain=0:3,color=orange] {4^(-x)};
+\addlegendentry{C}
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</statement>
+
+<cardsort>
+
+
+<match>
+<premise order="1">
+<m>y=e^{-x}</m>
+</premise>
+<response>
+Graph A
+</response>
+</match>
+
+
+<match>
+<premise order="2">
+<m>y=2^{-x}</m>
+</premise>
+<response>
+Graph B
+</response>
+</match>
+
+<match>
+<premise order="3">
+<m>y=4^{-x}</m>
+</premise>
+<response>
+Graph C
+</response>
+</match>
+
+
+
+</cardsort>
+
+<solution>
+<p>
+Graph A is <m>y=e^{-x}</m>; Graph B is <m>y=2^{-x}</m>; Graph C is <m>y=4^{-x}</m>.
+</p>
+</solution>
+
+</exercise>
+
+
+
+<exercisegroup>
+<title>Identifying Exponential Functions</title>
+<introduction>
+<p>
+For each of the following, determine if the given exponential function is increasing or decreasing. For each function, identify its continuous growth rate.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_5_6">
+<statement>
+<p>
+<m>\displaystyle y=100e^{0.12x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+increasing; continuous growth rate: <m>12\%</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=1200e^{-0.029x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+decreasing; continuous growth rate: <m>-2.9\%</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=20e^{0.065x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+increasing; continuous growth rate: <m>6.5\%</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_5_9">
+<statement>
+<p>
+<m>\displaystyle y=700e^{-0.38x}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+decreasing; continuous growth rate: <m>-38\%</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Rewriting Exponential Functions</title>
+<introduction>
+<p>
+For each of the following, rewrite the given exponential function in the form <m>y=A\cdot b^t</m>. Round off the base <m>b</m> to four decimal places.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_5_10">
+<statement>
+<p>
+<m>\displaystyle y=120e^{0.32t}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=120(1.3771)^t</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=1500e^{-0.098t}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=1500(0.9066)^t</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=200e^{-0.16t}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=200(0.8521)^t</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_5_13">
+<statement>
+<p>
+<m>\displaystyle y=1700e^{0.09t}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>y=1700(1.0942)^t</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercise>
+<introduction>
+<p>
+A common antidepressant Paxil has a continuous hourly growth rate of <m>-3.3\%</m>. A patient takes an initial dose of <m>30</m> mg. Let <m>P(t)</m> be the amount of Paxil left in a patient's body from the initial dose <m>t</m> hours later.
+</p>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Write a formula for <m>P(t)</m> in terms of the natural base <m>e</m>.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>P(t)=30e^{-0.033t}</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        How much Paxil is left in the patient's body <m>18</m> hours after the dose?
+        </p>
+    </statement>
+<solution>
+    <p>
+        approximately <m>16.56</m> mg
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+<exercise>
+<statement>
+<p>
+A radioactive isotope of Iodine, Iodine-123, is often used in medical imagining as a contrast. An initial amount of <m>12</m> <m>\mu</m>g of Iodine-123 is administered to a patient. Let <m>I(t)</m> be the amount of Iodine-123, in <m>\mu</m>g, remaining in the patient's body after <m>t</m> hours. Given that the continuous hourly decay rate of Iodine-123 is <m>5.33\%</m>, write a formula for <m>I(t)</m>. How much Iodine-123 is left after <m>24</m> hours?
+</p>
+</statement>
+
+<solution>
+<p>
+<m>I(t)=12e^{-0.0533t}</m>; approximately <m>3.33</m> <m>\mu</m>g
+</p>
+</solution>
+</exercise>
+
+</exercises>

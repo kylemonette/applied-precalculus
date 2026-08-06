@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_5_3">
+
+
+<exercisegroup>
+<title>Exponential Functions</title>
+<introduction>
+<p>
+For each of the following data tables, check if the data can possibly correspond to an exponential function or not. If yes, give a formula for the function in the form <m>A\cdot b^t</m>. Identify the initial value and the growth factor.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_3_1">
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+</row>
+<row>
+<cell><m>f(t)</m></cell>
+<cell><m>5000</m></cell>
+<cell><m>4000</m></cell>
+<cell><m>3200</m></cell>
+<cell><m>2560</m></cell>
+<cell><m>2048</m></cell>
+<cell><m>1638.4</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+possible exponential function; <m>f(t)=5000(0.8)^t</m>; initial value: <m>5000</m>; growth factor: <m>0.8</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+</row>
+<row>
+<cell><m>g(t)</m></cell>
+<cell><m>32</m></cell>
+<cell><m>48</m></cell>
+<cell><m>72</m></cell>
+<cell><m>108</m></cell>
+<cell><m>162</m></cell>
+<cell><m>243</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+possible exponential function; <m>g(t)=32(1.5)^t</m>; initial value: <m>32</m>; growth factor: <m>1.5</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+</row>
+<row>
+<cell><m>k(t)</m></cell>
+<cell><m>64</m></cell>
+<cell><m>32</m></cell>
+<cell><m>16</m></cell>
+<cell><m>8</m></cell>
+<cell><m>0</m></cell>
+<cell><m>2</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+not an exponential function
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+</row>
+<row>
+<cell><m>h(t)</m></cell>
+<cell><m>1280</m></cell>
+<cell><m>1600</m></cell>
+<cell><m>2000</m></cell>
+<cell><m>2500</m></cell>
+<cell><m>3125</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+possible exponential function; <m>h(t)=1024(1.25)^t</m>; initial value: <m>1024</m>; growth factor: <m>1.25</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_3_5">
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+</row>
+<row>
+<cell><m>n(t)</m></cell>
+<cell><m>100</m></cell>
+<cell><m>200</m></cell>
+<cell><m>300</m></cell>
+<cell><m>400</m></cell>
+<cell><m>500</m></cell>
+<cell><m>600</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+not an exponential function
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercisegroup>
+<title>Exponential Functions</title>
+<introduction>
+<p>
+For each of the following data tables, check if the data can possibly correspond to an exponential function or not. If yes, give a formula for the function in the form <m>A\cdot b^t</m>. Give both the exact and the approximate value for the growth factor. Round off to at least three decimal places.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_3_6">
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>2</m></cell>
+<cell><m>4</m></cell>
+<cell><m>6</m></cell>
+<cell><m>8</m></cell>
+</row>
+<row>
+<cell><m>z(t)</m></cell>
+<cell><m>250</m></cell>
+<cell><m>500</m></cell>
+<cell><m>1000</m></cell>
+<cell><m>2000</m></cell>
+<cell><m>4000</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+possible exponential function; <m>z(t)=250(\sqrt{2})^t\approx250(1.414)^t</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_3_7">
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>3</m></cell>
+<cell><m>6</m></cell>
+<cell><m>9</m></cell>
+<cell><m>12</m></cell>
+<cell><m>15</m></cell>
+</row>
+<row>
+<cell><m>m(t)</m></cell>
+<cell><m>64</m></cell>
+<cell><m>32</m></cell>
+<cell><m>16</m></cell>
+<cell><m>8</m></cell>
+<cell><m>4</m></cell>
+<cell><m>2</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+possible exponential function; <m>m(t)=64\left(\sqrt[3]{\frac{1}{2}}\right)^t\approx64(0.794)^t</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercisegroup>
+<title>Finding a Function</title>
+<introduction>
+<p>
+For each of the following, find a function <m>y=f(x)</m> that corresponds to the data given in each table. Fill in the missing entries.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_3_8">
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+</row>
+<row>
+<cell><m>y</m></cell>
+<cell><m>500</m></cell>
+<cell><m>900</m></cell>
+<cell><m>1620</m></cell>
+<cell><m>2916</m></cell>
+<cell><m>?</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+<m>y=500 (1.8)^x</m>; <m>y(4)=5248.8</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_3_9">
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>x</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+</row>
+<row>
+<cell><m>y</m></cell>
+<cell><m>300</m></cell>
+<cell><m>220</m></cell>
+<cell><m>140</m></cell>
+<cell><m>60</m></cell>
+<cell><m>?</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+<m>y=-80x+300</m>; <m>y(4)=-20</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+
+<exercise>
+<introduction>
+<p>
+Barometric pressure<fn><url href="https://en.wikipedia.org/wiki/Barometric_formula">https://en.wikipedia.org/wiki/Barometric_formula</url>, accessed: 7/10/20</fn><mdash/>the pressure of the air<mdash/>depends on the altitude above sea level. Let <m>H</m> be altitude above sea level measured in kilometers. Let <m>P(H)</m> be barometric pressure measured in mmHg<mdash/>millimeters of mercury. Here are readings of barometric pressure at different altitudes:
+</p>
+
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>H</m> (km)</cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+</row>
+<row>
+<cell><m>P(H)</m> (mmHg)</cell>
+<cell><m>760</m></cell>
+<cell><m>674.12</m></cell>
+<cell><m>597.94</m></cell>
+<cell><m>530.37</m></cell>
+<cell><m>470.44</m></cell>
+</row>
+</tabular>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Can you see from the data that the function <m>P(H)</m> is exponential?
+        </p>
+    </statement>
+<solution>
+    <p>
+        Yes.
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        What is the barometric pressure, <m>P_0</m>, at sea level?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>760</m> mmHg
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Find a formula for <m>P(H)</m> in the form <m>P(H)=P_0\cdot b^H</m>. When calculating <m>b</m>, round off to three decimal places.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>P(H)=760(0.887)^H</m>
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        The summit of Mount Everest is at <m>8848</m> meters above sea level. What is the barometric pressure at the top of Mount Everest?
+        </p>
+    </statement>
+<solution>
+    <p>
+        approximately <m>263.05</m> mmHg
+    </p>
+</solution>
+</task>
+</exercise>
+
+</exercises>

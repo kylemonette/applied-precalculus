@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_6_1">
+
+
+<exercisegroup>
+<title>Evaluating Logarithms</title>
+<introduction>
+<p>
+For each of the following, evaluate the given expression without a calculator. If the expression is undefined, say so.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-6_1_1">
+<statement>
+<p>
+<m>\displaystyle \log_2\left(\frac{1}{64}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-6</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log_2\left(-\frac{1}{16}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+undefined
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{1}{2}\log_2(0)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+undefined
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log_3(27)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>3</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log_3\left(\frac{1}{9}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-2</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log_3\left(\frac{\sqrt{3}}{3}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-\frac{1}{2}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle 2\ln(e^{12})</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>24</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln(\ln e)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>0</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{\ln(1)}{\ln(e^2)}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>0</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{\ln(e^2)}{\ln(1)}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+undefined
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln(\sqrt{e})+\ln(e^3)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>\frac{7}{2}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log\left(\frac{1}{10^4}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-4</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log(\sqrt[3]{10})-3\log\left(\frac{10}{\sqrt{10}}\right)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-\frac{7}{6}</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log(10-10^2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+undefined
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{3\ln(e^{-2})}{\ln(\sqrt{e})}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>-12</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{\ln(-e)}{\ln(e^2)}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+undefined
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln(e^2e^3)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>5</m>
+</p>
+</solution>
+</exercise>
+
+<exercise xml:id="exercise-6_1_18">
+<statement>
+<p>
+<m>\displaystyle \log(100^2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>4</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Estimating Logarithms</title>
+<introduction>
+<p>
+For each of the following, use the graphs of <m>y=\ln(x)</m> and <m>y=\log(x)</m> to give a rough estimate.
+</p>
+<!-- FLAG: Original LaTeX source refers to "Figure 6.1.1" showing graphs of y=ln(x) and y=log(x), but no such figure currently exists in this PreTeXt project. A latex-image graph needs to be created and inserted here before this exercisegroup is usable. -->
+</introduction>
+
+<exercise xml:id="exercise-6_1_19">
+<statement>
+<p>
+<m>\displaystyle \ln(0.2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+approximately <m>-1.6</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \ln(1.2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+approximately <m>0.2</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \log(0.2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+approximately <m>-0.7</m>
+</p>
+</solution>
+</exercise>
+
+<exercise xml:id="exercise-6_1_22">
+<statement>
+<p>
+<m>\displaystyle \log(2)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+approximately <m>0.3</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Logarithms on a Calculator</title>
+<introduction>
+<p>
+For each of the following, use your calculator to evaluate the given expression. Round off to four decimal places. For undefined expressions, state <q>undefined</q>.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-6_1_23">
+<statement>
+<p>
+<m>\displaystyle \log(7)</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>0.8451</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{\ln(2)}{0.327}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>2.1197</m>
+</p>
+</solution>
+</exercise>
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle \frac{\log(5)}{2\log(7)}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>0.4135</m>
+</p>
+</solution>
+</exercise>
+
+<exercise xml:id="exercise-6_1_26">
+<statement>
+<p>
+<m>\displaystyle \frac{\ln(0.5)}{-0.0278}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+<m>24.9334</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+</exercises>

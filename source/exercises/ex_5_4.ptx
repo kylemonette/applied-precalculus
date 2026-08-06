@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_5_4">
+
+
+<exercisegroup>
+<title>Finding the Doubling Time</title>
+<introduction>
+<p>
+For each exponential function, find the initial amount (in units of <m>y</m>) and the doubling time (in units of <m>t</m>).
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_4_1">
+<statement>
+<p>
+<m>\displaystyle y=47\cdot 2^{\frac{t}{5}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+initial amount: <m>47</m>; doubling time: <m>5</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=800\cdot 2^{\frac{t}{9}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+initial amount: <m>800</m>; doubling time: <m>9</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=89\cdot 4^{\frac{t}{6}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+initial amount: <m>89</m>; doubling time: <m>3</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_4_4">
+<statement>
+<p>
+<m>\displaystyle y=120\cdot 8^{\frac{t}{12}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+initial amount: <m>120</m>; doubling time: <m>4</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Finding the Half-Life</title>
+<introduction>
+<p>
+For each of the following, for each exponential function, find the initial amount (in units of <m>y</m>) and the half-life (in units of <m>t</m>).
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_4_5">
+<statement>
+<p>
+<m>\displaystyle y=75\cdot \left(\frac{1}{2}\right)^{\frac{t}{7}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+initial amount: <m>75</m>; half-life: <m>7</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=920\cdot \left(\frac{1}{2}\right)^{\frac{t}{10}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+initial amount: <m>920</m>; half-life: <m>10</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+<m>\displaystyle y=875\cdot \left(\frac{1}{16}\right)^{\frac{t}{12}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+initial amount: <m>875</m>; half-life: <m>3</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_4_8">
+<statement>
+<p>
+<m>\displaystyle y=63\cdot \left(\frac{1}{4}\right)^{\frac{t}{10}}</m>
+</p>
+</statement>
+
+<solution>
+<p>
+initial amount: <m>63</m>; half-life: <m>5</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Doubling Time &amp; Half-Life Formulas</title>
+<introduction>
+<p>
+For each of the following, write a formula for an exponential function in the form <m>\displaystyle f(t)=A\cdot c^{\frac{t}{T}}</m> that describes the given scenario. Then convert the function to the form <m>f(t)=A\cdot b^t</m>.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_4_9">
+<statement>
+<p>
+The population of a town begins with <m>1500</m> people at <m>t=0</m> and doubles every <m>8</m> years.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(t)=1500(2)^{\frac{t}{8}}=1500(1.0905)^t</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The population of a town begins with <m>750</m> people at <m>t=0</m> and triples every <m>9</m> years.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(t)=750(3)^{\frac{t}{9}}=750(1.1298)^t</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise>
+<statement>
+<p>
+The initial amount of <m>50</m> mg of a radioactive element is halved every <m>11</m> days.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(t)=50\left(\frac{1}{2}\right)^{\frac{t}{11}}=50(0.9389)^t</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_4_12">
+<statement>
+<p>
+The initial amount of <m>60</m> mg of a radioactive element is cut by one-third every <m>5</m> months.
+</p>
+</statement>
+
+<solution>
+<p>
+<m>f(t)=60\left(\frac{1}{3}\right)^{\frac{t}{5}}=60(0.8027)^t</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercisegroup>
+<title>Estimating Doubling Time &amp; Half-Life</title>
+<introduction>
+<p>
+For each of the following, estimate the half-life or the doubling time whichever applies.
+</p>
+</introduction>
+
+<exercise xml:id="exercise-5_4_13">
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+<cell><m>6</m></cell>
+<cell><m>7</m></cell>
+</row>
+<row>
+<cell><m>f(t)</m></cell>
+<cell><m>100.52</m></cell>
+<cell><m>126.65</m></cell>
+<cell><m>159.57</m></cell>
+<cell><m>201.04</m></cell>
+<cell><m>253.29</m></cell>
+<cell><m>319.13</m></cell>
+<cell><m>402.08</m></cell>
+<cell><m>506.59</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+doubling time: <m>3</m>
+</p>
+</solution>
+</exercise>
+
+
+<exercise xml:id="exercise-5_4_14">
+<statement>
+<tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
+<row bottom="minor">
+<cell><m>t</m></cell>
+<cell><m>0</m></cell>
+<cell><m>1</m></cell>
+<cell><m>2</m></cell>
+<cell><m>3</m></cell>
+<cell><m>4</m></cell>
+<cell><m>5</m></cell>
+<cell><m>6</m></cell>
+<cell><m>7</m></cell>
+</row>
+<row>
+<cell><m>g(t)</m></cell>
+<cell><m>20.15</m></cell>
+<cell><m>14.25</m></cell>
+<cell><m>10.08</m></cell>
+<cell><m>7.12</m></cell>
+<cell><m>5.04</m></cell>
+<cell><m>3.56</m></cell>
+<cell><m>2.52</m></cell>
+<cell><m>1.78</m></cell>
+</row>
+</tabular>
+</statement>
+
+<solution>
+<p>
+half-life: approximately <m>2</m>
+</p>
+</solution>
+</exercise>
+
+</exercisegroup>
+
+
+
+<exercise xml:id="exercise-5_4_15">
+<introduction>
+<p>
+The graph of an exponential function below shows the population of bacteria, <m>P(t)</m>, in a laboratory experiment <m>t</m> minutes after the experiment began.
+</p>
+
+<image width="50%" xml:id="ex_5_4_15">
+<latex-image label="ex_5_4_15_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=55,
+ymin=0,ymax=120,
+xtick={0,10,20,30,40,50},
+yticklabels={0,2000,4000,6000,8000,10000,12000},
+ytick={0,20,40,60,80,100,120},
+minor tick={},
+xlabel={$t$}, ylabel={$P$},
+x post scale = 1.0
+]
+\addplot[domain=0:50] {20*2^(x/20)};
+\addplot[only marks, mark=*, mark size=3pt, mark options={color=red}] coordinates {(0,20) (10,28) (20,40) (30,56) (40,80) (50,113.14)};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        What is the initial amount, <m>P_0</m>, of bacteria?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>2000</m> bacteria
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Estimate the doubling time of the population.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>20</m> minutes
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Write a formula for <m>P(t)</m> in the form <m>\displaystyle P(t)=P_0\cdot 2^{\frac{t}{T}}</m>. Then rewrite the formula in the form <m>\displaystyle P(t)=P_0\cdot b^t</m>. Round off <m>b</m> to four decimal places. What is the percent growth rate?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>P(t) = 2000(2)^{\frac{t}{20}} \approx 2000(1.0353)^t</m>; growth rate: <m>3.53\%</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+
+
+<exercise xml:id="exercise-5_4_16">
+<introduction>
+<p>
+The amount of caffeine remaining in the body, <m>C=C(t)</m>, in milligrams, <m>t</m> hours after drinking a cup of coffee, is an exponential function and its graph is given below:
+</p>
+
+<image width="50%" xml:id="ex_5_4_16">
+<latex-image label="ex_5_4_16_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=26,
+ymin=0,ymax=110,
+xtick={0,5,10,15,20},
+ytick={0,24,48,72,96},
+minor tick={},
+xlabel={$t$ (hours)}, ylabel={$C$ (mg)},
+x post scale = 1.2
+]
+\addplot[domain=0:20] {96*0.5^(x/5)};
+\addplot[only marks, mark=*, mark size=3pt, mark options={color=red}] coordinates {(0,96) (5,48) (10,24) (15,12) (20,6)};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</introduction>
+
+<task>
+    <statement>
+        <p>
+        Estimate the amount of caffeine, <m>C_0</m>, absorbed by the body from a cup of coffee.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>96</m> mg
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Estimate the half-life of caffeine.
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>5</m> hours
+    </p>
+</solution>
+</task>
+
+<task>
+    <statement>
+        <p>
+        Write a formula for <m>C(t)</m> in the form <m>\displaystyle C(t)=C_0\cdot \left(\frac{1}{2}\right)^{\frac{t}{T}}</m>. Rewrite the formula in the form <m>\displaystyle C(t)=C_0\cdot b^t</m>. Round <m>b</m> off to three decimal places. What is the percent growth rate?
+        </p>
+    </statement>
+<solution>
+    <p>
+        <m>C(t) = 96\left(\frac{1}{2}\right)^{\frac{t}{5}} \approx 96(0.8706)^t</m>; growth rate: <m>-12.94\%</m>
+    </p>
+</solution>
+</task>
+</exercise>
+
+</exercises>
