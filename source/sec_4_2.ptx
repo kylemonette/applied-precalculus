@@ -80,7 +80,7 @@ Let <m>a</m> be a given number and <m>n</m> be a positive integer.
 <p>
     <ul>
         <li>
-            <p>Suppose <m>n</m> is even.</p>
+            <p>Suppose <m>n</m> is even.
             <ul>
                 <li>
                     <p>
@@ -104,6 +104,7 @@ Let <m>a</m> be a given number and <m>n</m> be a positive integer.
                     </aside>
                 </li>
             </ul>
+            </p>
         </li>
 
         <li>

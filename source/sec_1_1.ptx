@@ -170,6 +170,7 @@ In an abstract setting, when variables are not associated any specific real-life
     </statement>
 
     <solution>
+<p>
         <ol>
     <li>
         <p>
@@ -209,6 +210,7 @@ In an abstract setting, when variables are not associated any specific real-life
         </p>
     </li>
     </ol>
+</p>
     </solution>
 </example>
 
@@ -251,6 +253,7 @@ In an abstract setting, when variables are not associated any specific real-life
     </statement>
 
     <solution>
+<p>
         <ol>
     <li>
         <p>
@@ -272,6 +275,7 @@ In an abstract setting, when variables are not associated any specific real-life
         </p>
     </li>
     </ol>
+</p>
     </solution>
 </example>
 
@@ -311,6 +315,7 @@ In an abstract setting, when variables are not associated any specific real-life
 </statement>
 
 <solution>
+<p>
         <ol>
     <li>
         <p>
@@ -345,6 +350,7 @@ In an abstract setting, when variables are not associated any specific real-life
         </p>
     </li>
     </ol>
+</p>
 </solution>
 </example>
 
@@ -381,6 +387,7 @@ In an abstract setting, when variables are not associated any specific real-life
     </statement>
 
     <solution>
+<p>
         <ol>
     <li>
         <p>
@@ -416,6 +423,7 @@ In an abstract setting, when variables are not associated any specific real-life
         </p>
     </li>
     </ol>
+</p>
     </solution>
 </example>
 
@@ -433,9 +441,10 @@ In an abstract setting, when variables are not associated any specific real-life
 
 
 <definition>
+    <title>Increasing and Decreasing Functions</title>
     <idx><h>function</h><h>increasing</h></idx>
 <idx><h>function</h><h>decreasing</h></idx>
-    <title>Increasing and Decreasing Functions</title>
+
     <statement>
         <p>
             <ul>
@@ -653,6 +662,14 @@ In an abstract setting, when variables are not associated any specific real-life
         This can be written in a variety of different ways.
         </p>
 
+<aside>
+<p>
+The symbol <m>\cup</m> is called a <em>union</em>.
+Essentially, it means <q>include all these intervals</q>.
+</p>
+</aside>
+
+
         <p>
             <idx><h>domain</h></idx>
             <idx><h>set-builder notation</h></idx>
@@ -681,10 +698,6 @@ In an abstract setting, when variables are not associated any specific real-life
             <li>
             <p>
                 Domain of <m>\displaystyle f(x)=\frac{1}{x^{2}-1}</m> in <em>interval notation</em>:
-                <aside><p>
-                    The symbol <m>\cup</m> is called a <em>union</em>.
-                Essentially, it means <q>include all these intervals</q>.
-                </p></aside>
                 <md>
                 (-\infty,-1)\cup(-1,1)\cup(1,\infty)
                 </md>
@@ -693,7 +706,6 @@ In an abstract setting, when variables are not associated any specific real-life
         </ul>
         </p>
     </li>
-
     <li>
         <p>
         The function <m>g(x)=\sqrt{x-3}</m> is defined provided the number under the radical is not negative.
@@ -733,10 +745,6 @@ In an abstract setting, when variables are not associated any specific real-life
             <li>
             <p>
                 Domain of <m>g(x)=\sqrt{x-3}</m> in <em>interval notation</em>:
-                <aside>
-                    <p>Notice that we wrote <m>[3,\infty)</m> and not <m>(3,\infty)</m> to denote that <m>x=3</m> is included in the domain.
-                    </p>
-                </aside>
                 <md>
                 [3,\infty)
                 </md>
@@ -747,6 +755,10 @@ In an abstract setting, when variables are not associated any specific real-life
     </li>
     </ol>
 </p>
+<aside>
+<p>Notice that we wrote <m>[3,\infty)</m> and not <m>(3,\infty)</m> to denote that <m>x=3</m> is included in the domain.
+</p>
+</aside>
     </solution>
 </example>
 
@@ -756,7 +768,6 @@ In an abstract setting, when variables are not associated any specific real-life
 
 <xi:include href="practice/pr_1_1.ptx" />
 <xi:include href="exercises/ex_1_1.ptx"/>
-<!-- <xi:include href="worksheet/ws_1_1.ptx"/> -->
 
 </section>
 

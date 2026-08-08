@@ -25,7 +25,9 @@
 
 
 
-<target name="runestone" publication="runestone.ptx" format="html" />
+<target name="runestone" source="main.ptx" publication="runestone.ptx" format="html" xsl="pretext-html.xsl">
+<stringparams html.css.extra="external/custom.css" />
+</target>
 
 
 </targets>

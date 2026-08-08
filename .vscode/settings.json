@@ -1,5 +1,10 @@
 {
-    "cSpell.languageSettings": [],
+    "cSpell.languageSettings": [
+        {
+            "languageId": "pretext",
+            "ignoreRegExpList": []
+        }
+    ],
     "xml.fileAssociations": [
         {
             "pattern": "**/source/**.ptx",

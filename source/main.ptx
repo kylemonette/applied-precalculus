@@ -4,8 +4,7 @@
   <!-- we first include a file which contains the docinfo element: -->
   <xi:include href="./docinfo.ptx" />
 
-  <!-- <book xml:id="applied-precalculus"> -->
-    <book xml:id="apc">
+  <book xml:id="applied-precalculus">
     <title>Applied Precalculus</title>
     <!-- <subtitle></subtitle> -->
 
