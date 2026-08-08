@@ -142,7 +142,7 @@
       <!--<calculator model="geogebra-classic" activecode="python" />-->
 
     <!-- Set the base URL of where the online version is hosted to have links in other formats -->
-      <baseurl href="https://kylemonette.github.io/mth103-book/"/>
+      <baseurl href="https://kylemonette.github.io/applied-precalculus/"/>
 
 
     <!-- Use the tabbed viewer for tasks in exercises. "project" and "reading" can be added to the list of types in the @tabbed-tasks attribute (but not worksheet). -->
