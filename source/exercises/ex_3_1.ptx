@@ -10,7 +10,7 @@ Write each quadratic function in standard form. Then determine whether its graph
 </p>
 </introduction>
 
-<exercise>
+<exercise xml:id="exercise_3_1_1">
 <statement>
 <p>
 <m>f(x)=x(4x-7)</m>
@@ -28,7 +28,7 @@ Write each quadratic function in standard form. Then determine whether its graph
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_1_2">
 <statement>
 <p>
 <m>h(t)=17+3t-5t^2-2(1.5t-2)</m>
@@ -46,7 +46,7 @@ Write each quadratic function in standard form. Then determine whether its graph
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_1_3">
 <statement>
 <p>
 <m>g(x)=4x(x-4)-2x(x-1)</m>
@@ -64,7 +64,7 @@ Write each quadratic function in standard form. Then determine whether its graph
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_1_4">
 <statement>
 <p>
 <m>y=-4(x+5)^2+80</m>
@@ -90,7 +90,7 @@ Write each quadratic function in standard form. Then determine whether its graph
         </p>
     </introduction>
 
-<exercise>
+<exercise xml:id="exercise_3_1_5">
 <statement>
 
 <image width="50%" xml:id="ex_3_1_1">
@@ -124,7 +124,7 @@ horizontal intercepts: <m>-1</m>, <m>3</m>; vertical intercept: <m>-3</m>; verte
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_1_6">
 <statement>
 <image width="50%" xml:id="ex_3_1_2">
 <shortdescription>
@@ -173,7 +173,7 @@ The horizontal intercepts of a quadratic parabola are given. Find the <m>x</m>-c
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_1_7">
 <statement>
 <p>
 <m>x=-1.5</m> and <m>x=1.5</m>
@@ -191,7 +191,7 @@ The horizontal intercepts of a quadratic parabola are given. Find the <m>x</m>-c
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_1_8">
 <statement>
 <p>
 <m>x=-2</m> and <m>x=5</m>
@@ -210,7 +210,7 @@ The horizontal intercepts of a quadratic parabola are given. Find the <m>x</m>-c
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_1_9">
 <statement>
 <p>
 A quadratic parabola crosses the <m>x</m>-axis at the point <m>(2,0)</m> and has its vertex at the point <m>(4,4)</m>. Find the second point on the <m>x</m>-axis where the parabola crosses the <m>x</m>-axis. Does the parabola open up or open down?
@@ -226,7 +226,7 @@ A quadratic parabola crosses the <m>x</m>-axis at the point <m>(2,0)</m> and has
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_1_10">
 <introduction>
 <p>
 A lighting company can sell <m>1000-2p</m> units of its specialty chandelier if it charges <m>\$p</m> per specialty chandelier.

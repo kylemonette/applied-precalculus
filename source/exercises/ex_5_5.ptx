@@ -25,7 +25,7 @@ For each of the following, use your calculator to evaluate the given expression.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_5_2">
 <statement>
 <p>
 <m>\displaystyle e^{1.5}</m>
@@ -40,7 +40,7 @@ For each of the following, use your calculator to evaluate the given expression.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_5_3">
 <statement>
 <p>
 <m>\displaystyle e^{-1}</m>
@@ -73,7 +73,7 @@ For each of the following, use your calculator to evaluate the given expression.
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_5_5">
 <statement>
 <p>
 Match each function below to its corresponding graph.
@@ -171,7 +171,7 @@ increasing; continuous growth rate: <m>12\%</m>
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_5_7">
 <statement>
 <p>
 <m>\displaystyle y=1200e^{-0.029x}</m>
@@ -186,7 +186,7 @@ decreasing; continuous growth rate: <m>-2.9\%</m>
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_5_8">
 <statement>
 <p>
 <m>\displaystyle y=20e^{0.065x}</m>
@@ -242,7 +242,7 @@ For each of the following, rewrite the given exponential function in the form <m
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_5_11">
 <statement>
 <p>
 <m>\displaystyle y=1500e^{-0.098t}</m>
@@ -257,7 +257,7 @@ For each of the following, rewrite the given exponential function in the form <m
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_5_12">
 <statement>
 <p>
 <m>\displaystyle y=200e^{-0.16t}</m>
@@ -290,7 +290,7 @@ For each of the following, rewrite the given exponential function in the form <m
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_5_14">
 <introduction>
 <p>
 A common antidepressant Paxil has a continuous hourly growth rate of <m>-3.3\%</m>. A patient takes an initial dose of <m>30</m> mg. Let <m>P(t)</m> be the amount of Paxil left in a patient's body from the initial dose <m>t</m> hours later.
@@ -326,7 +326,7 @@ A common antidepressant Paxil has a continuous hourly growth rate of <m>-3.3\%</
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_5_15">
 <statement>
 <p>
 A radioactive isotope of Iodine, Iodine-123, is often used in medical imagining as a contrast. An initial amount of <m>12</m> <m>\mu</m>g of Iodine-123 is administered to a patient. Let <m>I(t)</m> be the amount of Iodine-123, in <m>\mu</m>g, remaining in the patient's body after <m>t</m> hours. Given that the continuous hourly decay rate of Iodine-123 is <m>5.33\%</m>, write a formula for <m>I(t)</m>. How much Iodine-123 is left after <m>24</m> hours?

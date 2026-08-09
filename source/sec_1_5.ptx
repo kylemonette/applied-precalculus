@@ -1,93 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_1_5">
+    <title>The Average Rate of Change</title>
 
-    
-<title>The Average Rate of Change</title>
-
-<objectives>
-    <introduction>
-        <p>
-            After completing this section, you should be able to do the following.
-        </p>
-    </introduction>
-    <ol>
-        <li>
+    <objectives>
+        <introduction>
             <p>
-            Explain why the average, rather than instantaneous, rate of change is used to describe how a quantity changes over an interval.
+                After completing this section, you should be able to do the following.
             </p>
-        </li>
+        </introduction>
 
-        <li>
-            <p>
-        Compute the average rate of change of a function between two input values using the formula <m>\dfrac{f(b)-f(a)}{b-a}</m>, given a function algebraically, graphically, or numerically.
-            </p>
-        </li>
-        <li>
-            <p>
-            Determine and interpret the appropriate units and practical meaning of an average rate of change in an applied context.
-            </p>
-        </li>
-    </ol>
-</objectives>
+        <ol>
+            <li>
+                <p>
+                    Explain why the average, rather than instantaneous, rate of change is used to describe how a quantity changes over an interval.
+                </p>
+            </li>
 
-<p>
-The notion of a rate of change is central to mathematics and its applications.
-Roughly speaking, a rate of change tells us how fast and in what manner a given quantity is changing with respect to another changing quantity.
-We will consider three examples below.
-</p>
+            <li>
+                <p>
+                    Compute the average rate of change of a function between two input values using the formula <m>\dfrac{f(b)-f(a)}{b-a}</m>, given a function algebraically, graphically, or numerically.
+                </p>
+            </li>
 
-<p>
-<ul>
-<li>
-    Suppose that a population of a town grows by <m>200</m> people each year.
-    Here, the rate of change of the population with respect to time is constant and equal to <m>200</m> people/year.
-</li>
+            <li>
+                <p>
+                    Determine and interpret the appropriate units and practical meaning of an average rate of change in an applied context.
+                </p>
+            </li>
+        </ol>
+    </objectives>
 
-<li>
-<p>
-    Recall <xref ref="example-ch1-amox"/>.
-    A daily pediatric dose of Amoxicillin, <m>D</m>, in milligrams, depends on the weight of a patient, <m>w</m>, in kilograms.
-    More precisely, <m>D=50w</m>.
-    How fast does the dose increase as the weight increases? The formula for <m>D</m> clearly shows that for each 1 kilogram increase in weight, the dose increases by 50 milligrams.
-    In this case, the rate of change of <m>D</m> with respect to weight <m>w</m> is <m>50</m> milligrams/kilogram.
-</p>
-</li>
+    <p>
+        The notion of a rate of change is central to mathematics and its applications.
+        Roughly speaking, a rate of change tells us how fast and in what manner a given quantity is changing with respect to another changing quantity.
+        We will consider three examples below.
+    </p>
 
-<li>
-<p>
-    Suppose that the value of your car changes at the rate <m>-1500</m> dollars/year.
-    The rate of change is negative, meaning that the value of the car <em>decreases</em> by <m>1500</m> dollars each year.
-    In general, a quantity that changes at a negative rate is decreasing while one that changes at a positive rate is increasing.
-</p>
-</li>
-</ul>
-</p>
+    <p>
+        <ul>
+            <li>Suppose that a population of a town grows by <m>200</m> people each year. Here, the rate of change of the population with respect to time is constant and equal to <m>200</m> people/year.</li>
+            <li>
+                <p>
+                    Recall <xref ref="example-ch1-amox"/>.
+                    A daily pediatric dose of Amoxicillin, <m>D</m>, in milligrams, depends on the weight of a patient, <m>w</m>, in kilograms.
+                    More precisely, <m>D=50w</m>.
+                    How fast does the dose increase as the weight increases?
+                    The formula for <m>D</m> clearly shows that for each 1 kilogram increase in weight, the dose increases by 50 milligrams.
+                    In this case, the rate of change of <m>D</m> with respect to weight <m>w</m> is <m>50</m> milligrams/kilogram.
+                </p>
+            </li>
 
- <p>
-In the three examples above, the rate of change of the dependent variable with respect to the independent variable is constant.
-In real-life processes, this is rarely the case.
-</p>
+            <li>
+                <p>
+                    Suppose that the value of your car changes at the rate <m>-1500</m> dollars/year.
+                    The rate of change is negative, meaning that the value of the car <em>decreases</em> by <m>1500</m> dollars each year.
+                    In general, a quantity that changes at a negative rate is decreasing while one that changes at a positive rate is increasing.
+                </p>
+            </li>
+        </ul>
+    </p>
 
+    <p>
+        In the three examples above, the rate of change of the dependent variable with respect to the independent variable is constant.
+        In real-life processes, this is rarely the case.
+    </p>
 
-<p>
-Consider the following example of two students, Amir and Nick, who went to the library to study for a precalculus exam.
-After <m>t</m> hours of uninterrupted study, Amir mastered <m>P=a(t)</m> pages of new material from the textbook while Nick mastered <m>P=n(t)</m> pages.
-The graphs of the two functions <m>a(t)</m> and <m>n(t)</m> are in <xref ref="fig-ch1-studying"/>.
-</p>
+    <p>
+        Consider the following example of two students, Amir and Nick, who went to the library to study for a precalculus exam.
+        After <m>t</m> hours of uninterrupted study, Amir mastered <m>P=a(t)</m> pages of new material from the textbook while Nick mastered <m>P=n(t)</m> pages.
+        The graphs of the two functions <m>a(t)</m> and <m>n(t)</m> are in <xref ref="fig-ch1-studying"/>.
+    </p>
 
-
-
-<figure xml:id="fig-ch1-studying">
-<caption></caption>
-
-<sidebyside widths="48% 48%" margins="0% 0%" valigns="bottom top">
-
-<image width="50%" xml:id="fig_1_5_1">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="1_5_1_fig">
+    <figure xml:id="fig-ch1-studying">
+        <caption/>
+        <sidebyside widths="48% 48%" margins="0% 0%" valigns="bottom top">
+            <image width="50%" xml:id="fig_1_5_1">
+                <shortdescription>A short description.</shortdescription>
+                <latex-image label="1_5_1_fig">
 \begin{tikzpicture}[scale=0.75]
 \begin{axis}[grid=both,
 xmin=0,xmax=5.5,
@@ -102,14 +92,12 @@ x post scale = 1
 \addplot[domain=0:5] {1.4*sqrt(x)};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                </latex-image>
+            </image>
 
-<image width="50%" xml:id="fig_1_5_2">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="1_5_2_fig">
+            <image width="50%" xml:id="fig_1_5_2">
+                <shortdescription>A short description.</shortdescription>
+                <latex-image label="1_5_2_fig">
 \begin{tikzpicture}[scale=0.75]
 \begin{axis}[grid=both,
 xmin=0,xmax=5.5,
@@ -124,108 +112,110 @@ x post scale = 1
 \addplot[domain=0:5] {exp(0.28*x)-1};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
-</sidebyside>
-</figure>
+                </latex-image>
+            </image>
+        </sidebyside>
+    </figure>
 
-<p>
-According to the graphs, both students stayed in the library for 5 hours.
-We can see that during the 5-hour session, both students learned about 30 new pages, as <m>a(5)\approx 30</m> and <m>n(5)\approx 30</m>.
-</p>
+    <p>
+        According to the graphs, both students stayed in the library for 5 hours.
+        We can see that during the 5-hour session, both students learned about 30 new pages, as <m>a(5)\approx 30</m> and <m>n(5)\approx 30</m>.
+    </p>
 
-<p>
-During the first hour, Amir mastered approximately
-<md>
-a(1)-a(0)=15-0=15
-</md>
-pages of new material, while Nick mastered approximately
-<md>
-n(1)-n(0)=3-0=3
-</md>
-pages.
-Comparatively speaking, Amir learned quickly during the first hour, while Nick learned more slowly.
-</p>
+    <p>
+        During the first hour, Amir mastered approximately
+        <md>
+            a(1)-a(0)=15-0=15
+        </md>
+        pages of new material, while Nick mastered approximately
+        <md>
+            n(1)-n(0)=3-0=3
+        </md>
+        pages.
+        Comparatively speaking, Amir learned quickly during the first hour, while Nick learned more slowly.
+    </p>
 
+    <p>
+        During the last hour, Amir mastered approximately
+        <md>
+            a(5)-a(4)=30-27=3
+        </md>
+        pages of new material, while Nick mastered approximately
+        <md>
+            n(5)-n(4)=30-20=10
+        </md>
+        pages.
+    </p>
 
-<p>
-During the last hour, Amir mastered approximately
-<md>
-a(5)-a(4)=30-27=3
-</md>
-pages of new material, while Nick mastered approximately
-<md>
-n(5)-n(4)=30-20=10
-</md>
-pages.
-</p>
+    <p>
+        This means that Amir went from learning quickly at the beginning of the study session to learning more slowly as time went on.
+        Nick, on the other hand, got off to a slow start but picked up the pace as time went on.
+        Their learning patterns are clearly not identical.
+    </p>
 
+    <p>
+        Does it make sense to ask how quickly <mdash/> or at what rate in pages per hour <mdash/> each student learned during the 5-hour session?
+        Not really.
+        The question is ambiguous.
+        When exactly in the study session should we focus on?
+        The beginning?
+        The end?
+        For both students, the rate at which they were learning during the session changed, with Amir learning more and more slowly over time and Nick learning faster and faster.
+    </p>
 
-<p>
-This means that Amir went from learning quickly at the beginning of the study session to learning more slowly as time went on.
-Nick, on the other hand, got off to a slow start but picked up the pace as time went on.
-Their learning patterns are clearly not identical.
-</p>
+    <p>
+        What <em>does</em> make sense is to consider how quickly each student learned during the 5-hour session <alert>on average</alert>.
+        Amir learned quickly at first and then more slowly later, but overall he mastered 30 pages of new material in 5 hours.
+        He learned at an <alert>average</alert> rate of <m>\frac{30}{5}=6</m> pages/hour.
+        Nick, on the other hand, learned slowly at first, then faster, but he also mastered 30 pages in 5 hours.
+        So, he too learned at an <alert>average</alert> rate of <m>\frac{30}{5}=6</m> pages/hour.
+    </p>
 
-<p>
-Does it make sense to ask how quickly<mdash/>or at what rate in pages per hour<mdash/>each student learned during the 5-hour session? Not really.
-The question is ambiguous.
-When exactly in the study session should we focus on? The beginning? The end? For both students, the rate at which they were learning during the session changed, with Amir learning more and more slowly over time and Nick learning faster and faster.
-</p>
+    <p>
+        Readers who proceed to Calculus will study instantaneous rate of change <mdash/> how quickly a quantity changes at a specific input.
+        For now, the <alert>average</alert> rate of change is the best we can do.
+    </p>
 
+    <definition>
+        <title>Average Rate of Change</title>
 
-<p>
-What <em>does</em> make sense is to consider how quickly each student learned during the 5-hour session <alert>on average</alert>.
-Amir learned quickly at first and then more slowly later, but overall he mastered 30 pages of new material in 5 hours.
-He learned at an <alert>average</alert> rate of <m>\frac{30}{5}=6</m> pages/hour.
-Nick, on the other hand, learned slowly at first, then faster, but he also mastered 30 pages in 5 hours.
-So, he too learned at an <alert>average</alert> rate of <m>\frac{30}{5}=6</m> pages/hour.
-</p>
+        <statement>
+            <p>
+                Let <m>y</m> be a function of <m>x</m>, <m>y=f(x)</m>.
+                Let <m>x=a</m> and <m>x=b</m> be given.
+                The average rate of change of <m>y</m> between <m>x=a</m> and <m>x=b</m> is given by
+                <md>
+                    \aroc = \dfrac{\text{Change in } y}{\text{Change in } x}=\dfrac{\Delta y}{\Delta x}=\dfrac{f(b)-f(a)}{b-a}.
+                </md>
+            </p>
+        </statement>
+    </definition>
 
-<p>
-Readers who proceed to Calculus will study instantaneous rate of change<mdash/>how quickly a quantity changes at a specific input.
-For now, the <alert>average</alert> rate of change is the best we can do.
-</p>
+    <p>
+        We'll use <m>\aroc</m> to abbreviate Average Rate of Change.
+    </p>
 
+    <p>
+        Typically, the symbol <m>\Delta</m> (the Greek letter Delta) is used to mean <q>change in.</q> So, <m>\Delta y</m> stands for a change in <m>y</m> while <m>\Delta x</m> stands for a change in <m>x</m>.
+        In the definition above, <m>\Delta x</m> stands for the change in <m>x</m> between <m>x=a</m> and <m>x=b</m>.
+        This can be thought of as the distance between the numbers <m>a</m> and <m>b</m>, which is given by <m>\Delta x=b-a</m>.
+        The notation <m>\Delta y</m> stands for the change in <m>y=f(x)</m> that takes place as <m>x</m> changes from <m>x=a</m> to <m>x=b</m>.
+        That change is given by <m>\Delta y=f(b)-f(a)</m>.
+        The graph below illustrates the changes in <m>x</m> and <m>y</m>.
+    </p>
 
-
-<definition><title>Average Rate of Change</title>
-<statement>
-<p>
-Let <m>y</m> be a function of <m>x</m>, <m>y=f(x)</m>.
-Let <m>x=a</m> and <m>x=b</m> be given.
-The average rate of change of <m>y</m> between <m>x=a</m> and <m>x=b</m> is given by
-<md>
-\aroc = \dfrac{\text{Change in } y}{\text{Change in } x}=\dfrac{\Delta y}{\Delta x}=\dfrac{f(b)-f(a)}{b-a}.
-</md>
-</p>
-</statement>
-</definition>
-
-<p>
-    We'll use <m>\aroc</m> to abbreviate Average Rate of Change.
-</p>
-
-<p>
-Typically, the symbol <m>\Delta</m> (the Greek letter Delta) is used to mean <q>change in.</q> So, <m>\Delta y</m> stands for a change in <m>y</m> while <m>\Delta x</m> stands for a change in <m>x</m>.
-In the definition above, <m>\Delta x</m> stands for the change in <m>x</m> between <m>x=a</m> and <m>x=b</m>.
-This can be thought of as the distance between the numbers <m>a</m> and <m>b</m>, which is given by <m>\Delta x=b-a</m>.
-The notation <m>\Delta y</m> stands for the change in <m>y=f(x)</m> that takes place as <m>x</m> changes from <m>x=a</m> to <m>x=b</m>.
-That change is given by <m>\Delta y=f(b)-f(a)</m>.
-The graph below illustrates the changes in <m>x</m> and <m>y</m>.
-</p>
-
-<figure xml:id="fig_1_5_arc_graph">
-<interactive platform="jsxgraph" source="jsxgraph/jsx_1_5_arc_graph.js" width="60%">
-    <slate xml:id="jsx_1_5_arc_graph_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Change the values of <m>a</m> and <m>b</m> to see how the <m>\aroc</m> changes.</p>
-    </instructions>
-</interactive>
-</figure>
-
-
-<!-- <image width="50%" xml:id="fig_1_5_3">
+    <figure xml:id="fig_1_5_arc_graph">
+        <caption/>
+        <interactive platform="jsxgraph" source="jsxgraph/jsx_1_5_arc_graph.js" width="60%">
+            <slate xml:id="jsx_1_5_arc_graph_fig" surface="jsxboard"/>
+            <instructions>
+                <p>
+                    Change the values of <m>a</m> and <m>b</m> to see how the <m>\aroc</m> changes.
+                </p>
+            </instructions>
+        </interactive>
+    </figure>
+    <!-- <image width="50%" xml:id="fig_1_5_3">
 <shortdescription>
 A short description.
 </shortdescription>
@@ -250,54 +240,48 @@ x post scale = 1
 \end{tikzpicture}
 </latex-image>
 </image> -->
+    <example>
+        <statement>
+            <p>
+                Let <m>y=f(x)=x^{2}-2</m>.
+                Find the average rate of change of <m>y</m> between <m>x=1</m> and <m>x=3</m>.
+            </p>
+        </statement>
 
+        <solution>
+            <p>
+                We use the definition of the average rate of change with <m>a=1</m>, <m>b=3</m> and <m>y=f(x)=x^{2}-2</m>:
+                <md>
+                    \dfrac{\Delta y}{\Delta x}=\dfrac{f(3)-f(1)}{3-1}=\dfrac{(3^2-2)-(1^2-2)}{3-1}=\dfrac{7-(-1)}{2}=\dfrac{8}{2}=4
+                </md>
+                Therefore, the average rate of change of <m>y</m> between <m>x=1</m> and <m>x=3</m> is <m>4</m>.
+            </p>
+        </solution>
+    </example>
 
-<example>
-<statement>
     <p>
-    Let <m>y=f(x)=x^{2}-2</m>.
-    Find the average rate of change of <m>y</m> between <m>x=1</m> and <m>x=3</m>.
-    </p>
-</statement>
-
-<solution>
-<p>
-We use the definition of the average rate of change with <m>a=1</m>, <m>b=3</m> and <m>y=f(x)=x^{2}-2</m>:
-<md>
-\dfrac{\Delta y}{\Delta x}=\dfrac{f(3)-f(1)}{3-1}=\dfrac{(3^2-2)-(1^2-2)}{3-1}=\dfrac{7-(-1)}{2}=\dfrac{8}{2}=4
-</md>
-Therefore, the average rate of change of <m>y</m> between <m>x=1</m> and <m>x=3</m> is <m>4</m>.
-</p>
-</solution>
-</example>
-
-
-<p>
-This is not an applied example so <m>x</m> and <m>y</m> don't have real-life units.
-In general, the average rate of change <m>\dfrac{\Delta y}{\Delta x}</m> is measured in
-<md>
-    \text{units of }\aroc = \frac{\text{units for } y}{\text{unit for } x}
-</md>
-Were units associated with <m>x</m> and <m>y</m> in the last example, we would write that the average rate of change of <m>y</m> between <m>x=1</m> and <m>x=3</m> is <m>4 \; \frac{\text{units for } y}{\text{units for } x}</m>.
-</p>
-
-
-<p>
-Let's revisit <xref ref="example-ch1-nicotine"/> about nicotine leaving the body after a cigarette is smoked.
-</p>
-
-<example>
-<statement>
-    <p>
-    The amount of nicotine in a person's bloodstream, <m>N = f (t)</m>, in milligrams, is a function of the time <m>t</m>, in hours, that has passed since the person smoked a single cigarette.
-    The graph of the function <m>f(t)</m> is shown below.
+        This is not an applied example so <m>x</m> and <m>y</m> don't have real-life units.
+        In general, the average rate of change <m>\dfrac{\Delta y}{\Delta x}</m> is measured in
+        <md>
+            \text{units of }\aroc = \frac{\text{units for } y}{\text{unit for } x}
+        </md>
+        Were units associated with <m>x</m> and <m>y</m> in the last example, we would write that the average rate of change of <m>y</m> between <m>x=1</m> and <m>x=3</m> is <m>4 \; \frac{\text{units for } y}{\text{units for } x}</m>.
     </p>
 
-<image width="50%" xml:id="fig_1_5_4">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="1_5_4_fig">
+    <p>
+        Let's revisit <xref ref="example-ch1-nicotine"/> about nicotine leaving the body after a cigarette is smoked.
+    </p>
+
+    <example>
+        <statement>
+            <p>
+                The amount of nicotine in a person's bloodstream, <m>N = f (t)</m>, in milligrams, is a function of the time <m>t</m>, in hours, that has passed since the person smoked a single cigarette.
+                The graph of the function <m>f(t)</m> is shown below.
+            </p>
+
+            <image width="50%" xml:id="fig_1_5_4">
+                <shortdescription>A short description.</shortdescription>
+                <latex-image label="1_5_4_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=0,xmax=7.5,
@@ -311,228 +295,218 @@ x post scale = 1
 \addplot[domain=0:7] {2*(0.5)^(x/2)};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                </latex-image>
+            </image>
 
-<p>
-Use the graph to find and interpret the average rate of change of <m>N</m> between:
-<ol>
-<li>
-    <m>t=0</m> and <m>t=4</m>;
-</li>
+            <p>
+                Use the graph to find and interpret the average rate of change of <m>N</m> between:
+                <ol>
+                    <li><m>t=0</m> and <m>t=4</m>;</li>
+                    <li><m>t=2</m> and <m>t=4</m>.</li>
+                </ol>
+                Include units with your answers.
+            </p>
+        </statement>
 
-<li>
-    <m>t=2</m> and <m>t=4</m>.
-</li>
-</ol>
-Include units with your answers.
-</p>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            To find the average rate of change between <m>t=0</m> and <m>t=4</m>, we use the graph to find the values of the function <m>f(t)</m> at <m>t=0</m> and at <m>t=4</m>.
+                            At <m>t=0</m>, we have <m>N=f(0) = 2</m> milligrams.
+                            At <m>t=4</m>, <m>N = f(4)= 0.5</m> milligrams.
+                            Thus:
+                            <md>
+                                \aroc =\dfrac{\Delta N}{\Delta t}=\dfrac{f(4)-f(0)}{4-0}=\dfrac{0.5-2}{4-0}=\dfrac{-1.5}{4}=-0.375.
+                            </md>
+                            Here the variables are associated with units: <m>N</m> is measured in milligrams while <m>t</m> is measured in hours.
+                            Hence, <m>\Delta N</m> is measured in milligrams and <m>\Delta t</m> is measured in hours.
+                            The average rate of change has units <m>\frac{\text{milligrams}}{\text{hour}}</m> which can be written as <m>\frac{\text{mg}}{\text{hr}}</m>.
+                        </p>
 
-</statement>
+                        <p>
+                            Therefore, the average rate of change of <m>N</m> between <m>t=0</m> and <m>t=4</m> is
+                            <md>
+                                -0.375 \, \frac{\text{mg}}{\text{hr}}.
+                            </md>
+                            The rate is negative as the amount of nicotine decreased between <m>t=0</m> and <m>t=4</m>.
+                            For the interpretation, we would say that on the interval <m>0\leq t \leq 4</m>, nicotine leaves the body at the average rate of <m>0.375</m> milligrams per hour.
+                        </p>
+                    </li>
 
-<solution>
-    <p>
-<ol>
-<li>
-    <p>
-    To find the average rate of change between <m>t=0</m> and <m>t=4</m>, we use the graph to find the values of the function <m>f(t)</m> at <m>t=0</m> and at <m>t=4</m>.
-    At <m>t=0</m>, we have <m>N=f(0) = 2</m> milligrams.
-    At <m>t=4</m>, <m>N = f(4)= 0.5</m> milligrams.
-    Thus:
-    <md>
-        \aroc =\dfrac{\Delta N}{\Delta t}=\dfrac{f(4)-f(0)}{4-0}=\dfrac{0.5-2}{4-0}=\dfrac{-1.5}{4}=-0.375.
-    </md>
-    Here the variables are associated with units: <m>N</m> is measured in milligrams while <m>t</m> is measured in hours.
-    Hence, <m>\Delta N</m> is measured in milligrams and <m>\Delta t</m> is measured in hours.
-    The average rate of change has units <m>\frac{\text{milligrams}}{\text{hour}}</m> which can be written as <m>\frac{\text{mg}}{\text{hr}}</m>.
-    </p>
+                    <li>
+                        <p>
+                            We need values <m>f(2)</m> and <m>f(4)</m>, which are obtained from the graph: <m>f(2)=1</m> and <m>f(4)=0.5</m>.
+                            Hence,
+                            <md>
+                                \aroc =\dfrac{\Delta N}{\Delta t}=\dfrac{f(4)-f(2)}{4-2}=\dfrac{0.5-1}{2}=\dfrac{-0.5}{2}=-0.25 \, \frac{\text{mg}}{\text{hr}}.
+                            </md>
+                        </p>
 
-    <p>
-    Therefore, the average rate of change of <m>N</m> between <m>t=0</m> and <m>t=4</m> is
-    <md>
-        -0.375 \, \frac{\text{mg}}{\text{hr}}.
-    </md>
-    The rate is negative as the amount of nicotine decreased between <m>t=0</m> and <m>t=4</m>.
-    For the interpretation, we would say that on the interval <m>0\leq t \leq 4</m>, nicotine leaves the body at the average rate of <m>0.375</m> milligrams per hour.
-    </p>
-</li>
+                        <p>
+                            On the interval <m>2\leq t \leq 4</m>, nicotine leaves the body at the average rate of <m>0.25</m> milligrams per hour.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
 
-<li>
-    <p>
-    We need values <m>f(2)</m> and <m>f(4)</m>, which are obtained from the graph: <m>f(2)=1</m> and <m>f(4)=0.5</m>.
-    Hence,
-    <md>
-        \aroc =\dfrac{\Delta N}{\Delta t}=\dfrac{f(4)-f(2)}{4-2}=\dfrac{0.5-1}{2}=\dfrac{-0.5}{2}=-0.25 \, \frac{\text{mg}}{\text{hr}}.
-    </md>
-    </p>
+    <example>
+        <statement>
+            <p>
+                A population <m>P</m> of a small village at time <m>t</m>, measured in years since the year 2010, is given by <m>P=P(t)</m>.
+                Here are the annual readings:
+            </p>
 
-    <p>
-    On the interval <m>2\leq t \leq 4</m>, nicotine leaves the body at the average rate of <m>0.25</m> milligrams per hour.
-    </p>
-</li>
-</ol>
-    </p>
-</solution>
-</example>
+            <table xml:id="table-ch1-village">
+                <title/>
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell><m>t</m> (years)</cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>7</m></cell>
+                        <cell><m>8</m></cell>
+                        <cell><m>9</m></cell>
+                        <cell><m>10</m></cell>
+                    </row>
 
+                    <row>
+                        <cell><m>P(t)</m> (people)</cell>
+                        <cell><m>150</m></cell>
+                        <cell><m>160</m></cell>
+                        <cell><m>140</m></cell>
+                        <cell><m>180</m></cell>
+                        <cell><m>210</m></cell>
+                        <cell><m>200</m></cell>
+                        <cell><m>250</m></cell>
+                        <cell><m>290</m></cell>
+                        <cell><m>300</m></cell>
+                        <cell><m>350</m></cell>
+                        <cell><m>400</m></cell>
+                    </row>
+                </tabular>
+            </table>
 
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Find the change in the population <m>\Delta P</m> between <m>t=2</m> and <m>t=6</m>.
+                            What are the units of <m>\Delta P</m>?
+                        </p>
+                    </li>
 
-<example>
-<statement>
-    <p>
-    A population <m>P</m> of a small village at time <m>t</m>, measured in years since the year 2010, is given by <m>P=P(t)</m>.
-    Here are the annual readings:
-</p>
+                    <li>
+                        <p>
+                            Find the average rate of change in the population between <m>t=2</m> and <m>t=6</m>.
+                            What are the units of this rate of change?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
 
-<table xml:id="table-ch1-village"><title></title>
-    <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
-        <row>
-        <cell> <m>t</m> (years)</cell>
-        <cell> <m>0</m> </cell>
-        <cell> <m>1</m> </cell>
-        <cell> <m>2</m> </cell>
-        <cell> <m>3</m> </cell>
-        <cell> <m>4</m> </cell>
-        <cell> <m>5</m> </cell>
-        <cell> <m>6</m> </cell>
-        <cell> <m>7</m> </cell>
-        <cell> <m>8</m> </cell>
-        <cell> <m>9</m> </cell>
-        <cell> <m>10</m> </cell>
-        </row>
-        <row>
-            <cell> <m>P(t)</m> (people)</cell>
-            <cell> <m>150</m> </cell>
-            <cell> <m>160</m> </cell>
-            <cell> <m>140</m> </cell>
-            <cell> <m>180</m> </cell>
-            <cell> <m>210</m> </cell>
-            <cell> <m>200</m> </cell>
-            <cell> <m>250</m> </cell>
-            <cell> <m>290</m> </cell>
-            <cell> <m>300</m> </cell>
-            <cell> <m>350</m> </cell>
-            <cell> <m>400</m> </cell>
-        </row>
-        </tabular>
-</table>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            The change in <m>P</m> between <m>t=2</m> and <m>t=6</m>, <m>\Delta P</m>, tells us by how much the population changed from <m>t=2</m> and <m>t=6</m>:
+                            <md>
+                                \Delta P=P(6)-P(2)=250-140=110.
+                            </md>
+                            The population increased by <m>110</m> people from <m>t=2</m> to <m>t=6</m> (from 2012 to 2016).
+                        </p>
+                    </li>
 
-<p>
-<ol>
-<li>
-<p>
-    Find the change in the population <m>\Delta P</m> between <m>t=2</m> and <m>t=6</m>.
-    What are the units of <m>\Delta P</m>?
-</p>
-</li>
+                    <li>
+                        <p>
+                            The average <alert>rate</alert> of change tells us how fast the population was changing between <m>t=2</m> and <m>t=6</m> and is measured in people/year:
+                            <md>
+                                \aroc =\dfrac{\Delta P}{\Delta t}=\dfrac{P(6)-P(2)}{6-2}=\dfrac{250-140}{6-2}=\dfrac{110}{4}= 27.5 \, \frac{\text{people}}{\text{year}}.
+                            </md>
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
 
-<li>
-<p>
-    Find the average rate of change in the population between <m>t=2</m> and <m>t=6</m>.
-    What are the units of this rate of change?
-</p>
-</li>
-</ol>
-</p>
+    <example>
+        <statement>
+            <p>
+                A ball is dropped from the rooftop of a building 150 feet tall.
+                The height of the ball above the ground, <m>h(t)</m>, in feet, <m>t</m> seconds after the ball is dropped is:
+                <md>
+                    h(t)=150-16t^{2}.
+                </md>
 
-</statement>
+                <ol>
+                    <li>
+                        <p>
+                            Find the average rate of change of <m>h(t)</m> between <m>t=0</m> and <m>t=2</m>.
+                        </p>
+                    </li>
 
-<solution>
-<p>
-<ol>
-<li>
-<p>
-    The change in <m>P</m> between <m>t=2</m> and <m>t=6</m>, <m>\Delta P</m>, tells us by how much the population changed from <m>t=2</m> and <m>t=6</m>:
-    <md>
-    \Delta P=P(6)-P(2)=250-140=110.
-    </md>
-    The population increased by <m>110</m> people from <m>t=2</m> to <m>t=6</m> (from 2012 to 2016).
-</p>
-</li>
+                    <li>
+                        <p>
+                            When will the ball hit the ground?
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
 
-<li>
-<p>
-    The average <alert>rate</alert> of change tells us how fast the population was changing between <m>t=2</m> and <m>t=6</m> and is measured in people/year:
-    <md>
-    \aroc =\dfrac{\Delta P}{\Delta t}=\dfrac{P(6)-P(2)}{6-2}=\dfrac{250-140}{6-2}=\dfrac{110}{4}= 27.5 \, \frac{\text{people}}{\text{year}}.
-    </md>
-</p>
-</li>
-</ol>
-    </p>
-</solution>
-</example>
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            We use the definition of the average rate of change:
+                            <md>
+                                <mrow>\aroc \amp \;=\; \dfrac{\Delta h}{\Delta t}\;=\; \dfrac{h(2)-h(0)}{2-0} </mrow>
+                                <mrow> \amp \;=\; \dfrac{(150-16\cdot 2^2)-(150-16\cdot 0^2)}{2}</mrow>
+                                <mrow>\amp \;=\; \dfrac{86-150}{2}= -32 \, \frac{\text{ft}}{\text{sec}}</mrow>
+                            </md>
+                        </p>
 
+                        <p>
+                            This can also be thought of as the average velocity of the ball between <m>t=0</m> and <m>t=2</m>.
+                            The velocity is negative because the height is decreasing.
+                        </p>
+                    </li>
 
-<example>
-<statement>
-    <p>
-    A ball is dropped from the rooftop of a building 150 feet tall.
-    The height of the ball above the ground, <m>h(t)</m>, in feet, <m>t</m> seconds after the ball is dropped is:
-    <md>
-        h(t)=150-16t^{2}.
-    </md>
-    <ol>
-    <li>
-    <p>
-        Find the average rate of change of <m>h(t)</m> between <m>t=0</m> and <m>t=2</m>.
-    </p>
-    </li>
+                    <li>
+                        <p>
+                            The ball hits the ground when it falls to a height of <m>0</m> feet, so we solve the equation <m>h(t)=150-16t^{2}=0</m> for <m>t</m>:
+                            <md>
+                                <mrow>150-16t^{2} \amp \; = \; 0 </mrow>
+                                <mrow>150 \amp \; = \; 16t^{2}</mrow>
+                                <mrow>\dfrac{150}{16} \amp \; = \; t^{2}</mrow>
+                                <mrow>t^{2} \amp \; = \; 9.375 </mrow>
+                                <mrow>t \amp \; = \; \pm\sqrt{9.375}</mrow>
+                            </md>
+                        </p>
 
-    <li>
-    <p>
-        When will the ball hit the ground?
-    </p>
-    </li>
-</ol>
-    </p>
-</statement>
+                        <p>
+                            Mathematically, we get two solutions: <m>t=\sqrt{9.375}</m> and <m>t=-\sqrt{9.375}</m>.
+                            However, only one makes sense in the applied context for our problem.
+                            As <m>t</m> is the number of seconds after the ball is dropped, a negative answer does not make sense <mdash/> the ball can't hit the ground before it was dropped!
+                            Hence, the ball hits the ground <m>t=\sqrt{9.375}\approx 3.062</m> seconds after it is dropped.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
 
-<solution>
-<p>
-<ol>
-<li>
-<p>
-    We use the definition of the average rate of change:
-<md>
-<mrow>\aroc \amp \;=\; \dfrac{\Delta h}{\Delta t}\;=\; \dfrac{h(2)-h(0)}{2-0} </mrow>
-<mrow> \amp \;=\; \dfrac{(150-16\cdot 2^2)-(150-16\cdot 0^2)}{2}</mrow>
-<mrow>\amp \;=\; \dfrac{86-150}{2}= -32 \, \frac{\text{ft}}{\text{sec}}</mrow>
-</md>
-</p>
-<p>
-    This can also be thought of as the average velocity of the ball between <m>t=0</m> and <m>t=2</m>.
-    The velocity is negative because the height is decreasing.
-</p>
-</li>
-
-<li>
-<p>
-    The ball hits the ground when it falls to a height of <m>0</m> feet, so we solve the equation <m>h(t)=150-16t^{2}=0</m> for <m>t</m>:
-<md>
-<mrow>150-16t^{2} \amp \; = \; 0 </mrow>
-<mrow>150 \amp \; = \; 16t^{2}</mrow>
-<mrow>\dfrac{150}{16} \amp \; = \; t^{2}</mrow>
-<mrow>t^{2} \amp \; = \; 9.375 </mrow>
-<mrow>t \amp \; = \; \pm\sqrt{9.375}</mrow>
-</md>
-</p>
-
-<p>
-Mathematically, we get two solutions: <m>t=\sqrt{9.375}</m> and <m>t=-\sqrt{9.375}</m>.
-However, only one makes sense in the applied context for our problem.
-As <m>t</m> is the number of seconds after the ball is dropped, a negative answer does not make sense<mdash/>the ball can't hit the ground before it was dropped! Hence, the ball hits the ground <m>t=\sqrt{9.375}\approx 3.062</m> seconds after it is dropped.
-</p>
-</li>
-</ol>  
-</p>
-</solution>
-</example>
-
-
-
-
-<xi:include href="exercises/ex_1_5.ptx"/>
-<!-- <xi:include href="worksheet/ws_1_5.ptx"/> -->
-
+    <xi:include href="exercises/ex_1_5.ptx"/>
 </section>

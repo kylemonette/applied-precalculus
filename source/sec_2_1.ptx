@@ -1,283 +1,306 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_2_1">
+    <title>Properties of Linear Functions</title>
 
-    
-<title>Properties of Linear Functions</title>
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
+        <ol>
+            <li>
+                <p>
+                    Identify the slope and vertical intercept of a linear function <m>f(x)=mx+b</m> from its formula, table of values, or graph, and interpret them in practical terms as a constant rate of change and an initial value.
+                </p>
+            </li>
 
+            <li>
+                <p>
+                    Use the slope formula to compute the slope of a line through two given points and use it, together with a point, to find the equation of a linear function.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Graph a linear function given its equation and recognize constant functions and horizontal lines as having slope <m>m=0</m> and vertical lines as having undefined slope and not representing functions.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
+        <definition>
+            <title>Linear Function</title>
+
+            <statement>
+                <p>
+                    A function <m>y=f(x)</m> is called a <term>linear function</term> if it can be written in the form
+                    <md>
+                        f(x)=mx+b
+                    </md>
+                    where <m>m</m> and <m>b</m> are constants.
+                    The constant <m>m</m> is called the <term>slope</term> of the function <m>y=f(x)</m>.
+                    The constant <m>b</m> is the <term>initial value</term> of <m>f(x)</m>; it is also the vertical intercept of the function as <m>f(0)=m\cdot 0+b=b</m>.
+                </p>
+            </statement>
+        </definition>
+
         <p>
-            After completing this section, you should be able to do the following.
+            A linear function <m>y=f(x)</m> written in the form <m>f(x)=mx+b</m> or <m>y=mx+b</m> is said to be in <alert>slope-intercept form</alert>.
         </p>
+        <aside>
+            <p>
+                Another form of linear functions will be presented in the next section.
+            </p>
+        </aside>
     </introduction>
-    <ol>
-        <li>
-            <p>
-            Identify the slope and vertical intercept of a linear function <m>f(x)=mx+b</m> from its formula, table of values, or graph, and interpret them in practical terms as a constant rate of change and an initial value.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Use the slope formula to compute the slope of a line through two given points and use it, together with a point, to find the equation of a linear function.
-            </p>
-        </li>
-        <li>
-            <p>
-            Graph a linear function given its equation and recognize constant functions and horizontal lines as having slope <m>m=0</m> and vertical lines as having undefined slope and not representing functions.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>Practical Interpretation of the Slope and Vertical Intercept</title>
 
-<introduction>
-<definition>
-<title>Linear Function</title>
-    <statement>
         <p>
-        A function <m>y=f(x)</m> is called a <term>linear function</term> if it can be written in the form <md>f(x)=mx+b</md> where <m>m</m> and <m>b</m> are constants.
-The constant <m>m</m> is called the <term>slope</term> of the function <m>y=f(x)</m>.
-The constant <m>b</m> is the <term>initial value</term> of <m>f(x)</m>; it is also the vertical intercept of the function as <m>f(0)=m\cdot 0+b=b</m>.
+            Applied examples of linear functions will help us understand the practical meaning of the slope <m>m</m> and the initial value <m>b</m>.
+            In such examples, the input and output variables will often be denoted by letters that correspond to their practical meaning rather than by <m>x</m> and <m>y</m>.
         </p>
-    </statement>
-</definition>
 
+        <example xml:id="example-ch2-maya-car">
+            <statement>
+                <p>
+                    Maya is saving money to purchase a car.
+                    She initially has <m>\$60</m> in savings and for each hour she works at her summer job she is able to put an additional <m>\$5</m> into savings.
+                    Find a formula for the function <m>A=f(n)</m> that gives the total amount of money, <m>A</m>, that Maya has in savings after working <m>n</m> hours.
+                </p>
+            </statement>
 
-<p>
-A linear function <m>y=f(x)</m> written in the form <m>f(x)=mx+b</m> or <m>y=mx+b</m> is said to be in <alert>slope-intercept form</alert>.
-</p>
+            <solution>
+                <p>
+                    We begin with a table of values reflecting the total amount of money Maya will have in savings after working a certain number of hours.
+                </p>
 
-<aside>
-    <p>
-        Another form of linear functions will be presented in the next section.
-    </p>
-</aside>
+                <table xml:id="table-ch2-maya-car">
+                    <title/>
+                    <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                        <row header="yes">
+                            <cell><alert>If Maya works <ellipsis/></alert></cell>
+                            <cell><alert>Maya's savings will be <ellipsis/></alert></cell>
+                        </row>
 
-</introduction>
+                        <row>
+                            <cell>0 hours</cell>
+                            <cell><m>5(0)+60=\$60</m></cell>
+                        </row>
 
+                        <row>
+                            <cell>1 hour</cell>
+                            <cell><m>5(1)+60=\$65</m></cell>
+                        </row>
 
+                        <row>
+                            <cell>2 hours</cell>
+                            <cell><m>5(2)+60=\$70</m></cell>
+                        </row>
 
+                        <row>
+                            <cell>3 hours</cell>
+                            <cell><m>5(3)+60=\$75</m></cell>
+                        </row>
 
-<subsection>
-<title>Practical Interpretation of the Slope and Vertical Intercept</title>
-    
-<p>
-Applied examples of linear functions will help us understand the practical meaning of the slope <m>m</m> and the initial value <m>b</m>. In such examples, the input and output variables will often be denoted by letters that correspond to their practical meaning rather than by <m>x</m> and <m>y</m>.
-</p>
+                        <row>
+                            <cell><m>\vdots</m></cell>
+                            <cell><m>\vdots</m></cell>
+                        </row>
+                    </tabular>
+                </table>
 
+                <p>
+                    Recognizing the pattern unfolding, a formula for the amount of money <m>A</m> that Maya has in savings as a function of the number of hours <m>n</m> that she works is
+                    <md>
+                        A=f(n)=5n+60
+                    </md>.
+                </p>
+            </solution>
+        </example>
 
-<example xml:id="example-ch2-maya-car">
-<statement>
-    <p>
-    Maya is saving money to purchase a car. She initially has <m>\$60</m> in savings and for each hour she works at her summer job she is able to put an additional <m>\$5</m> into savings. Find a formula for the function <m>A=f(n)</m> that gives the total amount of money, <m>A</m>, that Maya has in savings after working <m>n</m> hours.
-    </p>
-</statement>
+        <p>
+            The function <m>A=f(n)</m> found in the solution to <xref ref="example-ch2-maya-car"/> is a linear function with slope <m>m=5</m> and vertical intercept <m>b=60</m>.
+            Mathematically, the domain of the function <m>f(n)= 5n+60</m> consists of all inputs <m>n</m>, but in the applied context of the function, it is not possible for Maya to work a negative number of hours.
+            For this reason, we must restrict the domain to <m>n\geq0</m>.
+        </p>
 
-<solution>
-    <p>
-    We begin with a table of values reflecting the total amount of money Maya will have in savings after working a certain number of hours.
-    </p>
+        <p>
+            Observe that, as in most applied examples, the input and output variables have units: <m>n</m> is measured in hours worked while <m>A</m> is measured in dollars.
+            Likewise, both constants <m>m=5</m> and <m>b=60</m> have units and a practical meaning:
+        </p>
 
-<table xml:id="table-ch2-maya-car">
-<title></title>
-<tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
-<row header="yes">
-    <cell><alert>If Maya works <ellipsis></ellipsis></alert></cell>
-    <cell><alert>Maya's savings will be <ellipsis></ellipsis></alert></cell>
-</row>
-<row>
-    <cell>0 hours</cell>
-    <cell><m>5(0)+60=\$60</m></cell>
-</row>
-<row>
-    <cell>1 hour</cell>
-    <cell><m>5(1)+60=\$65</m></cell>
-</row>
-<row>
-    <cell>2 hours</cell>
-    <cell><m>5(2)+60=\$70</m></cell>
-</row>
-<row>
-    <cell>3 hours</cell>
-    <cell><m>5(3)+60=\$75</m></cell>
-</row>
-<row>
-    <cell><m>\vdots</m></cell>
-    <cell><m>\vdots</m></cell>
-</row>
-</tabular>
-</table>
+        <p>
+            <ul>
+                <li>
+                    <p>
+                        <m>b=60</m> dollars is the initial value of <m>A</m> at <m>n=0</m>; that is, the amount of money that Maya has in savings initially.
+                    </p>
+                </li>
 
-<p>
-Recognizing the pattern unfolding, a formula for the amount of money <m>A</m> that Maya has in savings as a function of the number of hours <m>n</m> that she works is <md>A=f(n)=5n+60</md>.
-</p>
+                <li>
+                    <p>
+                        The slope <m>m=5</m> indicates that Maya saves <m>\$5</m> per each hour worked.
+                        Hence, the slope <m>m=5</m> is measured in dollars per hour and gives the rate at which Maya's savings <m>A</m> grow as the number of hours <m>n</m> she works increases.
+                    </p>
+                </li>
+            </ul>
+        </p>
 
-</solution>
-</example>
+        <p>
+            We can additionally observe that the average rate of change between any two distinct inputs for the function <m>f(n)=5n+60</m> is always the same.
+            The below calculations illustrate this.
+        </p>
+        <aside>
+            <p>
+                Recall that average rate of change of a function <m>f(x)</m> between <m>x=a</m> and <m>x=b</m> is given by <m>\frac{f(b)-f(a)}{b-a}</m>.
+            </p>
+        </aside>
 
-
-
-<p>
-The function <m>A=f(n)</m> found in the solution to <xref ref="example-ch2-maya-car" /> is a linear function with slope <m>m=5</m> and vertical intercept <m>b=60</m>. Mathematically, the domain of the function <m>f(n)= 5n+60</m> consists of all inputs <m>n</m>, but in the applied context of the function, it is not possible for Maya to work a negative number of hours. For this reason, we must restrict the domain to <m>n\geq0</m>.
-</p>
-
-<p>
-Observe that, as in most applied examples, the input and output variables have units: <m>n</m> is measured in hours worked while <m>A</m> is measured in dollars. Likewise, both constants <m>m=5</m> and <m>b=60</m> have units and a practical meaning:
-</p>
-
-
-<p>
-<ul>
-<li>
-<p>
-<m>b=60</m> dollars is the initial value of <m>A</m> at <m>n=0</m>; that is, the amount of money that Maya has in savings initially.
-</p>
-</li>
-
-<li>
-<p>
-The slope <m>m=5</m> indicates that Maya saves <m>\$5</m> per each hour worked. Hence, the slope <m>m=5</m> is measured in dollars per hour and gives the rate at which Maya's savings <m>A</m> grow as the number of hours <m>n</m> she works increases.
-</p>
-</li>
-</ul>
-</p>
-
-
-<p>
-We can additionally observe that the average rate of change between any two distinct inputs for the function <m>f(n)=5n+60</m> is always the same. The below calculations illustrate this.
-</p>
-
-<aside>
-<p>
-Recall that average rate of change of a function <m>f(x)</m> between <m>x=a</m> and <m>x=b</m> is given by <m>\frac{f(b)-f(a)}{b-a}</m>.
-</p>
-</aside>
-
-<p>
-<md>
-<mrow>\aroc\text{ from } n=0 \text{ to } n=1:
+        <p>
+            <md>
+                <mrow>\aroc\text{ from } n=0 \text{ to } n=1:
 \amp
 \quad \frac{65-60}{1-0}\;=\;\frac{5}{1} \;=\; 5
 \amp \quad \text{dollars}/\text{hour}</mrow>
-<mrow>\aroc\text{ from } n=1 \text{ to } n=2: \amp
+                <mrow>\aroc\text{ from } n=1 \text{ to } n=2: \amp
 \quad \frac{70-65}{2-1}\;=\;\frac{5}{1}\;=5\; \amp \quad \text{dollars}/\text{hour}</mrow>
-<mrow>\aroc\text{ from } n=2 \text{ to } n=3: \amp
+                <mrow>\aroc\text{ from } n=2 \text{ to } n=3: \amp
 \quad \frac{75-70}{3-2}\;=\;\frac{5}{1}\;=5\;  \amp \quad \text{dollars}/\text{hour}</mrow>
-<mrow>\aroc\text{ from } n=0 \text{ to }n=3: \amp
+                <mrow>\aroc\text{ from } n=0 \text{ to }n=3: \amp
 \quad \frac{75-60}{3-0}\;=\;\frac{15}{3}\;=5 \; \amp \quad \text{dollars}/\text{hour}</mrow>
-</md>
-</p>
-
-
-<p>
-Maya's savings grow at a constant rate with respect to the hours that she works, and that constant rate of 5 dollars/hour is the same as the slope of the linear function <m>f(n)=5n+60.</m> In general, for linear functions<mdash/>and only for linear functions<mdash/>the rate of change of the dependent variable with respect to the independent variable is constant and equal to the slope.
-</p>
-
-<theorem xml:id="res-ch2-slope-roc">
-<title>Slope as Rate of Change</title>
-    <statement>
-        <p>
-        For every linear function <m>y=f(x)=mx+b</m>, the rate of change of <m>y</m> with respect to <m>x</m> is constant and equal to <m>m</m>, with units <md>\dfrac{\text{units of } y}{\text{units of } x}.</md> Further, <m>b</m> represents the initial value of the function, <m>b=f(0)</m>, and is measured in units of <m>y</m>.
+            </md>
         </p>
-    </statement>
-</theorem>
 
+        <p>
+            Maya's savings grow at a constant rate with respect to the hours that she works, and that constant rate of 5 dollars/hour is the same as the slope of the linear function <m>f(n)=5n+60.</m> In general, for linear functions <mdash/> and only for linear functions <mdash/> the rate of change of the dependent variable with respect to the independent variable is constant and equal to the slope.
+        </p>
 
-<p>
-The constancy of the rate of change of a linear function can be proven using algebraic properties of linear functions. Take two distinct inputs <m>x_1</m>, <m>x_2</m> and the corresponding outputs <m>y_1=f(x_1)</m>, <m>y_2=f(x_2)</m>. The average rate of change of <m>f(x)</m> between <m>x_1</m> and <m>x_2</m> is given by:
-</p>
+        <theorem xml:id="res-ch2-slope-roc">
+            <title>Slope as Rate of Change</title>
 
-<p>
-<md>
-<mrow>\frac{\Delta y}{\Delta x} \; =\;  \frac{f(x_2)-f(x_1)}{x_2-x_1} \amp \;=\; \frac{(mx_2+b)-(mx_1+b)}{x_2-x_1} </mrow>
-<mrow>\amp \;=\; \frac{mx_2+b-mx_1-b}{x_2-x_1} </mrow>
-<mrow>\amp \;=\; \frac{m(x_2-x_1)}{x_2-x_1}</mrow>
-<mrow>\amp \;=\; m </mrow>
-</md>
-</p>
+            <statement>
+                <p>
+                    For every linear function <m>y=f(x)=mx+b</m>, the rate of change of <m>y</m> with respect to <m>x</m> is constant and equal to <m>m</m>, with units
+                    <md>
+                        \dfrac{\text{units of } y}{\text{units of } x}.
+                    </md>
+                    Further, <m>b</m> represents the initial value of the function, <m>b=f(0)</m>, and is measured in units of <m>y</m>.
+                </p>
+            </statement>
+        </theorem>
 
+        <p>
+            The constancy of the rate of change of a linear function can be proven using algebraic properties of linear functions.
+            Take two distinct inputs <m>x_1</m>, <m>x_2</m> and the corresponding outputs <m>y_1=f(x_1)</m>, <m>y_2=f(x_2)</m>.
+            The average rate of change of <m>f(x)</m> between <m>x_1</m> and <m>x_2</m> is given by:
+        </p>
 
-<example>
-<statement>
-    <p>
-    The number of people residing in the town of Linesville <m>t</m> years after 2010 is given by the linear function <md>P(t)=150t+4500.</md> Identify the slope and the initial value of the function. Include units and explain their practical meaning.
-    </p>
-</statement>
+        <p>
+            <md>
+                <mrow>\frac{\Delta y}{\Delta x} \; =\;  \frac{f(x_2)-f(x_1)}{x_2-x_1} \amp \;=\; \frac{(mx_2+b)-(mx_1+b)}{x_2-x_1} </mrow>
+                <mrow>\amp \;=\; \frac{mx_2+b-mx_1-b}{x_2-x_1} </mrow>
+                <mrow>\amp \;=\; \frac{m(x_2-x_1)}{x_2-x_1}</mrow>
+                <mrow>\amp \;=\; m </mrow>
+            </md>
+        </p>
 
-<solution>
-<p>
-From the formula for <m>P(t)</m>, we see that the slope of the function is <m>m=150</m> and the initial value is <m>b=4500</m>.
-</p>
+        <example>
+            <statement>
+                <p>
+                    The number of people residing in the town of Linesville <m>t</m> years after 2010 is given by the linear function
+                    <md>
+                        P(t)=150t+4500.
+                    </md>
+                    Identify the slope and the initial value of the function.
+                    Include units and explain their practical meaning.
+                </p>
+            </statement>
 
-<p>
-The slope <m>m</m> is measured in people/year. In practical terms, the slope tells us that the population of Linesville increases at a constant rate of <m>150</m> people per year.
-</p>
+            <solution>
+                <p>
+                    From the formula for <m>P(t)</m>, we see that the slope of the function is <m>m=150</m> and the initial value is <m>b=4500</m>.
+                </p>
 
-<p>
-The initial value <m>b=4500</m> is measured in number of people. It represents the initial number of residents in the town of Linesville, i.e., the number of residents at <m>t=0</m>. As time <m>t=0</m> corresponds to the year 2010, this means that the population of Linesville was 4500 people in 2010.
-</p>
-</solution>
-</example>
+                <p>
+                    The slope <m>m</m> is measured in people/year.
+                    In practical terms, the slope tells us that the population of Linesville increases at a constant rate of <m>150</m> people per year.
+                </p>
 
+                <p>
+                    The initial value <m>b=4500</m> is measured in number of people.
+                    It represents the initial number of residents in the town of Linesville, i.e., the number of residents at <m>t=0</m>.
+                    As time <m>t=0</m> corresponds to the year 2010, this means that the population of Linesville was 4500 people in 2010.
+                </p>
+            </solution>
+        </example>
 
+        <example xml:id="example-ch2-water-leak">
+            <statement>
+                <p>
+                    A container holding 50 gallons of water has sprung a leak.
+                    Water is leaking out at a rate of <m>5</m> gallons/hour.
+                    Let <m>W(t)</m> be the amount of water in the container, in gallons, <m>t</m> hours after the leak began.
+                    Find a formula for the function <m>W(t)</m>.
+                </p>
+            </statement>
 
-<example xml:id="example-ch2-water-leak">
-<statement>
-    <p>
-    A container holding 50 gallons of water has sprung a leak. Water is leaking out at a rate of <m>5</m> gallons/hour. Let <m>W(t)</m> be the amount of water in the container, in gallons, <m>t</m> hours after the leak began. Find a formula for the function <m>W(t)</m>.
-    </p>
-</statement>
+            <solution>
+                <p>
+                    Water is leaking out at a constant rate so <m>W(t)</m> is a linear function.
+                    Hence <m>W(t)=mt+b</m>.
+                </p>
 
-<solution>
-    <p>
-    Water is leaking out at a constant rate so <m>W(t)</m> is a linear function. Hence <m>W(t)=mt+b</m>.
-    </p>
+                <p>
+                    The amount of water in the container is <em>decreasing</em> at a rate 5 gallons/hour.
+                    This means that the rate of change or slope of <m>W(t)</m> is <m>-5</m> gallons/hour.
+                    That is, <m>m=-5</m>.
+                </p>
 
-<p>
-The amount of water in the container is <em>decreasing</em> at a rate 5 gallons/hour. This means that the rate of change or slope of <m>W(t)</m> is <m>-5</m> gallons/hour. That is, <m>m=-5</m>.
-</p>
+                <p>
+                    The initial amount of water is <m>W(0)=50</m> gallons, so <m>b=50</m>.
+                    The formula for <m>W(t)</m> is:
+                    <md>
+                        W(t)=-5t+50.
+                    </md>
+                </p>
+            </solution>
+        </example>
+    </subsection>
 
-<p>
-The initial amount of water is <m>W(0)=50</m> gallons, so <m>b=50</m>. The formula for <m>W(t)</m> is: <md>W(t)=-5t+50.</md>
-</p>
-</solution>
-</example>
+    <subsection>
+        <title>Graphs of Linear Functions</title>
 
+        <p>
+            We will next explore the graphs of linear functions.
+        </p>
 
+        <example>
+            <statement>
+                <p>
+                    In <xref ref="example-ch2-maya-car"/>, Maya's savings <m>A</m>, in dollars, as a function of the number of hours, <m>n</m>, was given by
+                    <md>
+                        A=f(n)=5n+60.
+                    </md>
+                    Use <xref ref="table-ch2-maya-car"/> to create a graph of the function <m>f(n)</m>.
+                </p>
+            </statement>
 
+            <solution>
+                <p>
+                    <xref ref="table-ch2-maya-car"/> contains the points <m>(0,60)</m>, <m>(1,65)</m>, <m>(2,70)</m>, and <m>(3,75)</m>.
+                    By plotting these points, we obtain the following graph.
+                    It is clear that the points lie along a straight line.
+                </p>
 
-</subsection>
-
-
-
-<subsection>
-<title>Graphs of Linear Functions</title>
-
-<p>
-We will next explore the graphs of linear functions.
-</p>
-
-
-<example>
-<statement>
-<p>
-In <xref ref="example-ch2-maya-car" />, Maya's savings <m>A</m>, in dollars, as a function of the number of hours, <m>n</m>, was given by <md>A=f(n)=5n+60.</md> Use <xref ref="table-ch2-maya-car" /> to create a graph of the function <m>f(n)</m>.
-</p>
-</statement>
-
-<solution>
-<p>
-<xref ref="table-ch2-maya-car" /> contains the points <m>(0,60)</m>, <m>(1,65)</m>, <m>(2,70)</m>, and <m>(3,75)</m>. By plotting these points, we obtain the following graph. It is clear that the points lie along a straight line.
-</p>
-
-<image width="50%" xml:id="fig_2_1_1">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="2_1_1_fig">
+                <image width="50%" xml:id="fig_2_1_1">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="2_1_1_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=0,xmax=3.25,
@@ -297,75 +320,86 @@ x post scale = 1.2
 };
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                    </latex-image>
+                </image>
+            </solution>
+        </example>
 
-</solution>
-</example>
+        <theorem>
+            <title>Graph of a Linear Function</title>
 
+            <statement>
+                <p>
+                    The graph of a linear function
+                    <md>
+                        y=f(x)=mx+b
+                    </md>
+                    is a straight line with slope <m>m</m> and vertical intercept <m>b</m>.
+                    The equation of the line in the <alert>slope-intercept</alert> form is <m>y=mx+b</m>.
+                </p>
 
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                If the slope <m>m \gt 0</m>, the function <m>f(x)</m> is increasing and its graph is climbing as <m>x</m> increases.
+                            </p>
+                        </li>
 
-<theorem>
-<title>Graph of a Linear Function</title>
-    <statement>
+                        <li>
+                            <p>
+                                If the slope <m>m \lt 0</m>, the function <m>f(x)</m> is decreasing and its graph is falling as <m>x</m> increases.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                If the slope <m>m=0</m>, the function <m>f(x)</m> is the constant function <m>f(x)=b</m>, and its graph is the horizontal line <m>y=b</m>.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </theorem>
+
         <p>
-        The graph of a linear function <md>y=f(x)=mx+b</md> is a straight line with slope <m>m</m> and vertical intercept <m>b</m>. The equation of the line in the <alert>slope-intercept</alert> form is <m>y=mx+b</m>.
+            In the following figure, we can see how the slope and vertical intercept change the graph of the function.
         </p>
-<p><ul>
-<li>
-<p>
-If the slope <m>m \gt 0</m>, the function <m>f(x)</m> is increasing and its graph is climbing as <m>x</m> increases.
-</p>
-</li>
 
-<li>
-<p>
-If the slope <m>m \lt 0</m>, the function <m>f(x)</m> is decreasing and its graph is falling as <m>x</m> increases.
-</p>
-</li>
+        <figure xml:id="fig_2_1_linear_graph">
+            <caption/>
+            <interactive platform="jsxgraph" source="jsxgraph/jsx_2_1_linear_graph.js" width="60%">
+                <slate xml:id="jsx_2_1_linear_graph_fig" surface="jsxboard"/>
+                <instructions>
+                    <p>
+                        Change the values of the vertical intercept <m>b</m> and the other point to see how the corresponding linear function changes.
+                    </p>
+                </instructions>
+            </interactive>
+        </figure>
 
-<li>
-<p>
-If the slope <m>m=0</m>, the function <m>f(x)</m> is the constant function <m>f(x)=b</m>, and its graph is the horizontal line <m>y=b</m>.
-</p>
-</li>
-</ul>
-</p>
-</statement>
-</theorem>
+        <example>
+            <statement>
+                <p>
+                    Consider the function <m>W(t)</m> from <xref ref="example-ch2-water-leak"/>, which gives the amount of water in a container, <m>W(t)</m>, in gallons, <m>t</m> hours after the container sprung a leak:
+                    <md>
+                        W(t)=-5t+50.
+                    </md>
+                    Create a graph of the function <m>W(t)</m>.
+                    What restriction should be placed on the domain of <m>W(t)</m> in the applied context of this exercise?
+                </p>
+            </statement>
 
-<p>
-    In the following figure, we can see how the slope and vertical intercept change the graph of the function.
-</p>
+            <solution>
+                <p>
+                    The slope <m>m=-5</m> is negative, and thus the graph is decreasing: for each 1 hour increase in <m>t</m>, <m>W(t)</m> decreases by <m>5</m>.
+                    The vertical intercept is <m>b=50</m> gallons.
+                    Using this information, we construct the following graph.
+                </p>
 
-<figure xml:id="fig_2_1_linear_graph">
-<caption></caption>
-<interactive platform="jsxgraph" source="jsxgraph/jsx_2_1_linear_graph.js" width="60%">
-    <slate xml:id="jsx_2_1_linear_graph_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Change the values of the vertical intercept <m>b</m> and the other point to see how the corresponding linear function changes.</p>
-    </instructions>
-</interactive>
-</figure>
-
-
-<example>
-<statement>
-    <p>
-    Consider the function <m>W(t)</m> from <xref ref="example-ch2-water-leak" />, which gives the amount of water in a container, <m>W(t)</m>, in gallons, <m>t</m> hours after the container sprung a leak: <md>W(t)=-5t+50.</md> Create a graph of the function <m>W(t)</m>. What restriction should be placed on the domain of <m>W(t)</m> in the applied context of this exercise?
-    </p>
-</statement>
-
-<solution>
-    <p>
-    The slope <m>m=-5</m> is negative, and thus the graph is decreasing: for each 1 hour increase in <m>t</m>, <m>W(t)</m> decreases by <m>5</m>. The vertical intercept is <m>b=50</m> gallons. Using this information, we construct the following graph.
-    </p>
-
-<image width="50%" xml:id="fig_2_1_2">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="2_1_2_fig">
+                <image width="50%" xml:id="fig_2_1_2">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="2_1_2_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=0,xmax=10.9,
@@ -380,55 +414,58 @@ xlabel=\(t\text{ (hours)}\), ylabel=\(W\text{ (gallons)}\),
 \addplot[domain=0:10] {-5*x+50};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                    </latex-image>
+                </image>
 
-<p>
-The practical significance of vertical and horizontal intercepts is apparent from the graph. The vertical intercept, <m>W=50</m>, gives the initial amount of water in the container. The horizontal intercept, <m>t=10</m>, is the number of hours that must pass for the tank to empty completely. Based upon this, the domain of <m>W(t)=-5t+50</m> should be restricted to <m>0\leq t \leq 10</m> in order for the formula to make sense in the applied context of this exercise.
-</p>
-</solution>
-</example>
+                <p>
+                    The practical significance of vertical and horizontal intercepts is apparent from the graph.
+                    The vertical intercept, <m>W=50</m>, gives the initial amount of water in the container.
+                    The horizontal intercept, <m>t=10</m>, is the number of hours that must pass for the tank to empty completely.
+                    Based upon this, the domain of <m>W(t)=-5t+50</m> should be restricted to <m>0\leq t \leq 10</m> in order for the formula to make sense in the applied context of this exercise.
+                </p>
+            </solution>
+        </example>
+    </subsection>
 
-</subsection>
+    <subsection>
+        <title>The Slope Formula</title>
 
+        <p>
+            We are often given multiple points on the graph of a linear function but not provided the formula for the function nor explicitly told its slope.
+            In this case, we have enough information to determine both the slope and the slope-intercept form of the function.
+        </p>
 
+        <p>
+            Given two distinct points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> on the graph of a linear function <m>y=f(x)</m>, the average rate of change of <m>f(x)</m> between <m>x_1</m> and <m>x_2</m> is given by
+            <md>
+                \frac{f(x_2)-f(x_1)}{x_2-x_1} \; = \;\frac{y_2-y_1}{x_2-x_1}.
+            </md>
+            Since the average rate of change between any two points on a linear function <em>is</em> its slope (see <xref ref="res-ch2-slope-roc"/> ), the above is the value of <m>m</m>.
+        </p>
 
+        <theorem>
+            <title>Slope Formula</title>
 
+            <statement>
+                <p>
+                    The slope <m>m</m> of a linear function <m>y=f(x)</m> whose graph passes through two distinct points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> is:
+                    <md>
+                        m \;= \; \frac{y_2-y_1}{x_2-x_1} \;=\; \frac{\Delta y}{\Delta x} \;=\; \frac{\text{change in output}}{\text{change in input}}
+% =\frac{\text{vertical change}}{\text{horizontal change}}
+                    </md>
+                </p>
+            </statement>
+        </theorem>
 
-<subsection>
-<title>The Slope Formula</title>
+        <p>
+            Graphically, the slope formula <m>m=\dfrac{y_2-y_1}{x_2-x_1}</m> is often thought of as <q>rise over run.</q> The <q>rise</q> is what we denote by <m>\Delta y</m> or <m>y_2-y_1</m>; it is the change in <m>y</m>-values from the ordered pair <m>(x_1,y_1)</m> to the ordered pair <m>(x_2,y_2)</m>.
+            The <q>run</q> is what we denote by <m>\Delta x</m> or <m>x_2-x_1</m>; it is the change in the corresponding <m>x</m>-values.
+            This is illustrated below.
+        </p>
 
-<p>
-We are often given multiple points on the graph of a linear function but not provided the formula for the function nor explicitly told its slope. In this case, we have enough information to determine both the slope and the slope-intercept form of the function.
-</p>
-    
-
-
-<p>
-Given two distinct points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> on the graph of a linear function <m>y=f(x)</m>, the average rate of change of <m>f(x)</m> between <m>x_1</m> and <m>x_2</m> is given by <md>\frac{f(x_2)-f(x_1)}{x_2-x_1} \; = \;\frac{y_2-y_1}{x_2-x_1}.</md> Since the average rate of change between any two points on a linear function <em>is</em> its slope (see <xref ref="res-ch2-slope-roc" />), the above is the value of <m>m</m>.
-</p>
-
-
-<theorem>
-<title>Slope Formula</title>
-    <statement>
-<p>
-The slope <m>m</m> of a linear function <m>y=f(x)</m> whose graph passes through two distinct points <m>(x_1,y_1)</m> and <m>(x_2,y_2)</m> is: <md>m \;= \; \frac{y_2-y_1}{x_2-x_1} \;=\; \frac{\Delta y}{\Delta x} \;=\; \frac{\text{change in output}}{\text{change in input}}
-% =\frac{\text{vertical change}}{\text{horizontal change}}</md>
-</p>
-</statement>
-</theorem>
-
-
-<p>
-Graphically, the slope formula <m>m=\dfrac{y_2-y_1}{x_2-x_1}</m> is often thought of as <q>rise over run.</q> The <q>rise</q> is what we denote by <m>\Delta y</m> or <m>y_2-y_1</m>; it is the change in <m>y</m>-values from the ordered pair <m>(x_1,y_1)</m> to the ordered pair <m>(x_2,y_2)</m>. The <q>run</q> is what we denote by <m>\Delta x</m> or <m>x_2-x_1</m>; it is the change in the corresponding <m>x</m>-values. This is illustrated below.
-</p>
-
-<image width="50%" xml:id="fig_2_1_3">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="2_1_3_fig">
+        <image width="50%" xml:id="fig_2_1_3">
+            <shortdescription>A short description.</shortdescription>
+            <latex-image label="2_1_3_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=0,xmax=3.5,
@@ -451,115 +488,129 @@ xlabel=\(x\), ylabel=\(y\),
 \node at (2.8,1.6) {\large $\Delta y = y_2-y_1$};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+            </latex-image>
+        </image>
 
+        <example xml:id="example-ch2-slope0">
+            <statement>
+                <p>
+                    Find the slope of the line passing through each set of points.
+                </p>
 
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>(-3,-1)</m> and <m>(-2,4)</m>
+                            </p>
+                        </li>
 
-<example xml:id="example-ch2-slope0">
-<statement>
-    <p>
-    Find the slope of the line passing through each set of points.
-    </p>
+                        <li>
+                            <p>
+                                <m>(2,3)</m> and <m>(-1,3)</m>
+                            </p>
+                        </li>
 
-<p><ol>
-<li>
-<p>
-    <m>(-3,-1)</m> and <m>(-2,4)</m>
-</p>
-</li>
+                        <li>
+                            <p>
+                                <m>(1/2,6)</m> and <m>(1,-1/3)</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
-<li>
-<p>
-    <m>(2,3)</m> and <m>(-1,3)</m>
-</p>
-</li>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                If <m>(x_1,y_1)=(-3,-1)</m> and <m>(x_2,y_2)=(-2,4)</m> then the slope is
+                                <md>
+                                    m = \frac{y_2-y_1}{x_2-x_1} = \frac{4-(-1)}{-2-(-3)}=\frac{4+1}{-2+3}=\frac{5}{1}=5.
+                                </md>
+                            </p>
+                        </li>
 
-<li>
-<p>
-    <m>(1/2,6)</m> and <m>(1,-1/3)</m>.
-</p>
-</li>
-
-</ol></p>
-</statement>
-
-<solution>
-<p><ol>
-<li>
-<p>
-    If <m>(x_1,y_1)=(-3,-1)</m> and <m>(x_2,y_2)=(-2,4)</m> then the slope is <md>m = \frac{y_2-y_1}{x_2-x_1} = \frac{4-(-1)}{-2-(-3)}=\frac{4+1}{-2+3}=\frac{5}{1}=5.</md>
-</p>
-</li>
-
-<li>
-<p>
-    If <m>(x_1,y_1)=(2,3)</m> and <m>(x_2,y_2)=(-1,3)</m> then the slope is <md>m= \frac{y_2-y_1}{x_2-x_1} = \frac{3-3}{-1-2}=\frac{0}{-3}=0.</md>
-</p>
-
-<aside>
+                        <li>
+                            <p>
+                                If <m>(x_1,y_1)=(2,3)</m> and <m>(x_2,y_2)=(-1,3)</m> then the slope is
+                                <md>
+                                    m= \frac{y_2-y_1}{x_2-x_1} = \frac{3-3}{-1-2}=\frac{0}{-3}=0.
+                                </md>
+                            </p>
+                            <aside>
 <p>
 Because the slope is <m>0</m>, the line through the points is <em>horizontal</em>. This will be explained in further detail later on in this section.
 </p>
 </aside>
-</li>
+                        </li>
 
-<li>
-<p>
-    If <m>(x_1,y_1)=(1/2,6)</m> and <m>(x_2,y_2)=(1,-1/3)</m> then the slope is
-</p>
-<aside>
+                        <li>
+                            <p>
+                                If <m>(x_1,y_1)=(1/2,6)</m> and <m>(x_2,y_2)=(1,-1/3)</m> then the slope is
+                            </p>
+                            <aside>
 <p>
 Here, find a common denominator to simplify <m>\frac{-1}{3} - 6</m> and <m>1-\frac{1}{2}</m>.
 </p>
 </aside>
-<p>
-<md>
-<mrow> m \;=\; \frac{y_2-y_1}{x_2-x_1} \amp \;=\; \frac{-1/3-6}{1-1/2}  \;=\; \frac{-1/3-18/3}{2/2-1/2} \;=\; \frac{-19/3}{1/2}</mrow>
-<mrow>\amp \;=\; -\frac{19}{3}\cdot\frac{2}{1} \;=\; -\frac{38}{3}.
+                            <p>
+                                <md>
+                                    <mrow> m \;=\; \frac{y_2-y_1}{x_2-x_1} \amp \;=\; \frac{-1/3-6}{1-1/2}  \;=\; \frac{-1/3-18/3}{2/2-1/2} \;=\; \frac{-19/3}{1/2}</mrow>
+                                    <mrow>\amp \;=\; -\frac{19}{3}\cdot\frac{2}{1} \;=\; -\frac{38}{3}.
 </mrow>
-</md>
-</p>
-</li>
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
 
-</ol></p>
-</solution>
-</example>
+        <example>
+            <statement>
+                <p>
+                    Find a linear function <m>f(x)=mx+b</m> such that <m>f(1)=2</m> and <m>f(3)=-2</m>.
+                </p>
+            </statement>
 
+            <solution>
+                <p>
+                    The two associated points on the graph of the function are
+                    <md>
+                        (x_1,y_1)=(1,2) \quad  \text{and}  \quad (x_2,y_2)=(3,-2)
+.
+                    </md>
+                    Using the slope formula, we find that
+                    <md>
+                        m=\frac{y_2-y_1}{x_2-x_1}=\frac{-2-2}{3-1}=-2.
+                    </md>
+                    So, <m>f(x)=-2x+b</m>.
+                    The value of <m>b</m> is not immediately apparent as we were not given the value of the function at <m>x=0</m>.
+                    However, we can solve for it by using either one of the function values provided.
+                    For instance, we can use the fact that <m>f(1)=2</m> to set up an equation for <m>b</m>.
+                    Substituting <m>x=1</m> into <m>f(x)=-2x+b</m> results in
+                    <md>
+                        -2\cdot 1+b=2.
+                    </md>
+                    Adding <m>2</m> to both sides allows us to conclude that <m>b=4</m>.
+                    Therefore, <m>f(x)=-2x+4</m>.
+                </p>
+            </solution>
+        </example>
 
+        <example>
+            <statement>
+                <p>
+                    Identify the slope and vertical intercept of each line.
+                    Then write the equation of the line in slope-intercept form.
+                </p>
 
-
-<example>
-<statement>
-    <p>
-    Find a linear function <m>f(x)=mx+b</m> such that <m>f(1)=2</m> and <m>f(3)=-2</m>.
-    </p>
-</statement>
-
-<solution>
-<p>
-The two associated points on the graph of the function are <md>(x_1,y_1)=(1,2) \quad  \text{and}  \quad (x_2,y_2)=(3,-2)
-.</md>
-Using the slope formula, we find that <md>m=\frac{y_2-y_1}{x_2-x_1}=\frac{-2-2}{3-1}=-2.</md> So, <m>f(x)=-2x+b</m>. The value of <m>b</m> is not immediately apparent as we were not given the value of the function at <m>x=0</m>. However, we can solve for it by using either one of the function values provided. For instance, we can use the fact that <m>f(1)=2</m> to set up an equation for <m>b</m>. Substituting <m>x=1</m> into <m>f(x)=-2x+b</m> results in <md>-2\cdot 1+b=2.</md> Adding <m>2</m> to both sides allows us to conclude that <m>b=4</m>. Therefore, <m>f(x)=-2x+4</m>.
-</p>
-</solution>
-</example>
-
-
-
-<example>
-<statement>
-<p>
-Identify the slope and vertical intercept of each line. Then write the equation of the line in slope-intercept form.
-</p>
-
-<sidebyside widths="48% 48%" margins="0% 0%" valigns="bottom top">
-
-<image width="50%" xml:id="fig_2_1_4">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="2_1_4_fig">
+                <sidebyside widths="48% 48%" margins="0% 0%" valigns="bottom top">
+                    <image width="50%" xml:id="fig_2_1_4">
+                        <shortdescription>A short description.</shortdescription>
+                        <latex-image label="2_1_4_fig">
 \begin{tikzpicture}[scale=0.75]
 \begin{axis}[grid=both,
 xmin=-2.5,xmax=2.5,
@@ -572,14 +623,12 @@ xlabel=\(x\), ylabel=\(y\)
 \addplot[domain=-2.5:2.5] {3/2*x+1};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                        </latex-image>
+                    </image>
 
-<image width="50%" xml:id="fig_2_1_5">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="2_1_5_fig">
+                    <image width="50%" xml:id="fig_2_1_5">
+                        <shortdescription>A short description.</shortdescription>
+                        <latex-image label="2_1_5_fig">
 \begin{tikzpicture}[scale=0.75]
 \begin{axis}[grid=both,
 xmin=-0.5,xmax=7.5,
@@ -592,60 +641,71 @@ xlabel=\(t\), ylabel=\(y\)
 \addplot[domain=-0.5:7.5] {2-1/3*x};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
-</sidebyside>
+                        </latex-image>
+                    </image>
+                </sidebyside>
+            </statement>
 
-</statement>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The first line intersects the <m>y</m>-axis at the point <m>(0,1)</m>, so the vertical intercept is <m>b=1</m>.
+                                To calculate the slope, find two points on the graph and use the slope formula.
+                                We'll use <m>(x_1,y_1)=(0,1)</m> and <m>(x_2,y_2)=(2,4)</m>.
+                                Then
+                                <md>
+                                    m=\frac{y_2-y_1}{x_2-x_1}=\frac{4-1}{2-0}=\frac{3}{2}
+.
+                                </md>
+                                The equation of the line is <m>y=\dfrac{3}{2}x+1</m>.
+                                The corresponding linear function is <m>f(x)=\dfrac{3}{2}x+1</m>.
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                For the second line, note that the variable <m>t</m> is being used instead of <m>x</m>.
+                                We must again find two points on the line to substitute into the slope formula.
+                                We'll use <m>(t_1,y_1)=(0,2)</m> and <m>(t_2,y_2)=(6,0)</m> to find that
+                                <md>
+                                    m=\frac{y_2-y_1}{t_2-t_1}=\frac{0-2}{6-0}=\frac{-2}{6}=-\frac{1}{3}
+.
+                                </md>
+                                Since the vertical intercept is <m>b=2</m>, the equation of the line is <m>y=-\dfrac{1}{3}t+2</m>.
+                                The corresponding linear function is <m>f(t)=-\dfrac{1}{3}t+2</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
 
-<solution>
-<p><ol>
-<li>
-<p>
-The first line intersects the <m>y</m>-axis at the point <m>(0,1)</m>, so the vertical intercept is <m>b=1</m>. To calculate the slope, find two points on the graph and use the slope formula. We'll use <m>(x_1,y_1)=(0,1)</m> and <m>(x_2,y_2)=(2,4)</m>.
-Then <md>m=\frac{y_2-y_1}{x_2-x_1}=\frac{4-1}{2-0}=\frac{3}{2}
-.</md>
-The equation of the line is <m>y=\dfrac{3}{2}x+1</m>. The corresponding linear function is <m>f(x)=\dfrac{3}{2}x+1</m>.
-</p>
-</li>
+    <subsection>
+        <title>Constant Functions, Horizontal and Vertical Lines</title>
 
-<li>
-<p>
-For the second line, note that the variable <m>t</m> is being used instead of <m>x</m>. We must again find two points on the line to substitute into the slope formula. We'll use <m>(t_1,y_1)=(0,2)</m> and <m>(t_2,y_2)=(6,0)</m> to find that <md>m=\frac{y_2-y_1}{t_2-t_1}=\frac{0-2}{6-0}=\frac{-2}{6}=-\frac{1}{3}
-.</md> Since the vertical intercept is <m>b=2</m>, the equation of the line is <m>y=-\dfrac{1}{3}t+2</m>. The corresponding linear function is <m>f(t)=-\dfrac{1}{3}t+2</m>.
-</p>
-</li>
+        <p>
+            In <xref ref="example-ch2-slope0"/>, we encountered a linear function with slope 0 but did not go into great detail about what this means.
+            To further explore the concept, consider the linear function
+            <md>
+                f(x)=3.
+            </md>
+            The formula for this function can be rewritten as <m>f(x)=0\cdot x+3</m>.
+            The slope of this function is 0 and the <m>y</m>-intercept is 3.
+            We can see that for every <m>x</m>, the value of the function is the same; that is, <m>f(x)=3</m> for all <m>x</m>.
+            We say that the function <m>f(x)=3</m> is <alert>constant</alert> because it is constantly equal to 3.
+            Using the rate of change interpretation of the slope of a linear function, it is unsurprising that the function is constant — the rate of change or slope of the function being <m>m=0</m> implies that the function doesn't change.
+        </p>
 
-</ol></p>
-</solution>
+        <p>
+            The graph of the function <m>f(x)=3</m> consists of all points on the plane for which <m>y=3</m>, resulting in a horizontal line through the <m>y</m>-value 3 as depicted below.
+        </p>
 
-</example>
-
-
-</subsection>
-
-
-
-
-<subsection>
-<title>Constant Functions, Horizontal and Vertical Lines</title>
-
-
-<p>
-In <xref ref="example-ch2-slope0" />, we encountered a linear function with slope 0 but did not go into great detail about what this means. To further explore the concept, consider the linear function <md>f(x)=3.</md> The formula for this function can be rewritten as <m>f(x)=0\cdot x+3</m>. The slope of this function is 0 and the <m>y</m>-intercept is 3. We can see that for every <m>x</m>, the value of the function is the same; that is, <m>f(x)=3</m> for all <m>x</m>. We say that the function <m>f(x)=3</m> is <alert>constant</alert> because it is constantly equal to 3. Using the rate of change interpretation of the slope of a linear function, it is unsurprising that the function is constant — the rate of change or slope of the function being <m>m=0</m> implies that the function doesn't change.
-</p>
-
-<p>
-The graph of the function <m>f(x)=3</m> consists of all points on the plane for which <m>y=3</m>, resulting in a horizontal line through the <m>y</m>-value 3 as depicted below.
-</p>
-
-
-<image width="50%" xml:id="fig_2_1_6">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="2_1_6_fig">
+        <image width="50%" xml:id="fig_2_1_6">
+            <shortdescription>A short description.</shortdescription>
+            <latex-image label="2_1_6_fig">
 \begin{tikzpicture}[scale=0.75]
 \begin{axis}[grid=both,
 xmin=-2.5,xmax=2.5,
@@ -658,35 +718,36 @@ xlabel=\(x\), ylabel=\(y\)
 \addplot[domain=-3:3] {3};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+            </latex-image>
+        </image>
 
+        <theorem>
+            <title>Constant Functions and Horizontal Lines</title>
 
-<theorem>
-<title>Constant Functions and Horizontal Lines</title>
+            <statement>
+                <p>
+                    The linear function <m>y=f(x)</m> with slope <m>m=0</m> and vertical intercept <m>b</m> is a constant function with equation given by
+                    <md>
+                        f(x)=b\text{\quad or \quad} y=b
+                    </md>
+                    and its graph is the horizontal line through the <m>y</m>-value <m>b</m>.
+                </p>
+            </statement>
+        </theorem>
 
-<statement>
-<p>
-The linear function <m>y=f(x)</m> with slope <m>m=0</m> and vertical intercept <m>b</m> is a constant function with equation given by <md>f(x)=b\text{\quad or \quad} y=b</md> and its graph is the horizontal line through the <m>y</m>-value <m>b</m>.
-</p>
-</statement>
-</theorem>
+        <p>
+            Having established that horizontal lines in the plane are graphs of constant functions, it is natural to wonder if vertical lines in the plane are also associated with a special type of linear function.
+        </p>
 
+        <p>
+            Vertical lines <mdash/> lines parallel to the <m>y</m>-axis <mdash/> are <em>not</em> graphs of functions.
+            A vertical line consists of all points for which the <m>x</m>-coordinate is constant.
+            Take for example the line <m>x=-1</m> which is graphed below.
+        </p>
 
-<p>
-Having established that horizontal lines in the plane are graphs of constant functions, it is natural to wonder if vertical lines in the plane are also associated with a special type of linear function.
-</p>
-
-<p>
-Vertical lines<mdash/>lines parallel to the <m>y</m>-axis<mdash/>are <em>not</em> graphs of functions. A vertical line consists of all points for which the <m>x</m>-coordinate is constant. Take for example the line <m>x=-1</m> which is graphed below.
-</p>
-
-
-<image width="50%" xml:id="fig_2_1_7">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="2_1_7_fig">
+        <image width="50%" xml:id="fig_2_1_7">
+            <shortdescription>A short description.</shortdescription>
+            <latex-image label="2_1_7_fig">
 \begin{tikzpicture}[scale=0.75]
 \begin{axis}[grid=both,
 xmin=-2.5,xmax=2.5,
@@ -699,49 +760,61 @@ xlabel=\(x\), ylabel=\(y\)
 \draw[blue] (-1,-1.5) -- (-1,3.5);
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+            </latex-image>
+        </image>
+        <aside>
+            <p>
+                A key takeaway here is that vertical lines are not functions, but still have <em>equations</em>, such as <m>x=-1</m>.
+                Equations are <alert>not</alert> the same thing as functions.
+            </p>
+        </aside>
 
+        <p>
+            This line is not the graph of any function <m>y=f(x)</m> as for the single input <m>x=-1</m> there is more than one output <mdash/> infinitely many outputs, in fact.
+            You can reach the same conclusion by using the Vertical Line Test.
+            There exists a vertical line (the line <m>x=-1</m> itself) that crosses the graph of <m>x=-1</m> more than once (everywhere, actually).
+            Therefore the graph of <m>x=-1</m> is not a function.
+        </p>
 
-<aside>
-<p>
-A key takeaway here is that vertical lines are not functions, but still have <em>equations</em>, such as <m>x=-1</m>. Equations are <alert>not</alert> the same thing as functions.
-</p>
-</aside>
+        <p>
+            We conclude that vertical lines are not graphs of functions.
+            Furthermore, slopes of vertical lines are undefined.
+            Why?
+            Take two points on the line <m>x=-1</m>, say <m>(-1,0)</m> and <m>(-1,1)</m>.
+            The slope formula gives:
+            <md>
+                m=\frac{1-0}{-1-(-1)}=\dfrac{1}{-1+1}=\frac{1}{0}
+            </md>
+            which is undefined due to division by <m>0</m>.
+        </p>
 
-<p>
-This line is not the graph of any function <m>y=f(x)</m> as for the single input <m>x=-1</m> there is more than one output<mdash/>infinitely many outputs, in fact. You can reach the same conclusion by using the Vertical Line Test. There exists a vertical line (the line <m>x=-1</m> itself) that crosses the graph of <m>x=-1</m> more than once (everywhere, actually). Therefore the graph of <m>x=-1</m> is not a function.
-</p>
+        <theorem>
+            <title>Vertical Lines</title>
 
+            <statement>
+                <p>
+                    The vertical line with horizontal intercept <m>k</m> has equation given by
+                    <md>
+                        x=k
+                    </md>
+                    and its slope is undefined.
+                </p>
+            </statement>
+        </theorem>
+        <aside>
+            <p>
+                This is to say: all linear functions are lines, but not all lines are linear functions.
+            </p>
+        </aside>
 
-<p>
-We conclude that vertical lines are not graphs of functions. Furthermore, slopes of vertical lines are undefined. Why? Take two points on the line <m>x=-1</m>, say <m>(-1,0)</m> and <m>(-1,1)</m>. The slope formula gives: <md>m=\frac{1-0}{-1-(-1)}=\dfrac{1}{-1+1}=\frac{1}{0}</md> which is undefined due to division by <m>0</m>.
-</p>
+        <p>
+            In summary, the graph of every linear function <m>y=f(x)=mx+b</m> is a line in the <m>xy</m>-plane while every <em>non-vertical</em> line has an equation of the form <m>y=mx+b</m> and thus is the graph of a linear function.
+            However, not every line in the plane is the graph of a linear function, since vertical lines are not functions.
+            Sometimes people talk about linear functions and lines in the plane interchangeably.
+            Despite the duality between lines and linear functions, it is important to remember that a linear function is a special dependence between two numerical variables that can be visually represented by a line.
+            The converse is not necessarily true.
+        </p>
+    </subsection>
 
-<theorem>
-<title>Vertical Lines</title>
-<statement>
-<p>
-The vertical line with horizontal intercept <m>k</m> has equation given by <md>x=k</md> and its slope is undefined.
-</p>
-</statement>
-</theorem>
-
-
-<aside>
-<p>
-This is to say: all linear functions are lines, but not all lines are linear functions.
-</p>
-</aside>
-<p>
-In summary, the graph of every linear function <m>y=f(x)=mx+b</m> is a line in the <m>xy</m>-plane while every <em>non-vertical</em> line has an equation of the form <m>y=mx+b</m> and thus is the graph of a linear function. However, not every line in the plane is the graph of a linear function, since vertical lines are not functions. Sometimes people talk about linear functions and lines in the plane interchangeably. Despite the duality between lines and linear functions, it is important to remember that a linear function is a special dependence between two numerical variables that can be visually represented by a line. The converse is not necessarily true.
-</p>
-
-
-
-
-</subsection>
-
-<xi:include href="exercises/ex_2_1.ptx"/>
-
+    <xi:include href="exercises/ex_2_1.ptx"/>
 </section>

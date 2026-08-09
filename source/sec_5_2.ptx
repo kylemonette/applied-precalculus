@@ -33,6 +33,7 @@
 
 
 <figure xml:id="fig_5_2_exp_fun">
+<caption></caption>
 <interactive platform="jsxgraph" source="jsxgraph/jsx_5_2_exp_fun.js" width="60%">
     <slate xml:id="jsx_5_2_exp_fun_fig" surface="jsxboard"/>
     <instructions>

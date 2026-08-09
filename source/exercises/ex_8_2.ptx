@@ -25,7 +25,7 @@ For each of the following, convert the angle from degrees to radians. Give both 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_2_2">
 <statement>
 <p>
 <m>-10^{\circ}</m>
@@ -40,7 +40,7 @@ For each of the following, convert the angle from degrees to radians. Give both 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_2_3">
 <statement>
 <p>
 <m>600^{\circ}</m>
@@ -97,7 +97,7 @@ For each of the following, convert the angle from radians to degrees. Give both 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_2_6">
 <statement>
 <p>
 <m>-\frac{\pi}{10}</m> radians
@@ -112,7 +112,7 @@ For each of the following, convert the angle from radians to degrees. Give both 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_2_7">
 <statement>
 <p>
 <m>8</m> radians
@@ -146,7 +146,7 @@ For each of the following, convert the angle from radians to degrees. Give both 
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_2_9">
 <statement>
 <p>
 What is the arc length spanned by the angle <m>\frac{3\pi}{4}</m> radians on the circle of radius <m>4</m> inches?
@@ -161,7 +161,7 @@ What is the arc length spanned by the angle <m>\frac{3\pi}{4}</m> radians on the
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_2_10">
 <statement>
 <p>
 What is the arc length spanned by the angle <m>300^{\circ}</m> on the circle of radius <m>2</m> centimeters?

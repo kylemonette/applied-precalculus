@@ -9,7 +9,7 @@ Find the intercepts of each quadratic function.
 </p>
 </introduction>
 
-<exercise>
+<exercise xml:id="exercise_3_2_1">
 <statement>
 <p>
 <m>f(x)=x^2+3 x+2</m>
@@ -27,7 +27,7 @@ horizontal intercepts: <m>-1</m>, <m>-2</m>; vertical intercept: <m>2</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_2">
 <statement>
 <p>
 <m>y=x^2-x-6</m>
@@ -45,7 +45,7 @@ horizontal intercepts: <m>-2</m>, <m>3</m> ; vertical intercept: <m>-6</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_3">
 <statement>
 <p>
 <m>g(t)=t^2+t-6</m>
@@ -63,7 +63,7 @@ horizontal intercepts: <m>-3</m>, <m>2</m> ; vertical intercept: <m>-6</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_4">
 <statement>
 <p>
 <m>y=x^2-8 x+16</m>
@@ -81,7 +81,7 @@ horizontal intercepts: <m>4</m>; vertical intercept: <m>16</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_5">
 <statement>
 <p>
 <m>f(w)=w^2+14 w+49</m>
@@ -99,7 +99,7 @@ horizontal intercept: <m>-7</m>; vertical intercept: <m>49</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_6">
 <statement>
 <p>
 <m>f(t)=64t^2-36</m>
@@ -117,7 +117,7 @@ horizontal intercepts: <m>-\frac{3}{4}</m>, <m>\frac{3}{4}</m>; vertical interce
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_7">
 <statement>
 <p>
 <m>h(x)=2 x^2+10 x+8</m>
@@ -135,7 +135,7 @@ horizontal intercepts: <m>-4</m>, <m>-1</m>; vertical intercept: <m>8</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_8">
 <statement>
 <p>
 <m>y=2 w^2- w-3</m>
@@ -153,7 +153,7 @@ horizontal intercepts: <m>-1</m>, <m>\frac{3}{2}</m>; vertical intercept: <m>-3<
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_9">
 <statement>
 <p>
 <m>f(x)=-x^2-6 x+16</m>
@@ -171,7 +171,7 @@ horizontal intercepts: <m>-8</m>, <m>2</m>; vertical intercept: <m>16</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_10">
 <statement>
 <p>
 <m>g(x)=\frac{1}{49}-4x^2</m>
@@ -189,7 +189,7 @@ horizontal intercepts: <m>-\frac{1}{14}</m>, <m>\frac{1}{14}</m>; vertical inter
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_11">
 <statement>
 <p>
 <m>p(x)=2x^2-6x</m>
@@ -207,7 +207,7 @@ horizontal intercepts: <m>0</m>, <m>3</m>; vertical intercept: <m>0</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_12">
 <statement>
 <p>
 <m>m(t)=-5t^2+2t</m>
@@ -229,7 +229,7 @@ horizontal intercepts: <m>0</m>, <m>\frac{2}{5}</m>; vertical intercept: <m>0</m
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_2_13">
 <introduction>
 <p>
 A model rocket is launched vertically from the ground with an initial velocity of <m>168</m> feet per second. Let <m>H(t)</m> be the height, in feet, of the rocket <m>t</m> seconds after launch.

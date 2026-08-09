@@ -2,7 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_8_1">
 
 
-<exercise>
+<exercise xml:id="exercise_8_1_1">
 <statement>
 <p>
 Determine whether each function graphed below is a periodic function. For those that are periodic, approximate the amplitude, midline, and period.
@@ -192,7 +192,7 @@ trig format = rad,
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_1_2">
 <introduction>
 <p>
 Each day, the tide in a harbor continuously goes in and out, raising and lowering a boat anchored there. At low tide, the boat is only <m>2</m> meters above the ocean floor. Six hours later, at peak high tide, the boat is <m>20</m> meters above the ocean floor. Six hours after peak high tide, it is low tide again. Suppose the boat is at high tide at midnight.
@@ -229,7 +229,7 @@ Each day, the tide in a harbor continuously goes in and out, raising and lowerin
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_1_3">
 <introduction>
 <p>
 You decide to ride the Ferris wheel at the local carnival. You are <m>3</m> feet above the ground at the bottom of the Ferris wheel and <m>28</m> feet above the ground at the top. It takes <m>8</m> seconds for you to reach the maximum height from the minimum height and <m>8</m> seconds to reach the minimum height from the maximum height. Suppose you are at the bottom of the ride at time <m>t=0</m> seconds.

@@ -11,7 +11,7 @@ Determine whether a given function is a power function. If yes, identify the coe
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_4_3_1">
 <statement>
 <p>
 <m>y= \dfrac{0.8x^4}{0.2x}</m>
@@ -25,7 +25,7 @@ Determine whether a given function is a power function. If yes, identify the coe
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_2">
 <statement>
 <p>
 <m>\displaystyle y=\frac{\sqrt{9x^8}}{x}</m>
@@ -39,7 +39,7 @@ Determine whether a given function is a power function. If yes, identify the coe
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_3">
 <statement>
 <p>
 <m>\displaystyle f(x)=\frac{1}{3}\cdot 3^{x+1}</m>
@@ -53,7 +53,7 @@ Not a power function.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_4">
 <statement>
 <p>
 <m>\displaystyle g(x)=\sqrt{0.01x^6}</m>
@@ -67,7 +67,7 @@ Not a power function.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_5">
 <statement>
 <p>
 <m>h(x)=0.01x^3-2x^2</m>
@@ -81,7 +81,7 @@ Not a power function.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_6">
 <statement>
 <p>
 <m>\displaystyle y=9\sqrt{\frac{x^5}{x}}</m>
@@ -115,7 +115,7 @@ Note that the braking distance does not include a driver's reaction time
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_4_3_7">
 <statement>
 <p>
 Is the braking distance a power function of speed? If yes, give the coefficient <m>k</m> and the exponent <m>p</m>. Assume that <m>\mu</m> is a given constant.
@@ -129,7 +129,7 @@ Yes; <m>k=\frac{0.034}{\mu}</m>; <m>p=2</m>
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_8">
 <statement>
 <p>
 The coefficient of friction under normal conditions when the road is dry is <m>\mu=0.7</m>. What is the braking distance of a car that travels on a dry road at <m>35</m> mph? What is the braking distance at <m>70</m> mph?
@@ -143,7 +143,7 @@ The coefficient of friction under normal conditions when the road is dry is <m>\
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_9">
 <statement>
 <p>
 By what factor does the braking distance increase when speed <m>S</m> doubles?
@@ -157,7 +157,7 @@ Factor of <m>4</m>.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_10">
 <statement>
 <p>
 The coefficient of friction on a wet road is <m>\mu=0.4</m>. Calculate the braking distance of a car traveling at <m>70</m> mph on a wet road.
@@ -176,7 +176,7 @@ The coefficient of friction on a wet road is <m>\mu=0.4</m>. Calculate the braki
 
 
 
-<exercise>
+<exercise xml:id="exercise_4_3_11">
 <statement>
 <p>
 Below are the graphs of four power functions <m>y=kx^p</m> where <m>p</m> is a positive integer. In each of the graphs, is the exponent <m>p</m> even or odd? Is the coefficient <m>k</m> positive or negative?
@@ -297,7 +297,7 @@ From left to right:
 
 
 
-<exercise>
+<exercise xml:id="exercise_4_3_12">
 <statement>
 <p>
 Which of the following is a graph of <m>f(x)=-4x^5</m>?
@@ -380,7 +380,7 @@ The graph in the middle.
 
 
 
-<exercise>
+<exercise xml:id="exercise_4_3_13">
 <statement>
 <p>
 Which of the following is a graph of <m>f(x)=-3x^4</m>?
@@ -464,7 +464,7 @@ The second graph.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_14">
 <statement>
 <p>
 Below you see graphs of the functions <m>y=-x^4</m>,   <m>y=\frac{1}{4}x^4</m>, and  <m>y=x^4</m>. Decide which is which.
@@ -506,7 +506,7 @@ A is <m>y=x^4</m>; B is <m>y=-x^4</m>; C is <m>y=\frac{1}{4}^4</m>.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_3_15">
 <statement>
 <p>
 The area, <m>A</m>, of a unilateral triangle whose sides have length <m>a</m> is given by:

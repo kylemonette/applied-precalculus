@@ -12,7 +12,7 @@ If there are no solutions say so.
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_4_2_1">
 <statement>
 <p>
 <m>\displaystyle \frac{2}{5}x^4+3=11</m>
@@ -26,7 +26,7 @@ If there are no solutions say so.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_2">
 <statement>
 <p>
 <m>\displaystyle 1500b^{30}=17000</m>
@@ -40,7 +40,7 @@ If there are no solutions say so.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_3">
 <statement>
 <p>
 <m>\displaystyle 5x^3-6=-8</m>
@@ -54,7 +54,7 @@ If there are no solutions say so.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_4">
 <statement>
 <p>
 <m>\displaystyle \frac{5}{3}x^6+9=4</m>
@@ -68,7 +68,7 @@ No real solutions.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_5">
 <statement>
 <p>
 <m>\displaystyle 3(x-1)^2+1=10</m>
@@ -82,7 +82,7 @@ No real solutions.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_6">
 <statement>
 <p>
 <m>\displaystyle (x+2)^3=-8</m>
@@ -110,7 +110,7 @@ Rewrite the expression as a power of <m>3</m>; that is, in the form <m>3^r</m> f
 
 
 
-<exercise>
+<exercise xml:id="exercise_4_2_7">
 <statement>
 <p>
 <m>\displaystyle \frac{9^2}{3\sqrt{3}}</m>
@@ -124,7 +124,7 @@ Rewrite the expression as a power of <m>3</m>; that is, in the form <m>3^r</m> f
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_8">
 <statement>
 <p>
 <m>\displaystyle \frac{27}{\sqrt{3}}</m>
@@ -138,7 +138,7 @@ Rewrite the expression as a power of <m>3</m>; that is, in the form <m>3^r</m> f
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_9">
 <statement>
 <p>
 <m>\displaystyle \frac{3^2\sqrt[3]{9}}{\sqrt{3}}</m>
@@ -152,7 +152,7 @@ Rewrite the expression as a power of <m>3</m>; that is, in the form <m>3^r</m> f
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_10">
 <statement>
 <p>
 <m>\displaystyle \frac{3^{1/5}\sqrt[4]{3}}{\sqrt{3}}</m>
@@ -178,7 +178,7 @@ Simplify the given expression. If it is not possible, say so. <m>x</m> and <m>y<
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_4_2_11">
 <statement>
 <p>
 <m>\displaystyle \frac{\sqrt{x}+\sqrt{y}}{xy}</m>
@@ -192,7 +192,7 @@ Cannot be simplified.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_12">
 <statement>
 <p>
 <m>\displaystyle (\sqrt[4]{y}\sqrt[3]{x})^4</m>
@@ -206,7 +206,7 @@ Cannot be simplified.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_13">
 <statement>
 <p>
 <m>\displaystyle \frac{x^{\frac{2}{3}}y^3}{xy}</m>
@@ -220,7 +220,7 @@ Cannot be simplified.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_2_14">
 <statement>
 <p>
 <m>\displaystyle \frac{x^2y^3}{\sqrt{x}+\sqrt[3]{y}}</m>

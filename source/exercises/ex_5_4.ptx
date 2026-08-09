@@ -25,7 +25,7 @@ initial amount: <m>47</m>; doubling time: <m>5</m>
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_4_2">
 <statement>
 <p>
 <m>\displaystyle y=800\cdot 2^{\frac{t}{9}}</m>
@@ -40,7 +40,7 @@ initial amount: <m>800</m>; doubling time: <m>9</m>
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_4_3">
 <statement>
 <p>
 <m>\displaystyle y=89\cdot 4^{\frac{t}{6}}</m>
@@ -96,7 +96,7 @@ initial amount: <m>75</m>; half-life: <m>7</m>
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_4_6">
 <statement>
 <p>
 <m>\displaystyle y=920\cdot \left(\frac{1}{2}\right)^{\frac{t}{10}}</m>
@@ -111,7 +111,7 @@ initial amount: <m>920</m>; half-life: <m>10</m>
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_4_7">
 <statement>
 <p>
 <m>\displaystyle y=875\cdot \left(\frac{1}{16}\right)^{\frac{t}{12}}</m>
@@ -167,7 +167,7 @@ The population of a town begins with <m>1500</m> people at <m>t=0</m> and double
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_4_10">
 <statement>
 <p>
 The population of a town begins with <m>750</m> people at <m>t=0</m> and triples every <m>9</m> years.
@@ -182,7 +182,7 @@ The population of a town begins with <m>750</m> people at <m>t=0</m> and triples
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_4_11">
 <statement>
 <p>
 The initial amount of <m>50</m> mg of a radioactive element is halved every <m>11</m> days.

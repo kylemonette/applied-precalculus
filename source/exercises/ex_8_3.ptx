@@ -25,7 +25,7 @@ For each of the following, find the exact value without using a calculator.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_3_2">
 <statement>
 <p>
 <m>\cos\left(\frac{5\pi}{4}\right)</m>
@@ -40,7 +40,7 @@ For each of the following, find the exact value without using a calculator.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_3_3">
 <statement>
 <p>
 <m>\cos\left(\frac{2\pi}{3}\right)</m>
@@ -55,7 +55,7 @@ For each of the following, find the exact value without using a calculator.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_3_4">
 <statement>
 <p>
 <m>\sin\left(\frac{2\pi}{3}\right)</m>
@@ -70,7 +70,7 @@ For each of the following, find the exact value without using a calculator.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_3_5">
 <statement>
 <p>
 <m>\sin\left(-90^{\circ}\right)</m>
@@ -85,7 +85,7 @@ For each of the following, find the exact value without using a calculator.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_3_6">
 <statement>
 <p>
 <m>\cos\left(-2\pi\right)</m>
@@ -100,7 +100,7 @@ For each of the following, find the exact value without using a calculator.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_3_7">
 <statement>
 <p>
 <m>\cos\left(-\frac{\pi}{6}\right)</m>
@@ -115,7 +115,7 @@ For each of the following, find the exact value without using a calculator.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_3_8">
 <statement>
 <p>
 <m>\sin\left(-\frac{\pi}{6}\right)</m>
@@ -130,7 +130,7 @@ For each of the following, find the exact value without using a calculator.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_8_3_9">
 <statement>
 <p>
 <m>\sin\left(240^{\circ}\right)</m>

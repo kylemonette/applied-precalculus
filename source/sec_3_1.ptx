@@ -1,117 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_3_1">
+    <title>Introduction to Quadratic Functions</title>
 
-    
-<title>Introduction to Quadratic Functions</title>
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
+        <ol>
+            <li>
+                <p>
+                    Identify a quadratic function written in standard form <m>f(x)=ax^2+bx+c</m> and construct its graph.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Use the graph of a quadratic function to identify its <m>x</m>- and <m>y</m>-intercepts and its vertex, and use the formula for the <m>x</m>-coordinate of the vertex as the midpoint of the horizontal intercepts.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Use a quadratic function to model a real-life application, such as a revenue problem, and interpret its intercepts and vertex in that context.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            Consider the function <m>f(x)=x^2+2x-3</m>.
+            A table of values for this function is provided below.
         </p>
-    </introduction>
-    <ol>
-        <li>
-            <p>
-            Identify a quadratic function written in standard form <m>f(x)=ax^2+bx+c</m> and construct its graph.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Use the graph of a quadratic function to identify its <m>x</m>- and <m>y</m>-intercepts and its vertex, and use the formula for the <m>x</m>-coordinate of the vertex as the midpoint of the horizontal intercepts.
-            </p>
-        </li>
-        <li>
-            <p>
-            Use a quadratic function to model a real-life application, such as a revenue problem, and interpret its intercepts and vertex in that context.
-            </p>
-        </li>
-    </ol>
-</objectives>
+        <tabular left="minor" bottom="minor" top="minor" halign="center">
+            <col halign="right" right="minor"/>
+            <col halign="right"/>
+            <col halign="right" right="minor"/>
+            <col halign="center" right="minor"/>
+            <row>
+                <cell><m>x</m></cell>
+                <cell><m>y = f(x)</m></cell>
+                <cell/>
+                <cell>point</cell>
+            </row>
 
+            <row>
+                <cell><m>\textcolor{blue}{-4}</m></cell>
+                <cell><m>(-4)^2 + 2(-4) - 3 =</m></cell>
+                <cell><m>\textcolor{red}{5}</m></cell>
+                <cell><m>(-4, 5)</m></cell>
+            </row>
 
+            <row>
+                <cell><m>\textcolor{blue}{-3}</m></cell>
+                <cell><m>(-3)^2 + 2(-3) - 3 =</m></cell>
+                <cell><m>\textcolor{red}{0}</m></cell>
+                <cell><m>(-3, 0)</m></cell>
+            </row>
 
-<introduction>
+            <row>
+                <cell><m>\textcolor{blue}{-2}</m></cell>
+                <cell><m>(-2)^2 + 2(-2) - 3 =</m></cell>
+                <cell><m>\textcolor{red}{-3}</m></cell>
+                <cell><m>(-2, -3)</m></cell>
+            </row>
 
-<p>
-Consider the function <m>f(x)=x^2+2x-3</m>. A table of values for this function is provided below.
-</p>
+            <row>
+                <cell><m>\textcolor{blue}{-1}</m></cell>
+                <cell><m>(-1)^2 + 2(-1) - 3 =</m></cell>
+                <cell><m>\textcolor{red}{-4}</m></cell>
+                <cell><m>(-1, -4)</m></cell>
+            </row>
 
-<tabular left="minor" bottom="minor" top="minor" halign="center">
-<col halign="right" right="minor"/>
-<col halign="right"/>
-<col halign="right" right="minor"/>
-<col halign="center" right="minor"/>
-<row>
-<cell><m>x</m></cell>
-<cell><m>y = f(x)</m></cell>
-<cell></cell>
-<cell>point</cell>
-</row>
-<row>
-<cell><m>\textcolor{blue}{-4}</m></cell>
-<cell><m>(-4)^2 + 2(-4) - 3 =</m></cell>
-<cell><m>\textcolor{red}{5}</m></cell>
-<cell><m>(-4, 5)</m></cell>
-</row>
-<row>
-<cell><m>\textcolor{blue}{-3}</m></cell>
-<cell><m>(-3)^2 + 2(-3) - 3 =</m></cell>
-<cell><m>\textcolor{red}{0}</m></cell>
-<cell><m>(-3, 0)</m></cell>
-</row>
-<row>
-<cell><m>\textcolor{blue}{-2}</m></cell>
-<cell><m>(-2)^2 + 2(-2) - 3 =</m></cell>
-<cell><m>\textcolor{red}{-3}</m></cell>
-<cell><m>(-2, -3)</m></cell>
-</row>
-<row>
-<cell><m>\textcolor{blue}{-1}</m></cell>
-<cell><m>(-1)^2 + 2(-1) - 3 =</m></cell>
-<cell><m>\textcolor{red}{-4}</m></cell>
-<cell><m>(-1, -4)</m></cell>
-</row>
-<row>
-<cell><m>\textcolor{blue}{0}</m></cell>
-<cell><m>0^2 + 2(0) - 3 =</m></cell>
-<cell><m>\textcolor{red}{-3}</m></cell>
-<cell><m>(0, -3)</m></cell>
-</row>
-<row>
-<cell><m>\textcolor{blue}{1}</m></cell>
-<cell><m>1^2 + 2(1) - 3 =</m></cell>
-<cell><m>\textcolor{red}{0}</m></cell>
-<cell><m>(1, 0)</m></cell>
-</row>
-<row>
-<cell><m>\textcolor{blue}{2}</m></cell>
-<cell><m>2^2 + 2(2) - 3 =</m></cell>
-<cell><m>\textcolor{red}{5}</m></cell>
-<cell><m>(2, 5)</m></cell>
-</row>
-</tabular>
+            <row>
+                <cell><m>\textcolor{blue}{0}</m></cell>
+                <cell><m>0^2 + 2(0) - 3 =</m></cell>
+                <cell><m>\textcolor{red}{-3}</m></cell>
+                <cell><m>(0, -3)</m></cell>
+            </row>
 
+            <row>
+                <cell><m>\textcolor{blue}{1}</m></cell>
+                <cell><m>1^2 + 2(1) - 3 =</m></cell>
+                <cell><m>\textcolor{red}{0}</m></cell>
+                <cell><m>(1, 0)</m></cell>
+            </row>
 
-<p>
-We can use this table of values to construct the plot of <m>f(x)=x^2+2x-3</m> or we can rely on a graphing utility. In either case, the result is the <q>U</q>-shaped graph in <xref ref="fig_3_1_quadratic_basic" />.
-In the figure below, change the values of <m>a,b,c</m> to see how the function changes.
-</p>
+            <row>
+                <cell><m>\textcolor{blue}{2}</m></cell>
+                <cell><m>2^2 + 2(2) - 3 =</m></cell>
+                <cell><m>\textcolor{red}{5}</m></cell>
+                <cell><m>(2, 5)</m></cell>
+            </row>
+        </tabular>
 
-<figure xml:id="fig_3_1_quadratic_basic">
-<interactive platform="jsxgraph" source="jsxgraph/jsx_3_1_quadratic_basic.js" width="60%">
-    <slate xml:id="jsx_3_1_quadratic_basic_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Drag the slider to change the curve.</p>
-    </instructions>
-</interactive>
-</figure>
+        <p>
+            We can use this table of values to construct the plot of <m>f(x)=x^2+2x-3</m> or we can rely on a graphing utility.
+            In either case, the result is the <q>U</q>-shaped graph in <xref ref="fig_3_1_quadratic_basic"/>.
+            In the figure below, change the values of <m>a,b,c</m> to see how the function changes.
+        </p>
 
-
-<!-- <image width="50%" xml:id="fig_3_1_1">
+        <figure xml:id="fig_3_1_quadratic_basic">
+            <caption/>
+            <interactive platform="jsxgraph" source="jsxgraph/jsx_3_1_quadratic_basic.js" width="60%">
+                <slate xml:id="jsx_3_1_quadratic_basic_fig" surface="jsxboard"/>
+                <instructions>
+                    <p>
+                        Drag the slider to change the curve.
+                    </p>
+                </instructions>
+            </interactive>
+        </figure>
+        <!-- <image width="50%" xml:id="fig_3_1_1">
 <shortdescription>
 A short description.
 </shortdescription>
@@ -137,96 +142,95 @@ x post scale = 1.3,
 \end{tikzpicture}
 </latex-image>
 </image> -->
+        <p>
+            From the graph, we can see that <m>f(x)=x^2+2x-3</m> has two <m>x</m>-intercepts, <m>x=-3</m> and <m>x=1</m>, located at the points <m>(-3,0)</m> and <m>(1,0)</m>, respectively.
+            The <m>y</m>-intercept <m>y=-3</m> is located at <m>(0,-3)</m>.
+            Furthermore, there is an additional special point on this graph at which it <q>turns around</q> that is referred to as its <alert>vertex</alert>.
+            The vertex is located at <m>(-1,-4)</m>.
+        </p>
 
+        <p>
+            The function <m>f(x)=x^2+2x-3</m> is an illustration of a <alert>quadratic function</alert>.
+        </p>
 
-<p>
-From the graph, we can see that <m>f(x)=x^2+2x-3</m> has two <m>x</m>-intercepts, <m>x=-3</m> and <m>x=1</m>, located at the points <m>(-3,0)</m> and <m>(1,0)</m>, respectively. The <m>y</m>-intercept <m>y=-3</m> is located at <m>(0,-3)</m>. Furthermore, there is an additional special point on this graph at which it <q>turns around</q> that is referred to as its <alert>vertex</alert>. The vertex is located at <m>(-1,-4)</m>.
-</p>
+        <definition>
+            <title>Standard Form for a Quadratic Function</title>
 
-<p>
-The function <m>f(x)=x^2+2x-3</m> is an illustration of a <alert>quadratic function</alert>.
-</p>
+            <statement>
+                <p>
+                    A function that can be written in the form
+                    <md>
+                        f(x)=ax^2+bx+c
+                    </md>
+                    where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers with <m>a\neq0</m> is called a <alert>quadratic function</alert>.
+                </p>
 
+                <p>
+                    The form <m>f(x)=ax^2+bx+c</m> is referred to as the <alert>standard form</alert> for a quadratic function.
+                </p>
+            </statement>
+        </definition>
+    </introduction>
 
-<definition><title>Standard Form for a Quadratic Function</title>
-<statement>
-<p>
-A function that can be written in the form <md>f(x)=ax^2+bx+c</md> where <m>a</m>, <m>b</m>, and <m>c</m> are real numbers with <m>a\neq0</m> is called a <alert>quadratic function</alert>.
-</p>
+    <subsection>
+        <title>Graphs of Quadratic Functions</title>
 
-<p>
-The form <m>f(x)=ax^2+bx+c</m> is referred to as the <alert>standard form</alert> for a quadratic function.
-</p>
-</statement>
-</definition>
+        <p>
+            The graph of a quadratic function is <q>U</q>-shaped and called a <alert>parabola</alert>.
+            To be precise, we will often call it a <alert>quadratic parabola</alert> to distinguish it from parabola-like graphs of other functions.
+        </p>
+        <aside>
+            <p>
+                You will encounter parabola-like graphs of other functions in Chapter 4.
+            </p>
+        </aside>
 
-</introduction>
+        <example xml:id="exercise-ch3-graph-quads">
+            <statement>
+                <p>
+                    Use the graph of each quadratic function to identify its intercept(s) and vertex.
+                </p>
 
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>f(x)=x^2-2x+3</m>
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                <m>g(x)=-2x^2-8x-3</m>
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                <m>h(x)=x^2-4x+4</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
+            <solution>
+                <p>
+                    The graph of each quadratic function can be obtained by making a table of values or by using a graphing calculator or utility.
+                </p>
 
-<subsection>
-<title>Graphs of Quadratic Functions</title>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The <m>y</m>-intercept is where the graph crosses the <m>y</m>-axis; this occurs at <m>y=3</m>.
+                                There are no <m>x</m>-intercepts, since the graph is located entirely above the <m>x</m>-axis.
+                                The <q>turning point</q> or vertex is the lowest point on the graph since this is an upward facing quadratic parabola; hence the vertex is <m>(1,2)</m>.
+                            </p>
 
-<p>
-The graph of a quadratic function is <q>U</q>-shaped and called a <alert>parabola</alert>. To be precise, we will often call it a <alert>quadratic parabola</alert> to distinguish it from parabola-like graphs of other functions.
-</p>
-
-<aside>
-<p>
-You will encounter parabola-like graphs of other functions in Chapter 4.
-</p>
-</aside>
-
-
-<example xml:id = "exercise-ch3-graph-quads">
-<statement>
-<p>
-Use the graph of each quadratic function to identify its intercept(s) and vertex.
-</p>
-
-<p><ol>
-<li>
-<p>
-<m>f(x)=x^2-2x+3</m>
-</p>
-</li>
-
-<li>
-<p>
-<m>g(x)=-2x^2-8x-3</m>
-</p>
-</li>
-
-<li>
-<p>
-<m>h(x)=x^2-4x+4</m>
-</p>
-</li>
-</ol>
-</p>
-</statement>
-
-<solution>
-<p>
-The graph of each quadratic function can be obtained by making a table of values or by using a graphing calculator or utility.
-</p>
-
-<p>
-<ol>
-<li>
-
-<p>
-The <m>y</m>-intercept is where the graph crosses the <m>y</m>-axis; this occurs at <m>y=3</m>. There are no <m>x</m>-intercepts, since the graph is located entirely above the <m>x</m>-axis.
-The <q>turning point</q> or vertex is the lowest point on the graph since this is an upward facing quadratic parabola; hence the vertex is <m>(1,2)</m>.
-</p>
-
-<image width="50%" xml:id="fig_3_1_2">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_1_2_fig">
+                            <image width="50%" xml:id="fig_3_1_2">
+                                <shortdescription>A short description.</shortdescription>
+                                <latex-image label="3_1_2_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=-2,xmax=4,
@@ -239,22 +243,21 @@ xlabel=\(x\), ylabel=\(f(x)\),
 \addplot[domain=-2:4] {x^2-2*x+3};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
-</li>
+                                </latex-image>
+                            </image>
+                        </li>
 
+                        <li>
+                            <p>
+                                The <m>y</m>-intercept of this quadratic function is <m>y=-3</m>.
+                                The graph crosses the <m>x</m>-axis at two points so there are two <m>x</m>-intercepts.
+                                Visual inspection reveals that the approximate values of <m>x</m> at which the <m>x</m>-intercepts are located are <m>x=-3.6</m> and <m>x=-0.4</m>.
+                                The vertex is the highest point on the graph since this is a downward facing quadratic parabola; hence the vertex is <m>(-2,5)</m>.
+                            </p>
 
-<li>
-
-<p>
-The <m>y</m>-intercept of this quadratic function is <m>y=-3</m>. The graph crosses the <m>x</m>-axis at two points so there are two <m>x</m>-intercepts. Visual inspection reveals that the approximate values of <m>x</m> at which the <m>x</m>-intercepts are located are <m>x=-3.6</m> and <m>x=-0.4</m>. The vertex is the highest point on the graph since this is a downward facing quadratic parabola; hence the vertex is <m>(-2,5)</m>.
-</p>
-
-<image width="50%" xml:id="fig_3_1_3">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_1_3_fig">
+                            <image width="50%" xml:id="fig_3_1_3">
+                                <shortdescription>A short description.</shortdescription>
+                                <latex-image label="3_1_3_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=-5,xmax=1.5,
@@ -267,23 +270,21 @@ xlabel=\(x\), ylabel=\(g(x)\),
 \addplot[domain=-5:1] {-2*x^2 - 8*x - 3};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                                </latex-image>
+                            </image>
+                        </li>
 
-</li>
+                        <li>
+                            <p>
+                                The <m>y</m>-intercept of this function is <m>y=4</m>.
+                                The graph crosses the <m>x</m>-axis at one point only: <m>(2,0)</m>.
+                                Hence, <m>h(x)</m> has one horizontal intercept <m>x=2</m>.
+                                The vertex is the lowest point on the graph since this is an upward facing quadratic parabola; hence the vertex is <m>(2,0)</m>.
+                            </p>
 
-
-<li>
-
-<p>
-The <m>y</m>-intercept of this function is <m>y=4</m>. The graph crosses the <m>x</m>-axis at one point only: <m>(2,0)</m>. Hence, <m>h(x)</m> has one horizontal intercept <m>x=2</m>. The vertex is the lowest point on the graph since this is an upward facing quadratic parabola; hence the vertex is <m>(2,0)</m>.
-</p>
-
-<image width="50%" xml:id="fig_3_1_4">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_1_4_fig">
+                            <image width="50%" xml:id="fig_3_1_4">
+                                <shortdescription>A short description.</shortdescription>
+                                <latex-image label="3_1_4_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=-1,xmax=6,
@@ -296,74 +297,82 @@ xlabel=\(x\), ylabel=\(h(x)\),
 \addplot[domain=-1:6] {x^2-4*x+4};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                                </latex-image>
+                            </image>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
 
-</li>
-</ol>
-</p>
-</solution>
-</example>
+        <p>
+            <xref ref="exercise-ch3-graph-quads"/> indicates that a quadratic function <m>f(x)=ax^2+bx+c</m> may have two horizontal intercepts, one horizontal intercept, or no horizontal intercepts.
+            Recall that horizontal intercepts of <m>f(x)</m> are also called the real <alert>zeros</alert> of <m>f(x)</m> since they are values of <m>x</m> where <m>f(x)=0</m>.
+            With this in mind, our observation about the number of horizontal intercepts a quadratic function may have can be used to conclude that the quadratic equation <m>ax^2+bx+c=0</m> may have two real solutions, one real solution, or no real solution.
+        </p>
 
+        <p>
+            The three parts of <xref ref="exercise-ch3-graph-quads"/> illustrate several other features of quadratic functions.
+            Observe that the parabolas obtained by graphing <m>f(x)=x^2-2x+3</m> and <m>h(x)=x^2-4x+4</m> opened up while the parabola obtained by graphing <m>g(x)=-2x^2-8x-3</m> opened down.
+            Whether the parabola associated with a quadratic function <m>f(x)=ax^2+bx+c</m> will open up or open down is determined entirely by the sign of the leading coefficient <m>a</m>.
+            Additionally, it can be seen that each of the quadratic parabolas obtained from graphing the functions listed in <xref ref="exercise-ch3-graph-quads"/> is symmetric about the vertical line passing through its vertex.
+        </p>
 
+        <theorem xml:id="res-ch3-quadgraphsresult">
+            <title>Special Features of the Graphs of Quadratic Functions</title>
 
-<p>
-<xref ref="exercise-ch3-graph-quads" /> indicates that a quadratic function <m>f(x)=ax^2+bx+c</m> may have two horizontal intercepts, one horizontal intercept, or no horizontal intercepts. Recall that horizontal intercepts of <m>f(x)</m> are also called the real <alert>zeros</alert> of <m>f(x)</m> since they are values of <m>x</m> where <m>f(x)=0</m>. With this in mind, our observation about the number of horizontal intercepts a quadratic function may have can be used to conclude that the quadratic equation <m>ax^2+bx+c=0</m> may have two real solutions, one real solution, or no real solution.
-</p>
+            <statement>
+                <p>
+                    The <q>U</q>-shaped graph of a quadratic function <m>f(x)=ax^2+bx+c</m> is called a <alert>parabola</alert>.
+                </p>
 
-<p>
-The three parts of <xref ref="exercise-ch3-graph-quads" /> illustrate several other features of quadratic functions. Observe that the parabolas obtained by graphing <m>f(x)=x^2-2x+3</m> and <m>h(x)=x^2-4x+4</m> opened up while the parabola obtained by graphing <m>g(x)=-2x^2-8x-3</m> opened down. Whether the parabola associated with a quadratic function <m>f(x)=ax^2+bx+c</m> will open up or open down is determined entirely by the sign of the leading coefficient <m>a</m>. Additionally, it can be seen that each of the quadratic parabolas obtained from graphing the functions listed in <xref ref="exercise-ch3-graph-quads" /> is symmetric about the vertical line passing through its vertex.
-</p>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                If <m>a</m> is positive the <q>U</q> opens up and the vertex occurs at the lowest point on the parabola.
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                If <m>a</m> is negative the <q>U</q> opens down and the vertex occurs at the highest point on the parabola.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
 
-<theorem xml:id = "res-ch3-quadgraphsresult">
-<title>Special Features of the Graphs of Quadratic Functions</title>
-<statement>
-<p>
-The <q>U</q>-shaped graph of a quadratic function <m>f(x)=ax^2+bx+c</m> is called a <alert>parabola</alert>.
-</p>
+                <p>
+                    Furthermore, a quadratic parabola is symmetric about the vertical line passing through its vertex, which is referred to as the <alert>axis of symmetry</alert>.
+                    Because of this symmetry, the <m>x</m>-coordinate of the vertex of a quadratic function with two distinct horizontal intercepts occurs at the midpoint of those horizontal intercepts.
+                </p>
 
-<p><ul>
-<li>
-<p>
-If <m>a</m> is positive the <q>U</q> opens up and the vertex occurs at the lowest point on the parabola.
-</p>
-</li>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                The <m>x</m>-coordinate of the vertex of a quadratic function with distinct horizontal intercepts <m>x=x_1</m> and <m>x=x_2</m> has formula:
+                                <md>
+                                    \text{the $x$ coordinate of the vertex} = \frac{x_1+x_2}{2}.
+                                </md>
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </theorem>
 
-<li>
-<p>
-If <m>a</m> is negative the <q>U</q> opens down and the vertex occurs at the highest point on the parabola.
-</p>
-</li>
-</ul>
-</p>
+        <example>
+            <statement>
+                <p>
+                    Below is the graph of a quadratic function <m>f(x)=ax^2+bx+c</m>.
+                    The horizontal intercepts and the <m>y</m>-coordinate of the vertex are given.
+                    Find the <m>x</m>-coordinate of the vertex and the vertex itself.
+                </p>
 
-<p>
-Furthermore, a quadratic parabola is symmetric about the vertical line passing through its vertex, which is referred to as the <alert>axis of symmetry</alert>. Because of this symmetry, the <m>x</m>-coordinate of the vertex of a quadratic function with two distinct horizontal intercepts occurs at the midpoint of those horizontal intercepts.
-</p>
-
-<p><ul>
-<li>
-<p>
-The <m>x</m>-coordinate of the vertex of a quadratic function with distinct horizontal intercepts <m>x=x_1</m> and <m>x=x_2</m> has formula: <md>\text{the $x$ coordinate of the vertex} = \frac{x_1+x_2}{2}.</md>
-</p>
-</li>
-</ul></p>
-</statement>
-</theorem>
-
-
-<example>
-<statement>
-<p>
-Below is the graph of a quadratic function <m>f(x)=ax^2+bx+c</m>. The horizontal intercepts and the <m>y</m>-coordinate of the vertex are given. Find the <m>x</m>-coordinate of the vertex and the vertex itself.
-</p>
-
-<image width="50%" xml:id="fig_3_1_5">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_1_5_fig">
+                <image width="50%" xml:id="fig_3_1_5">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="3_1_5_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=none,
 xmin=0,xmax=6,
@@ -379,31 +388,35 @@ xlabel=\(x\), ylabel=\(f(x)\),
 \node[rpoint with label={-90:{$(?,-4)$}}] at (axis cs:3,-4) {};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                    </latex-image>
+                </image>
+            </statement>
 
-</statement>
+            <solution>
+                <p>
+                    The <m>x</m>-coordinate of the vertex is the midpoint between the horizontal intercepts <m>x_1=1</m> and <m>x_2=5</m>.
+                    Visually, we may be able to <q>guess</q> that the midpoint is <m>x=3</m>.
+                    To ensure precision, we can use the formula for the midpoint of the <m>x</m>-intercepts:
+                    <md>
+                        \frac{x_1+x_2}{2} = \frac{1+5}{2} = 3.
+                    </md>
+                    Hence the <m>x</m>-coordinate of the vertex is indeed <m>3</m>.
+                    As the <m>y</m>-coordinate of the vertex is given, the vertex is the ordered pair <m>(3,-4)</m>.
+                </p>
+            </solution>
+        </example>
 
-<solution>
-<p>
-The <m>x</m>-coordinate of the vertex is the midpoint between the horizontal intercepts <m>x_1=1</m> and <m>x_2=5</m>. Visually, we may be able to <q>guess</q> that the midpoint is <m>x=3</m>. To ensure precision, we can use the formula for the midpoint of the <m>x</m>-intercepts: <md>\frac{x_1+x_2}{2} = \frac{1+5}{2} = 3.</md> Hence the <m>x</m>-coordinate of the vertex is indeed <m>3</m>. As the <m>y</m>-coordinate of the vertex is given, the vertex is the ordered pair <m>(3,-4)</m>.
-</p>
-</solution>
-</example>
+        <example>
+            <statement>
+                <p>
+                    Below is the graph of a quadratic function <m>f(x)=ax^2+bx+c</m>.
+                    One of the two horizontal intercepts and the vertex are given.
+                    Find the point on the <m>x</m>-axis that corresponds to the other horizontal intercept of <m>f(x)</m>.
+                </p>
 
-
-
-<example>
-<statement>
-<p>
-Below is the graph of a quadratic function <m>f(x)=ax^2+bx+c</m>. One of the two horizontal intercepts and the vertex are given. Find the point on the <m>x</m>-axis that corresponds to the other horizontal intercept of <m>f(x)</m>.
-</p>
-
-<image width="50%" xml:id="fig_3_1_6">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_1_6_fig">
+                <image width="50%" xml:id="fig_3_1_6">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="3_1_6_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=none,
 xmin=-2.5,xmax=4,
@@ -422,20 +435,19 @@ xlabel=\(x\), ylabel=\(f(x)\),
 \node[below left] at (-1,0) {$(-1,0)$};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
-</statement>
+                    </latex-image>
+                </image>
+            </statement>
 
-<solution>
-<p>
-The graph of every quadratic parabola is symmetric with respect to the vertical line passing through its vertex. In this case, we can see that the vertical line through the vertex <m>(1,-4)</m> crosses the <m>x</m>-axis at the point <m>(1,0)</m>.
-</p>
+            <solution>
+                <p>
+                    The graph of every quadratic parabola is symmetric with respect to the vertical line passing through its vertex.
+                    In this case, we can see that the vertical line through the vertex <m>(1,-4)</m> crosses the <m>x</m>-axis at the point <m>(1,0)</m>.
+                </p>
 
-<image width="50%" xml:id="fig_3_1_7">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_1_7_fig">
+                <image width="50%" xml:id="fig_3_1_7">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="3_1_7_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=none,
 xmin=-2.5,xmax=4,
@@ -458,111 +470,112 @@ xlabel=\(x\), ylabel=\(f(x)\),
 \node at (0,0.5) {$\mathcolor{purple}{\overbrace{\hspace{55pt}}^{\hspace{6pt}2}}$};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                    </latex-image>
+                </image>
 
-<p>
-By symmetry, each <m>x</m>-intercept must be the same horizontal distance from the point <m>(1,0)</m>. As <m>(-1,0)</m> is a horizontal distance of <m>2</m> units from <m>(1,0)</m>, the second horizontal intercept must be <m>(3,0)</m>.
-</p>
+                <p>
+                    By symmetry, each <m>x</m>-intercept must be the same horizontal distance from the point <m>(1,0)</m>.
+                    As <m>(-1,0)</m> is a horizontal distance of <m>2</m> units from <m>(1,0)</m>, the second horizontal intercept must be <m>(3,0)</m>.
+                </p>
 
-<p>
-Alternatively, we could use the fact that the <m>x</m>-coordinate of the vertex, <m>x=1</m>, is the midpoint between the given horizontal intercept <m>x_1=-1</m> and the second horizontal intercept <m>x_2</m> that we are tasked with finding. Using the formula for the <m>x</m>-coordinate of the vertex:
-</p>
-<p>
-<md>
-<mrow>x\text{--coordinate of the vertex}\amp=\frac{x_1+x_2}{2}</mrow>
-<mrow>1\amp=\frac{-1+x_2}{2}</mrow>
-<mrow>2\cdot 1\amp=\frac{-1+x_2}{\cancel{2}}\cdot \cancel{2}</mrow>
-<mrow>2\amp=-1+x_2</mrow>
-<mrow>2 \textcolor{blue}{+1}\amp=-1+x_2\textcolor{blue}{+1}</mrow>
-<mrow>3 \amp= x_2</mrow>
-</md>
-</p>
-<p>
-Whether we use a visual approach or the formula, we arrive at the same conclusion: the second horizontal intercept is at the point <m>(3,0)</m>.
-</p>
+                <p>
+                    Alternatively, we could use the fact that the <m>x</m>-coordinate of the vertex, <m>x=1</m>, is the midpoint between the given horizontal intercept <m>x_1=-1</m> and the second horizontal intercept <m>x_2</m> that we are tasked with finding.
+                    Using the formula for the <m>x</m>-coordinate of the vertex:
+                </p>
 
-</solution>
-</example>
+                <p>
+                    <md>
+                        <mrow>x\text{--coordinate of the vertex}\amp=\frac{x_1+x_2}{2}</mrow>
+                        <mrow>1\amp=\frac{-1+x_2}{2}</mrow>
+                        <mrow>2\cdot 1\amp=\frac{-1+x_2}{\cancel{2}}\cdot \cancel{2}</mrow>
+                        <mrow>2\amp=-1+x_2</mrow>
+                        <mrow>2 \textcolor{blue}{+1}\amp=-1+x_2\textcolor{blue}{+1}</mrow>
+                        <mrow>3 \amp= x_2</mrow>
+                    </md>
+                </p>
 
-</subsection>
+                <p>
+                    Whether we use a visual approach or the formula, we arrive at the same conclusion: the second horizontal intercept is at the point <m>(3,0)</m>.
+                </p>
+            </solution>
+        </example>
+    </subsection>
 
+    <subsection>
+        <title>Quadratic Functions and Their Graphs in Applications</title>
 
+        <p>
+            Quadratic functions often model real-life scenarios for which the intercepts and vertex have important practical interpretations.
+        </p>
 
+        <example>
+            <statement>
+                <p>
+                    A chair manufacturer finds that the number of chairs that it can sell depends on the price <m>p</m> (in dollars) that it charges per chair.
+                    Specifically, the number of chairs that will be sold if <m>p</m> dollars is charged per chair is given by the formula <m>1200-6p</m>.
+                </p>
 
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find the formula for the revenue function <m>R(p)</m> and graph <m>R(p)</m>.
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                For what price(s) per chair is the manufacturer's revenue <m>\$0</m>?
+                            </p>
+                        </li>
 
-<subsection>
-<title>Quadratic Functions and Their Graphs in Applications</title>
+                        <li>
+                            <p>
+                                What is the maximum revenue?
+                                What price should the chair manufacturer charge per chair in order to maximize revenue?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
-<p>
-Quadratic functions often model real-life scenarios for which the intercepts and vertex have important practical interpretations.
-</p>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The revenue <m>R(p)</m> is the income that the chair manufacturer makes from selling chairs.
+                                This means that
+                            </p>
 
-
-<example>
-<statement>
-<p>
-A chair manufacturer finds that the number of chairs that it can sell depends on the price <m>p</m> (in dollars) that it charges per chair. Specifically, the number of chairs that will be sold if <m>p</m> dollars is charged per chair is given by the formula <m>1200-6p</m>.
-</p>
-
-<p><ol>
-<li>
-<p>
-Find the formula for the revenue function <m>R(p)</m> and graph <m>R(p)</m>.
-</p>
-</li>
-
-<li>
-<p>
-For what price(s) per chair is the manufacturer's revenue <m>\$0</m>?
-</p>
-</li>
-
-<li>
-<p>
-What is the maximum revenue? What price should the chair manufacturer charge per chair in order to maximize revenue?
-</p>
-</li>
-</ol></p>
-</statement>
-
-<solution>
-<p>
-<ol>
-<li>
-<p>
-The revenue <m>R(p)</m> is the income that the chair manufacturer makes from selling chairs. This means that
-</p>
-<p>
-<md>
-<mrow>R(p) \amp = \bigg(\textcolor{blue}{\underbrace{\genfrac{}{}{0pt}{}{\text{ \color{black}price charged}}{\text{\color{black}per chair}}}_{p}}\bigg) \times \bigg(\textcolor{red}{\underbrace{\genfrac{}{}{0pt}{}{\text{ \color{black}number of chairs sold}}{\text{\color{black}at that price point}}}_{1200-6p}}\bigg)
+                            <p>
+                                <md>
+                                    <mrow>R(p) \amp = \bigg(\textcolor{blue}{\underbrace{\genfrac{}{}{0pt}{}{\text{ \color{black}price charged}}{\text{\color{black}per chair}}}_{p}}\bigg) \times \bigg(\textcolor{red}{\underbrace{\genfrac{}{}{0pt}{}{\text{ \color{black}number of chairs sold}}{\text{\color{black}at that price point}}}_{1200-6p}}\bigg)
 </mrow>
-<mrow>\amp = p(1200 - 6p)</mrow>
-</md>
-</p>
-<p>Note that the revenue function is in fact a quadratic function, which can be seen more easily by using the distributive law to rewrite the formula we found above in the standard form <m>R(p)=ap^2+bp+c</m>:
-</p>
-<p>
-<md>
-<mrow>R(p) \amp = p(1200-6) </mrow>
-<mrow>\amp = 1200p - 6p^2 </mrow>
-<mrow>\amp= -6p^2 + 1200p.</mrow>
-</md>
-</p>
+                                    <mrow>\amp = p(1200 - 6p)</mrow>
+                                </md>
+                            </p>
 
-<!-- ToDo: Figure out the tikzmark commands-->
+                            <p>
+                                Note that the revenue function is in fact a quadratic function, which can be seen more easily by using the distributive law to rewrite the formula we found above in the standard form <m>R(p)=ap^2+bp+c</m>:
+                            </p>
 
-<!-- <mrow>R(p) \amp = \tikzmark{MarkA}p(1200\tikzmark{MarkB}-6p\tikzmark{MarkC})\hspace{-9pt}\DrawBox{Red}{Red} </mrow> -->
-<p>
-Here, <m>a=-6</m>, <m>b=1200</m>, and <m>c=0</m>. The graph of the revenue function can be obtained using a table of values or a graphing utility and the result is the parabola below.
-</p>
+                            <p>
+                                <md>
+                                    <mrow>R(p) \amp = p(1200-6) </mrow>
+                                    <mrow>\amp = 1200p - 6p^2 </mrow>
+                                    <mrow>\amp= -6p^2 + 1200p.</mrow>
+                                </md>
+                            </p>
+                            <!-- ToDo: Figure out the tikzmark commands--> <!-- <mrow>R(p) \amp = \tikzmark{MarkA}p(1200\tikzmark{MarkB}-6p\tikzmark{MarkC})\hspace{-9pt}\DrawBox{Red}{Red} </mrow> -->
+                            <p>
+                                Here, <m>a=-6</m>, <m>b=1200</m>, and <m>c=0</m>.
+                                The graph of the revenue function can be obtained using a table of values or a graphing utility and the result is the parabola below.
+                            </p>
 
-<image width="50%" xml:id="fig_3_1_8">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_1_8_fig">
+                            <image width="50%" xml:id="fig_3_1_8">
+                                <shortdescription>A short description.</shortdescription>
+                                <latex-image label="3_1_8_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=0,xmax=2.5,
@@ -577,49 +590,67 @@ xlabel=\(p\), ylabel=\(R\),
 \addplot[domain=0:2] {-6*(x-1)^2+6};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
-</li>
+                                </latex-image>
+                            </image>
+                        </li>
 
-<li>
-<p>
-The price(s) for which the chair manufacturer's revenue will be <m>\$0</m> can be found by setting the revenue function equal to 0 and solving for <m>p</m>: <md>p(1200 - 6p) = 0.</md> The only way that a product of two factors can be 0 is if one of the factors itself is 0, so the above breaks into the two equations: <md>p = 0 \quad \text{and} \quad 1200-6p=0
-.</md> Solving the latter,
-</p>
-<p>
-<md>
-<mrow>1200 - 6p \amp \;=\; 0</mrow>
-<mrow>1200\textcolor{blue}{-1200} - 6p  \amp \;=\; 0\textcolor{blue}{-1200}</mrow>
-<mrow>\frac{-6p}{-6} \amp \;=\; \frac{-1200}{-6}</mrow>
-<mrow>p \amp \;=\; 200.</mrow>
-</md>
-</p>
+                        <li>
+                            <p>
+                                The price(s) for which the chair manufacturer's revenue will be <m>\$0</m> can be found by setting the revenue function equal to 0 and solving for <m>p</m>:
+                                <md>
+                                    p(1200 - 6p) = 0.
+                                </md>
+                                The only way that a product of two factors can be 0 is if one of the factors itself is 0, so the above breaks into the two equations:
+                                <md>
+                                    p = 0 \quad \text{and} \quad 1200-6p=0
+.
+                                </md>
+                                Solving the latter,
+                            </p>
 
+                            <p>
+                                <md>
+                                    <mrow>1200 - 6p \amp \;=\; 0</mrow>
+                                    <mrow>1200\textcolor{blue}{-1200} - 6p  \amp \;=\; 0\textcolor{blue}{-1200}</mrow>
+                                    <mrow>\frac{-6p}{-6} \amp \;=\; \frac{-1200}{-6}</mrow>
+                                    <mrow>p \amp \;=\; 200.</mrow>
+                                </md>
+                            </p>
 
-<p>
-These two values can also be found by visually inspecting the graph of <m>R(p)</m>. The revenue is <m>\$0</m> where the graph crosses the horizontal axis, which occurs at the values of <m>p=0</m> and <m>p=200</m>.
-</p>
+                            <p>
+                                These two values can also be found by visually inspecting the graph of <m>R(p)</m>.
+                                The revenue is <m>\$0</m> where the graph crosses the horizontal axis, which occurs at the values of <m>p=0</m> and <m>p=200</m>.
+                            </p>
 
-<p>
-Hence if either <m>\$0</m> or <m>\$200</m> is charged per chair, the revenue will be <m>\$0</m>. In the first case, if the chair manufacturer charges nothing for a product, it will of course receive no income. In the second case, charging <m>\$200</m> per chair results in the chair manufacturer pricing itself out of the market; they have set the price too high for customers to be willing to purchase the item.
-</p>
-</li>
+                            <p>
+                                Hence if either <m>\$0</m> or <m>\$200</m> is charged per chair, the revenue will be <m>\$0</m>.
+                                In the first case, if the chair manufacturer charges nothing for a product, it will of course receive no income.
+                                In the second case, charging <m>\$200</m> per chair results in the chair manufacturer pricing itself out of the market; they have set the price too high for customers to be willing to purchase the item.
+                            </p>
+                        </li>
 
-<li>
-<p>
-Since the graph of <m>R(p)</m> is a parabola that opens down, answering questions about the maximum revenue involves the vertex. We can find the vertex by visual inspection or by using the midpoint of the two horizontal intercepts <m>p_1=0</m> and <m>p_2=200</m>. The formula <md>\frac{p_1+p_2}{2}=\frac{0+200}{2}=100</md> tells us that the <m>p</m>-value of the vertex is 100. The <m>R</m>-value of the vertex can be found by substituting <m>p=100</m> into the formula <m>R(p)=-6p^2+1200p</m>:
-<md>R(100)=-6(100)^2+1200(100)=60000.</md>
-Since the vertex is <m>(100,60000)</m>, the maximum revenue occurs when a price of <m>\$100</m> is charged per chair. The maximum revenue is <m>\$60,000</m>.
-</p>
-</li>
-</ol>
-</p>
-</solution>
-</example>
+                        <li>
+                            <p>
+                                Since the graph of <m>R(p)</m> is a parabola that opens down, answering questions about the maximum revenue involves the vertex.
+                                We can find the vertex by visual inspection or by using the midpoint of the two horizontal intercepts <m>p_1=0</m> and <m>p_2=200</m>.
+                                The formula
+                                <md>
+                                    \frac{p_1+p_2}{2}=\frac{0+200}{2}=100
+                                </md>
+                                tells us that the <m>p</m>-value of the vertex is 100.
+                                The <m>R</m>-value of the vertex can be found by substituting <m>p=100</m> into the formula <m>R(p)=-6p^2+1200p</m>:
+                                <md>
+                                    R(100)=-6(100)^2+1200(100)=60000.
+                                </md>
+                                Since the vertex is <m>(100,60000)</m>, the maximum revenue occurs when a price of <m>\$100</m> is charged per chair.
+                                The maximum revenue is <m>\$60,000</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
 
-</subsection>
-
-
-
-<xi:include href="exercises/ex_3_1.ptx"/>
+    <xi:include href="exercises/ex_3_1.ptx"/>
 </section>

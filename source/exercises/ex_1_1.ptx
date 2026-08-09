@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_1_1">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="ex_1_1">
 
 
-<!-- <exercise>
+<!-- <exercise xml:id="exercise_1_1_1">
 <statement>
 <p>
 The value of a car, <m>V</m>, in dollars, is a function of the number of years, <m>t</m>, since it was purchased; that is, <m>V=g(t)</m>.
@@ -39,7 +39,7 @@ The value of a car, <m>V</m>, in dollars, is a function of the number of years, 
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_2">
 <introduction>
 <p>
 The amount of caffeine, <m>C</m>, measured in milligrams, in a person's body <m>t</m> hours after drinking a cup of coffee is given by the function <m>C=f(t)</m>. What do each of the following statements tell you in practical terms; that is, in terms of time and caffeine? Answer in complete sentences and include units with each number.
@@ -94,7 +94,7 @@ The amount of caffeine, <m>C</m>, measured in milligrams, in a person's body <m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_3">
 <introduction>
 <p>
 The total number of units, <m>P</m>, produced after <m>t</m> hours of production is given by the function <m>P=h(t)</m>. What do each of the following statements tell you in practical terms; that is, in terms of units of product produced and time? Answer in complete sentences and include units with each number.
@@ -149,7 +149,7 @@ The total number of units, <m>P</m>, produced after <m>t</m> hours of production
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_4">
 <introduction>
 <p>
 The total cost of a meal in a restaurant, <m>C</m>, in dollars, as a function of the menu price of the meal, <m>p</m>, also in dollars, is given by
@@ -207,7 +207,7 @@ where the term <m>0.20p</m> corresponds to a <m>20\%</m> tip.
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_5">
 <introduction>
 <p>
 A bakery makes 6 batches of cookies an hour, with a batch typically consisting of 12 cookies. The total number of batches baked, <m>B</m>, is measured as function of time <m>t</m>, in hours, so that <m>B=f(t)=6t</m>.
@@ -262,7 +262,7 @@ A bakery makes 6 batches of cookies an hour, with a batch typically consisting o
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_6">
 <introduction>
 <p>
 A driver is heading to a faraway town. The amount of fuel, <m>G</m>, in gallons, left in the fuel tank is a function of the number of miles <m>m</m> driven during the trip; that is, <m>G=f(m)</m>.
@@ -303,7 +303,7 @@ A driver is heading to a faraway town. The amount of fuel, <m>G</m>, in gallons,
 
 
 
-<!-- <exercise>
+<!-- <exercise xml:id="exercise_1_1_7">
 <statement>
 <p>
 Let <m>f(x)=2x+1</m>. Evaluate:
@@ -339,7 +339,7 @@ Let <m>f(x)=2x+1</m>. Evaluate:
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_8">
 <introduction>
 <p>
 Let <m>f(x)=4-3x</m>. Evaluate and simplify if possible:
@@ -391,7 +391,7 @@ Let <m>f(x)=4-3x</m>. Evaluate and simplify if possible:
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_9">
 <introduction>
 <p>
 Let <m>g(x)=3x-x^2</m>. Evaluate:
@@ -444,7 +444,7 @@ Let <m>g(x)=3x-x^2</m>. Evaluate:
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_10">
 <introduction>
 <p>
 Let <m>g(x)=x^2+3</m>. Evaluate and simplify if possible:
@@ -498,7 +498,7 @@ Let <m>g(x)=x^2+3</m>. Evaluate and simplify if possible:
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_11">
 <introduction>
 <p>
 Let <m>\displaystyle f(x)=\frac{1}{x+1}</m>. Evaluate. If the value is undefined, say so.
@@ -552,7 +552,7 @@ Let <m>\displaystyle f(x)=\frac{1}{x+1}</m>. Evaluate. If the value is undefined
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_12">
 <introduction>
 <p>
 Let <m>\displaystyle f(x)=\frac{3}{x+2}</m>. Evaluate and simplify if possible.
@@ -603,7 +603,7 @@ Let <m>\displaystyle f(x)=\frac{3}{x+2}</m>. Evaluate and simplify if possible.
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_13">
 <introduction>
 <p>
 Let <m>f(t)=t^2+\frac{1}{t}</m>. Evaluate and simplify if possible.
@@ -655,7 +655,7 @@ Let <m>f(t)=t^2+\frac{1}{t}</m>. Evaluate and simplify if possible.
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_14">
 <introduction>
 <p>
 Let <m>g(x)=2x^2+\frac{3}{2}x</m> and <m>f(x)=x+3</m>. Evaluate and simplify if possible.
@@ -707,7 +707,7 @@ Let <m>g(x)=2x^2+\frac{3}{2}x</m> and <m>f(x)=x+3</m>. Evaluate and simplify if 
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_15">
 <introduction>
 <p>
 A URI student tutors for MTH 103. The cost of each session in terms of hours, <m>t</m>, is given by the function <m>c(t)=10t+15</m>.
@@ -749,7 +749,7 @@ A URI student tutors for MTH 103. The cost of each session in terms of hours, <m
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_16">
 <introduction>
 <p>
 The value of a car, <m>V</m>, in dollars, <m>t</m> years after purchase is given by the function <m>V=g(t)</m>, where <m>g(t)=16500-1500t</m>.
@@ -802,7 +802,7 @@ The value of a car, <m>V</m>, in dollars, <m>t</m> years after purchase is given
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_17">
 <introduction>
 <!-- \footnote{https://www.weather.gov/safety/lightning-science-thunder, accessed: 6/26/20}. -->
 <p>
@@ -846,7 +846,7 @@ D=\frac{S}{5}
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_18">
 <statement>
 <p>
 The cost of a medium pizza is <m>\$10</m> plus <m>\$1.75</m> per topping. Write a function <m>f(x)</m> to describe the cost of a medium pizza with <m>x</m> number of toppings.
@@ -866,7 +866,7 @@ The cost of a medium pizza is <m>\$10</m> plus <m>\$1.75</m> per topping. Write 
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_19">
 <introduction>
 <p>
 Find a formula for a function <m>h(x)</m> for each of the following scenarios:
@@ -905,7 +905,7 @@ Find a formula for a function <m>h(x)</m> for each of the following scenarios:
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_20">
 <introduction>
 <p>
 Find a formula for a function <m>f(x)</m> for each of the following scenarios:
@@ -961,7 +961,7 @@ Find a formula for a function <m>f(x)</m> for each of the following scenarios:
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_21">
 <introduction>
 <p>
 Find a formula for a function <m>g(x)</m> for each of the following scenarios:
@@ -999,7 +999,7 @@ Find a formula for a function <m>g(x)</m> for each of the following scenarios:
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_22">
 <introduction>
 <p>
 Find the domain of each of the following functions.
@@ -1078,7 +1078,7 @@ Find the domain of each of the following functions.
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_1_23">
 <introduction>
 <p>
 Find the domain of each of the following functions.

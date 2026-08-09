@@ -2,7 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_1_2">
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_1">
 <statement>
 <p>
 Create a table of values and sketch the graph of the function <m>y=x^3</m> for <m>-2\leq x\leq 2</m>. Then use a graphing calculator or other graphing utility to check your graph.
@@ -59,7 +59,7 @@ y post scale = 1.2
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_2">
 <statement>
 <p>
 Create a table of values and sketch the graph of the function <m>f(t)=t^2+t</m> for <m>-2\leq t\leq 1</m>. Then use your calculator or any other graphing utility to check your graph.
@@ -116,7 +116,7 @@ y post scale = 1.2
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_3">
 <statement>
 <p>
 Create a table of values and sketch the graph of the function <m>g(x)=\sqrt{x}</m> for <m>x\geq 0</m>. Then use a graphing calculator or other graphing utility to check your graph.
@@ -171,7 +171,7 @@ y post scale = 1.2
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_4">
 <statement>
 <p>
 The total cost of a meal in a restaurant, <m>C</m>, in dollars, as a function of the price of the meal, <m>p</m>, in dollars is given by:
@@ -310,7 +310,7 @@ y post scale = 1.2
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_6">
 <statement>
 <p>
 For the function <m>y=f(x)</m> whose graph is given in <xref ref="exercise-1_2-graph1"/>, estimate all values <m>x</m> for which <m>f(x)=0</m>.
@@ -330,7 +330,7 @@ For the function <m>y=f(x)</m> whose graph is given in <xref ref="exercise-1_2-g
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_7">
 <statement>
 <p>
 For the function <m>y=f(x)</m> whose graph is given in <xref ref="exercise-1_2-graph1"/>, estimate all values of <m>x</m> for which <m>f(x)=8</m>.
@@ -427,7 +427,7 @@ samples=250]
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_9">
 <statement>
 <p>
 For the function <m>y = f(t)</m> whose graph is given in <xref ref="exercise-1_2-graph2"/>, estimate all values of <m>t</m> for which <m>f(t) = 15</m>.
@@ -447,7 +447,7 @@ For the function <m>y = f(t)</m> whose graph is given in <xref ref="exercise-1_2
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_10">
 <statement>
 <p>
 For the function <m>y = f(t)</m> whose graph is given in <xref ref="exercise-1_2-graph2"/>, estimate all values of <m>t</m> for which <m>f(t) = 12</m>.
@@ -468,7 +468,7 @@ For the function <m>y = f(t)</m> whose graph is given in <xref ref="exercise-1_2
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_11">
 <introduction>
 <p>
 A driver of a 2019 Toyota Corolla fills his gas tank and embarks on a highway trip. The amount of gas left in the tank, <m>G</m>, in gallons, is a function of the number of miles <m>m</m> driven, <m>G=g(m)</m>. Use the graph of <m>g(m)</m> given below to answer the following questions.
@@ -624,7 +624,7 @@ y post scale = 1.2
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_13">
 <introduction>
 <p>
 A man deposited money into a savings account. His balance <m>B(t)</m>, in dollars, after <m>t</m> years is given by the graph below.
@@ -696,7 +696,7 @@ y post scale = 1.2
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_14">
 <statement>
 <p>
 Is the curve below the graph of a function <m>y=f(x)</m>? Explain your answer.
@@ -737,7 +737,7 @@ No, because it fails the vertical line test (in many places!).
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_15">
 <introduction>
 <p>
 The graph of a function <m>y=f(x)</m> is given below. Use it to find the following.
@@ -808,7 +808,7 @@ y post scale = 1.2
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_2_16">
 <statement>
 <p>
 For the function <m>y=f(t)</m> whose graph is depicted below, identify the intervals on the <m>t</m>-axis for which the function is increasing and for which the function is decreasing.

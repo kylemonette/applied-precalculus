@@ -1,60 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_1_2">
+    <title>The Graph of a Function</title>
 
-<title>The Graph of a Function</title>
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<objectives>
+        <ol>
+            <li>
+                <p>
+                    Sketch or interpret the graph of a function given algebraically, numerically, or graphically, including in applied contexts.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Identify the interval(s) on which a function is increasing or decreasing from its graph.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Use the Vertical Line Test to determine whether a given curve is the graph of a function.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            One way to visualize a function is by graphing it.
+            The graph of a function <m>y=f(x)</m> is the set of all ordered pairs or points <m>(x,f(x))</m> in the <m>xy</m>-plane such that <m>x</m> is in the domain of the function <m>f</m> and <m>y=f(x)</m> is the output assigned to the input <m>x</m> by <m>f</m>.
         </p>
-    </introduction>
-    <ol>
-        <li>
-            <p>
-            Sketch or interpret the graph of a function given algebraically, numerically, or graphically, including in applied contexts.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Identify the interval(s) on which a function is increasing or decreasing from its graph.
-            </p>
-        </li>
-        <li>
-            <p>
-            Use the Vertical Line Test to determine whether a given curve is the graph of a function.
-            </p>
-        </li>
-    </ol>
-</objectives>
+        <p>
+            This graph is often a curve in the <m>xy</m>-plane.
+            Specifically, it is the set of all ordered pairs <m>(x,f(x))</m> for which the second coordinate <m>y</m> is the value of the function <m>f</m> at the first coordinate <m>x</m>; that is, the graph is the set of all points <m>(x,y)</m> that satisfy the equation <m>y=f(x)</m>:
+        </p>
 
-
-<introduction>
-<p>
-    One way to visualize a function is by graphing it.
-    The graph of a function <m>y=f(x)</m> is the set of all ordered pairs or points <m>(x,f(x))</m> in the <m>xy</m>-plane such that <m>x</m> is in the domain of the function <m>f</m> and <m>y=f(x)</m> is the output assigned to the input <m>x</m> by <m>f</m>.
-</p>
-
-<p>
-    This graph is often a curve in the <m>xy</m>-plane.
-    Specifically, it is the set of all ordered pairs <m>(x,f(x))</m> for which the second coordinate <m>y</m> is the value of the function <m>f</m> at the first coordinate <m>x</m>; that is, the graph is the set of all points <m>(x,y)</m> that satisfy the equation <m>y=f(x)</m>:
-</p>
-
-
-<figure xml:id="jsx_1_2_function_graph">
-<interactive platform="jsxgraph" source="jsxgraph/jsx_1_2_function_graph.js" width="60%">
-    <slate xml:id="jsx_1_2_function_graph_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Drag the point <m>x</m> to see how <m>(x,y)</m> changes.</p>
-    </instructions>
-</interactive>
-</figure>
-
-
-
-<!-- <image width="50%" xml:id="fig_1_2_1">
+        <figure xml:id="jsx_1_2_function_graph">
+            <caption/>
+            <interactive platform="jsxgraph" source="jsxgraph/jsx_1_2_function_graph.js" width="60%">
+                <slate xml:id="jsx_1_2_function_graph_fig" surface="jsxboard"/>
+                <instructions>
+                    <p>
+                        Drag the point <m>x</m> to see how <m>(x,y)</m> changes.
+                    </p>
+                </instructions>
+            </interactive>
+        </figure>
+        <!-- <image width="50%" xml:id="fig_1_2_1">
 <shortdescription>
 A short description.
 </shortdescription>
@@ -77,119 +76,114 @@ xlabel=\(x\), ylabel=\(y\)
 \end{tikzpicture}
 </latex-image>
 </image> -->
-
-
-
-<p>
-It is not always reasonable or even possible to plot the ordered pair associated with each <m>x</m> in the domain of a given function <m>f(x)</m>.
-This is because functions can have many (sometimes even <em>infinitely</em> many) possible inputs.
-When drawing the graph of a function by hand, we customarily take relatively few points <m>x</m>, plot the corresponding ordered pairs <m>(x,f(x))</m> in the <m>xy</m>-plane, and then join neighboring ordered pairs with straight line segments.
-The result is an approximation of the graph of the function.
-Graphing calculators and other graphing tools do exactly this<mdash/>they just use a greater number of inputs <m>x</m> than we typically would when graphing by hand.
-</p>
-
-<p>
-    It is useful to state a precise definition of the graph of a function as similar definitions appear in other contexts in mathematics.
-</p>
-
-
-<definition>
-    <title>Graph of a Function</title>
-    <statement>
         <p>
-            The graph of a function <m>y=f(x)</m> is the collection of all points <m>(x,y)</m> in the <m>xy</m>-plane for which <m>y=f(x)</m>.
-            In other words, the graph is the collection of points <m>(x,f(x))</m> for all inputs <m>x</m> in the domain of <m>f</m>.
-        </p>
-    </statement>
-</definition>
-
-
-
-<example xml:id="example-ch1-plot-points">
-    <statement>
-        <p>
-        Sketch the graph of the function <m>y=f(x)</m> where <m>f(x)=0.2x^{2}</m> by hand.
-        Plot points on the graph for <m>x=0,\pm 1, \pm 2, \pm 3, \pm 4</m>.
-        </p>
-    </statement>
-
-    <solution>
-        <p>
-        The below table gives each input <m>x</m>, the corresponding output <m>y</m> obtained by calculating <m>f(x)</m>, and then the associated point <m>(x,f(x))</m>.
+            It is not always reasonable or even possible to plot the ordered pair associated with each <m>x</m> in the domain of a given function <m>f(x)</m>.
+            This is because functions can have many (sometimes even <em>infinitely</em> many) possible inputs.
+            When drawing the graph of a function by hand, we customarily take relatively few points <m>x</m>, plot the corresponding ordered pairs <m>(x,f(x))</m> in the <m>xy</m>-plane, and then join neighboring ordered pairs with straight line segments.
+            The result is an approximation of the graph of the function.
+            Graphing calculators and other graphing tools do exactly this <mdash/> they just use a greater number of inputs <m>x</m> than we typically would when graphing by hand.
         </p>
 
-        <tabular left="minor">
-    <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" />
-    <row bottom="minor">
-    <cell> <m>x</m> </cell>
-    <cell> <m>y=f(x)</m> </cell>
-    <cell> <m>(x,f(x))</m> pair </cell>
-    </row>
+        <p>
+            It is useful to state a precise definition of the graph of a function as similar definitions appear in other contexts in mathematics.
+        </p>
 
-    <row>
-    <cell> <m>\textcolor{blue}{-4}</m> </cell>
-    <cell> <m>0.2\cdot(-4)^{2}=\textcolor{red}{3.2}</m> </cell>
-    <cell> <m>(-4,3.2)</m> </cell>
-    </row>
+        <definition>
+            <title>Graph of a Function</title>
 
-    <row>
-    <cell> <m>\textcolor{blue}{-3}</m> </cell>
-    <cell> <m>0.2\cdot(-3)^{2}=\textcolor{red}{1.8}</m> </cell>
-    <cell> <m>(-3,1.8)</m> </cell>
-    </row>
+            <statement>
+                <p>
+                    The graph of a function <m>y=f(x)</m> is the collection of all points <m>(x,y)</m> in the <m>xy</m>-plane for which <m>y=f(x)</m>.
+                    In other words, the graph is the collection of points <m>(x,f(x))</m> for all inputs <m>x</m> in the domain of <m>f</m>.
+                </p>
+            </statement>
+        </definition>
 
-    <row>
-    <cell> <m>\textcolor{blue}{-2}</m> </cell>
-    <cell> <m>0.2\cdot(-2)^{2}=\textcolor{red}{0.8}</m> </cell>
-    <cell> <m>(-2,0.8)</m> </cell>
-    </row>
+        <example xml:id="example-ch1-plot-points">
+            <statement>
+                <p>
+                    Sketch the graph of the function <m>y=f(x)</m> where <m>f(x)=0.2x^{2}</m> by hand.
+                    Plot points on the graph for <m>x=0,\pm 1, \pm 2, \pm 3, \pm 4</m>.
+                </p>
+            </statement>
 
-    <row>
-    <cell> <m>\textcolor{blue}{-1}</m> </cell>
-    <cell> <m>0.2\cdot(-1)^{2}=\textcolor{red}{0.2}</m> </cell>
-    <cell> <m>(-1,0.2)</m> </cell>
-    </row>
+            <solution>
+                <p>
+                    The below table gives each input <m>x</m>, the corresponding output <m>y</m> obtained by calculating <m>f(x)</m>, and then the associated point <m>(x,f(x))</m>.
+                </p>
 
-    <row>
-    <cell> <m>\textcolor{blue}{0}</m> </cell>
-    <cell> <m>0.2\cdot(0)^{2}=\textcolor{red}{0}</m> </cell>
-    <cell> <m>(0,0)</m> </cell>
-    </row>
+                <tabular left="minor">
+                    <col halign="center" right="minor"/>
+                    <col halign="center" right="minor"/>
+                    <col halign="center" right="minor"/>
+                    <row bottom="minor">
+                        <cell><m>x</m></cell>
+                        <cell><m>y=f(x)</m></cell>
+                        <cell><m>(x,f(x))</m> pair</cell>
+                    </row>
 
-    <row>
-    <cell> <m>\textcolor{blue}{1}</m> </cell>
-    <cell> <m>0.2\cdot(1)^{2}=\textcolor{red}{0.2}</m> </cell>
-    <cell> <m>(1,0.2)</m> </cell>
-    </row>
+                    <row>
+                        <cell><m>\textcolor{blue}{-4}</m></cell>
+                        <cell><m>0.2\cdot(-4)^{2}=\textcolor{red}{3.2}</m></cell>
+                        <cell><m>(-4,3.2)</m></cell>
+                    </row>
 
-    <row>
-    <cell> <m>\textcolor{blue}{2}</m> </cell>
-    <cell> <m>0.2\cdot(2)^{2}=\textcolor{red}{0.8}</m> </cell>
-    <cell> <m>(2,0.8)</m> </cell>
-    </row>
+                    <row>
+                        <cell><m>\textcolor{blue}{-3}</m></cell>
+                        <cell><m>0.2\cdot(-3)^{2}=\textcolor{red}{1.8}</m></cell>
+                        <cell><m>(-3,1.8)</m></cell>
+                    </row>
 
-    <row>
-    <cell> <m>\textcolor{blue}{3}</m> </cell>
-    <cell> <m>0.2\cdot(3)^{2}=\textcolor{red}{1.8}</m> </cell>
-    <cell> <m>(3,1.8)</m> </cell>
-    </row>
+                    <row>
+                        <cell><m>\textcolor{blue}{-2}</m></cell>
+                        <cell><m>0.2\cdot(-2)^{2}=\textcolor{red}{0.8}</m></cell>
+                        <cell><m>(-2,0.8)</m></cell>
+                    </row>
 
-    <row>
-    <cell> <m>\textcolor{blue}{4}</m> </cell>
-    <cell> <m>0.2\cdot(4)^{2}=\textcolor{red}{3.2}</m> </cell>
-    <cell> <m>(4,3.2)</m> </cell>
-    </row>
-</tabular>
+                    <row>
+                        <cell><m>\textcolor{blue}{-1}</m></cell>
+                        <cell><m>0.2\cdot(-1)^{2}=\textcolor{red}{0.2}</m></cell>
+                        <cell><m>(-1,0.2)</m></cell>
+                    </row>
 
-    <p>
-        Plotting these points on the <m>xy</m>-plane and joining neighboring points by straight line segments results in the following rough sketch of <m>f(x)=0.2x^{2}</m>:
-    </p>
+                    <row>
+                        <cell><m>\textcolor{blue}{0}</m></cell>
+                        <cell><m>0.2\cdot(0)^{2}=\textcolor{red}{0}</m></cell>
+                        <cell><m>(0,0)</m></cell>
+                    </row>
 
-    <image width="50%" xml:id="fig_1_2_2">
-    <shortdescription>
-    A short description.
-    </shortdescription>
-    <latex-image label="fig_1_2_2_fig">
+                    <row>
+                        <cell><m>\textcolor{blue}{1}</m></cell>
+                        <cell><m>0.2\cdot(1)^{2}=\textcolor{red}{0.2}</m></cell>
+                        <cell><m>(1,0.2)</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>\textcolor{blue}{2}</m></cell>
+                        <cell><m>0.2\cdot(2)^{2}=\textcolor{red}{0.8}</m></cell>
+                        <cell><m>(2,0.8)</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>\textcolor{blue}{3}</m></cell>
+                        <cell><m>0.2\cdot(3)^{2}=\textcolor{red}{1.8}</m></cell>
+                        <cell><m>(3,1.8)</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>\textcolor{blue}{4}</m></cell>
+                        <cell><m>0.2\cdot(4)^{2}=\textcolor{red}{3.2}</m></cell>
+                        <cell><m>(4,3.2)</m></cell>
+                    </row>
+                </tabular>
+
+                <p>
+                    Plotting these points on the <m>xy</m>-plane and joining neighboring points by straight line segments results in the following rough sketch of <m>f(x)=0.2x^{2}</m>:
+                </p>
+
+                <image width="50%" xml:id="fig_1_2_2">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="fig_1_2_2_fig">
    \begin{tikzpicture}[scale=0.8]
     \begin{axis}[grid=both,
     xmin=-5,xmax=5,
@@ -213,412 +207,348 @@ Graphing calculators and other graphing tools do exactly this<mdash/>they just u
     };
     \end{axis}
     \end{tikzpicture}
-    </latex-image>
-  </image>
+                    </latex-image>
+                </image>
 
-  <p>
-    This is a decent approximation of the graph of <m>y=0.2x^{2}</m>.
-A better graph of <m>y=0.2x^{2}</m> can be obtained from a graphing calculator, graphing software package, or other similar tool.
-  </p>
+                <p>
+                    This is a decent approximation of the graph of <m>y=0.2x^{2}</m>.
+                    A better graph of <m>y=0.2x^{2}</m> can be obtained from a graphing calculator, graphing software package, or other similar tool.
+                </p>
 
-<image width="50%" xml:id="fig_1_2_3">
-    <shortdescription>
-    A short description.
-    </shortdescription>
-    <latex-image label="fig_1_2_3_fig">
-   \begin{tikzpicture}[scale=0.8]
-    \begin{axis}[grid=both,
-    xmin=-5,xmax=5,
-    ymin=-1,ymax=3.5,
-    xtick={-4,...,4},
-    ytick={1,2,3,4},
-    minor tick={},
-    xlabel=\(x\), ylabel=\(y\),
-    x post scale = 1.2
-    ]
-    \addplot[domain=-4:4] {0.2*x^2} node[left,pos=1] {$y=0.2x^2$};
-    \end{axis}
-    \end{tikzpicture}
-    </latex-image>
-  </image>
-    </solution>
-</example>
+                <image width="50%" xml:id="fig_1_2_3">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="fig_1_2_3_fig">
+                    \begin{tikzpicture}[scale=0.8]
+                    \begin{axis}[grid=both,
+                    xmin=-5,xmax=5,
+                    ymin=-1,ymax=3.5,
+                    xtick={-4,...,4},
+                    ytick={1,2,3,4},
+                    minor tick={},
+                    xlabel=\(x\), ylabel=\(y\),
+                    x post scale = 1.2
+                    ]
+                    \addplot[domain=-4:4] {0.2*x^2} node[left,pos=1] {$y=0.2x^2$};
+                    \end{axis}
+                    \end{tikzpicture}
+                    </latex-image>
+                </image>
+            </solution>
+        </example>
 
-
-<p>
-    In <xref ref="example-ch1-plot-points"/>, the function <m>f(x)</m> was given <em>algebraically</em>.
-    That is, we were provided the algebraic formula <m>f(x)=0.2x^{2}</m> for the function.
-</p>
-
-<p>
-    Sometimes, a function is given <em>graphically</em>.
-    That is, we are given only the graph of the function.
-    The following examples illustrate that a great deal of information can be extracted from the graph of a function.
-</p>
-
-
-<example>
-    <statement>
         <p>
-        The amount of nicotine in a person's bloodstream, <m>N=f(t)</m>, in milligrams, is a function of the time <m>t</m>, in hours, that has passed since the person smoked a single cigarette.
-        The graph of the function <m>f(t)</m> is given in <xref ref="fig-ch1-cigarette"/>.
+            In <xref ref="example-ch1-plot-points"/>, the function <m>f(x)</m> was given <em>algebraically</em>.
+            That is, we were provided the algebraic formula <m>f(x)=0.2x^{2}</m> for the function.
         </p>
 
-    <figure xml:id="fig-ch1-cigarette">
-  <caption></caption>
-  <image width="50%" xml:id="fig_1_2_4">
-    <shortdescription>
-    A short description.
-    </shortdescription>
-    <latex-image label="fig_1_2_4_fig">
-   \begin{tikzpicture}[scale=0.8]
-    \begin{axis}[grid=both,
-    xmin=0,xmax=7.5,
-    ymin=0,ymax=2.5,
-    xtick={0,...,8},
-    ytick={0.5,1,1.5,2},
-    minor tick={},
-    xlabel=\(t\), ylabel=\(N\),
-    x post scale = 1
-    ]
-    \addplot[domain=0:7] {2*(0.5)^(x/2)};
-    \end{axis}
-    \end{tikzpicture}
-    </latex-image>
-  </image>
-</figure>
-
-<p>
-<ol>
-    <li>
-        How much nicotine is absorbed from a single cigarette?
-    </li>
-    <li>
-        How much nicotine is left in the person's bloodstream <m>2</m> hours after smoking a single cigarette? What about after <m>4</m> hours?
-    </li>
-</ol>
-</p>
-    </statement>
-
-<solution>
-    <p>
-    <ol>
-    <li>
-        Note that <m>f(0)=2</m> (as the point <m>(0,2)</m> belongs to the graph of <m>f(t)</m>).
-        Thus, at <m>0</m> hours<mdash/>so immediately after a person finishes smoking a cigarette<mdash/>the amount of nicotine in their bloodstream is <m>2</m> milligrams.
-        This is the amount absorbed from the cigarette.
-    </li>
-    <li>
-    <p>
-        As time goes on, the amount of nicotine decreases.
-        We see from the grid on the <m>tN</m>-plane that <m>f(2)=1</m>; in other words, the point <m>(2,1)</m> lies on the graph.
-        This tells us that <m>2</m> hours after smoking a single cigarette there is <m>1</m> milligram of nicotine left in the bloodstream.
-    </p>
-    <p>
-        Similarly, we observe that <m>f(4)=0.5</m> and conclude that <m>4</m> hours after smoking a single cigarette there is only <m>0.5</m> milligram of nicotine left in the bloodstream.
-    </p>
-    </li>
-</ol>
-    </p>
-</solution>
-</example>
-
-
-
-
-
-<example xml:id = "example-ch1-driving">
-    <statement>
         <p>
-            A woman is driving to visit with her family in a town <m>120</m> miles from her home.
-            Let <m>t</m> be the time, in hours, since she left her home.
-            Let <m>d</m> be the distance, in miles, to her destination.
-            Here, <m>d</m> is a function of <m>t</m>: <m>d=g(t)</m>.
-            The graph of the function <m>g(t)</m> is given in <xref ref="fig-ch1-driving"/>.
+            Sometimes, a function is given <em>graphically</em>.
+            That is, we are given only the graph of the function.
+            The following examples illustrate that a great deal of information can be extracted from the graph of a function.
         </p>
 
-         <figure xml:id="fig-ch1-driving">
-  <caption></caption>
-  <image width="50%" xml:id="fig_1_2_5">
-    <shortdescription>
-    A short description.
-    </shortdescription>
-    <latex-image label="fig_1_2_5_fig">
-   \begin{tikzpicture}[scale=0.8]
-    \begin{axis}[grid=both,
-    xmin=0,xmax=4.5,
-    ymin=0,ymax=6.5,
-    xtick={1,2,3,4},
-    ytick={1,2,3,4,5,6},
-    yticklabels={20,40,60,80,100,120},
-    minor tick={},
-    xlabel=\(t\), ylabel=\(d\),
-    x post scale = 1
-    ]
-    \addplot[domain=0:3] {6-2*x};
-    \end{axis}
-    \end{tikzpicture}
-    </latex-image>
-  </image>
-</figure>
+        <example>
+            <statement>
+                <p>
+                    The amount of nicotine in a person's bloodstream, <m>N=f(t)</m>, in milligrams, is a function of the time <m>t</m>, in hours, that has passed since the person smoked a single cigarette.
+                    The graph of the function <m>f(t)</m> is given in <xref ref="fig-ch1-cigarette"/>.
+                </p>
 
-<p>
-    <ol>
-    <li>
-        What is her distance from her destination <m>1</m> hour after she leaves home?
-    </li>
-    <li>
-        Estimate the time at which her distance from her destination is <m>60</m> miles.
-    </li>
-    <li>
-        When will she reach her destination?
-    </li>
-    <li>
-        How fast is she driving?
-    </li>
-</ol>
-</p>
-    </statement>
+                <figure xml:id="fig-ch1-cigarette">
+                    <caption/>
+                    <image width="50%" xml:id="fig_1_2_4">
+                        <shortdescription>A short description.</shortdescription>
+                        <latex-image label="fig_1_2_4_fig">
+                        \begin{tikzpicture}[scale=0.8]
+                        \begin{axis}[grid=both,
+                        xmin=0,xmax=7.5,
+                        ymin=0,ymax=2.5,
+                        xtick={0,...,8},
+                        ytick={0.5,1,1.5,2},
+                        minor tick={},
+                        xlabel=\(t\), ylabel=\(N\),
+                        x post scale = 1
+                        ]
+                        \addplot[domain=0:7] {2*(0.5)^(x/2)};
+                        \end{axis}
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                </figure>
 
-<solution>
-    <p>
-    <ol>
-    <li>
-        The point on the graph above <m>t=1</m> is <m>(1,80)</m>.
-        In function notation, this can be written as <m>g(1)=80</m>.
-        The practical meaning of this notation is that the distance to her destination after <m>1</m> hour of driving is <m>80</m> miles.
-    </li>
-    <li>
-        We look for the point on the graph for which the second coordinate is <m>d=60</m>.
-        The <m>t</m>-coordinate of that point seems to be at <m>t=1.5</m>.
-        We conclude that the point <m>(1.5,60)</m> lies on the graph, and that the associated function notation is <m>g(1.5)=60</m>.
-        This means that after <m>1.5</m> hours, the woman is 60 miles from her destination.
-    </li>
-    <li>
-        The woman reaches her destination when <m>d=0</m>; that is, when <m>g(t)=0</m>.
-        From the graph, it is clear that <m>g(3)=0</m>.
-        Hence the woman arrives at her destination after <m>3</m> hours.
-    </li>
-    <li>
-        In the first hour of driving, her distance from her destination drops from <m>120</m> miles to <m>80</m> miles.
-        After the next hour, it drops from <m>80</m> miles to <m>40</m> miles, and then from <m>40</m> miles to <m>0</m> miles during the hour after that.
-        This pattern reveals that the woman is traveling at <m>40</m> miles per hour.
-    </li>
-</ol>
-    </p>
-</solution>
-</example>
+                <p>
+                    <ol>
+                        <li>How much nicotine is absorbed from a single cigarette?</li>
+                        <li>How much nicotine is left in the person's bloodstream <m>2</m> hours after smoking a single cigarette? What about after <m>4</m> hours?</li>
+                    </ol>
+                </p>
+            </statement>
 
+            <solution>
+                <p>
+                    <ol>
+                        <li>Note that <m>f(0)=2</m> (as the point <m>(0,2)</m> belongs to the graph of <m>f(t)</m> ). Thus, at <m>0</m> hours <mdash/> so immediately after a person finishes smoking a cigarette <mdash/> the amount of nicotine in their bloodstream is <m>2</m> milligrams. This is the amount absorbed from the cigarette.</li>
+                        <li>
+                            <p>
+                                As time goes on, the amount of nicotine decreases.
+                                We see from the grid on the <m>tN</m>-plane that <m>f(2)=1</m>; in other words, the point <m>(2,1)</m> lies on the graph.
+                                This tells us that <m>2</m> hours after smoking a single cigarette there is <m>1</m> milligram of nicotine left in the bloodstream.
+                            </p>
 
+                            <p>
+                                Similarly, we observe that <m>f(4)=0.5</m> and conclude that <m>4</m> hours after smoking a single cigarette there is only <m>0.5</m> milligram of nicotine left in the bloodstream.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
 
-</introduction>
+        <example xml:id="example-ch1-driving">
+            <statement>
+                <p>
+                    A woman is driving to visit with her family in a town <m>120</m> miles from her home.
+                    Let <m>t</m> be the time, in hours, since she left her home.
+                    Let <m>d</m> be the distance, in miles, to her destination.
+                    Here, <m>d</m> is a function of <m>t</m>: <m>d=g(t)</m>.
+                    The graph of the function <m>g(t)</m> is given in <xref ref="fig-ch1-driving"/>.
+                </p>
 
+                <figure xml:id="fig-ch1-driving">
+                    <caption/>
+                    <image width="50%" xml:id="fig_1_2_5">
+                        <shortdescription>A short description.</shortdescription>
+                        <latex-image label="fig_1_2_5_fig">
+                        \begin{tikzpicture}[scale=0.8]
+                        \begin{axis}[grid=both,
+                        xmin=0,xmax=4.5,
+                        ymin=0,ymax=6.5,
+                        xtick={1,2,3,4},
+                        ytick={1,2,3,4,5,6},
+                        yticklabels={20,40,60,80,100,120},
+                        minor tick={},
+                        xlabel=\(t\), ylabel=\(d\),
+                        x post scale = 1
+                        ]
+                        \addplot[domain=0:3] {6-2*x};
+                        \end{axis}
+                        \end{tikzpicture}
+                        </latex-image>
+                    </image>
+                </figure>
 
-<subsection><title>Graphs of Increasing and Decreasing Functions</title>
+                <p>
+                    <ol>
+                        <li>What is her distance from her destination <m>1</m> hour after she leaves home?</li>
+                        <li>Estimate the time at which her distance from her destination is <m>60</m> miles.</li>
+                        <li>When will she reach her destination?</li>
+                        <li>How fast is she driving?</li>
+                    </ol>
+                </p>
+            </statement>
 
+            <solution>
+                <p>
+                    <ol>
+                        <li>The point on the graph above <m>t=1</m> is <m>(1,80)</m>. In function notation, this can be written as <m>g(1)=80</m>. The practical meaning of this notation is that the distance to her destination after <m>1</m> hour of driving is <m>80</m> miles.</li>
+                        <li>We look for the point on the graph for which the second coordinate is <m>d=60</m>. The <m>t</m>-coordinate of that point seems to be at <m>t=1.5</m>. We conclude that the point <m>(1.5,60)</m> lies on the graph, and that the associated function notation is <m>g(1.5)=60</m>. This means that after <m>1.5</m> hours, the woman is 60 miles from her destination.</li>
+                        <li>The woman reaches her destination when <m>d=0</m>; that is, when <m>g(t)=0</m>. From the graph, it is clear that <m>g(3)=0</m>. Hence the woman arrives at her destination after <m>3</m> hours.</li>
+                        <li>In the first hour of driving, her distance from her destination drops from <m>120</m> miles to <m>80</m> miles. After the next hour, it drops from <m>80</m> miles to <m>40</m> miles, and then from <m>40</m> miles to <m>0</m> miles during the hour after that. This pattern reveals that the woman is traveling at <m>40</m> miles per hour.</li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </introduction>
 
-<p>
-In graphical terms:
-</p>
+    <subsection>
+        <title>Graphs of Increasing and Decreasing Functions</title>
 
-<p>
-<ul>
-<li>
-    A function is increasing if its graph <alert>climbs</alert> as the independent variable increases; that is, as we move from left to right.
-</li>
-<li>
-    A function is decreasing if its graph <alert>falls</alert> as the independent variable increases; that is, as we move from left to right.
-</li>
-</ul>
-</p>
-
-
-<p>
-    The function <m>N=f(t)</m> in <xref ref="example-ch1-plot-points"/> is decreasing<mdash/>its graph is falling as <m>t</m> increases.
-    The amount of nicotine decreases as the amount of time after smoking a cigarette increases.
-    In <xref ref="example-ch1-driving"/> the distance to the destination <m>d=g(t)</m> decreases as the time <m>t</m> spent driving increases.
-    The function in <xref ref="example-ch1-plot-points"/> is neither increasing nor decreasing in its domain.
-    At first, over the negative <m>x</m>-axis the graph is falling; the values <m>f(x)</m> decrease as <m>x</m> increases.
-    Then, over the positive <m>x</m>-axis, the graph is climbing; the values <m>f(x)</m> increase as <m>x</m> increases.
-    We can say that <m>f</m> is decreasing on the interval <m>x \lt 0</m> and increasing on the interval <m>x \gt 0</m>.
-</p>
-
-<aside>
-    <p>
-    We typically require that these intervals <m>I</m> be <em>open</em>: <m>(\cdot, \cdot)</m>. Why? You'll see in calculus.
-    </p>
-</aside>
-
-<definition>
-    <title>Functions Increasing or Decreasing on Intervals</title>
-    <statement>
         <p>
-        <ul>
-            <li>
-                A function <m>f(x)</m> is increasing on an interval <m>I</m> if the values <m>f(x)</m> increase as <m>x</m> increases along <m>I</m>.
-            </li>
-             <li>
-        A function <m>f(x)</m> is decreasing on an interval <m>I</m> if the values <m>f(x)</m> decrease as <m>x</m> increases along <m>I</m>.
-    </li>
-        </ul>
-        </p>
-    </statement>
-</definition>
-
-
-<example>
-<statement>
-    <p>
-    Identify the interval(s) on which the function <m>f(x)</m> depicted below is increasing and the interval(s) on which it is decreasing.
-    </p>
-
-    <image width="50%" xml:id="fig_1_2_6">
-    <shortdescription>
-    A short description.
-    </shortdescription>
-    <latex-image label="fig_1_2_6_fig">
-   \begin{tikzpicture}[scale=0.8]
-    \begin{axis}[grid=both,
-    xmin=-4.5,xmax=4.5,
-    ymin=-5.5,ymax=5.5,
-    xtick={-4,...,4},
-    ytick={-5,...,5},
-    % yticklabels={20,40,60,80,100,120},
-    minor tick={},
-    xlabel=\(x\), ylabel=\(y\),
-    x post scale = 1.2,
-    y post scale = 1.2
-    ]
-    \addplot[domain=-4:4] {0.30303*x^3-3.71212*x};
-    \end{axis}
-    \end{tikzpicture}
-    </latex-image>
-  </image>
-</statement>
-
-<solution>
-    <p>
-        The graph of <m>f(x)</m> is climbing on the interval <m>-4 \lt x \lt -2</m> and on the interval <m>2 \lt x \lt 4</m>. Hence, the function is increasing on these intervals. In interval notation, we would write that the function is increasing on <m>(-4,-2)\cup(2,4)</m>.
-    </p>
-    <p>
-        The graph of <m>f(x)</m> is falling and thus <m>f(x)</m> is decreasing on the interval <m>-2 \lt x \lt 2</m>. In interval notation, we would write that the function is decreasing on <m>(-2,4)</m>.
-    </p>
-
-    <aside>
-        <p>
-        Note that we do not use a bracket <m>[</m> or <m>]</m> around any of the endpoints <m>x=-4</m>, <m>x=2</m>, or <m>x=4</m> that appear in the interval notation here. This is because a function is neither increasing nor decreasing at these endpoints<mdash/>it either <q>stops</q> at them, or <q>turns around.</q>
-        </p>
-    </aside>
-</solution>
-</example>
-
-
-</subsection>
-
-
-
-<subsection><title>Vertical Line Test</title>
-    
-<p>
-    We have established that the graph of a function <m>y=f(x)</m> is often a curve in the <m>xy</m>-plane.
-    However, not every curve in the <m>xy</m>-plane is the graph of a function.
-    The definition of a function requires that for each input <m>x</m> in the domain there is <alert>exactly one</alert> output <m>y</m>.
-    That is, there cannot be two different outputs corresponding to the same input.
-</p>
-
-<p>
-    The Vertical Line Test is a simple visual way of determining if a given curve is or is not the graph of a function.
-</p>
-
-<theorem><title>Vertical Line Test</title>
-    <statement>
-        <p>
-        Let a curve in the <m>xy</m>-plane be given.
-        If there is a vertical line that intersects the curve more than once, then the curve does not represent a function.
-        If every vertical line intersects the curve at most once, then the curve represents the graph of a function.
-        </p>
-    </statement>
-</theorem>
-
-
-<aside>
-    <p>
-        This test clearly requires having the <em>graph</em> of a curve. In the next section, when a table of values is given, we cannot use this test.
-    </p>
-</aside>
-
-
-<example>
-<statement>
-    <p>
-    Is the circle of radius <m>1</m> centered at the origin <m>(0,0)</m> in the <m>xy</m>-plane the graph of a function?
-    </p>
-</statement>
-
-<solution>
-    <p>
-    Consider the vertical line corresponding to <m>x=0.5</m>; that is, the vertical line passing through the point <m>(0.5,0)</m> on the <m>x</m>-axis.
-    </p>
-
-    <image width="50%" xml:id="fig_1_2_7">
-    <shortdescription>
-    A short description.
-    </shortdescription>
-    <latex-image label="fig_1_2_7_fig">
-   \begin{tikzpicture}[scale=0.9]
-    \begin{axis}[grid=none,
-    xmin=-1.5,xmax=1.5,
-    ymin=-1.5,ymax=1.5,
-    xtick={-1,0.5,1},
-    ytick={-1,1},
-    xticklabel style = {xshift=0.5em},
-    yticklabel style = {yshift=0.5em},
-    minor tick={},
-    xlabel=\(x\), ylabel=\(y\),
-    x post scale = 1,
-    axis equal
-    ]
-    \draw[thick,blue] (0,0) circle (1);
-    \draw[thick,red] (0.5,1.5) -- (0.5,-1.5);
-    \node[rpoint with label={0:{}}] at (axis cs:0.5,0.866) {};
-    \node[rpoint with label={0:{}}] at (axis cs:0.5,-0.866) {};
-    \end{axis}
-    \end{tikzpicture}
-    </latex-image>
-  </image>
-
-  <aside>
-    <p>
-        It takes only <em>one</em> vertical line intersecting the curve twice to conclude that the curve is not a function!
-    </p>
-  </aside>
-
-  <p>
-    This vertical line intersects the circle at two points with two different values of <m>y</m>, meaning there are two outputs corresponding to the input <m>x=0.5</m>.
-    This violates the definition of a function.
-    Hence, the circle is NOT the graph of a function.
-  </p>
-</solution>
-</example>
-
-
-<p>
-    In utilizing the Vertical Line Test, it doesn't matter if the coordinates on the plane are labeled with <m>x</m>, <m>y</m>, or other letters.
-    The idea is the same.
-</p>
-
-
-<example>
-    <statement>
-        <p>
-        Is the graph of a straight line segment between the ordered pairs <m>(0,120)</m> and <m>(3,0)</m> in the <m>td</m>-plane the graph of a function?
+            In graphical terms:
         </p>
 
-    <image width="50%" xml:id="fig_1_2_8">
-    <shortdescription>
-    A short description.
-    </shortdescription>
-    <latex-image label="fig_1_2_8_fig">
+        <p>
+            <ul>
+                <li>A function is increasing if its graph <alert>climbs</alert> as the independent variable increases; that is, as we move from left to right.</li>
+                <li>A function is decreasing if its graph <alert>falls</alert> as the independent variable increases; that is, as we move from left to right.</li>
+            </ul>
+        </p>
+
+        <p>
+            The function <m>N=f(t)</m> in <xref ref="example-ch1-plot-points"/> is decreasing <mdash/> its graph is falling as <m>t</m> increases.
+            The amount of nicotine decreases as the amount of time after smoking a cigarette increases.
+            In <xref ref="example-ch1-driving"/> the distance to the destination <m>d=g(t)</m> decreases as the time <m>t</m> spent driving increases.
+            The function in <xref ref="example-ch1-plot-points"/> is neither increasing nor decreasing in its domain.
+            At first, over the negative <m>x</m>-axis the graph is falling; the values <m>f(x)</m> decrease as <m>x</m> increases.
+            Then, over the positive <m>x</m>-axis, the graph is climbing; the values <m>f(x)</m> increase as <m>x</m> increases.
+            We can say that <m>f</m> is decreasing on the interval <m>x \lt 0</m> and increasing on the interval <m>x \gt 0</m>.
+        </p>
+        <aside>
+            <p>
+                We typically require that these intervals <m>I</m> be <em>open</em>: <m>(\cdot, \cdot)</m>.
+                Why?
+                You'll see in calculus.
+            </p>
+        </aside>
+
+        <definition>
+            <title>Functions Increasing or Decreasing on Intervals</title>
+
+            <statement>
+                <p>
+                    <ul>
+                        <li>A function <m>f(x)</m> is increasing on an interval <m>I</m> if the values <m>f(x)</m> increase as <m>x</m> increases along <m>I</m>.</li>
+                        <li>A function <m>f(x)</m> is decreasing on an interval <m>I</m> if the values <m>f(x)</m> decrease as <m>x</m> increases along <m>I</m>.</li>
+                    </ul>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    Identify the interval(s) on which the function <m>f(x)</m> depicted below is increasing and the interval(s) on which it is decreasing.
+                </p>
+
+                <image width="50%" xml:id="fig_1_2_6">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="fig_1_2_6_fig">
+                    \begin{tikzpicture}[scale=0.8]
+                    \begin{axis}[grid=both,
+                    xmin=-4.5,xmax=4.5,
+                    ymin=-5.5,ymax=5.5,
+                    xtick={-4,...,4},
+                    ytick={-5,...,5},
+                    % yticklabels={20,40,60,80,100,120},
+                    minor tick={},
+                    xlabel=\(x\), ylabel=\(y\),
+                    x post scale = 1.2,
+                    y post scale = 1.2
+                    ]
+                    \addplot[domain=-4:4] {0.30303*x^3-3.71212*x};
+                    \end{axis}
+                    \end{tikzpicture}
+                    </latex-image>
+                </image>
+            </statement>
+
+            <solution>
+                <p>
+                    The graph of <m>f(x)</m> is climbing on the interval <m>-4 \lt x \lt -2</m> and on the interval <m>2 \lt x \lt 4</m>.
+                    Hence, the function is increasing on these intervals.
+                    In interval notation, we would write that the function is increasing on <m>(-4,-2)\cup(2,4)</m>.
+                </p>
+
+                <p>
+                    The graph of <m>f(x)</m> is falling and thus <m>f(x)</m> is decreasing on the interval <m>-2 \lt x \lt 2</m>.
+                    In interval notation, we would write that the function is decreasing on <m>(-2,4)</m>.
+                </p>
+                <aside>
+                    <p>
+                        Note that we do not use a bracket <m>[</m> or <m>]</m> around any of the endpoints <m>x=-4</m>, <m>x=2</m>, or <m>x=4</m> that appear in the interval notation here.
+                        This is because a function is neither increasing nor decreasing at these endpoints <mdash/> it either <q>stops</q> at them, or <q>turns around.</q>
+                    </p>
+                </aside>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Vertical Line Test</title>
+
+        <p>
+            We have established that the graph of a function <m>y=f(x)</m> is often a curve in the <m>xy</m>-plane.
+            However, not every curve in the <m>xy</m>-plane is the graph of a function.
+            The definition of a function requires that for each input <m>x</m> in the domain there is <alert>exactly one</alert> output <m>y</m>.
+            That is, there cannot be two different outputs corresponding to the same input.
+        </p>
+
+        <p>
+            The Vertical Line Test is a simple visual way of determining if a given curve is or is not the graph of a function.
+        </p>
+
+        <theorem>
+            <title>Vertical Line Test</title>
+
+            <statement>
+                <p>
+                    Let a curve in the <m>xy</m>-plane be given.
+                    If there is a vertical line that intersects the curve more than once, then the curve does not represent a function.
+                    If every vertical line intersects the curve at most once, then the curve represents the graph of a function.
+                </p>
+            </statement>
+        </theorem>
+        <aside>
+            <p>
+                This test clearly requires having the <em>graph</em> of a curve.
+                In the next section, when a table of values is given, we cannot use this test.
+            </p>
+        </aside>
+
+        <example>
+            <statement>
+                <p>
+                    Is the circle of radius <m>1</m> centered at the origin <m>(0,0)</m> in the <m>xy</m>-plane the graph of a function?
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Consider the vertical line corresponding to <m>x=0.5</m>; that is, the vertical line passing through the point <m>(0.5,0)</m> on the <m>x</m>-axis.
+                </p>
+
+                <image width="50%" xml:id="fig_1_2_7">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="fig_1_2_7_fig">
+                    \begin{tikzpicture}[scale=0.9]
+                    \begin{axis}[grid=none,
+                    xmin=-1.5,xmax=1.5,
+                    ymin=-1.5,ymax=1.5,
+                    xtick={-1,0.5,1},
+                    ytick={-1,1},
+                    xticklabel style = {xshift=0.5em},
+                    yticklabel style = {yshift=0.5em},
+                    minor tick={},
+                    xlabel=\(x\), ylabel=\(y\),
+                    x post scale = 1,
+                    axis equal
+                    ]
+                    \draw[thick,blue] (0,0) circle (1);
+                    \draw[thick,red] (0.5,1.5) -- (0.5,-1.5);
+                    \node[rpoint with label={0:{}}] at (axis cs:0.5,0.866) {};
+                    \node[rpoint with label={0:{}}] at (axis cs:0.5,-0.866) {};
+                    \end{axis}
+                    \end{tikzpicture}
+                    </latex-image>
+                </image>
+                <aside>
+                    <p>
+                        It takes only <em>one</em> vertical line intersecting the curve twice to conclude that the curve is not a function!
+                    </p>
+                </aside>
+
+                <p>
+                    This vertical line intersects the circle at two points with two different values of <m>y</m>, meaning there are two outputs corresponding to the input <m>x=0.5</m>.
+                    This violates the definition of a function.
+                    Hence, the circle is NOT the graph of a function.
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            In utilizing the Vertical Line Test, it doesn't matter if the coordinates on the plane are labeled with <m>x</m>, <m>y</m>, or other letters.
+            The idea is the same.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Is the graph of a straight line segment between the ordered pairs <m>(0,120)</m> and <m>(3,0)</m> in the <m>td</m>-plane the graph of a function?
+                </p>
+
+                <image width="50%" xml:id="fig_1_2_8">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="fig_1_2_8_fig">
    \begin{tikzpicture}[scale=0.7]
     \begin{axis}[grid=both,
     xmin=0,xmax=3.5,
@@ -636,34 +566,32 @@ In graphical terms:
     \draw[thick,red] (2.7,6) -- (2.7,0);
     \end{axis}
     \end{tikzpicture}
-    </latex-image>
-  </image>
-</statement>
+                    </latex-image>
+                </image>
+            </statement>
 
-<solution>
-    <p>
-    The line segment <em>is</em> the graph of a function whose domain is the interval <m>0\leq t\leq3</m>.
-    Using the Vertical Line Test, we can see that each individual vertical line that passes through a specific value of <m>t</m> with <m>0\leq t\leq 3</m> on the horizontal axis crosses the line segment at exactly one point.
-    Any vertical line that passes through a value of <m>t</m> outside the interval <m>0\leq t \leq 3</m> does not intersect the segment.
-    </p>
-</solution>
-</example>
+            <solution>
+                <p>
+                    The line segment <em>is</em> the graph of a function whose domain is the interval <m>0\leq t\leq3</m>.
+                    Using the Vertical Line Test, we can see that each individual vertical line that passes through a specific value of <m>t</m> with <m>0\leq t\leq 3</m> on the horizontal axis crosses the line segment at exactly one point.
+                    Any vertical line that passes through a value of <m>t</m> outside the interval <m>0\leq t \leq 3</m> does not intersect the segment.
+                </p>
+            </solution>
+        </example>
 
- <p>
-    Note that, in general, a function can have the same output for two different inputs.
-    In <xref ref="example-ch1-plot-points"/>, the function <m>f(x)=0.2x^{2}</m> gives the same output <m>y=1.8</m> for both <m>x=3</m> and <m>x=-3</m>.
-    Still, for each <m>x</m>, we have only one value of <m>y</m>.
-</p>
+        <p>
+            Note that, in general, a function can have the same output for two different inputs.
+            In <xref ref="example-ch1-plot-points"/>, the function <m>f(x)=0.2x^{2}</m> gives the same output <m>y=1.8</m> for both <m>x=3</m> and <m>x=-3</m>.
+            Still, for each <m>x</m>, we have only one value of <m>y</m>.
+        </p>
 
-<p>
-    Having the same output for two different inputs means that some <alert>horizontal</alert> lines intersect the graph more than once which is perfectly fine for a function:
-</p>
+        <p>
+            Having the same output for two different inputs means that some <alert>horizontal</alert> lines intersect the graph more than once which is perfectly fine for a function:
+        </p>
 
-<image width="50%" xml:id="fig_1_2_9">
-    <shortdescription>
-    A short description.
-    </shortdescription>
-    <latex-image label="fig_1_2_9_fig">
+        <image width="50%" xml:id="fig_1_2_9">
+            <shortdescription>A short description.</shortdescription>
+            <latex-image label="fig_1_2_9_fig">
    \begin{tikzpicture}[scale=0.7]
     \begin{axis}[grid=both,
     xmin=-5,xmax=5,
@@ -678,16 +606,13 @@ In graphical terms:
     \addplot[domain=-4:4,red] {0.2*9};
     \end{axis}
     \end{tikzpicture}
-    </latex-image>
-  </image>
+            </latex-image>
+        </image>
 
-<p>
-We will revisit graphs of functions in Section 1.4.
-</p>
+        <p>
+            We will revisit graphs of functions in Section 1.4.
+        </p>
+    </subsection>
 
-</subsection>
-
-<xi:include href="exercises/ex_1_2.ptx"/>
-<!-- <xi:include href="worksheet/ws_1_2.ptx"/> -->
-
+    <xi:include href="exercises/ex_1_2.ptx"/>
 </section>

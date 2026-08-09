@@ -25,7 +25,7 @@ For each of the following, rewrite a given exponential function <m>y=A\cdot b^t<
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_2">
 <statement>
 <p>
 <m>\displaystyle y=(1.09)^t</m>
@@ -40,7 +40,7 @@ For each of the following, rewrite a given exponential function <m>y=A\cdot b^t<
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_3">
 <statement>
 <p>
 <m>\displaystyle y= 700(1.32)^t</m>
@@ -73,7 +73,7 @@ For each of the following, rewrite a given exponential function <m>y=A\cdot b^t<
 
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_5">
 <introduction>
 <p>
 If a bank offers an interest rate of <m>6.1\%</m> with <em>interest compounded continuously</em> (rather than once a year), your balance <m>B(t)</m> after <m>t</m> years is:
@@ -113,7 +113,7 @@ approximately <m>18.01</m> years
 
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_6">
 <introduction>
 <p>
 A laboratory culture of <em>Salmonella enterica</em> starts with <m>S_0</m> bacteria at <m>t=0</m> and doubles every <m>30</m> minutes.<fn><url href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/</url>, accessed: 6/26/20</fn> Let <m>S(t)</m> be the number of bacteria in the culture at time <m>t</m>, in minutes.
@@ -149,7 +149,7 @@ approximately <m>47.6</m> minutes; no
 
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_7">
 <introduction>
 <p>
 Bacterial population dynamics is not as simple as measuring the doubling time of a bacterium in the laboratory, under optimal growth conditions. A more challenging question is to find the doubling time of a bacterium in its natural environment, for example, in the gut. The doubling time of <em>Salmonella enterica</em> in the gut is <m>25</m> hours<fn><url href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/</url>, accessed: 6/26/20</fn>. Let <m>G_0</m> be an initial amount of <em>Salmonella enterica</em> in a patient's gut at <m>t=0</m>. Let <m>G(t)</m> be the amount <m>t</m> hours later.
@@ -185,7 +185,7 @@ approximately <m>14.64</m> hours
 
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_8">
 <introduction>
 <p>
 Let <m>N=N(t)</m> be the amount of nicotine, in milligrams, in the bloodstream of a person after a cigarette is smoked. Time <m>t</m> is measured in hours. As with most drugs, the process of elimination of nicotine from the body is a process of exponential decay. The half-life of nicotine is <m>2</m> hours and the amount of nicotine absorbed from a cigarette is <m>2</m> mg.
@@ -221,7 +221,7 @@ approximately <m>3.03</m> hours
 
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_9">
 <introduction>
 <p>
 Let <m>C(t)</m> be the amount of caffeine that remains in the person's body <m>t</m> hours after finishing a cup of coffee. The amount of caffeine absorbed from a cup of coffee is <m>96</m> mg. The continuous growth rate of caffeine in the body is <m>-13.86\%</m>.
@@ -283,7 +283,7 @@ approximately <m>16.32</m> hours; yes
 
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_10">
 <introduction>
 <p>
 The value of an antique chair, <m>V(t)</m>, <m>t</m> years after it was purchased for <m>\$7000</m> increases by <m>15\%</m> per year.
@@ -319,7 +319,7 @@ approximately <m>5.9</m> years
 
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_11">
 <statement>
 <p>
 The <m>\text{pH}</m> of orange juice is <m>3</m>. Find the hydrogen ion concentration <m>[\text{H}^{+}]</m> in orange juice.
@@ -335,7 +335,7 @@ The <m>\text{pH}</m> of orange juice is <m>3</m>. Find the hydrogen ion concentr
 
 
 
-<exercise>
+<exercise xml:id="exercise_6_3_12">
 <statement>
 <p>
 The hydrogen ion concentration <m>[\text{H}^{+}]</m> in tomato juice is <m>0.0001</m> moles per liter. Find the <m>\text{pH}</m> of tomato juice.

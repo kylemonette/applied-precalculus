@@ -25,7 +25,7 @@ For each of the following, find <m>(f\circ g)(x)</m> and <m>(g\circ f)(x)</m>.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_2">
 <statement>
 <p>
 <m>f(x)=3x-1</m> and <m>g(x)=5-\frac{1}{2}x</m>
@@ -40,7 +40,7 @@ For each of the following, find <m>(f\circ g)(x)</m> and <m>(g\circ f)(x)</m>.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_3">
 <statement>
 <p>
 <m>f(x)=5x-10</m> and <m>g(x)=3x^2-5</m>
@@ -55,7 +55,7 @@ For each of the following, find <m>(f\circ g)(x)</m> and <m>(g\circ f)(x)</m>.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_4">
 <statement>
 <p>
 <m>f(x)=x^2-6x+1</m> and <m>g(x)=8x+1</m>
@@ -70,7 +70,7 @@ For each of the following, find <m>(f\circ g)(x)</m> and <m>(g\circ f)(x)</m>.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_5">
 <statement>
 <p>
 <m>f(x)=\sqrt{x}</m> and <m>g(x)=4-x</m>
@@ -85,7 +85,7 @@ For each of the following, find <m>(f\circ g)(x)</m> and <m>(g\circ f)(x)</m>.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_6">
 <statement>
 <p>
 <m>f(x)=\sqrt{x-7}</m> and <m>g(x)=\sqrt{x+7}</m>
@@ -100,7 +100,7 @@ For each of the following, find <m>(f\circ g)(x)</m> and <m>(g\circ f)(x)</m>.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_7">
 <statement>
 <p>
 <m>f(x)=\frac{2x+1}{5}</m> and <m>g(x)=2e^x</m>
@@ -115,7 +115,7 @@ For each of the following, find <m>(f\circ g)(x)</m> and <m>(g\circ f)(x)</m>.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_8">
 <statement>
 <p>
 <m>f(x)=5^x</m> and <m>g(x)=2x-1</m>
@@ -130,7 +130,7 @@ For each of the following, find <m>(f\circ g)(x)</m> and <m>(g\circ f)(x)</m>.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_9">
 <statement>
 <p>
 <m>f(x)=\dfrac{x}{x^2-9}</m> and <m>g(x)=3x+1</m>
@@ -186,7 +186,7 @@ For each of the following, find <m>(f\circ g)(2)</m> for the functions <m>f(x)</
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_12">
 <statement>
 <p>
 <m>f(x)=2x-1</m> and <m>g(x)=\sqrt{8x}</m>
@@ -201,7 +201,7 @@ For each of the following, find <m>(f\circ g)(2)</m> for the functions <m>f(x)</
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_13">
 <statement>
 <p>
 <m>f(x)=\frac{3x+1}{2}</m> and <m>g(x)=\frac{1}{x}</m>
@@ -257,7 +257,7 @@ For each of the following, express it as a composition of two functions <m>f(x)<
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_16">
 <statement>
 <p>
 <m>y=\sqrt[3]{7-x}</m>
@@ -272,7 +272,7 @@ For each of the following, express it as a composition of two functions <m>f(x)<
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_17">
 <statement>
 <p>
 <m>y=2^{\sqrt{x}}</m>
@@ -287,7 +287,7 @@ For each of the following, express it as a composition of two functions <m>f(x)<
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_18">
 <statement>
 <p>
 <m>y=\dfrac{1}{5x-7}</m>
@@ -302,7 +302,7 @@ For each of the following, express it as a composition of two functions <m>f(x)<
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_19">
 <statement>
 <p>
 <m>y=\ln(16x+5x^2)</m>
@@ -317,7 +317,7 @@ For each of the following, express it as a composition of two functions <m>f(x)<
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_20">
 <statement>
 <p>
 <m>y=\left(\dfrac{2x+1}{x-1}\right)^3</m>
@@ -332,7 +332,7 @@ For each of the following, express it as a composition of two functions <m>f(x)<
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_3_21">
 <statement>
 <p>
 <m>y=e^{3x+2}</m>

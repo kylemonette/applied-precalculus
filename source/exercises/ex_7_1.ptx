@@ -25,7 +25,7 @@ The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted down <m>7</m> units
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_2">
 <statement>
 <p>
 The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted up <m>1.5</m> units.
@@ -40,7 +40,7 @@ The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted up <m>1.5</m> units
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_3">
 <statement>
 <p>
 The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted right <m>2</m> units.
@@ -55,7 +55,7 @@ The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted right <m>2</m> unit
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_4">
 <statement>
 <p>
 The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted left <m>3</m> units.
@@ -70,7 +70,7 @@ The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted left <m>3</m> units
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_5">
 <statement>
 <p>
 The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted up <m>2.3</m> units and shifted right <m>6</m> units.
@@ -85,7 +85,7 @@ The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted up <m>2.3</m> units
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_6">
 <statement>
 <p>
 The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted down <m>1.63</m> units and right <m>0.5</m> units.
@@ -100,7 +100,7 @@ The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted down <m>1.63</m> un
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_7">
 <statement>
 <p>
 The graph of <m>g(x)</m> is the graph of <m>f(x)</m> shifted up <m>12</m> units and right <m>10</m> units.
@@ -157,7 +157,7 @@ The graph of <m>f(x)</m> is the graph of <m>y=x^2</m> shifted left <m>4</m> unit
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_10">
 <statement>
 <p>
 <m>g(t)=e^{t}-3.2</m>
@@ -172,7 +172,7 @@ The graph of <m>g(t)</m> is the graph of <m>y=e^t</m> shifted down <m>3.2</m> un
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_11">
 <statement>
 <p>
 <m>h(w)=\sqrt{w-4.1}+5.2</m>
@@ -261,7 +261,7 @@ xlabel={$x$}, ylabel={$y$}
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_14">
 <statement>
 <p>
 <m>y=f(x-2)</m>
@@ -290,7 +290,7 @@ xlabel={$x$}, ylabel={$y$}
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_15">
 <statement>
 <p>
 <m>y=f(x+1)-2</m>
@@ -407,7 +407,7 @@ Use the table of values of <m>f(t)</m> shown below to write the table of values 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_18">
 <statement>
 <p>
 <m>y=f(t)-2</m>
@@ -436,7 +436,7 @@ Use the table of values of <m>f(t)</m> shown below to write the table of values 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_19">
 <statement>
 <p>
 <m>y=f(t-2)+6</m>
@@ -498,7 +498,7 @@ Use the table of values of <m>f(t)</m> shown below to write the table of values 
 
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_21">
 <introduction>
 <p>
 The function <m>H=f(t)</m> gives the temperature (in degrees Fahrenheit) of the water in a spa <m>t</m> minutes after the spa heater has been turned on.
@@ -537,7 +537,7 @@ Write a formula for the function <m>h(t)</m> that represents the temperature (in
 
 
 
-<exercise>
+<exercise xml:id="exercise_7_1_22">
 <statement>
 <p>
 The function <m>C(t)</m> gives the concentration (in nanograms per milliliter) of a certain medication in a patient's bloodstream <m>t</m> minutes after a dose of the medication has been administered to a patient, assuming that the patient has <m>0</m> nanograms per milliliter in their bloodstream at time <m>t=0</m>. Write the formula for the function <m>g(t)</m> that supposes that at time <m>t=0</m> the patient had <m>2.3</m> nanograms per milliliter of the medication in their bloodstream.

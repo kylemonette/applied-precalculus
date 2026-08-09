@@ -2,7 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_8_5">
 
 
-<exercise>
+<exercise xml:id="exercise_8_5_1">
 <introduction>
 <p>
 Find the amplitude, period, and midline of each of the following functions.
@@ -91,7 +91,7 @@ Find the amplitude, period, and midline of each of the following functions.
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_5_2">
 <introduction>
 <p>
 For each of the periodic functions graphed below, find a formula in the form <m>y=A\sin(Bt)+C</m> or <m>y=A\cos(Bt)+C</m> that represents the graph.
@@ -273,7 +273,7 @@ x post scale = 1.2,
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_5_3">
 <introduction>
 <p>
 The average number of daylight hours <m>H</m> that Kingston, Rhode Island experiences is a periodic function <m>H=f(t)</m>, where <m>t=0</m> corresponds to the month of December. A graph modeling <m>f(t)</m> is given below.
@@ -342,7 +342,7 @@ x post scale = 1.6]
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_5_4">
 <introduction>
 <p>
 The average number of daylight hours <m>H</m> that Anchorage, Alaska experiences is a periodic function <m>H=f(t)</m>, where <m>t=0</m> corresponds to the month of June. The graph of <m>f(t)</m> is given below.
@@ -412,7 +412,7 @@ trig format = rad]
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_5_5">
 <statement>
 <p>
 The number of bird species in a Rhode Island preserve oscillates between a high of <m>38</m> in June and a low of <m>12</m> in December. Write a formula for the number of bird species, <m>N</m>, as a function of the number of months <m>t</m> since December. Your answer should be of the form <m>N(t) = A\cos(Bt)+C</m> or <m>N(t) = A\sin(Bt)+C</m>.
@@ -429,7 +429,7 @@ The number of bird species in a Rhode Island preserve oscillates between a high 
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_5_6">
 <statement>
 <p>
 The volume of air in the lungs of a woman at rest at certain times is shown in the following table. Assuming that the maximum volume of air in her lungs occurs at time <m>t=0</m> seconds and the minimum volume of air in her lungs occurs at time <m>t=3</m> seconds, give the formula for a periodic function <m>V(t)</m> modeling the volume of air in the woman's lungs at any given time. Your answer should be of the form <m>V(t) = A\cos(Bt)+C</m> or <m>V(t) = A\sin(Bt)+C</m>.
@@ -465,7 +465,7 @@ The volume of air in the lungs of a woman at rest at certain times is shown in t
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_5_7">
 <statement>
 <p>
 Each day, the tide in a harbor continuously goes in and out, raising and lowering a boat anchored there. At low tide, the boat is only <m>2</m> meters above the ocean floor. Six hours later, at peak high tide, the boat is <m>20</m> meters above the ocean floor. Six hours after peak high tide, it is low tide again. Suppose the boat is at high tide at midnight. Give a formula for a periodic function <m>D(t)</m> modeling the boat's distance above the ocean floor as a function of time <m>t</m> hours since midnight. Your answer should be of the form <m>D(t) = A\cos(Bt)+C</m> or <m>D(t) = A\sin(Bt)+C</m>.
@@ -482,7 +482,7 @@ Each day, the tide in a harbor continuously goes in and out, raising and lowerin
 
 
 
-<exercise>
+<exercise xml:id="exercise_8_5_8">
 <statement>
 <p>
 You decide to ride the Ferris wheel at the local carnival. You are <m>3</m> feet above the ground at the bottom of the Ferris wheel and <m>28</m> feet above the ground at the top. It takes <m>8</m> seconds for you to reach the maximum height from the minimum height and <m>8</m> seconds to reach the minimum height from the maximum height. Suppose you are at the bottom of the ride at time <m>t=0</m> seconds. Give a formula for a periodic function <m>H(t)</m> modeling your height above the ground <m>t</m> seconds into your Ferris wheel ride. Your answer should be of the form <m>H(t) = A\cos(Bt)+C</m> or <m>H(t) = A\sin(Bt)+C</m>.

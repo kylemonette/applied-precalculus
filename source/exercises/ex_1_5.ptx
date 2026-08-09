@@ -3,7 +3,7 @@
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_5_1">
 <introduction>
 <p>
 Find the average rate of change of each function over the indicated interval. Give your answers to two decimal places.
@@ -81,7 +81,7 @@ Find the average rate of change of each function over the indicated interval. Gi
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_5_2">
 <introduction>
 <p>
 In <xref ref="exercise-1_3-population"/>, data about the world population, in billions, between the years 2010 and 2018, was given in the table shown below. Use the data to answer the following questions.
@@ -147,7 +147,7 @@ In <xref ref="exercise-1_3-population"/>, data about the world population, in bi
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_5_3">
 <introduction>
 <p>
 A ball is dropped from a cliff above a lake. The ball's height above the surface of the lake, <m>h(t)</m>, in feet, <m>t</m> seconds after the ball is dropped, is given by
@@ -190,7 +190,7 @@ h(t)=300-16t^2.
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_5_4">
 <introduction>
 <p>
 In <xref ref="exercise-1_2-caff"/>, the graph of a function <m>C(t)</m> (provided again below) was given.
@@ -265,7 +265,7 @@ Recall that this graph that models the amount of caffeine, in milligrams, remain
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_5_5">
 <introduction>
 <p>
 The graph of a function <m>y=f(t)</m> is shown below.
@@ -329,7 +329,7 @@ Without performing any calculations, answer the following questions.
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_5_6">
 <introduction>
 <p>
 A person's weight, <m>W</m>, in pounds, depends on the number of minutes <m>m</m> of daily exercise. Hence, <m>W=W(m)</m> is a function of <m>m</m>. Below is a numerical representation of <m>W(m)</m>:
@@ -405,7 +405,7 @@ A person's weight, <m>W</m>, in pounds, depends on the number of minutes <m>m</m
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_5_7">
 <introduction>
 <p>
 Worldwide sales of passenger cars fluctuated between 2012 and 2019, as can be seen in the table below.

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_2_3">
 
-<exercise>
+<exercise xml:id="exercise_2_3_1">
 <introduction>
 <p>
 Decide if each table could represent a linear function and explain your reasoning.  For each table that could represent a linear function, find a formula that matches the data given in the table.
@@ -145,7 +145,7 @@ Decide if each table could represent a linear function and explain your reasonin
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_3_2">
 <statement>
 <p>
 The table below shows for each temperature <m>F</m> in degrees Fahrenheit the corresponding approximate temperature <m>C</m> in degrees Celsius. Is it appropriate to model <m>C</m> by a linear function of <m>F</m>? If it is, find a formula for <m>C</m> as a function of <m>F</m>.
@@ -180,7 +180,7 @@ approximately linear with approximate equation <m>C=0.555F-17.76</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_3_3">
 <introduction>
 <p>
 The height of a human individual can be estimated by the length of the femur, as shown for males in the following table.
@@ -242,7 +242,7 @@ The height of a human individual can be estimated by the length of the femur, as
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_3_4">
 <introduction>
 <p>
 The weight of water above a scuba diver as well as the air above the diver exerts pressure on their bodies. The pressure the diver experiences at sea level is <m>14.7</m> PSI (pounds per square inch), and this pressure increases by <m>0.4</m> PSI per each foot of depth.
@@ -275,7 +275,7 @@ The weight of water above a scuba diver as well as the air above the diver exert
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_3_5">
 <introduction>
 <p>
 A hiker is at a trailhead about to climb a mountain. The temperature at the trailhead is <m>65^{\circ}</m>F. According to the standard atmosphere model
@@ -321,7 +321,7 @@ the temperature drops by <m>0.00356^{\circ}</m>F per each 1 foot increase in alt
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_3_6">
 <introduction>
 <p>
 A man goes to a gym to exercise. After <m>t</m> minutes on a treadmill, his pulse (heart rate), <m>H</m>, in beats per minute, is:

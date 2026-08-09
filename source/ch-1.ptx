@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<chapter xml:id="chapter_1" xmlns:xi="http://www.w3.org/2001/XInclude">
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="chapter_1" >
   <title>Introduction to Functions</title>
 
   <introduction>

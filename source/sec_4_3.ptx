@@ -1,287 +1,348 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_4_3">
+    <title>Power Functions: Positive Integral Exponents</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Power Functions: Positive Integral Exponents</title>
+        <ol>
+            <li>
+                <p>
+                    Identify whether a given function is a power function <m>f(x) = kx^p</m> with a positive integer exponent, and determine its coefficient and exponent.
+                </p>
+            </li>
 
-<introduction>
-<objectives>
+            <li>
+                <p>
+                    Use power functions with positive integer exponents to model and solve applied proportionality problems.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Describe and sketch the graph of <m>y = kx^p</m> for a positive integer exponent <m>p</m>, including its symmetry and the effect of the coefficient <m>k</m>, distinguishing between even and odd <m>p</m>.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            In the next two sections we look at the properties and the graphs of the so-called power functions.
         </p>
-    </introduction>
-    <ol>
-        <li>
-            <p>
-            Identify whether a given function is a power function <m>f(x) = kx^p</m> with a positive integer exponent, and determine its coefficient and exponent.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Use power functions with positive integer exponents to model and solve applied proportionality problems.
-            </p>
-        </li>
-        <li>
-            <p>
-            Describe and sketch the graph of <m>y = kx^p</m> for a positive integer exponent <m>p</m>, including its symmetry and the effect of the coefficient <m>k</m>, distinguishing between even and odd <m>p</m>.
-            </p>
-        </li>
-    </ol>
-</objectives>
+        <definition>
+            <title>Power Function</title>
 
+            <statement>
+                <p>
+                    A function <m>y = f(x)</m> is called a <term>power function</term> if <m>f(x)</m> can be expressed in the form
+                    <md>
+                        f(x) = kx^p
+                    </md>
+                    where <m>k</m> and <m>p</m> are constants and <m>k \neq 0</m>.
+                    The constant <m>k</m> is called the <em>coefficient</em> of the power function <m>f(x)</m> and <m>p</m> is called the <em>exponent</em>.
+                </p>
+            </statement>
+        </definition>
 
-<p>
-    In the next two sections we look at the properties and the graphs of the so-called power functions.
-</p>
+        <p>
+            <term>Note:</term> When <m>y</m> depends on <m>x</m> according to the formula <m>y = kx^p</m>, we say that <m>y</m> is <term>directly proportional</term> (or proportional) to <m>x^p</m> with the coefficient of proportionality <m>k</m>.
+            If <m>\displaystyle y = \frac{k}{x^p}</m>, we say that <m>y</m> is <term>inversely proportional</term> to <m>x^p</m> with the coefficient of proportionality <m>k</m>.
+            So power functions express proportionality of the dependent variable to powers of the independent variable.
+        </p>
 
-<definition>
-<title>Power Function</title>
-<statement>
-<p>
-A function <m>y = f(x)</m> is called a <term>power function</term> if <m>f(x)</m> can be expressed in the form
-<md>f(x) = kx^p</md>
-where <m>k</m> and <m>p</m> are constants and <m>k \neq 0</m>.
-The constant <m>k</m> is called the <em>coefficient</em> of the power function <m>f(x)</m> and <m>p</m> is called the <em>exponent</em>.
-</p>
-</statement>
-</definition>
+        <p>
+            As the title suggests, in this section we look at the case when the exponent <m>p</m> is a positive integer.
+        </p>
 
-<p>
-<term>Note:</term> When <m>y</m> depends on <m>x</m> according to the formula <m>y = kx^p</m>, we say that <m>y</m> is <term>directly proportional</term> (or proportional) to <m>x^p</m> with the coefficient of proportionality <m>k</m>. If <m>\displaystyle y = \frac{k}{x^p}</m>, we say that <m>y</m> is <term>inversely proportional</term> to <m>x^p</m> with the coefficient of proportionality <m>k</m>. So power functions express proportionality of the dependent variable to powers of the independent variable.
-</p>
+        <example>
+            <statement>
+                <p>
+                    Which of the functions below are power functions?
+                    For those which are, rewrite in the standard form <m>y = kx^p</m>.
+                    Identify the coefficient and the exponent.
+                </p>
 
-<p>
-    As the title suggests, in this section we look at the case when the exponent <m>p</m> is a positive integer.
-</p>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\displaystyle f(x) = 2x^2 \cdot 4x^3</m>
+                            </p>
+                        </li>
 
-<example>
-<statement>
-<p>
-    Which of the functions below are power functions? For those which are, rewrite in the standard form <m>y = kx^p</m>. Identify the coefficient and the exponent.
-</p>
+                        <li>
+                            <p>
+                                <m>\displaystyle g(x) = (-(x^3))^5</m>
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                <m>\displaystyle h(x) = \frac{(x^2)^4}{7x^3}</m>
+                            </p>
+                        </li>
 
-<p><ol>
-<li>
-<p>
-    <m>\displaystyle f(x) = 2x^2 \cdot 4x^3</m>
-</p>
-</li>
+                        <li>
+                            <p>
+                                <m>\displaystyle r(x) = 2x^3 + 7x^2</m>
+                            </p>
+                        </li>
 
-<li>
-<p>
-    <m>\displaystyle g(x) = (-(x^3))^5</m>
-</p>
-</li>
+                        <li>
+                            <p>
+                                <m>\displaystyle m(x) = \frac{8x}{\pi ^2}</m>
+                            </p>
+                        </li>
 
-<li>
-<p>
-    <m>\displaystyle h(x) = \frac{(x^2)^4}{7x^3}</m>
-</p>
-</li>
+                        <li>
+                            <p>
+                                <m>\displaystyle l(x) = 3 \cdot 2^x</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
-<li>
-<p>
-    <m>\displaystyle r(x) = 2x^3 + 7x^2</m>
-</p>
-</li>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The function <m>f(x)</m> is a power function.
+                                Using Rules of Exponents from Section 4.1, we can rewrite:
+                                <md>
+                                    f(x) = 2x^2 \cdot 4x^3 = (2 \cdot 4)(x^2x^3) = 8x^5.
+                                </md>
+                                The coefficient is <m>k = 8</m> and the exponent is <m>p = 5</m>.
+                            </p>
+                        </li>
 
-<li>
-<p>
-    <m>\displaystyle m(x) = \frac{8x}{\pi ^2}</m>
-</p>
-</li>
+                        <li>
+                            <p>
+                                The function <m>g(x)</m> is a power function:
+                                <md>
+                                    g(x) = (-(x^3))^5 = (-1 \cdot (x^3) )^5 = (-1)^5(x^3)^5 = -x^{15}.
+                                </md>
+                                The coefficient is <m>k = -1</m> and the exponent is <m>p = 15</m>.
+                            </p>
+                        </li>
 
-<li>
-<p>
-    <m>\displaystyle l(x) = 3 \cdot 2^x</m>
-</p>
-</li>
+                        <li>
+                            <p>
+                                The function <m>h(x)</m> is a power function as well:
+                                <md>
+                                    h(x) = \frac{(x^2)^4}{7x^3} = \frac{x^8}{7x^3} = \frac{1}{7}x^{8 - 3} = \frac{1}{7}x^{5}.
+                                </md>
+                                The coefficient is <m>k = \frac{1}{7}</m> and the exponent is <m>p = 5</m>.
+                            </p>
+                        </li>
 
-</ol></p>
-</statement>
+                        <li>
+                            <p>
+                                The function <m>r(x)</m> is not a power function.
+                                It cannot be rewritten as <m>r(x) = kx^p</m>, since <m>r(x)</m> is a sum of two power functions with differing exponents <mdash/> namely <m>2x^3</m> and <m>7x^2</m>.
+                                A function that is a sum of power functions with non-negative integer coefficients is called a <em>polynomial function</em>.
+                            </p>
+                        </li>
 
-<solution>
-<p><ol>
-<li>
-<p>
-    The function <m>f(x)</m> is a power function. Using Rules of Exponents from Section 4.1, we can rewrite: <md>f(x) = 2x^2 \cdot 4x^3 = (2 \cdot 4)(x^2x^3) = 8x^5.</md> The coefficient is <m>k = 8</m> and the exponent is <m>p = 5</m>.
-</p>
-</li>
+                        <li>
+                            <p>
+                                The function <m>m(x)</m> is a power function.
+                                Remember that <m>\pi</m> is just a constant.
+                                <md>
+                                    m(x) = \frac{8x}{\pi ^2} = \frac{8}{\pi^2}x.
+                                </md>
+                                The coefficient is <m>k = \frac{8}{\pi^2}</m> and the exponent is <m>p = 1</m>.
+                            </p>
+                        </li>
 
-<li>
-<p>
-The function <m>g(x)</m> is a power function:
-<md>g(x) = (-(x^3))^5 = (-1 \cdot (x^3) )^5 = (-1)^5(x^3)^5 = -x^{15}.</md>
-The coefficient is <m>k = -1</m> and the exponent is <m>p = 15</m>.
-</p>
-</li>
-
-<li>
-<p>
-The function <m>h(x)</m> is a power function as well: <md>h(x) = \frac{(x^2)^4}{7x^3} = \frac{x^8}{7x^3} = \frac{1}{7}x^{8 - 3} = \frac{1}{7}x^{5}.</md> The coefficient is <m>k = \frac{1}{7}</m> and the exponent is <m>p = 5</m>.
-</p>
-</li>
-
-<li>
-<p>
-The function <m>r(x)</m> is not a power function.
-It cannot be rewritten as <m>r(x) = kx^p</m>, since <m>r(x)</m> is a sum of two power functions with differing exponents<mdash/>namely <m>2x^3</m> and <m>7x^2</m>.
-A function that is a sum of power functions with non-negative integer coefficients is called a <em>polynomial function</em>.
-</p>
-</li>
-
-<li>
-<p>
-    The function <m>m(x)</m> is a power function. Remember that <m>\pi</m> is just a constant. <md>m(x) = \frac{8x}{\pi ^2} = \frac{8}{\pi^2}x.</md> The coefficient is <m>k = \frac{8}{\pi^2}</m> and the exponent is <m>p = 1</m>.
-</p>
-</li>
-
-<li>
-<p>
-The function <m>l(x)</m> is not a power function. Observe that in <m>l(x)</m> the base of the power expression <m>2^x</m> is constant and equal to <m>2</m>. The exponent <m>x</m> is a variable. In a power function, it is the other way around: the base is a variable and the exponent is constant.
-</p>
-
-<aside>
+                        <li>
+                            <p>
+                                The function <m>l(x)</m> is not a power function.
+                                Observe that in <m>l(x)</m> the base of the power expression <m>2^x</m> is constant and equal to <m>2</m>.
+                                The exponent <m>x</m> is a variable.
+                                In a power function, it is the other way around: the base is a variable and the exponent is constant.
+                            </p>
+                            <aside>
 <p>
 Functions like <m>l(x)</m> where the variable <m>x</m> is in the <em>exponent</em> is the topic of discussion in Chapter 5.
 </p>
 </aside>
-</li>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
 
-</ol>
-</p>
-</solution>
-</example>
+        <example>
+            <statement>
+                <p>
+                    A ball dropped from the Empire State Building has traveled down the distance of <m>d(t)</m> feet after <m>t</m> seconds where
+                    <md>
+                        d(t) = 16t^2.
+                    </md>
+                </p>
 
-<example>
-<statement>
-<p>
-A ball dropped from the Empire State Building has traveled down the distance of <m>d(t)</m> feet after <m>t</m> seconds where <md>d(t) = 16t^2.</md>
-</p>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Is the function <m>d(t)</m> a power function?
+                                If yes, identify the exponent and the coefficient.
+                            </p>
+                        </li>
 
-<p><ol>
-<li>
-<p>
-Is the function <m>d(t)</m> a power function? If yes, identify the exponent and the coefficient.
-</p>
-</li>
+                        <li>
+                            <p>
+                                The Empire State Building is <m>1250</m> ft tall.
+                                How long will it take for the ball to hit the ground?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
-<li>
-<p>
-    The Empire State Building is <m>1250</m> ft tall. How long will it take for the ball to hit the ground?
-</p>
-</li>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>d(t)</m> is a power function with <m>k = 16</m> and <m>p = 2</m>.
+                            </p>
+                        </li>
 
-</ol></p>
-</statement>
+                        <li>
+                            <p>
+                                The ball will hit the ground when it has traveled <m>1250</m> feet.
+                                That is, for a positive <m>t</m> such that:
+                                <md>
+                                    d(t) = 16t^2 = 1250.
+                                </md>
+                                To solve the equation for <m>t</m> we divide both sides by <m>16</m>:
+                                <md>
+                                    t^2 = \frac{1250}{16}.
+                                </md>
+                                The two solutions to this quadratic equation are:
+                                <md>
+                                    t = \pm\sqrt{\frac{1250}{16}}.
+                                </md>
+                                Since <m>t</m> has to be positive, then the solution is
+                                <md>
+                                    t = \sqrt{\frac{1250}{16}}.
+                                </md>
+                                Hence, the ball will hit the ground after:
+                                <md>
+                                    t = \sqrt{\frac{1250}{16}} \approx 8.8 \hspace{3pt} \text{seconds}.
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <aside>
+                    <p>
+                        Note that in terms of proportionality, we can say that the distance <m>d</m> is directly proportional to <m>t^2</m> with the coefficient of proportionality <m>16</m>.
+                    </p>
+                </aside>
+            </solution>
+        </example>
 
-<solution>
-<p><ol>
-<li>
-    <p>
-        <m>d(t)</m> is a power function with <m>k = 16</m> and <m>p = 2</m>.
-    </p>
-</li>
+        <example>
+            <statement>
+                <p>
+                    Let <m>V(r)</m> be the volume of a sphere of radius <m>r</m> centimeters.
+                    We know from elementary geometry that:
+                    <md>
+                        V(r) = \frac{4}{3}\pi r^3.
+                    </md>
+                </p>
 
-<li>
-    <p>
-        The ball will hit the ground when it has traveled <m>1250</m> feet. That is, for a positive <m>t</m> such that: <md>d(t) = 16t^2 = 1250.</md> To solve the equation for <m>t</m> we divide both sides by <m>16</m>: <md>t^2 = \frac{1250}{16}.</md> The two solutions to this quadratic equation are: <md>t = \pm\sqrt{\frac{1250}{16}}.</md> Since <m>t</m> has to be positive, then the solution is <md>t = \sqrt{\frac{1250}{16}}.</md> Hence, the ball will hit the ground after:
-<md>t = \sqrt{\frac{1250}{16}} \approx 8.8 \hspace{3pt} \text{seconds}.</md>
-    </p>
-</li>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Is <m>V(r)</m> a power function?
+                                If yes, find the coefficient and the exponent.
+                            </p>
+                        </li>
 
-</ol></p>
+                        <li>
+                            <p>
+                                What radius is required for the volume to be 25 cm <m>^3</m>?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
-<aside>
-<p>
-Note that in terms of proportionality, we can say that the distance <m>d</m> is directly proportional to <m>t^2</m> with the coefficient of proportionality <m>16</m>.
-</p>
-</aside>
-</solution>
-</example>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Yes, <m>V(r)</m> is a power function.
+                                The coefficient <m>k</m> is <m>\frac{4\pi}{3}</m> and the exponent <m>p</m> is <m>3</m>.
+                            </p>
+                        </li>
 
-<example>
-<statement>
-<p>
-Let <m>V(r)</m> be the volume of a sphere of radius <m>r</m> centimeters. We know from elementary geometry that: <md>V(r) = \frac{4}{3}\pi r^3.</md>
-</p>
+                        <li>
+                            <p>
+                                We are looking for the radius <m>r</m>, in centimeters, such that
+                                <md>
+                                    \frac{4}{3}\pi r^3 = 25.
+                                </md>
+                                Dividing both sides by <m>4\pi</m> and multiplying by <m>3</m>, then
+                                <md>
+                                    r^3 = \frac{3}{4\pi}25.
+                                </md>
+                                Now we take the power <m>\frac{1}{3}</m> of both sides (in other words, the cube root) and obtain:
+                                <md>
+                                    (r^3)^{\frac{1}{3}} = \left( \frac{3}{4\pi}25 \right)^{\frac{1}{3}}
+                                </md>
+                                Since <m>(r^3)^{\frac{1}{3}} = r</m>, then
+                                <md>
+                                    r = \left( \frac{3}{4\pi}25 \right)^{\frac{1}{3}} \approx 1.814 \text{ cm}
+                                </md>
+                                The volume is <m>25 \text{ cm}^3</m> when the radius is <m>1.814</m> cm.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </introduction>
 
-<p><ol>
-<li>
-<p>
-    Is <m>V(r)</m> a power function? If yes, find the coefficient and the exponent.
-</p>
-</li>
+    <subsection>
+        <title>Graphs of Power Functions: Positive Integral Exponents</title>
 
-<li>
-<p>
-    What radius is required for the volume to be 25 cm<m>^3</m>?
-</p>
-</li>
+        <p>
+            Graphs of power functions <m>y = kx^p</m> with exponents <m>p</m> that are positive integers are different for <m>p</m> even and for <m>p</m> odd.
+        </p>
 
-</ol></p>
-</statement>
+        <p>
+            <term>Even Positive Exponents</term>
+        </p>
 
-<solution>
-<p><ol>
-<li>
-<p>
-    Yes, <m>V(r)</m> is a power function. The coefficient <m>k</m> is <m>\frac{4\pi}{3}</m> and the exponent <m>p</m> is <m>3</m>.
-</p>
-</li>
+        <p>
+            If <m>p</m> is even, then <m>x^p</m> is positive for all <m>x</m> except for <m>x = 0</m> where <m>x^p = 0</m>.
+            For example, if <m>p=6</m> then <m>1^6 = 1</m>, <m>(-1)^6 = 1</m>, <m>2^6 = 64</m>, <m>(-2)^6 = 64</m>, and so on.
+            Hence, the graph of the power function <m>f(x) = kx^p</m> for any even <m>p</m> is symmetric about the <m>y</m>-axis as <m>f(-x) = f(x)</m>.
+        </p>
 
-<li>
-<p>
-We are looking for the radius <m>r</m>, in centimeters, such that
-<md>
-\frac{4}{3}\pi r^3 = 25.
-</md>
-Dividing both sides by <m>4\pi</m> and multiplying by <m>3</m>, then
-<md>
-r^3 = \frac{3}{4\pi}25.
-</md>
-Now we take the power <m>\frac{1}{3}</m> of both sides (in other words, the cube root) and obtain: <md>(r^3)^{\frac{1}{3}} = \left( \frac{3}{4\pi}25 \right)^{\frac{1}{3}}</md> Since <m>(r^3)^{\frac{1}{3}} = r</m>, then <md>r = \left( \frac{3}{4\pi}25 \right)^{\frac{1}{3}} \approx 1.814 \text{ cm}</md> The volume is <m>25 \text{ cm}^3</m> when the radius is <m>1.814</m> cm.
-</p>
-</li>
+        <p>
+            Here are the graphs of the functions <m>y = kx^p</m> for <m>p = 2, 4, 6</m> and <m>k = 1</m>.
+            All graphs are U-shaped and reminiscent of the quadratic parabola <m>y = x^2</m>.
+        </p>
 
-</ol></p>
-</solution>
-</example>
-
-
-</introduction>
-
-
-
-<subsection>
-<title>Graphs of Power Functions: Positive Integral Exponents</title>
-
-    <p>
-        Graphs of power functions <m>y = kx^p</m> with exponents <m>p</m> that are positive integers are different for <m>p</m> even and for <m>p</m> odd.
-    </p>
-
-    <p>
-        <term>Even Positive Exponents</term>
-    </p>
-
-    <p>
-        If <m>p</m> is even, then <m>x^p</m> is positive for all <m>x</m> except for <m>x = 0</m> where <m>x^p = 0</m>. For example, if <m>p=6</m> then <m>1^6 = 1</m>, <m>(-1)^6 = 1</m>, <m>2^6 = 64</m>, <m>(-2)^6 = 64</m>, and so on. Hence, the graph of the power function <m>f(x) = kx^p</m> for any even <m>p</m> is symmetric about the <m>y</m>-axis as <m>f(-x) = f(x)</m>.
-    </p>
-
-    <p>
-        Here are the graphs of the functions <m>y = kx^p</m> for <m>p = 2, 4, 6</m> and <m>k = 1</m>. All graphs are U-shaped and reminiscent of the quadratic parabola <m>y = x^2</m>.
-    </p>
-
-
-<image width="50%" xml:id="fig_4_3_1">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="4_3_1_fig">
+        <image width="50%" xml:id="fig_4_3_1">
+            <shortdescription>A short description.</shortdescription>
+            <latex-image label="4_3_1_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=-3,xmax=3,
@@ -300,18 +361,17 @@ xlabel=\(x\), ylabel=\(y\),
 \addlegendentry{$x^6$};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+            </latex-image>
+        </image>
 
-<p>
-    The coefficient <m>k</m> in <m>y = kx^p</m>, stretches or shrinks the graph of <m>y = x^p</m> vertically. Additionally, if <m>k \lt 0</m>, the graph is reflected over the <m>x</m>-axis.
-</p>
+        <p>
+            The coefficient <m>k</m> in <m>y = kx^p</m>, stretches or shrinks the graph of <m>y = x^p</m> vertically.
+            Additionally, if <m>k \lt 0</m>, the graph is reflected over the <m>x</m>-axis.
+        </p>
 
-<image width="50%" xml:id="fig_4_3_2">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="4_3_2_fig">
+        <image width="50%" xml:id="fig_4_3_2">
+            <shortdescription>A short description.</shortdescription>
+            <latex-image label="4_3_2_fig">
 \begin{tikzpicture}[scale=0.9]
 \begin{axis}[grid=both,
 axis lines=middle,
@@ -328,26 +388,28 @@ samples=250]
 \addplot[domain=-1.7:1.7,black]{-2*x^2} node[right,pos=0.65] {$-2x^2$};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+            </latex-image>
+        </image>
 
-<p>
-    <term>Odd Positive Exponents</term>
-</p>
+        <p>
+            <term>Odd Positive Exponents</term>
+        </p>
 
-<p>
-    If <m>p</m> is odd, then <m>x^p</m> is positive for <m>x \gt 0</m>, it is <m>0</m> for <m>x = 0</m>, and negative for <m>x \lt 0</m>. For example, let <m>p=3</m>. Then <m>1^3 = 1</m>, <m>(-1)^3 = -1</m>, <m>2^3 = 8</m>, <m>(-2)^3 = -8</m>, and so on. Hence, the graph of the power function <m>f(x) = kx^p</m> for any odd <m>p</m> is symmetric about the origin <m>(0, 0)</m> as <m>f(-x) = -f(x)</m>.
-</p>
+        <p>
+            If <m>p</m> is odd, then <m>x^p</m> is positive for <m>x \gt 0</m>, it is <m>0</m> for <m>x = 0</m>, and negative for <m>x \lt 0</m>.
+            For example, let <m>p=3</m>.
+            Then <m>1^3 = 1</m>, <m>(-1)^3 = -1</m>, <m>2^3 = 8</m>, <m>(-2)^3 = -8</m>, and so on.
+            Hence, the graph of the power function <m>f(x) = kx^p</m> for any odd <m>p</m> is symmetric about the origin <m>(0, 0)</m> as <m>f(-x) = -f(x)</m>.
+        </p>
 
-<p>
-    Here are the graphs of the functions <m>y = kx^p</m> for <m>p = 3, 5</m> and <m>k = 1</m>. This time, the graphs are S-shaped.
-</p>
+        <p>
+            Here are the graphs of the functions <m>y = kx^p</m> for <m>p = 3, 5</m> and <m>k = 1</m>.
+            This time, the graphs are S-shaped.
+        </p>
 
-<image width="50%" xml:id="fig_4_3_3">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="4_3_3_fig">
+        <image width="50%" xml:id="fig_4_3_3">
+            <shortdescription>A short description.</shortdescription>
+            <latex-image label="4_3_3_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=-2,xmax=2,
@@ -364,18 +426,17 @@ xlabel=\(x\), ylabel=\(y\),
 \addlegendentry{$x^5$};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+            </latex-image>
+        </image>
 
-<p>
-    The coefficient <m>k</m> in <m>y = kx^p</m>, stretches or shrinks the graph of <m>y = x^p</m> vertically. Additionally, if <m>k \lt 0</m>, the graph is reflected over the <m>x</m>-axis.
-</p>
+        <p>
+            The coefficient <m>k</m> in <m>y = kx^p</m>, stretches or shrinks the graph of <m>y = x^p</m> vertically.
+            Additionally, if <m>k \lt 0</m>, the graph is reflected over the <m>x</m>-axis.
+        </p>
 
-<image width="50%" xml:id="fig_4_3_4">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="4_3_4_fig">
+        <image width="50%" xml:id="fig_4_3_4">
+            <shortdescription>A short description.</shortdescription>
+            <latex-image label="4_3_4_fig">
 \begin{tikzpicture}[scale=0.9]
 \begin{axis}[grid=both,
 xmin=-2,xmax=2,
@@ -390,34 +451,35 @@ xlabel=\(x\), ylabel=\(y\),
 \addplot[domain=-2:2,orange] {-2.5*x^3} node[right,pos=0.55] {$-3x^3$};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+            </latex-image>
+        </image>
 
+        <p>
+            Here is a summary of how graphs of power functions look for positive integer exponents <m>p</m>, even and odd, and for coefficients <m>k</m> positive and negative.
+        </p>
 
+        <sidebyside widths="48% 32% 20%" margins="0% 0%" valigns="middle middle middle">
+            <p>
+                <m>f(x)=kx^p</m>
+            </p>
 
-<p>
-    Here is a summary of how graphs of power functions look for positive integer exponents <m>p</m>, even and odd, and for coefficients <m>k</m> positive and negative.
-</p>
+            <p>
+                <m>p</m> even
+            </p>
 
+            <p>
+                <m>p</m> odd
+            </p>
+        </sidebyside>
 
+        <sidebyside widths="40% 30% 30%" margins="0% 0%" valigns="middle middle middle">
+            <p>
+                Positive coefficient, <m>k \gt 0</m>
+            </p>
 
-
-
-<sidebyside widths="48% 32% 20%" margins="0% 0%" valigns="middle middle middle">
-<p><m>f(x)=kx^p</m></p>
-<p><m>p</m> even</p>
-<p><m>p</m> odd</p>
-</sidebyside>
-
-<sidebyside widths="40% 30% 30%" margins="0% 0%" valigns="middle middle middle">
-
-<p>
-Positive coefficient, <m>k \gt 0</m>
-</p>
-
-<image width="100%" xml:id="fig_4_3_summary_even_pos">
-<shortdescription>Graph of a representative power function with even exponent and positive coefficient.</shortdescription>
-<latex-image label="4_3_summary_even_pos_fig">
+            <image width="100%" xml:id="fig_4_3_summary_even_pos">
+                <shortdescription>Graph of a representative power function with even exponent and positive coefficient.</shortdescription>
+                <latex-image label="4_3_summary_even_pos_fig">
 \begin{tikzpicture}[scale=0.5]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -429,12 +491,12 @@ samples=250]
 \addplot[domain=-2:2] {x^2};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                </latex-image>
+            </image>
 
-<image width="100%" xml:id="fig_4_3_summary_odd_pos">
-<shortdescription>Graph of a representative power function with odd exponent and positive coefficient.</shortdescription>
-<latex-image label="4_3_summary_odd_pos_fig">
+            <image width="100%" xml:id="fig_4_3_summary_odd_pos">
+                <shortdescription>Graph of a representative power function with odd exponent and positive coefficient.</shortdescription>
+                <latex-image label="4_3_summary_odd_pos_fig">
 \begin{tikzpicture}[scale=0.5]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -447,17 +509,18 @@ samples=250]
 \addplot[domain=-2:2] {x^3};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
-</sidebyside>
+                </latex-image>
+            </image>
+        </sidebyside>
 
-<sidebyside widths="40% 30% 30%" margins="0% 0%" valigns="middle middle middle">
+        <sidebyside widths="40% 30% 30%" margins="0% 0%" valigns="middle middle middle">
+            <p>
+                Negative coefficient, <m>k \lt 0</m>
+            </p>
 
-<p>Negative coefficient, <m>k \lt 0</m></p>
-
-<image width="100%" xml:id="fig_4_3_summary_even_neg">
-<shortdescription>Graph of a representative power function with even exponent and negative coefficient.</shortdescription>
-<latex-image label="4_3_summary_even_neg_fig">
+            <image width="100%" xml:id="fig_4_3_summary_even_neg">
+                <shortdescription>Graph of a representative power function with even exponent and negative coefficient.</shortdescription>
+                <latex-image label="4_3_summary_even_neg_fig">
 \begin{tikzpicture}[scale=0.5]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -470,12 +533,12 @@ samples=250]
 \addplot[domain=-2:2] {-x^2};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                </latex-image>
+            </image>
 
-<image width="100%" xml:id="fig_4_3_summary_odd_neg">
-<shortdescription>Graph of a representative power function with odd exponent and negative coefficient.</shortdescription>
-<latex-image label="4_3_summary_odd_neg_fig">
+            <image width="100%" xml:id="fig_4_3_summary_odd_neg">
+                <shortdescription>Graph of a representative power function with odd exponent and negative coefficient.</shortdescription>
+                <latex-image label="4_3_summary_odd_neg_fig">
 \begin{tikzpicture}[scale=0.5]
 \begin{axis}[grid=none,
 axis lines=middle,
@@ -488,14 +551,10 @@ samples=250]
 \addplot[domain=-2:2] {-x^3};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
-</sidebyside>
+                </latex-image>
+            </image>
+        </sidebyside>
+    </subsection>
 
-
-</subsection>
-
-
-<xi:include href="exercises/ex_4_3.ptx"/>
-
+    <xi:include href="exercises/ex_4_3.ptx"/>
 </section>

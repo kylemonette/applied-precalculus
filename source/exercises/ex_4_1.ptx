@@ -13,7 +13,7 @@ Rewrite the given expression as a power of <m>2</m>; that is, express it in the 
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_4_1_1">
 <statement>
 <p>
 <m>\displaystyle \frac{4}{2^4}</m>
@@ -27,7 +27,7 @@ Rewrite the given expression as a power of <m>2</m>; that is, express it in the 
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_2">
 <statement>
 <p>
 <m>(2^3)^{-2}</m>
@@ -41,7 +41,7 @@ Rewrite the given expression as a power of <m>2</m>; that is, express it in the 
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_3">
 <statement>
 <p>
 <m>\displaystyle \frac{8^2}{2}</m>
@@ -55,7 +55,7 @@ Rewrite the given expression as a power of <m>2</m>; that is, express it in the 
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_4">
 <statement>
 <p>
 <m>\displaystyle \left(\frac{2^3}{2^4\cdot 2^5}\right)^2</m>
@@ -83,7 +83,7 @@ Rewrite the given expression as a power of <m>5</m>; that is, express it in the 
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_4_1_5">
 <statement>
 <p>
 <m>5^2\cdot 5^{-3}</m>
@@ -97,7 +97,7 @@ Rewrite the given expression as a power of <m>5</m>; that is, express it in the 
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_6">
 <statement>
 <p>
 <m>\displaystyle \left(\frac{25^2}{5}\right)^{-1}</m>
@@ -111,7 +111,7 @@ Rewrite the given expression as a power of <m>5</m>; that is, express it in the 
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_7">
 <statement>
 <p>
 <m>\displaystyle \left(\frac{5^{-1}}{5^{-2}}\right)^2</m>
@@ -125,7 +125,7 @@ Rewrite the given expression as a power of <m>5</m>; that is, express it in the 
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_8">
 <statement>
 <p>
 <m>\displaystyle \left(\frac{5^3}{25^2}\right)^{-2}</m>
@@ -152,7 +152,7 @@ Simplify the given expression if possible. If not possible, state so.
 </p>
 </introduction>
 
-<exercise>
+<exercise xml:id="exercise_4_1_9">
 <statement>
 <p>
 <m>(x^2y^5)^0</m>
@@ -166,7 +166,7 @@ Simplify the given expression if possible. If not possible, state so.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_10">
 <statement>
 <p>
 <m>\displaystyle \left(\frac{x^{-3}}{xy^2}\right)^{-1}</m>
@@ -180,7 +180,7 @@ Simplify the given expression if possible. If not possible, state so.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_11">
 <statement>
 <p>
 <m>\displaystyle \frac{(x-y)^3}{x}</m>
@@ -194,7 +194,7 @@ Cannot be simplified.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_12">
 <statement>
 <p>
 <m>(2x^2y^4)^3</m>
@@ -208,7 +208,7 @@ Cannot be simplified.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_13">
 <statement>
 <p>
 <m>\displaystyle \frac{x+y}{y}</m>
@@ -222,7 +222,7 @@ Cannot be simplified.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_14">
 <statement>
 <p>
 <m>\displaystyle \left(\frac{\pi (x^{2})^6}{x^{2}y^{-4}}\right)^2</m>
@@ -236,7 +236,7 @@ Cannot be simplified.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_4_1_15">
 <statement>
 <p>
 <m>\displaystyle \frac{x^2+y^3}{xy}</m>
@@ -255,7 +255,7 @@ Cannot be simplified.
 
 
 
-<exercise>
+<exercise xml:id="exercise_4_1_16">
 <statement>
 <p>
 Let <m>p</m> and <m>r</m> be positive integers. Use the definition of exponentiation

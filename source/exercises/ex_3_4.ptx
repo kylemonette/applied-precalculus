@@ -11,7 +11,7 @@ Find all real solutions to each quadratic equation. Give exact and approximate v
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_1">
 <statement>
 <p>
 <m>x^2-5 x-14=0</m>
@@ -27,7 +27,7 @@ Find all real solutions to each quadratic equation. Give exact and approximate v
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_2">
 <statement>
 <p>
 <m>x (x + 3) = -2</m>
@@ -43,7 +43,7 @@ Find all real solutions to each quadratic equation. Give exact and approximate v
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_3">
 <statement>
 <p>
 <m>6x^2+x-1=0</m>
@@ -59,7 +59,7 @@ Find all real solutions to each quadratic equation. Give exact and approximate v
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_4">
 <statement>
 <p>
 <m>x^2-2x-2=0</m>
@@ -75,7 +75,7 @@ Find all real solutions to each quadratic equation. Give exact and approximate v
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_5">
 <statement>
 <p>
 <m>-4x^2-17x-15=0</m>
@@ -91,7 +91,7 @@ Find all real solutions to each quadratic equation. Give exact and approximate v
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_6">
 <statement>
 <p>
 <m>2 x (3 - x) = 4 (x - 5)</m>
@@ -120,7 +120,7 @@ Find the intercepts and vertex of each quadratic function. Give exact and approx
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_7">
 <statement>
 <p>
 <m>y=x^2+2x-3</m>
@@ -136,7 +136,7 @@ horizontal intercepts: <m>-3</m>, <m>1</m>; vertical intercept: <m>-3</m>; verte
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_8">
 <statement>
 <p>
 <m>f(x)=x^2+8x+10</m>
@@ -152,7 +152,7 @@ horizontal intercepts: <m>-4-\sqrt{6}\approx-6.450</m>, <m>-4+\sqrt{6}\approx-1.
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_9">
 <statement>
 <p>
 <m>g(x)=3x^2-6x-1</m>
@@ -168,7 +168,7 @@ horizontal intercepts: <m>\frac{3-2\sqrt{3}}{3}\approx-0.155</m>, <m>\frac{3+2\s
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_10">
 <statement>
 <p>
 <m>y=t^2-4t+5</m>
@@ -195,7 +195,7 @@ Calculate the discriminant of each quadratic equation and use it to determine wh
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_11">
 <statement>
 <p>
 <m>3x^2-12x+12=0</m>
@@ -211,7 +211,7 @@ Calculate the discriminant of each quadratic equation and use it to determine wh
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_12">
 <statement>
 <p>
 <m>8x^2+14x+2=0</m>
@@ -227,7 +227,7 @@ Calculate the discriminant of each quadratic equation and use it to determine wh
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_13">
 <statement>
 <p>
 <m>3x^2-8x+15=0</m>
@@ -243,7 +243,7 @@ Calculate the discriminant of each quadratic equation and use it to determine wh
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_14">
 <statement>
 <p>
 <m>x(x-4)=10</m>
@@ -263,7 +263,7 @@ Calculate the discriminant of each quadratic equation and use it to determine wh
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_15">
 <introduction>
 <p>
 A baseball is thrown straight up with the initial speed of 50 ft/sec by a player who is 6 feet tall. Let <m>H(t)</m> be the height of the ball above the ground <m>t</m> seconds later.
@@ -307,7 +307,7 @@ Rewrite the given quadratic function in factored form. Be sure to use the exact 
 </p>
 </introduction>
 
-<exercise>
+<exercise xml:id="exercise_3_4_16">
 <statement>
 <p>
 <m>f(x)=3x^2-3x-6</m>
@@ -323,7 +323,7 @@ Rewrite the given quadratic function in factored form. Be sure to use the exact 
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_17">
 <statement>
 <p>
 <m>g(x)=x^2+6x+7</m>
@@ -344,7 +344,7 @@ Rewrite the given quadratic function in factored form. Be sure to use the exact 
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_18">
 <statement>
 <p>
 The graph of a quadratic function <m>f(x)</m> is given below. Write the function in factored form. Then rewrite the function in standard form.
@@ -381,7 +381,7 @@ xlabel=\(x\), ylabel=\(y\),
 
 
 
-<exercise>
+<exercise xml:id="exercise_3_4_19">
 <statement>
 <p>
 The graph of a quadratic function <m>g(t)</m> is given below. Write the function in factored form. Then rewrite the function in standard form.

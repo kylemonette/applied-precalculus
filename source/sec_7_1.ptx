@@ -32,6 +32,7 @@
 </objectives>
 
 <figure xml:id="fig_7_1_vert_shift">
+<caption></caption>
 <interactive platform="jsxgraph" source="jsxgraph/jsx_7_1_vert_shift.js" width="60%">
     <slate xml:id="jsx_7_1_vert_shift_fig" surface="jsxboard"/>
     <instructions>
@@ -43,6 +44,7 @@
 
 
 <figure xml:id="fig_7_1_hor_shift">
+<caption></caption>
 <interactive platform="jsxgraph" source="jsxgraph/jsx_7_1_hor_shift.js" width="60%">
     <slate xml:id="jsx_7_1_hor_shift_fig" surface="jsxboard"/>
     <instructions>

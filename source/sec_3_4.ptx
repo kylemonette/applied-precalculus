@@ -1,379 +1,450 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_3_4">
+    <title>The Quadratic Formula</title>
 
-    
-<title>The Quadratic Formula</title>
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
+        <ol>
+            <li>
+                <p>
+                    Use the quadratic formula to solve a quadratic equation.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Compute the discriminant <m>D=b^2-4ac</m> of a quadratic equation and use its sign to determine the number of real solutions.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Use the vertex formula to find the vertex of a quadratic function, and write a quadratic function in factored form using its real zeros.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            In the previous section, we saw that finding the horizontal intercepts of a quadratic function from the vertex form <m>f(x)=a(x-h)^2+k</m> requires setting <m>f(x)=0</m> and solving.
+            If we wanted to find the horizontal intercepts of a quadratic function given in the standard form <m>f(x)=ax^2+bx+c</m>, we could first complete the square to convert to vertex form, and then proceed as before.
+            If this process is done in general; i.e., on <m>f(x)=ax^2+bx+c</m> (without replacing <m>a</m>, <m>b</m>, and <m>c</m> with numbers), we obtain the <alert>quadratic formula</alert>.
         </p>
+
+        <theorem>
+            <title>Quadratic Formula</title>
+
+            <statement>
+                <p>
+                    Recall that a <alert>quadratic equation in standard form</alert> is written in the form
+                    <md>
+                        ax^2+bx+c=0.
+                    </md>
+                    The solution(s) to a quadratic equation in standard form are given by the <alert>quadratic formula</alert>:
+                    <md>
+                        x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}.
+                    </md>
+                </p>
+            </statement>
+        </theorem>
+        <aside>
+            <p>
+                Applying the quadratic formula when an equation is not in standard form is a common mistake!
+            </p>
+        </aside>
+
+        <example xml:id="exercise-ch3-quad-form">
+            <statement>
+                <p>
+                    Use the quadratic formula to solve each quadratic equation.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>x^2 + x - 6 = 0</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>-2t^2 - 2t + 7 = 0</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>(x + 1)(x - 2) = 4</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Since this quadratic equation is in standard form, <m>a=1</m>, <m>b=1</m>, and <m>c=-6</m>.
+                                Now by the quadratic formula
+                            </p>
+
+                            <p>
+                                <md>
+                                    <mrow>x \amp\;=\; \frac{-1 \pm \sqrt{1^2 - 4 \cdot 1 \cdot (-6)}}{2 \cdot 1} </mrow>
+                                    <mrow>\amp\;=\; \frac{-1 \pm \sqrt{25}}{2} </mrow>
+                                    <mrow>\amp\;=\; \frac{-1 \pm 5}{2}.</mrow>
+                                </md>
+                            </p>
+
+                            <p>
+                                So the two solutions are <m>x = \frac{-1 - 5}{2} = \frac{-6}{2} = -3</m> and <m>x = \frac{-1 + 5}{2} = \frac{4}{2} = 2</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Since this quadratic equation is in standard form, <m>a=-2</m>, <m>b=-2</m>, and <m>c=7</m>.
+                                Now by the quadratic formula
+                            </p>
+
+                            <p>
+                                <md>
+                                    <mrow>t \amp\;=\; \frac{-(-2) \pm \sqrt{(-2)^2 - 4 \cdot (-2) \cdot 7}}{2 \cdot (-2)} </mrow>
+                                    <mrow> \amp\;=\; \frac{2 \pm \sqrt{60}}{-4} </mrow>
+                                    <mrow>\amp\;=\; \frac{2 \pm \sqrt{4 \cdot 15}}{-4} </mrow>
+                                    <mrow>\amp\;=\; \frac{2 \pm 2\sqrt{15}}{-4}</mrow>
+                                </md>
+                            </p>
+
+                            <p>
+                                So the two solutions are
+                                <md>
+                                    t = \frac{2 - 2\sqrt{15}}{-4} = \frac{2}{-4} + \frac{2\sqrt{15}}{-4} = -\frac{1}{2} + \frac{\sqrt{15}}{2} \approx 1.4365
+                                </md>
+                                and
+                                <md>
+                                    t = \frac{2 + 2\sqrt{15}}{-4} = \frac{2}{-4} - \frac{2\sqrt{15}}{4} = -\frac{1}{2} - \frac{\sqrt{15}}{2} \approx -2.4365.
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Since this quadratic equation is <alert>not</alert> in standard form, we must first expand the left-hand side and then get all terms on one side before we are able to proceed:
+                            </p>
+
+                            <p>
+                                <md>
+                                    <mrow>( x + 1 )( x - 2 ) \amp\;=\; 4 </mrow>
+                                    <mrow>x^2 - 2x + x - 2 \amp\;=\; 4 </mrow>
+                                    <mrow>x^2 - x - 2 \amp\;=\; 4 </mrow>
+                                    <mrow>x^2 - x - 2 \textcolor{blue}{ - 4} \amp\;=\; 4 \textcolor{blue}{ - 4} </mrow>
+                                    <mrow>x^2 - x - 6 \amp\;=\; 0</mrow>
+                                </md>
+                            </p>
+
+                            <p>
+                                Now that the equation is in standard form, we can see that this is similar to part (a), so the solutions are <m>x = -3</m> and <m>x = 2</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Find the horizontal intercepts of the quadratic function <m>g(x)=-2x^2-8x-3</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    To find the horizontal intercepts, we set the quadratic function equal to <m>0</m> and solve for <m>x</m>:
+                    <md>
+                        -2x^2 - 8x - 3 = 0.
+                    </md>
+                    Here <m>a = -2</m>, <m>b = -8</m>, and <m>c = -3</m>, so by the quadratic formula,
+                </p>
+
+                <p>
+                    <md>
+                        <mrow>x \amp\;=\; \frac{ -(-8) \pm \sqrt{ (-8)^2 - 4 \cdot (-2) \cdot (-3) } }{ 2 \cdot (-2) }</mrow>
+                        <mrow>\amp\;=\; \frac{ 8 \pm \sqrt{ 64 - 24 } }{ -4 } </mrow>
+                        <mrow>\amp\;=\; \frac{ 8 \pm \sqrt{ 40 } }{ -4 } </mrow>
+                        <mrow>\amp\;=\; \frac{ 8 \pm \sqrt{ 4 \cdot 10 } }{ -4 } </mrow>
+                        <mrow>\amp\;=\; \frac{ 8 \pm 2\sqrt{10} }{ -4 }.</mrow>
+                    </md>
+                </p>
+
+                <p>
+                    Simplifying, the two solutions are
+                    <md>
+                        x = \frac{ 8 - 2\sqrt{10} }{ -4 } = \frac{8}{-4} + \frac{2\sqrt{10}}{-4} = -2 + \frac{ \sqrt{10} }{ 2 } \approx -0.4189
+                    </md>
+                    and
+                    <md>
+                        x = \frac{ 8 + 2\sqrt{10} }{ -4 } = \frac{8}{-4} - \frac{2\sqrt{10}}{4} = -2 - \frac{ \sqrt{10} }{ 2 } \approx -3.5811.
+                    </md>
+                    Hence, the horizontal intercepts are <m>-2 + \dfrac{ \sqrt{10} }{ 2 }</m> and <m>-2 - \dfrac{ \sqrt{10} }{ 2 }</m>.
+                </p>
+            </solution>
+        </example>
     </introduction>
-    <ol>
-        <li>
-            <p>
-            Use the quadratic formula to solve a quadratic equation.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Compute the discriminant <m>D=b^2-4ac</m> of a quadratic equation and use its sign to determine the number of real solutions.
-            </p>
-        </li>
-        <li>
-            <p>
-            Use the vertex formula to find the vertex of a quadratic function, and write a quadratic function in factored form using its real zeros.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>The Discriminant</title>
 
-
-
-<introduction>
-
-<p>
-In the previous section, we saw that finding the horizontal intercepts of a quadratic function from the vertex form <m>f(x)=a(x-h)^2+k</m> requires setting <m>f(x)=0</m> and solving. If we wanted to find the horizontal intercepts of a quadratic function given in the standard form <m>f(x)=ax^2+bx+c</m>, we could first complete the square to convert to vertex form, and then proceed as before. If this process is done in general; i.e., on <m>f(x)=ax^2+bx+c</m> (without replacing <m>a</m>, <m>b</m>, and <m>c</m> with numbers), we obtain the <alert>quadratic formula</alert>.
-</p>
-
-
-<theorem>
-<title>Quadratic Formula</title>
-    <statement>
         <p>
-        Recall that a <alert>quadratic equation in standard form</alert> is written in the form <md>ax^2+bx+c=0.</md> The solution(s) to a quadratic equation in standard form are given by the <alert>quadratic formula</alert>:
-        <md>x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}.</md>
+            How many solutions a quadratic equation in standard form will have is determined entirely by the quantity under the radical in the quadratic formula; we call this quantity the <alert>discriminant</alert>.
         </p>
-    </statement>
-</theorem>
 
+        <definition>
+            <title>The Discriminant</title>
 
-<aside>
-    <p>
-    Applying the quadratic formula when an equation is not in standard form is a common mistake!
-    </p>
-</aside>
+            <statement>
+                <p>
+                    For the quadratic equation in standard form <m>ax^2+bx+c=0</m>, the <alert>discriminant</alert> <m>D</m> is given by
+                    <md>
+                        D=b^2-4ac.
+                    </md>
+                </p>
+            </statement>
+        </definition>
 
+        <theorem>
+            <statement>
+                <p>
+                    Given the discriminant <m>D</m> of the quadratic equation <m>ax^2+bx+c=0</m>:
+                </p>
 
-<example xml:id="exercise-ch3-quad-form">
-<statement>
-<p>
-Use the quadratic formula to solve each quadratic equation.
-</p>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                If <m>D \gt 0</m>, then the quadratic equation has two distinct real solutions.
+                            </p>
+                        </li>
 
-<p>
-<ol>
-<li>
-<p>
-    <m>x^2 + x - 6 = 0</m>
-</p>
-</li>
+                        <li>
+                            <p>
+                                If <m>D=0</m>, then the quadratic equation has one real solution.
+                            </p>
+                        </li>
 
-<li>
-<p>
-    <m>-2t^2 - 2t + 7 = 0</m>
-</p>
-</li>
+                        <li>
+                            <p>
+                                If <m>D \lt 0</m>, then the quadratic equation has no real solutions.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </theorem>
+        <aside>
+            <p>
+                Note: The discriminant allows you to state the number of solutions to the quadratic equation without actually <em>finding them</em>.
+            </p>
+        </aside>
 
-<li>
-<p>
-    <m>(x + 1)(x - 2) = 4</m>
-</p>
-</li>
-</ol>
-</p>
-</statement>
+        <example>
+            <statement>
+                <p>
+                    Use the discriminant to determine how many solutions each quadratic equation has.
+                </p>
 
-<solution>
-<p>
-<ol>
-<li>
-<p>
-Since this quadratic equation is in standard form, <m>a=1</m>, <m>b=1</m>, and <m>c=-6</m>. Now by the quadratic formula
-</p>
-<p>
-<md>
-<mrow>x \amp\;=\; \frac{-1 \pm \sqrt{1^2 - 4 \cdot 1 \cdot (-6)}}{2 \cdot 1} </mrow>
-<mrow>\amp\;=\; \frac{-1 \pm \sqrt{25}}{2} </mrow>
-<mrow>\amp\;=\; \frac{-1 \pm 5}{2}.</mrow>
-</md>
-</p>
-<p>
-So the two solutions are <m>x = \frac{-1 - 5}{2} = \frac{-6}{2} = -3</m> and <m>x = \frac{-1 + 5}{2} = \frac{4}{2} = 2</m>.
-</p>
-</li>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>x^2 - 4x + 4 = 0</m>
+                            </p>
+                        </li>
 
-<li>
-<p>
-Since this quadratic equation is in standard form, <m>a=-2</m>, <m>b=-2</m>, and <m>c=7</m>. Now by the quadratic formula
-</p>
-<p>
-<md>
-<mrow>t \amp\;=\; \frac{-(-2) \pm \sqrt{(-2)^2 - 4 \cdot (-2) \cdot 7}}{2 \cdot (-2)} </mrow>
-<mrow> \amp\;=\; \frac{2 \pm \sqrt{60}}{-4} </mrow>
-<mrow>\amp\;=\; \frac{2 \pm \sqrt{4 \cdot 15}}{-4} </mrow>
-<mrow>\amp\;=\; \frac{2 \pm 2\sqrt{15}}{-4}</mrow>
-</md>
-</p>
-<p>
-So the two solutions are <md>t = \frac{2 - 2\sqrt{15}}{-4} = \frac{2}{-4} + \frac{2\sqrt{15}}{-4} = -\frac{1}{2} + \frac{\sqrt{15}}{2} \approx 1.4365</md> and <md>t = \frac{2 + 2\sqrt{15}}{-4} = \frac{2}{-4} - \frac{2\sqrt{15}}{4} = -\frac{1}{2} - \frac{\sqrt{15}}{2} \approx -2.4365.</md>
-</p>
-</li>
+                        <li>
+                            <p>
+                                <m>-3t^2 + t - 10 = 0</m>
+                            </p>
+                        </li>
 
-<li>
-<p>
-Since this quadratic equation is <alert>not</alert> in standard form, we must first expand the left-hand side and then get all terms on one side before we are able to proceed:
-</p>
-<p>
-<md>
-<mrow>( x + 1 )( x - 2 ) \amp\;=\; 4 </mrow>
-<mrow>x^2 - 2x + x - 2 \amp\;=\; 4 </mrow>
-<mrow>x^2 - x - 2 \amp\;=\; 4 </mrow>
-<mrow>x^2 - x - 2 \textcolor{blue}{ - 4} \amp\;=\; 4 \textcolor{blue}{ - 4} </mrow>
-<mrow>x^2 - x - 6 \amp\;=\; 0</mrow>
-</md>
-</p>
-<p>
-Now that the equation is in standard form, we can see that this is similar to part (a), so the solutions are <m>x = -3</m> and <m>x = 2</m>.
-</p>
-</li>
-</ol>
-</p>
-</solution>
-</example>
+                        <li>
+                            <p>
+                                <m>-2t^2 - 2t + 7 = 0</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Here, <m>a = 1</m>, <m>b = -4</m>, and <m>c = 4</m>, so <m>D = (-4)^2 - 4 \cdot 1 \cdot 4 = 0</m>.
+                                Hence this quadratic equation has <alert>one real solution</alert>.
+                                By the quadratic formula, that solution is
+                                <md>
+                                    x = \frac{ -(-4) \pm \sqrt{0} }{ 2 \cdot 1 } = \frac{ 4 }{ 2 } = 2.
+                                </md>
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                Here, <m>a = -3</m>, <m>b = 1</m>, and <m>c = -10</m>, so <m>D = (1)^2 - 4 \cdot (-3) \cdot (-10) = -119</m>.
+                                Since <m>D \lt 0</m>, this quadratic equation has <alert>no real solutions</alert>.
+                                This can be seen by using the quadratic formula as well, yielding
+                                <md>
+                                    x = \frac{ -1 \pm \sqrt{ -119 } }{ 2 \cdot (-3) }
+                                </md>
+                                which is not a real quantity due to the negative number underneath the square root.
+                            </p>
+                        </li>
 
-<example>
-<statement>
-    <p>
-    Find the horizontal intercepts of the quadratic function <m>g(x)=-2x^2-8x-3</m>.
-    </p>
-</statement>
+                        <li>
+                            <p>
+                                Here, <m>a = -2</m>, <m>b = -2</m>, and <m>c = 7</m>, so <m>D = (-2)^2 - 4 \cdot (-2) \cdot 7 = 60</m>.
+                                Since <m>D \gt; 0</m>, this quadratic equation has <alert>two distinct real solutions</alert>.
+                                We found these solutions in part (b) of <xref ref="exercise-ch3-quad-form"/>; they are <m>t = -\frac{1}{2} - \frac{ \sqrt{15} }{2 }</m> and <m>t = -\frac{1}{2} + \frac{ \sqrt{15} }{2 }</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
 
-<solution>
-<p>
-To find the horizontal intercepts, we set the quadratic function equal to <m>0</m> and solve for <m>x</m>: <md>-2x^2 - 8x - 3 = 0.</md> Here <m>a = -2</m>, <m>b = -8</m>, and <m>c = -3</m>, so by the quadratic formula,
-</p>
-<p>
-<md>
-<mrow>x \amp\;=\; \frac{ -(-8) \pm \sqrt{ (-8)^2 - 4 \cdot (-2) \cdot (-3) } }{ 2 \cdot (-2) }</mrow>
-<mrow>\amp\;=\; \frac{ 8 \pm \sqrt{ 64 - 24 } }{ -4 } </mrow>
-<mrow>\amp\;=\; \frac{ 8 \pm \sqrt{ 40 } }{ -4 } </mrow>
-<mrow>\amp\;=\; \frac{ 8 \pm \sqrt{ 4 \cdot 10 } }{ -4 } </mrow>
-<mrow>\amp\;=\; \frac{ 8 \pm 2\sqrt{10} }{ -4 }.</mrow>
-</md>
-</p>
-<p>
-Simplifying, the two solutions are <md>x = \frac{ 8 - 2\sqrt{10} }{ -4 } = \frac{8}{-4} + \frac{2\sqrt{10}}{-4} = -2 + \frac{ \sqrt{10} }{ 2 } \approx -0.4189</md> and <md>x = \frac{ 8 + 2\sqrt{10} }{ -4 } = \frac{8}{-4} - \frac{2\sqrt{10}}{4} = -2 - \frac{ \sqrt{10} }{ 2 } \approx -3.5811.</md> Hence, the horizontal intercepts are <m>-2 + \dfrac{ \sqrt{10} }{ 2 }</m> and <m>-2 - \dfrac{ \sqrt{10} }{ 2 }</m>.
-</p>
-</solution>
-</example>
+    <subsection>
+        <title>Using Horizontal Intercepts to Find the Vertex</title>
 
+        <p>
+            In Section 3.1, we noted that the graph of a quadratic function is symmetric about the vertical line passing through the vertex, so the horizontal position of the vertex must be exactly halfway between the horizontal intercepts, or real zeros, of the quadratic function.
+            This was stated in <xref ref="res-ch3-quadgraphsresult"/>.
+        </p>
 
-</introduction>
+        <p>
+            The zeros of a quadratic function <m>f(x) = a x^2 + b x + c</m> are found by solving the equation <m>f(x)=ax^2+bx+c=0</m>.
+            By the quadratic formula, the solutions of this equation and therefore the zeros of the quadratic function are <m>x_1=\frac{-b + \sqrt{b^2 - 4ac}}{2a}</m> and <m>x_2=\frac{-b-\sqrt{b^2 - 4ac} }{ 2a }</m>.
+            As the <m>x</m>-coordinate of the vertex must be located at the average of <m>x_1</m> and <m>x_2</m>, denoting the <m>x</m>-coordinate of the vertex by <m>h</m> results in
+            <md>
+                h=\frac{x_1+x_2}{2}.
+            </md>
+            Now
+        </p>
 
+        <p>
+            <md>
+                <mrow>h \amp\;=\; \left( \frac{ -b + \sqrt{ b^2 - 4 a c } }{ 2a } + \frac{ -b - \sqrt{ b^2 - 4 a c } }{ 2a } \right) \bigg/ 2 </mrow>
+                <mrow>\amp\;=\; \left( \frac{ -b }{ 2a } + \cancel{ \frac{ \sqrt{ b^2 - 4 a c } }{ 2a } } + \frac{ -b }{ 2a } - \cancel{ \frac{ \sqrt{ b^2 - 4 a c } }{ 2a } } \right) \bigg/ 2 </mrow>
+                <mrow>\amp\;=\; \left( \frac{ -2b }{ 2a } \right) \bigg/ 2 </mrow>
+                <mrow>\amp\;=\; -\frac{ b }{ a } \cdot \frac{ 1 }{ 2 } </mrow>
+                <mrow>\amp\;=\; -\frac{ b }{ 2a }.</mrow>
+            </md>
+        </p>
+        <aside>
+            <p>
+                As is frequently the case in mathematics, many paths may lead to the same answer.
+                There is another way to show <m>h=- b / 2a</m> that you may encounter if you go on to study critical points in calculus.
+            </p>
+        </aside>
 
-<subsection>
-<title>The Discriminant</title>
+        <p>
+            Note that the above formula for <m>h</m> is valid when <m>x_1=x_2</m>, (i.e., if the quadratic function has a single horizontal intercept).
+            In this case, the single horizontal intercept must also be the vertex.
+            It is also valid when the quadratic function <m>f(x)=ax^2+bx+c</m> has no real horizontal intercepts, or, equivalently, no real zeros.
+        </p>
 
-<p>
-How many solutions a quadratic equation in standard form will have is determined entirely by the quantity under the radical in the quadratic formula; we call this quantity the <alert>discriminant</alert>.
-</p>
+        <theorem>
+            <title>Vertex Formula</title>
 
-<definition>
-<title>The Discriminant</title>
-<statement>
-<p>
-For the quadratic equation in standard form <m>ax^2+bx+c=0</m>, the <alert>discriminant</alert> <m>D</m> is given by <md>D=b^2-4ac.</md>
-</p>
-</statement>
-</definition>
+            <statement>
+                <p>
+                    The vertex <m>(h,k)</m> of a quadratic function in the standard form
+                    <md>
+                        f(x)=ax^2+bx+c
+                    </md>
+                    is given by
+                    <md>
+                        h = -\frac{b}{2a}, \qquad 
+k = f(h) = f\left(-\frac{b}{2a}\right).
+                    </md>
+                </p>
+            </statement>
+        </theorem>
 
+        <example>
+            <statement>
+                <p>
+                    A baseball is thrown straight up with initial speed <m>40</m> ft/sec by a player who is <m>6</m> feet tall.
+                    Let <m>H(t)</m> be the height of the ball above the ground <m>t</m> seconds later.
+                </p>
 
-<theorem>
-<statement>
-<p>
-Given the discriminant <m>D</m> of the quadratic equation <m>ax^2+bx+c=0</m>:
-</p>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find a formula for <m>H(t)</m>.
+                            </p>
+                        </li>
 
-<p><ul>
-<li>
-<p>
-If <m>D \gt 0</m>, then the quadratic equation has two distinct real solutions.
-</p>
-</li>
+                        <li>
+                            <p>
+                                When does the ball reach its maximum height, and what is its maximum height?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
-<li>
-<p>
-If <m>D=0</m>, then the quadratic equation has one real solution.
-</p>
-</li>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                We use the formula for the vertical motion of a projectile with initial velocity <m>V_0</m> and initial height <m>H_0</m> that was originally presented in Section 3.3:
+                                <md>
+                                    H(t) = -16 t^2 + V_0 t + H_0.
+                                </md>
+                                In our example, <m>H_0 = 6</m> and <m>V_0 = 40</m>.
+                                Hence
+                                <md>
+                                    H(t) = -16 t^2 + 40 t + 6.
+                                </md>
+                                This is a quadratic function in standard form with <m>a = -16</m>, <m>b = 40</m>, and <m>c = 6</m>.
+                            </p>
+                        </li>
 
-<li>
-<p>
-If <m>D \lt 0</m>, then the quadratic equation has no real solutions.
-</p>
-</li>
+                        <li>
+                            <p>
+                                The parabola corresponding to the function <m>H(t)</m> opens down so <m>H(t)</m> is at its maximum at the vertex of the parabola.
+                                Given <m>a = -16</m> and <m>b = 40</m>, we can calculate <m>h</m>, the <m>t</m>-coordinate of the vertex:
+                                <md>
+                                    h = -\frac{b}{2a} = -\frac{40}{2 \cdot (-16)} = 1.25.
+                                </md>
+                                The ball will reach its maximum height at <m>t = 1.25</m>; that is, <m>1.25</m> seconds into the motion.
+                                The height of the ball at <m>t = 1.25</m> is:
+                                <md>
+                                    H(1.25) = -16 \cdot (1.25)^2 + 40 \cdot 1.25 + 6 = 31.
+                                </md>
+                                The maximum height of the ball is <m>31</m> feet.
+                                Here is the graph of <m>H(t)</m>.
+                            </p>
 
-</ul></p>
-</statement>
-</theorem>
-
-
-<aside>
-    <p>
-        Note: The discriminant allows you to state the number of solutions to the quadratic equation without actually <em>finding them</em>.
-    </p>
-</aside>
-
-
-<example>
-<statement>
-<p>
-Use the discriminant to determine how many solutions each quadratic equation has.
-</p>
-
-<p><ol>
-<li>
-<p>
-<m>x^2 - 4x + 4 = 0</m>
-</p>
-</li>
-
-<li>
-<p>
-<m>-3t^2 + t - 10 = 0</m>
-</p>
-</li>
-
-<li>
-<p>
-<m>-2t^2 - 2t + 7 = 0</m>
-</p>
-</li>
-
-</ol></p>
-</statement>
-
-<solution>
-<p><ol>
-<li>
-<p>
-Here, <m>a = 1</m>, <m>b = -4</m>, and <m>c = 4</m>, so <m>D = (-4)^2 - 4 \cdot 1 \cdot 4 = 0</m>. Hence this quadratic equation has <alert>one real solution</alert>. By the quadratic formula, that solution is <md>x = \frac{ -(-4) \pm \sqrt{0} }{ 2 \cdot 1 } = \frac{ 4 }{ 2 } = 2.</md>
-</p>
-</li>
-
-<li>
-<p>
-Here, <m>a = -3</m>, <m>b = 1</m>, and <m>c = -10</m>, so <m>D = (1)^2 - 4 \cdot (-3) \cdot (-10) = -119</m>. Since <m>D \lt 0</m>, this quadratic equation has <alert>no real solutions</alert>. This can be seen by using the quadratic formula as well, yielding <md>x = \frac{ -1 \pm \sqrt{ -119 } }{ 2 \cdot (-3) }</md> which is not a real quantity due to the negative number underneath the square root.
-</p>
-</li>
-
-<li>
-<p>
-Here, <m>a = -2</m>, <m>b = -2</m>, and <m>c = 7</m>, so <m>D = (-2)^2 - 4 \cdot (-2) \cdot 7 = 60</m>. Since <m>D \gt; 0</m>, this quadratic equation has <alert>two distinct real solutions</alert>. We found these solutions in part (b) of <xref ref="exercise-ch3-quad-form" />; they are <m>t = -\frac{1}{2} - \frac{ \sqrt{15} }{2 }</m> and <m>t = -\frac{1}{2} + \frac{ \sqrt{15} }{2 }</m>.
-</p>
-</li>
-</ol></p>
-</solution>
-</example>
-
-
-</subsection>
-
-
-
-
-<subsection>
-<title>Using Horizontal Intercepts to Find the Vertex</title>
-
-<p>
-In Section 3.1, we noted that the graph of a quadratic function is symmetric about the vertical line passing through the vertex, so the horizontal position of the vertex must be exactly halfway between the horizontal intercepts, or real zeros, of the quadratic function. This was stated in <xref ref="res-ch3-quadgraphsresult" />.
-</p>
-
-<p>
-The zeros of a quadratic function <m>f(x) = a x^2 + b x + c</m> are found by solving the equation <m>f(x)=ax^2+bx+c=0</m>. By the quadratic formula, the solutions of this equation and therefore the zeros of the quadratic function are <m>x_1=\frac{-b + \sqrt{b^2 - 4ac}}{2a}</m> and <m>x_2=\frac{-b-\sqrt{b^2 - 4ac} }{ 2a }</m>. As the <m>x</m>-coordinate of the vertex must be located at the average of <m>x_1</m> and <m>x_2</m>, denoting the <m>x</m>-coordinate of the vertex by <m>h</m> results in <md>h=\frac{x_1+x_2}{2}.</md> Now
-</p>
-
-<p>
-<md>
-<mrow>h \amp\;=\; \left( \frac{ -b + \sqrt{ b^2 - 4 a c } }{ 2a } + \frac{ -b - \sqrt{ b^2 - 4 a c } }{ 2a } \right) \bigg/ 2 </mrow>
-<mrow>\amp\;=\; \left( \frac{ -b }{ 2a } + \cancel{ \frac{ \sqrt{ b^2 - 4 a c } }{ 2a } } + \frac{ -b }{ 2a } - \cancel{ \frac{ \sqrt{ b^2 - 4 a c } }{ 2a } } \right) \bigg/ 2 </mrow>
-<mrow>\amp\;=\; \left( \frac{ -2b }{ 2a } \right) \bigg/ 2 </mrow>
-<mrow>\amp\;=\; -\frac{ b }{ a } \cdot \frac{ 1 }{ 2 } </mrow>
-<mrow>\amp\;=\; -\frac{ b }{ 2a }.</mrow>
-</md>
-</p>
-
-<aside>
-<p>
-As is frequently the case in mathematics, many paths may lead to the same answer. There is another way to show <m>h=- b / 2a</m> that you may encounter if you go on to study critical points in calculus.
-</p>
-</aside>
-
-<p>
-Note that the above formula for <m>h</m> is valid when <m>x_1=x_2</m>, (i.e., if the quadratic function has a single horizontal intercept). In this case, the single horizontal intercept must also be the vertex. It is also valid when the quadratic function <m>f(x)=ax^2+bx+c</m> has no real horizontal intercepts, or, equivalently, no real zeros.
-</p>
-
-
-<theorem>
-<title>Vertex Formula</title>
-<statement>
-<p>
-The vertex <m>(h,k)</m> of a quadratic function in the standard form <md>f(x)=ax^2+bx+c</md> is given by <md>h = -\frac{b}{2a}, \qquad 
-k = f(h) = f\left(-\frac{b}{2a}\right).</md>
-</p>
-</statement>
-</theorem>
-
-
-
-<example>
-<statement>
-<p>
-A baseball is thrown straight up with initial speed <m>40</m> ft/sec by a player who is <m>6</m> feet tall. Let <m>H(t)</m> be the height of the ball above the ground <m>t</m> seconds later.
-</p>
-
-<p><ol>
-<li>
-<p>
-Find a formula for <m>H(t)</m>.
-</p>
-</li>
-
-<li>
-<p>
-When does the ball reach its maximum height, and what is its maximum height?
-</p>
-</li>
-
-</ol></p>
-</statement>
-
-<solution>
-<p>
-<ol>
-<li>
-<p>
-We use the formula for the vertical motion of a projectile with initial velocity <m>V_0</m> and initial height <m>H_0</m> that was originally presented in Section 3.3: <md>H(t) = -16 t^2 + V_0 t + H_0.</md> In our example, <m>H_0 = 6</m> and <m>V_0 = 40</m>. Hence <md>H(t) = -16 t^2 + 40 t + 6.</md> This is a quadratic function in standard form with <m>a = -16</m>, <m>b = 40</m>, and <m>c = 6</m>.
-</p>
-</li>
-
-<li>
-<p>
-The parabola corresponding to the function <m>H(t)</m> opens down so <m>H(t)</m> is at its maximum at the vertex of the parabola. Given <m>a = -16</m> and <m>b = 40</m>, we can calculate <m>h</m>, the <m>t</m>-coordinate of the vertex: <md>h = -\frac{b}{2a} = -\frac{40}{2 \cdot (-16)} = 1.25.</md> The ball will reach its maximum height at <m>t = 1.25</m>; that is, <m>1.25</m> seconds into the motion. The height of the ball at <m>t = 1.25</m> is: <md>H(1.25) = -16 \cdot (1.25)^2 + 40 \cdot 1.25 + 6 = 31.</md> The maximum height of the ball is <m>31</m> feet. Here is the graph of <m>H(t)</m>.
-</p>
-
-<image width="50%" xml:id="fig_3_4_1">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_4_1_fig">
+                            <image width="50%" xml:id="fig_3_4_1">
+                                <shortdescription>A short description.</shortdescription>
+                                <latex-image label="3_4_1_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=0,xmax=3.5,
@@ -386,135 +457,187 @@ xlabel=\(t\), ylabel=\(H\),
 \addplot[domain=0:12] {-16*x^2 + 40*x + 6};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
+                                </latex-image>
+                            </image>
 
-<p>
-The graph shows the part of the parabola that is relevant to the motion in our example.
-</p>
-</li>
+                            <p>
+                                The graph shows the part of the parabola that is relevant to the motion in our example.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
 
-</ol>
-    </p>
-</solution>
-</example>
+    <subsection>
+        <title>Factored Form of a Quadratic Function</title>
 
+        <p>
+            We have previously established that if we can factor a given quadratic function, we can quickly find its zeros (or, equivalently, horizontal intercepts).
+            For example, the zeros of the function:
+            <md>
+                f(x) = 2(x-1)(x+1.5)
+            </md>
+            are <m>x = 1</m> and <m>x = -1.5</m>.
+        </p>
 
+        <p>
+            The other way around is also true: if we have real zeros, <m>x_1</m> and <m>x_2</m>, of a given quadratic function <m>f(x) = a x^2 + b x + c</m>, we can write the function in factored form:
+            <md>
+                f(x) = a(x - x_1)(x - x_2).
+            </md>
+        </p>
 
-</subsection>
+        <definition>
+            <title>Factored Form</title>
 
+            <statement>
+                <p>
+                    Let <m>f(x)=ax^2+bx+c</m> be a quadratic function with distinct real zeros <m>x_1</m> and <m>x_2</m>.
+                    The <alert>factored form</alert> of <m>f(x)</m> is
+                    <md>
+                        f(x) = a(x - x_1)(x - x_2).
+                    </md>
+                    If <m>f(x)</m> has a single real zero, then <m>x_1</m> is called a <em>double root</em> of <m>f(x)</m> and we use <m>x_1 = x_2</m> in the formula for factored form defined above.
+                </p>
+            </statement>
+        </definition>
+        <aside>
+            <p>
+                Remember, the real zeros of <m>f(x)</m> are the real values of <m>x</m> for which <m>f(x)=0</m>.
+            </p>
+        </aside>
 
+        <p>
+            <alert>Note:</alert> Every quadratic function can be written in standard form and in vertex form.
+            However, not every quadratic function can be written in factored form for real numbers <m>x_1</m>, <m>x_2</m>.
+            In particular, a quadratic function that has no real zeros, or equivalently no horizontal intercepts, cannot be factored over the real numbers and therefore cannot be written in the factored form we have defined.
+        </p>
 
+        <example>
+            <statement>
+                <p>
+                    Find the zeros for a given quadratic function using any method you wish.
+                    Express the function in factored form.
+                </p>
 
-<subsection>
-<title>Factored Form of a Quadratic Function</title>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>f(x) = 6 x^2 - 27 x + 12</m>
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                <m>g(x) = x^2 - 2 x - 11</m>
+                            </p>
+                        </li>
 
-<p>
-We have previously established that if we can factor a given quadratic function, we can quickly find its zeros (or, equivalently, horizontal intercepts). For example, the zeros of the function: <md>f(x) = 2(x-1)(x+1.5)</md> are <m>x = 1</m> and <m>x = -1.5</m>.
-</p>
+                        <li>
+                            <p>
+                                <m>h(x) = -x^2 - 2</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
-<p>
-The other way around is also true: if we have real zeros, <m>x_1</m> and <m>x_2</m>, of a given quadratic function <m>f(x) = a x^2 + b x + c</m>, we can write the function in factored form: <md>f(x) = a(x - x_1)(x - x_2).</md>
-</p>
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                To find the zeros of <m>f(x)</m>, we have to solve the quadratic equation:
+                                <md>
+                                    6x^2-27x+12=0.
+                                </md>
+                                Notice that <m>a=6</m>, <m>b=-27</m>, and <m>c=12</m>.
+                                So by the quadratic formula:
+                            </p>
 
+                            <p>
+                                <md>
+                                    <mrow>x \amp\;=\; \frac{-(-27) \pm \sqrt{(-27)^2-4\cdot6\cdot12}}{2\cdot6} </mrow>
+                                    <mrow>\amp\;=\; \frac{27 \pm \sqrt{441}}{12} </mrow>
+                                    <mrow>\amp\;=\; \frac{27 \pm 21}{12}</mrow>
+                                </md>
+                            </p>
 
-<definition>
-<title>Factored Form</title>
-<statement>
-<p>
-Let <m>f(x)=ax^2+bx+c</m> be a quadratic function with distinct real zeros <m>x_1</m> and <m>x_2</m>. The <alert>factored form</alert> of <m>f(x)</m> is <md>f(x) = a(x - x_1)(x - x_2).</md> If <m>f(x)</m> has a single real zero, then <m>x_1</m> is called a <em>double root</em> of <m>f(x)</m> and we use <m>x_1 = x_2</m> in the formula for factored form defined above.
-</p>
-</statement>
-</definition>
+                            <p>
+                                We simplify and obtain the two solutions:
+                                <md>
+                                    x_1 = \frac{27-21}{12} = \frac{6}{12} = \frac{1}{2}
+                                </md>
+                                and
+                                <md>
+                                    x_2 = \frac{27+21}{12} = \frac{48}{12} = 4.
+                                </md>
+                                The function <m>f(x)</m> in factored form is
+                                <md>
+                                    f(x) = 6\left(x-\frac{1}{2}\right)(x-4).
+                                </md>
+                            </p>
+                        </li>
 
-<aside>
-<p>
-Remember, the real zeros of <m>f(x)</m> are the real values of <m>x</m> for which <m>f(x)=0</m>.
-</p>
-</aside>
+                        <li>
+                            <p>
+                                We set up the equation to find the zeros of <m>g(x)</m>:
+                                <md>
+                                    x^2-2x-11=0.
+                                </md>
+                                We have <m>a=1</m>, <m>b=-2</m>, and <m>c=-11</m>.
+                                So by the quadratic formula:
+                            </p>
 
+                            <p>
+                                <md>
+                                    <mrow>x \amp\;=\; \frac{-(-2) \pm \sqrt{(-2)^2-4\cdot1\cdot(-11)}}{2\cdot1} </mrow>
+                                    <mrow>\amp\;=\; \frac{2 \pm \sqrt{48}}{2} </mrow>
+                                    <mrow>\amp\;=\; \frac{2 \pm \sqrt{16\cdot3}}{2} </mrow>
+                                    <mrow>\amp\;=\; \frac{2 \pm 4\sqrt{3}}{2} </mrow>
+                                    <mrow>\amp\;=\; 1 \pm 2\sqrt{3} </mrow>
+                                </md>
+                            </p>
 
-<p>
-<alert>Note:</alert> Every quadratic function can be written in standard form and in vertex form. However, not every quadratic function can be written in factored form for real numbers <m>x_1</m>, <m>x_2</m>. In particular, a quadratic function that has no real zeros, or equivalently no horizontal intercepts, cannot be factored over the real numbers and therefore cannot be written in the factored form we have defined.
-</p>
+                            <p>
+                                Hence, the two solutions are
+                                <md>
+                                    x_1 = 1 + 2\sqrt{3}
+                                </md>
+                                and
+                                <md>
+                                    x_2 = 1 - 2\sqrt{3}.
+                                </md>
+                                The function <m>g(x)</m> in factored form is
+                                <md>
+                                    g(x) = \left(x-(1+2\sqrt{3})\right)\left(x-(1-2\sqrt{3})\right).
+                                </md>
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                The equation we have to solve is:
+                                <md>
+                                    -x^2-2=0.
+                                </md>
+                                Since <m>a=-1</m>, <m>b=0</m>, and <m>c=-2</m>, the discriminant is negative: <m>D=0^2-4(-1)(-2)=-8 \lt 0</m>.
+                                Hence, the equation has no real solutions and <m>h(x)</m> cannot be written in factored form.
+                                However, the vertex form of <m>h(x)</m> is
+                                <md>
+                                    h(x) = -1\cdot(x-0)^2-2.
+                                </md>
+                                The vertex is below the <m>x</m>-axis at <m>(0,-2)</m> and the parabola opens down.
+                                So there cannot be any horizontal intercepts.
+                                Here is the graph of <m>h(x)</m>.
+                            </p>
 
-<example>
-<statement>
-<p>
-Find the zeros for a given quadratic function using any method you wish. Express the function in factored form.
-</p>
-
-<p><ol>
-<li>
-<p>
-<m>f(x) = 6 x^2 - 27 x + 12</m>
-</p>
-</li>
-
-<li>
-<p>
-<m>g(x) = x^2 - 2 x - 11</m>
-</p>
-</li>
-
-<li>
-<p>
-<m>h(x) = -x^2 - 2</m>
-</p>
-</li>
-</ol></p>
-</statement>
-
-
-<solution>
-<p>
-<ol>
-<li>
-<p>
-To find the zeros of <m>f(x)</m>, we have to solve the quadratic equation: <md>6x^2-27x+12=0.</md> Notice that <m>a=6</m>, <m>b=-27</m>, and <m>c=12</m>. So by the quadratic formula:
-</p>
-<p>
-<md>
-<mrow>x \amp\;=\; \frac{-(-27) \pm \sqrt{(-27)^2-4\cdot6\cdot12}}{2\cdot6} </mrow>
-<mrow>\amp\;=\; \frac{27 \pm \sqrt{441}}{12} </mrow>
-<mrow>\amp\;=\; \frac{27 \pm 21}{12}</mrow>
-</md>
-</p>
-<p>
-We simplify and obtain the two solutions: <md>x_1 = \frac{27-21}{12} = \frac{6}{12} = \frac{1}{2}</md> and <md>x_2 = \frac{27+21}{12} = \frac{48}{12} = 4.</md> The function <m>f(x)</m> in factored form is <md>f(x) = 6\left(x-\frac{1}{2}\right)(x-4).</md>
-</p>
-</li>
-
-<li>
-<p>
-We set up the equation to find the zeros of <m>g(x)</m>: <md>x^2-2x-11=0.</md> We have <m>a=1</m>, <m>b=-2</m>, and <m>c=-11</m>. So by the quadratic formula:
-</p>
-<p>
-<md>
-<mrow>x \amp\;=\; \frac{-(-2) \pm \sqrt{(-2)^2-4\cdot1\cdot(-11)}}{2\cdot1} </mrow>
-<mrow>\amp\;=\; \frac{2 \pm \sqrt{48}}{2} </mrow>
-<mrow>\amp\;=\; \frac{2 \pm \sqrt{16\cdot3}}{2} </mrow>
-<mrow>\amp\;=\; \frac{2 \pm 4\sqrt{3}}{2} </mrow>
-<mrow>\amp\;=\; 1 \pm 2\sqrt{3} </mrow>
-</md>
-</p>
-<p>
-Hence, the two solutions are <md>x_1 = 1 + 2\sqrt{3}</md> and <md>x_2 = 1 - 2\sqrt{3}.</md> The function <m>g(x)</m> in factored form is <md>g(x) = \left(x-(1+2\sqrt{3})\right)\left(x-(1-2\sqrt{3})\right).</md>
-</p>
-</li>
-
-<li>
-<p>
-The equation we have to solve is: <md>-x^2-2=0.</md> Since <m>a=-1</m>, <m>b=0</m>, and <m>c=-2</m>, the discriminant is negative: <m>D=0^2-4(-1)(-2)=-8 \lt 0</m>. Hence, the equation has no real solutions and <m>h(x)</m> cannot be written in factored form. However, the vertex form of <m>h(x)</m> is <md>h(x) = -1\cdot(x-0)^2-2.</md> The vertex is below the <m>x</m>-axis at <m>(0,-2)</m> and the parabola opens down. So there cannot be any horizontal intercepts. Here is the graph of <m>h(x)</m>.
-</p>
-
-<image width="50%" xml:id="fig_3_4_2">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_4_2_fig">
+                            <image width="50%" xml:id="fig_3_4_2">
+                                <shortdescription>A short description.</shortdescription>
+                                <latex-image label="3_4_2_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=-2.5,xmax=2.5,
@@ -527,26 +650,23 @@ xlabel=\(x\), ylabel=\(y\),
 \addplot[domain=-3:3] {-x^2-2};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
-</li>
+                                </latex-image>
+                            </image>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
 
-</ol></p>
-</solution>
-</example>
+        <example>
+            <statement>
+                <p>
+                    Use the graph of a quadratic function <m>y=f(x)</m> given below to find a formula for the function in factored form and in standard form.
+                </p>
 
-
-<example>
-<statement>
-<p>
-Use the graph of a quadratic function <m>y=f(x)</m> given below to find a formula for the function in factored form and in standard form.
-</p>
-
-<image width="50%" xml:id="fig_3_4_3">
-<shortdescription>
-A short description.
-</shortdescription>
-<latex-image label="3_4_3_fig">
+                <image width="50%" xml:id="fig_3_4_3">
+                    <shortdescription>A short description.</shortdescription>
+                    <latex-image label="3_4_3_fig">
 \begin{tikzpicture}[scale=0.8]
 \begin{axis}[grid=both,
 xmin=-1,xmax=5,
@@ -559,35 +679,62 @@ xlabel=\(x\), ylabel=\(y\),
 \addplot[domain=-1:5] {5/3*(x-1)*(x-3)};
 \end{axis}
 \end{tikzpicture}
-</latex-image>
-</image>
-</statement>
+                    </latex-image>
+                </image>
+            </statement>
 
-<solution>
-<p>
-The graph gives us the horizontal intercepts or equivalently the zeros of the function <m>f(x)</m>: <m>x = 1</m> and <m>x = 3</m>. Hence, <m>f(x)</m> in factored form is: <md>f(x) = a ( x - 1 ) ( x - 3 )</md> We still don't have the value of the leading coefficient <m>a</m>. To find <m>a</m>, we will use the vertical intercept <m>y = 5</m> of the function. The intercept is clearly seen on the graph. The vertical intercept is the value of the function at <m>x = 0</m>. Thus, <m>f(0) = 5</m>. We substitute <m>x = 0</m> into factored form of <m>f(x)</m> and obtain:
-</p>
-<p>
-<md>a ( 0 - 1 ) ( 0 - 3 ) = 5</md>
-</p>
-<p>
-We simplify the equation: <md>a \cdot ( -1 ) \cdot ( -3 ) = 5</md> which gives: <md>a \cdot 3 = 5</md> and finally: <md>a = \frac{5}{3}</md> The function <m>f(x)</m> in factored form is: <md>f(x) = \frac{5}{3} ( x - 1 ) ( x - 3 )</md> To obtain <m>f(x)</m> in standard form, we multiply out all terms and simplify:
-</p>
-<p>
-<md>
-<mrow>f(x) \amp = \frac{5}{3} ( x - 1 ) ( x - 3 ) </mrow>
-<mrow>\amp = \frac{5}{3} ( x^2 - 3x - x + 3 ) </mrow>
-<mrow>\amp = \frac{5}{3} ( x^2 - 4x + 3 ) </mrow>
-<mrow>\amp = \frac{5}{3} x^2 - \frac{20}{3} x + 5.</mrow>
-</md>
-</p>
-</solution>
+            <solution>
+                <p>
+                    The graph gives us the horizontal intercepts or equivalently the zeros of the function <m>f(x)</m>: <m>x = 1</m> and <m>x = 3</m>.
+                    Hence, <m>f(x)</m> in factored form is:
+                    <md>
+                        f(x) = a ( x - 1 ) ( x - 3 )
+                    </md>
+                    We still don't have the value of the leading coefficient <m>a</m>.
+                    To find <m>a</m>, we will use the vertical intercept <m>y = 5</m> of the function.
+                    The intercept is clearly seen on the graph.
+                    The vertical intercept is the value of the function at <m>x = 0</m>.
+                    Thus, <m>f(0) = 5</m>.
+                    We substitute <m>x = 0</m> into factored form of <m>f(x)</m> and obtain:
+                </p>
 
-</example>
+                <p>
+                    <md>
+                        a ( 0 - 1 ) ( 0 - 3 ) = 5
+                    </md>
+                </p>
 
+                <p>
+                    We simplify the equation:
+                    <md>
+                        a \cdot ( -1 ) \cdot ( -3 ) = 5
+                    </md>
+                    which gives:
+                    <md>
+                        a \cdot 3 = 5
+                    </md>
+                    and finally:
+                    <md>
+                        a = \frac{5}{3}
+                    </md>
+                    The function <m>f(x)</m> in factored form is:
+                    <md>
+                        f(x) = \frac{5}{3} ( x - 1 ) ( x - 3 )
+                    </md>
+                    To obtain <m>f(x)</m> in standard form, we multiply out all terms and simplify:
+                </p>
 
-</subsection>
+                <p>
+                    <md>
+                        <mrow>f(x) \amp = \frac{5}{3} ( x - 1 ) ( x - 3 ) </mrow>
+                        <mrow>\amp = \frac{5}{3} ( x^2 - 3x - x + 3 ) </mrow>
+                        <mrow>\amp = \frac{5}{3} ( x^2 - 4x + 3 ) </mrow>
+                        <mrow>\amp = \frac{5}{3} x^2 - \frac{20}{3} x + 5.</mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+    </subsection>
 
-
-<xi:include href="exercises/ex_3_4.ptx"/>
+    <xi:include href="exercises/ex_3_4.ptx"/>
 </section>

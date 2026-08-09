@@ -26,7 +26,7 @@ Assume that <m>x</m>, <m>y</m>, and <m>z</m> are positive.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_2">
 <statement>
 <p>
 <m>\displaystyle \log(x^5y^3z^2)</m>
@@ -41,7 +41,7 @@ Assume that <m>x</m>, <m>y</m>, and <m>z</m> are positive.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_3">
 <statement>
 <p>
 <m>\displaystyle \log\left(\frac{yz}{6x}\right)</m>
@@ -56,7 +56,7 @@ Assume that <m>x</m>, <m>y</m>, and <m>z</m> are positive.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_4">
 <statement>
 <p>
 <m>\displaystyle \log\left(\frac{y^2z^3}{\sqrt{4x}}\right)</m>
@@ -71,7 +71,7 @@ Assume that <m>x</m>, <m>y</m>, and <m>z</m> are positive.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_5">
 <statement>
 <p>
 <m>\displaystyle \log\left(\frac{y^2z}{x}-x^2\right)</m>
@@ -86,7 +86,7 @@ Cannot simplify.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_6">
 <statement>
 <p>
 <m>\displaystyle \log(x^2+y^2)</m>
@@ -101,7 +101,7 @@ Cannot simplify.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_7">
 <statement>
 <p>
 <m>\displaystyle \log(100y\sqrt{x})</m>
@@ -157,7 +157,7 @@ For each of the following, use properties of logarithms to expand a given expres
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_10">
 <statement>
 <p>
 <m>\displaystyle \ln\left( \sqrt{(x^3y^3z)} \right)</m>
@@ -172,7 +172,7 @@ For each of the following, use properties of logarithms to expand a given expres
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_11">
 <statement>
 <p>
 <m>\displaystyle \ln(x+y^2)</m>
@@ -187,7 +187,7 @@ Cannot simplify.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_12">
 <statement>
 <p>
 <m>\displaystyle \ln\left(\frac{exy}{3z}\right)</m>
@@ -202,7 +202,7 @@ Cannot simplify.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_13">
 <statement>
 <p>
 <m>\displaystyle \ln(e^2yz^{-3})</m>
@@ -217,7 +217,7 @@ Cannot simplify.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_14">
 <statement>
 <p>
 <m>\displaystyle \ln\left(\frac{x}{3e}\right)</m>
@@ -232,7 +232,7 @@ Cannot simplify.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_15">
 <statement>
 <p>
 <m>\displaystyle \ln\left(\frac{1}{x^3y}\right)</m>
@@ -288,7 +288,7 @@ Not possible.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_18">
 <statement>
 <p>
 <m>\displaystyle 2\log(A)-3\log(B)</m>
@@ -303,7 +303,7 @@ Not possible.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_19">
 <statement>
 <p>
 <m>\displaystyle -3\ln(B)+\frac{1}{2}\ln(AB)</m>
@@ -318,7 +318,7 @@ Not possible.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_20">
 <statement>
 <p>
 <m>\displaystyle \log(A)\cdot \log(B)</m>
@@ -333,7 +333,7 @@ Not possible.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_21">
 <statement>
 <p>
 <m>\displaystyle \frac{1}{3}\ln(A)+2\ln(B)-\ln(10)</m>
@@ -389,7 +389,7 @@ For each of the following, solve a given equation for <m>x</m> or for <m>t</m>. 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_24">
 <statement>
 <p>
 <m>\displaystyle 1200\cdot 1.15^t=2400</m>
@@ -404,7 +404,7 @@ For each of the following, solve a given equation for <m>x</m> or for <m>t</m>. 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_25">
 <statement>
 <p>
 <m>\displaystyle 250\cdot 0.81^t=125</m>
@@ -419,7 +419,7 @@ For each of the following, solve a given equation for <m>x</m> or for <m>t</m>. 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_26">
 <statement>
 <p>
 <m>\displaystyle 3\cdot 7^x=4\cdot 5^x</m>
@@ -434,7 +434,7 @@ For each of the following, solve a given equation for <m>x</m> or for <m>t</m>. 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_6_2_27">
 <statement>
 <p>
 <m>\displaystyle 90(0.5)^{t/10}=40</m>

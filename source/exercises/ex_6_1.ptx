@@ -24,7 +24,7 @@ For each of the following, evaluate the given expression without a calculator. I
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_2">
 <statement>
 <p>
 <m>\displaystyle \log_2\left(-\frac{1}{16}\right)</m>
@@ -38,7 +38,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_3">
 <statement>
 <p>
 <m>\displaystyle \frac{1}{2}\log_2(0)</m>
@@ -52,7 +52,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_4">
 <statement>
 <p>
 <m>\displaystyle \log_3(27)</m>
@@ -66,7 +66,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_5">
 <statement>
 <p>
 <m>\displaystyle \log_3\left(\frac{1}{9}\right)</m>
@@ -80,7 +80,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_6">
 <statement>
 <p>
 <m>\displaystyle \log_3\left(\frac{\sqrt{3}}{3}\right)</m>
@@ -94,7 +94,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_7">
 <statement>
 <p>
 <m>\displaystyle 2\ln(e^{12})</m>
@@ -108,7 +108,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_8">
 <statement>
 <p>
 <m>\displaystyle \ln(\ln e)</m>
@@ -122,7 +122,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_9">
 <statement>
 <p>
 <m>\displaystyle \frac{\ln(1)}{\ln(e^2)}</m>
@@ -136,7 +136,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_10">
 <statement>
 <p>
 <m>\displaystyle \frac{\ln(e^2)}{\ln(1)}</m>
@@ -150,7 +150,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_11">
 <statement>
 <p>
 <m>\displaystyle \ln(\sqrt{e})+\ln(e^3)</m>
@@ -164,7 +164,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_12">
 <statement>
 <p>
 <m>\displaystyle \log\left(\frac{1}{10^4}\right)</m>
@@ -178,7 +178,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_13">
 <statement>
 <p>
 <m>\displaystyle \log(\sqrt[3]{10})-3\log\left(\frac{10}{\sqrt{10}}\right)</m>
@@ -192,7 +192,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_14">
 <statement>
 <p>
 <m>\displaystyle \log(10-10^2)</m>
@@ -206,7 +206,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_15">
 <statement>
 <p>
 <m>\displaystyle \frac{3\ln(e^{-2})}{\ln(\sqrt{e})}</m>
@@ -220,7 +220,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_16">
 <statement>
 <p>
 <m>\displaystyle \frac{\ln(-e)}{\ln(e^2)}</m>
@@ -234,7 +234,7 @@ undefined
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_17">
 <statement>
 <p>
 <m>\displaystyle \ln(e^2e^3)</m>
@@ -289,7 +289,7 @@ approximately <m>-1.6</m>
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_20">
 <statement>
 <p>
 <m>\displaystyle \ln(1.2)</m>
@@ -303,7 +303,7 @@ approximately <m>0.2</m>
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_21">
 <statement>
 <p>
 <m>\displaystyle \log(0.2)</m>
@@ -357,7 +357,7 @@ For each of the following, use your calculator to evaluate the given expression.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_24">
 <statement>
 <p>
 <m>\displaystyle \frac{\ln(2)}{0.327}</m>
@@ -371,7 +371,7 @@ For each of the following, use your calculator to evaluate the given expression.
 </solution>
 </exercise>
 
-<exercise>
+<exercise xml:id="exercise_6_1_25">
 <statement>
 <p>
 <m>\displaystyle \frac{\log(5)}{2\log(7)}</m>

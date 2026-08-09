@@ -1,773 +1,751 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_1_1">
-<title>The Concept of a Function</title>
 
-<objectives>
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="sec_1_1">
+    <title>The Concept of a Function</title>
+
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
+
+        <ol>
+            <li>
+                <p>
+                    Determine whether a correspondence between two numerical variables, given as a formula or in an applied context, represents a function, and identify its independent and dependent variables.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Use function notation to evaluate a function at given inputs, find inputs that produce a given output, and interpret such statements in practical terms.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Determine the domain of a function given algebraically or in an applied context, and determine whether a function is increasing or decreasing.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            One of the main concepts in mathematics and in the mathematical modeling of applied processes is that of a function.
+            The formal mathematical definition of a function is abstract and general, but in applied precalculus we can think of a function as a special kind of dependence between two numerical variables.
+        </p>
+
+        <example xml:id="example-ch1-gift">
+            <statement>
+                <p>
+                    Suppose you are in Rhode Island and intend to buy a gift from an online store.
+                    The amount of money, <m>C</m>, that you will have to spend (that is, the total cost to purchase the gift) depends on the list price, <m>p</m>, of the item you select.
+                    The cost is equal to the list price plus the state of Rhode Island's <m>7\%</m> sales tax plus the rate the store charges for shipping and handling.
+                    Assuming that the online store charges a flat rate of <m>\$4.95</m> for shipping and handling, give a formula for the cost <m>C</m> to purchase a gift of list price <m>p</m> dollars.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Given the list price <m>p</m>, you can calculate the cost <m>C</m>, in dollars, as
+                    <md>
+                        C=p+0.07p+4.95.
+                    </md>
+                    Here, <m>0.07p</m> represents <m>7\%</m> of the list price <mdash/> that is, the sales tax on the item.
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            <idx><h>variable</h><h>numerical</h></idx> <idx><h>function</h><h>notation</h></idx> In the above formula, <m>C</m> and <m>p</m> are variables <mdash/> their values <em>vary</em> based on the item you select.
+            They are both <em>numerical</em> variables as their possible values are numbers.
+            The cost <m>C</m> depends on <m>p</m> and, moreover, the cost is uniquely determined by the item's list price <m>p</m>.
+            We say in this case that <m>C</m> <q>is a function of <m>p</m>.</q> Using <em>function notation</em>, we write
+            <md>
+                C=f(p).
+            </md>
+            The notation <m>C=f(p)</m> is read as <q><m>C</m> equals <m>f</m> of <m>p</m>.</q> Note that <m>f</m> does not stand for the word <q>function</q> here; it is merely a letter used to name the function and another letter could be used instead.
+            The notation <m>f(p)</m> represents the <em>value</em> of the function <m>f</m> at a given list price <m>p</m>; that is, <m>f(p)</m> is the <em>cost</em> corresponding to a list price <m>p</m>:
+            <md>
+                f(p)=p+0.07p+4.95.
+            </md>
+        </p>
+
+        <p>
+            For every <m>p</m>, the value of the function <m>f(p)</m> gives the cost <m>C</m> for a list price <m>p</m>.
+            For example, <m>f(50)</m> <mdash/> the value of the function at <m>p=50</m> <mdash/> gives the cost corresponding to the list price <m>50</m> dollars.
+            Similarly, <m>f(60)</m> gives the cost corresponding to the list price <m>60</m> dollars.
+        </p>
+
+        <example xml:id="example-ch1-gift2">
+            <statement>
+                <p>
+                    Use the function
+                    <md>
+                        C=f(p)=p+0.07p+4.95
+                    </md>
+                    whose formula was found in <xref ref="example-ch1-gift"/> to determine the total amount you will spend to purchase a gift with a list price of <m>p=80</m> dollars from the online store.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    We are looking for the cost <m>C</m> when <m>p = 80</m>.
+                    In other words, we are looking for <m>f(80)</m> <mdash/> read aloud as <q><m>f</m> of <m>80</m>.</q> Using the formula for <m>f(p)</m> with <m>p=80</m>, we obtain
+                    <md>
+                        f(80)=80+0.07\cdot 80+4.95=90.55.
+                    </md>
+                    If you select an item listed at <m>p=80</m> dollars, you will pay <m>C=90.55</m> dollars.
+                    In function notation we could write <m>90.55=f(80)</m> or, equivalently, <m>f(80)=90.55</m>.
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            <idx><h>variable</h><h>dependent</h></idx> <idx><h>variable</h><h>independent</h></idx> Above, the cost variable, <m>C</m>, is called the <em>dependent variable</em> or the <em>output variable</em>.
+            The list price, <m>p</m>, is the <em>independent variable</em> or the <em>input variable</em>.
+            For each list price or input value <mdash/> input for short <mdash/> we have exactly one cost value.
+            So we have exactly one output value <mdash/> output for short <mdash/> for each input.
+            The formula for the function <m>f</m> gives the rule of how to obtain the output corresponding to each possible input <m>p</m>.
+        </p>
+
+        <p>
+            In general, we define a function as follows.
+        </p>
+
+        <definition>
+            <title>Informal Definition of a Function</title>
+
+            <statement>
+                <p>
+                    A function is a correspondence between two numerical variables, the input variable and the output variable, that takes input numbers from a certain subset of the real numbers called the <em>domain</em> of the function and prescribes to each <alert>exactly one</alert> output.
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            From the mathematical point of view, the domain of the formula for the function <m>f(p)=p+0.07p+4.95</m> consists of all real numbers <m>p</m>.
+            This is because <m>f(p)</m> is unique and defined for each individual real number inputted for <m>p</m>.
+            When we consider the applied context of this formula as presented in <xref ref="example-ch1-gift"/> and <xref ref="example-ch1-gift2"/>, however, the input <m>p</m> is a list price and therefore cannot be negative.
+            For practical reasons, we would restrict the domain of <m>f</m> to positive inputs <m>p</m>.
         </p>
     </introduction>
-    <ol>
-        <li>
+
+    <subsection>
+        <title>Functions in General</title>
+
+        <p>
+            In an abstract setting, when variables are not associated any specific real-life meaning, we commonly denote the independent variable by <m>x</m>, the dependent variable by <m>y</m>, and a function by <m>f</m>:
+            <md>
+                y=f(x).
+            </md>
+        </p>
+
+        <example xml:id="example-ch1-equ-solve">
+            <statement>
+                <p>
+                    Let <m>y=f(x)</m> where <m>f(x)=0.2x+1</m>.
+                    <ol>
+                        <li>
+                            <p>
+                                What is the domain of <m>f</m>?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Find <m>f(2)</m> and <m>f(3)</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Find all inputs <m>x</m> for which the output <m>y</m> is equal to <m>0</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                For every input number <m>x</m>, we can multiply <m>x</m> by <m>0.2</m> and add <m>1</m>.
+                                So the output <m>f(x)=0.2x+1</m> is defined and is a single number for each <m>x</m>.
+                                Hence, the domain of <m>f</m> consists of all real numbers <m>x</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The quantity <m>f(2)</m> is the value of the function or the output corresponding to the input <m>x=2</m>.
+                                Substituting <m>x=2</m> into the formula for <m>f</m>, we find
+                                <md>
+                                    f(2)=0.2\cdot2+1=1.4.
+                                </md>
+                                Hence, the value of <m>y</m> corresponding to <m>x=2</m> is <m>y=1.4</m>.
+                                Similarly,
+                                <md>
+                                    f(3)=0.2\cdot3+1=1.6 .
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We are looking for inputs <m>x</m> for which the output <m>y=0</m>.
+                                In other words, we are looking for the value (or the values) of <m>x</m> which are solutions to the equation <m>0=0.2x+1</m> or equivalently <m>0.2x+1=0.</m> To find <m>x</m>, we use the standard techniques of solving equations: we subtract <m>1</m> from both sides of the equation and then we divide both sides of the equation by <m>0.2</m>.
+                                These steps are shown below.
+                                <md>
+                                    <mrow>0.2x+1 \amp \; = \; 0</mrow>
+                                    <mrow>0.2x+1 \textcolor{blue}{-1} \amp \;=\; 0\, \textcolor{blue}{- 1}</mrow>
+                                    <mrow>\frac{0.2x}{\textcolor{red}{0.2}} \amp \;=\; \frac{-1}{\textcolor{red}{0.2}}</mrow>
+                                    <mrow>x \amp \;=\; -\dfrac{1}{0.2}</mrow>
+                                    <mrow>x \amp \;=\; -5</mrow>
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Functions in Applied Settings</title>
+
+        <p>
+            The previous example illustrates that a function need not be associated with an applied scenario.
+            When an application is involved, it is important to be able to interpret the practical meaning.
+        </p>
+
+        <example xml:id="example-ch1-nicotine">
+            <statement>
+                <p>
+                    The amount of nicotine in a person's bloodstream, <m>N=f(t)</m>, in milligrams, is a function of time <m>t</m>, in hours, that have passed since the person finished smoking a single cigarette.
+                    <ol>
+                        <li>
+                            <p>
+                                Identify the independent variable and the dependent variable of this function.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                In the statement <m>f(3)=0.71</m>, what is the meaning of 3 and 0.71 in terms of time and nicotine?
+                                Include units in the answer.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Explain the meaning of the statement <m>f(4)=0.5</m> in practical terms.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Here, <m>N</m> depends on <m>t</m>, making <m>N</m> a function of <m>t</m>.
+                                Thus <m>N</m> is the dependent variable and <m>t</m> is the independent variable.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The number <m>3</m> is a value of <m>t</m>, so its units are hours; <m>0.71</m> is a value of <m>N</m>, so its units are milligrams.
+                                In practical terms, <m>f(3)=0.71</m> means that <m>3</m> hours after a person finishes smoking a single cigarette there will be <m>0.71</m> milligrams of nicotine left in their bloodstream.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Similarly to the prior solution, <m>f(4)=0.5</m> means that <m>4</m> hours after a person finishes smoking a single cigarette there will be <m>0.5</m> milligrams of nicotine left in their bloodstream.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example xml:id="example-ch1-amox">
+            <statement>
+                <p>
+                    In cases of strep throat, a daily pediatric dose of Amoxicillin, <m>D</m>, in milligrams, depends on the weight of a child, <m>w</m>, in kilograms; that is, <m>D</m> is a function of <m>w</m>.
+                    Denoting the function by <m>g</m> results in
+                    <md>
+                        D=g(w).
+                    </md>
+                    As a general rule, the daily dose should be 50 milligrams for each kilogram of weight.
+                    <ol>
+                        <li>
+                            <p>
+                                Write a formula for the function <m>g(w)</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Calculate the daily dose for a child who weighs 8 kilograms.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                What does <m>g(11)=550</m> represent in practical terms?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The value <m>g(w)</m> represents the dose for the weight of <m>w</m> kilograms.
+                                Since the dose is 50 milligrams for each kilogram, the dose <m>g(w)</m> is given by
+                                <md>
+                                    50 \, \dfrac{\text{milligrams}}{\text{kilogram}}\times w \, \text{kilograms}.
+                                </md>
+                            </p>
+
+                            <p>
+                                Multiplying and simplifying units results in <m>g(w)=50w</m> milligrams.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We calculate
+                                <md>
+                                    g(8)=50\cdot 8=400
+                                </md>
+                                and arrive at the conclusion that the dose for a child who weighs 8 kilograms is 400 milligrams.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                To answer questions like this, it can be useful to assign the appropriate units to each number.
+                                Since <m>11</m> is a value for <m>w</m>, it is measured in kilograms.
+                                <m>550</m> is a value for <m>g(w)</m> or <m>D</m>, so it is measured in milligrams.
+                                Combining this information with the fact that <m>g(w)</m> gives the dose for a child who weighs <m>w</m> kilograms, we conclude that the practical meaning of the statement <m>g(11)=550</m> is that a child weighing <m>11</m> kilograms should receive a daily dose of <m>550</m> milligrams of Amoxicillin when being treated for strep throat.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example xml:id="example-ch1-drive">
+            <statement>
+                <p>
+                    A man leaves home and drives at <m>40</m> miles per hour toward a hospital located <m>150</m> miles away from his home.
+                    At time <m>t</m> hours after he began driving, his distance from the hospital, <m>d</m>, in miles, is given by
+                    <md>
+                        d=150-40t.
+                    </md>
+
+                    <ol>
+                        <li>
+                            <p>
+                                Let <m>d=f(t)</m>.
+                                What is the formula for the function <m>f(t)</m>?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                How far from the hospital is the man after 1.5 hours?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                When will the man arrive at the hospital?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Since <m>d=f(t)</m> and the formula for <m>d</m> was given, <m>f(t)=150-40t</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The man's distance from the hospital at <m>t=1.5</m> is given by
+                                <md>
+                                    f(1.5)=150-40\cdot 1.5=90.
+                                </md>
+                                After <m>1.5</m> hours, the man is <m>90</m> miles from the hospital.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The man will arrive at the hospital when his distance <m>d</m> from the hospital is 0 miles.
+                                We are looking for <m>t</m> such that <m>0=150-40t</m> or equivalently <m>150-40t=0</m>.
+                                Solving for <m>t</m>:
+                                <md>
+                                    <mrow>150-40t \textcolor{blue}{+40t} \amp \; =\; 0 \textcolor{blue}{+40t} </mrow>
+                                    <mrow>150 \amp \; =\; 40t </mrow>
+                                    <mrow>\dfrac{150}{40} \amp \; =\; t </mrow>
+                                    <mrow>t \amp \; = \; 3.75.</mrow>
+                                </md>
+                            </p>
+
+                            <p>
+                                The man will arrive at the hospital <m>3</m> hours and <m>45</m> minutes after he left home.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Increasing and Decreasing Functions</title>
+
+        <p>
+            In <xref ref="example-ch1-amox"/> we considered the function <m>D=g(w)</m> that gives the daily dose <m>D</m> of Amoxicillin for a child weighing <m>w</m> kilograms.
+            Notice that <m>g(w)</m> increases as the weight <m>w</m> increases.
+            In <xref ref="example-ch1-drive"/>, the distance <m>d=f(t)</m> from the hospital decreases as the number of hours <m>t</m> spent driving toward the hospital increases.
+        </p>
+
+        <definition>
+            <title>Increasing and Decreasing Functions</title>
+
+            <idx><h>function</h><h>increasing</h></idx>
+            <idx><h>function</h><h>decreasing</h></idx>
+            <statement>
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                A function <m>f(x)</m> is <em>increasing</em> if the values of <m>f(x)</m> increase as <m>x</m> increases.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                A function <m>f(x)</m> is <em>decreasing</em> if the values of <m>f(x)</m> decrease as <m>x</m> increases.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            Above, the dose of Amoxicillin would be an illustration of an increasing function of weight while the distance from the hospital would be an illustration of a decreasing function of time.
+            We will see later that many functions are neither increasing nor decreasing through their domain; they may increase on some intervals and decrease on other intervals.
+        </p>
+    </subsection>
+
+    <subsection>
+        <title>Functions as a Sequence of Operations</title>
+
+        <p>
+            A function that is presented as a formula can be thought of as sequence of operations performed on an input in order to obtain the corresponding output.
+            For example, the function <m>f(x)=0.2x+1</m> of <xref ref="example-ch1-equ-solve"/> takes an input, multiplies the input by <m>0.2</m>, and then adds <m>1</m> to the result.
+            The function performs this sequence of operations no matter what the input is.
+            We can write this symbolically as
+            <md>
+                f(\Box)=0.2\cdot\Box+1.
+            </md>
+            Whatever input we feed into the function <m>f</m>, a number, an expression, whatever we like, the function will multiply the input by <m>0.2</m> and add <m>1</m>.
+        </p>
+        <aside>
             <p>
-            Determine whether a correspondence between two numerical variables, given as a formula or in an applied context, represents a function, and identify its independent and dependent variables.
+                In Chapter 7 we'll even consider putting <em>functions</em> into functions.
             </p>
-        </li>
-
-        <li>
-            <p>
-        Use function notation to evaluate a function at given inputs, find inputs that produce a given output, and interpret such statements in practical terms.
-            </p>
-        </li>
-        <li>
-            <p>
-            Determine the domain of a function given algebraically or in an applied context, and determine whether a function is increasing or decreasing.
-            </p>
-        </li>
-    </ol>
-</objectives>
-
-<introduction>
-<p>
-    One of the main concepts in mathematics and in the mathematical modeling of applied processes is that of a function. The formal mathematical definition of a function is abstract and general, but in applied precalculus we can think of a function as a special kind of dependence between two numerical variables.
-</p>
-
-<example xml:id="example-ch1-gift">
-    
-<statement>
-    <p>
-    Suppose you are in Rhode Island and intend to buy a gift from an online store. The amount of money, <m>C</m>, that you will have to spend (that is, the total cost to purchase the gift) depends on the list price, <m>p</m>, of the item you select. The cost is equal to the list price plus the state of Rhode Island's <m>7\%</m> sales tax plus the rate the store charges for shipping and handling. Assuming that the online store charges a flat rate of <m>\$4.95</m> for shipping and handling, give a formula for the cost <m>C</m> to purchase a gift of list price <m>p</m> dollars.
-    </p>
-</statement>
-
-<solution>
-<p>Given the list price <m>p</m>, you can calculate the cost <m>C</m>, in dollars, as
-<md>
-    C=p+0.07p+4.95.
-</md>
-Here, <m>0.07p</m> represents <m>7\%</m> of the list price<mdash/>that is, the sales tax on the item.
-</p>
-</solution>
-
-</example>
-
-<p>
-    <idx><h>variable</h><h>numerical</h></idx>
-    <idx><h>function</h><h>notation</h></idx>
-    In the above formula, <m>C</m> and <m>p</m> are variables<mdash/>their values <em>vary</em> based on the item you select.
-    They are both <em>numerical</em> variables as their possible values are numbers.
-    The cost <m>C</m> depends on <m>p</m> and, moreover, the cost is uniquely determined by the item's list price <m>p</m>.
-    We say in this case that <m>C</m> <q>is a function of <m>p</m>.</q> Using <em>function notation</em>, we write
-    <md>
-    C=f(p).
-    </md>
-    The notation <m>C=f(p)</m> is read as <q><m>C</m> equals <m>f</m> of <m>p</m>.</q> Note that <m>f</m> does not stand for the word <q>function</q> here; it is merely a letter used to name the function and another letter could be used instead.
-    The notation <m>f(p)</m> represents the <em>value</em> of the function <m>f</m> at a given list price <m>p</m>; that is, <m>f(p)</m> is the <em>cost</em> corresponding to a list price <m>p</m>:
-    <md>
-    f(p)=p+0.07p+4.95.
-    </md>
-</p>
-
-<p>
-    For every <m>p</m>, the value of the function <m>f(p)</m> gives the cost <m>C</m> for a list price <m>p</m>.
-    For example, <m>f(50)</m><mdash/>the value of the function at <m>p=50</m><mdash/>gives the cost corresponding to the list price <m>50</m> dollars.
-    Similarly, <m>f(60)</m> gives the cost corresponding to the list price <m>60</m> dollars.
-</p>
-
-<example xml:id="example-ch1-gift2">
-<statement>
-    <p>
-        Use the function 
-        <md>
-            C=f(p)=p+0.07p+4.95
-        </md>
-        whose formula was found in <xref ref="example-ch1-gift" /> to determine the total amount you will spend to purchase a gift with a list price of <m>p=80</m> dollars from the online store.
-    </p>
-</statement>
-<solution>
-    <p>
-    We are looking for the cost <m>C</m> when <m>p = 80</m>.
-    In other words, we are looking for <m>f(80)</m><mdash/>read aloud as <q><m>f</m> of <m>80</m>.</q> Using the formula for <m>f(p)</m> with <m>p=80</m>, we obtain
-    <md>
-    f(80)=80+0.07\cdot 80+4.95=90.55.
-    </md>
-    If you select an item listed at <m>p=80</m> dollars, you will pay <m>C=90.55</m> dollars.
-    In function notation we could write <m>90.55=f(80)</m> or, equivalently, <m>f(80)=90.55</m>.
-    </p>
-</solution>
-</example>
-
-
-
-<p>
-<idx><h>variable</h><h>dependent</h></idx>
-<idx><h>variable</h><h>independent</h></idx>
-    Above, the cost variable, <m>C</m>, is called the <em>dependent variable</em> or the <em>output variable</em>.
-    The list price, <m>p</m>, is the <em>independent variable</em> or the <em>input variable</em>. For each list price or input value<mdash/>input for short<mdash/>we have exactly one cost value.
-    So we have exactly one output value<mdash/>output for short<mdash/>for each input.
-    The formula for the function <m>f</m> gives the rule of how to obtain the output corresponding to each possible input <m>p</m>.
-</p>
-
-<p>
-    In general, we define a function as follows. 
-</p>
-
-<definition>
-    <title>Informal Definition of a Function</title>
-    <statement>
-    <p>
-    A function is a correspondence between two numerical variables, the input variable and the output variable, that takes input numbers from a certain subset of the real numbers called the <em>domain</em> of the function and prescribes to each <alert>exactly one</alert> output.
-    </p>
-    </statement>
-</definition>
-
-
-<p>
-    From the mathematical point of view, the domain of the formula for the function <m>f(p)=p+0.07p+4.95</m> consists of all real numbers <m>p</m>.
-    This is because <m>f(p)</m> is unique and defined for each individual real number inputted for <m>p</m>.
-    When we consider the applied context of this formula as presented in <xref ref="example-ch1-gift"/> and <xref ref="example-ch1-gift2"/>, however, the input <m>p</m> is a list price and therefore cannot be negative.
-    For practical reasons, we would restrict the domain of <m>f</m> to positive inputs <m>p</m>.
-</p>
-
-</introduction>
-
-<subsection>
-<title>Functions in General</title>
-
-<p>
-In an abstract setting, when variables are not associated any specific real-life meaning, we commonly denote the independent variable by <m>x</m>, the dependent variable by <m>y</m>, and a function by <m>f</m>:
-<md>
-    y=f(x).
-</md>
-</p>
-
-
-<example xml:id="example-ch1-equ-solve">
-    <statement>
-        <p>
-            Let <m>y=f(x)</m> where <m>f(x)=0.2x+1</m>.
-    <ol>
-    <li>
-        <p>
-        What is the domain of <m>f</m>?
-        </p>
-    </li>
-
-    <li>
-        <p>
-        Find <m>f(2)</m> and <m>f(3)</m>.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        Find all inputs <m>x</m> for which the output <m>y</m> is equal to <m>0</m>.
-        </p>
-    </li>
-    </ol>
-        </p>
-    </statement>
-
-    <solution>
-<p>
-        <ol>
-    <li>
-        <p>
-        For every input number <m>x</m>, we can multiply <m>x</m> by <m>0.2</m> and add <m>1</m>.
-        So the output <m>f(x)=0.2x+1</m> is defined and is a single number for each <m>x</m>.
-        Hence, the domain of <m>f</m> consists of all real numbers <m>x</m>.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        The quantity <m>f(2)</m> is the value of the function or the output corresponding to the input <m>x=2</m>.
-        Substituting <m>x=2</m> into the formula for <m>f</m>, we find
-        <md>
-            f(2)=0.2\cdot2+1=1.4.
-        </md>
-        Hence, the value of <m>y</m> corresponding to <m>x=2</m> is <m>y=1.4</m>.
-        Similarly,
-        <md>
-            f(3)=0.2\cdot3+1=1.6 .
-        </md>
-        </p>
-    </li>
-
-    <li>
-        <p>
-        We are looking for inputs <m>x</m> for which the output <m>y=0</m>.
-        In other words, we are looking for the value (or the values) of <m>x</m> which are solutions to the equation <m>0=0.2x+1</m> or equivalently <m>0.2x+1=0.</m> To find <m>x</m>, we use the standard techniques of solving equations: we subtract <m>1</m> from both sides of the equation and then we divide both sides of the equation by <m>0.2</m>.
-        These steps are shown below.
-        <md>
-        <mrow>0.2x+1 \amp \; = \; 0</mrow>
-        <mrow>0.2x+1 \textcolor{blue}{-1} \amp \;=\; 0\, \textcolor{blue}{- 1}</mrow>
-        <mrow>\frac{0.2x}{\textcolor{red}{0.2}} \amp \;=\; \frac{-1}{\textcolor{red}{0.2}}</mrow>
-        <mrow>x \amp \;=\; -\dfrac{1}{0.2}</mrow>
-        <mrow>x \amp \;=\; -5</mrow>
-        </md>
-        </p>
-    </li>
-    </ol>
-</p>
-    </solution>
-</example>
-
-
-</subsection>
-
-
-<subsection>
-<title>Functions in Applied Settings</title>
-
-<p>
-    The previous example illustrates that a function need not be associated with an applied scenario.
-    When an application is involved, it is important to be able to interpret the practical meaning.
-</p>
-
-<example xml:id="example-ch1-nicotine">
-    <statement>
-        <p>
-            The amount of nicotine in a person's bloodstream, <m>N=f(t)</m>, in milligrams, is a function of time <m>t</m>, in hours, that have passed since the person finished smoking a single cigarette.
-        <ol>
-    <li>
-        <p>
-        Identify the independent variable and the dependent variable of this function.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        In the statement <m>f(3)=0.71</m>, what is the meaning of 3 and 0.71 in terms of time and nicotine? Include units in the answer.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        Explain the meaning of the statement <m>f(4)=0.5</m> in practical terms.
-        </p>
-    </li>
-    </ol>
-</p>
-    </statement>
-
-    <solution>
-<p>
-        <ol>
-    <li>
-        <p>
-        Here, <m>N</m> depends on <m>t</m>, making <m>N</m> a function of <m>t</m>.
-        Thus <m>N</m> is the dependent variable and <m>t</m> is the independent variable.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        The number <m>3</m> is a value of <m>t</m>, so its units are hours; <m>0.71</m> is a value of <m>N</m>, so its units are milligrams.
-        In practical terms, <m>f(3)=0.71</m> means that <m>3</m> hours after a person finishes smoking a single cigarette there will be <m>0.71</m> milligrams of nicotine left in their bloodstream.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        Similarly to the prior solution, <m>f(4)=0.5</m> means that <m>4</m> hours after a person finishes smoking a single cigarette there will be <m>0.5</m> milligrams of nicotine left in their bloodstream.
-        </p>
-    </li>
-    </ol>
-</p>
-    </solution>
-</example>
-
-
-
-
-
-<example xml:id="example-ch1-amox">
-<statement>
-    <p>
-    In cases of strep throat, a daily pediatric dose of Amoxicillin, <m>D</m>, in milligrams, depends on the weight of a child, <m>w</m>, in kilograms; that is, <m>D</m> is a function of <m>w</m>.
-    Denoting the function by <m>g</m> results in
-    <md>
-    D=g(w).
-    </md>
-    As a general rule, the daily dose should be 50 milligrams for each kilogram of weight.
-    <ol>
-    <li>
-        <p>
-        Write a formula for the function <m>g(w)</m>.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        Calculate the daily dose for a child who weighs 8 kilograms.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        What does <m>g(11)=550</m> represent in practical terms?
-        </p>
-    </li>
-    </ol>
-    </p>
-</statement>
-
-<solution>
-<p>
-        <ol>
-    <li>
-        <p>
-        The value <m>g(w)</m> represents the dose for the weight of <m>w</m> kilograms.
-        Since the dose is 50 milligrams for each kilogram, the dose <m>g(w)</m> is given by
-        <md>
-            50 \, \dfrac{\text{milligrams}}{\text{kilogram}}\times w \, \text{kilograms}.
-        </md>
-        </p>
-
-        <p>
-        Multiplying and simplifying units results in <m>g(w)=50w</m> milligrams.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        We calculate
-        <md>
-            g(8)=50\cdot 8=400
-        </md>
-        and arrive at the conclusion that the dose for a child who weighs 8 kilograms is 400 milligrams.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        To answer questions like this, it can be useful to assign the appropriate units to each number.
-        Since <m>11</m> is a value for <m>w</m>, it is measured in kilograms.
-        <m>550</m> is a value for <m>g(w)</m> or <m>D</m>, so it is measured in milligrams.
-        Combining this information with the fact that <m>g(w)</m> gives the dose for a child who weighs <m>w</m> kilograms, we conclude that the practical meaning of the statement <m>g(11)=550</m> is that a child weighing <m>11</m> kilograms should receive a daily dose of <m>550</m> milligrams of Amoxicillin when being treated for strep throat.
-        </p>
-    </li>
-    </ol>
-</p>
-</solution>
-</example>
-
-
-<example xml:id="example-ch1-drive">
-    <statement>
-        <p>
-        A man leaves home and drives at <m>40</m> miles per hour toward a hospital located <m>150</m> miles away from his home.
-        At time <m>t</m> hours after he began driving, his distance from the hospital, <m>d</m>, in miles, is given by
-        <md>
-        d=150-40t.
-        </md>
-        <ol>
-    <li>
-        <p>
-        Let <m>d=f(t)</m>.
-        What is the formula for the function <m>f(t)</m>?
-        </p>
-    </li>
-
-    <li>
-        <p>
-        How far from the hospital is the man after 1.5 hours?
-        </p>
-    </li>
-
-    <li>
-        <p>
-        When will the man arrive at the hospital?
-        </p>
-    </li>
-    </ol>
-        </p>
-    </statement>
-
-    <solution>
-<p>
-        <ol>
-    <li>
-        <p>
-        Since <m>d=f(t)</m> and the formula for <m>d</m> was given, <m>f(t)=150-40t</m>.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        The man's distance from the hospital at <m>t=1.5</m> is given by
-        <md>
-            f(1.5)=150-40\cdot 1.5=90.
-        </md>
-        After <m>1.5</m> hours, the man is <m>90</m> miles from the hospital.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        The man will arrive at the hospital when his distance <m>d</m> from the hospital is 0 miles.
-        We are looking for <m>t</m> such that <m>0=150-40t</m> or equivalently <m>150-40t=0</m>.
-        Solving for <m>t</m>:
-        <md>
-        <mrow>150-40t \textcolor{blue}{+40t} \amp \; =\; 0 \textcolor{blue}{+40t} </mrow>
-        <mrow>150 \amp \; =\; 40t </mrow>
-        <mrow>\dfrac{150}{40} \amp \; =\; t </mrow>
-        <mrow>t \amp \; = \; 3.75.</mrow>
-        </md>
-    </p>
-
-        <p>
-        The man will arrive at the hospital <m>3</m> hours and <m>45</m> minutes after he left home.
-        </p>
-    </li>
-    </ol>
-</p>
-    </solution>
-</example>
-
-</subsection>
-
-
-
-<subsection>
-<title>Increasing and Decreasing Functions</title>
-
-<p>
-    In <xref ref="example-ch1-amox"/> we considered the function <m>D=g(w)</m> that gives the daily dose <m>D</m> of Amoxicillin for a child weighing <m>w</m> kilograms.
-    Notice that <m>g(w)</m> increases as the weight <m>w</m> increases. In <xref ref="example-ch1-drive"/>, the distance <m>d=f(t)</m> from the hospital decreases as the number of hours <m>t</m> spent driving toward the hospital increases.
-</p>
-
-
-<definition>
-    <title>Increasing and Decreasing Functions</title>
-    <idx><h>function</h><h>increasing</h></idx>
-<idx><h>function</h><h>decreasing</h></idx>
-
-    <statement>
-        <p>
-            <ul>
-                <li>
-    <p>
-        A function <m>f(x)</m> is <em>increasing</em> if the values of <m>f(x)</m> increase as <m>x</m> increases.
-    </p>
-    </li>
-
-    <li>
-    <p>
-        A function <m>f(x)</m> is <em>decreasing</em> if the values of <m>f(x)</m> decrease as <m>x</m> increases.
-    </p>
-    </li>
-</ul>
-        </p>
-    </statement>
-</definition>
-
-
-
-<p>
-    Above, the dose of Amoxicillin would be an illustration of an increasing function of weight while the distance from the hospital would be an illustration of a decreasing function of time.
-    We will see later that many functions are neither increasing nor decreasing through their domain; they may increase on some intervals and decrease on other intervals.
-</p>
-
-</subsection>
-
-
-
-
-<subsection><title>Functions as a Sequence of Operations</title>
-
-<p>
-    A function that is presented as a formula can be thought of as sequence of operations performed on an input in order to obtain the corresponding output.
-    For example, the function <m>f(x)=0.2x+1</m> of <xref ref="example-ch1-equ-solve"/> takes an input, multiplies the input by <m>0.2</m>, and then adds <m>1</m> to the result.
-    The function performs this sequence of operations no matter what the input is.
-    We can write this symbolically as
-    <md>
-        f(\Box)=0.2\cdot\Box+1.
-    </md>
-    Whatever input we feed into the function <m>f</m>, a number, an expression, whatever we like, the function will multiply the input by <m>0.2</m> and add <m>1</m>.
-</p>
-
-<aside>
-    <p>
-    In Chapter 7 we'll even consider putting <em>functions</em> into functions.
-    </p>
-</aside>
-
-
-<example>
-    <statement>
-        <p>
-            Let <m>g(x)=3-4x</m>.
-    Evaluate and simplify each of the following.
-    <ol>
-    <li>
-        <p>
-        <m>g(2+h)</m>
-        </p>
-    </li>
-
-    <li>
-        <p>
-        <m>g(1-h)+g(1)</m>
-        </p>
-    </li>
-    </ol>
-        </p>
-    </statement>
-
-    <solution>
-        <p>
-            The function <m>g(x)</m> takes any input <m>\Box</m><mdash/>whatever it might be<mdash/>multiplies the input by 4, and subtracts the result from 3:
-    <md>
-    g(\Box)=3-4\cdot\Box.
-    </md>
-</p>
-
-<p>
-    <ol>
-    <li>
-        <p>
-        In <m>g(2+h)</m>, the input is an <em>algebraic expression</em>: <m>2+h</m>.
-        In any given context, <m>h</m> may stand for a number or for a numerical variable.
-        No matter what <m>h</m> represents here, the function <m>g</m> takes the input <m>2+h</m>, multiplies it by 4, and then subtracts the result from 3.
-        Thus,
-        <md>
-            g(2+h)=3-4(2+h).
-        </md>
-        To simplify, we use the distributive law to expand <m>4(2+h)</m>:
-        <md>
-            g(2+h)=3-8-4h=-5-4h.
-        </md>
-        We cannot simplify further.
-        The final answer is <m>g(2+h)=-5-4h</m>.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        We consider the whole expression all at once below, though you may find it helpful to separately find each of <m>g(1-h)</m> and <m>g(1)</m> and then subtract the two results.
-        <md>
-        <mrow>g(1-h)+g(1) \amp \; =\; \bigg(3-4(1-h)\bigg)+\bigg(3-4\cdot1\bigg) </mrow>
-        <mrow>\amp \; =\; \bigg(3-4-4(-h)\bigg)+\bigg(-1\bigg) </mrow>
-        <mrow>\amp \; =\; -1+4h-1</mrow>
-        <mrow>\amp \; =\; -2+4h</mrow>
-        </md>
-    </p>
-        <p>
-        Whatever <m>h</m> might be, <m>g(1-h)+g(1)=-2+4h</m>.
-        </p>
-    </li>
-    </ol>
-        </p>
-    </solution>
-</example>
-
-
-<example>
-    <statement>
-        <p>
-            Find a formula for <m>f(x)</m> if...
-    <ol>
-    <li>
-        <p>
-        ...<m>f</m> takes the square root of the input, multiplies the result by 3, and subtracts 1.
-        </p>
-    </li>
-
-    <li>
-        <p>
-        ...<m>f</m> squares the input, adds 2, and takes the reciprocal of the result.
-        </p>
-    </li>
-    </ol>
-        </p>
-    </statement>
-
-    <solution>
-        <p>
-            <ol>
-    <li>
-        <p>
-        We begin with an input <m>x</m>.
-        Taking the square root of this input results in <m>\sqrt{x}</m>.
-        Multiplying the result by 3 results in <m>3\sqrt{x}</m>.
-        Finally, subtracting 1 results in <m>3\sqrt{x}-1</m>.
-        Therefore, the formula for <m>f</m> is
-        <md>
-            f(x)=3\sqrt{x}-1.
-        </md>
-        </p>
-    </li>
-
-    <li>
-        <p>
-        We begin with an input <m>x</m>.
-        Squaring the input first results in <m>x^{2}</m>.
-        Adding <m>2</m> next results in <m>x^{2}+2</m>.
-        Now, we take the reciprocal of <m>x^{2}+2</m>, which is <m>\dfrac{1}{x^2+2}</m>.
-        Therefore, the formula for <m>f</m> is
-        <md>
-            f(x)=\dfrac{1}{x^2+2}.
-        </md>
-        </p>
-    </li>
-    </ol>
-        </p>
-    </solution>
-</example>
-
-
-<example>
-    <statement>
-        <p>
-            Find the domain of each of the following functions.
-    <ol>
-    <li>
-        <p>
-        <m>\displaystyle f(x)=\frac{1}{x^{2}-1}</m>
-        </p>
-    </li>
-
-    <li>
-        <p>
-        <m>\displaystyle g(x)=\sqrt{x-3}</m>
-        </p>
-    </li>
-    </ol>
-        </p>
-    </statement>
-    
-    <solution>
-        <p>
-            Note that neither <m>f(x)</m> and <m>g(x)</m> are assigned any specific practical applied meaning.
-    This means that the domain of each function will be all inputs <m>x</m> for which the output is defined.
-        </p>
-<p>
-        <ol>
-    <li>
-        <p>
-        The function <m>f(x)=\dfrac{1}{x^2-1}</m> is defined at any input that does not lead to division by zero and undefined at any input that does lead to division by zero.
-        To find the value(s) of <m>x</m> for which <m>f(x)</m> is undefined, we set its denominator equal to zero and solve for <m>x</m>:
-        <md>
-        <mrow>x^{2} -1 \amp \; = \; 0</mrow>
-        <mrow>x^{2} -1 \textcolor{blue}{+1} \amp \; = \; 0 \textcolor{blue}{+ 1}</mrow>
-        <mrow>x^{2} \amp \; = \; 1</mrow>
-        </md>
-    </p>
-        <p>
-        We can now see that <m>f(x)</m> is undefined when <m>x=1</m> and when <m>x=-1</m>.
-        The domain of <m>f(x)</m> is all real numbers except for these two values.
-        This can be written in a variety of different ways.
-        </p>
-
-<aside>
-<p>
-The symbol <m>\cup</m> is called a <em>union</em>.
-Essentially, it means <q>include all these intervals</q>.
-</p>
-</aside>
-
-
-        <p>
-            <idx><h>domain</h></idx>
-            <idx><h>set-builder notation</h></idx>
-            <idx><h>interval notation</h></idx>
-            <idx><h>union</h></idx>
-
-        <ul>
-            <li>
-            <p>
-                Domain of <m>\displaystyle f(x)=\frac{1}{x^{2}-1}</m> in words:
-                <md>
-                \text{all real numbers }x\neq\pm1
-                </md>
-            </p>
-            </li>
-
-            <li>
-            <p>
-                Domain of <m>\displaystyle f(x)=\frac{1}{x^{2}-1}</m> in <em>set-builder notation</em>:
-                <md>
-                \{ x\in \R \; \colon \; x\neq \pm 1 \}
-                </md>
-            </p>
-            </li>
-
-            <li>
-            <p>
-                Domain of <m>\displaystyle f(x)=\frac{1}{x^{2}-1}</m> in <em>interval notation</em>:
-                <md>
-                (-\infty,-1)\cup(-1,1)\cup(1,\infty)
-                </md>
-            </p>
-            </li>
-        </ul>
-        </p>
-    </li>
-    <li>
-        <p>
-        The function <m>g(x)=\sqrt{x-3}</m> is defined provided the number under the radical is not negative.
-        That is, it is defined for those values of <m>x</m> satisfying that <m>x-3\geq 0</m>.
-        We can isolate <m>x</m> on one side of the inequality
-        <md>
-        <mrow>x-3 \amp \; \geq \; 0</mrow>
-        <mrow>x-3 \textcolor{blue}{+3} \amp \; \geq \; 0 \textcolor{blue}{+3}</mrow>
-        <mrow>x \amp \; \geq \; 3</mrow>
-        </md>
-    </p>
-        <p>
-        which allows us to conclude that the domain of <m>g(x)</m> is all real numbers <m>x</m> that are greater than or equal to <m>3</m>.
-        As before, this can be written in a variety of different ways.
-        </p>
-
-        <p>
-        <ul>
-            <li>
-            <p>
-                Domain of <m>g(x)=\sqrt{x-3}</m> in words:
-                <md>
-                \text{all real numbers }x\geq 3
-                </md>
-            </p>
-            </li>
-
-            <li>
-            <p>
-                Domain of <m>g(x)=\sqrt{x-3}</m> in <em>set-builder notation</em>:
-                <md>
-                \{x \in \R \; \colon \; x\geq 3\}
-                </md>
-            </p>
-            </li>
-
-            <li>
-            <p>
-                Domain of <m>g(x)=\sqrt{x-3}</m> in <em>interval notation</em>:
-                <md>
-                [3,\infty)
-                </md>
-            </p>
-            </li>
-        </ul>
-        </p>
-    </li>
-    </ol>
-</p>
-<aside>
-<p>Notice that we wrote <m>[3,\infty)</m> and not <m>(3,\infty)</m> to denote that <m>x=3</m> is included in the domain.
-</p>
-</aside>
-    </solution>
-</example>
-
-</subsection>
-    
-
-
-<xi:include href="practice/pr_1_1.ptx" />
-<xi:include href="exercises/ex_1_1.ptx"/>
-
+        </aside>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>g(x)=3-4x</m>.
+                    Evaluate and simplify each of the following.
+                    <ol>
+                        <li>
+                            <p>
+                                <m>g(2+h)</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>g(1-h)+g(1)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    The function <m>g(x)</m> takes any input <m>\Box</m> <mdash/> whatever it might be <mdash/> multiplies the input by 4, and subtracts the result from 3:
+                    <md>
+                        g(\Box)=3-4\cdot\Box.
+                    </md>
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                In <m>g(2+h)</m>, the input is an <em>algebraic expression</em>: <m>2+h</m>.
+                                In any given context, <m>h</m> may stand for a number or for a numerical variable.
+                                No matter what <m>h</m> represents here, the function <m>g</m> takes the input <m>2+h</m>, multiplies it by 4, and then subtracts the result from 3.
+                                Thus,
+                                <md>
+                                    g(2+h)=3-4(2+h).
+                                </md>
+                                To simplify, we use the distributive law to expand <m>4(2+h)</m>:
+                                <md>
+                                    g(2+h)=3-8-4h=-5-4h.
+                                </md>
+                                We cannot simplify further.
+                                The final answer is <m>g(2+h)=-5-4h</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We consider the whole expression all at once below, though you may find it helpful to separately find each of <m>g(1-h)</m> and <m>g(1)</m> and then subtract the two results.
+                                <md>
+                                    <mrow>g(1-h)+g(1) \amp \; =\; \bigg(3-4(1-h)\bigg)+\bigg(3-4\cdot1\bigg) </mrow>
+                                    <mrow>\amp \; =\; \bigg(3-4-4(-h)\bigg)+\bigg(-1\bigg) </mrow>
+                                    <mrow>\amp \; =\; -1+4h-1</mrow>
+                                    <mrow>\amp \; =\; -2+4h</mrow>
+                                </md>
+                            </p>
+
+                            <p>
+                                Whatever <m>h</m> might be, <m>g(1-h)+g(1)=-2+4h</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Find a formula for <m>f(x)</m> if...
+                    <ol>
+                        <li>
+                            <p>
+                                ...
+                                <m>f</m> takes the square root of the input, multiplies the result by <m>3</m>, and subtracts <m>1</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                ...
+                                <m>f</m> squares the input, adds <m>2</m>, and takes the reciprocal of the result.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                We begin with an input <m>x</m>.
+                                Taking the square root of this input results in <m>\sqrt{x}</m>.
+                                Multiplying the result by <m>3</m> results in <m>3\sqrt{x}</m>.
+                                Finally, subtracting <m>1</m> results in <m>3\sqrt{x}-1</m>.
+                                Therefore, the formula for <m>f</m> is
+                                <md>
+                                    f(x)=3\sqrt{x}-1.
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We begin with an input <m>x</m>.
+                                Squaring the input first results in <m>x^{2}</m>.
+                                Adding <m>2</m> next results in <m>x^{2}+2</m>.
+                                Now, we take the reciprocal of <m>x^{2}+2</m>, which is <m>\dfrac{1}{x^2+2}</m>.
+                                Therefore, the formula for <m>f</m> is
+                                <md>
+                                    f(x)=\dfrac{1}{x^2+2}.
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Find the domain of each of the following functions.
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\displaystyle f(x)=\frac{1}{x^{2}-1}</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\displaystyle g(x)=\sqrt{x-3}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Note that neither <m>f(x)</m> and <m>g(x)</m> are assigned any specific practical applied meaning.
+                    This means that the domain of each function will be all inputs <m>x</m> for which the output is defined.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The function <m>f(x)=\dfrac{1}{x^2-1}</m> is defined at any input that does not lead to division by zero and undefined at any input that does lead to division by zero.
+                                To find the value(s) of <m>x</m> for which <m>f(x)</m> is undefined, we set its denominator equal to zero and solve for <m>x</m>:
+                                <md>
+                                    <mrow>x^{2} -1 \amp \; = \; 0</mrow>
+                                    <mrow>x^{2} -1 \textcolor{blue}{+1} \amp \; = \; 0 \textcolor{blue}{+ 1}</mrow>
+                                    <mrow>x^{2} \amp \; = \; 1</mrow>
+                                </md>
+                            </p>
+
+                            <p>
+                                We can now see that <m>f(x)</m> is undefined when <m>x=1</m> and when <m>x=-1</m>.
+                                The domain of <m>f(x)</m> is all real numbers except for these two values.
+                                This can be written in a variety of different ways.
+                            </p>
+                            <aside>
+                                <p>
+                                The symbol <m>\cup</m> is called a <em>union</em>.
+                                Essentially, it means <q>include all these intervals</q>.
+                                </p>
+                            </aside>
+                            <p>
+                                <idx><h>domain</h></idx> <idx><h>set-builder notation</h></idx> <idx><h>interval notation</h></idx> <idx><h>union</h></idx>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Domain of <m>\displaystyle f(x)=\frac{1}{x^{2}-1}</m> in words:
+                                            <md>
+                                                \text{all real numbers }x\neq\pm1
+                                            </md>
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            Domain of <m>\displaystyle f(x)=\frac{1}{x^{2}-1}</m> in <em>set-builder notation</em>:
+                                            <md>
+                                                \{ x\in \R \; \colon \; x\neq \pm 1 \}
+                                            </md>
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            Domain of <m>\displaystyle f(x)=\frac{1}{x^{2}-1}</m> in <em>interval notation</em>:
+                                            <md>
+                                                (-\infty,-1)\cup(-1,1)\cup(1,\infty)
+                                            </md>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The function <m>g(x)=\sqrt{x-3}</m> is defined provided the number under the radical is not negative.
+                                That is, it is defined for those values of <m>x</m> satisfying that <m>x-3\geq 0</m>.
+                                We can isolate <m>x</m> on one side of the inequality
+                                <md>
+                                    <mrow>x-3 \amp \; \geq \; 0</mrow>
+                                    <mrow>x-3 \textcolor{blue}{+3} \amp \; \geq \; 0 \textcolor{blue}{+3}</mrow>
+                                    <mrow>x \amp \; \geq \; 3</mrow>
+                                </md>
+                            </p>
+
+                            <p>
+                                which allows us to conclude that the domain of <m>g(x)</m> is all real numbers <m>x</m> that are greater than or equal to <m>3</m>.
+                                As before, this can be written in a variety of different ways.
+                            </p>
+
+                            <p>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            Domain of <m>g(x)=\sqrt{x-3}</m> in words:
+                                            <md>
+                                                \text{all real numbers }x\geq 3
+                                            </md>
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            Domain of <m>g(x)=\sqrt{x-3}</m> in <em>set-builder notation</em>:
+                                            <md>
+                                                \{x \in \R \; \colon \; x\geq 3\}
+                                            </md>
+                                        </p>
+                                    </li>
+
+                                    <li>
+                                        <p>
+                                            Domain of <m>g(x)=\sqrt{x-3}</m> in <em>interval notation</em>:
+                                            <md>
+                                                [3,\infty)
+                                            </md>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+                <aside>
+                    <p>
+                        Notice that we wrote <m>[3,\infty)</m> and not <m>(3,\infty)</m> to denote that <m>x=3</m> is included in the domain.
+                    </p>
+                </aside>
+            </solution>
+        </example>
+    </subsection>
+
+    <xi:include href="practice/pr_1_1.ptx"/>
+    <xi:include href="exercises/ex_1_1.ptx"/>
 </section>
-

@@ -2,7 +2,7 @@
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex_5_2">
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_1">
 <statement>
 <p>
 Complete the table of values below and use it to graph the exponential function <m>\displaystyle y=3^x</m> in the interval <m>-3\leq x \leq 3</m>.
@@ -61,7 +61,7 @@ Complete the table of values below and use it to graph the exponential function 
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_2">
 <statement>
 <p>
 Complete the table of values below and use it to graph the exponential function <m>\displaystyle y=\left(\frac{1}{3}\right)^x</m> in the interval <m>-3\leq x \leq 3</m>.
@@ -120,7 +120,7 @@ Complete the table of values below and use it to graph the exponential function 
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_3">
 <statement>
 <p>
 Below you see a graph of an exponential function <m>y=A\cdot b^t</m>. What is its initial value <m>A</m>? Is its growth factor <m>b</m> greater than <m>1</m> or less than <m>1</m>?
@@ -155,7 +155,7 @@ xlabel={$t$}, ylabel={$y$},
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_4">
 <statement>
 <p>
 Which of the graphs below could be a graph of the function <m>y=3(1.5)^t</m>? Explain your answer!
@@ -165,7 +165,6 @@ Which of the graphs below could be a graph of the function <m>y=3(1.5)^t</m>? Ex
 <choices>
     <choice>
         <statement>
-            <p>
             <image width="40%" xml:id="ex_5_2_2">
             <latex-image label="ex_5_2_2_fig">
             \begin{tikzpicture}[scale=0.7]
@@ -183,13 +182,11 @@ Which of the graphs below could be a graph of the function <m>y=3(1.5)^t</m>? Ex
             \end{tikzpicture}
             </latex-image>
             </image>
-            </p>
         </statement>
     </choice>
 
     <choice>
         <statement>
-            <p>
             <image width="40%" xml:id="ex_5_2_3">
             <latex-image label="ex_5_2_3_fig">
             \begin{tikzpicture}[scale=0.7]
@@ -207,13 +204,11 @@ Which of the graphs below could be a graph of the function <m>y=3(1.5)^t</m>? Ex
             \end{tikzpicture}
             </latex-image>
             </image>
-            </p>
         </statement>
     </choice>
 
     <choice correct="yes">
         <statement>
-            <p>
             <image width="40%" xml:id="ex_5_2_4">
             <latex-image label="ex_5_2_4_fig">
             \begin{tikzpicture}[scale=0.7]
@@ -231,13 +226,11 @@ Which of the graphs below could be a graph of the function <m>y=3(1.5)^t</m>? Ex
             \end{tikzpicture}
             </latex-image>
             </image>
-            </p>
         </statement>
     </choice>
 
     <choice>
         <statement>
-            <p>
             <image width="40%" xml:id="ex_5_2_5">
             <latex-image label="ex_5_2_5_fig">
             \begin{tikzpicture}[scale=0.7]
@@ -255,7 +248,6 @@ Which of the graphs below could be a graph of the function <m>y=3(1.5)^t</m>? Ex
             \end{tikzpicture}
             </latex-image>
             </image>
-            </p>
         </statement>
     </choice>
 
@@ -265,7 +257,7 @@ Which of the graphs below could be a graph of the function <m>y=3(1.5)^t</m>? Ex
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_5">
 <statement>
 <p>
 Which of the graphs below could be a graph of the function <m>y=0.8(0.75)^t</m>? Explain your answer!
@@ -275,7 +267,6 @@ Which of the graphs below could be a graph of the function <m>y=0.8(0.75)^t</m>?
 <choices>
     <choice>
         <statement>
-            <p>
             <image width="40%" xml:id="ex_5_2_6">
             <latex-image label="ex_5_2_6_fig">
             \begin{tikzpicture}[scale=0.7]
@@ -293,13 +284,11 @@ Which of the graphs below could be a graph of the function <m>y=0.8(0.75)^t</m>?
             \end{tikzpicture}
             </latex-image>
             </image>
-            </p>
         </statement>
     </choice>
 
     <choice correct="yes">
         <statement>
-            <p>
             <image width="40%" xml:id="ex_5_2_7">
             <latex-image label="ex_5_2_7_fig">
             \begin{tikzpicture}[scale=0.7]
@@ -317,13 +306,11 @@ Which of the graphs below could be a graph of the function <m>y=0.8(0.75)^t</m>?
             \end{tikzpicture}
             </latex-image>
             </image>
-            </p>
         </statement>
     </choice>
 
     <choice>
         <statement>
-            <p>
             <image width="40%" xml:id="ex_5_2_8">
             <latex-image label="ex_5_2_8_fig">
             \begin{tikzpicture}[scale=0.7]
@@ -341,13 +328,11 @@ Which of the graphs below could be a graph of the function <m>y=0.8(0.75)^t</m>?
             \end{tikzpicture}
             </latex-image>
             </image>
-            </p>
         </statement>
     </choice>
 
     <choice>
         <statement>
-            <p>
             <image width="40%" xml:id="ex_5_2_9">
             <latex-image label="ex_5_2_9_fig">
             \begin{tikzpicture}[scale=0.7]
@@ -365,7 +350,6 @@ Which of the graphs below could be a graph of the function <m>y=0.8(0.75)^t</m>?
             \end{tikzpicture}
             </latex-image>
             </image>
-            </p>
         </statement>
     </choice>
 
@@ -375,7 +359,7 @@ Which of the graphs below could be a graph of the function <m>y=0.8(0.75)^t</m>?
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_6">
 <statement>
 <p>
 Find a formula in the form <m>y=A\cdot b^t</m> for the exponential function whose graph is given below:
@@ -411,7 +395,7 @@ x post scale = 1.2,
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_7">
 <statement>
 <p>
 Find a formula in the form <m>y=A\cdot b^t</m> for the exponential function whose graph is given below:
@@ -447,7 +431,7 @@ x post scale = 1.2,
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_8">
 <statement>
 <p>
 Find a function <m>f(x)=A\cdot b^x</m> whose graph contains points <m>(0,500)</m> and <m>(4,120.05)</m>.
@@ -464,7 +448,7 @@ Find a function <m>f(x)=A\cdot b^x</m> whose graph contains points <m>(0,500)</m
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_9">
 <statement>
 <p>
 Find a function <m>g(x)=A\cdot b^x</m> whose graph contains points <m>(1,48)</m> and <m>(2,76.8)</m>.
@@ -481,7 +465,7 @@ Find a function <m>g(x)=A\cdot b^x</m> whose graph contains points <m>(1,48)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_10">
 <introduction>
 <p>
 A medication is eliminated from the body at the daily percent rate of <m>50\%</m>. A patient takes a single dose of <m>64</m> mg of the medication. Let <m>M(t)</m> be the amount, in mg, remaining in the patient's body <m>t</m> days after the dose.
@@ -603,7 +587,7 @@ A medication is eliminated from the body at the daily percent rate of <m>50\%</m
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_2_11">
 <introduction>
 <p>
 The number of diagnosed cases of a new virus doubles every week. Let <m>C(t)</m> be the number of diagnosed cases <m>t</m> weeks after an epidemic began. Here are the measurements during the first weeks:

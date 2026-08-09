@@ -79,7 +79,7 @@ Use the numerically given function <m>f(x)</m> below to find each of the followi
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_3_2">
 <introduction>
 <p>
 Let <m>f(x)</m> be the function given in <xref ref="exercise-1_3-table1"/>.
@@ -195,7 +195,7 @@ Use the numerically given function <m>g(t)</m> below to find each of the followi
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_3_4">
 <introduction>
 <p>
 Let <m>g(t)</m> be the function given in <xref ref="exercise-1_3-table2"/>.
@@ -235,7 +235,7 @@ Let <m>g(t)</m> be the function given in <xref ref="exercise-1_3-table2"/>.
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_3_5">
 <statement>
 <p>
 Determine a formula for the function <m>h(x)</m> given numerically in the table below.
@@ -279,7 +279,7 @@ Determine a formula for the function <m>h(x)</m> given numerically in the table 
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_3_6">
 <statement>
 <p>
 Determine a formula for the function <m>F(t)</m> given numerically in the table below and fill in the missing values.
@@ -347,7 +347,7 @@ Determine a formula for the function <m>F(t)</m> given numerically in the table 
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_3_7">
 <statement>
 <p>
 A driver of a Volkswagen Passat fills up his gas tank and starts a highway trip to a faraway city. Let <m>G</m>, in gallons, be the amount of gas left in the tank after driving <m>d</m> miles. Fill in the missing numbers and find the gas mileage of the VW Passat; that is, the number of miles the SUV gets per gallon.
@@ -520,7 +520,7 @@ The information in the table can be rewritten so that the population, <m>P</m>, 
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_3_9">
 <statement>
 <p>
 Sketch an approximate graph of the population function <m>P(t)</m> whose table you completed in <xref ref="exercise-1_3-population"/>.
@@ -627,7 +627,7 @@ The amount of power a dragon must output to carry a knight depends on how fast i
 
 
 
-<exercise>
+<exercise xml:id="exercise_1_3_11">
 <introduction>
 <p>
 Sketch the graph of the function given numerically in <xref ref="exercise-1_3-dragon"/> and use it to answer the following questions.

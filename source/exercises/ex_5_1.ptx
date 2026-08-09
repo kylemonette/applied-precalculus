@@ -25,7 +25,7 @@ exponential growth; initial value: <m>120</m>; growth factor: <m>1.7</m>
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_2">
 <statement>
 <p>
 <m>\displaystyle g(t)=1500(0.95)^t</m>
@@ -40,7 +40,7 @@ exponential decay; initial value: <m>1500</m>; growth factor: <m>0.95</m>
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_3">
 <statement>
 <p>
 <m>\displaystyle h(t)=60(0.83)^t</m>
@@ -74,7 +74,7 @@ exponential growth; initial value: <m>130</m>; growth factor: <m>1.02</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_5">
 <introduction>
 <p>
 You deposit <m>\$2000</m> dollars into a savings account that pays <m>3.5\%</m> annually. Let <m>B=B(t)</m> be your balance <m>t</m> years later.
@@ -124,7 +124,7 @@ You deposit <m>\$2000</m> dollars into a savings account that pays <m>3.5\%</m> 
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_6">
 <introduction>
 <p>
 Let <m>V(t)</m> be the value, in dollars, of an antique desk <m>t</m> years after its purchase. The desk was purchased for <m>\$7000</m> and its value <m>V(t)</m> increases by <m>\$500</m> per year.
@@ -174,7 +174,7 @@ Let <m>V(t)</m> be the value, in dollars, of an antique desk <m>t</m> years afte
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_7">
 <introduction>
 <p>
 Let <m>V(t)</m> be the value, in dollars, of an antique desk, <m>t</m> years after its purchase. The desk was purchased for <m>\$7000</m> and its value <m>V(t)</m> increases by <m>9.5\%</m> per year.
@@ -224,7 +224,7 @@ Let <m>V(t)</m> be the value, in dollars, of an antique desk, <m>t</m> years aft
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_8">
 <introduction>
 <p>
 Let <m>P(t)</m> be the population of a town <m>t</m> years after the year <m>1990</m>. The population <m>P(t)</m> was <m>12000</m> people in <m>1990</m>, that is, at <m>t=0</m>, and it has been increasing by <m>750</m> people each year.
@@ -261,7 +261,7 @@ Let <m>P(t)</m> be the population of a town <m>t</m> years after the year <m>199
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_9">
 <introduction>
 <p>
 Let <m>P(t)</m> be the population of a town <m>t</m> years after the year <m>1990</m>. The population <m>P(t)</m> was <m>12000</m> people in <m>1990</m>, that is, at <m>t=0</m>, and it has been increasing by the factor <m>1.107</m> each year.
@@ -298,7 +298,7 @@ Let <m>P(t)</m> be the population of a town <m>t</m> years after the year <m>199
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_10">
 <introduction>
 <p>
 A biologist studies the effects of three different nutrients, <m>a</m>, <m>b</m>, and <m>c</m>, on the growth of a particular kind of bacterium. <m>t</m> hours after the experiment began, the number of bacteria in the culture fed nutrient <m>a</m> is <m>A(t)</m>, the number of bacteria in the culture fed nutrient <m>b</m> is <m>B(t)</m>, the number of bacteria in the culture fed nutrient <m>c</m> is <m>C(t)</m>. The biologist observes that the functions <m>A(t)</m>, <m>B(t)</m> and <m>C(t)</m> are given by the following formulas:
@@ -338,7 +338,7 @@ A(t)=500(1.09)^t, \quad B(t)=500(1.15)^t, \quad C(t)=500(0.75)^t.
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_11">
 <introduction>
 <p>
 Following a dose of <m>40</m> mg, a medication leaves a patient's body at an hourly percent rate of <m>3.7\%</m>.
@@ -375,7 +375,7 @@ Following a dose of <m>40</m> mg, a medication leaves a patient's body at an hou
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_12">
 <introduction>
 <p>
 Cesium-137, a radioactive isotope of Cesium, decays very slowly. Let <m>25</m> mg of Cesium-137 be present initially and let <m>C(t)</m> be the amount, in mg, remaining after <m>t</m> years. Then:
@@ -451,7 +451,7 @@ For each of the following, decide whether a given function is exponential. If ye
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_14">
 <statement>
 <p>
 <m>\displaystyle y=\sqrt{160(1.09)^{2t}}</m>
@@ -466,7 +466,7 @@ For each of the following, decide whether a given function is exponential. If ye
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_15">
 <statement>
 <p>
 <m>\displaystyle y=30\sqrt{t^4}</m>
@@ -481,7 +481,7 @@ Not an exponential function.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_16">
 <statement>
 <p>
 <m>\displaystyle y=70(2^{\frac{t}{5}})</m>
@@ -496,7 +496,7 @@ Not an exponential function.
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_1_17">
 <statement>
 <p>
 <m>\displaystyle y=5(2^{t-1})</m>

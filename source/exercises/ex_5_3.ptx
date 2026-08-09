@@ -42,7 +42,7 @@ possible exponential function; <m>f(t)=5000(0.8)^t</m>; initial value: <m>5000</
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_3_2">
 <statement>
 <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
 <row bottom="minor">
@@ -74,7 +74,7 @@ possible exponential function; <m>g(t)=32(1.5)^t</m>; initial value: <m>32</m>; 
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_3_3">
 <statement>
 <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
 <row bottom="minor">
@@ -106,7 +106,7 @@ not an exponential function
 </exercise>
 
 
-<exercise>
+<exercise xml:id="exercise_5_3_4">
 <statement>
 <tabular left="minor" right="minor" top="minor" bottom="minor" halign="center">
 <row bottom="minor">
@@ -318,7 +318,7 @@ For each of the following, find a function <m>y=f(x)</m> that corresponds to the
 
 
 
-<exercise>
+<exercise xml:id="exercise_5_3_10">
 <introduction>
 <p>
 Barometric pressure<fn><url href="https://en.wikipedia.org/wiki/Barometric_formula">https://en.wikipedia.org/wiki/Barometric_formula</url>, accessed: 7/10/20</fn><mdash/>the pressure of the air<mdash/>depends on the altitude above sea level. Let <m>H</m> be altitude above sea level measured in kilometers. Let <m>P(H)</m> be barometric pressure measured in mmHg<mdash/>millimeters of mercury. Here are readings of barometric pressure at different altitudes:

@@ -33,6 +33,7 @@
 
 
 <figure xml:id="fig_8_3_sin_cos">
+<caption></caption>
 <interactive platform="jsxgraph" source="jsxgraph/jsx_8_3_sin_cos.js" width="60%">
     <slate xml:id="jsx_8_3_sin_cos_fig" surface="jsxboard"/>
     <instructions>

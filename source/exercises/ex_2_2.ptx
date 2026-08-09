@@ -11,7 +11,7 @@
 </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_1">
 <statement>
 <p>
 passing through <m>(2,6)</m> and <m>(1,8)</m>
@@ -27,7 +27,7 @@ passing through <m>(2,6)</m> and <m>(1,8)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_2">
 <statement>
 <p>
 passing through <m>(-4,7)</m> and <m>(-10,-8)</m>
@@ -43,7 +43,7 @@ passing through <m>(-4,7)</m> and <m>(-10,-8)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_3">
 <statement>
 <p>
 with slope <m>2.1</m> passing through <m>(0.1,0)</m>
@@ -59,7 +59,7 @@ with slope <m>2.1</m> passing through <m>(0.1,0)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_4">
 <statement>
 <p>
 with slope <m>6</m> passing through <m>(-5,2)</m>
@@ -75,7 +75,7 @@ with slope <m>6</m> passing through <m>(-5,2)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_5">
 <statement>
 <p>
 with slope <m>-\frac{1}{2}</m> passing through <m>(\frac{2}{5},-1)</m>
@@ -91,7 +91,7 @@ with slope <m>-\frac{1}{2}</m> passing through <m>(\frac{2}{5},-1)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_6">
 <statement>
 <p>
 passing through <m>(1,3)</m> and <m>(-7,3)</m>
@@ -107,7 +107,7 @@ passing through <m>(1,3)</m> and <m>(-7,3)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_7">
 <statement>
 <p>
 passing through <m>(5,-5)</m> and <m>(5,2)</m>
@@ -123,7 +123,7 @@ passing through <m>(5,-5)</m> and <m>(5,2)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_8">
 <statement>
 <p>
 with slope <m>0</m> and passing through <m>(-3,-1)</m>
@@ -149,7 +149,7 @@ with slope <m>0</m> and passing through <m>(-3,-1)</m>
         </p>
     </introduction>
 
-<exercise>
+<exercise xml:id="exercise_2_2_9">
 <statement>
 <p>
 <m>f(2)=-5</m> and <m>f(4)=0</m>
@@ -165,7 +165,7 @@ with slope <m>0</m> and passing through <m>(-3,-1)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_10">
 <statement>
 <p>
 <m>f(1)=-2</m> and <m>f(3)=-5</m>
@@ -181,7 +181,7 @@ with slope <m>0</m> and passing through <m>(-3,-1)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_11">
 <statement>
 <p>
 <m>f(x)</m> has slope <m>2.1</m> and its graph passes through <m>(0.1,0)</m>
@@ -197,7 +197,7 @@ with slope <m>0</m> and passing through <m>(-3,-1)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_12">
 <statement>
 <p>
 <m>f(x)</m> has slope <m>-1</m> and its graph passes through <m>(-1,2)</m>
@@ -213,7 +213,7 @@ with slope <m>0</m> and passing through <m>(-3,-1)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_13">
 <statement>
 <p>
 the graph of <m>f(x)</m> passes through <m>(-1,3)</m> and <m>(-7,-2)</m>
@@ -229,10 +229,10 @@ the graph of <m>f(x)</m> passes through <m>(-1,3)</m> and <m>(-7,-2)</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_14">
 <statement>
 <p>
-the slope of <m>f(x)</m> is 3 and its horizontal intercept is <m>-2</m>
+the slope of <m>f(x)</m> is <m>3</m> and its horizontal intercept is <m>-2</m>
 </p>
 </statement>
 
@@ -245,10 +245,10 @@ the slope of <m>f(x)</m> is 3 and its horizontal intercept is <m>-2</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_15">
 <statement>
 <p>
-the slope of <m>f(x)</m> is 1 and its vertical intercept is <m>2</m>
+the slope of <m>f(x)</m> is <m>1</m> and its vertical intercept is <m>2</m>
 </p>
 </statement>
 
@@ -261,7 +261,7 @@ the slope of <m>f(x)</m> is 1 and its vertical intercept is <m>2</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_16">
 <statement>
 <p>
 the vertical intercept of <m>f(x)</m> is <m>3</m> and its horizontal intercept is <m>7</m>
@@ -280,7 +280,7 @@ the vertical intercept of <m>f(x)</m> is <m>3</m> and its horizontal intercept i
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_17">
 <statement>
 <p>
 Which of the following lines is NOT the graph of a linear function?
@@ -319,7 +319,7 @@ Which of the following lines is NOT the graph of a linear function?
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_18">
 <introduction>
 <p>
 The distance in miles from the finish line, <m>D(t)</m>, of a bicyclist <m>t</m> hours after beginning a race is given by <m>D(t)=60-20t</m>
@@ -372,7 +372,7 @@ The distance in miles from the finish line, <m>D(t)</m>, of a bicyclist <m>t</m>
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_19">
 <introduction>
 <p>
 The value of an antique lamp, <m>V(t)</m>, in dollars, <m>t</m> years after its purchase is given by
@@ -411,7 +411,7 @@ V(t)=1900+250t.
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_20">
 <introduction>
 <p>
 Two mobile phone companies sell an international roaming plan. Company A charges a <m>\$75</m> dollar fixed monthly fee and <m>\$0.20</m> per minute for talk. Company B charges a <m>\$90</m> dollar fixed monthly fee and <m>\$0.10</m> per minute for talk.
@@ -474,7 +474,7 @@ Two mobile phone companies sell an international roaming plan. Company A charges
     </introduction>
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_21">
 <statement>
 <p>
 <m>0.1x-(2x-5)=2.5</m>
@@ -491,7 +491,7 @@ Two mobile phone companies sell an international roaming plan. Company A charges
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_22">
 <statement>
 <p>
 <m>\dfrac{-2(x-3)}{5}=x+1</m>
@@ -507,7 +507,7 @@ Two mobile phone companies sell an international roaming plan. Company A charges
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_23">
 <statement>
 <p>
 <m>3x-7=5+3x</m>
@@ -523,7 +523,7 @@ no solution
 
 
 
-<exercise>
+<exercise xml:id="exercise_2_2_24">
 <statement>
 <p>
 <m>2x+2=4+2(x-1)</m>
