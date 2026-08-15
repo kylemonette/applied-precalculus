@@ -5,7 +5,11 @@
 
   <introduction>
     <p>
-        Intro about Chapter 5.
+        The balance of a savings account earning compound interest, the size of a bacteria population in a petri dish, and the amount of a medication remaining in a patient's bloodstream all share a common feature: at each moment, the quantity changes by a constant <em>percentage</em> rather than a constant amount. Functions that describe this kind of change are called <em>exponential functions</em>, and they are used throughout the sciences, medicine, and finance to model growth and decay.
+    </p>
+
+    <p>
+        This chapter introduces exponential functions algebraically, graphically, and numerically, and shows how to recognize an exponential pattern in real data and build a model from it. It also covers the doubling time and half-life of a growing or decaying quantity, and concludes with the natural base <m>e</m>, which is the base most commonly used to describe exponential processes in the sciences.
     </p>
 </introduction>
 

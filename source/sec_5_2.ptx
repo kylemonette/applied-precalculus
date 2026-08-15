@@ -3,7 +3,6 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_5_2">
     <title>Graphs of Exponential Functions</title>
 
-
     <objectives>
         <introduction>
             <p>
@@ -14,19 +13,19 @@
         <ol>
             <li>
                 <p>
-                    Objective 1
+                    Sketch the graph of an exponential function given its formula or a table of values.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 2
+                    Identify the initial value and increasing or decreasing behavior from the graph of an exponential function.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 3
+                    Determine the formula of an exponential function from its graph.
                 </p>
             </li>
         </ol>
@@ -184,16 +183,6 @@ x post scale = 1.2
         In general, the shape of the graph of an exponential function <m>y = A \cdot b^x</m> is different for the base <m>b \gt 1</m> and for <m>b \lt 1</m>:
     </p>
 
-    <figure xml:id="fig_5_2_exp_fun">
-        <caption></caption>
-        <interactive platform="jsxgraph" source="jsxgraph/jsx_5_2_exp_fun.js" width="60%">
-            <slate xml:id="jsx_5_2_exp_fun_fig" surface="jsxboard"/>
-            <instructions>
-                <p>Change the values of <m>A</m> and <m>b</m> to see how <m>f(x) = A \cdot b^x</m> changes.</p>
-            </instructions>
-        </interactive>
-    </figure>
-
     <p>
         If <m>b \gt 1</m>, the function <m>f(t) = A \cdot b^t</m> is increasing<mdash/>its graph is climbing as it is traced from left to right.
         If <m>b \lt 1</m>, the function <m>f(t) = A \cdot b^t</m> is decreasing<mdash/>its graph is falling as it is traced from left to right. In both cases the values of <m>y = A \cdot b^x</m> are always positive, so the graph is entirely above the <m>x</m>-axis. The <m>y</m>-intercept is always equal to the initial value <m>A</m>.
@@ -235,12 +224,7 @@ x post scale = 1.2
                 </md>
                 For <m>x \lt 0</m>, <m>2^x \lt 1</m> and <m>2^x</m> becomes smaller and smaller as <m>x</m> becomes <q>more and more negative</q>:
                 <md>
-                <mrow>
-                    \amp 2^{-1} = \dfrac{1}{2}, \amp \quad \amp 2^{-2} = \dfrac{1}{2^2} = \dfrac{1}{4}
-                </mrow>
-                <mrow>
-                \amp 2^{-3} = \dfrac{1}{2^3} = \dfrac{1}{8}, \amp \quad \amp 2^{-4} = \dfrac{1}{2^4} = \dfrac{1}{16}, \quad \dots
-                </mrow>
+                    2^{-1} = \dfrac{1}{2}, \quad 2^{-2} = \dfrac{1}{2^2} = \dfrac{1}{4}, \quad 2^{-3} = \dfrac{1}{2^3} = \dfrac{1}{8}, \quad 2^{-4} = \dfrac{1}{2^4} = \dfrac{1}{16}, \quad \dots
                 </md>
                 In fact, as <m>x</m> becomes <q>more and more negative</q>, <m>2^x</m> becomes arbitrarily close to <m>0</m> without ever reaching it<mdash/>the graph approaches the <m>x</m>-axis but never crosses it. We say that the <m>x</m>-axis is a <em>horizontal asymptote</em> of the function <m>y = 2^x</m>.
             </p>
@@ -278,10 +262,7 @@ x post scale = 1.2
             <p>
                 Observe that <m>\left(\dfrac{1}{2}\right)^x \lt 1</m> for <m>x \gt 0</m>, and <m>(\dfrac{1}{2})^x</m> decreases as <m>x</m> increases:
                 <md>
-                <mrow>
-                \amp \left( \dfrac{1}{2} \right)^1 = \dfrac{1}{2}, \amp \quad \amp \left( \dfrac{1}{2} \right)^2 = \dfrac{1}{4},
-                \amp \left( \dfrac{1}{2} \right)^3 = \dfrac{1}{8}, \amp \quad \amp \dots
-                </mrow>
+                    \left( \dfrac{1}{2} \right)^1 = \dfrac{1}{2}, \quad \left( \dfrac{1}{2} \right)^2 = \dfrac{1}{4}, \quad \left( \dfrac{1}{2} \right)^3 = \dfrac{1}{8}, \quad \dots
                 </md>
                 This means the <m>x</m>-axis is a <em>horizontal asymptote</em> of the function <m>(\frac{1}{2})^x</m>.
             </p>
@@ -289,12 +270,7 @@ x post scale = 1.2
             <p>
                 On the other side, as <m>x</m> becomes <q>more and more negative</q>, <m>\left(\dfrac{1}{2}\right)^x</m> becomes larger and larger:
                 <md>
-<mrow>
-\amp \left( \dfrac{1}{2} \right)^{-1} = \dfrac{1}{\frac{1}{2}} = 2, \amp \quad \amp \left( \dfrac{1}{2} \right)^{-2} = \dfrac{1}{(\frac{1}{2})^2} = \dfrac{1}{\frac{1}{4}} = 4,
-</mrow>
-<mrow>
-\amp \left( \dfrac{1}{2} \right)^{-3} = \dfrac{1}{(\frac{1}{2})^3} = \dfrac{1}{\frac{1}{8}} = 8, \amp \quad \amp \dots
-</mrow>
+                    \left( \dfrac{1}{2} \right)^{-1} = \dfrac{1}{\frac{1}{2}} = 2, \quad \left( \dfrac{1}{2} \right)^{-2} = \dfrac{1}{(\frac{1}{2})^2} = \dfrac{1}{\frac{1}{4}} = 4, \quad \left( \dfrac{1}{2} \right)^{-3} = \dfrac{1}{(\frac{1}{2})^3} = \dfrac{1}{\frac{1}{8}} = 8, \quad \dots
                 </md>
             </p>
         </statement>
@@ -394,7 +370,15 @@ x post scale = 1.2
         </solution>
     </example>
 
-
+    <figure xml:id="fig_5_2_exp_fun">
+        <caption></caption>
+        <interactive platform="jsxgraph" source="jsxgraph/jsx_5_2_exp_fun.js" width="60%">
+            <slate xml:id="jsx_5_2_exp_fun_fig" surface="jsxboard"/>
+            <instructions>
+                <p>Change the values of <m>A</m> and <m>b</m> to see how <m>f(x) = A \cdot b^x</m> changes.</p>
+            </instructions>
+        </interactive>
+    </figure>
 
     <xi:include href="exercises/ex_5_2.ptx"/>
 

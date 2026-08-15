@@ -3,7 +3,6 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_5_4">
     <title>Doubling Time and Half-Life</title>
 
-
     <objectives>
         <introduction>
             <p>
@@ -14,24 +13,23 @@
         <ol>
             <li>
                 <p>
-                    Objective 1
+                    State the definitions of doubling time and half-life for exponential growth and decay.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 2
+                    Identify the doubling time or half-life of an exponential function written in terms of powers of <m>2</m> or <m>\frac{1}{2}</m>.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 3
+                    Rewrite an exponential function in the form <m>A \cdot c^{t/T}</m> to determine the factor by which a quantity changes over a given time period <m>T</m>.
                 </p>
             </li>
         </ol>
     </objectives>
-
 
     <introduction>
         <p>
@@ -69,11 +67,6 @@
                 <p>
                     Show algebraically that every increasing exponential quantity <m>f(t) = A \cdot b^t</m>, <m>b \gt 1</m>, has a fixed doubling time; that is, it always takes the same amount of time for the quantity <m>f(t)</m> to double.
                 </p>
-                <aside>
-                <p>
-                    Try verifying this result by <em>graphing</em> an increasing exponential function!
-                </p>
-        </aside>
             </statement>
 
             <solution>
@@ -94,8 +87,6 @@
                 </p>
             </solution>
         </example>
-
- 
 
         <p>
             It is important to realize that only <em>exponentially</em> increasing quantities have a constant doubling time. Processes modeled by different functions do not, as illustrated below.

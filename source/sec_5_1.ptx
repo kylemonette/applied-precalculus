@@ -13,19 +13,19 @@
         <ol>
             <li>
                 <p>
-                    Objective 1
+                    State the definition of an exponential function and identify its initial value and growth factor.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 2
+                    Convert between the growth factor and the percent growth (or decay) rate of an exponential function.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 3
+                    Apply exponential functions to model real-life growth and decay processes, such as compound interest, population growth, and radioactive decay.
                 </p>
             </li>
         </ol>
@@ -75,7 +75,7 @@
                             </p>
 
                             <p>
-                                After <m>1</m> year, the bank adds <m>5\%</m> interest on your initial deposit <m>B(0)</m> to your balance. Since <m>5\%</m> of <m>B(0)</m> can be calculated by computing <m>0.05 \cdot B(0)</m>, your balance after <m>1</m> year is
+                                After <m>1</m> year, the bank adds <m>5\%</m> interest on your initial deposit <m>B(0)</m> to your balance. Since 5\% of <m>B(0)</m> can be calculated by computing <m>0.05 \cdot B(0)</m>, your balance after <m>1</m> year is
                                 <md>
                                     B(1) = B(0) + 0.05 \cdot B(0) = B(0) \left( 1 + 0.05 \right) = B(0) \cdot 1.05.
                                 </md>

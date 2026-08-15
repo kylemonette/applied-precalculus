@@ -3,7 +3,6 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_5_5">
     <title>The Natural Base e</title>
 
-
     <objectives>
         <introduction>
             <p>
@@ -14,24 +13,23 @@
         <ol>
             <li>
                 <p>
-                    Objective 1
+                    Recognize the natural base <m>e</m> and the natural exponential function <m>y = e^x</m>.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 2
+                    Convert an exponential function between the standard form <m>A \cdot b^t</m> and the base-<m>e</m> form <m>A \cdot e^{kt}</m>.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 3
+                    Distinguish between the continuous growth rate and the percent growth rate of an exponential function.
                 </p>
             </li>
         </ol>
     </objectives>
-
 
     <p>
         A commonly used base in the context of exponential functions is the <em>Euler constant</em>. The constant is denoted by the letter <m>e</m> and its approximate value is
@@ -62,7 +60,7 @@ minor tick={},
 xlabel=\(x\), ylabel=\(y\),
 x post scale = 1.2
 ]
-\addplot[domain=-3:3] {e^x};
+\addplot[domain=-3:3] {e^x};% node[pos=0.4,above left] {$y=e^x$};
 \end{axis}
 \end{tikzpicture}
         </latex-image>
@@ -85,11 +83,11 @@ xlabel=\(x\), ylabel=\(y\),
 x post scale = 1.2,
 legend pos=north west,
 ]
-\addplot[domain=-3:3] {e^x}; 
+\addplot[domain=-3:3] {e^x}; %node[pos=0.3,below right] {$y=e^x$};
 \addlegendentry{$e^x$};
-\addplot[domain=-3:3,red] {2^x};
+\addplot[domain=-3:3,red] {2^x};% node[pos=0.4,below right] {$y=2^x$};
 \addlegendentry{$2^x$};
-\addplot[domain=-3:3,orange] {3^x};
+\addplot[domain=-3:3,orange] {3^x};% node[pos=0.3,above left] {$y=3^x$};
 \addlegendentry{$3^x$};
 \end{axis}
 \end{tikzpicture}
@@ -153,12 +151,11 @@ legend pos=north west,
         </statement>
     </theorem>
 
-<remark>
     <p>
-        The constant <m>k</m> in the formula <m>Q(t) = A \cdot e^{k t}</m> is called the <alert>continuous growth rate</alert> or, when expressed as a percent, the <alert>continuous percent growth rate</alert>.
+        <alert>Remark:</alert>
+        The constant <m>k</m> in the formula <m>Q(t) = A \cdot e^{k t}</m> is called the the <alert>continuous growth rate</alert> or, when expressed as a percent, the <alert>continuous percent growth rate</alert>.
         The relevance of this terminology will become more clear if you go on to study calculus.
     </p>
-</remark>
 
     <p>
         It is important to keep in mind the following facts.
@@ -168,7 +165,7 @@ legend pos=north west,
         <ul>
             <li>
                 <p>
-                    The value of the constant <m>k</m> depends on the units of <m>t</m><mdash/>years, days, hours etc. Hence, we will sometimes say the <q>continuous annual growth rate</q> <m>k</m> or the <q>continuous daily growth rate</q> <m>k</m> etc., to emphasize the units of <m>t</m> unless they clear from the context.
+                    The value of the constant <m>k</m> depends on the units of <m>t</m><mdash/>years, days, hours etc. Hence, we will sometimes say the <q>continuous annual growth rate</q> <m>k</m> or the <q>continuous daily growth rate</q> <m>k</m> etc., to emphasize the units of <m>t</m> unless the units of <m>t</m> are clear from the context.
                 </p>
             </li>
 

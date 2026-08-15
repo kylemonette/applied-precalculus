@@ -5,7 +5,11 @@
 
   <introduction>
     <p>
-        Intro about Chapter 4.
+        The area of a circle depends on the square of its radius, the volume of a sphere depends on the cube of its radius, and the force of gravity between two objects depends on the inverse square of the distance between them. Each of these relationships is an example of a <em>power function</em>, a function in which the input variable is raised to a fixed power.
+    </p>
+
+    <p>
+        This chapter begins by reviewing the algebra of exponents, first for integer exponents and then for fractional exponents, as these rules are essential for working with power functions. Then, our focus turns to the graphs of power functions <m>f(x) = kx^p</m>, examining how the shape of the graph depends on whether the exponent <m>p</m> is a positive or negative integer and whether it is even or odd.
     </p>
 </introduction>
 

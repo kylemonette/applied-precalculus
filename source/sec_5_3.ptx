@@ -3,7 +3,6 @@
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_5_3">
     <title>Exponential Functions Numerically, Modeling</title>
 
-
     <objectives>
         <introduction>
             <p>
@@ -14,19 +13,19 @@
         <ol>
             <li>
                 <p>
-                    Objective 1
+                    Determine whether a function given by a table of values is exponential.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 2
+                    Find the formula of an exponential function from a table of values.
                 </p>
             </li>
 
             <li>
                 <p>
-                    Objective 3
+                    Use real-world numerical data to construct an exponential model.
                 </p>
             </li>
         </ol>
@@ -119,9 +118,9 @@
             </p>
 
             <p>
-            <ol>
-            <li>
-            <p></p>
+                (a)
+            </p>
+
             <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
                 <row>
                     <cell><m>x</m></cell>
@@ -143,9 +142,11 @@
                     <cell><m>512</m></cell>
                 </row>
             </tabular>
-            </li>
-            <li>
-            <p></p>
+
+            <p>
+                (b)
+            </p>
+
             <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
                 <row>
                     <cell><m>x</m></cell>
@@ -167,10 +168,10 @@
                     <cell><m>20.5</m></cell>
                 </row>
             </tabular>
-            </li>
 
-            <li>
-            <p></p>
+            <p>
+                (c)
+            </p>
 
             <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
                 <row>
@@ -191,38 +192,29 @@
                     <cell><m>0.125</m></cell>
                 </row>
             </tabular>
-            </li>
-            </ol>
-            </p>
         </statement>
 
         <solution>
-<p>
-<ol>
-<li>
             <p>
-                The values of <m>x</m> are equally spaced, namely by <m>\Delta x = 1</m>. We have to check if all ratios between consecutive values of <m>y</m> are the same:
+                (a) The values of <m>x</m> are equally spaced, namely by <m>\Delta x = 1</m>. We have to check if all ratios between consecutive values of <m>y</m> are the same:
                 <md>
                     \dfrac{2}{0.5} = 4, \quad \dfrac{8}{2} = 4, \quad \dfrac{32}{8} = 4, \quad \dfrac{128}{32} = 4, \quad \dfrac{512}{128} = 4.
                 </md>
                 All ratios are the same. Since <m>\Delta x = 1</m>, the ratios give us the growth factor <m>b = 4</m>. With each increase in <m>x</m> by <m>1</m>, the current value of the function is multiplied by the constant factor of <m>4</m>. The initial value is the <m>y</m> value at <m>0</m>, so <m>A = 0.5</m>.
                 The table corresponds to the exponential function <m>y = 0.5 \cdot 4^x</m>.
             </p>
-</li>
-<li>
+
             <p>
-                The ratios between consecutive outputs are
+                (b) The ratios between consecutive outputs are
                 <md>
                     \dfrac{4.5}{0.5} = 9, \quad \dfrac{8.5}{4.5} = 1.888, \qquad \dots
                 </md>
                 which are clearly not equal, so the function is <alert>not</alert> exponential. Observe that the values of the function start at <m>y=0.5</m> when <m>x = 0</m> and then increase by <m>4</m> for every unit increase in <m>x</m>.
                 This is precisely the definition of a <em>linear function</em>, so table (b) corresponds to <m>y = 0.5 + 4x</m>.
             </p>
-</li>
-<li>
 
             <p>
-                The ratios between consecutive outputs are
+                (c) The ratios between consecutive outputs are
                 <md>
                     \dfrac{1}{2} = 0.5, \quad \dfrac{0.5}{1} = 0.5, \quad \dfrac{0.25}{0.5} = 0.5, \quad \dfrac{0.125}{0.25} = 0.5
                 </md>
@@ -231,9 +223,6 @@
                 The initial value <m>A</m> is unknown.
                 Because the value of the function at <m>0</m> is known, set up an equation for <m>A</m> using, for example, the point <m>(1, 2)</m> from the table. This gives the equation <m>A \cdot 0.5^1 = 2</m>, and so <m>A = 4</m>. The function represented by the table (c) is <m>y = 4 \cdot 0.5^x</m>.
             </p>
-</li>
-</ol>
-</p>
         </solution>
     </example>
 
@@ -363,13 +352,7 @@
                     Populations often increase exponentially so it is reasonable to check if <m>P(t)</m> is exponential.
                     To do so, check the ratios between consecutive outputs in the table:
                     <md>
-                    <mrow>
-                        \amp \frac{23.53}{22.89} \approx 1.028, \amp \quad \amp \frac{24.19}{23.53} \approx 1.028,  \amp \quad \amp
-                        \frac{24.86}{24.19} \approx 1.028, 
-                    </mrow>
-                    <mrow>
-                        \amp \frac{25.56}{24.86} \approx 1.028, \amp \quad \amp \frac{26.28}{25.56} \approx 1.028.
-                    </mrow>
+                        \dfrac{23.53}{22.89} \approx 1.028,  \quad \dfrac{24.19}{23.53} \approx 1.028, \quad  \dfrac{24.86}{24.19} \approx 1.028,  \quad \dfrac{25.56}{24.86} \approx 1.028,  \quad \dfrac{26.28}{25.56} \approx 1.028.
                     </md>
                     When rounded to three decimal places, the ratios are equal so <m>P(t)</m> can be reasonably approximated by an exponential function. Because the inputs are evenly spaced by <m>1</m>, the corresponding growth factor would be <m>b = 1.028</m>. The initial value is immediately given in the table as <m>A = P(0) = 22.89</m>. Therefore, the function that approximately models the population growth in Mozambique is
                     <md>
