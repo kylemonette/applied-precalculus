@@ -183,6 +183,16 @@ x post scale = 1.2
         In general, the shape of the graph of an exponential function <m>y = A \cdot b^x</m> is different for the base <m>b \gt 1</m> and for <m>b \lt 1</m>:
     </p>
 
+    <figure xml:id="fig_5_2_exp_fun">
+    <caption></caption>
+    <interactive platform="jsxgraph" source="jsxgraph/jsx_5_2_exp_fun.js" width="60%">
+    <slate xml:id="jsx_5_2_exp_fun_fig" surface="jsxboard"/>
+    <instructions>
+    <p>Change the values of <m>A</m> and <m>b</m> to see how <m>f(x) = A \cdot b^x</m> changes.</p>
+    </instructions>
+    </interactive>
+    </figure>
+
     <p>
         If <m>b \gt 1</m>, the function <m>f(t) = A \cdot b^t</m> is increasing<mdash/>its graph is climbing as it is traced from left to right.
         If <m>b \lt 1</m>, the function <m>f(t) = A \cdot b^t</m> is decreasing<mdash/>its graph is falling as it is traced from left to right. In both cases the values of <m>y = A \cdot b^x</m> are always positive, so the graph is entirely above the <m>x</m>-axis. The <m>y</m>-intercept is always equal to the initial value <m>A</m>.
@@ -370,15 +380,7 @@ x post scale = 1.2
         </solution>
     </example>
 
-    <figure xml:id="fig_5_2_exp_fun">
-        <caption></caption>
-        <interactive platform="jsxgraph" source="jsxgraph/jsx_5_2_exp_fun.js" width="60%">
-            <slate xml:id="jsx_5_2_exp_fun_fig" surface="jsxboard"/>
-            <instructions>
-                <p>Change the values of <m>A</m> and <m>b</m> to see how <m>f(x) = A \cdot b^x</m> changes.</p>
-            </instructions>
-        </interactive>
-    </figure>
+
 
     <xi:include href="exercises/ex_5_2.ptx"/>
 
