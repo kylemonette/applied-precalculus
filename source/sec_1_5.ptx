@@ -178,7 +178,7 @@ x post scale = 1
 
     <definition>
         <title>Average Rate of Change</title>
-
+        <idx><h>average rate of change</h></idx> 
         <statement>
             <p>
                 Let <m>y</m> be a function of <m>x</m>, <m>y=f(x)</m>.
@@ -260,6 +260,7 @@ x post scale = 1
     </example>
 
     <p>
+    <idx><h>average rate of change</h><h>units</h></idx> 
         This is not an applied example so <m>x</m> and <m>y</m> don't have real-life units.
         In general, the average rate of change <m>\dfrac{\Delta y}{\Delta x}</m> is measured in
         <md>

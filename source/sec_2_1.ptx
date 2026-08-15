@@ -34,7 +34,7 @@
     <introduction>
         <definition>
             <title>Linear Function</title>
-
+            <idx><h>function</h><h>linear</h></idx> 
             <statement>
                 <p>
                     A function <m>y=f(x)</m> is called a <alert>linear function</alert> if it can be written in the form
@@ -445,6 +445,7 @@ xlabel=\(t\text{ (hours)}\), ylabel=\(W\text{ (gallons)}\),
 
         <theorem>
             <title>Slope Formula</title>
+            <idx><h>slope formula</h></idx> 
 
             <statement>
                 <p>
@@ -723,6 +724,7 @@ xlabel=\(x\), ylabel=\(y\)
 
         <theorem>
             <title>Constant Functions and Horizontal Lines</title>
+            <idx><h>function</h><h>constant</h></idx> 
 
             <statement>
                 <p>
@@ -790,7 +792,7 @@ xlabel=\(x\), ylabel=\(y\)
 
         <theorem>
             <title>Vertical Lines</title>
-
+            <idx><h>vertical lines</h></idx> 
             <statement>
                 <p>
                     The vertical line with horizontal intercept <m>k</m> has equation given by

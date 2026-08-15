@@ -64,7 +64,7 @@
 
     <definition>
         <title>Vertical Intercept</title>
-
+        <idx><h>intercepts</h><h>vertical</h></idx> 
         <statement>
             <p>
                 Suppose the graph of the function <m>y=f(x)</m> crosses the <m>y</m>-axis at <m>y=b</m>; that is, at the point <m>(0,b)</m>.
@@ -114,7 +114,7 @@ xlabel=\(x\), ylabel=\(y\)
 
     <definition>
         <title>Horizontal Intercepts</title>
-
+        <idx><h>intercepts</h><h>horizontal</h></idx> 
         <statement>
             <p>
                 Suppose that the graph of the function <m>y=f(x)</m> crosses the <m>x</m>-axis at <m>x=a</m>; that is, at the point <m>(a,0)</m>.
