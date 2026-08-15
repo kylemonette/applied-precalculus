@@ -1,38 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_5_5">
+    <title>The Natural Base e</title>
 
 
-<title>The Natural Base e</title>
-
-<objectives>
-    <introduction>
-        <p>
-            After completing this section, you should be able to do the following.
-        </p>
-    </introduction>
-    <ol>
-        <li>
+    <objectives>
+        <introduction>
             <p>
-            First objective.
+                After completing this section, you should be able to do the following.
             </p>
-        </li>
+        </introduction>
 
-        <li>
+        <ol>
+            <li>
+                <p>
+                    Objective 1
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Objective 2
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Objective 3
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
+
+    <p>
+        A commonly used base in the context of exponential functions is the <em>Euler constant</em>. The constant is denoted by the letter <m>e</m> and its approximate value is
+        <md>
+            e \approx 2.718281827 \dots
+        </md>
+        The constant <m>e</m> is an irrational number which, much like <m>\pi</m>, appears in various areas of mathematics. It is sufficient for you to remember that <m>e \approx 2.718</m> or even
+        <md>
+            e \approx 2.71
+        </md>
+        Your calculator will give you a better approximation of <m>e</m>. A precise definition of <m>e</m> is complicated, and will not be covered in this text.
+    </p>
+
+    <p>
+        We call <m>e</m> the <alert>natural base</alert> and, when used as the base of an exponential function, we get the so-called <alert>natural exponential</alert> function <m>y = e^x</m>.
+        Since <m>e\gt 1</m>, the graph of a natural exponential function is increasing, just as any other exponential function with growth factor larger than <m>1</m>:
+    </p>
+
+    <image width="50%" xml:id="fig_5_5_1">
+        <latex-image label="5_5_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-3,xmax=3,
+ymin=0,ymax=9,
+xtick={-3,...,3},
+ytick={0,...,9},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2
+]
+\addplot[domain=-3:3] {e^x};
+\end{axis}
+\end{tikzpicture}
+        </latex-image>
+    </image>
+
+    <p>
+        In fact, <m>2 \lt e \lt 3</m> so the graph of <m>y = e^x</m> is between the graphs of <m>y = 2^x</m> and <m>y = 3^x</m>:
+    </p>
+
+    <image width="50%" xml:id="fig_5_5_2">
+        <latex-image label="5_5_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=-1,xmax=2,
+ymin=0,ymax=9,
+xtick={-3,...,3},
+ytick={0,...,9},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2,
+legend pos=north west,
+]
+\addplot[domain=-3:3] {e^x}; 
+\addlegendentry{$e^x$};
+\addplot[domain=-3:3,red] {2^x};
+\addlegendentry{$2^x$};
+\addplot[domain=-3:3,orange] {3^x};
+\addlegendentry{$3^x$};
+\end{axis}
+\end{tikzpicture}
+        </latex-image>
+    </image>
+
+    <p>
+        In most applications, especially in life sciences, people tend to rewrite <alert>all</alert> exponential functions in terms of the natural base <m>e</m>. How can this be done? Suppose we have an exponential function <m>f(x) = A \cdot b^x</m> where <m>b</m> is any positive number. By the graph above, we can see that there exists a constant <m>k</m> such that
+        <md>
+            b = e^k.
+        </md>
+        This means that one can rewrite any exponential function as
+        <md>
+            f(x) = A \cdot b^x = A \cdot (e^k)^x = A \cdot e^{k x}.
+        </md>
+    </p>
+
+    <p>
+        The graph indicates that when <m>b \gt 1</m>, the constant <m>k</m> is positive; likewise when <m>b \lt 1</m>, the constant <m>k</m> is negative.
+    </p>
+
+    <theorem>
+        <title>Exponential Function in Terms of Base <m>e</m></title>
+
+        <statement>
             <p>
-        Second objective.
+                Any exponential function <m>Q(t) = A \cdot b^t</m> can be written in the form
+                <md>
+                    Q(t) = A \cdot e^{k t}
+                </md>
+                where <m>k</m> is the constant satisfying that <m>e^k = b</m>. We have:
             </p>
-        </li> 
-        <li>
+
             <p>
-            Third objective.
+                <ul>
+                    <li>
+                        <p>
+                            If <m>b \gt 1</m>, then <m>k \gt 0</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            If <m>b \lt 1</m>, then <m>k \lt 0</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            The constant <m>k</m> is called the <term>continuous growth rate</term>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            We can convert from <m>Q(t) = A \cdot e^{k t}</m> form to the form <m>Q(t) = A \cdot b^t</m> by setting the growth factor <m>b = e^k</m>.
+                        </p>
+                    </li>
+                </ul>
             </p>
-        </li>
-    </ol>
-</objectives>
+        </statement>
+    </theorem>
 
+<remark>
+    <p>
+        The constant <m>k</m> in the formula <m>Q(t) = A \cdot e^{k t}</m> is called the <alert>continuous growth rate</alert> or, when expressed as a percent, the <alert>continuous percent growth rate</alert>.
+        The relevance of this terminology will become more clear if you go on to study calculus.
+    </p>
+</remark>
 
+    <p>
+        It is important to keep in mind the following facts.
+    </p>
 
-<xi:include href="exercises/ex_5_5.ptx"/>
+    <p>
+        <ul>
+            <li>
+                <p>
+                    The value of the constant <m>k</m> depends on the units of <m>t</m><mdash/>years, days, hours etc. Hence, we will sometimes say the <q>continuous annual growth rate</q> <m>k</m> or the <q>continuous daily growth rate</q> <m>k</m> etc., to emphasize the units of <m>t</m> unless they clear from the context.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    The values of the continuous percent growth rate <m>k</m> and the percent growth rate <m>r</m> that appear in the formula
+                    <md>
+                        Q(t) = A \cdot b^t = A (1 + r)^t
+                    </md>
+                    are <alert>different</alert>, although their values are <em>often close</em>.
+                </p>
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        <alert>Note:</alert>
+        Any exponential in base-<m>e</m> form, say <m>Q(t) = A \cdot e^{k t}</m>, can easily be converted to standard form <m>Q(t) = A \cdot b^t</m> by taking <m>b = e^k</m>. Going the other way around, that is, finding the exact value of <m>k</m> for a given <m>b</m> requires solving the following equation for <m>k</m>:
+        <md>
+            e^k = b.
+        </md>
+        Since the unknown <m>k</m> is in the exponent, the equation cannot be solved algebraically until Chapter 6 since it requires logarithms.
+    </p>
+
+    <example>
+        <statement>
+            <p>
+                The value of investment, <m>V(t)</m>, is given by
+                <md>
+                    V(t) = 2500 e^{0.035 t}
+                </md>
+                where <m>t</m> is in years. Give the initial value and the continuous growth rate. Then, rewrite the function in the form
+                <md>
+                    V(t) = A \cdot b^t
+                </md>
+                and compare the percent growth rate and the continuous percent growth rate.
+            </p>
+        </statement>
+
+        <solution>
+            <p>
+                From the base-<m>e</m> form, the <alert>continuous</alert> growth rate is <m>k = 0.035 = 3.5\%</m> and the initial value of the investment is <m>A=2500</m>.
+                Notice that
+                <md>
+                    V(t) = 2500 e^{0.035 t} = 2500 \left( e^{0.035} \right)^t = 2500 \cdot 1.0356^t
+                </md>
+                as <m>e^{0.035} \approx 1.0356</m>. Hence, the growth factor is <m>b=1.0356</m> and the annual percent growth rate is <m>r=0.0356 = 3.56\%</m>.
+                This shows that the continuous growth rate and the annual percent growth rate are <em>close</em> but not <em>equal</em>.
+            </p>
+        </solution>
+    </example>
+
+    <example>
+        <statement>
+            <p>
+                A patient treated for thyroid cancer is given an injection of 10 <m>\mu</m>g of Iodine-131. Let <m>I(t)</m> be the amount of Iodine-131 left in the patient's body <m>t</m> days after the injection.
+                Assume that the <alert>continuous</alert> daily decay rate of Iodine-131 is <m>8.66\%</m>.
+            </p>
+
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            Find a formula for <m>I(t)</m>.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            Convert the formula to the form <m>I(t) = 10 \cdot b^t</m>. Compare the daily percent growth rate and the continuous growth rate.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </statement>
+
+        <solution>
+            <p>
+                <ol>
+                    <li>
+                        <p>
+                            The <alert>continuous</alert> growth rate is given as <m>k = -8.66\% = -0.0866</m>. Hence, it will be easier to find a formula for <m>I(t)</m> in the form <m>I(t) = A e^{k t}</m>.
+                            The initial amount is <m>A = 10</m>, so
+                            <md>
+                                I(t) = 10 e^{-0.0866 t}.
+                            </md>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            To convert to the form <m>I(t) = 10 \cdot b^t</m>, take <m>b = e^k = e^{-0.0866} = 0.917</m>.
+                            Therefore,
+                            <md>
+                                I(t) = 10 (0.917)^t.
+                            </md>
+                            The daily percent growth rate is <m>r = 0.917 - 1 = -0.083 = -8.3\%</m>.
+                            Observe that the two rates, <m>k=-8.66\%</m> and <m>r=-8.3\%</m>, differ significantly.
+                        </p>
+                    </li>
+                </ol>
+            </p>
+        </solution>
+    </example>
+
+    <xi:include href="exercises/ex_5_5.ptx"/>
 
 </section>

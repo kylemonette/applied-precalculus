@@ -1,48 +1,401 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_5_2">
+    <title>Graphs of Exponential Functions</title>
 
 
-<title>Graphs of Exponential Functions</title>
-
-<objectives>
-    <introduction>
-        <p>
-            After completing this section, you should be able to do the following.
-        </p>
-    </introduction>
-    <ol>
-        <li>
+    <objectives>
+        <introduction>
             <p>
-            First objective.
+                After completing this section, you should be able to do the following.
             </p>
-        </li>
+        </introduction>
 
-        <li>
+        <ol>
+            <li>
+                <p>
+                    Objective 1
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Objective 2
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Objective 3
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
+    <p>
+        In the previous section we looked at algebraic properties of exponential functions and applied examples involving exponential functions. In this section we study <em>graphs</em> of exponential functions.
+    </p>
+
+    <p>
+        The graph of an exponential function <m>f(t) = A \cdot b^t</m> depends on whether the growth factor <m>b</m> is greater than <m>1</m> or less than <m>1</m>.
+    </p>
+
+    <example>
+        <statement>
             <p>
-        Second objective.
+                Graph the function of <xref ref="example-ch5-ecoli"/> that describes the population <m>P</m> of E. coli bacteria in a laboratory culture <m>t</m> minutes after the experiment began:
+                <md>
+                    P = f(t) = 2000(1.0353)^t.
+                </md>
+                The table of values for <m>t</m> taken every <m>10</m> minutes is as follows:
             </p>
-        </li> 
-        <li>
+
+            <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                <row>
+                    <cell><m>t</m> (minutes)</cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>20</m></cell>
+                    <cell><m>30</m></cell>
+                    <cell><m>40</m></cell>
+                    <cell><m>50</m></cell>
+                </row>
+
+                <row>
+                    <cell><m>P</m> (<m>\#</m> of bacteria)</cell>
+                    <cell><m>2000</m></cell>
+                    <cell><m>2829.4</m></cell>
+                    <cell><m>4002.7</m></cell>
+                    <cell><m>5662.6</m></cell>
+                    <cell><m>8010.8</m></cell>
+                    <cell><m>11332.9</m></cell>
+                </row>
+            </tabular>
+
             <p>
-            Third objective.
+                The graph reflecting the data is:
             </p>
-        </li>
-    </ol>
-</objectives>
+
+            <image width="50%" xml:id="fig_5_2_1">
+                <latex-image label="5_2_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=6,
+ymin=0,ymax=12,
+xtick={1,2,3,4,5},
+xticklabels = {10,20,30,40,50},
+ytick={2,4,6,8,10},
+yticklabels = {2000,4000,6000,8000,10000},
+minor tick={},
+xlabel=\(t\), ylabel=\(P\),
+x post scale = 1.2
+]
+\addplot+[smooth,mark=*,mark options={color=red}] plot coordinates {
+(0,2)
+(1,2.829)
+(2,4.002)
+(3,5.66)
+(4,8.01)
+(5,11.33)
+};
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            </image>
+
+            <p>
+                The function increases, and increasingly fast: the population of E. coli bacteria grows faster and faster over time.
+            </p>
+
+            <p>
+                Observe that we drew the graph only for <m>t \geq 0</m> as the experiment begins at <m>t = 0</m>, even though the function <m>P = 2000(1.0353)^t</m> is defined for all <m>t</m>.
+            </p>
+        </statement>
+    </example>
+
+    <example>
+        <statement>
+            <p>
+                Graph the function
+                <md>
+                    D(t) = 10(0.74)^t
+                </md>
+                that shows the amount of Diazepam, in mg, left in the body <m>t</m> days after a single <m>10</m> mg dose.
+            </p>
+
+            <p>
+                Since the growth factor <m>0.74</m> is less than <m>1</m>, <m>D(t)</m> is a decreasing function. Here are the values of <m>D(t)</m> for <m>t = 0, 1, 2, 3, 4, 5</m> along with the corresponding graph:
+            </p>
+
+            <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                <row>
+                    <cell><m>t</m> (days)</cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>5</m></cell>
+                </row>
+
+                <row>
+                    <cell><m>D</m> (mg)</cell>
+                    <cell><m>10</m></cell>
+                    <cell><m>7.4</m></cell>
+                    <cell><m>5.5</m></cell>
+                    <cell><m>4.0</m></cell>
+                    <cell><m>3.0</m></cell>
+                    <cell><m>2.2</m></cell>
+                </row>
+            </tabular>
+
+            <image width="50%" xml:id="fig_5_2_2">
+                <latex-image label="5_2_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=6,
+ymin=0,ymax=11,
+xtick={1,...,5},
+ytick={1,...,11},
+minor tick={},
+xlabel=\(t\), ylabel=\(D\),
+x post scale = 1.2
+]
+\addplot+[smooth,mark=*,mark options={color=red}] plot coordinates {
+(0,10)
+(1,7.4)
+(2,5.5)
+(3,4)
+(4,3)
+(5,2.2)
+};
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            </image>
+
+            <p>
+                The amount by which the function is decreasing daily is less and less as time goes on. The function decreases daily by <m>26\%</m> of the current amount, so the smaller the current amount the smaller the decrease.
+            </p>
+        </statement>
+    </example>
+
+    <p>
+        In general, the shape of the graph of an exponential function <m>y = A \cdot b^x</m> is different for the base <m>b \gt 1</m> and for <m>b \lt 1</m>:
+    </p>
+
+    <figure xml:id="fig_5_2_exp_fun">
+        <caption></caption>
+        <interactive platform="jsxgraph" source="jsxgraph/jsx_5_2_exp_fun.js" width="60%">
+            <slate xml:id="jsx_5_2_exp_fun_fig" surface="jsxboard"/>
+            <instructions>
+                <p>Change the values of <m>A</m> and <m>b</m> to see how <m>f(x) = A \cdot b^x</m> changes.</p>
+            </instructions>
+        </interactive>
+    </figure>
+
+    <p>
+        If <m>b \gt 1</m>, the function <m>f(t) = A \cdot b^t</m> is increasing<mdash/>its graph is climbing as it is traced from left to right.
+        If <m>b \lt 1</m>, the function <m>f(t) = A \cdot b^t</m> is decreasing<mdash/>its graph is falling as it is traced from left to right. In both cases the values of <m>y = A \cdot b^x</m> are always positive, so the graph is entirely above the <m>x</m>-axis. The <m>y</m>-intercept is always equal to the initial value <m>A</m>.
+    </p>
+
+    <example>
+        <statement>
+            <p>
+                Graph the function <m>y=2^x</m>
+            </p>
+
+            <p>
+                The initial value is <m>A = 1</m> and the growth factor (base) is <m>b = 2</m>.
+                Since <m>b</m> is greater than <m>1</m>, the graph is increasing:
+            </p>
+
+            <image width="50%" xml:id="fig_5_2_3">
+                <latex-image label="5_2_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-3,xmax=3,
+ymin=0,ymax=9,
+xtick={-3,...,3},
+ytick={1,...,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2
+]
+\addplot[domain=-3:3] {2^x} node[pos=0.7,above left] {$y=2^x$};
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            </image>
+
+            <p>
+                Note that for <m>x \gt 0</m>, <m>2^x \gt 1</m> and <m>2^x</m> increases as <m>x</m> increases:
+                <md>
+                    2^1 = 2, \quad  2^2 = 4, \quad 2^3 = 8, \quad 2^4 = 16, \quad \dots
+                </md>
+                For <m>x \lt 0</m>, <m>2^x \lt 1</m> and <m>2^x</m> becomes smaller and smaller as <m>x</m> becomes <q>more and more negative</q>:
+                <md>
+                <mrow>
+                    \amp 2^{-1} = \dfrac{1}{2}, \amp \quad \amp 2^{-2} = \dfrac{1}{2^2} = \dfrac{1}{4}
+                </mrow>
+                <mrow>
+                \amp 2^{-3} = \dfrac{1}{2^3} = \dfrac{1}{8}, \amp \quad \amp 2^{-4} = \dfrac{1}{2^4} = \dfrac{1}{16}, \quad \dots
+                </mrow>
+                </md>
+                In fact, as <m>x</m> becomes <q>more and more negative</q>, <m>2^x</m> becomes arbitrarily close to <m>0</m> without ever reaching it<mdash/>the graph approaches the <m>x</m>-axis but never crosses it. We say that the <m>x</m>-axis is a <em>horizontal asymptote</em> of the function <m>y = 2^x</m>.
+            </p>
+        </statement>
+    </example>
+
+    <example>
+        <statement>
+            <p>
+                Graph the function <m>y = \left(\dfrac{1}{2}\right)^x</m>.
+            </p>
+
+            <p>
+                Note that once again <m>A = 1</m> but, in contrast to the last example, the growth factor <m>b = \frac{1}{2} = 0.5</m>. As <m>b \lt 1</m>, the graph is decreasing:
+            </p>
+
+            <image width="50%" xml:id="fig_5_2_4">
+                <latex-image label="5_2_4_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-3,xmax=3,
+ymin=0,ymax=9,
+xtick={-3,...,3},
+ytick={1,...,8},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2
+]
+\addplot[domain=-3:3] {0.5^x} node[pos=0.3,above right] {$y=0.5^x$};
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            </image>
+
+            <p>
+                Observe that <m>\left(\dfrac{1}{2}\right)^x \lt 1</m> for <m>x \gt 0</m>, and <m>(\dfrac{1}{2})^x</m> decreases as <m>x</m> increases:
+                <md>
+                <mrow>
+                \amp \left( \dfrac{1}{2} \right)^1 = \dfrac{1}{2}, \amp \quad \amp \left( \dfrac{1}{2} \right)^2 = \dfrac{1}{4},
+                \amp \left( \dfrac{1}{2} \right)^3 = \dfrac{1}{8}, \amp \quad \amp \dots
+                </mrow>
+                </md>
+                This means the <m>x</m>-axis is a <em>horizontal asymptote</em> of the function <m>(\frac{1}{2})^x</m>.
+            </p>
+
+            <p>
+                On the other side, as <m>x</m> becomes <q>more and more negative</q>, <m>\left(\dfrac{1}{2}\right)^x</m> becomes larger and larger:
+                <md>
+<mrow>
+\amp \left( \dfrac{1}{2} \right)^{-1} = \dfrac{1}{\frac{1}{2}} = 2, \amp \quad \amp \left( \dfrac{1}{2} \right)^{-2} = \dfrac{1}{(\frac{1}{2})^2} = \dfrac{1}{\frac{1}{4}} = 4,
+</mrow>
+<mrow>
+\amp \left( \dfrac{1}{2} \right)^{-3} = \dfrac{1}{(\frac{1}{2})^3} = \dfrac{1}{\frac{1}{8}} = 8, \amp \quad \amp \dots
+</mrow>
+                </md>
+            </p>
+        </statement>
+    </example>
+
+    <example>
+        <statement>
+            <p>
+                For each graph shown below, find the formula for the function in the form <m>f(x) = A \cdot b^x</m>:
+            </p>
+
+            <image width="50%" xml:id="fig_5_2_5">
+                <latex-image label="5_2_5_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=0,ymax=9,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2
+]
+\addplot[domain=-3:3] {2^x};
+\node[rpoint with label={-15:{\large $(1,15)$}}] at (axis cs:2,4) {};
+\node[rpoint with label={-15:{\large $5$}}] at (axis cs:0,1) {};
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            </image>
+
+            <image width="50%" xml:id="fig_5_2_6">
+                <latex-image label="5_2_6_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=-3,xmax=3,
+ymin=0,ymax=6,
+xtick=\empty,
+ytick=\empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2
+]
+\addplot[domain=-3:3] {3*0.5^x};
+\node[rpoint with label={15:{\large $(3,14.58)$}}] at (axis cs:1,1.5) {};
+\node[rpoint with label={0:{\large $20$}}] at (axis cs:0,3) {};
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            </image>
+        </statement>
+
+        <solution>
+            <p>
+                We have to find the initial value <m>A</m> and the growth factor <m>b</m>. Since <m>A</m> is always the <m>y</m>-intercept, we have <m>A = 5</m> and so <m>f(x) = 5 \cdot b^x</m>. To find <m>b</m>, note that the point <m>(1, 15)</m> is on the graph so the equation <m>f(1) = 5 \cdot b^1 = 5 \cdot b = 15</m> must hold.
+                That is, <m>5 \cdot b = 15</m> which gives <m>b = 3</m>. Thus, the function corresponding to the graph (a) is <m>f(x) = 5 \cdot 3^x</m>.
+            </p>
+
+            <p>
+                In the second graph, the initial value is <m>A = 20</m>. By using the point <m>(3, 14.58)</m>, we can set up an equation to solve for <m>b</m>:
+                <md>
+                    <mrow>f(3) \amp = 14.58</mrow>
+                    <mrow>20 \cdot b^3 \amp = 14.58</mrow>
+                    <mrow>b^3 \amp = 14.58 / 20</mrow>
+                    <mrow>b \amp = (0.729)^{1/3}</mrow>
+                    <mrow>b \amp = 0.90</mrow>
+                </md>
+                This means <m>f(x) = 20 \cdot 0.90^x</m>.
+            </p>
+        </solution>
+    </example>
+
+    <example>
+        <statement>
+            <p>
+                Find a function <m>f(t) = A \cdot b^t</m> whose graph contains points <m>(1, 15)</m> and <m>(2, 22.5)</m>.
+            </p>
+        </statement>
+
+        <solution>
+            <p>
+                Observe that neither given point is the vertical intercept of the function, so<mdash/>unlike the last examples<mdash/>we do not immediately have <m>A</m>.
+                Our starting point is recognizing that <m>(1, 15)</m> is on the graph of <m>f(t)</m> and so <m>f(1) = 15</m>. Similarly, <m>(2, 22.5)</m> implies <m>f(2) = 22.5</m>.
+                Therefore, the following two equations must hold:
+                <md>
+                    A \cdot b^1 = 15 \quad \text{and} \quad A \cdot b^2 = 22.5.
+                </md>
+                To find <m>A</m> and <m>b</m>, we can divide these two equations to obtain
+                <md>
+                    <mrow>\frac{A \cdot b^2}{A \cdot b^1} \amp = \dfrac{22.5}{15}</mrow>
+                    <mrow>\dfrac{b^2}{b} \amp = \dfrac{22.5}{15}</mrow>
+                    <mrow>b \amp = 1.5</mrow>
+                </md>
+                Now we know that <m>f(t) = A \cdot 1.5^t</m>, but <m>A</m> is still unknown. Using either of the given point on the graph, we can solve for <m>A</m>. Suppose we choose to use <m>f(1) = 15</m><mdash/>then <m>A \cdot 1.5^1 = 15</m> which gives <m>A = \frac{15}{1.5} = 10</m>.
+                Thus, <m>f(t) = 10(1.5)^t</m>.
+            </p>
+        </solution>
+    </example>
 
 
-<figure xml:id="fig_5_2_exp_fun">
-<caption></caption>
-<interactive platform="jsxgraph" source="jsxgraph/jsx_5_2_exp_fun.js" width="60%">
-    <slate xml:id="jsx_5_2_exp_fun_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Change the values of <m>A</m> and <m>b</m> to see how <m>f(x) = A \cdot b^x</m> changes.</p>
-    </instructions>
-</interactive>
-</figure>
 
-
-<xi:include href="exercises/ex_5_2.ptx"/>
+    <xi:include href="exercises/ex_5_2.ptx"/>
 
 </section>

@@ -1,38 +1,389 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_5_3">
+    <title>Exponential Functions Numerically, Modeling</title>
 
 
-<title>Exponential Functions Numerically, Modeling</title>
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<objectives>
+        <ol>
+            <li>
+                <p>
+                    Objective 1
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Objective 2
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Objective 3
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
-        <p>
-            After completing this section, you should be able to do the following.
-        </p>
+    <p>
+        How do we recognize that a function given numerically<mdash/>by a table of values<mdash/>is an exponential function? This is an important question in applications. Typically, when you study a real-life process you do not have a formula for a function describing the process ahead of time. You take measurements, tabulate the data, and then you try to find a mathematical model that fits your numerical data.
+    </p>
+
+    <p>
+        Fortunately, there is a simple test to check if a numerically given function is exponential.
+    </p>
+
+    <example xml:id="example-ch5-table1">
+        <statement>
+            <p>
+                Consider the exponential function <m>y = f(x) = 3 \cdot 2^x</m>. For a few equally spaced values of <m>x</m>, here are the values from the function:
+            </p>
+
+            <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>5</m></cell>
+                </row>
+
+                <row>
+                    <cell><m>y</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>6</m></cell>
+                    <cell><m>12</m></cell>
+                    <cell><m>24</m></cell>
+                    <cell><m>48</m></cell>
+                    <cell><m>96</m></cell>
+                </row>
+            </tabular>
+
+            <p>
+                The values of <m>x</m> are equally spaced; that is, the difference between two consecutive values of <m>x</m> is constantly equal to <m>\Delta x = 1</m>:
+                <md>
+                    1 - 0 = 1, \quad  2 - 1 = 1, \quad  3 - 2 = 1, \quad  4 - 3 = 1, \quad  5 - 4 = 1.
+                </md>
+                The differences of the corresponding <m>y</m>-values are, of course, not equal.
+                If the differences of consecutive values of <m>y</m> <em>were equal</em>, the table would represent a <em>linear function</em>.
+                Instead, the <alert>ratios</alert> of consecutive values of <m>y</m> are equal:
+                <md>
+                    \dfrac{6}{3} = 2,  \quad \dfrac{12}{6} = 2, \quad  \dfrac{24}{12} = 2,  \quad \dfrac{48}{24} = 2, \quad \dfrac{96}{48} = 2.
+                </md>
+            </p>
+
+            <p>
+                Of course, <m>f(x) = 3 \cdot 2^x</m> is an exponential function<mdash/>it matches the form <m>y = A\cdot b^x</m>.
+                This example shows that the property of constant ratios between consecutive outputs indicates that a function is exponential.
+            </p>
+        </statement>
+    </example>
+
+    <p>
+        For every exponential function and equally spaced values of <m>x</m>, the ratios of the consecutive values of <m>y</m> are equal.
+        The previous example illustrates this point, but it can also be seen from algebraic properties of exponential expressions.
+        Take any exponential function <m>y = f(x) = A \cdot b^x</m>.
+        Consider a few equally spaced values for <m>x</m>, denoted by <m>x_1, x_2, x_3, x_4</m>, meaning that
+        <md>
+            x_2 - x_1 = x_3 - x_2 = x_4 - x_3 = \Delta x.
+        </md>
+        where <m>\Delta x</m> is some constant number.
+        The corresponding <m>y</m>-values are <m>f(x_1) = A \cdot b^{x_1}</m>, <m>f(x_2) = A \cdot b^{x_2}</m>, and so on.
+        The consecutive ratios between <m>y</m>-values are:
+        <md>
+            <mrow>\dfrac{A \cdot b^{x_2}}{A \cdot b^{x_1}} \amp = \dfrac{b^{x_2}}{b^{x_1}} = b^{x_2 - x_1} = b^{\Delta x}</mrow>
+            <mrow>\dfrac{A \cdot b^{x_3}}{A \cdot b^{x_2}} \amp = \dfrac{b^{x_3}}{b^{x_2}} = b^{x_3 - x_2} = b^{\Delta x}</mrow>
+            <mrow>\dfrac{A \cdot b^{x_4}}{A \cdot b^{x_3}} \amp= \dfrac{b^{x_4}}{b^{x_3}} = b^{x_4 - x_3} = b^{\Delta x}</mrow>
+        </md>
+        All the ratios are equal to <m>b^{\Delta x}</m>, which is a constant number.
+    </p>
+
+    <p>
+        <alert>Note:</alert> If the values of <m>x</m> are spaced by <m>1</m> as in <xref ref="example-ch5-table1"/><mdash/>that is, <m>\Delta x = 1</m><mdash/>the ratios give <m>b</m>, the base of the exponential function. If the <m>x</m> values are spaced by <m>2</m> or any other distance, so that <m>\Delta x \neq 1</m>, the ratios between consecutive <m>y</m>-values are <em>not</em> equal to <m>b</m>!
+    </p>
+
+    <example>
+        <statement>
+            <p>
+                Which of the functions given below are exponential? Give a formula for each function.
+            </p>
+
+            <p>
+            <ol>
+            <li>
+            <p></p>
+            <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>5</m></cell>
+                </row>
+
+                <row>
+                    <cell><m>y</m></cell>
+                    <cell><m>0.5</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>8</m></cell>
+                    <cell><m>32</m></cell>
+                    <cell><m>128</m></cell>
+                    <cell><m>512</m></cell>
+                </row>
+            </tabular>
+            </li>
+            <li>
+            <p></p>
+            <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>5</m></cell>
+                </row>
+
+                <row>
+                    <cell><m>y</m></cell>
+                    <cell><m>0.5</m></cell>
+                    <cell><m>4.5</m></cell>
+                    <cell><m>8.5</m></cell>
+                    <cell><m>12.5</m></cell>
+                    <cell><m>16.5</m></cell>
+                    <cell><m>20.5</m></cell>
+                </row>
+            </tabular>
+            </li>
+
+            <li>
+            <p></p>
+
+            <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                <row>
+                    <cell><m>x</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>3</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>5</m></cell>
+                </row>
+
+                <row>
+                    <cell><m>y</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>1</m></cell>
+                    <cell><m>0.5</m></cell>
+                    <cell><m>0.25</m></cell>
+                    <cell><m>0.125</m></cell>
+                </row>
+            </tabular>
+            </li>
+            </ol>
+            </p>
+        </statement>
+
+        <solution>
+<p>
+<ol>
+<li>
+            <p>
+                The values of <m>x</m> are equally spaced, namely by <m>\Delta x = 1</m>. We have to check if all ratios between consecutive values of <m>y</m> are the same:
+                <md>
+                    \dfrac{2}{0.5} = 4, \quad \dfrac{8}{2} = 4, \quad \dfrac{32}{8} = 4, \quad \dfrac{128}{32} = 4, \quad \dfrac{512}{128} = 4.
+                </md>
+                All ratios are the same. Since <m>\Delta x = 1</m>, the ratios give us the growth factor <m>b = 4</m>. With each increase in <m>x</m> by <m>1</m>, the current value of the function is multiplied by the constant factor of <m>4</m>. The initial value is the <m>y</m> value at <m>0</m>, so <m>A = 0.5</m>.
+                The table corresponds to the exponential function <m>y = 0.5 \cdot 4^x</m>.
+            </p>
+</li>
+<li>
+            <p>
+                The ratios between consecutive outputs are
+                <md>
+                    \dfrac{4.5}{0.5} = 9, \quad \dfrac{8.5}{4.5} = 1.888, \qquad \dots
+                </md>
+                which are clearly not equal, so the function is <alert>not</alert> exponential. Observe that the values of the function start at <m>y=0.5</m> when <m>x = 0</m> and then increase by <m>4</m> for every unit increase in <m>x</m>.
+                This is precisely the definition of a <em>linear function</em>, so table (b) corresponds to <m>y = 0.5 + 4x</m>.
+            </p>
+</li>
+<li>
+
+            <p>
+                The ratios between consecutive outputs are
+                <md>
+                    \dfrac{1}{2} = 0.5, \quad \dfrac{0.5}{1} = 0.5, \quad \dfrac{0.25}{0.5} = 0.5, \quad \dfrac{0.125}{0.25} = 0.5
+                </md>
+                which are equal, and the inputs are evenly spaced by <m>\Delta x = 1</m>, so the function is exponential.
+                The growth factor is <m>b = 0.5</m> and so <m>y = A \cdot 0.5^x</m>.
+                The initial value <m>A</m> is unknown.
+                Because the value of the function at <m>0</m> is known, set up an equation for <m>A</m> using, for example, the point <m>(1, 2)</m> from the table. This gives the equation <m>A \cdot 0.5^1 = 2</m>, and so <m>A = 4</m>. The function represented by the table (c) is <m>y = 4 \cdot 0.5^x</m>.
+            </p>
+</li>
+</ol>
+</p>
+        </solution>
+    </example>
+
+    <example>
+        <statement>
+            <p>
+                Check if <m>f(t)</m> is an exponential function. If so, find the formula for <m>f(t)</m>.
+            </p>
+
+            <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                <row>
+                    <cell><m>t</m></cell>
+                    <cell><m>0</m></cell>
+                    <cell><m>2</m></cell>
+                    <cell><m>4</m></cell>
+                    <cell><m>6</m></cell>
+                    <cell><m>8</m></cell>
+                    <cell><m>10</m></cell>
+                </row>
+
+                <row>
+                    <cell><m>f(t)</m></cell>
+                    <cell><m>0.3</m></cell>
+                    <cell><m>0.9</m></cell>
+                    <cell><m>2.7</m></cell>
+                    <cell><m>8.1</m></cell>
+                    <cell><m>24.3</m></cell>
+                    <cell><m>72.9</m></cell>
+                </row>
+            </tabular>
+        </statement>
+
+        <solution>
+            <p>
+                The values of <m>t</m> are equally spaced by <m>2</m>; that is, <m>\Delta t = 2</m>. The ratios between consecutive output values are:
+                <md>
+                    \dfrac{0.9}{0.3} = 3,  \quad  \dfrac{2.7}{0.9} = 3,  \quad \dfrac{8.1}{2.7} = 3, \quad  \dfrac{24.3}{8.1} = 3,  \quad \dfrac{72.9}{24.3} = 3.
+                </md>
+                These ratios are all equal, so <m>f(t) = A \cdot b^t</m> is an exponential function.
+            </p>
+
+            <p>
+                The initial value is provided from the table as <m>A = f(0) = 0.3</m>.
+                This means <m>f(t) = 0.3 \cdot b^t</m>.
+                Now we need to find the growth factor <m>b</m>. Is <m>b</m> equal to <m>3</m>?
+                No! At each step <m>t</m> changes by <m>2</m> units, so the current value of <m>f(t)</m> is multiplied by <m>b</m> twice.
+                To find <m>b</m>, use any pair of values from the table to set up an equation.
+                For example, using <m>f(2) = 0.9</m>, then:
+                <md>
+                    <mrow>f(2) \amp = 0.9</mrow>
+                    <mrow>0.3 \cdot b^2 \amp = 0.9</mrow>
+                    <mrow>b^2 \amp = 0.9 / 0.3</mrow>
+                    <mrow>b^2 \amp = 3</mrow>
+                    <mrow>b \amp = \sqrt{3}</mrow>
+                </md>
+                Remember that <m>b</m> has to be positive so <m>b = \sqrt{3}</m> rather than <m>b = \pm \sqrt{3}</m>. The function is <m>f(t) = 0.3 \cdot (\sqrt{3})^t</m>. Using <m>\sqrt{3} \approx 1.732</m>, then <m>f(t) = 0.3 (1.732)^t</m>. We can also rewrite
+                <m>f(t)</m> as <m>f(t) = 0.3 (3)^{\frac{t}{2}}</m>, which shows that the values of the function triple every two units of <m>t</m>.
+            </p>
+        </solution>
+    </example>
     </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>Modeling: The Population of Mozambique</title>
 
+        <example>
+            <statement>
+                <p>
+                    The population of Mozambique<fn>https://www.worldometers.info/world-population/mozambique-population/, accessed: 3/10/2020</fn> between 2009 and 2014 is given below:
+                </p>
 
-<xi:include href="exercises/ex_5_3.ptx"/>
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell>Year</cell>
+                        <cell><m>2009</m></cell>
+                        <cell><m>2010</m></cell>
+                        <cell><m>2011</m></cell>
+                        <cell><m>2012</m></cell>
+                        <cell><m>2013</m></cell>
+                        <cell><m>2014</m></cell>
+                    </row>
 
+                    <row>
+                        <cell>Pop. in millions</cell>
+                        <cell><m>22.89</m></cell>
+                        <cell><m>23.53</m></cell>
+                        <cell><m>24.19</m></cell>
+                        <cell><m>24.86</m></cell>
+                        <cell><m>25.56</m></cell>
+                        <cell><m>26.28</m></cell>
+                    </row>
+                </tabular>
+
+                <p>
+                    Find a function that models Mozambique's population growth in the time period 2009-2014.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    To simplify the task, denote by <m>t</m> the number of years since 2009 and by <m>P(t)</m> the population at time <m>t</m> in millions. The table then becomes:
+                </p>
+
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell><m>t</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1</m></cell>
+                        <cell><m>2</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>4</m></cell>
+                        <cell><m>5</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>P(t)</m></cell>
+                        <cell><m>22.89</m></cell>
+                        <cell><m>23.53</m></cell>
+                        <cell><m>24.19</m></cell>
+                        <cell><m>24.86</m></cell>
+                        <cell><m>25.56</m></cell>
+                        <cell><m>26.28</m></cell>
+                    </row>
+                </tabular>
+
+                <p>
+                    Populations often increase exponentially so it is reasonable to check if <m>P(t)</m> is exponential.
+                    To do so, check the ratios between consecutive outputs in the table:
+                    <md>
+                    <mrow>
+                        \amp \frac{23.53}{22.89} \approx 1.028, \amp \quad \amp \frac{24.19}{23.53} \approx 1.028,  \amp \quad \amp
+                        \frac{24.86}{24.19} \approx 1.028, 
+                    </mrow>
+                    <mrow>
+                        \amp \frac{25.56}{24.86} \approx 1.028, \amp \quad \amp \frac{26.28}{25.56} \approx 1.028.
+                    </mrow>
+                    </md>
+                    When rounded to three decimal places, the ratios are equal so <m>P(t)</m> can be reasonably approximated by an exponential function. Because the inputs are evenly spaced by <m>1</m>, the corresponding growth factor would be <m>b = 1.028</m>. The initial value is immediately given in the table as <m>A = P(0) = 22.89</m>. Therefore, the function that approximately models the population growth in Mozambique is
+                    <md>
+                        P(t) = 22.89 (1.028)^t.
+                    </md>
+                </p>
+
+                <p>
+                    As the growth factor is <m>1.028</m>, the annual percent growth rate is <m>r=2.8\%</m>. The model is valid in the time period 2009-2014. If you examine the data given at worldometers.info website, the formula is valid for a longer time interval. The annual percent growth rate remains at approximately <m>2.8\%</m> between 2005 and 2020.
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <xi:include href="exercises/ex_5_3.ptx"/>
 
 </section>

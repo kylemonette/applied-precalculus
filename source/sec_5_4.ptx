@@ -1,39 +1,525 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_5_4">
+    <title>Doubling Time and Half-Life</title>
 
 
-<title>Doubling Time and Half-Life</title>
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<objectives>
+        <ol>
+            <li>
+                <p>
+                    Objective 1
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Objective 2
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Objective 3
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            In this section we introduce two important concepts associated with exponential processes: the doubling time of a process of exponential growth and the half-life of a process of exponential decay.
         </p>
     </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>The Doubling Time</title>
 
+        <p>
+            In <xref ref="example-ch5-ecoli"/> we looked at a population of E. coli bacteria that grows exponentially according to the formula
+            <md>
+                f(t) = 2000(1.0353)^t,
+            </md>
+            where <m>t</m> is measured in minutes and <m>f(t)</m> is the number of bacteria. We noticed that the population doubles every <m>20</m> minutes:
+            <md>
+                f(20) \approx 4000, \quad f(40) \approx 8000, \quad f(60) \approx 16000.
+            </md>
+            For every exponentially increasing function the time needed for the current value to double is constant, and it is called the <em>doubling time</em>.
+        </p>
 
+        <definition>
+            <title>Doubling Time</title>
 
+            <statement>
+                <p>
+                    Let <m>f(t) = A \cdot b^t</m>, <m>b \gt 1</m>, be an increasing exponential function. The time needed for the value <m>f(t)</m> to double is called the <term>doubling time</term> of the function <m>f</m>.
+                </p>
+            </statement>
+        </definition>
 
-<xi:include href="exercises/ex_5_4.ptx"/>
+        <example>
+            <statement>
+                <p>
+                    Show algebraically that every increasing exponential quantity <m>f(t) = A \cdot b^t</m>, <m>b \gt 1</m>, has a fixed doubling time; that is, it always takes the same amount of time for the quantity <m>f(t)</m> to double.
+                </p>
+                <aside>
+                <p>
+                    Try verifying this result by <em>graphing</em> an increasing exponential function!
+                </p>
+        </aside>
+            </statement>
+
+            <solution>
+                <p>
+                    Let <m>t_d</m> be the time after which the initial amount <m>f(0) = A</m> doubles. In other words, after time <m>t_d</m>, the value <m>f(t_d) = A \cdot b^{t_d}</m> is twice the initial value <m>A</m>:
+                    <md>
+                        A \cdot b^{t_d} = A \cdot 2.
+                    </md>
+                    Dividing both sides by <m>A</m>, the time <m>t_d</m> is such that
+                    <md>
+                        b^{t_d} = 2.
+                    </md>
+                    After another <m>t_d</m> units of time, the quantity doubles again and so
+                    <md>
+                        f(t_d + t_d) = A \cdot b^{t_d + t_d} = A \cdot b^{t_d} \cdot b^{t_d} = A \cdot 2 \cdot 2.
+                    </md>
+                    In fact, no matter what time <m>t</m> we start from, after <m>t_d</m> units of time the quantity <m>f(t)</m> will double.
+                </p>
+            </solution>
+        </example>
+
+ 
+
+        <p>
+            It is important to realize that only <em>exponentially</em> increasing quantities have a constant doubling time. Processes modeled by different functions do not, as illustrated below.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Show that the function <m>g(t) = t^2 + 4</m> does not have a fixed doubling time.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    The initial value is <m>g(0) = 4</m>. How much time does it take for the value <m>4</m> to double? We need to find a positive number <m>t</m> such that <m>g(t) =2 \cdot 4 = 8</m>; that is, to solve the equation
+                    <md>
+                        t^2 + 4 = 8.
+                    </md>
+                    A solution to this equation is <m>t=2</m>; that is, it takes <m>2</m> units of time for the initial amount to double.
+                    How long does it take for the quantity <m>g(t)</m> to double again from <m>8</m> to <m>16</m>?
+                    The solution to <m>g(t) = 2 \cdot 8 = 16</m> is <m>t = \sqrt{12} \approx 3.46</m>.
+                </p>
+
+                <p>
+                    So it took <m>2</m> units of time for <m>g(t)</m> to double from <m>4</m> to <m>8</m>, but <m>3.46 - 2 = 1.46</m> units of time after that to double again from <m>8</m> to <m>16</m>. The time needed for <m>g(t)</m> to double is not constant, and so <m>g(t)</m> does <em>not</em> have a fixed doubling time.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    You deposit <m>\$3000</m> into a savings account that pays <m>4.43\%</m> interest annually. Let <m>B = B(t)</m> be your balance after <m>t</m> years. As we saw in Section 5.1, the formula for <m>B(t)</m> is
+                    <md>
+                        B(t) = 3000(1.0443)^t.
+                    </md>
+                    How long will it take for your money to double?
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    The balance function <m>B(t)</m> is an increasing exponential function. To find its doubling time, set <m>B(t)</m> equal to twice its initial value and solve for <m>t</m>. That is,
+                    <md>
+                        B(t) = 3000(1.0443)^{t} = 2 \cdot 3000.
+                    </md>
+                    Dividing both sides by <m>3000</m> results in
+                    <md>
+                        1.0443^t = 2.
+                    </md>
+                    This equation cannot be solved algebraically as the unknown, <m>t</m>, is in the exponent. Solving such equations requires logarithms<mdash/>the topic of Chapter 6.
+                </p>
+
+                <p>
+                    However, an <em>approximate solution</em> can be found by either graphing the function <m>y = 1.0443^x</m> and then finding the point on the graph where <m>y = 2</m>, or by evaluating <m>B(t) = 3000(1.0443)^{t}</m> for a few suitable values of <m>t</m>:
+                </p>
+
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell><m>t</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>15</m></cell>
+                        <cell><m>16</m></cell>
+                        <cell><m>17</m></cell>
+                        <cell><m>32</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>B(t)</m></cell>
+                        <cell><m>4627.79</m></cell>
+                        <cell><m>5747.78</m></cell>
+                        <cell><m>6002.41</m></cell>
+                        <cell><m>6268.32</m></cell>
+                        <cell><m>12009.64</m></cell>
+                    </row>
+                </tabular>
+
+                <p>
+                    This shows that it takes approximately <m>16</m> years for your initial deposit <m>\$3000</m> to double to <m>\$6000</m>.
+                    That is, the doubling time is approximately <m>16</m> years.
+                    After approximately another <m>16</m> years, the balance <m>\$6000</m> doubles again, and so on.
+                    After <m>48</m> years, your balance will be roughly <m>\$24000</m>.
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            If the base of an increasing exponential function is written in terms of powers of <m>2</m>, the doubling time can be found algebraically <em>without</em> logarithms.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    The value <m>V(t)</m>, in dollars, of an investment <m>t</m> years after an initial amount of <m>\$2000</m> was invested is given by
+                    <md>
+                        V(t) = 2000 \cdot 2^{t / 10}.
+                    </md>
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                How much will the investment be worth after <m>10</m>, <m>20</m>, and <m>30</m> years? What pattern do you observe unfolding?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                What is the doubling time of the investment?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Write the expression for <m>V(t)</m> in the form <m>A \cdot b^t</m>. Identify the growth factor and the annual percent growth rate.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The following gives the value of the investment after <m>10</m>, <m>20</m>, and <m>30</m> years:
+                                <md>
+                                    <mrow>V(10) \amp= 2000 \cdot 2^{10 / 10} = 4000 \cdot 2^1 = 4000</mrow>
+                                    <mrow>V(20) \amp= 2000 \cdot 2^{20 / 10} = 2000 \cdot 2^{2} = 8000</mrow>
+                                    <mrow>V(30) \amp= 2000 \cdot 2^{30 / 10} = 2000 \cdot 2^{3} = 16000.</mrow>
+                                </md>
+                                Therefore, the value of the investment doubles every <m>10</m> years.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                As we saw in (a), the doubling time of <m>V(t)</m> is <m>10</m> years.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                To rewrite <m>V(t)</m> in the form <m>V(t) = A \cdot b^t</m>, observe that
+                                <md>
+                                    V(t) = 2000 \cdot 2^{t / 10} = 2000 \cdot \left(2^{1 / 10}\right)^t.
+                                </md>
+                                Using a calculator, <m>2^{1 / 10} \approx 1.072</m>, rounded to three decimal places.
+                                Writing in the form <m>A\cdot b^t</m>,
+                                <md>
+                                    V(t) = 2000 \cdot 1.072^t.
+                                </md>
+                                The growth factor <m>b</m> is <m>1.072</m>, and the annual percent growth rate is <m>r = b - 1 = 1.072 - 1 = 0.072 = 7.2\%</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            As the example above illustrates, if an exponential function is written in terms of powers of <m>2</m>, identifying the doubling time is straightforward.
+        </p>
+
+        <theorem>
+            <statement>
+                <p>
+                    For an exponential function <m>f(t)</m> written in the form:
+                    <md>
+                        f(t) = A \cdot 2^{\frac{t}{T}}
+                    </md>
+                    the doubling time is <m>T</m>. The growth factor is
+                    <md>
+                        b = 2^{\frac{1}{T}}.
+                    </md>
+                </p>
+            </statement>
+        </theorem>
+    </subsection>
+
+    <subsection>
+        <title>The Half-Life</title>
+
+        <p>
+            A <alert>decreasing</alert> exponential function <m>f(t) = A \cdot b^t</m>, <m>b \lt 1</m>, doesn't have a doubling time<mdash/>it never doubles as it is decreasing. Instead, for an exponentially decaying quantity, the time needed for the quantity to be reduced by half is constant, and called the <alert>half-life</alert>. If we denote the half-life by <m>t_h</m>, then after time <m>t_h</m> the initial value is reduced by half. After another <m>t_h</m> units of time it is halved again, and so on.
+            Half-life is exceptionally important in pharmacology. The leaflets that come with medications always give the half-life<mdash/>the time needed for half of the medication to be eliminated from your body following a single dose.
+        </p>
+
+        <definition>
+            <title>Half-Life</title>
+
+            <statement>
+                <p>
+                    Let <m>f(t) = A \cdot b^t</m>, <m>b \lt 1</m>, be a decreasing exponential function. The time needed for the value <m>f(t)</m> to be reduced by half is called the <term>half-life</term> of the function <m>f</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            Similarly, without knowledge of logarithms we cannot algebraically solve for the half-life for an exponential function unless the base of the function is expressed in terms of powers of <m>\frac{1}{2}</m>.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>Q(t) = 100\left(\frac{1}{2}\right)^{t / 5}</m> be the amount of a medication in a patient's bloodstream, in mg, <m>t</m> hours after a single dose of <m>100</m> mg.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                How much of the medication is left in the patient's bloodstream after <m>5</m> hours? <m>10</m> hours? <m>15</m> hours? What pattern do you observe unfolding? What is the half-life of the medication?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Rewrite <m>Q(t)</m> in the form <m>Q(t) = A \cdot b^t</m> for constants <m>A</m> and <m>b</m>. Give the growth factor and the hourly percent growth rate.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                We calculate:
+                                <md>
+                                    <mrow>Q(5) \amp= 100\left(\dfrac{1}{2}\right)^{5 / 5}  = 100\left(\dfrac{1}{2}\right) = 50</mrow>
+                                    <mrow>Q(10) \amp= 100\left(\dfrac{1}{2}\right)^{10 / 5} = 100\left(\dfrac{1}{2}\right)^{2} = 25</mrow>
+                                    <mrow>Q(15) \amp= 100\left(\dfrac{1}{2}\right)^{15 / 5} = 100\left(\dfrac{1}{2}\right)^{3} = 12.5.</mrow>
+                                </md>
+                                Every <m>5</m> hours the amount of the medication left in the bloodstream is cut in half. Hence, the half-life of the medication is <m>t_h=5</m> hours.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The formula can be alternatively written as <m>Q(t) = 100\left(\left(\frac{1}{2}\right)^{1 / 5}\right)^t</m>. Using <m>\left(\frac{1}{2}\right)^{1 / 5} \approx 0.871</m>, rounded to three decimal places, then
+                                <md>
+                                    Q(t) = 100 \cdot 0.871^t.
+                                </md>
+                                The growth factor is <m>b=0.871</m>.
+                                The hourly percent growth rate is <m>r=-12.9\%</m> as <m>0.871 - 1 = -0.129</m>. We can also say that the hourly percent decay rate is <m>12.9\%</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            As the example above illustrates, if an exponential function is written in terms of powers of <m>\frac{1}{2}</m>, identifying the half-life is straightforward.
+        </p>
+
+        <theorem>
+            <statement>
+                <p>
+                    For an exponential function <m>f(t)</m> written in the form:
+                    <md>
+                        f(t) = A \cdot \left(\frac{1}{2}\right)^{t / T}
+                    </md>
+                    the half-life is <m>T</m>. The growth factor is
+                    <md>
+                        b = \left(\frac{1}{2}\right)^{1 / T}.
+                    </md>
+                </p>
+            </statement>
+        </theorem>
+
+        <example>
+            <statement>
+                <p>
+                    A patient takes a <m>40</m> mg tablet of a common anti-heartburn medication Famotidine. The amount of the medication in the bloodstream, <m>F(t)</m>, in mg, <m>t</m> hours after the dose, decays exponentially with half-life <m>3.8</m> hours.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find a formula for <m>F(t)</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Find the growth factor and the percent decay rate.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The initial amount is <m>A = 40</m> and the half-life is <m>T = 3.8</m> hours.
+                                The formula for <m>F(t)</m>, in terms of powers of <m>\frac{1}{2}</m>, is
+                                <md>
+                                    F(t) = 40 \cdot \left(\frac{1}{2}\right)^{t / 3.8}.
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                To rewrite <m>F(t)</m> in the form <m>F(t) = 40 \cdot b^t</m>, notice that:
+                                <md>
+                                    F(t) = 40 \cdot \left( \left(\frac{1}{2}\right)^{1/3.8}\right)^t.
+                                </md>
+                                Hence, the growth factor <m>b = \left(\frac{1}{2}\right)^{1/3.8} \approx 0.833</m> (rounded to three decimal places), so <m>F(t) = 40(0.833)^t</m>. The percent growth rate is <m>0.833 - 1 = -0.167 = -16.7\%</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Additional Observations and Examples</title>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>P(t)</m> be the population of a village, in the number of people, <m>t</m> years after the village was founded. The population that was <m>250</m> people initially triples every <m>15</m> years.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find a formula for <m>P(t)</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Write <m>P(t)</m> in the form <m>P(t) = A \cdot b^t</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                By letting <m>P(t) = 250 \cdot 3^t</m>, the population is multiplied by the factor of <m>3</m> every year.
+                                This is not correct! To have the population multiplied by <m>3</m> every <m>15</m> years, we should instead use
+                                <md>
+                                    P(t) = 250 \cdot 3^{\frac{t}{15}}.
+                                </md>
+                                Observe that <m>P(15) = 250 \cdot 3^{15/15} = 250 \cdot 3 = 750</m>, <m>P(30) = 250 \cdot 3^{30/15} = 250 \cdot 3^2 = 750 \cdot 3 = 2250</m>, and so on.
+                                This indicates that the population triples every <m>15</m> years, as desired.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We can rewrite <m>P(t)</m> as
+                                <md>
+                                    P(t) = 250 \cdot 3^{t/15} = 250 \cdot (3^{1/15})^t.
+                                </md>
+                                Or, by using <m>3^{1/15} \approx 1.076</m>, then
+                                <md>
+                                    P(t) = 250 \cdot 1.076^t.
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            The previous example gives insight into the following result.
+        </p>
+
+        <theorem>
+            <statement>
+                <p>
+                    For an exponential function of the form
+                    <md>
+                        f(t) = A \cdot c^{t / T},
+                    </md>
+                    then <m>c</m> is the factor by which the quantity increases or decreases every <m>T</m> units of time.
+                </p>
+            </statement>
+        </theorem>
+
+        <example>
+            <statement>
+                <p>
+                    Find a formula <m>V(t) = A \cdot b^t</m> for the value of an investment initially worth <m>1500</m> that grows <m>12\%</m> every <m>6</m> years.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    A quantity grows by <m>12\%</m> when it is multiplied by the factor of <m>1.12</m>. Hence, <m>V(t)</m> is multiplied by <m>1.12</m> every <m>6</m> years.
+                    By the previous result,
+                    <md>
+                        V(t) = 1500 \cdot 1.12^{t / 6}.
+                    </md>
+                    To get <m>V(t)</m> in the form <m>V(t) = A \cdot b^t</m>, note that:
+                    <md>
+                        V(t) = 1500 \cdot 1.12^{t / 6} = 1500 \cdot (1.12^{1/6})^t = 1500(1.0191)^t.
+                    </md>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <xi:include href="exercises/ex_5_4.ptx"/>
 
 </section>

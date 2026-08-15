@@ -1,38 +1,667 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_5_1">
+    <title>Exponential Functions: Practical Meaning</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Exponential Functions: Practical Meaning</title>
+        <ol>
+            <li>
+                <p>
+                    Objective 1
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Objective 2
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Objective 3
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            Linear functions <m>y = f(t) = mt + b</m>, which you studied in Chapter 2, change by a constant <alert>amount</alert> <m>m</m> per unit change in <m>t</m>.
+            Exponential functions change by a constant <alert>factor</alert>.
+        </p>
+
+        <example xml:id="example-ch5-savings">
+            <statement>
+                <p>
+                    You deposit <m>\$1500</m> into a savings account that pays <m>5\%</m> interest annually. Let <m>B = B(t)</m> be your balance after <m>t</m> years.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                What are <m>B(0)</m>, <m>B(1)</m>, <m>B(2)</m>, and <m>B(3)</m>?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Find a formula for the function <m>B(t)</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                What is your balance after <m>10</m> years?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Your initial deposit was made at time <m>t = 0</m>, so <m>B(0)=1500</m> is the amount of the initial deposit.
+                            </p>
+
+                            <p>
+                                After <m>1</m> year, the bank adds <m>5\%</m> interest on your initial deposit <m>B(0)</m> to your balance. Since <m>5\%</m> of <m>B(0)</m> can be calculated by computing <m>0.05 \cdot B(0)</m>, your balance after <m>1</m> year is
+                                <md>
+                                    B(1) = B(0) + 0.05 \cdot B(0) = B(0) \left( 1 + 0.05 \right) = B(0) \cdot 1.05.
+                                </md>
+                                Since <m>B(0) = 1500</m>,
+                                <md>
+                                    B(1) = B(0) \cdot 1.05 = 1500 \cdot 1.05 = 1575.
+                                </md>
+                                This means that during the first year, your savings account earned <m>\$75</m> in interest (<m>5\%</m> of <m>1500</m>).
+                            </p>
+
+                            <p>
+                                At the end of the second year, the bank will add <m>5\%</m> of <m>1575</m> to your account<mdash/>the interest from the first year is now earning interest, too!
+                                Equivalently, the bank will multiply <m>B(1)</m> by <m>1.05</m>. Hence:
+                                <md>
+                                    B(2) = B(1) \cdot 1.05 = 1575 \cdot 1.05 = 1653.75.
+                                </md>
+                            </p>
+
+                            <p>
+                                Notice that <m>1653.75 - 1575 = 78.75</m>. So during the second year your account earned <m>\$78.75</m> in interest, which is <m>5\%</m> of <m>1575</m>.
+                            </p>
+
+                            <p>
+                                The amount of money by which your balance increases each year is not constant; but the factor by which it increases is always <m>1.05</m>, which corresponds to a <m>5\%</m> increase. To see a clear pattern, observe that since <m>B(1) = B(0) \cdot 1.05</m>:
+                                <md>
+                                    B(2) = B(1) \cdot 1.05 = (B(0) \cdot 1.05) \cdot 1.05 = B(0) \cdot 1.05^2.
+                                </md>
+                                Similarly:
+                                <md>
+                                    B(3) = B(2) \cdot 1.05 = (B(0) \cdot 1.05^2) \cdot 1.05 = B(0) \cdot 1.05^3.
+                                </md>
+                            </p>
+
+                            <p>
+                                Substituting <m>B(0) = 1500</m>, we get <m>B(3) = 1500 \cdot 1.05^3 \approx 1736.44</m>. Your balance after <m>3</m> years is <m>\$1736.44</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Each year your current balance is multiplied by the factor <m>1.05</m>. After <m>t</m> years, your initial balance <m>B(0)</m> will be multiplied <m>t</m> times by <m>1.05</m>:
+                                <md>
+                                    B(t) = B(0) \cdot 1.05^t = 1500 \cdot 1.05^t.
+                                </md>
+                                So <m>B(t) = 1500 \cdot 1.05^t</m> gives your balance after <m>t</m> years.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Using the latter formula, we calculate <m>B(10) = 1500 \cdot 1.05^{10} \approx 2443.34</m>.
+                                Your balance after <m>10</m> years is <m>\$2443.34</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            A function of the form <m>B(t) = 1500 \cdot 1.05^t</m>, where the independent variable <m>t</m> is in the exponent, is called an <alert>exponential function</alert>.
+        </p>
+
+        <definition>
+            <title>Exponential Function</title>
+
+            <statement>
+                <p>
+                    Let <m>A</m> and <m>b</m> be given constants with <m>A \gt 0</m>, <m>b \gt 0</m>, and <m>b \neq 1</m>. Then the function:
+                    <md>
+                        f(t) = A \cdot b^t
+                    </md>
+                    is called an <term>exponential function</term> with the base <m>b</m> (also called the <term>growth factor</term>) and initial value <m>A</m>.
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            The function <m>B(t) = 1500 \cdot 1.05^t</m> of <xref ref="example-ch5-savings"/> is an exponential function with the base<mdash/>or equivalently growth factor<mdash/><m>b = 1.05</m> and initial value <m>A = 1500</m>.
+        </p>
+
+        <p>
+            Notice that for any exponential function <m>f(t) = A \cdot b^t</m>,
+            <md>
+                f(0) = A \cdot b^0 = A
+            </md>
+            as <m>b^0 = 1</m> for any <m>b</m>. This means <m>A</m> is always the value of an exponential function at <m>0</m>, hence the name <q>initial value</q>.
+        </p>
+
+        <p>
+            Exponential functions are used very often to model real-life processes of exponential growth and exponential decay.
         </p>
     </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>Exponential Growth</title>
 
+        <p>
+            If the base (growth factor) <m>b</m> is greater than <m>1</m>, the exponential function <m>f(t) = A \cdot b^t</m> is increasing. For every unit change in <m>t</m>, the current value of the function is multiplied by the factor <m>b</m>, so the value increases.
+        </p>
 
+        <p>
+            This is the case for the function <m>B(t) = 1500 \cdot 1.05^t</m> in <xref ref="example-ch5-savings"/> since <m>b = 1.05 \gt 1</m>; the growth of your savings account balance is exponential.
+        </p>
 
-<xi:include href="exercises/ex_5_1.ptx"/>
+        <p>
+            Whenever <m>b</m> is greater than <m>1</m>, then for some positive number <m>r</m> we can write
+            <md>
+                b = 1 + r.
+            </md>
+        </p>
+
+        <p>
+            The constant <m>r</m>, when expressed as a percentage, is called the <alert>percent growth rate</alert>. For <m>B(t) = 1500 \cdot 1.05^t</m>, since <m>1.05 = 1 + 0.05</m>, the percent growth rate is <m>r = 0.05</m>, or <m>r = 5\%</m>: the percentage of the current balance that is added to your account every year.
+        </p>
+
+        <p>
+            Exponential functions are often used to model population growth for populations: human populations, animal populations, or populations of bacteria or insects in laboratory experiments.
+        </p>
+
+        <p>
+            Bacteria, which are one-cell organisms, reproduce by each cell dividing into two daughter cells with a frequency that depends on the kind of bacteria. Such a population grows slowly at first when the population consists of a small number of bacteria, and faster and faster with a larger and larger number of bacteria ready to divide. It is reasonable to expect that the population will grow not by a constant <em>number</em> of bacteria per unit of time but by a constant <em>percentage</em> of its current size.
+        </p>
+
+        <p>
+            In other words, we expect the population to grow exponentially.
+        </p>
+
+        <example xml:id="example-ch5-ecoli">
+            <statement>
+                <p>
+                    A population of Escherichia coli (E. coli) bacteria in nutrient-rich laboratory conditions grows by 3.53 percent per minute<fn>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/, accessed: 6/26/20</fn>. Let <m>P = f(t)</m> be the number of bacteria <m>t</m> minutes after the experiment began and suppose that the at <m>t = 0</m>, there are <m>2000</m> bacteria.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                What is the percent growth rate? What is the growth factor? Write a formula for <m>f(t)</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                How many bacteria are there at <m>t = 20</m>? At <m>t = 40</m>? At <m>t = 60</m>?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Since the population increases by a constant percent, <m>f(t)</m> is an exponential function: <m>f(t) = A \cdot b^t</m>. The initial amount is <m>A=2000</m>.
+                                Every minute the population increases by <m>3.53\%</m> of its current size, so the percent growth rate is <m>r = 3.53\%</m> or equivalently <m>r = 0.0353</m>. The growth factor is <m>b = 1 + r = 1 + 0.0353 = 1.0353</m>. Hence:
+                                <md>
+                                    P = f(t) = 2000 \cdot 1.0353^t.
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We use the formula obtained in (a) and calculate:
+                                <md>
+                                    <mrow>f(20) \amp =  2000 \cdot 1.0353^{20} \approx 4002.7</mrow>
+                                    <mrow>f(40) \amp =  2000 \cdot 1.0353^{40} \approx 8010.8</mrow>
+                                    <mrow>f(60) \amp =  2000 \cdot 1.0353^{60} \approx 16032.6</mrow>
+                                </md>
+                            </p>
+
+                            <p>
+                                You may notice that the E. coli population approximately doubles during the first <m>20</m> minutes, then doubles again during the next <m>20</m> minutes, and again after <m>20</m> more minutes. This is not a coincidence. Processes of exponential growth have what we call a <alert>doubling time</alert>; that is, the time needed for the quantity to double. We will cover this in depth in Section 5.3.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Exponential Decay</title>
+
+        <p>
+            If the base <m>b</m> of an exponential function <m>f(t) = A \cdot b^t</m> is less than <m>1</m>, multiplying by <m>b</m> decreases the value; hence the exponential function is decreasing.
+            Commonly, <m>b</m> is called the <q>growth factor</q> whether <m>b \gt 1</m> or <m>b \lt 1</m>, even though for <m>b \lt 1</m> there is decay rather than growth. The base <m>b</m> can still be written as:
+            <md>
+                b = 1 + r
+            </md>
+            for some number <m>r</m>. However, when <m>b \lt 1</m>, the number <m>r</m> is negative. We still call <m>r</m> the <q>percent growth rate</q>. This terminology is counterintuitive, although one can argue that a negative growth rate means the quantity is exhibiting the opposite of growth<mdash/>that is, it is exhibiting decay.
+        </p>
+
+        <p>
+            Many real-life processes are modeled by decaying exponential functions, including elimination of a drug from the body and processes of radioactive decay.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    The common antianxiety medication Diazepam is eliminated from the body at a daily rate of <m>26\%</m>. Suppose that a patient takes a one-time dose of <m>10</m> mg of Diazepam. Let <m>D = D(t)</m> be the amount of Diazepam left in his bloodstream <m>t</m> days after the dose. Find a formula for <m>D(t)</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    The initial amount is <m>D(0) = 10</m>. During the first day, <m>26\%</m> of the initial dose is eliminated. Hence:
+                    <md>
+                        D(1) = D(0) - 0.26 \cdot D(0) = D(0) (1 - 0.26) = D(0) (1 + (-0.26)).
+                    </md>
+                    During the second day, <m>26\%</m> of <m>D(1)</m> is eliminated:
+                    <md>
+                        D(2) = D(1) - 0.26 \cdot D(1) = D(1) (1 + (-0.26)) = D(0) (1 + (-0.26))^2
+                    </md>
+                    and so on. Each next day we multiply the dose from the day before by <m>1 + (-0.26)</m>. The amount left after <m>t</m> days is:
+                    <md>
+                        D(t) = D(0) (1 + (-0.26))^t.
+                    </md>
+                    Hence, <m>D(t)</m> is an exponential function. The growth factor is
+                    <md>
+                        b = 1 + (-0.26) = 0.74,
+                    </md>
+                    the daily percent growth rate is <m>r = -0.26</m>, and the initial amount is <m>A = D(0) = 10</m>. The final version of the formula is:
+                    <md>
+                        D(t) = 10 \cdot 0.74^t.
+                    </md>
+                    Every day <m>26\%</m> of the amount from the day before gets eliminated, so <m>74\%</m> of the amount from the day before stays in the body.
+                </p>
+
+                <p>
+                    The growth factor <m>0.74</m> is less than <m>1</m> and the daily percent growth rate of <m>-26\%</m> is negative since the amount is decaying. Often we say that the daily <alert>percent decay rate</alert> is <m>26\%</m>.
+                </p>
+
+                <p>
+                    Notice that after <m>2</m> days, the patient still has <m>D(2) = 10 \cdot 0.74^2 \approx 5.48</m> mg in his system<mdash/>more than a half of the initial dose. Such a slow elimination rate causes a medication buildup if a daily dose is taken.
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            For the sake of convenience, let's summarize the relationship between the growth factor <m>b</m> and the percent growth rate <m>r</m>.
+        </p>
+
+        <theorem>
+            <statement>
+                <p>
+                    Let an exponential function <m>f(t) = A \cdot b^t</m> be given (increasing or decreasing). Then:
+                </p>
+
+                <p>
+                    <ul>
+                        <li>
+                            <p>
+                                <m>b</m> is called the <q>growth factor</q>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The constant <m>r</m> such that <m>b = 1 + r</m> is called the <q>percent growth rate</q> or simply the <q>growth rate</q>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Given <m>r</m>, we calculate <m>b</m> by taking <m>b = 1 + r</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Given <m>b</m>, we calculate <m>r</m> by taking <m>r = b - 1</m>.
+                            </p>
+                        </li>
+                    </ul>
+                </p>
+            </statement>
+        </theorem>
+
+        <p>
+            Another common real-life application of exponential functions is in the study of radioactivity. All radioactive isotopes decay and they decay exponentially. Some decay extremely slowly and some decay very quickly. Carbon-14, a radioactive isotope of Carbon used in carbon dating, decays so slowly that it takes thousands of years for half of an initial amount to decay. Iodine-131 used in the treatment of thyroid cancer, decays in a matter of days.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    The daily percent decay rate of Iodine-131 is <m>8.3\%</m>. Let <m>I = I(t)</m> be the amount of Iodine-131, in <m>\mu</m>g, left after <m>t</m> days if the initial amount is 10<m>\mu</m>g.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find a formula for <m>I(t)</m>. What is the growth factor? What is the percent growth rate?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Estimate how long it will take for half of initial amount to decay.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The daily percent decay rate is <m>8.3\%</m>. Hence, <m>r = -0.083</m> and the growth factor is <m>b = 1 + (-0.083) = 0.917</m>. The initial amount is 10<m>\mu</m>g. Hence:
+                                <md>
+                                    I(t) = 10 \cdot 0.917^t.
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We are looking for <m>t</m> such that <m>I(t) = 5</m>. At this point, we don't have tools other than trial and error, so let's calculate a few values. Since <m>I(10) = 10 \cdot 0.917^{10} \approx 4.2</m>, then <m>10</m> days is a bit too long. And, <m>I(7) = 10 \cdot 0.917^{7} \approx 5.45</m> so <m>7</m> days is too short. At <m>8</m> days, we have <m>I(8) = 10 \cdot 0.917^{8} \approx 4.9998</m> which is very close. It will take about <m>8</m> days for half of the initial amount to decay.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            <alert>Note:</alert> From now on, we will often use the more common notation <m>I(t) = 10(0.917)^t</m> as well as the notation <m>I(t) = 10 \cdot 0.917^t</m>.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    The following exponential functions describe populations of four towns <m>t</m> years after January 1, 2000.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>P(t) = 700(1.15)^t</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>A(t) = 10000(0.89)^t</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>Q(t) = 12000(0.92)^t</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>S(t) = 1500(1.021)^t</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+
+                <p>
+                    For each town, identify the initial population at <m>t = 0</m>, the growth factor, and the annual percent growth rate. Also determine if the population of each town is increasing or decreasing.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The initial population is <m>700</m> people, since <m>P(0) = 700(1.15)^0 = 700</m>, and the growth factor is <m>1.15</m>. The percent growth rate is then <m>r = 1.15 - 1 = 0.15 = 15\%</m>. Since the growth factor of <m>1.15</m> is greater than <m>1</m> and the growth rate is positive, the population of the town is <em>increasing</em>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The initial population is <m>10000</m> people and the growth factor is <m>0.89</m>, so the percent growth rate is <m>r = 0.89 - 1 = -0.11 = -11\%</m>. In other words, the decay rate is <m>11\%</m> which implies the population of the town is <em>decreasing</em>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The initial population is <m>12000</m> people and the growth factor is <m>0.92</m>, therefore the percent growth rate is <m>r = 0.92 - 1 = -0.08 = -8\%</m>. In other words, the decay rate is <m>8\%</m>. The population of the town is <em>decreasing</em>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The initial population is <m>1500</m> people and the growth factor is <m>1.021</m>, meaning the percent growth rate is <m>2.1\%</m>. The growth factor of <m>1.021</m> is greater than <m>1</m> and the growth rate is positive so the population of the town is <em>increasing</em>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>V(t)</m> be the value, in dollars, of an antique lamp <m>t</m> years after its purchase. The lamp was purchased for <m>\$5000</m> and its value <m>V(t)</m> increases by <m>\$400</m> each year.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find a formula for the function <m>V(t)</m>. What kind of function is it?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                What is the rate of increase of <m>V(t)</m> in dollars per year?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                What is the value of the lamp <m>10</m> years after its purchase?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The value <m>V(t)</m> increases by a fixed amount of dollars each year. Hence, <m>V(t)</m> is a linear function:
+                                <md>
+                                    V(t) = 5000 + 400t
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The slope <m>m = 400</m> represents the constant rate of increase of the value <m>V(t)</m> in dollars per year.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The value after <m>10</m> years is <m>V(10) = 5000 + 400 \cdot 10 = 9000</m> dollars.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Let <m>V(t)</m> be the value, in dollars, of an antique lamp, <m>t</m> years after its purchase. The lamp was purchased for <m>\$5000</m> and its value <m>V(t)</m> increases by <m>12\%</m> each year.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find a formula for the function <m>V(t)</m>. What kind of function is it?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                What is the growth factor and the annual percent growth rate of <m>V(t)</m>?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                What is the value of the lamp <m>10</m> years after its purchase?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                This time the value of the lamp is increasing not by a constant amount each year but by a constant percentage of the current value each year. An increase of <m>12\%</m> means adding <m>12\%</m> of <m>V(t)</m> to itself; that is, multiplying <m>V(t)</m> by a constant factor <m>1.12</m> each year. Hence, the function <m>V(t)</m> is exponential and equal to:
+                                <md>
+                                    V(t) = 5000 (1.12)^t
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The growth factor is <m>1.12</m>; the annual percent growth rate is <m>0.12</m> or <m>12\%</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The value after <m>10</m> years is <m>V(10) = 5000 (1.12)^{10} \approx 15529.24</m> dollars.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Is a given function <m>Q(t)</m> exponential? If yes, rewrite <m>Q(t)</m> in the form <m>Q(t) = A \cdot b^t</m>. Identify <m>A</m> and <m>b</m>.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>Q(t) = 50 (2)^{\frac{t}{6}}</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>Q(t) = 550 (t^2)^{\frac{1}{3}}</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>Q(t) = (\sqrt{2})^{2t}</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>Q(t) = 12000 \left( \frac{1}{8} \right)^{\frac{t}{3}}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                By utilizing appropriate exponent rules, we have <m>Q(t) = 50 (2)^{\frac{t}{6}} = 50 \left( 2^{\frac{1}{6}} \right)^t = 50 (\sqrt[6]{2})^t</m>. Hence, <m>Q(t)</m> is exponential with <m>A = 50</m> and <m>b = \sqrt[6]{2}</m>. Since <m>\sqrt[6]{2} \approx 1.1225</m>, in an applied problem we could write <m>Q(t) = 50 (1.1225)^t</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We can simplify <m>Q(t)</m> as <m>Q(t) = 550 t^{\frac{2}{3}}</m>, so <m>Q(t)</m> is a power function and therefore not an exponential function. Recall that the independent variable is the <em>base</em> in a power function whereas it is the <em>exponent</em> in an exponential function.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>Q(t) = ((\sqrt{2})^2)^t = 2^t</m>. The function <m>Q(t)</m> is exponential with <m>A = 1</m> and <m>b = 2</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Simplifying we get: <m>Q(t) = 12000 \left( \left( \frac{1}{8} \right)^{1/3} \right)^t = 12000 \left( \frac{1}{2} \right)^t</m>. The function <m>Q(t)</m> is exponential with <m>A = 12000</m> and <m>b = \dfrac{1}{2}</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <xi:include href="exercises/ex_5_1.ptx"/>
 
 </section>
