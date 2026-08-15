@@ -626,7 +626,7 @@
 
             <solution>
                 <p>
-                    Note that neither <m>f(x)</m> and <m>g(x)</m> are assigned any specific practical applied meaning.
+                    Note that neither <m>f(x)</m> nor <m>g(x)</m> are assigned any specific practical applied meaning.
                     This means that the domain of each function will be all inputs <m>x</m> for which the output is defined.
                 </p>
 

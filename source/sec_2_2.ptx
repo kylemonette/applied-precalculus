@@ -39,6 +39,7 @@
 
         <theorem>
             <title>Point-Slope Form</title>
+            <idx><h>point-slope form</h></idx> 
 
             <statement>
                 <p>
@@ -155,7 +156,7 @@
                                 <md>
                                     y-3=\frac{5}{2}x-\frac{5}{2}.
                                 </md>
-                                Adding 3 to both sides (which can be rewritten as <m>\dfrac{6}{2}</m> to obtain a common denominator) to results in the slope-intercept form
+                                Adding 3 to both sides (which can be rewritten as <m>\dfrac{6}{2}</m> to obtain a common denominator) results in the slope-intercept form
                                 <md>
                                     y=\frac{5}{2}x+\frac{1}{2}.
                                 </md>
@@ -178,10 +179,10 @@
                                 </md>
                             </p>
                             <aside>
-<p>
-Note that <m>y=1.5x</m> is in the form <m>y=mx+b</m> with <m>b=0</m>. This makes sense, as the line passes through the origin <m>(0,0)</m>, meaning that the <m>y</m>-intercept of the line is <m>0</m>.
-</p>
-</aside>
+                                <p>
+                                    Note that <m>y=1.5x</m> is in the form <m>y=mx+b</m> with <m>b=0</m>. This makes sense, as the line passes through the origin <m>(0,0)</m>, meaning that the <m>y</m>-intercept of the line is <m>0</m>.
+                                </p>
+                            </aside>
                         </li>
                     </ol>
                 </p>
@@ -231,7 +232,7 @@ Note that <m>y=1.5x</m> is in the form <m>y=mx+b</m> with <m>b=0</m>. This makes
 
         <definition>
             <title>Linear Equation in One Variable</title>
-
+            <idx><h>linear equations</h></idx> 
             <statement>
                 <p>
                     An equation that can be written in the form
@@ -344,8 +345,7 @@ Note that <m>y=1.5x</m> is in the form <m>y=mx+b</m> with <m>b=0</m>. This makes
                             </p>
 
                             <p>
-                                It takes Mr.
-                                Bell <m>5.75</m> hours total to reach Reno.
+                                It takes Mr. Bell <m>5.75</m> hours total to reach Reno.
                                 Alternatively, we could translate <m>5.75</m> hours into <m>5</m> hours and <m>45</m> minutes.
                             </p>
                         </li>
@@ -759,7 +759,7 @@ xlabel=\(t\text{ (years)}\), ylabel=\(V\text{ (dollars)}\),
                             </p>
 
                             <p>
-                                Dividing both sides by 5 results in the <alert>single solution</alert> <m>z=\frac{18}{5}=3.6</m>.
+                                Dividing both sides by <m>5</m> results in the <alert>single solution</alert> <m>z=\frac{18}{5}=3.6</m>.
                             </p>
                         </li>
 
@@ -777,7 +777,7 @@ xlabel=\(t\text{ (years)}\), ylabel=\(V\text{ (dollars)}\),
                             </p>
 
                             <p>
-                                We end up with a statement that is never true; 4 is not the same value as <m>-4</m>.
+                                We end up with a statement that is never true; <m>4</m> is not the same value as <m>-4</m>.
                                 The equation has <alert>no solution</alert>.
                             </p>
                         </li>

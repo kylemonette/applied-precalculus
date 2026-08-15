@@ -149,7 +149,7 @@ trig format = rad,
 <ul>
 <li>
 <p>
-<xref ref="fig-ex_8_1_1"/>: perodic with amplitude <m>\approx 1</m>; midline <m>y=0</m>; period <m>\approx 3</m>.
+<xref ref="fig-ex_8_1_1"/>: periodic with amplitude <m>\approx 1</m>; midline <m>y=0</m>; period <m>\approx 3</m>.
 </p>
 </li>
 
@@ -161,7 +161,7 @@ trig format = rad,
 
 <li>
     <p>
-        <xref ref="fig-ex_8_1_3"/>: perodic with amplitude <m>\approx 3.8</m>; midline <m>y=0</m>; period <m>\approx 6.3</m>;
+        <xref ref="fig-ex_8_1_3"/>: periodic with amplitude <m>\approx 3.8</m>; midline <m>y=0</m>; period <m>\approx 6.3</m>;
     </p>
 </li>
 

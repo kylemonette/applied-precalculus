@@ -91,6 +91,7 @@ xlabel=\(x\), ylabel=\(y\)
         <definition>
             <title>Graph of a Function</title>
 
+            <idx><h>function</h><h>graph of</h></idx>
             <statement>
                 <p>
                     The graph of a function <m>y=f(x)</m> is the collection of all points <m>(x,y)</m> in the <m>xy</m>-plane for which <m>y=f(x)</m>.
@@ -247,7 +248,7 @@ xlabel=\(x\), ylabel=\(y\)
             The following examples illustrate that a great deal of information can be extracted from the graph of a function.
         </p>
 
-        <example>
+        <example xml:id="example-ch1-nicotine-graph">
             <statement>
                 <p>
                     The amount of nicotine in a person's bloodstream, <m>N=f(t)</m>, in milligrams, is a function of the time <m>t</m>, in hours, that has passed since the person smoked a single cigarette.
@@ -369,13 +370,22 @@ xlabel=\(x\), ylabel=\(y\)
 
         <p>
             <ul>
-                <li>A function is increasing if its graph <alert>climbs</alert> as the independent variable increases; that is, as we move from left to right.</li>
-                <li>A function is decreasing if its graph <alert>falls</alert> as the independent variable increases; that is, as we move from left to right.</li>
+                <li>
+                    <p>
+                        A function is increasing if its graph <alert>climbs</alert> as the independent variable increases; that is, as we move from left to right.
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        A function is decreasing if its graph <alert>falls</alert> as the independent variable increases; that is, as we move from left to right.
+                    </p>
+                </li>
             </ul>
         </p>
 
         <p>
-            The function <m>N=f(t)</m> in <xref ref="example-ch1-plot-points"/> is decreasing <mdash/> its graph is falling as <m>t</m> increases.
+            The function <m>N=f(t)</m> in <xref ref="example-ch1-nicotine-graph"/> is decreasing <mdash/> its graph is falling as <m>t</m> increases.
             The amount of nicotine decreases as the amount of time after smoking a cigarette increases.
             In <xref ref="example-ch1-driving"/> the distance to the destination <m>d=g(t)</m> decreases as the time <m>t</m> spent driving increases.
             The function in <xref ref="example-ch1-plot-points"/> is neither increasing nor decreasing in its domain.
@@ -397,8 +407,8 @@ xlabel=\(x\), ylabel=\(y\)
             <statement>
                 <p>
                     <ul>
-                        <li>A function <m>f(x)</m> is increasing on an interval <m>I</m> if the values <m>f(x)</m> increase as <m>x</m> increases along <m>I</m>.</li>
-                        <li>A function <m>f(x)</m> is decreasing on an interval <m>I</m> if the values <m>f(x)</m> decrease as <m>x</m> increases along <m>I</m>.</li>
+                        <li><idx><h>function</h><h>increasing</h></idx> A function <m>f(x)</m> is increasing on an interval <m>I</m> if the values <m>f(x)</m> increase as <m>x</m> increases along <m>I</m>.</li>
+                        <li><idx><h>function</h><h>decreasing</h></idx> A function <m>f(x)</m> is decreasing on an interval <m>I</m> if the values <m>f(x)</m> decrease as <m>x</m> increases along <m>I</m>.</li>
                     </ul>
                 </p>
             </statement>
@@ -441,7 +451,7 @@ xlabel=\(x\), ylabel=\(y\)
 
                 <p>
                     The graph of <m>f(x)</m> is falling and thus <m>f(x)</m> is decreasing on the interval <m>-2 \lt x \lt 2</m>.
-                    In interval notation, we would write that the function is decreasing on <m>(-2,4)</m>.
+                    In interval notation, we would write that the function is decreasing on <m>(-2,2)</m>.
                 </p>
                 <aside>
                     <p>
@@ -469,6 +479,7 @@ xlabel=\(x\), ylabel=\(y\)
 
         <theorem>
             <title>Vertical Line Test</title>
+            <idx><h>vertical line test</h></idx> 
 
             <statement>
                 <p>

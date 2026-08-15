@@ -34,16 +34,16 @@
     <introduction>
         <definition>
             <title>Linear Function</title>
-
+            <idx><h>function</h><h>linear</h></idx> 
             <statement>
                 <p>
-                    A function <m>y=f(x)</m> is called a <term>linear function</term> if it can be written in the form
+                    A function <m>y=f(x)</m> is called a <alert>linear function</alert> if it can be written in the form
                     <md>
                         f(x)=mx+b
                     </md>
                     where <m>m</m> and <m>b</m> are constants.
-                    The constant <m>m</m> is called the <term>slope</term> of the function <m>y=f(x)</m>.
-                    The constant <m>b</m> is the <term>initial value</term> of <m>f(x)</m>; it is also the vertical intercept of the function as <m>f(0)=m\cdot 0+b=b</m>.
+                    The constant <m>m</m> is called the <alert>slope</alert> of the function <m>y=f(x)</m>.
+                    The constant <m>b</m> is the <alert>initial value</alert> of <m>f(x)</m>; it is also the vertical intercept of the function as <m>f(0)=m\cdot 0+b=b</m>.
                 </p>
             </statement>
         </definition>
@@ -381,7 +381,7 @@ x post scale = 1.2
         <example>
             <statement>
                 <p>
-                    Consider the function <m>W(t)</m> from <xref ref="example-ch2-water-leak"/>, which gives the amount of water in a container, <m>W(t)</m>, in gallons, <m>t</m> hours after the container sprung a leak:
+                    Consider the function <m>W(t)</m> from <xref ref="example-ch2-water-leak"/>, which gives the amount of water in a container, <m>W(t)</m>, in gallons, <m>t</m> hours after the container sprang a leak:
                     <md>
                         W(t)=-5t+50.
                     </md>
@@ -445,6 +445,7 @@ xlabel=\(t\text{ (hours)}\), ylabel=\(W\text{ (gallons)}\),
 
         <theorem>
             <title>Slope Formula</title>
+            <idx><h>slope formula</h></idx> 
 
             <statement>
                 <p>
@@ -723,6 +724,7 @@ xlabel=\(x\), ylabel=\(y\)
 
         <theorem>
             <title>Constant Functions and Horizontal Lines</title>
+            <idx><h>function</h><h>constant</h></idx> 
 
             <statement>
                 <p>
@@ -790,7 +792,7 @@ xlabel=\(x\), ylabel=\(y\)
 
         <theorem>
             <title>Vertical Lines</title>
-
+            <idx><h>vertical lines</h></idx> 
             <statement>
                 <p>
                     The vertical line with horizontal intercept <m>k</m> has equation given by

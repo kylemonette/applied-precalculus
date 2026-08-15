@@ -432,7 +432,7 @@ Here, we can see that each time <m>x</m> increases by <m>\Delta x=3</m>, the cor
         In the straight-line depreciation method, the fixed annual depreciation amount is calculated by taking the difference between the purchase cost and the salvage value and dividing by the number of years of useful life of the asset.
         For the computer system from <xref ref="example-ch2-depreciation"/>, this calculation results in
         <md>
-            \frac{\text{purchase cost} - \text{ salvage cost}}{\text{years of useful life}}=\frac{20300-5000}{5}=3060.
+            \frac{\text{purchase cost} - \text{ salvage value}}{\text{years of useful life}}=\frac{20300-5000}{5}=3060.
         </md>
     </p>
 

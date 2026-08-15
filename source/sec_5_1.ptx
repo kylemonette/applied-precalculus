@@ -148,7 +148,7 @@
                     <md>
                         f(t) = A \cdot b^t
                     </md>
-                    is called an <term>exponential function</term> with the base <m>b</m> (also called the <term>growth factor</term>) and initial value <m>A</m>.
+                    is called an <alert>exponential function</alert> with the base <m>b</m> (also called the <alert>growth factor</alert>) and initial value <m>A</m>.
                 </p>
             </statement>
         </definition>
@@ -207,7 +207,7 @@
         <example xml:id="example-ch5-ecoli">
             <statement>
                 <p>
-                    A population of Escherichia coli (E. coli) bacteria in nutrient-rich laboratory conditions grows by 3.53 percent per minute<fn>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/, accessed: 6/26/20</fn>. Let <m>P = f(t)</m> be the number of bacteria <m>t</m> minutes after the experiment began and suppose that the at <m>t = 0</m>, there are <m>2000</m> bacteria.
+                    A population of Escherichia coli (E. coli) bacteria in nutrient-rich laboratory conditions grows by 3.53 percent per minute<fn>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/, accessed: 6/26/20</fn>. Let <m>P = f(t)</m> be the number of bacteria <m>t</m> minutes after the experiment began and suppose that at <m>t = 0</m>, there are <m>2000</m> bacteria.
                 </p>
 
                 <p>

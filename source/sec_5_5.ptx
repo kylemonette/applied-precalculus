@@ -137,7 +137,7 @@ legend pos=north west,
 
                     <li>
                         <p>
-                            The constant <m>k</m> is called the <term>continuous growth rate</term>.
+                            The constant <m>k</m> is called the <alert>continuous growth rate</alert>.
                         </p>
                     </li>
 
@@ -153,7 +153,7 @@ legend pos=north west,
 
     <p>
         <alert>Remark:</alert>
-        The constant <m>k</m> in the formula <m>Q(t) = A \cdot e^{k t}</m> is called the the <alert>continuous growth rate</alert> or, when expressed as a percent, the <alert>continuous percent growth rate</alert>.
+        The constant <m>k</m> in the formula <m>Q(t) = A \cdot e^{k t}</m> is called the <alert>continuous growth rate</alert> or, when expressed as a percent, the <alert>continuous percent growth rate</alert>.
         The relevance of this terminology will become more clear if you go on to study calculus.
     </p>
 

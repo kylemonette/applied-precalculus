@@ -95,7 +95,7 @@
                                     <li>
                                         <p>
                                             If <m>a \gt 0</m>, then <m>a</m> has two <m>n</m> th roots, one positive and one of the same magnitude but negative.
-                                            We denote the <term>positive</term> <m>n</m> th root as:
+                                            We denote the <alert>positive</alert> <m>n</m> th root as:
                                             <md>
                                                 \sqrt[n]{a}
                                             </md>
@@ -374,7 +374,7 @@
         <title>Powers with Fractional Exponents and Arbitrary Exponents</title>
 
         <p>
-            So far, we have defined powers <m>a^p</m> for all <term>integer</term> exponents <m>p</m>.
+            So far, we have defined powers <m>a^p</m> for all <alert>integer</alert> exponents <m>p</m>.
         </p>
 
         <p>
@@ -463,7 +463,7 @@
             <solution>
                 <p>
                     <ol>
-                        <li>By definition <m>4^{\frac{1}{2}} = \sqrt[2]{4} = \sqrt{4} = 2</m>. Note that <m>4^{\frac{1}{2}}</m> is the <term>positive</term> of the two square roots of <m>4</m> as is <m>\sqrt{4}</m>.</li>
+                        <li>By definition <m>4^{\frac{1}{2}} = \sqrt[2]{4} = \sqrt{4} = 2</m>. Note that <m>4^{\frac{1}{2}}</m> is the <alert>positive</alert> of the two square roots of <m>4</m> as is <m>\sqrt{4}</m>.</li>
                         <li><m>(-4)^{\frac{1}{2}} = \sqrt{-4}</m> is undefined. An even-order root of a negative number is undefined. Hence, <m>(-4)^{\frac{1}{2}}</m> is undefined.</li>
                         <li><m>27^{\frac{1}{3}} = \sqrt[3]{27} = 3</m>.</li>
                         <li><m>(-27)^{\frac{1}{3}} = \sqrt[3]{-27} = -3</m>.</li>
@@ -499,7 +499,7 @@
 
             <statement>
                 <p>
-                    Let <m>a</m>, <m>b</m> be given <term>positive</term> numbers, <m>p</m> and <m>r</m> be real numbers.
+                    Let <m>a</m>, <m>b</m> be given <alert>positive</alert> numbers, <m>p</m> and <m>r</m> be real numbers.
                     Then the following equalities hold:
                 </p>
 
@@ -568,17 +568,11 @@
                             <p>
                                 By definition of fractional powers and the properties above,
                                 <md>
-                                    5\sqrt{5}
-=
-5 \cdot 5^{\frac{1}{2}}
-\overset{
-                                    <xref ref="int-exps-prop2">
-                                        Property
-                                    </xref>
-                                    }{=}
-5^{1 + \frac{1}{2}}
-=
-5^{\frac{3}{2}}.
+                                    5\sqrt{5} = 5 \cdot 5^{\frac{1}{2}}
+                                    \overset{<xref ref="int-exps-prop3">Property</xref>}{=}
+                                    5^{1 + \frac{1}{2}}
+                                    =
+                                    5^{\frac{3}{2}}.
                                 </md>
                             </p>
                         </li>
@@ -590,9 +584,17 @@
                                     \frac{5\sqrt{5}}{25}
                                     =
                                     \frac{5 \cdot 5^{\frac{1}{2}}}{5^2}
-                                    \overset{<xref ref="int-exps-prop2">Property</xref>}{=}
+                                    \overset{
+                                    <xref ref="int-exps-prop3">
+                                        Property
+                                    </xref>
+                                    }{=}
                                     \frac{5^{\frac{3}{2}}}{5^2}
-                                    \overset{<xref ref="int-exps-prop4">Property</xref>}{=}
+                                    \overset{
+                                    <xref ref="int-exps-prop4">
+                                        Property
+                                    </xref>
+                                    }{=}
                                     5^{\frac{3}{2} - 2}
                                     =
                                     5^{-\frac{1}{2}}.
@@ -608,9 +610,17 @@
                                     \left( \frac{5}{\sqrt[3]{5}} \right)^2
                                     =
                                     \left( \frac{5}{5^{\frac{1}{3}}} \right)^2
-                                    \overset{<xref ref="int-exps-prop3"> Property</xref>}{=}
+                                    \overset{
+                                    <xref ref="int-exps-prop4">
+                                        Property
+                                    </xref>
+                                    }{=}
                                     \left( 5^{\frac{2}{3}} \right)^2
-                                    \overset{ <xref ref="int-exps-prop4">Property</xref>}{=}
+                                    \overset{
+                                    <xref ref="int-exps-prop5">
+                                        Property
+                                    </xref>
+                                    }{=}
                                     5^{\frac{2}{3} \cdot 2}
                                     =
                                     5^{\frac{4}{3}}.

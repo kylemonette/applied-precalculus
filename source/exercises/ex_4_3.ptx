@@ -501,7 +501,7 @@ xlabel={}, ylabel={},
 
 <solution>
 <p>
-A is <m>y=x^4</m>; B is <m>y=-x^4</m>; C is <m>y=\frac{1}{4}^4</m>.
+A is <m>y=x^4</m>; B is <m>y=-x^4</m>; C is <m>y=\frac{1}{4}x^4</m>.
 </p>
 </solution>
 </exercise>
@@ -509,7 +509,7 @@ A is <m>y=x^4</m>; B is <m>y=-x^4</m>; C is <m>y=\frac{1}{4}^4</m>.
 <exercise xml:id="exercise_4_3_15">
 <statement>
 <p>
-The area, <m>A</m>, of a unilateral triangle whose sides have length <m>a</m> is given by:
+The area, <m>A</m>, of an equilateral triangle whose sides have length <m>a</m> is given by:
 <md>
 A=\frac{\sqrt{3}}{4}a^2.
 </md>

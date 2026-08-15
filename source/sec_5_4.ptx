@@ -57,7 +57,7 @@
 
             <statement>
                 <p>
-                    Let <m>f(t) = A \cdot b^t</m>, <m>b \gt 1</m>, be an increasing exponential function. The time needed for the value <m>f(t)</m> to double is called the <term>doubling time</term> of the function <m>f</m>.
+                    Let <m>f(t) = A \cdot b^t</m>, <m>b \gt 1</m>, be an increasing exponential function. The time needed for the value <m>f(t)</m> to double is called the <alert>doubling time</alert> of the function <m>f</m>.
                 </p>
             </statement>
         </definition>
@@ -216,7 +216,7 @@
                             <p>
                                 The following gives the value of the investment after <m>10</m>, <m>20</m>, and <m>30</m> years:
                                 <md>
-                                    <mrow>V(10) \amp= 2000 \cdot 2^{10 / 10} = 4000 \cdot 2^1 = 4000</mrow>
+                                    <mrow>V(10) \amp= 2000 \cdot 2^{10 / 10} = 2000 \cdot 2^1 = 4000</mrow>
                                     <mrow>V(20) \amp= 2000 \cdot 2^{20 / 10} = 2000 \cdot 2^{2} = 8000</mrow>
                                     <mrow>V(30) \amp= 2000 \cdot 2^{30 / 10} = 2000 \cdot 2^{3} = 16000.</mrow>
                                 </md>
@@ -282,7 +282,7 @@
 
             <statement>
                 <p>
-                    Let <m>f(t) = A \cdot b^t</m>, <m>b \lt 1</m>, be a decreasing exponential function. The time needed for the value <m>f(t)</m> to be reduced by half is called the <term>half-life</term> of the function <m>f</m>.
+                    Let <m>f(t) = A \cdot b^t</m>, <m>b \lt 1</m>, be a decreasing exponential function. The time needed for the value <m>f(t)</m> to be reduced by half is called the <alert>half-life</alert> of the function <m>f</m>.
                 </p>
             </statement>
         </definition>
