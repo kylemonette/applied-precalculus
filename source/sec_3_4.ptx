@@ -129,11 +129,11 @@
                             <p>
                                 So the two solutions are
                                 <md>
-                                    t = \frac{2 - 2\sqrt{15}}{-4} = \frac{2}{-4} + \frac{2\sqrt{15}}{-4} = -\frac{1}{2} + \frac{\sqrt{15}}{2} \approx 1.4365
+                                    t = \frac{2 - 2\sqrt{15}}{-4} = \frac{2}{-4} - \frac{2\sqrt{15}}{-4} = -\frac{1}{2} + \frac{\sqrt{15}}{2} \approx 1.4365
                                 </md>
                                 and
                                 <md>
-                                    t = \frac{2 + 2\sqrt{15}}{-4} = \frac{2}{-4} - \frac{2\sqrt{15}}{4} = -\frac{1}{2} - \frac{\sqrt{15}}{2} \approx -2.4365.
+                                    t = \frac{2 + 2\sqrt{15}}{-4} = \frac{2}{-4} + \frac{2\sqrt{15}}{-4} = -\frac{1}{2} - \frac{\sqrt{15}}{2} \approx -2.4365.
                                 </md>
                             </p>
                         </li>
@@ -191,7 +191,7 @@
                 <p>
                     Simplifying, the two solutions are
                     <md>
-                        x = \frac{ 8 - 2\sqrt{10} }{ -4 } = \frac{8}{-4} + \frac{2\sqrt{10}}{-4} = -2 + \frac{ \sqrt{10} }{ 2 } \approx -0.4189
+                        x = \frac{ 8 - 2\sqrt{10} }{ -4 } = \frac{8}{-4} - \frac{2\sqrt{10}}{-4} = -2 + \frac{ \sqrt{10} }{ 2 } \approx -0.4189
                     </md>
                     and
                     <md>
@@ -316,7 +316,7 @@
                         <li>
                             <p>
                                 Here, <m>a = -2</m>, <m>b = -2</m>, and <m>c = 7</m>, so <m>D = (-2)^2 - 4 \cdot (-2) \cdot 7 = 60</m>.
-                                Since <m>D \gt; 0</m>, this quadratic equation has <alert>two distinct real solutions</alert>.
+                                Since <m>D \gt 0</m>, this quadratic equation has <alert>two distinct real solutions</alert>.
                                 We found these solutions in part (b) of <xref ref="exercise-ch3-quad-form"/>; they are <m>t = -\frac{1}{2} - \frac{ \sqrt{15} }{2 }</m> and <m>t = -\frac{1}{2} + \frac{ \sqrt{15} }{2 }</m>.
                             </p>
                         </li>

@@ -64,7 +64,7 @@ Inverses.
 
 <solution>
 <p>
-Not Inverses.
+Not inverses.
 </p>
 </solution>
 </exercise>
@@ -159,7 +159,7 @@ For each of the following, find the inverse of each function, if possible. If no
 <exercise xml:id="exercise_7_4_10">
 <statement>
 <p>
-<m>f(w)=5x^2</m>
+<m>f(w)=5w^2</m>
 </p>
 </statement>
 

@@ -41,7 +41,7 @@
 
             <statement>
                 <p>
-                    A function <m>y = f(x)</m> is called a <term>power function</term> if <m>f(x)</m> can be expressed in the form
+                    A function <m>y = f(x)</m> is called a <alert>power function</alert> if <m>f(x)</m> can be expressed in the form
                     <md>
                         f(x) = kx^p
                     </md>
@@ -52,8 +52,8 @@
         </definition>
 
         <p>
-            <term>Note:</term> When <m>y</m> depends on <m>x</m> according to the formula <m>y = kx^p</m>, we say that <m>y</m> is <term>directly proportional</term> (or proportional) to <m>x^p</m> with the coefficient of proportionality <m>k</m>.
-            If <m>\displaystyle y = \frac{k}{x^p}</m>, we say that <m>y</m> is <term>inversely proportional</term> to <m>x^p</m> with the coefficient of proportionality <m>k</m>.
+            <alert>Note:</alert> When <m>y</m> depends on <m>x</m> according to the formula <m>y = kx^p</m>, we say that <m>y</m> is <alert>directly proportional</alert> (or proportional) to <m>x^p</m> with the coefficient of proportionality <m>k</m>.
+            If <m>\displaystyle y = \frac{k}{x^p}</m>, we say that <m>y</m> is <alert>inversely proportional</alert> to <m>x^p</m> with the coefficient of proportionality <m>k</m>.
             So power functions express proportionality of the dependent variable to powers of the independent variable.
         </p>
 
@@ -148,7 +148,7 @@
                             <p>
                                 The function <m>r(x)</m> is not a power function.
                                 It cannot be rewritten as <m>r(x) = kx^p</m>, since <m>r(x)</m> is a sum of two power functions with differing exponents <mdash/> namely <m>2x^3</m> and <m>7x^2</m>.
-                                A function that is a sum of power functions with non-negative integer coefficients is called a <em>polynomial function</em>.
+                                A function that is a sum of power functions with non-negative integer exponents is called a <em>polynomial function</em>.
                             </p>
                         </li>
 
@@ -171,10 +171,10 @@
                                 In a power function, it is the other way around: the base is a variable and the exponent is constant.
                             </p>
                             <aside>
-<p>
-Functions like <m>l(x)</m> where the variable <m>x</m> is in the <em>exponent</em> is the topic of discussion in Chapter 5.
-</p>
-</aside>
+                                <p>
+                                    Functions like <m>l(x)</m> where the variable <m>x</m> is in the <em>exponent</em> is the topic of discussion in Chapter 5.
+                                </p>
+                            </aside>
                         </li>
                     </ol>
                 </p>
@@ -326,7 +326,7 @@ Functions like <m>l(x)</m> where the variable <m>x</m> is in the <em>exponent</e
         </p>
 
         <p>
-            <term>Even Positive Exponents</term>
+            <alert>Even Positive Exponents</alert>
         </p>
 
         <p>
@@ -343,24 +343,24 @@ Functions like <m>l(x)</m> where the variable <m>x</m> is in the <em>exponent</e
         <image width="50%" xml:id="fig_4_3_1">
             <shortdescription>A short description.</shortdescription>
             <latex-image label="4_3_1_fig">
-\begin{tikzpicture}[scale=0.8]
-\begin{axis}[grid=both,
-xmin=-3,xmax=3,
-ymin=0,ymax=6,
-legend pos=south east,
-xtick={-3,...,3},
-ytick={0,...,10},
-minor tick={},
-xlabel=\(x\), ylabel=\(y\),
-]
-\addplot[domain=-2.5:2.5] {x^2};
-\addlegendentry{$x^2$};
-\addplot[domain=-2:2,red] {x^4};
-\addlegendentry{$x^4$};
-\addplot[domain=-2:2,orange] {x^6};
-\addlegendentry{$x^6$};
-\end{axis}
-\end{tikzpicture}
+            \begin{tikzpicture}[scale=0.8]
+            \begin{axis}[grid=both,
+            xmin=-3,xmax=3,
+            ymin=0,ymax=6,
+            legend pos=south east,
+            xtick={-3,...,3},
+            ytick={0,...,10},
+            minor tick={},
+            xlabel=\(x\), ylabel=\(y\),
+            ]
+            \addplot[domain=-2.5:2.5] {x^2};
+            \addlegendentry{$x^2$};
+            \addplot[domain=-2:2,red] {x^4};
+            \addlegendentry{$x^4$};
+            \addplot[domain=-2:2,orange] {x^6};
+            \addlegendentry{$x^6$};
+            \end{axis}
+            \end{tikzpicture}
             </latex-image>
         </image>
 
@@ -372,27 +372,27 @@ xlabel=\(x\), ylabel=\(y\),
         <image width="50%" xml:id="fig_4_3_2">
             <shortdescription>A short description.</shortdescription>
             <latex-image label="4_3_2_fig">
-\begin{tikzpicture}[scale=0.9]
-\begin{axis}[grid=both,
-axis lines=middle,
-xmin=-3,xmax=3,
-ymin=-3,ymax=3,
-xtick={-3,...,3},
-ytick={-3,...,3},
-minor tick={},
-xlabel=\(x\), ylabel=\(y\),
-samples=250]
-\addplot[domain=-1.7:1.7] {x^2} node[right,pos=0.8] {$x^2$};
-\addplot[domain=-3:3,red]{0.5*x^2} node[below right,pos=0.65] {$\frac{1}{2}x^2$};
-\addplot[domain=-1.7:1.7,orange]{2*x^2} node[left,pos=0.65] {$2x^2$};
-\addplot[domain=-1.7:1.7,black]{-2*x^2} node[right,pos=0.65] {$-2x^2$};
-\end{axis}
-\end{tikzpicture}
+            \begin{tikzpicture}[scale=0.9]
+            \begin{axis}[grid=both,
+            axis lines=middle,
+            xmin=-3,xmax=3,
+            ymin=-3,ymax=3,
+            xtick={-3,...,3},
+            ytick={-3,...,3},
+            minor tick={},
+            xlabel=\(x\), ylabel=\(y\),
+            samples=250]
+            \addplot[domain=-1.7:1.7] {x^2} node[right,pos=0.8] {$x^2$};
+            \addplot[domain=-3:3,red]{0.5*x^2} node[below right,pos=0.65] {$\frac{1}{2}x^2$};
+            \addplot[domain=-1.7:1.7,orange]{2*x^2} node[left,pos=0.65] {$2x^2$};
+            \addplot[domain=-1.7:1.7,black]{-2*x^2} node[right,pos=0.65] {$-2x^2$};
+            \end{axis}
+            \end{tikzpicture}
             </latex-image>
         </image>
 
         <p>
-            <term>Odd Positive Exponents</term>
+            <alert>Odd Positive Exponents</alert>
         </p>
 
         <p>
@@ -410,22 +410,22 @@ samples=250]
         <image width="50%" xml:id="fig_4_3_3">
             <shortdescription>A short description.</shortdescription>
             <latex-image label="4_3_3_fig">
-\begin{tikzpicture}[scale=0.8]
-\begin{axis}[grid=both,
-xmin=-2,xmax=2,
-ymin=-6,ymax=6,
-legend pos=south east,
-xtick={-3,...,3},
-ytick={-6,...,6},
-minor tick={},
-xlabel=\(x\), ylabel=\(y\),
-]
-\addplot[domain=-2.5:2.5] {x^3};
-\addlegendentry{$x^3$};
-\addplot[domain=-2:2,red] {x^5};
-\addlegendentry{$x^5$};
-\end{axis}
-\end{tikzpicture}
+            \begin{tikzpicture}[scale=0.8]
+            \begin{axis}[grid=both,
+            xmin=-2,xmax=2,
+            ymin=-6,ymax=6,
+            legend pos=south east,
+            xtick={-3,...,3},
+            ytick={-6,...,6},
+            minor tick={},
+            xlabel=\(x\), ylabel=\(y\),
+            ]
+            \addplot[domain=-2.5:2.5] {x^3};
+            \addlegendentry{$x^3$};
+            \addplot[domain=-2:2,red] {x^5};
+            \addlegendentry{$x^5$};
+            \end{axis}
+            \end{tikzpicture}
             </latex-image>
         </image>
 
@@ -437,20 +437,20 @@ xlabel=\(x\), ylabel=\(y\),
         <image width="50%" xml:id="fig_4_3_4">
             <shortdescription>A short description.</shortdescription>
             <latex-image label="4_3_4_fig">
-\begin{tikzpicture}[scale=0.9]
-\begin{axis}[grid=both,
-xmin=-2,xmax=2,
-ymin=-6,ymax=6,
-xtick={-3,...,3},
-ytick={-5,-3,...,5},
-minor tick={},
-xlabel=\(x\), ylabel=\(y\),
-]
-\addplot[domain=-2.5:2.5] {x^3} node[above left, pos=0.6] {$x^3$};
-\addplot[domain=-2:2,red] {0.5*x^3} node[below right,pos=0.75] {$\frac{1}{2} x^3$};
-\addplot[domain=-2:2,orange] {-2.5*x^3} node[right,pos=0.55] {$-3x^3$};
-\end{axis}
-\end{tikzpicture}
+            \begin{tikzpicture}[scale=0.9]
+            \begin{axis}[grid=both,
+            xmin=-2,xmax=2,
+            ymin=-6,ymax=6,
+            xtick={-3,...,3},
+            ytick={-5,-3,...,5},
+            minor tick={},
+            xlabel=\(x\), ylabel=\(y\),
+            ]
+            \addplot[domain=-2.5:2.5] {x^3} node[above left, pos=0.6] {$x^3$};
+            \addplot[domain=-2:2,red] {0.5*x^3} node[below right,pos=0.75] {$\frac{1}{2} x^3$};
+            \addplot[domain=-2:2,orange] {-2.5*x^3} node[right,pos=0.55] {$-3x^3$};
+            \end{axis}
+            \end{tikzpicture}
             </latex-image>
         </image>
 
@@ -480,35 +480,35 @@ xlabel=\(x\), ylabel=\(y\),
             <image width="100%" xml:id="fig_4_3_summary_even_pos">
                 <shortdescription>Graph of a representative power function with even exponent and positive coefficient.</shortdescription>
                 <latex-image label="4_3_summary_even_pos_fig">
-\begin{tikzpicture}[scale=0.5]
-\begin{axis}[grid=none,
-axis lines=middle,
-xmin=-2,xmax=2,
-ymin=-1,ymax=2,
-xtick=\empty,
-ytick=\empty,
-samples=250]
-\addplot[domain=-2:2] {x^2};
-\end{axis}
-\end{tikzpicture}
+                \begin{tikzpicture}[scale=0.5]
+                \begin{axis}[grid=none,
+                axis lines=middle,
+                xmin=-2,xmax=2,
+                ymin=-1,ymax=2,
+                xtick=\empty,
+                ytick=\empty,
+                samples=250]
+                \addplot[domain=-2:2] {x^2};
+                \end{axis}
+                \end{tikzpicture}
                 </latex-image>
             </image>
 
             <image width="100%" xml:id="fig_4_3_summary_odd_pos">
                 <shortdescription>Graph of a representative power function with odd exponent and positive coefficient.</shortdescription>
                 <latex-image label="4_3_summary_odd_pos_fig">
-\begin{tikzpicture}[scale=0.5]
-\begin{axis}[grid=none,
-axis lines=middle,
-xmin=-2,xmax=2,
-ymin=-2,ymax=2,
-xtick=\empty,
-ytick=\empty,
-minor tick={},
-samples=250]
-\addplot[domain=-2:2] {x^3};
-\end{axis}
-\end{tikzpicture}
+                \begin{tikzpicture}[scale=0.5]
+                \begin{axis}[grid=none,
+                axis lines=middle,
+                xmin=-2,xmax=2,
+                ymin=-2,ymax=2,
+                xtick=\empty,
+                ytick=\empty,
+                minor tick={},
+                samples=250]
+                \addplot[domain=-2:2] {x^3};
+                \end{axis}
+                \end{tikzpicture}
                 </latex-image>
             </image>
         </sidebyside>
@@ -521,36 +521,36 @@ samples=250]
             <image width="100%" xml:id="fig_4_3_summary_even_neg">
                 <shortdescription>Graph of a representative power function with even exponent and negative coefficient.</shortdescription>
                 <latex-image label="4_3_summary_even_neg_fig">
-\begin{tikzpicture}[scale=0.5]
-\begin{axis}[grid=none,
-axis lines=middle,
-xmin=-2,xmax=2,
-ymin=-2,ymax=1,
-xtick=\empty,
-ytick=\empty,
-minor tick={},
-samples=250]
-\addplot[domain=-2:2] {-x^2};
-\end{axis}
-\end{tikzpicture}
+                \begin{tikzpicture}[scale=0.5]
+                \begin{axis}[grid=none,
+                axis lines=middle,
+                xmin=-2,xmax=2,
+                ymin=-2,ymax=1,
+                xtick=\empty,
+                ytick=\empty,
+                minor tick={},
+                samples=250]
+                \addplot[domain=-2:2] {-x^2};
+                \end{axis}
+                \end{tikzpicture}
                 </latex-image>
             </image>
 
             <image width="100%" xml:id="fig_4_3_summary_odd_neg">
                 <shortdescription>Graph of a representative power function with odd exponent and negative coefficient.</shortdescription>
                 <latex-image label="4_3_summary_odd_neg_fig">
-\begin{tikzpicture}[scale=0.5]
-\begin{axis}[grid=none,
-axis lines=middle,
-xmin=-2,xmax=2,
-ymin=-2,ymax=2,
-xtick=\empty,
-ytick=\empty,
-minor tick={},
-samples=250]
-\addplot[domain=-2:2] {-x^3};
-\end{axis}
-\end{tikzpicture}
+                \begin{tikzpicture}[scale=0.5]
+                \begin{axis}[grid=none,
+                axis lines=middle,
+                xmin=-2,xmax=2,
+                ymin=-2,ymax=2,
+                xtick=\empty,
+                ytick=\empty,
+                minor tick={},
+                samples=250]
+                \addplot[domain=-2:2] {-x^3};
+                \end{axis}
+                \end{tikzpicture}
                 </latex-image>
             </image>
         </sidebyside>

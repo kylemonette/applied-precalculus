@@ -327,7 +327,7 @@
                         <p>
                             There is no rule for the power of a sum or a difference!
                             We cannot simplify <m>(a + b)^7</m> using rules of exponents.
-                            You certainly <term>cannot</term> distribute the power <m>7</m> and write the expression as <m>a^7 + b^7</m>.
+                            You certainly <alert>cannot</alert> distribute the power <m>7</m> and write the expression as <m>a^7 + b^7</m>.
                         </p>
                     </li>
                 </ol>

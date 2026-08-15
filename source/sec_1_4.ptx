@@ -226,7 +226,7 @@ xlabel=\(x\), ylabel=\(y\),
             <p>
                 A full tank of water springs a leak.
                 Water is leaking out at the rate of <m>3</m> gallons per hour.
-                Let <m>A=w(t)</m> be the amount of water in the tank, in gallons, <m>t</m> hours after the leak started.The function <m>w(t)</m> is given by
+                Let <m>A=w(t)</m> be the amount of water in the tank, in gallons, <m>t</m> hours after the leak started. The function <m>w(t)</m> is given by
                 <md>
                     A=w(t)=60-3t.
                 </md>

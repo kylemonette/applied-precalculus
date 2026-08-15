@@ -562,7 +562,7 @@ xlabel=\(x\), ylabel=\(f(x)\),
 
                             <p>
                                 <md>
-                                    <mrow>R(p) \amp = p(1200-6) </mrow>
+                                    <mrow>R(p) \amp = p(1200-6p) </mrow>
                                     <mrow>\amp = 1200p - 6p^2 </mrow>
                                     <mrow>\amp= -6p^2 + 1200p.</mrow>
                                 </md>

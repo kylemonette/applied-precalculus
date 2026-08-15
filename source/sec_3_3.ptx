@@ -246,7 +246,7 @@
                                     <mrow>g(t) \amp\;=\; -3 ( t - 5 )^2 - 10</mrow>
                                     <mrow>\amp\;=\; -3 \left( (t)^2 - 2 (t) (5) + (5)^2 \right) - 10</mrow>
                                     <mrow>\amp\;=\; -3 ( t^2 - 10 t + 25 ) - 10</mrow>
-                                    <mrow>\amp\;=\; -3 ( t^2 b - 10 c t + 25 d) - 10</mrow>
+                                    <mrow>\amp\;=\; -3 ( t^2 - 10 t + 25 ) - 10</mrow>
                                     <mrow>\amp\;=\; -3 t^2 + 30 t - 75 - 10</mrow>
                                     <mrow>\amp\;=\; -3 t^2 + 30 t - 85</mrow>
                                 </md>
