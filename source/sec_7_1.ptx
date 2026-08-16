@@ -1,60 +1,452 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_7_1">
+    <title>Vertical and Horizontal Shifts</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Vertical and Horizontal Shifts</title>
+        <ol>
+            <li>
+                <p>
+                    Determine the effect of adding or subtracting a constant to the output of a function and identify the resulting vertical shift.
+                </p>
+            </li>
 
-<objectives>
-    <introduction>
+            <li>
+                <p>
+                    Determine the effect of adding or subtracting a constant to the input of a function and identify the resulting horizontal shift.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Combine vertical and horizontal shifts to describe or write the formula for a transformed function.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
+    <subsection>
+        <title>Vertical Shifts</title>
+
         <p>
-            After completing this section, you should be able to do the following.
+            What happens if we change the function <m>f(x) = x^2</m> by adding or subtracting a number from it? For instance, what would the graphs of <m>g(x) = x^2 + 1</m> and <m>h(x) = x^2 - 3</m> look like? In this case, the graph of <m>g(x) = x^2 + 1</m> is the graph of <m>f(x) = x^2</m> <em>shifted up one unit</em> and the graph of <m>h(x) = x^2 - 3</m> is the graph of <m>f(x) = x^2</m> <em>shifted down 3 units</em>.
         </p>
-    </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+        <p>
+            In general, if we begin with the graph of a function <m>y = f(x)</m>, then the function <m>g(x) = f(x) + k</m> can be given by the formula <m>g(x) = y + k</m>. That is, the <m>y</m>-values of <m>g(x)</m> are the <m>y</m>-values of <m>f(x)</m> adjusted by the addition of the number <m>k</m>. Hence, the graph of <m>g(x) = f(x) + k</m> is the graph of <m>f(x)</m> shifted either upward or downward depending upon the value of <m>k</m>.
+        </p>
 
-<figure xml:id="fig_7_1_vert_shift">
-<caption></caption>
-<interactive platform="jsxgraph" source="jsxgraph/jsx_7_1_vert_shift.js" width="60%">
-    <slate xml:id="jsx_7_1_vert_shift_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Drag the dot to see the effect of vertical shifts on <m>f(x) = x^2</m>.</p>
-    </instructions>
-</interactive>
-</figure>
+            <figure xml:id="fig_7_1_vert_shift">
+        <caption></caption>
+        <interactive platform="jsxgraph" source="jsxgraph/jsx_7_1_vert_shift.js" width="60%">
+            <slate xml:id="jsx_7_1_vert_shift_fig" surface="jsxboard"/>
+            <instructions>
+                <p>Drag the dot to see the effect of vertical shifts on <m>f(x) = x^2</m>.</p>
+            </instructions>
+        </interactive>
+    </figure>
+
+        <definition>
+            <title>Vertical Shift</title>
+
+            <statement>
+                <p>
+                    Given a function <m>f(x)</m> and a constant <m>k</m>, <m>g(x) = f(x) + k</m> is a <em>vertical shift</em> of the graph of <m>f(x)</m>. If <m>k</m> is positive, then:
+                </p>
+
+                <p>
+                    <ul>
+                        <li>the graph of <m>g(x) = f(x) + k</m> is the graph of <m>f(x)</m> shifted <alert>UP</alert> <m>k</m> units.</li>
+                        <li>the graph of <m>g(x) = f(x) - k</m> is the graph of <m>f(x)</m> shifted <alert>DOWN</alert> <m>k</m> units.</li>
+                    </ul>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    The graph of a function <m>f(t)</m> is given below. Plot <m>G(t) = f(t) - 4</m> and <m>H(t) = f(t) + 1.5</m>.
+                </p>
+
+                <image width="50%" xml:id="fig_7_1_1">
+                    <latex-image label="7_1_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=4,
+ymin=0,ymax=9,
+xtick={1,...,4},
+ytick={1,...,9},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+x post scale = 1.2,
+trig format plots = rad,
+]
+\addplot[domain=0:3] {-cos(2*pi/4*x)+6} node[pos=0.8,above] {$f(t)$};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+            </statement>
+
+            <solution>
+                <p>
+                    The graph of <m>G(t) = f(t) - 4</m> is the graph of <m>f(t)</m> shifted down 4 units while the graph of <m>H(t) = f(t) + 1.5</m> is the graph of <m>f(t)</m> shifted up 1.5 units. Hence, we have the following.
+                </p>
+
+                <image width="50%" xml:id="fig_7_1_2">
+                    <latex-image label="7_1_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=4,
+ymin=0,ymax=9.3,
+xtick={1,...,4},
+ytick={1,...,9},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+x post scale = 1.2,
+trig format plots = rad,
+]
+\addplot[domain=0:3] {-cos(2*pi/4*x)+6} node[pos=0.8,above] {$f(t)$};
+\addplot[domain=0:3,red] {-cos(2*pi/4*x)+7.5} node[pos=0.8,above] {$H(t)$};
+\addplot[domain=0:3,orange] {-cos(2*pi/4*x)+2} node[pos=0.8,above] {$g(t)$};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The total monthly cost <m>C</m> to operate a company depends upon the fixed costs for facility rental and equipment as well as the number of units, <m>p</m>, that the company produces that month. The table below shows this relationship for a typical month.
+                </p>
+
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell><m>p</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>30</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>C</m></cell>
+                        <cell><m>2500</m></cell>
+                        <cell><m>2650</m></cell>
+                        <cell><m>2800</m></cell>
+                        <cell><m>2950</m></cell>
+                    </row>
+                </tabular>
+
+                <p>
+                    Suppose the rent on the facility went up by <m>\$200</m> per month. Create a table for the resulting total monthly cost function <m>S</m> as a function of the number of units produced, <m>p</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    The outputs in the original table give the original total monthly cost as a function of the number of units produced, <m>p</m>. If the rent were to go up by <m>\$200</m> per month, then the resulting total monthly cost function would be <m>S = C + 200</m>. This is a vertical shift of the original cost function <m>C</m>, and values for it can be obtained by adding 200 to each of the outputs in the original table, as can be seen below.
+                </p>
+
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell><m>p</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>20</m></cell>
+                        <cell><m>30</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>S</m></cell>
+                        <cell><m>2700</m></cell>
+                        <cell><m>2850</m></cell>
+                        <cell><m>3000</m></cell>
+                        <cell><m>3150</m></cell>
+                    </row>
+                </tabular>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Horizontal Shifts</title>
+
+        <p>
+            We saw that adding or subtracting a number from the output of a function results in a vertical shift. What happens if we add or subtract a number from the <em>input</em> of a function instead?
+        </p>
+
+        <p>
+            For instance, we know that <m>y = \sqrt{x} + 2</m> would result in shifting the function <m>f(x) = \sqrt{x}</m> up two units. But what if we added or subtracted a number <em>under</em> the square root instead<mdash/>that is, from the <em>input</em> of the function rather than the output?
+        </p>
+
+        <p>
+            To illustrate, we will consider the functions <m>g(x) = \sqrt{x + 2}</m> and <m>h(x) = \sqrt{x - 3}</m>. The graph of <m>g(x) = \sqrt{x + 2}</m> is the graph of <m>f(x) = \sqrt{x}</m> shifted <em>left</em> two units while <m>h(x) = \sqrt{x - 3}</m> is the graph of <m>f(x) = \sqrt{x}</m> shifted <em>right</em> 3 units.
+        </p>
+
+        <p>
+            To help explain why this is the case, notice that the formula <m>f(x) = \sqrt{x} = y</m> is solved for <m>y</m> and not <m>x</m>. We can change this by squaring both sides of <m>\sqrt{x} = y</m>:
+            <md>
+                x = y^2.
+            </md>
+            If we were then to solve the formula <m>g(x) = \sqrt{x + 2} = y</m> for <m>x</m>, we would square both sides of <m>\sqrt{x+2} = y</m> and then subtract 2:
+            <md>
+                <mrow>x + 2 \amp= y^2</mrow>
+                <mrow>x + 2 \textcolor{blue}{-2} \amp= y^2 \textcolor{blue}{-2}</mrow>
+                <mrow>x \amp= y^2 - 2.</mrow>
+            </md>
+        </p>
+
+        <p>
+            Notice that the formula for the <m>x</m>-values of <m>g(x) = \sqrt{x + 2}</m> involves <em>subtracting</em> <m>2</m> from the formula for the <m>x</m>-values of the original function <m>f(x) = \sqrt{x}</m>. This means that for each specific <m>y</m>-value, the corresponding <m>x</m>-value of <m>g(x) = \sqrt{x + 2}</m> is two units in the <em>negative direction</em> from that of the original function <m>f(x) = \sqrt{x}</m>; that is, two units to the left.
+        </p>
+
+
+    <figure xml:id="fig_7_1_hor_shift">
+        <caption></caption>
+        <interactive platform="jsxgraph" source="jsxgraph/jsx_7_1_hor_shift.js" width="60%">
+            <slate xml:id="jsx_7_1_hor_shift_fig" surface="jsxboard"/>
+            <instructions>
+                <p>Drag the dot to see the effect of horizontal shifts on <m>f(x) = \sqrt{x}</m>.</p>
+            </instructions>
+        </interactive>
+    </figure>
+
+        <definition>
+            <title>Horizontal Shifts</title>
+
+            <statement>
+                <p>
+                    Given a function <m>f(x)</m> and a constant <m>h</m>, <m>g(x) = f(x + h)</m> is a <em>horizontal shift</em> of the graph of <m>f(x)</m>. If <m>h</m> is positive, then
+                </p>
+
+                <p>
+                    <ul>
+                        <li>the graph of <m>g(x) = f(x + h)</m> is the graph of <m>f(x)</m> shifted <alert>LEFT</alert> <m>h</m> units.</li>
+                        <li>the graph of <m>g(x) = f(x - h)</m> is the graph of <m>f(x)</m> shifted <alert>RIGHT</alert> <m>h</m> units.</li>
+                    </ul>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    In an effort to save on heating costs, the thermostat in a professor's home has been programmed to keep his house at 65 degrees while he is home from 4pm to 8am the following day and to drop the temperature to 55 degrees while he is at work from 8am to 4pm each day. This is illustrated in the graph below, where <m>t</m> corresponds to hours past since midnight and <m>S</m> corresponds to the thermostat setting.
+                </p>
+
+                <image width="50%" xml:id="fig_7_1_3">
+                    <latex-image label="7_1_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=0,xmax=25,
+ymin=0,ymax=7.5,
+xtick={2,4,...,24},
+ytick={0.5,1.5,...,6.5},
+yticklabels={5,15,...,65},
+minor tick={},
+xlabel=\(t\), ylabel=\(S\),
+x post scale = 1.5,
+]
+\addplot[domain=0:8] {6.5};
+\addplot[domain=8:16] {5.5};
+\addplot[domain=16:24] {6.5};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+
+                <p>
+                    Due to a schedule change requiring him to teach a night class, the professor needs to shift his entire work schedule later by four hours and hence adjust his thermostat setting accordingly. Sketch a graph reflecting this change.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Shifting his entire work schedule forward by 4 hours is equivalent to moving it forward in time by 4 hours. This corresponds to a horizontal shift to the <em>right</em> 4 units. This means that we must graph the corresponding horizontal shift <m>S(t - 4)</m>.
+                </p>
+
+                <image width="50%" xml:id="fig_7_1_4">
+                    <latex-image label="7_1_4_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=0,xmax=29,
+ymin=0,ymax=7.5,
+xtick={2,4,...,28},
+ytick={0.5,1.5,...,6.5},
+yticklabels={5,15,...,65},
+minor tick={},
+xlabel=\(t\), ylabel=\(S\),
+x post scale = 1.5,
+]
+\addplot[domain=4:12] {6.5};
+\addplot[domain=12:20] {5.5};
+\addplot[domain=20:28] {6.5};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+
+                <p>
+                    Note that the original graph shows a thermostat setting of 55 degrees between times <m>t = 8</m> and <m>t = 16</m>, corresponding to a work day stretching from 8am to 4pm. The shifted graph shows a thermostat setting of 55 degrees between times <m>t = 12</m> and <m>t = 20</m>, corresponding to a work day stretching from 12pm to 8pm (pushed back 4 hours, as it was intended).
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Consider the function <m>f(x)</m> given in the table below. Construct a table of values for <m>g(x) = f(x + 6.2)</m>.
+                </p>
+
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>5</m></cell>
+                        <cell><m>10</m></cell>
+                        <cell><m>15</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>f(x)</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>-16.5</m></cell>
+                        <cell><m>7.3</m></cell>
+                        <cell><m>10.4</m></cell>
+                    </row>
+                </tabular>
+            </statement>
+
+            <solution>
+                <p>
+                    The function <m>g(x) = f(x + 6.2)</m> is a horizontal shift of <m>f(x)</m>; its graph would be the graph of <m>f(x)</m> shifted to the left <m>6.2</m> units. This means that to construct a table for <m>g(x)</m>, we should take the table for <m>f(x)</m> and subtract <m>6.2</m> from each of the inputs while leaving the outputs unchanged.
+                </p>
+
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell><m>x</m></cell>
+                        <cell><m>-6.2</m></cell>
+                        <cell><m>-1.2</m></cell>
+                        <cell><m>3.8</m></cell>
+                        <cell><m>8.8</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>g(x)</m></cell>
+                        <cell><m>6</m></cell>
+                        <cell><m>-16.5</m></cell>
+                        <cell><m>7.3</m></cell>
+                        <cell><m>10.4</m></cell>
+                    </row>
+                </tabular>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Combining Vertical and Horizontal Shifts</title>
+
+        <p>
+            Shifting vertically and shifting horizontally are two illustrations of <em>transformations</em> of functions; they take an original function and transform (or change) it by shifting it in some way. Multiple transformations may be applied to an original function; for instance, both a vertical and a horizontal shift can be applied to an original function: The graph of the function <m>y = (x + 2)^2 - 7</m> is obtained by shifting the graph of <m>f(x) = x^2</m> down <m>7</m> units and left <m>2</m> units.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    For each of the following, identify the function being transformed and describe the transformations being applied to it.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>y = (x - 10)^5 + 4</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>y = 2^{t + 1} + 3</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The original function is <m>f(x) = x^5</m>. Since <m>4</m> is being added on the end, the vertical shift is up <m>4</m> units. Since <m>10</m> is being subtracted from the input variable <m>x</m>, the horizontal shift is right <m>10</m> units.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The original function is <m>f(t) = {2}^{t}</m>. Since <m>3</m> is being added on the end, the vertical shift is up <m>3</m> units. Since <m>1</m> is being added to the input variable <m>t</m>, the horizontal shift is left <m>1</m> unit.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Write the formula for the function obtained when <m>\dots</m>
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                the graph of <m>f(t) = 10(0.5)^t</m> is shifted up <m>1</m> unit and to the left <m>4</m> units.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                the graph of <m>g(t) = \sqrt[3]{x}</m> is shifted down <m>4</m> units and to the right <m>3</m> units.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                To shift up <m>1</m> unit, we add <m>1</m> to the whole function and to shift to the left <m>4</m> units we add <m>4</m> to the input variable <m>t</m> in the exponent. Hence, the new function will have formula <m>y = 10{(0.5)}^{t + 4} + 1</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                To shift down <m>4</m> units, we subtract <m>4</m> from the whole function and to shift to the right <m>3</m> units we subtract <m>3</m> from the input variable <m>x</m> under the cube root. Hence, the new function will have the formula <m>y = \sqrt[3]{x - 3} - 4</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
 
 
 
-<figure xml:id="fig_7_1_hor_shift">
-<caption></caption>
-<interactive platform="jsxgraph" source="jsxgraph/jsx_7_1_hor_shift.js" width="60%">
-    <slate xml:id="jsx_7_1_hor_shift_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Drag the dot to see the effect of horizontal shifts on <m>f(x) = \sqrt{x}</m>.</p>
-    </instructions>
-</interactive>
-</figure>
 
-
-
-
-<xi:include href="exercises/ex_7_1.ptx"/>
+    <xi:include href="exercises/ex_7_1.ptx"/>
 </section>

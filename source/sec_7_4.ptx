@@ -1,38 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_7_4">
+    <title>Inverse Functions</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Inverse Functions</title>
+        <ol>
+            <li>
+                <p>
+                    State the definition of an inverse function and verify whether two given functions are inverses of one another.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Find the inverse of a function algebraically, when it exists, by reversing the roles of the input and output variables.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Determine whether a function has an inverse function by checking whether the resulting equation defines a function.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            In 1897, Amos Dolbear published the article <q>The Cricket as a Thermometer.</q> This paper included the formulation of what is now known as Dolbear's Law: a formula that states the relationship between the air temperature and the number of times that a cricket chirps in a given span of time. This law states that the air temperature <m>T</m> in degrees Fahrenheit is a function of the number of times <m>N</m> that a cricket chirps in 15 seconds; that is
+            <md>
+                T = f(N) = N + 40.
+            </md>
+            So, if a cricket chirps 20 times in 15 seconds, then the temperature must be given by
+            <md>
+                f(20) = 20 + 40 = 60^\circ \text{F}.
+            </md>
         </p>
+
+        <p>
+            What if it was known that the temperature was <m>70^\circ \text{F}</m>? How would we determine how many times a cricket would be expected to chirp in a 15-second time interval at this temperature? We could set <m>f(N) = 70</m> and solve for <m>N</m>:
+            <md>
+                <mrow>N + 40 \amp= 70</mrow>
+                <mrow>N + 40 \textcolor{blue}{-40} \amp= 70 \textcolor{blue}{-40}</mrow>
+                <mrow>N \amp= 30.</mrow>
+            </md>
+            Thus at a temperature of <m>70^\circ \text{F}</m>, a cricket would be expected to chirp 30 times in a 15-second time interval.
+        </p>
+
+        <p>
+            In fact, if we wanted to know how many times a cricket would be expected to chirp in a 15-second time interval at any specific temperature <m>T</m>, we could set <m>f(N) = T</m> and solve for <m>N</m>:
+            <md>
+                <mrow>N + 40 \amp= T</mrow>
+                <mrow>N + 40 \textcolor{blue}{-40} \amp= T \textcolor{blue}{-40}</mrow>
+                <mrow>N \amp= T - 40.</mrow>
+            </md>
+            Now we have the number of times a cricket will chirp in a 15-second time interval written as a function of the air temperature:
+            <md>
+                N = g(T) = T - 40.
+            </md>
+            We have in fact found the <alert>inverse function</alert> of <m>f(n)</m>.
+        </p>
+
+        <p>
+            A function takes an input, does something to it, and produces a single output number. Given a specific output from a function, we may wonder what input resulted in this output. Informally, an <em>inverse function</em> can be thought of as a function's <q>undo button</q> (provided it exists). It takes the output the original function gave, does something to it, and the result is the input that we put in the original function to begin with.
+        </p>
+
+        <definition>
+            <title>The Inverse of a Function</title>
+
+            <statement>
+                <p>
+                    An <alert>inverse function</alert> of a function <m>f(x)</m> is a function <m>g(x)</m> that satisfies both of the following conditions:
+                </p>
+
+                <p>
+                    <ul>
+                        <li><m>g(f(x)) = x</m> for all <m>x</m> in the domain of <m>f(x)</m></li>
+                        <li><m>f(g(x)) = x</m> for all <m>x</m> if the domain of <m>g(x)</m></li>
+                    </ul>
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            Each of the above bullet points describes the following behavior of an inverse: <m>f(x)</m> takes the input <m>x</m>, does something to it, and produces an output. If we then put this output through the inverse function <m>g(x)</m>, it <q>undoes</q> the work done by the original function and takes us back to the initial input <m>x</m>.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Show that <m>f(N) = N + 40</m> and <m>g(T) = T - 40</m> are inverse functions.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    To show that <m>f(N)</m> and <m>g(T)</m> are inverse functions, we must verify that when the functions are composed in either order, the result is the input variable of the interior function in the composition. It can be seen that
+                    <md>
+                        <mrow>f(g(T)) \amp = f(T - 40)</mrow>
+                        <mrow>\amp = (T - 40) + 40</mrow>
+                        <mrow>\amp = T</mrow>
+                    </md>
+                    while
+                    <md>
+                        <mrow>g(f(N)) \amp = g(N + 40)</mrow>
+                        <mrow>\amp = (N + 40) - 40</mrow>
+                        <mrow>\amp = N</mrow>
+                    </md>
+                    so <m>f(N)</m> and <m>g(T)</m> are indeed inverses.
+                </p>
+            </solution>
+        </example>
     </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>Finding Inverse Functions Algebraically</title>
 
+        <p>
+            If the ordered pair <m>(x, y)</m> is on the graph of the function <m>f</m>, then the ordered pair <m>(y, x)</m> is on the graph of its inverse. This gives us an idea of how to find an inverse function algebraically.
+        </p>
 
+        <theorem>
+            <title>Finding the Inverse of a Function Algebraically</title>
 
+            <statement>
+                <p>
+                    To find the inverse of a function <m>f(x)</m>:
+                </p>
 
-<xi:include href="exercises/ex_7_4.ptx"/>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Set <m>y = f(x)</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Reverse the roles of <m>x</m> and <m>y</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Solve the resulting equation for <m>y</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Verify that your result from Step 3 is a function. If it is, then this is the inverse function <m>f^{-1}(x)</m> of <m>f(x)</m>. If it is not, then <m>f(x)</m> does not have an inverse function.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </theorem>
+
+        <example>
+            <statement>
+                <p>
+                    If possible, find the inverse of each function. If not possible, state this to be the case.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>f(x) = 5x - 7</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>g(t) = 4\sqrt[3]{t - 5} + 2</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>h(x) = \dfrac{x + 1}{x - 2}</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>w(z) = z^2</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                To find the inverse, we write <m>y = f(x)</m>, reverse the roles of <m>x</m> and <m>y</m>, and then solve for <m>y</m>:
+                                <md>
+                                    <mrow>y \amp = 5x - 7 \amp\amp \textcolor{red}{\text{ replace $f(x)$ with $y$}}</mrow>
+                                    <mrow>x \amp = 5y - 7 \amp\amp \textcolor{red}{\text{ reverse roles of $x$ and $y$}}</mrow>
+                                    <mrow>x \textcolor{blue}{ +  7} \amp = 5y - 7 \textcolor{blue}{ +  7}</mrow>
+                                    <mrow>x + 7 \amp = 5y</mrow>
+                                    <mrow>\dfrac{x + 7}{5} \amp = \dfrac{\cancel{5}y}{\cancel{5}}</mrow>
+                                    <mrow>\dfrac{x + 7}{5} \amp = y \amp\amp \textcolor{red}{\text{ solve for $y$}}</mrow>
+                                </md>
+                                The equation <m>y = \dfrac{x + 7}{5}</m> is a linear function, so <m>f(x)</m> has an inverse function, and it is given by <m>f^{-1}(x) = \dfrac{x + 7}{5}</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <md>
+                                    <mrow>y \amp = 4\sqrt[3]{t - 5} + 2 \amp\amp \textcolor{red}{\text{ replace $g(t)$ with $y$}}</mrow>
+                                    <mrow>t \amp = 4\sqrt[3]{y - 5} + 2 \amp\amp \textcolor{red}{\text{ reverse roles of $t$ and $y$}}</mrow>
+                                    <mrow>t \textcolor{blue}{ -  2} \amp = 4\sqrt[3]{y - 5} + 2 \textcolor{blue}{ -  2}</mrow>
+                                    <mrow>t - 2 \amp = 4\sqrt[3]{y - 5}</mrow>
+                                    <mrow>\dfrac{t - 2}{4} \amp = \dfrac{\cancel{4}\sqrt[3]{y - 5}}{\cancel{4}}</mrow>
+                                    <mrow>\dfrac{t - 2}{4} \amp = \sqrt[3]{y - 5}</mrow>
+                                    <mrow>\left(\dfrac{t - 2}{4}\right)^3 \amp = \left(\sqrt[3]{y - 5}\right)^3</mrow>
+                                    <mrow>\left(\dfrac{t - 2}{4}\right)^3 \amp = y - 5</mrow>
+                                    <mrow>\left(\dfrac{t - 2}{4}\right)^3 \textcolor{blue}{ +  5} \amp = y - 5 \textcolor{blue}{ +  5}</mrow>
+                                    <mrow>\left(\dfrac{t - 2}{4}\right)^3 + 5 \amp = y \amp\amp \textcolor{red}{\text{solve for $y$}}</mrow>
+                                </md>
+                                The equation <m>y = \left(\dfrac{t - 2}{4}\right)^3 + 5</m> is a transformation of the cubic function <m>y = t^3</m> and so is itself a function. Hence, <m>g(t)</m> has an inverse function and it is given by <m>g^{-1}(t) = \left(\dfrac{t - 2}{4}\right)^3 + 5</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <md>
+                                    <mrow>y \amp = \dfrac{x + 1}{x - 2} \amp\amp \textcolor{red}{\text{ replace $h(x)$ with $y$}}</mrow>
+                                    <mrow>x \amp = \dfrac{y + 1}{y - 2} \amp\amp \textcolor{red}{\text{ reverse roles of $x$ and $y$}}</mrow>
+                                    <mrow>x(y - 2) \amp = \dfrac{y + 1}{\cancel{y - 2}}(\cancel{y - 2})</mrow>
+                                    <mrow>xy - 2x \amp = y + 1</mrow>
+                                    <mrow>xy - 2x \textcolor{blue}{ +  2x} \amp = y + 1 \textcolor{blue}{ +  2x}</mrow>
+                                    <mrow>xy \amp = y + 1 + 2x</mrow>
+                                    <mrow>xy \textcolor{blue}{ -  y} \amp = y \textcolor{blue}{ -  y} + 1 + 2x</mrow>
+                                    <mrow>xy - y \amp = 1 + 2x</mrow>
+                                    <mrow>y(x - 1) \amp = 1 + 2x</mrow>
+                                    <mrow>\dfrac{y(\cancel{x - 1})}{\cancel{x - 1}} \amp = \dfrac{1 + 2x}{x - 1}</mrow>
+                                    <mrow>y \amp = \dfrac{1 + 2x}{x - 1} \amp\amp \textcolor{red}{\text{ solve for $y$}}</mrow>
+                                </md>
+                                Using a graphing calculator, it can be seen that <m>y = \dfrac{1 + 2x}{x - 1}</m> passes the vertical line test and is therefore a function. The inverse of <m>h(x)</m> is <m>h^{-1}(x) = \dfrac{1 + 2x}{x - 1}</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <md>
+                                    <mrow>y \amp = z^2 \amp\amp \textcolor{red}{\text{ replace $w(z)$ with $y$}}</mrow>
+                                    <mrow>z \amp = y^2 \amp\amp \textcolor{red}{\text{ reverse roles of $z$ and $y$}}</mrow>
+                                    <mrow>\pm \sqrt{z} \amp = \sqrt{y^2}</mrow>
+                                    <mrow>\pm \sqrt{z} \amp = y \amp\amp \textcolor{red}{\text{ solve for $y$}}</mrow>
+                                </md>
+                                The formula <m>y = \pm \sqrt{z}</m> is <em>not</em> a function. Why? There are values of <m>z</m> which result in two different outputs for <m>y</m>; for instance, <m>z = 1</m> results in <m>y = \pm \sqrt{1} = \pm {1}</m>. For the single input <m>z = 1</m>, there are two outputs, <m>y = - 1</m> and <m>y = 1</m>. For this reason, <m>w(z)</m> does not have an inverse function.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <xi:include href="exercises/ex_7_4.ptx"/>
 </section>

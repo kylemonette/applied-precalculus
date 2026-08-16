@@ -1,36 +1,493 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_6_1">
+    <title>What Are Logarithms?</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>What Are Logarithms?</title>
+        <ol>
+            <li>
+                <p>
+                    State the definition of the logarithm base <m>b</m> and rewrite an expression in logarithmic form as an equivalent expression in exponential form, and vice versa.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Evaluate logarithms, including the common logarithm and the natural logarithm, without a calculator when possible.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Use a calculator to approximate the value of a logarithm and identify the graphs and key properties of <m>y = \log(x)</m> and <m>y = \ln(x)</m>.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            When studying processes of exponential growth and decay in Chapter 5 we encountered equations of the type:
+            <md>
+                3000(1.0433)^t=6000
+            </md>
+            where the unknown is in the exponent.
+            To solve such equations algebraically, we need <em>logarithms</em>.
         </p>
+
+        <definition>
+            <title>Logarithm Base <m>b</m></title>
+
+            <statement>
+                <p>
+                    Let <m>b</m> such that <m>b\gt0</m>, <m>b\neq1</m> be given. Then for every <m>x\gt0</m>, the logarithm base <m>b</m> of <m>x</m>, denoted <m>\log_{b}x</m>, is defined so that
+                    <md>
+                        b^{\log_{b} x} = x.
+                    </md>
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            The logarithm, <m>\log_{b}x</m> is the <alert>exponent</alert> such that the base <m>b</m> raised to this exponent is <m>x</m>.
+        </p>
+
+        <p>
+            In other words, <m>\log_{b} x</m> is equal to a number <m>p</m> such that <m>b</m> to that number is <m>x</m>.
+            The expressions
+            <md>
+                \log_{b} x=p \quad \text{and} \quad b^{p}=x
+            </md>
+            are equivalent; they are a logarithmic and an exponential version of the same statement.
+        </p>
+
+        <p>
+            The <em>base</em> of the logarithm is <m>b</m>, so we say <m>\log_{b}x</m> is the <q>logarithm base <m>b</m></q>.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Compute the following:
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\log_2 8</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\log_3 \frac{1}{9}</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\log_{10} 0.001</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\log_{e} (e^2)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                We have the logarithm base <m>2</m> in this example. The value of <m>\log_2 8</m> is the exponent such that <m>2</m> to this exponent equals <m>8</m>, which is <m>3</m>:
+                                <md>
+                                    \log_2 8=3 \quad \text{as} \quad 2^3=8.
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The logarithm base <m>3</m> of <m>\frac{1}{9}</m>, <m>\log_3\frac{1}{9}</m>, is the exponent such that <m>3</m> to this power equals <m>\frac{1}{9}</m>. This exponent is <m>-2</m>:
+                                <md>
+                                    \log_3\frac{1}{9}=-2 \quad \text{as} \quad 3^{-2}=\frac{1}{3^2}=\frac{1}{9}.
+                                </md>
+                                This example shows that the <em>value</em> or <em>output</em> of a logarithm can be negative, meanwhile the <em>input</em> value cannot be.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The logarithm base <m>10</m> of <m>0.001=\frac{1}{1000}</m> is the exponent such that <m>10</m> to that power equals <m>\frac{1}{1000}</m>. Because we can write
+                                <md>
+                                    10^{-3}=\frac{1}{10^3}=\frac{1}{1000}=0.001,
+                                </md>
+                                then the logarithm is
+                                <md>
+                                    \log_{10} 0.001=-3.
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The logarithm base <m>e</m> of <m>e^2</m>, <m>\log_{e} (e^2)</m>, is the power of <m>e</m> needed to obtain <m>e^2</m>. That is,
+                                <md>
+                                    \log_{e} (e^2)=2.
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            <alert>Note:</alert> If the argument inside the logarithm is a more complicated expression rather than just a number or a variable, we use parentheses around it. Often we use parentheses even if the argument is just a number or a variable. In other words, <m>\log_{10}x</m> and <m>\log_{10}(x)</m> are two different ways to denote the same thing. However, <m>\log_{10}(x+3)</m> and <m>\log_{10} x+3</m> are <em>not</em> the same, as in one case <m>x+3</m> is inside the logarithm and in the other case only <m>x</m> is inside the logarithm. It would be more clear for us to write <m>\log_{10} (x)+3</m> rather than <m>\log_{10} x+3</m>, as the parentheses emphasize that <m>x</m> is inside the logarithm and the addition of 3 is not.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Compute the following:
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\log_{10} (-100)</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\log_{e} 1</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                We are looking for a number such that <m>10</m> to that number is equal to <m>-100</m>:
+                                <md>
+                                    10^?=-100
+                                </md>
+                                Would it be <m>-2</m>? Definitely not as <m>10^{-2}=\frac{1}{100}</m>. There is no number such that <m>10</m> to that number is <m>-100</m> as <m>10^p</m> is always positive by properties of exponential functions.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We are asking: <m>e^?=1</m>. Since <m>e^0=1</m>, then <m>\log_{e} 1=0</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            The last example illustrates the following properties of logarithms which hold for any base <m>b</m>:
+        </p>
+
+        <p>
+            <ul>
+                <li>If <m>w</m> is negative or 0, <m>\log_{b} w</m> is undefined as <m>b^p\gt0</m> for any power <m>p</m>.</li>
+                <li><m>\log_{b} 1=0</m> as <m>b^0=1</m> for any <m>b</m>.</li>
+            </ul>
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Compute <m>\log_{10}(5)</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    We are looking for an exponent such that <m>10</m> to this exponent equals <m>5</m>:
+                    <md>
+                        10^?=5.
+                    </md>
+                    Notice <m>10^0=1</m> so <m>0</m> is too small, and <m>10^1=10</m> so <m>1</m> is too large. The exponent that we are looking for is somewhere between <m>0</m> and <m>1</m>.
+                    The graph of <m>y=10^x</m> shows that such a number exists.
+                </p>
+
+                <image width="50%" xml:id="fig_6_1_1">
+                    <latex-image label="6_1_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-0.5,xmax=2,
+ymin=-0.5,ymax=10.5,
+xtick={0.6989,1,1.5,2},
+xticklabels={$\log_{10}(5)$,1,1.5,2},
+ytick={1,3,...,9},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2
+]
+\addplot[domain=-2:2] {10^x};
+\node[rpoint with label={-15:{}}] at (axis cs:0.6989,5) {};
+\draw[very thick,dashed] (0,5)--(0.6989,5)--(0.6989,0);
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+
+                <p>
+                    Clearly there is a number between <m>0.5</m> and <m>1</m> such that <m>10</m> to that number is <m>5</m>. That number is by definition <m>\log_{10}(5)</m>. What's the simplest way to approximate it? Use your calculator! Most likely you have two buttons on your calculator related to logarithms: <q>log</q> and <q>ln</q>. <q>log</q> is the logarithm of base <m>10</m>. We use our calculator and obtain:
+                    <md>
+                        \log_{10} (5)\approx 0.69897.
+                    </md>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            While the logarithm base <m>2</m> has some importance in the theory of music and other applications, the applications we will focus on rely heavily on the <alert>common logarithm</alert> and <alert>natural logarithm</alert>, which we will define below.
+        </p>
+
+        <p>
+            The logarithm of base <m>10</m> is denoted by <m>\log(x)</m> and called the <em>common logarithm</em>:
+            <md>
+                \log(x)=\log_{10}(x)
+            </md>
+            The logarithm of base <m>e</m> is denoted by <m>\ln(x)</m> and called the <em>natural logarithm</em>:
+            <md>
+                \ln(x)=\log_{e}(x)
+            </md>
+        </p>
+
+        <p>
+            To evaluate and manipulate these two logarithms correctly, you have to remember what their bases are:
+            <md>
+                <mrow>\log x \amp = \log_{10} x = p \amp \quad \amp \leftrightarrow \amp  \amp \amp 10^p \amp = x</mrow>
+                <mrow>\ln x \amp = \log_{e} x = p \amp \quad \amp \leftrightarrow \amp  \amp \amp e^p \amp = x</mrow>
+            </md>
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Evaluate the following expressions without a calculator.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\ln e</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\ln \left(\dfrac{1}{e^3}\right)</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\ln 0</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\ln 1</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\ln (e^{-0.078})</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\log(\log 10)</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\log(\sqrt{10})-\log(10^2)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The natural logarithm <q>ln</q> is the logarithm base <m>e</m>. Since <m>e^1=e</m>, we have <m>\ln e=1</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                First, simplify the expression inside the logarithm:
+                                <md>
+                                    \left(\frac{1}{e^3}\right)=e^{-3}.
+                                </md>
+                                Therefore,
+                                <md>
+                                    \ln \left(\frac{1}{e^3}\right)=\ln (e^{-3})=-3.
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                This quantity is undefined. The natural logarithm, as any other logarithm, is defined for positive inputs only. There is no number <m>p</m> such that <m>e^p=0</m>, since <m>e^p</m> is always positive.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\ln 1=0</m> as <m>e^0=1</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We have to raise <m>e</m> to the power <m>-0.078</m> to get <m>e^{-0.078}</m>. Hence, <m>\ln (e^{-0.078})=-0.078</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Because <m>\log 10=1</m>, then <m>\log(\log 10)=\log(1)=0</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Evaluate each term and then take the difference:
+                                <m>\log(\sqrt{10})=\log(10^{\frac{1}{2}})=\frac{1}{2}</m> and <m>\log(10^2)=2</m>. Hence:
+                                <md>
+                                    \log(\sqrt{10})-\log(10^2)=\frac{1}{2}-2=-\frac{3}{2}
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Use your calculator to find the approximate value of each of the following logarithms.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\ln 2</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\log 2</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\log (e^{-0.078})</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Using the <q>ln</q> button of your calculator, <m>\ln 2\approx0.693</m>, rounded to three decimal places. As with many logarithms, <m>\ln 2</m> is an irrational number, so we can only have its decimal approximation. As a check, <m>e^{0.693}\approx 1.99970</m><mdash/>almost <m>2</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Using the <q>log</q> button of your calculator, <m>\log 2\approx 0.301</m>, rounded to three decimal places. As a check, <m>10^{0.301}\approx 1.99986</m><mdash/>practically <m>2</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Using a calculator, <m>\log (e^{-0.078})\approx -0.0339</m>.
+                                To double check, we find that <m>10^{-0.0339}\approx 0.9249</m>, <m>e^{-0.078}\approx 0.9249</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
     </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>Graphs of Functions <m>y=\log(x)</m> and <m>y=\ln(x)</m></title>
 
+        <p>
+            The common logarithm <m>\log (x)</m> is defined for every positive input <m>x</m> and so is the natural logarithm <m>\ln (x)</m>. We can consider the two logarithmic functions <m>y=\log(x)</m> and <m>y=\ln(x)</m> with domains <m>x\gt0</m>. The graphs of the common logarithm function and the natural logarithm function have a similar shape:
+        </p>
 
-<xi:include href="exercises/ex_6_1.ptx"/>
+        <image width="50%" xml:id="fig_6_1_2">
+            <latex-image label="6_1_2_fig">
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=none,
+axis lines=middle,
+xmin=0,xmax=4,
+ymin=-2,ymax=2,
+xtick={1,...,4},
+ytick={-2,...,2},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+legend pos = south east,
+]
+\addplot[domain=0.1:4] {ln(x)};
+\addlegendentry{$\ln(x)$};
+\addplot[domain=0.01:4,red] {ln(x)/ln(10)};
+\addlegendentry{$\log(x)$};
+\end{axis}
+\end{tikzpicture}
+            </latex-image>
+        </image>
+
+        <p>
+            We see that both functions <m>y=\log x</m> and <m>y=\ln x</m> are defined for all <m>x\gt0</m> and not defined for <m>x\leq 0</m>. Both functions are <m>0</m> at <m>x=1</m>: <m>\log 1=0</m> and <m>\ln 1=0</m>. Furthermore, both functions are positive for <m>x\gt1</m> and negative for <m>0\lt x\lt1</m>. We also notice that for positive inputs <m>x</m> which are closer and closer to <m>0</m>, outputs are getting <q>more and more negative,</q> and both graphs approach the <m>y</m>-axis without ever crossing it. We say that the <m>y</m>-axis is a <em>vertical asymptote</em> for <m>y=\log x</m> and <m>y=\ln x</m>.
+            Recall that exponential functions have a <em>horizontal asymptote</em> at the <m>x</m>-axis. Finally, both functions are increasing.
+        </p>
+    </subsection>
+
+    <xi:include href="exercises/ex_6_1.ptx"/>
 </section>

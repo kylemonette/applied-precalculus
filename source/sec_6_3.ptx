@@ -1,38 +1,512 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_6_3">
+    <title>Logarithms in Applications</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Logarithms in Applications</title>
+        <ol>
+            <li>
+                <p>
+                    Convert an exponential function between standard form <m>Q = A \cdot b^t</m> and base-<m>e</m> form <m>Q = A \cdot e^{kt}</m>.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Use logarithms to calculate the doubling time and the half-life of an exponentially growing or decaying quantity.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Apply logarithms to solve application problems involving exponential growth and decay, including pH calculations.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            Logarithms appear in many applied problems. They are indispensable in the context of exponential growth and decay.
         </p>
     </introduction>
-    <ol>
-        <li>
+
+    <subsection>
+        <title>Converting Between <m>Q = A \cdot b^t</m> and <m>Q = A \cdot e^{kt}</m></title>
+
+        <p>
+            In Chapter 5 we considered exponential functions in two forms: the standard form
+            <m>Q(t) = A \cdot b^t</m> and the base-<m>e</m> form <m>Q(t) = A \cdot e^{kt}</m>.
+            Recall that we called <m>k</m> the <q>continuous growth rate</q>.
+            In Section 5.5, it was shown that you can convert an exponential function given in base-<m>e</m> form to standard form by simply taking <m>b = e^k</m>:
+            <md>
+                Q(t) = A \cdot e^{kt} = A \cdot (e^k)^t = A \cdot b^t.
+            </md>
+        </p>
+
+        <p>
+            To convert an exponential function from standard form <m>Q(t) = A \cdot b^t</m> to base-<m>e</m> form, we have to find <m>k</m> such that <m>e^k = b</m>.
+            If we have such a constant <m>k</m>, we can easily rewrite <m>Q(t)</m> in base-<m>e</m> form:
+            <md>
+                Q(t) = A \cdot b^t = A \cdot (e^k)^t = A \cdot e^{kt}.
+            </md>
+            Therefore, we need the solution <m>k</m> to the equation <m>e^k = b</m>.
+            Applying the natural logarithm to both sides gives <m>\ln(e^k) = \ln(b)</m>, and then <xref ref="nat-log-prop-5">Property</xref> implies
+            <m>k \ln(e) = \ln(b)</m>. Since <m>\ln(e) = 1</m>, the solution is
+            <md>
+                k = \ln(b).
+            </md>
+        </p>
+
+        <theorem>
+            <title>Converting An Exponential Function To And From Base <m>e</m></title>
+
+            <statement>
+                <p>
+                    Consider any arbitrary exponential function <m>Q(t) = A \cdot e^{kt}</m>.
+                </p>
+
+                <p>
+                    <ul>
+                        <li>Using <m>b = e^k</m>, then <m>Q(t) = A \cdot b^t</m>.</li>
+                        <li>Using <m>k = \ln b</m>, then <m>Q(t) = A \cdot e^{kt}</m>.</li>
+                        <li>If <m>b \gt 1</m>, <m>\ln(b) \gt 0</m>, so <m>k \gt 0</m>.</li>
+                        <li>If <m>0 \lt b \lt 1</m>, <m>\ln(b) \lt 0</m>, so <m>k \lt 0</m>.</li>
+                    </ul>
+                </p>
+            </statement>
+        </theorem>
+
+        <p>
+            The last two bullet points follow from the properties of the natural logarithm function <m>y = \ln(x)</m>. For inputs between <m>0</m> and <m>1</m>, <m>\ln(x)</m> is negative. For inputs greater than <m>1</m>, <m>\ln(x)</m> is positive. Recall the graph of <m>y = \ln(x)</m>:
+        </p>
+
+        <image width="50%" xml:id="fig_6_3_1">
+            <latex-image label="6_3_1_fig">
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=none,
+axis lines=middle,
+xmin=0,xmax=4,
+ymin=-2,ymax=2,
+xtick={1,...,4},
+ytick={-2,...,2},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+legend pos = south east,
+]
+\addplot[domain=0.1:4] {ln(x)};
+\end{axis}
+\end{tikzpicture}
+            </latex-image>
+        </image>
+
+        <example>
+            <statement>
+                <p>
+                    Rewrite the following exponential functions in terms of the natural base:
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>P(t) = 200 \cdot 1.089^t</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>Q(t) = 1500 \cdot 0.72^t</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                With the result above, we can rewrite <m>P(t)</m> in the form <m>P(t) = 200 e^{kt}</m> where <m>k = \ln 1.089 \approx 0.085</m>.
+                                Therefore,
+                                <md>
+                                    P(t) = 200 e^{0.085t}
+                                </md>
+                                and <m>k</m> is positive as <m>b = 1.089 \gt 1</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Letting <m>k = \ln 0.72 \approx -0.329</m>, then
+                                <md>
+                                    Q(t) = 1500 e^{-0.329t}.
+                                </md>
+                                Notice that <m>k</m> is negative since the growth factor <m>b = 0.72</m> is less than <m>1</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            <alert>Note:</alert>
+            Whenever you calculate <m>k</m> or the growth factor <m>b</m>, do not round off too crudely. Take at least three or four decimal places. Using too few decimal places to approximate <m>k</m> or <m>b</m> may lead to significant errors in the values of an exponential function.
+        </p>
+
+        <example xml:id="example-ch6-diazepam">
+            <statement>
+                <p>
+                    The common antianxiety medication Diazepam decays in a patient's body after a dose is taken. Suppose a patient takes a single dose of <m>10</m> mg of Diazepam. The amount <m>D(t)</m> left after <m>t</m> days is given by:
+                    <md>
+                        D(t) = 10 (0.74)^t.
+                    </md>
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                What is the daily percent growth rate?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Rewrite <m>D(t)</m> in the form <m>D(t) = 10 e^{kt}</m> and find the continuous daily growth rate.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The daily growth rate <m>r</m> is given by <m>r = b-1 = 0.74 - 1 = -0.26</m>, or <m>-26\%</m>. It is negative since <m>D(t)</m> is decreasing.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The continuous growth rate is <m>k = \ln (b) = \ln(0.74) \approx -0.301</m> or <m>-30.1\%</m>. Using this, then <m>D(t)</m> in terms of the natural base is
+                                <md>
+                                    D(t) = 10 e^{-0.301t}.
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Calculating the Doubling Time and the Half-Life</title>
+
+        <p>
+            With logarithms, we can calculate algebraically the doubling time and the half-life of exponentially increasing or decreasing quantities.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    You deposit <m>\$2,000</m> into a savings account that pays <m>4.5\%</m> annually. Let <m>B(t)</m> denote your balance after <m>t</m> years, which is described by
+                    <md>
+                        B(t) = 2000 \cdot 1.045^t.
+                    </md>
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                How long will it take for your money to double?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Suppose you deposit <m>\$5,000</m> instead of <m>\$2,000</m>. How long will it take for your money to double?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                To find the doubling time we have to solve the following equation for <m>t</m>:
+                                <md>
+                                    2 \cdot 2000 = 2000 \cdot 1.045^t.
+                                </md>
+                                Divide both sides of the equation by <m>2000</m>:
+                                <md>
+                                    2 = 1.045^t.
+                                </md>
+                                The unknown is in the exponent, so either the common or the natural logarithm must be applied to both sides. Using the natural logarithm (as is customary in most applied sciences) gives us the following:
+                                <md>
+                                    <mrow>\ln(2) \amp= \ln(1.045^t)</mrow>
+                                    <mrow>\ln(2) \amp= t \ln(1.045)</mrow>
+                                    <mrow>t \amp= \frac{\ln(2)}{\ln(1.045)} \approx 15.75</mrow>
+                                </md>
+                                It will take approximately <m>15.75</m> years for your money to double.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                If the initial deposit is <m>\$5,000</m> instead <m>\$2,000</m>, then <m>B(t) = 5000 \cdot 1.045^t</m>.
+                                To find the doubling time of this function, solve the equation
+                                <md>
+                                    2 \cdot 5000 = 5000 \cdot 1.045^t.
+                                </md>
+                                Dividing both sides by <m>5000</m> gives the familiar equation
+                                <md>
+                                    2 = 1.045^t.
+                                </md>
+                                This is the same equation as in the second step in part 1, so the solution is the same as before:
+                                <m>t = \ln(2) / \ln(1.045)</m>.
+                                The doubling time <em>does not depend on the initial amount</em><mdash/>it depends <em>only</em> on the growth factor!
+                                That is, the initial amount is not needed to find the doubling time of an exponential function.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    As we saw in <xref ref="example-ch6-diazepam"/>, the amount of Diazepam, <m>D(t)</m>, in mg, left in a patient's system <m>t</m> days after a <m>10</m> mg dose is
+                    <md>
+                        D(t) = 10 e^{-0.301t}.
+                    </md>
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find the half-life of Diazepam.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                How long will it take for the initial amount of Diazepam to be reduced to <m>3</m> mg?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                To find the half-life, solve the following equation for <m>t</m>:
+                                <md>
+                                    10 e^{-0.301t} = \frac{1}{2} \cdot 10.
+                                </md>
+                                Upon dividing by both sides by the initial value <m>10</m>,
+                                <md>
+                                    e^{-0.301t} = \frac{1}{2}.
+                                </md>
+                                Just as the doubling time, the half-life does not depend on the initial amount.
+                                Applying the natural logarithm to both sides of the equation yields the following:
+                                <md>
+                                    <mrow>\ln(e^{-0.301t}) \amp = \ln \left(\frac{1}{2} \right)</mrow>
+                                    <mrow>-0.301 t \amp = \ln\left(\frac{1}{2}\right)</mrow>
+                                    <mrow>t \amp = \frac{\ln(1/2)}{-0.301} \approx 2.3.</mrow>
+                                </md>
+                                The half-life of Diazepam is approximately <m>2.3</m> days<mdash/>it will take about <m>2.3</m> days for the half of the initial dose to be eliminated from the body.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We have to find <m>t</m> for which <m>D(t) = 3</m>, so we have to solve the equation:
+                                <md>
+                                    10 e^{-0.301t} = 3.
+                                </md>
+                                Just like before, divide both sides by <m>10</m>, apply the natural logarithm to both sides, and use properties of the natural logarithm to obtain:
+                                <md>
+                                    <mrow>e^{-0.301t} \amp= \frac{3}{10}</mrow>
+                                    <mrow>\ln(e^{-0.301t}) \amp = \ln(\frac{3}{10})</mrow>
+                                    <mrow>-0.301t \amp= \ln(\frac{3}{10})</mrow>
+                                    <mrow>t \amp= \frac{\ln(\frac{3}{10})}{-0.301} \approx 4.</mrow>
+                                </md>
+                                It will take about <m>4</m> days for <m>3</m> mg to be left in a patient's system from the initial dose of <m>10</m> mg.
+                            </p>
+
+                            <p>
+                                Does this answer make sense? Let's compare it to the half-life, which is <m>2.3</m> days. This half-life means that <m>10</m> mg will be reduced to <m>5</m> mg after <m>2.3</m> days and then the remaining <m>5</m> mg will be reduced to <m>2.5</m> mg after the next <m>2.3</m> days.
+                                So, it seems reasonable that <m>3</m> mg is left after <m>4</m> days.
+                            </p>
+
+                            <p>
+                                Of course, you can check your answer by substituting <m>t = 4</m> into <m>D(t)</m>:
+                                <md>
+                                    D(4) = 10 e^{-0.301 \cdot 4} = 2.9999 \approx 3.
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <aside>
             <p>
-            First objective.
+                In the previous example, notice that the answer in part 2 clearly depends on the initial amount <m>10</m> mg, unlike the answer in part 1.
+                If the initial dose is, say, <m>100</m> mg, it will take much longer before only <m>3</m> mg remain; however, the half-life is still the same!
             </p>
-        </li>
+        </aside>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+        <example>
+            <statement>
+                <p>
+                    During the 1986 Chernobyl disaster, radioactive Strontium-90 was released into the atmosphere<fn>https://semspub.epa.gov/work/HQ/175430.pdf, accessed: 5/24/2020</fn>. Strontium-90 contaminated the nearby region and accumulated in people's bones. (Incidentally, the isotope is often referred to as a <q>bone seeker</q>.) The half-life of Strontium-90 is <m>29</m> years.
+                </p>
 
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find the percentage of the original amount of Strontium-90 absorbed that is still left in people's bones in 2020.
+                            </p>
+                        </li>
 
-<xi:include href="exercises/ex_6_3.ptx"/>
+                        <li>
+                            <p>
+                                How many years will it take for <m>10\%</m> of the original amount of Strontium-90 to be left?
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
 
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Let <m>S(t)</m> be the amount of Strontium-90 remaining in an affected person's bones <m>t</m> years after the disaster. Denote by <m>S_0</m> the initial amount absorbed. The goal is to find a formula for <m>S(t)</m> in terms of the natural base:
+                                <md>
+                                    S(t) = S_0 e^{kt}.
+                                </md>
+                                To find <m>k</m>, we use the half-life and set up an equation for <m>k</m>. At <m>t = 29</m>, half of <m>S_0</m> is left; that is, <m>S(29) = \frac{1}{2} \cdot S_0</m>:
+                                <md>
+                                    S_0 e^{k \cdot 29} = \frac{1}{2} \cdot S_0.
+                                </md>
+                                Divide both sides by <m>S_0</m> so that
+                                <md>
+                                    e^{k \cdot 29} = \frac{1}{2}.
+                                </md>
+                                Use the natural logarithm to solve for <m>k</m>:
+                                <md>
+                                    <mrow>\ln(e^{k \cdot 29}) \amp= \ln \left(\frac{1}{2}\right)</mrow>
+                                    <mrow>k \cdot 29 \amp= \ln\left(\frac{1}{2}\right)</mrow>
+                                    <mrow>k \amp= \frac{\ln(\frac{1}{2})}{29} \approx -0.0239.</mrow>
+                                </md>
+                                Given this value of <m>k</m>, a formula for <m>S(t)</m> is
+                                <md>
+                                    S(t) = S_0 e^{-0.0239t}.
+                                </md>
+                                To answer the question, all that is left is to evaluate <m>S</m> at <m>t = 34</m>, which corresponds to the year 2020.
+                                That is,
+                                <md>
+                                    S(34)  = S_0 e^{-0.0239 \cdot 34} = S_0 \cdot 0.4437
+                                </md>
+                                In 2020, about <m>44\%</m> of the original amount absorbed remains in people's bones. Note that the <em>percentage</em> of Strontium-90 left does not depend on the initial amount <m>S_0</m>.
+                            </p>
+                        </li>
 
+                        <li>
+                            <p>
+                                We are looking for <m>t</m> such that <m>S(t) = 0.10 \cdot S_0</m>. That is, for solutions to
+                                <md>
+                                    S_0 e^{-0.0239t} = 0.10 \cdot S_0.
+                                </md>
+                                As before, divide both sides by <m>S_0</m>, apply the natural logarithm and use properties of the logarithm to obtain
+                                <md>
+                                    t = \frac{\ln(0.10)}{-0.0239} \approx 96.34.
+                                </md>
+                                Therefore, it will take approximately <m>96</m> years before <m>10\%</m> of the original amount remains.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>The Acidity of a Liquid</title>
+
+        <p>
+            In chemistry, the acidity of a liquid is measured on the <m>\text{pH}</m> scale<fn>http://chemistry.elmhurst.edu/vchembook/184ph.html, accessed: 5/25/2020</fn>. The acidity depends on the hydrogen ion concentration in the liquid, denoted by
+            <m>[\text{H}^{+}]</m> and measured in <m>\dfrac{\text{mol}}{\text{L}}</m> (moles per liter).
+            The <m>\text{pH}</m> is defined as:
+            <md>
+                \text{pH} = -\log[\text{H}^+]
+            </md>
+            (The logarithm in the formula is the <alert>common</alert> logarithm.)
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    The hydrogen ion concentration of lemon juice is <m>[\text{H}^+] = 0.01</m> <m>\dfrac{\text{mol}}{\text{L}}</m>. Find the <m>\text{pH}</m> of lemon juice.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    According to the <m>\text{pH}</m> formula above, the <m>\text{pH}</m> of lemon juice is
+                    <md>
+                        \text{pH} = -\log (0.01) = -\log (10^{-2}) = -(-2) = 2.
+                    </md>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The <m>\text{pH}</m> of gastric acid is <m>1</m>. Find the hydrogen ion concentration <m>[\text{H}^{+}]</m> in gastric acid.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    To find the hydrogen ion concentration, solve the equation <m>1 = -\log[\text{H}^+]</m>.
+                    Put another way, <m>-1 = \log[\text{H}^+]</m>.
+                    By the definition of the common logarithm, this means
+                    <md>
+                        10^{-1} = [\text{H}^+]
+                    </md>
+                    and therefore <m>[\text{H}^+] = 0.1</m> <m>\dfrac{\text{mol}}{\text{L}}</m>.
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <xi:include href="exercises/ex_6_3.ptx"/>
 </section>

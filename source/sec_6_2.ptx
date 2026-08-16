@@ -1,38 +1,456 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_6_2">
+    <title>Properties of Logarithms, Solving Equations Using Logarithms</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Properties of Logarithms, Solving Equations Using Logarithms</title>
+        <ol>
+            <li>
+                <p>
+                    State and apply the algebraic properties of the common logarithm and the natural logarithm.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Solve exponential equations by taking the logarithm of both sides.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Condense and expand logarithmic expressions, and use the change of base formula to evaluate a logarithm of any base.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            Algebraic properties of logarithms are what make them useful in applications. These properties are similar for all logarithms base <m>b</m>. For the sake of clarity, though, we will list and practice separately the properties of the common logarithm and the properties of the natural logarithm.
         </p>
     </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>Algebraic Properties of Logarithms</title>
 
+        <p>
+            We begin with the common logarithm.
+        </p>
 
+        <theorem>
+            <title>Properties of the Common Logarithm</title>
 
-<xi:include href="exercises/ex_6_2.ptx"/>
+            <statement>
+                <p>
+                    For <m>A</m> and <m>B</m> positive numbers:
+                </p>
 
+                <p>
+                    <ol>
+                        <li xml:id="com-log-prop-1">
+                            <p>
+                                <m>\log(10^x) = x</m> for any <m>x</m>
+                            </p>
+                        </li>
+
+                        <li xml:id="com-log-prop-2">
+                            <p>
+                                <m>10^{\log x} = x</m> for positive <m>x</m>
+                            </p>
+                        </li>
+
+                        <li xml:id="com-log-prop-3">
+                            <p>
+                                <m>\log(A\cdot B) = \log A + \log B</m>
+                            </p>
+                        </li>
+
+                        <li xml:id="com-log-prop-4">
+                            <p>
+                                <m>\log(\frac{A}{B}) = \log A - \log B</m>
+                            </p>
+                        </li>
+
+                        <li xml:id="com-log-prop-5">
+                            <p>
+                                <m>\log(B^p) = p\log B</m> for any <m>p</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </theorem>
+
+        <p>
+            Properties <xref first="com-log-prop-1" last="com-log-prop-2" text="global"/> follow from the definition of the logarithm base <m>10</m>.
+            For <xref ref="com-log-prop-3">Property</xref>, justification requires explaining why the logarithm of a product equals a sum of logarithms. From the definition of <m>\log x = \log_{10} x</m>, then for any number (or expression) <m>w</m>,
+            <md>
+                \log (A\cdot B) =  w \quad \Leftrightarrow \quad 10^w = A\cdot B.
+            </md>
+            Notice that from properties of exponential expressions,
+            <md>
+                10^{\log A + \log B} = 10^{\log A}\cdot 10^{\log B}.
+            </md>
+            Indeed, the sum of exponents corresponds to the product of the exponential expressions. From <xref ref="com-log-prop-2">Property</xref> of the common logarithm,
+            <md>
+                10^{\log A} = A, \qquad 10^{\log B} = B.
+            </md>
+            It follows that
+            <md>
+                10^{\log A + \log B} = 10^{\log A}\cdot 10^{\log B} = A\cdot B.
+            </md>
+            Therefore,
+            <md>
+                \log (A\cdot B) = \log A + \log B  \quad \text{as} \quad 10^{\log A + \log B}  = A\cdot B.
+            </md>
+            Similarly, Properties <xref first="com-log-prop-4" last="com-log-prop-5" text="global"/> of the logarithm follow from the algebraic properties of exponential expressions.
+        </p>
+
+        <p>
+            All logarithms have similar properties as those listed above for the common logarithm. In particular, similar properties hold for the natural logarithm.
+        </p>
+
+        <theorem>
+            <title>Properties of the Natural Logarithm</title>
+
+            <statement>
+                <p>
+                    For <m>A</m> and <m>B</m> positive numbers:
+                </p>
+
+                <p>
+                    <ol>
+                        <li xml:id="nat-log-prop-1">
+                            <p>
+                                <m>\ln(e^x) = x</m> for any <m>x</m>
+                            </p>
+                        </li>
+
+                        <li xml:id="nat-log-prop-2">
+                            <p>
+                                <m>e^{\ln x} = x</m> for <m>x</m> positive
+                            </p>
+                        </li>
+
+                        <li xml:id="nat-log-prop-3">
+                            <p>
+                                <m>\ln(A\cdot B) = \ln A + \ln B</m>
+                            </p>
+                        </li>
+
+                        <li xml:id="nat-log-prop-4">
+                            <p>
+                                <m>\ln(\frac{A}{B}) = \ln A - \ln B</m>
+                            </p>
+                        </li>
+
+                        <li xml:id="nat-log-prop-5">
+                            <p>
+                                <m>\ln(B^p) = p\ln B</m> for any <m>p</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </theorem>
+    </subsection>
+
+    <subsection>
+        <title>Solving Equations Using Logarithms</title>
+
+        <p>
+            <xref ref="com-log-prop-5">Property</xref> of both logarithms is especially important and makes logarithms useful for solving equations in which the unknown is in the exponent.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Solve the equation:
+                    <md>
+                        3^x = 600.
+                    </md>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    The unknown <m>x</m> is in the exponent, so we apply a logarithm to both sides of the equation. Either the common logarithm or the natural logarithm will work equally well, but we use the common logarithm.
+                    Taking the logarithm of both sides of <m>3^x = 600</m> gives us an equivalent equation:
+                    <md>
+                        \log(3^x) = \log(600).
+                    </md>
+                    <alert>Note:</alert> We took the logarithm of each side; which is <alert>NOT</alert> to be interpreted as <q>multiplying each side by <m>\log</m></q>.
+                    Similarly, we cannot <em>multiply</em> both sides of an equation by the radical <q><m>\sqrt{\quad}</m></q>. We can, however, <em>take the radical</em> of both sides.
+                </p>
+
+                <p>
+                    <xref ref="com-log-prop-5">Property</xref> of the common logarithm takes the exponent out of the logarithm:
+                    <md>
+                        x\log(3) = \log(600).
+                    </md>
+                    Note that <m>\log(3)</m> and <m>\log(600)</m> are just constants<mdash/>you can calculate their approximate values using your calculator.
+                    The equation is then <m>x</m> times a constant is equal to another constant. Divide both sides of the equation by <m>\log(3)</m> to get the answer:
+                    <md>
+                        x = \frac{\log(600)}{\log(3)} \approx 5.823.
+                    </md>
+                    You can check for yourself that you will get the same answer if you choose to take the natural logarithm of both sides rather than the common logarithm. The exact answers may look different, but the decimal approximation will show they are in fact the same.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Solve for <m>t</m>:
+                    <md>
+                        1000\cdot 1.05^t = 2000.
+                    </md>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Before applying the logarithm to both sides, it is best to divide both sides by <m>1000</m>:
+                    <md>
+                        1.05^t = \frac{2000}{1000}.
+                    </md>
+                    That is, <m>1.05^t = 2</m>. Now, apply the logarithm to both sides and solve:
+                    <md>
+                        <mrow>\log(1.05^t) \amp = \log(2)</mrow>
+                        <mrow>t\log(1.05) \amp = \log(2) \amp\amp (<xref ref="com-log-prop-5">Property</xref>)</mrow>
+                        <mrow>\frac{t \, \cancel{\log(1.05)}}{\cancel{\log(1.05)}} \amp = \frac{\log(2)}{\log (1.05)}</mrow>
+                        <mrow>t \amp = \frac{\log(2)}{\log(1.05)} \approx 14.207.</mrow>
+                    </md>
+                    Notice that we also found the doubling time of the function <m>y = 1000\cdot 1.05^t</m> with this calculation.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Solve for <m>t</m>:
+                    <md>
+                        500e^{0.072t} = 1800
+                    </md>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    After dividing both sides by <m>500</m>,
+                    <md>
+                        e^{0.072t} = \frac{18}{5}.
+                    </md>
+                    Since the base of the exponential expression is <m>e</m>, it will be a bit easier to use the natural logarithm.
+                    Applying the natural logarithm to both sides gives
+                    <md>
+                        \ln(e^{0.072t}) = \ln\left( \frac{18}{5} \right).
+                    </md>
+                    There are two options at this time.
+                    The first is to use <xref ref="nat-log-prop-5">Property</xref> of the natural logarithm with <m>p = 0.072t</m> and get:
+                    <md>
+                        \ln(e^{0.072t}) = 0.072t\ln(e) = 0.072t \quad \text{as} \quad \ln(e) = 1.
+                    </md>
+                    Or, use <xref ref="nat-log-prop-1">Property</xref>, which says in essence that for any number or expression <m>w</m>, <m>\ln(e^{w}) = w</m>.
+                    Either way,
+                    <md>
+                        \ln(e^{0.072t}) = 0.072t
+                    </md>
+                    and so
+                    <md>
+                        0.072t = \ln \left(\frac{18}{5}\right).
+                    </md>
+                    Dividing both sides by <m>0.072</m>, the exact and approximate solutions are
+                    <md>
+                        t = \frac{\ln(\frac{18}{5})}{0.072} \approx 17.79
+                    </md>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Solve for <m>x</m> in the following equation. Give the exact answer as well as a decimal approximation.
+                    <md>
+                        3\cdot 8^x = 5\cdot 6^x.
+                    </md>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    The unknown <m>x</m> appears in two exponential expressions. One approach is to combine those expressions into one by first dividing both sides of the equation by <m>3\cdot 6^x</m> which will result in
+                    <md>
+                        \frac{8^x}{6^x} = \frac{5}{3}.
+                    </md>
+                    Now remember that the power of a quotient is the quotient of the corresponding powers: <m>\dfrac{a^x}{b^x} = \left(\dfrac{a}{b}\right)^x</m>. Hence, the equation becomes:
+                    <md>
+                        \left(\frac{8}{6}\right)^x = \frac{5}{3}.
+                    </md>
+                    Now, apply the common logarithm to both sides:
+                    <md>
+                        \log\left(\left(\frac{8}{6}\right)^x\right) = \log\left(\frac{5}{3}\right).
+                    </md>
+                    By <xref ref="com-log-prop-5">Property</xref>, the left-hand side simplifies to the following:
+                    <md>
+                        x\log\left(\frac{8}{6}\right) = \log\left(\frac{5}{3}\right).
+                    </md>
+                    Divide both sides by the constant <m>\log\left(\frac{8}{6}\right)</m>, yielding the answer:
+                    <md>
+                        x = \dfrac{\log\left(\frac{5}{3}\right)}{\log\left(\frac{8}{6}\right)} \approx 1.776.
+                    </md>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            What would happen if we didn't simplify the equation <m>3\cdot 8^x = 5\cdot 6^x</m> before applying the logarithm to both sides? Nothing much, except that the calculations would become a bit more complicated, since we would have
+            <md>
+                \log (3\cdot 8^x) = \log(5\cdot 6^x).
+            </md>
+            This requires <xref ref="com-log-prop-3">Property</xref> to expand the logarithms on both sides as in:
+            <md>
+                \log(3) + \log (8^x) = \log(5) + \log (6^x).
+            </md>
+            With <xref ref="com-log-prop-5">Property</xref>, the exponent <m>x</m> can be pulled out and then
+            <md>
+                \log(3) + x\log( 8) = \log(5) + x\log (6).
+            </md>
+            Notice that <m>\log (3)</m>, <m>\log (5)</m>, <m>\log (6)</m>, <m>\log (8)</m> are all constants and can be grouped on one side of the equation, and all terms involving <m>x</m> appear on the other side:
+            <md>
+                x(\log(8) - \log(6)) = \log(5) - \log(3).
+            </md>
+            Simplifying, the answer is
+            <md>
+                x = \frac{\log(5) - \log(3)}{\log(8) - \log(6)} = \dfrac{\log\left(\frac{5}{3}\right)}{\log\left(\frac{8}{6}\right)}.
+            </md>
+            Indeed, the difference of logarithms correspond to the logarithm of a quotient by <xref ref="com-log-prop-4">Property</xref> . Hence, we obtained the same answer as before, but getting there required more steps.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Rewrite the following expressions in terms of <m>\log x</m> and <m>\log y</m>, or state that this is not possible.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>\log\left(\dfrac{5y}{x}\right)</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\log(x^2 - 5y)</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\ln\left(7x^3y\right)</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <xref ref="com-log-prop-4">Property</xref> <mdash/>the logarithm of a quotient is the difference of logarithms<mdash/>to obtain
+                                <md>
+                                    <mrow>\log\left(\dfrac{5y}{x}\right) \amp= \log(5y) - \log(x)</mrow>
+                                    <mrow>\amp= \log(5) + \log(y) - \log(x)</mrow>
+                                </md>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Before we can do anything else, we have to deal with the logarithm of a difference.
+                                <alert>There is no formula for the logarithm of a sum or a difference!</alert>
+                                This expression cannot be simplified.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Using the properties listed above,
+                                <md>
+                                    \ln\left(7x^3y\right) = \ln(7) + \ln(x^3) + \ln(y) = \ln(7) + 3\ln(x) + \ln(y).
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Condense the following expression into one logarithm:
+                    <md>
+                        3\ln y + \frac{1}{2}\ln(x) - \ln z
+                    </md>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Using properties of the natural logarithm,
+                    <md>
+                        3\ln y + \frac{1}{2}\ln(x) - \ln z = \ln (y^3) + \ln (x^{\frac{1}{2}}) + \ln (z^{-1}) = \ln\left(\frac{y^3\sqrt{x}}{z}\right).
+                    </md>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>The Change of Base Formula for Logarithms</title>
+
+        <p>
+            Even though many scientific and graphing calculators are only programmed to work with the common logarithm and the natural logarithm, you can calculate the value of any logarithm <m>\log_b x</m> thanks to the following change of base formulas:
+            <md>
+                \log_b x = \frac{\ln x}{\ln b}, \qquad \log_b x = \frac{\log x}{\log b}
+            </md>
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Use your calculator to find <m>\log_2 5</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Either change of base formula can be utilized here. Using the first one would give us
+                    <md>
+                        \log_2 5 = \frac{\ln 5}{\ln 2} \approx 2.322,
+                    </md>
+                    rounded to three decimal places. The answer is the same if we convert to the common logarithm:
+                    <md>
+                        \log_2 5 = \frac{\log 5}{\log 2} \approx 2.322.
+                    </md>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <xi:include href="exercises/ex_6_2.ptx"/>
 </section>

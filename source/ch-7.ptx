@@ -4,8 +4,12 @@
   <title>New Functions from Old</title>
 
   <introduction>
+   <p>
+        Once we understand the graphs of some basic functions, such as <m>f(x) = x^2</m>, <m>f(x) = \sqrt{x}</m>, or <m>f(x) = 2^x</m>, we can use them to understand the graphs of many related functions without having to analyze each one from scratch. Shifting a graph left or right, stretching or compressing it, reflecting it, or combining two functions into one are all ways of building <em>new functions from old</em>, and recognizing these transformations is a powerful shortcut for understanding and graphing functions.
+    </p>
+ 
     <p>
-        Intro about Chapter 7.
+        This chapter examines several ways that functions can be built from others. We begin with vertical and horizontal shifts, followed by vertical and horizontal scaling, and see how these transformations can be combined and applied in a specific order. We then study how two functions can be combined through composition, and likewise how a complicated function can be decomposed into simpler pieces. The chapter concludes with inverse functions and how to find them algebraically.
     </p>
 </introduction>
 

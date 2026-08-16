@@ -5,7 +5,11 @@
 
   <introduction>
     <p>
-        Intro about Chapter 6.
+        In Chapter 5 we saw that solving an equation such as <m>3000(1.0433)^t=6000</m> for the unknown exponent <m>t</m> required a new kind of tool, since none of our familiar algebraic operations could isolate the exponent <m>t</m>. That tool is the <em>logarithm</em>, the inverse operation of exponentiation. Logarithms let us solve for unknown exponents, and they also arise naturally whenever a quantity spans many orders of magnitude, such as the acidity of a liquid or the intensity of an earthquake.
+    </p>
+ 
+    <p>
+        This chapter begins by defining the logarithm base <m>b</m> and, in particular, the common logarithm and the natural logarithm. We then develop the algebraic properties of logarithms and use them to solve exponential equations, as well as to condense and expand logarithmic expressions. The chapter concludes with applications of logarithms, including converting an exponential function between standard and base-<m>e</m> form, calculating doubling time and half-life, and measuring the acidity of a liquid using the pH scale.
     </p>
 </introduction>
 

@@ -1,63 +1,318 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_7_2">
+    <title>Vertical and Horizontal Scaling</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Vertical and Horizontal Scaling</title>
+        <ol>
+            <li>
+                <p>
+                    Determine the effect of multiplying the output of a function by a constant and identify the resulting vertical scaling and any reflection.
+                </p>
+            </li>
 
-<objectives>
-    <introduction>
+            <li>
+                <p>
+                    Determine the effect of multiplying the input of a function by a constant and identify the resulting horizontal scaling and any reflection.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Identify, in order, the shifts, scalings, and reflections applied to a function written in the general form <m>g(x) = af(b(x-h))+k</m>.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
+    <subsection>
+        <title>Vertical Scaling</title>
+
         <p>
-            After completing this section, you should be able to do the following.
+            Consider the function <m>f(x) = x^3</m>. What would happen if we multiply this function by a nonzero number? For instance, what would the graphs of <m>g(x) = 4x^3</m> and <m>h(x) = \frac{1}{2}x^3</m> look like? In this case, the graph of <m>g(x) = 4x^3</m> is the graph of <m>f(x) = x^3</m> <em>stretched vertically</em> by multiplying each of the original outputs of <m>f(x) = x^3</m> by <m>4</m> and the graph of <m>h(x) = \frac{1}{2}x^3</m> is the graph of <m>f(x) = x^3</m> <em>compressed vertically</em> by dividing each of the original outputs of <m>f(x) = x^3</m> by <m>2</m> (equivalently, we can think of this as multiplying the original outputs by <m>\frac{1}{2}</m>).
         </p>
-    </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+        <p>
+            What if we were to multiply by a negative number? The graph of <m>j(x) = - 4x^3</m> is the graph of <m>g(x) = x^3</m> <em>stretched vertically</em> by multiplying each of the original outputs of <m>f(x) = x^3</m> by <m>4</m>, but also <em>reflected over the <m>x</m>-axis</em>.
+        </p>
+
+            <figure xml:id="fig_7_2_vert_scal">
+        <caption></caption>
+        <interactive platform="jsxgraph" source="jsxgraph/jsx_7_2_vert_scal.js" width="60%">
+            <slate xml:id="jsx_7_2_vert_scal_fig" surface="jsxboard"/>
+            <instructions>
+                <p>Adjust the vertical scale factor <m>a</m> to change the graph of <m>f(x) = x^3</m>.</p>
+            </instructions>
+        </interactive>
+    </figure>
+
+        <p>
+            In general, if we begin with the graph of a function <m>y = f(x)</m>, then the function <m>g(x) = af(x)</m> can be given by the formula <m>g(x) = a y</m>. That is, the <m>y</m>-values of <m>g(x)</m> are the <m>y</m>-values of <m>f(x)</m> adjusted by the multiplication of the number <m>a</m>. Hence, the graph of <m>g(x) = af(x)</m> is the graph of <m>f(x)</m> either stretched (if <m>|a| \gt 1</m>) or compressed (if <m>|a| \lt 1</m>) vertically, and additionally reflected over the <m>x</m>-axis if <m>a</m> is negative.
+        </p>
+
+        <definition>
+            <title>Vertical Scaling</title>
+
+            <statement>
+                <p>
+                    Given a function <m>f(x)</m> and a constant <m>a</m>, <m>g(x) = af(x)</m> is a <em>vertical scaling</em> of the graph of <m>f(x)</m> and also a reflection of <m>f(x)</m> over the <m>x</m>-axis if <m>a</m> is negative. In either case:
+                </p>
+
+                <p>
+                    <ul>
+                        <li>the graph of <m>g(x) = af(x)</m> is the graph of <m>f(x)</m> with its outputs multiplied by <m>a</m>.</li>
+                    </ul>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    A table of values for a function <m>f(t)</m> is given below. Give the table of values for <m>g(t)</m>, whose graph is that of <m>f(t)</m> reflected over the <m>t</m>-axis and compressed vertically by a factor of <m>10</m>.
+                </p>
+
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell><m>t</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1.5</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>4.5</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>f(t)</m></cell>
+                        <cell><m>45</m></cell>
+                        <cell><m>23</m></cell>
+                        <cell><m>-31</m></cell>
+                        <cell><m>1</m></cell>
+                    </row>
+                </tabular>
+            </statement>
+
+            <solution>
+                <p>
+                    A reflection over the <m>t</m>-axis will change the sign of every output of <m>f(t)</m>, while vertical compression by a factor of <m>10</m> means that every output must be divided by 10. We could think of <m>g(t)</m> as having the formula <m>g(t) = - \frac{1}{10}f(t)</m> and the resulting table of values would be
+                </p>
+
+                <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+                    <row>
+                        <cell><m>t</m></cell>
+                        <cell><m>0</m></cell>
+                        <cell><m>1.5</m></cell>
+                        <cell><m>3</m></cell>
+                        <cell><m>4.5</m></cell>
+                    </row>
+
+                    <row>
+                        <cell><m>g(t)</m></cell>
+                        <cell><m>-4.5</m></cell>
+                        <cell><m>-2.3</m></cell>
+                        <cell><m>3.1</m></cell>
+                        <cell><m>-0.1</m></cell>
+                    </row>
+                </tabular>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Horizontal Scaling</title>
+
+        <p>
+            Vertical scaling results from multiplying all the outputs of a given function by the same number. We can also take an original function and multiply all of its <em>inputs</em> by the same number.
+            Consider <m>f(x) = {2}^{x}</m>. The function <m>g(x) = 2^{-x}</m> is the graph of <m>f(x) = 2^x</m> <em>reflected over the <m>y</m>-axis</em> while <m>h(x) = 2^{(4x)}</m> is the graph of <m>f(x) = 2^x</m> <em>scaled horizontally</em> by dividing each original input by <m>4</m> (or, equivalently, multiplying each original input by <m>\frac{1}{4}</m>).
+        </p>
+
+        <figure xml:id="fig_7_2_hor_scal">
+        <caption></caption>
+        <interactive platform="jsxgraph" source="jsxgraph/jsx_7_2_hor_scal.js" width="60%">
+            <slate xml:id="jsx_7_2_hor_scal_fig" surface="jsxboard"/>
+            <instructions>
+                <p>Adjust the horizontal scale factor <m>b</m> to change the graph of <m>f(x) = 2^x</m>.</p>
+            </instructions>
+        </interactive>
+    </figure>
+
+
+        <definition>
+            <title>Horizontal Scaling</title>
+
+            <statement>
+                <p>
+                    Given a function <m>f(x)</m> and a constant <m>b</m>, <m>g(x) = f(bx)</m> is a <em>horizontal scaling</em> of the graph of <m>f(x)</m> and also a reflection of <m>f(x)</m> over the <m>y</m>-axis if <m>b</m> is negative. In either case
+                </p>
+
+                <p>
+                    <ul>
+                        <li>the graph of <m>g(x) = f(bx)</m> is the graph of <m>f(x)</m> with its inputs multiplied by <m>\frac{1}{b}</m>.</li>
+                    </ul>
+                </p>
+            </statement>
+        </definition>
+
+        <example>
+            <statement>
+                <p>
+                    The graph of a function <m>y = f(x)</m> is shown below. Write the formula for the function <m>g(x)</m> whose graph is that of <m>f(x)</m> stretched horizontally by a factor of <m>3</m> and also graph <m>g(x)</m>.
+                </p>
+
+                <image width="50%" xml:id="fig_7_2_1">
+                    <latex-image label="7_2_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=0,xmax=9,
+ymin=-5,ymax=5,
+xtick={1,...,8},
+ytick={-4,...,4},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2,
+trig format plots = rad,
+]
+\addplot[domain=0:8] {4*sin(2*pi/8*x)};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+            </statement>
+
+            <solution>
+                <p>
+                    In order to stretch <m>f(x)</m> by a factor of <m>3</m>, we need to multiply each of its inputs by <m>3</m>. To accomplish this, we must let the <m>b</m> in the horizontal scaling formula be given by <m>\frac{1}{3}</m>. Why? The function <m>g(x) = f(bx)</m> is the graph of <m>f(x)</m> scaled horizontally by multiplying each of its inputs by <m>\frac{1}{b}</m>. Since we need to multiply each input by <m>3</m>, we need <m>\frac{1}{b} = 3</m>, which implies that <m>b = \frac{1}{3}</m>. So <m>g(x) = f\left(\frac{1}{3}x\right)</m>. The graph of <m>g(x)</m> is formed by taking each ordered pair on <m>f(x)</m> and leaving its <m>y</m>-value the same but multiplying its <m>x</m>-value by <m>3</m>.
+                </p>
+
+                <image width="50%" xml:id="fig_7_2_2">
+                    <latex-image label="7_2_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=0,xmax=25,
+ymin=-5,ymax=5,
+xtick={2,4,...,24},
+ytick={-4,...,4},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2,
+trig format plots = rad,
+]
+\addplot[domain=0:8] {4*sin(2*pi/8*x)};
+\addplot[domain=0:24,red] {4*sin(2*pi/24*x)};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    A certain medication metabolizes so that the concentration in the body <m>t</m> hours after taking a 500 mg dose is modeled by the function <m>C_1(t) = 500{(0.71)}^t</m>. A 500 mg dose of a different medication follows the same pattern but metabolizes twice as fast. Use your knowledge of horizontal scaling to represent drug concentration curve <m>C_2</m> of this different medication.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    In order for the second medication to metabolize twice as fast as the first while following the same pattern, the graph of <m>C_2</m> must be the graph of <m>C_1</m> compressed horizontally by dividing each of the inputs of <m>C_1</m> by 2 (or, equivalently, multiplying them by <m>\frac{1}{2}</m>). For instance, the concentration of the first medication 6 hours after a dose should be the same as the concentration of the second medication 3 hours after a dose. This corresponds to
+                    <md>
+                        C_2(t) = C_1(2t) = 500{(0.71)}^{2t}.
+                    </md>
+                    It can be verified that this formula makes sense by graphing the two curves, as shown.
+                </p>
+
+                <image width="50%" xml:id="fig_7_2_3">
+                    <latex-image label="7_2_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=7,
+ymin=0,ymax=6,
+legend pos=north east,
+xtick={1,...,6},
+ytick={1,2,3,4,5},
+yticklabels={100,200,300,400,500},
+minor tick={},
+xlabel=\(t\), ylabel=\(y\),
+x post scale = 1.2,
+y post scale = 1.2,
+]
+\addplot[domain=0:6] {5*(0.71)^x};
+\addlegendentry{$C_1(t)$};
+\addplot[domain=0:6,red] {5*(0.71)^(2*x)};
+\addlegendentry{$C_2(t)$};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+            </solution>
+        </example>
+    </subsection>
+
+    <subsection>
+        <title>Combining Shifts, Scaling, and Reflections</title>
+
+        <p>
+            The transformations of functions introduced in this section can be combined with each other and with horizontal/vertical shifting as described in the previous section. When identifying the transformations that have been applied to an original function, we work our way from the inside of the function out by looking at what is happening to the variable <m>x</m> and in what order via order of operations. This is explained below.
+        </p>
+
+        <theorem>
+            <title>Transformations of Functions in General</title>
+
+            <statement>
+                <p>
+                    The graph of the transformation
+                    <md>
+                        g(x) = a f\big(b(x - h)\big) + k
+                    </md>
+                    is the graph of <m>f(x)</m> with the following transformations applied <alert>in the listed order</alert>:
+                </p>
+                <aside>
+                    <p>
+                        For a challenge, find a function such that applying a sequence of transformations in different orders produce different results!
+                    </p>
+                </aside>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Shifted horizontally according to <m>h</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Scaled horizontally according to <m>b</m> with a reflection over the <m>y</m>-axis if <m>b</m> is negative.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Scaled vertically according to <m>a</m> with a reflection over the <m>x</m>-axis if <m>a</m> is negative.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Shifted vertically according to <m>k</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+        </theorem>
+    </subsection>
 
 
 
-<figure xml:id="fig_7_2_vert_scal">
-<caption></caption>
-<interactive platform="jsxgraph" source="jsxgraph/jsx_7_2_vert_scal.js" width="60%">
-    <slate xml:id="jsx_7_2_vert_scal_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Adjust the vertical scale factor <m>a</m> to change the graph of <m>f(x) = x^3</m>.</p>
-    </instructions>
-</interactive>
-</figure>
 
-
-<figure xml:id="fig_7_2_hor_scal">
-<caption></caption>
-<interactive platform="jsxgraph" source="jsxgraph/jsx_7_2_hor_scal.js" width="60%">
-    <slate xml:id="jsx_7_2_hor_scal_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Adjust the horizontal scale factor <m>b</m> to change the graph of <m>f(x) = 2^x</m>.</p>
-    </instructions>
-</interactive>
-</figure>
-
-
-
-
-<xi:include href="exercises/ex_7_2.ptx"/>
-
-
+    <xi:include href="exercises/ex_7_2.ptx"/>
 </section>
