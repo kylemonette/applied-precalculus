@@ -1,37 +1,551 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_8_4">
+    <title>Sine and Cosine Functions</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Sine and Cosine Functions</title>
+        <ol>
+            <li>
+                <p>
+                    State the definition of the sine and cosine functions and identify their period, amplitude, and midline from their graphs.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Determine the effect of vertical scaling and vertical shifting on the amplitude and midline of the sine and cosine functions.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Determine the effect of horizontal scaling on the period of the sine and cosine functions.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            Finally, we are in a position to define the two important trigonometric functions <m>f(t) = \sin(t)</m> and <m>g(t) = \cos(t)</m>. We will use the trigonometric ratios <m>\sin(\alpha)</m> and <m>\cos(\alpha)</m> to define values of the functions at any given <m>t</m>, although in applications the functions are often detached from their unit circle meaning.
+            Here is the definition.
         </p>
+
+        <definition>
+            <title>Sine and Cosine Functions</title>
+
+            <statement>
+                <p>
+                    Let <m>t</m> be a real number. Take the angle of <m>t</m> <alert>radians</alert> in standard position. The values of the sine and cosine functions at <m>t</m> are defined as:
+                    <md>
+                        f(t) = \sin(t), \quad g(t) = \cos(t)
+                    </md>
+                    where <m>\sin(t)</m> and <m>\cos(t)</m> are the trigonometric ratios of the angle <m>t</m> as described in the last section.
+                </p>
+            </statement>
+        </definition>
     </introduction>
-    <ol>
-        <li>
+
+    <subsection>
+        <title>Graphs of Sine and Cosine Functions</title>
+
+        <p>
+            What is the graph of the sine function <m>f(t) = \sin(t)</m>? We know that for the angle of <m>t</m> radians in standard position, <m>\sin(t)</m> is the <m>y</m> coordinate of the point <m>P = (x, y)</m> at which the terminal side intersects the unit circle, as shown in <xref ref="fig_8_3_sin_cos"/>.
+            We start from <m>t = 0</m> and examine how the <m>y</m> coordinate of the point of intersection changes as <m>t</m> increases.
+        </p>
+
+        <p>
+            At <m>t = 0</m> the terminal side of the angle 0 radians coincides with the initial side; the point of intersection is <m>P = (x, y) = (1, 0)</m>. Hence, <m>y = 0</m> and <m>\sin(0) = 0</m>.
+            Continuing to increase <m>t</m>, then
+            for an angle whose terminal side is in the first quadrant, the <m>y</m> coordinate is between <m>0</m> and <m>1</m>, and it increases as <m>t</m> increases.
+            When the angle <m>t</m> reaches <m>\frac{\pi}{2} = 90^{\circ}</m>, the terminal side is vertical, the point of intersection with the unit circle is <m>P = (0, 1)</m>; the <m>y</m> coordinate is <m>y = 1</m>.
+            That is, <m>\sin(\frac{\pi}{2}) = 1</m>.
+            Look at the graph in <xref ref="fig_8_4_1"/>. For <m>t</m> between <m>0</m> and <m>\frac{\pi}{2}</m> the function <m>\sin(t)</m> increases from <m>0</m> to <m>1</m>. Past <m>t = \frac{\pi}{2}</m>, <m>\sin(t)</m> decreases when <m>t</m> increases until it hits <m>0</m> at <m>t = \pi</m>.
+        </p>
+
+        <p>
+            If we keep increasing <m>t</m> past <m>\frac{\pi}{2}</m>, the terminal side is in the second quadrant and the <m>y</m> coordinate is now decreasing until it is <m>0</m> at <m>t = \pi = 180^{\circ}</m>.
+            Continuing to increase <m>t</m> past <m>\pi</m>, the terminal side is now in the third quadrant. The <m>y</m> coordinate is now negative and is getting <q>more and more negative</q> until it hits <m>-1</m> at <m>\frac{3\pi}{2}</m>. Note how the graph of <m>\sin(t)</m> in <xref ref="fig_8_4_1"/> reflects this behavior. When the terminal side of the angle <m>t</m> is in the fourth quadrant the <m>y</m> coordinate is getting <q>less and less negative</q> when <m>t</m> increases until at <m>t = 2\pi = 360^{\circ}</m> the terminal side is aligned again with the positive <m>x</m>-axis with <m>y = 0</m>. If we keep increasing <m>t</m> past <m>2\pi</m> the same cycle of changes in <m>y</m> repeats on the interval <m>2\pi \lt t \lt 4\pi</m>. Therefore, the values of <m>\sin(t)</m> repeat for <m>2\pi \lt t \lt 4\pi</m>. And so on.
+        </p>
+
+        <p>
+            To obtain the graph of the function <m>\cos(t)</m>, we follow changes in the <m>x</m>-coordinate of the intersection point <m>P = (x, y)</m> as the angle <m>t</m> changes. We easily obtain the graph of <m>g(t) = \cos(t)</m> given in <xref ref="fig_8_4_2"/>.
+        </p>
+
+<figure xml:id="fig_8_4_1">
+<caption/>
+        <image width="50%" xml:id="fig_8_4_one">
+            <latex-image label="8_4_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=-7, xmax=7,
+ymin=-2, ymax=2,
+xtick={-2*pi,-1.5*pi,-pi,-pi/2,pi/2,pi,3*pi/2,2*pi},
+xticklabels={$-2\pi$, $\frac{-3\pi}{2}$, $-\pi$, $\frac{-\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$},
+ytick={-1,1},
+minor tick={},
+xlabel={$t$}, ylabel={$f(t)=\sin(t)$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=-2*pi:2*pi] {sin(x)};
+\end{axis}
+\end{tikzpicture}
+            </latex-image>
+        </image>
+</figure>
+
+<figure xml:id="fig_8_4_2">
+<caption/>
+        <image width="50%" xml:id="fig_8_4_two">
+            <latex-image label="8_4_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=none,
+xmin=-7, xmax=7,
+ymin=-2, ymax=2,
+xtick={-2*pi,-1.5*pi,-pi,-pi/2,pi/2,pi,3*pi/2,2*pi},
+xticklabels={$-2\pi$, $\frac{-3\pi}{2}$, $-\pi$, $\frac{-\pi}{2}$, $\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$},
+ytick={-1,1},
+minor tick={},
+xlabel={$t$}, ylabel={$g(t)=\cos(t)$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=-2*pi:2*pi] {cos(x)};
+\end{axis}
+\end{tikzpicture}
+            </latex-image>
+        </image>
+</figure>
+
+        <p>
+            As we see from the definition and from the graphs of the sine and cosine functions, both functions <m>\sin(t)</m> and <m>\cos(t)</m> are periodic with period <m>2\pi</m>:
+            <md>
+                \sin(t + 2\pi) = \sin(t), \quad \cos(t + 2\pi) = \cos(t).
+            </md>
+            The amplitude of both functions is <m>1</m>, the equilibrium is <m>0</m>, and the midline is the <m>x</m>-axis (<m>y=0</m>). This can be verified by observing that
+            <md>
+                f_\text{max} = 1, \quad f_\text{min} = -1, \quad g_\text{max} = 1, \quad g_\text{min} = -1.
+            </md>
+            Thus, the amplitude and equilibrium for sine and cosine are:
+            <md>
+                \text{amplitude} = \frac{1 - (-1)}{2} = 1, \quad \text{equilibrium} = \frac{1 + (-1)}{2} = 0.
+            </md>
+        </p>
+
+        <p>
+            Before we leave the unit circle and the definition of the sine and cosine functions, we make a simple observation about their properties:
+            <md>
+                \sin(-t) = -\sin(t), \quad \cos(-t) = \cos(t).
+            </md>
+            Indeed, if angle <m>t</m> changes sign, the <m>y</m> coordinate of the intersection point of its terminal side with the unit circle changes sign while the <m>x</m> coordinate stays the same.
+        </p>
+
+        <p>
+            You can use your graphing calculator to graph the sine and cosine functions, but you have to remember to set your calculator in radians and not in degrees. The values <m>\sin(t)</m> and <m>\cos(t)</m> were defined by interpreting <m>t</m> as an angle in radians.
+        </p>
+    </subsection>
+
+    <subsection>
+        <title>Transforming Sine and Cosine Functions<mdash/>Basic Ideas</title>
+        <introduction>
+        <p>
+            It took a lot of work to define the sine and cosine functions. The good news is that once we have them, they are easy to use. All that we usually need to remember are the graphs of the functions <m>y = \sin(t)</m> and <m>y = \cos(t)</m> as given in <xref ref="fig_8_4_1"/> and <xref ref="fig_8_4_2"/>.
+        </p>
+
+        <p>
+            Speaking of graphs, notice that the function <m>\cos(t)</m> starts from its maximum value at <m>t = 0</m>, <m>\cos(0) = 1</m>. The sine function on the other hand starts at <m>t = 0</m> from its equilibrium value, <m>\sin(0) = 0</m>. These observations will be important in the next section when we try to match given periodic functions with a transformed sine or cosine function.
+        </p>
+
+        <p>
+            We used the unit circle and interpreted <m>t</m> as an angle to <alert>define</alert> the sine and cosine functions. In applications, we will typically get away from this interpretation. The independent variable <m>t</m> will most often be time, and we will use the sine and cosine functions as convenient periodic functions that are useful for modeling periodic processes.
+            We will use the notation <m>y = \sin(t)</m> and <m>y = \cos(t)</m> where <m>y</m> denotes the dependent variable and is no longer related to coordinates on the unit circle.
+        </p>
+
+        <p>
+            The sine and cosine functions, <m>y = \sin(t)</m> and <m>y = \cos(t)</m>, wouldn't be very useful for modeling real-life periodic processes if we couldn't transform them to change the period, amplitude, or midline. How many real-life periodic processes have the period of exactly <m>2\pi</m>, amplitude <m>1</m>, and equilibrium <m>0</m>? Not many. Fortunately, we can easily change all three numbers by vertical scaling and shifting and horizontal scaling.
+        </p>
+        </introduction>
+
+        <subsubsection>
+            <title>Changing the Amplitude</title>
+
             <p>
-            First objective.
+                The amplitude of the functions <m>y = \sin(t)</m> and <m>y = \cos(t)</m> can be changed by vertical scaling.
             </p>
-        </li>
 
-        <li>
+            <example>
+                <statement>
+                    <p>
+                        Find the period, amplitude, and midline of each of the functions. Compare their graphs to the graph of <m>y = \sin(t)</m>.
+                    </p>
+
+                    <p>
+                        <ol>
+                            <li>
+                                <p>
+                                    <m>y = 2\sin(t)</m>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    <m>y = -2\sin(t)</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+
+                <solution>
+                    <p>
+                        We learned in the previous chapter that multiplying the output by a constant corresponds to vertical scaling of the graph. Here are the graphs of the functions in (a), (b) and the original function <m>y = \sin(t)</m> in one coordinate system:
+                    </p>
+
+                    <image width="50%" xml:id="fig_8_4_3">
+                        <latex-image label="8_4_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=north east,
+xmin=-0.5, xmax=8,
+ymin=-3, ymax=3,
+xtick={pi/2,pi,3*pi/2,2*pi},
+xticklabels={$\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$},
+ytick={-2,-1,1,2},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:2*pi] {sin(x)};
+\addlegendentry{$\sin(t)$};
+\addplot[domain=0:2*pi,red] {2*sin(x)};
+\addlegendentry{$2\sin(t)$};
+\addplot[domain=0:2*pi,orange] {-2*sin(x)};
+\addlegendentry{$-2\sin(t)$};
+\end{axis}
+\end{tikzpicture}
+                        </latex-image>
+                    </image>
+
+                    <p>
+                        The amplitude of both <m>y = 2\sin(t)</m> and <m>y = -2\sin(t)</m> is <m>2</m>, the period is <m>2\pi</m>, and the midline is <m>y = 0</m>.
+                        Recall that vertical scaling changes the amplitude only.
+                        If we multiply by a negative constant, we additionally have the reflection of the scaled graph over the <m>t</m>-axis.
+                    </p>
+                </solution>
+            </example>
+
             <p>
-        Second objective.
+                Similar to the last example, the amplitude of <m>y = \cos(t)</m> can also be changed by vertical scaling.
             </p>
-        </li> 
-        <li>
+
+            <image width="50%" xml:id="fig_8_4_4">
+                <latex-image label="8_4_4_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=south east,
+xmin=-0.5, xmax=8,
+ymin=-1.5, ymax=1.5,
+xtick={pi/2,pi,3*pi/2,2*pi},
+xticklabels={$\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$},
+ytick={-2,-1,1,2},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:2*pi] {cos(x)};
+\addlegendentry{$\cos(t)$};
+\addplot[domain=0:2*pi,red] {0.5*cos(x)};
+\addlegendentry{$\frac{1}{2}\cos(t)$};
+\addplot[domain=0:2*pi,orange] {-0.5*cos(x)};
+\addlegendentry{$\frac{-1}{2}\cos(t)$};
+\end{axis}
+\end{tikzpicture}
+            </latex-image>
+            </image>
+        </subsubsection>
+
+        <subsubsection>
+            <title>Changing the Midline</title>
+
             <p>
-            Third objective.
+                Predictably, vertical shifting doesn't change the amplitude or the period<mdash/>it changes the equilibrium and the midline.
             </p>
-        </li>
-    </ol>
-</objectives>
 
+            <example>
+                <statement>
+                    <p>
+                        Find the midline for
+                    </p>
 
-<xi:include href="exercises/ex_8_4.ptx"/>
+                    <p>
+                        <ol>
+                            <li>
+                                <p>
+                                    <m>y = \cos(t) + 1</m>
+                                </p>
+                            </li>
 
+                            <li>
+                                <p>
+                                    <m>y = \cos(t) - 2</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+
+                <solution>
+                    <p>
+                        For (a) the midline is <m>y = 1</m>.
+                    </p>
+
+                    <p>
+                        For (b), the midline is <m>y = -2</m>.
+                        Here are graphs of the functions in (a) and (b) as well as the cosine itself:
+                    </p>
+
+                    <image width="50%" xml:id="fig_8_4_5">
+                        <latex-image label="8_4_5_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=south east,
+xmin=-0.5, xmax=8,
+ymin=-3.5, ymax=3.5,
+xtick={pi/2,pi,3*pi/2,2*pi},
+xticklabels={$\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$},
+ytick={-3,-2,...,3},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:2*pi] {cos(x)};
+\addlegendentry{$\cos(t)$};
+\addplot[domain=0:2*pi,red] {cos(x)+1};
+\addlegendentry{$\cos(t)+1$};
+\addplot[domain=0:2*pi,orange] {cos(x)-2};
+\addlegendentry{$\cos(t)-2$};
+\end{axis}
+\end{tikzpicture}
+                        </latex-image>
+                    </image>
+                </solution>
+            </example>
+        </subsubsection>
+
+        <subsubsection>
+            <title>Changing the Period</title>
+
+            <p>
+                How do we change the period of the sine and cosine function? We have to apply horizontal scaling.
+            </p>
+
+            <example>
+                <statement>
+                    <p>
+                        Find the period of the following functions:
+                    </p>
+
+                    <p>
+                        <ol>
+                            <li>
+                                <p>
+                                    <m>y = \sin(2t)</m>
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    <m>y = \sin\left(\frac{1}{2}x\right)</m>
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </statement>
+
+                <solution>
+                    <p>
+                        <ol>
+                            <li>
+                                <p>
+                                    Compare the graphs of <m>y = \sin(2t)</m> and <m>y = \sin(t)</m>:
+                                </p>
+
+                                <image width="50%" xml:id="fig_8_4_6">
+                                    <latex-image label="8_4_6_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=north east,
+xmin=-0.5, xmax=8,
+ymin=-1.5, ymax=1.5,
+xtick={pi/2,pi,3*pi/2,2*pi},
+xticklabels={$\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$},
+ytick={-3,-2,...,3},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:2*pi] {sin(x)};
+\addlegendentry{$\sin(t)$};
+\addplot[domain=0:2*pi,red] {sin(2*x)};
+\addlegendentry{$\sin(2t)$};
+\end{axis}
+\end{tikzpicture}
+                                    </latex-image>
+                                </image>
+
+                                <p>
+                                    From the graph, it is evident that the function <m>y = \sin(2t)</m> executes a full cycle from <m>t=0</m> to <m>t=\pi</m>.
+                                    Hence, the period of <m>y = \sin(2t)</m> is <m>\pi</m>. The amplitude of the function is still <m>1</m> and the midline <m>y = 0</m>.
+                                </p>
+                            </li>
+
+                            <li>
+                                <p>
+                                    The graph of <m>y = \sin\left(\frac{1}{2}x\right)</m> clearly shows that the function executes one full cycle between <m>x = 0</m> and <m>x = 4\pi</m>:
+                                </p>
+
+                                <image width="50%" xml:id="fig_8_4_7">
+                                    <latex-image label="8_4_7_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=north east,
+xmin=-0.5, xmax=14,
+ymin=-1.5, ymax=1.5,
+xtick={pi/2,pi,3*pi/2,2*pi,5*pi/2,3*pi,7*pi/2,4*pi},
+xticklabels={$\frac{\pi}{2}$, $\pi$, $\frac{3\pi}{2}$, $2\pi$, $\frac{5\pi}{2}$, $3\pi$, $\frac{7\pi}{2}$, $4\pi$},
+ytick={-3,-2,...,3},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:4*pi] {sin(x)};
+\addlegendentry{$\sin(t)$};
+\addplot[domain=0:4*pi,red] {sin(x/2)};
+\addlegendentry{$\sin(t/2)$};
+\end{axis}
+\end{tikzpicture}
+                                    </latex-image>
+                                </image>
+
+                                <p>
+                                    The period of <m>y = \sin(\frac{1}{2}x)</m> is <m>4\pi</m>.
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                </solution>
+            </example>
+
+            <p>
+                Suppose that we want a periodic function with a period <m>12</m>.
+                Indeed, the first periodic function considered in this chapter had period <m>12</m>.
+                Can we find such a function? Yes. Soon we will learn a systematic technique for doing this; for now, here is an example.
+            </p>
+
+            <example>
+                <statement>
+                    <p>
+                        Consider the function <m>y = \sin\left(\frac{\pi}{6}t\right)</m>. What is the period of the function?
+                    </p>
+                </statement>
+
+                <solution>
+                    <p>
+                        The graph of the function is given below:
+                    </p>
+
+                    <image width="50%" xml:id="fig_8_4_8">
+                        <latex-image label="8_4_8_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=north east,
+xmin=-0.5, xmax=14,
+ymin=-1.5, ymax=1.5,
+xtick={1,...,12},
+ytick={-3,-2,...,3},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:13] {sin(pi*x/6)};
+\addlegendentry{$\sin(\pi/6 t)$};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                    </image>
+
+                    <p>
+                        It appears that the function executes one full cycle between <m>t = 0</m> and <m>t = 12</m>, therefore the period is <m>12</m>.
+                    </p>
+                </solution>
+            </example>
+
+            <p>
+                Now that we have seen how to manipulate the sine and cosine functions to change the period, amplitude, and midline, our next step is to combine these transformations to change all three quantities.
+            </p>
+
+            <example>
+                <statement>
+                    <p>
+                        Consider the function:
+                        <md>
+                            p(t) = 2\sin\left(\frac{\pi}{6}t\right) + 3
+                        </md>
+                        The graph of the function is:
+                    </p>
+
+                    <image width="50%" xml:id="fig_8_4_9">
+                        <latex-image label="8_4_9_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=north east,
+xmin=-0.5, xmax=14,
+ymin=0, ymax=5.5,
+xtick={1,...,12},
+ytick={1,...,5},
+minor tick={},
+xlabel={$t$}, ylabel={$y$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:13] {2*sin(pi*x/6)+3};
+\addlegendentry{$2\sin(\pi/6 t)+3$};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                    </image>
+
+                    <p>
+                        What is the period, amplitude, and midline of the function <m>p(t)</m>? What transformations have been applied to <m>\sin(t)</m> to obtain <m>p(t)</m>?
+                    </p>
+                </statement>
+
+                <solution>
+                    <p>
+                        Clearly we are looking at one cycle of a transformed sine function, so the period is <m>12</m>.
+                        Since <m>p_\text{max} = 5</m>, <m>p_\text{min} = 1</m>, the amplitude is <m>2</m> and the midline is <m>y = 3</m>.
+                    </p>
+
+                    <p>
+                        We applied horizontal scaling by the factor of <m>\frac{\pi}{6}</m>, vertical scaling by the factor of <m>2</m>, and a vertical shift by <m>3</m>.
+                    </p>
+                </solution>
+            </example>
+        </subsubsection>
+    </subsection>
+
+    <xi:include href="exercises/ex_8_4.ptx"/>
 </section>

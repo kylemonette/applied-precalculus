@@ -1,37 +1,523 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_8_5">
+    <title>Families of Sine and Cosine Functions, Modeling</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Families of Sine and Cosine Functions, Modeling</title>
+        <ol>
+            <li>
+                <p>
+                    State the period, amplitude, and midline of a function in the family <m>y = A\sin(Bt) + C</m> or <m>y = A\cos(Bt) + C</m> in terms of the constants <m>A</m>, <m>B</m>, and <m>C</m>.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    Match a given periodic graph or verbal description with a formula in the sine or cosine family, including the sign of <m>A</m>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Use a transformed sine or cosine function to model a real-life periodic process.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            The examples of transforming the sine and cosine functions in the last section are illuminating, but they do not give us a systematic and clear way of matching a transformed sine or cosine formula with a given periodic function<mdash/>a periodic function that might have arisen in real-life applications.
         </p>
+
+        <p>
+            Here are specific rules for transforming the sine and cosine functions through vertical scaling and shifting and horizontal scaling.
+            Note that we will not consider horizontal shifting in this section.
+        </p>
+
+        <theorem>
+            <title>Transforming Sine and Cosine Functions</title>
+
+            <statement>
+                <p>
+                    Let constants <m>A</m>, <m>B</m>, <m>C</m> be given, <m>B \gt 0</m>. The functions
+                    <md>
+                        y = A\sin(Bt) + C, \quad y = A\cos(Bt) + C
+                    </md>
+                    are periodic with
+                    <md>
+                        \text{amplitude} = \abs{A} \quad , \quad \text{period} = \frac{2\pi}{B} \quad , \quad \text{midline: }y = C .
+                    </md>
+                </p>
+            </statement>
+        </theorem>
+
+        <p>
+            Since constants <m>A</m>, <m>B</m>, <m>C</m> are arbitrary and take all possible values giving us many functions, we have what is called a <em>family of functions</em> <m>y = A\sin(Bt) + C</m> and another <em>family of functions</em> <m>y = A\cos(Bt) + C</m>. The constants <m>A</m>, <m>B</m>, <m>C</m> are often called <em>parameters</em> of these families of functions.
+        </p>
+
+        <p>
+            Here are some important observations which will make it easier to match a given periodic function with a formula <m>y = A\cos(Bt) + C</m> or <m>y = A\sin(Bt) + C</m> and find the right values for the parameters <m>A</m>, <m>B</m>, and <m>C</m>.
+        </p>
+
+        <assemblage><title/>
+        <p>
+            Every function in the family <m>y = A\cos(Bt) + C</m> has its maximum or minimum value at <m>t = 0</m>. Namely, it has a minimum value at <m>t = 0</m> if <m>A \lt 0</m>, and a maximum value at <m>t=0</m> if <m>A \gt 0</m>.
+</p>
+
+               <p>Every function in the family <m>y = A\sin(Bt) + C</m> has its equilibrium value at <m>t = 0</m>.
+                If <m>A \gt 0</m>, the peak<mdash/>the maximum value<mdash/>comes first when we move toward the positive <m>t</m> direction.
+                Therefore, when <m>A \lt 0</m>, the minimum value comes first when we move toward the positive <m>t</m> direction.
+        </p>
+        </assemblage>
+
+        <p>
+            These are important observations. Suppose that we want to match a given periodic function <m>f(t)</m> with a formula in the family of sines <m>y = A\sin(Bt) + C</m> or with a formula in the family of cosines <m>y = A\cos(Bt) + C</m>. To decide which family to use, we will look at the value <m>f(0)</m> at <m>t = 0</m>. If this value is a minimum or a maximum of <m>f(t)</m>, we will look for a match in the family <m>y = A\cos(Bt) + C</m>. If the value <m>f(0)</m> is at the equilibrium, we try to match <m>f(t)</m> with a function in the family <m>y = A\sin(Bt) + C</m>. Also, after we find the amplitude, we will have to decide if the constant <m>A</m> is positive or negative; that is, if we do or do not have the reflection over the <m>t</m>-axis.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Find the period, amplitude, and midline of the following functions:
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>y = 4\sin\left(\frac{1}{3}t\right)</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>y = -2\cos\left(\frac{\pi}{3}t\right) + 5</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>y = 3\cos(\pi t) - 1</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>y = -3\sin(2t) - 3</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                This function has <m>A = 4</m>, <m>B = \frac{1}{3}</m>, and <m>C = 0</m>. Therefore, the amplitude is <m>\abs{4} = 4</m>, the midline is <m>y = 0</m>, and the period is <m>\frac{2\pi}{\frac{1}{3}} = 6\pi</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                This function has <m>A = -2</m>, <m>B = \frac{\pi}{3}</m>, and <m>C = 5</m>. Therefore, the amplitude is <m>\abs{-2} = 2</m>, the midline is <m>y = 5</m>, and the period is <m>\frac{2\pi}{\frac{\pi}{3}} = 6</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                For this function, <m>A = 3</m>, <m>B = \pi</m>, and <m>C = -1</m>. So the amplitude is <m>3</m>, the midline is <m>y = -1</m>, and the period is <m>\frac{2\pi}{\pi} = 2</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Here, <m>A = -3</m>, <m>B = 2</m>, and <m>C = -3</m>. Therefore, the amplitude is <m>\abs{-3} = 3</m>, the midline is <m>y = -3</m>, and the period is <m>\frac{2\pi}{2} = \pi</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <introduction>
+                <p>
+                    Each graph below contains one or two periods of a periodic function.
+                    For each of the functions, find a formula in the form <m>y = A\sin(Bt) + C</m> or <m>y = A\cos(Bt) + C</m> that represents the graph.
+                </p>
+</introduction>
+
+<task>
+<statement>
+<image width="50%" xml:id="fig_8_5_1">
+<latex-image label="8_5_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=north east,
+xmin=-0.5, xmax=2.5,
+ymin=-1.5, ymax=1.5,
+xtick={0.5, 1, 1.5, 2},
+ytick={-1,1},
+minor tick={},
+xlabel={$t$}, ylabel={$f(t)$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:2] {cos(2*pi*x)};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</statement>
+
+<solution>
+<p>
+Note first that at <m>t = 0</m>, <m>f(t)</m> is at its maximum, <m>f(0) = 1</m>. Hence, we will be looking for a formula for <m>f(t)</m> in the family of functions <m>A\cos(Bt) + C</m>. To find values for the constants <m>A</m>, <m>B</m> and <m>C</m>, we have to find the period, amplitude, and midline.
+</p>
+
+<p>
+We see the same cycle repeating between <m>0 \lt t \lt 1</m> and <m>1 \lt t \lt 2</m>. This means the period of <m>f(t)</m> is <m>1</m> and so
+<md>
+B = \frac{2\pi}{1} = 2 \pi.
+</md>
+From the graph, we know
+<md>
+f_\text{max} = 1, \quad f_\text{min} = -1.
+</md>
+Therefore, the amplitude is <m>\frac{f_\text{max} - f_\text{min}}{2} = \frac{1 - (-1)}{2} = 1</m>, which implies <m>\abs{A} = 1</m>.
+To determine if <m>A = 1</m> or <m>A = -1</m>, notice that <m>f(t)</m> is at its maximum at <m>t = 0</m> just as cosine is, meaning we do not have a reflection over the <m>t</m>-axis.
+This tells us that <m>A = 1</m>.
+We now know that <m>f(t)</m> is of the form
+<md>
+f(t) = \cos(2\pi t) + C.
+</md>
+To find <m>C</m>, note that the equilibrium of <m>f(t)</m> is <m>\frac{f_\text{max} + f_\text{min}}{2} = \frac{1 + (-1)}{2} = 0</m> and the midline is <m>y = 0</m>. Hence, <m>C = 0</m> and the final formula that corresponds to the graph <m>y = f(t)</m> is:
+<md>
+f(t) = \cos(2\pi t).
+</md>
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<image width="50%" xml:id="fig_8_5_2">
+<latex-image label="8_5_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=north east,
+xmin=-0.5, xmax=39,
+ymin=-3.5, ymax=3.5,
+xtick={2*pi, 4*pi, 6*pi, 8*pi, 10*pi, 12*pi},
+xticklabels={$2 \pi$, $4\pi$, $6\pi$, $8\pi$, $10\pi$, $12\pi$},
+ytick={-3,...,3},
+minor tick={},
+xlabel={$t$}, ylabel={$m(t)$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:12*pi,red] {-3*sin(x/6)};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</statement>
+
+<solution>
+<p>
+The shape of the graph looks like that of the sine function reflected over the <m>t</m>-axis so we will look for a formula in the family <m>y = A\sin(Bt) + C</m>.
+From the graph, the period is <m>12\pi</m> and therefore
+<md>
+B = \frac{2\pi}{12\pi} = \frac{1}{6}.
+</md>
+To find <m>A</m> and <m>C</m>, observe that
+<md>
+m_\text{max} = 3, \quad m_\text{min} = -3.
+</md>
+This means the amplitude is <m>\frac{m_\text{max} - m_\text{min}}{2} = \frac{3 - (-3)}{2} = 3</m>, the equilibrium is <m>\frac{m_\text{max} + m_\text{min}}{2} = \frac{3 + (-3)}{2} = 0</m>, and the midline is <m>y = 0</m>. Hence, <m>C = 0</m>.
+Is <m>A = 3</m> or <m>A = -3</m>? Since there is a reflection over the <m>t</m>-axis, then <m>A = -3</m> and so the formula we are looking for is
+<md>
+m(t) = -3\sin\left(\frac{1}{6}t\right).
+</md>
+</p>
+</solution>
+
+</task>
+
+<task>
+<statement>
+<image width="50%" xml:id="fig_8_5_3">
+<latex-image label="8_5_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=north east,
+xmin=-0.5, xmax=2.5,
+ymin=-0.5, ymax=5,
+xtick={0.5, 1, 1.5, 2},
+ytick={1,...,5},
+minor tick={},
+xlabel={$t$}, ylabel={$g(t)$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:2,orange] {-cos(2*pi*x)+3};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</statement>
+
+<solution>
+<p>
+At <m>t = 0</m>, <m>g(t)</m> is at its minimum, so we will be looking for a formula for <m>g(t)</m> in the family of functions <m>A\cos(Bt) + C</m>.
+To find values for the constants <m>A</m>, <m>B</m> and <m>C</m>, we have to find the period, amplitude, and midline.
+</p>
+
+<p>
+The period of <m>g(t)</m> is <m>1</m> by looking at its graph.
+Therefore,
+<md>
+B = \frac{2\pi}{1} = 2 \pi.
+</md>
+The graph of the function also reveals that
+<md>
+g_\text{max} = 4, \quad g_\text{min} = 2.
+</md>
+Hence, the amplitude is <m>\frac{g_\text{max} - g_\text{min}}{2} = \frac{4 - 2}{2} = 1</m> and so <m>\abs{A}  = 1</m>.
+Since <m>g(t)</m> has its minimum at <m>t = 0</m>, whereas <m>\cos(t)</m> has its maximum at <m>t=0</m>, then there is a reflection over the <m>t</m>-axis and so <m>A = -1</m>.
+</p>
+
+<p>
+Lastly, we need to find <m>C</m>, which is given by <m>\frac{g_\text{max} + g_\text{min}}{2} = \frac{4 + 2}{2} = 3</m>.
+That is, <m>C = 3</m> and the midline is <m>y = 3</m>. The formula for <m>g(t)</m> is:
+<md>
+g(t) = -\cos(2\pi t) + 3.
+</md>
+</p>
+</solution>
+</task>
+
+<task>
+<statement>
+<image width="50%" xml:id="fig_8_5_4">
+<latex-image label="8_5_4_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+legend pos=north east,
+xmin=-0.5, xmax=13,
+ymin=-1.5, ymax=3.5,
+xtick={1,...,12},
+ytick={-1,...,3},
+minor tick={},
+xlabel={$t$}, ylabel={$h(t)$},
+trig format = rad,
+x post scale = 1.2,
+]
+\addplot[domain=0:12,purple] {2*sin(pi/6*x)+1};
+\end{axis}
+\end{tikzpicture}
+</latex-image>
+</image>
+</statement>
+
+<solution>
+<p>
+Because <m>h(0)</m> is not at a maximum or a minimum, the function must be in the family <m>y = A\sin(Bt) + C</m>.
+</p>
+
+<p>
+The period is <m>12</m>, and so <m>B</m> is given by
+<md>
+B = \frac{2\pi}{12} = \frac{\pi}{6}.
+</md>
+To find <m>A</m> and <m>C</m>, observe that
+<md>
+h_\text{max} = 3, \quad h_\text{min} = -1.
+</md>
+Hence, the amplitude is:
+<md>
+\frac{h_\text{max} - h_\text{min}}{2} = \frac{3 - (-1)}{2} = 2.
+</md>
+Since there is no reflection over the <m>t</m>-axis, <m>A = 2</m>.
+</p>
+
+<p>
+The value of <m>C</m> is found by computing
+<md>
+\frac{h_\text{max} + h_\text{min}}{2} = \frac{3 + (-1)}{2} = 1.
+</md>
+So <m>C = 1</m>, the midline is <m>y = 1</m>, and therefore the formula for <m>h(t)</m> is
+<md>
+h(t) = 2\sin\left( \frac{\pi}{6} t\right)+1
+</md>
+</p>
+</solution>
+</task>
+</example>
+
+
     </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>Modeling Periodic Processes</title>
 
+        <p>
+            In this section we apply the skills of matching sine and cosine functions to modeling real-life periodic processes.
+        </p>
 
-<xi:include href="exercises/ex_8_5.ptx"/>
+        <example>
+            <statement>
+                <p>
+                    We revisit the first example of this chapter, <xref ref="example-ch8-hare"/>, about a population of hares, <m>H(t)</m>, in a national park. The population follows a 12-month cycle. It is at its minimum of <m>1000</m> hares at <m>t = 0</m> which corresponds to January, and at its maximum of <m>5000</m> hares in July which corresponds to <m>t = 6</m>. Here again is the graph of <m>H(t)</m>:
+                </p>
 
+                <image width="50%" xml:id="fig_8_5_5">
+                    <latex-image label="8_5_5_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=25,
+ymin=0,ymax=6,
+xtick={6,12,...,24},
+ytick={1,...,5},
+yticklabels={1000,2000,3000,4000,5000},
+minor tick={},
+xlabel={$t$}, ylabel={$H(t)$},
+trig format plots = rad,
+]
+\addplot[domain=0:24] {-2*cos(2*pi/12*x)+3};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+
+                <p>
+                    Find a formula for the function <m>H(t)</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    We know already that the period of the function is <m>12</m>, the amplitude is <m>2000</m>, and the midline is <m>H = 3000</m> since <m>h_\text{max} = 5000</m> and <m>h_\text{min} = 1000</m>.
+                </p>
+
+                <p>
+                    Because <m>H(t)</m> is at a minimum at <m>t=0</m>, we look for a formula of the form <m>H(t) = A\cos(Bt) + C</m> with <m>A \lt 0</m> since there is a reflection about the <m>t</m>-axis.
+                    Since <m>\abs{A}</m> is equal to the amplitude and <m>C</m> is equal to the equilibrium, then
+                    <md>
+                        A = -2000, \quad C = 3000.
+                    </md>
+                    The period is <m>12</m>, which gives us
+                    <md>
+                        B = \frac{2\pi}{12} = \frac{\pi}{6}.
+                    </md>
+                    Thus, the population of hares is modeled by the formula:
+                    <md>
+                        H(t) = -2000 \cos\left(\frac{\pi}{6} t \right) + 3000.
+                    </md>
+                </p>
+
+                <p>
+                    You can use your graphing calculator to graph the transformed cosine function to check that this is the function we were looking for.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    An average-sized man takes <m>5</m> seconds to breathe in and out when at rest. The volume of the air in his lungs changes as he breathes. The so-called functional residual capacity of
+                    the lungs<fn>https://en.wikipedia.org/wiki/Functional_residual_capacity, accessed: 6/9/2020</fn> is about <m>2.5</m> liters. That is the volume of air that is always present in the lungs. The typical volume of inspiration, the tidal volume, is about <m>0.5</m> liters and so is the volume of expiration. Assume that at <m>t = 0</m> the man finished exhaling and is about to inhale. Let <m>V(t)</m> be the volume of air in his lungs, in liters, at time <m>t</m> in seconds.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Sketch a rough graph of <m>V(t)</m> in the interval <m>0 \leq t \leq 20</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Find the period, amplitude, midline of <m>V(t)</m>. Find a possible formula for <m>V(t)</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The graph of <m>V(t)</m> looks approximately as follows:
+                            </p>
+
+                            <image width="50%" xml:id="fig_8_5_6">
+                                <latex-image label="8_5_6_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=21,
+ymin=0,ymax=3.5,
+xtick={2.5, 5,...,20},
+ytick={0.5,1,...,3},
+minor tick={},
+xlabel={$t$}, ylabel={$V(t)$},
+x post scale = 1.2,
+trig format plots = rad,
+]
+\addplot[domain=0:20] {-0.25*cos(2*pi/5*x)+2.75};
+\addplot[domain=0:20,dashed,red] {2.75};
+\end{axis}
+\end{tikzpicture}
+                                </latex-image>
+                            </image>
+
+                            <p>
+                                At <m>t = 0</m>, the man just exhaled and is about to inhale, so the volume in his lungs is at the functional residual capacity of <m>2.5</m> liters. As <m>t</m> increases, the man is inhaling and the volume of air in his lungs increases. The volume reaches its maximum of <m>3</m> liters mid-cycle at <m>t = 2.5</m> seconds. Now the man begins exhaling and completes the cycle at <m>t = 5</m> when the volume is again <m>2.5</m> liters. We are assuming here that inhaling takes the same time as exhaling, so the maximum volume happens exactly in the middle of the cycle at <m>t = 2.5</m> seconds. The same cycle repeats on every interval of the length <m>5</m> seconds.
+                            </p>
+
+                            <p>
+                                <alert>Note:</alert> Do not confuse <m>2.5</m> liters, which is the minimum volume in the man's lungs, with <m>2.5</m> seconds which is the time needed to inhale or to exhale.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                The period<mdash/>the time needed for one full cycle to be executed<mdash/>is <m>5</m> seconds. Because
+                                <md>
+                                    V_\text{max} = 3, \quad V_\text{min} = 2.5,
+                                </md>
+                                then the amplitude is <m>\frac{V_\text{max} - V_\text{min}}{2} = \frac{3 - 2.5}{2} = 0.25</m>, the equilibrium is <m>\frac{V_\text{max} + V_\text{min}}{2} = \frac{3 + 2.5}{2} = 2.75</m>, and the midline is <m>V = 2.75</m>.
+                            </p>
+
+                            <p>
+                                To find a formula for <m>V(t)</m>, note that <m>V(t)</m> is at its minimum at <m>t = 0</m>.
+                                Hence, <m>V(t)</m> is of the form <m>V(t) = A\cos(Bt) + C</m> with <m>A \lt 0</m>.
+                                After finding the amplitude and midline, then we know <m>A = -0.25</m> and <m>C = 2.75</m>. Lastly,
+                                <md>
+                                    B = \frac{2\pi}{\text{period}} = \frac{2\pi}{5}.
+                                </md>
+                                The formula of <m>V(t)</m> is given by
+                                <md>
+                                    V(t) = -0.25\cos\left(\frac{2\pi}{5}t\right) + 2.75.
+                                </md>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <xi:include href="exercises/ex_8_5.ptx"/>
 </section>

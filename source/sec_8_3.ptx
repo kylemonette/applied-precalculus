@@ -1,49 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_8_3">
+    <title>Values of Sine and Cosine for Angles on the Unit Circle</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Values of Sine and Cosine for Angles on the Unit Circle</title>
+        <ol>
+            <li>
+                <p>
+                    State the definition of <m>\sin(\alpha)</m> and <m>\cos(\alpha)</m> in terms of the coordinates of a point on the unit circle.
+                </p>
+            </li>
 
-<objectives>
-    <introduction>
+            <li>
+                <p>
+                    Compute the sine and cosine of common angles on the unit circle, with and without a calculator.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Use the unit circle and symmetry to find exact values of sine and cosine for common angles.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
         <p>
-            After completing this section, you should be able to do the following.
+            For every angle <m>\alpha</m> we define the values <m>\sin(\alpha)</m> and <m>\cos(\alpha)</m> using the coordinates of the endpoint of the terminal side when <m>\alpha</m> is an angle in standard position on the unit circle. Take an angle <m>\alpha</m> in standard position. Let <m>P = (x, y)</m> be the point where the terminal side of the angle intersects the unit circle:
         </p>
-    </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+        <figure xml:id="fig_8_3_sin_cos">
+            <caption></caption>
+            <interactive platform="jsxgraph" source="jsxgraph/jsx_8_3_sin_cos.js" width="60%">
+                <slate xml:id="jsx_8_3_sin_cos_fig" surface="jsxboard"/>
+                <instructions>
+                    <p>Drag the point <m>P = (x,y) = (\cos \theta, \sin \theta)</m> around the circle.</p>
+                </instructions>
+            </interactive>
+        </figure>
 
+        <definition>
+            <title>Trigonometric Ratios <m>\sin(\alpha)</m> and <m>\cos(\alpha)</m></title>
 
-<figure xml:id="fig_8_3_sin_cos">
-<caption></caption>
-<interactive platform="jsxgraph" source="jsxgraph/jsx_8_3_sin_cos.js" width="60%">
-    <slate xml:id="jsx_8_3_sin_cos_fig" surface="jsxboard"/>
-    <instructions>
-        <p>Drag the point <m>P = (x,y) = (\cos \theta, \sin \theta)</m> around the circle.</p>
-    </instructions>
-</interactive>
-</figure>
+            <statement>
+                <p>
+                    Let <m>\alpha</m> be an angle in standard position on the <m>xy</m>-plane and let <m>P = (x, y)</m> be the point of intersection of its terminal side with the unit circle. The values <m>\sin(\alpha)</m> and <m>\cos(\alpha)</m> are defined as:
+                    <md>
+                        \cos(\alpha) = x, \quad \sin(\alpha) = y.
+                    </md>
+                </p>
+            </statement>
+        </definition>
 
+        <p>
+            The following identity holds for all angles <m>\alpha</m>:
+        </p>
 
-<xi:include href="exercises/ex_8_3.ptx"/>
+        <theorem>
+            <title>Pythagorean Identity</title>
 
+            <statement>
+                <p>
+                    For every angle <m>\alpha</m>,
+                    <md>
+                        \sin^2(\alpha) + \cos^2(\alpha) = 1.
+                    </md>
+                </p>
+            </statement>
+        </theorem>
 
+        <p>
+            At this point, the angle <m>\alpha</m> can be measured in radians or in degrees, but we must always be aware and careful which measure we are using: <m>\sin(1^\circ)</m> and <m>\sin(1 \text{ rad})</m> have completely different values.
+            Indeed, according to the conversion formulas from the previous sections, <m>1</m> radian is approximately <m>57.3</m> degrees<mdash/>which are very different.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Use your calculator to compare values of <m>\sin(1^\circ)</m> and <m>\sin(1 \text{ rad})</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Your calculator can give you values of <m>\sin(1)</m>, in degrees and radians, provided you set it in the right <alert>MODE</alert>.
+                    In radians, your calculator should give you
+                    <md>
+                        \sin(1) = \sin(1 \text{ rad}) \approx 0.841.
+                    </md>
+                    On the other hand, when set to degrees,
+                    <md>
+                        \sin(1) = \sin(1^\circ) \approx 0.017.
+                    </md>
+                    As you can see the values are very different.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Use the definition above to find values of <m>\sin(\theta)</m>, <m>\cos(\theta)</m> for <m>\theta = 0</m>, <m>\pi/2</m>, <m>\pi</m>, <m>3\pi/2</m>, <m>2\pi</m> radians.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Utilize <xref ref="fig_8_2_9"/>, where the position of many angles in radians on the unit circle are shown.
+                    For each value of <m>\theta</m>, find the corresponding point <m>P = (x, y)</m> and determine values of the coordinates <m>x</m> and <m>y</m>.
+                    Recall that <m>\cos(\theta) = x</m> and <m>\sin(\theta) = y</m>.
+                </p>
+
+                <p>
+                    <ul>
+                        <li>The angle <m>0</m> radians specifies the point <m>P = (1, 0)</m>. Hence, <m>\sin(0) = 0</m>, <m>\cos(0) = 1</m>.</li>
+
+                        <li>The angle <m>\frac{\pi}{2}</m> (equal to <m>90^{\circ}</m>) corresponds to <m>P = (0, 1)</m>, therefore <m>\sin(\frac{\pi}{2}) = 1</m> and <m>\cos(\frac{\pi}{2}) = 0</m>.</li>
+
+                        <li>For <m>\theta = \pi</m>, the corresponding point is <m>P = (-1, 0)</m> and so <m>\sin(\pi) = 0</m> and <m>\cos(\pi) = -1</m>.</li>
+
+                        <li>For <m>\frac{3\pi}{2}</m>, the point is <m>P = (0, -1)</m> and therefore <m>\sin\left(\frac{3\pi}{2}\right) = -1</m> and <m>\cos\left(\frac{3\pi}{2}\right) = 0</m>.</li>
+
+                        <li>Observe that <m>\theta = 2\pi</m> also corresponds to <m>P = (1, 0)</m>.
+                        Indeed, the angles <m>\theta = 0</m> and <m>\theta = 2\pi</m> are coterminal.
+                        This means <m>\sin(2\pi) = 0</m> and <m>\cos(2\pi) = 1</m>.</li>
+                    </ul>
+                </p>
+
+                <p>
+                    As we increase <m>\theta</m> beyond <m>2\pi</m>, the cycle of values for
+                    <m>\sin(\theta)</m> and <m>\cos(\theta)</m> repeats on the interval <m>[2\pi, 4\pi]</m>, and it keeps repeating on each interval of the length <m>2\pi</m>.
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            If you studied trigonometric ratios in the right triangle, you know the exact values of sine and cosine for a few special angles. Here they are, including the values of the angles in radians:
+        </p>
+
+        <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+            <row>
+                <cell><m>\alpha</m> (degrees)</cell>
+                <cell><m>\alpha</m> (radians)</cell>
+                <cell><alert><m>\cos(\alpha)</m></alert></cell>
+                <cell><alert><m>\sin(\alpha)</m></alert></cell>
+            </row>
+
+            <row>
+                <cell><m>0^{\circ}</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>0</m></cell>
+            </row>
+
+            <row>
+                <cell><m>30^{\circ}</m></cell>
+                <cell><m>\frac{\pi}{6}</m></cell>
+                <cell><m>\frac{\sqrt{3}}{2}</m></cell>
+                <cell><m>\frac{1}{2}</m></cell>
+            </row>
+
+            <row>
+                <cell><m>45^{\circ}</m></cell>
+                <cell><m>\frac{\pi}{4}</m></cell>
+                <cell><m>\frac{\sqrt{2}}{2}</m></cell>
+                <cell><m>\frac{\sqrt{2}}{2}</m></cell>
+            </row>
+
+            <row>
+                <cell><m>60^{\circ}</m></cell>
+                <cell><m>\frac{\pi}{3}</m></cell>
+                <cell><m>\frac{1}{2}</m></cell>
+                <cell><m>\frac{\sqrt{3}}{2}</m></cell>
+            </row>
+
+            <row>
+                <cell><m>90^{\circ}</m></cell>
+                <cell><m>\frac{\pi}{2}</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>1</m></cell>
+            </row>
+        </tabular>
+
+        <p>
+            We can use the values in the table and the positions of angles on the unit circle, to find sine and cosine of many other angles.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Find <m>\sin\left(\frac{3\pi}{4}\right)</m> and <m>\cos\left(\frac{3\pi}{4}\right)</m>.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    We have to locate the terminal side of the angle <m>\frac{3\pi}{4} = 135^{\circ} = 90^{\circ} + 45^{\circ}</m> and find the point of intersection of the terminal side with the unit circle. The terminal side of the angle is located in the second quadrant, and it is symmetric over the <m>y</m>-axis to the terminal side of the angle <m>\frac{\pi}{4} = 45^{\circ}</m>:
+                </p>
+
+                <image width="60%" xml:id="fig_8_3_1">
+                    <latex-image label="8_3_1_fig">
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=none,
+xmin=-1.9,xmax=1.8,
+ymin=-1.8,ymax=1.8,
+xtick = \empty,
+ytick = \empty,
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+axis equal,
+x post scale = 1.2,
+y post scale = 1.2,
+]
+\draw[blue,thick] (0,0) circle (1);
+\coordinate (C) at (0,0);
+\coordinate (B) at (0.707,0.707);
+\coordinate (A) at (1,0);
+\draw[very thick] (C) -- (B);
+\draw[very thick] (C) -- (A);
+\pic[my angle, "$\frac{\pi}{4}$", very thick, ->, angle radius=1.1cm,
+every pic quotes/.append style={xshift=20pt,yshift=10pt,font=\normalsize}]  {angle=A--C--B};
+\node[rpoint with label={0:{$P = \left( \frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right)$}}] at (B) {};
+\coordinate (B1) at (-0.707,0.707);
+\draw[very thick] (C) -- (B1);
+\draw[very thick] (C) -- (A);
+\pic[my angle, "$\frac{3\pi}{4}$", very thick, green, ->, angle radius=0.7cm,
+every pic quotes/.append style={xshift=2pt,yshift=18pt,font=\normalsize}]  {angle=A--C--B1};
+\node[gpoint with label={100:{$P = \left( \frac{-\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right)$}}] at (B1) {};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+
+                <p>
+                    The point of intersection of the terminal side of <m>\frac{\pi}{4}</m> with the unit circle is <m>P = \left(\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right)</m> as <m>x = \cos\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}</m> and <m>y = \sin\left(\frac{\pi}{4}\right) = \frac{\sqrt{2}}{2}</m>. (See the table.) By symmetry, the point
+                    of intersection of the terminal side of <m>\frac{3\pi}{4}</m> with the unit circle is <m>P = \left(-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}\right)</m>. Hence: <m>\cos\left(\frac{3\pi}{4}\right) = x = -\frac{\sqrt{2}}{2}</m> and <m>\sin\left(\frac{3\pi}{4}\right) = y = \frac{\sqrt{2}}{2}</m>.
+                </p>
+            </solution>
+        </example>
+
+    <xi:include href="exercises/ex_8_3.ptx"/>
 </section>

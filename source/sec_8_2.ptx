@@ -1,38 +1,644 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_8_2">
+    <title>Angles Using the Unit Circle, Radian Measure</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Angles Using the Unit Circle, Radian Measure</title>
+        <ol>
+            <li>
+                <p>
+                    Identify positive and negative angles in standard position and describe an angle in terms of its initial and terminal sides.
+                </p>
+            </li>
 
-<objectives>
+            <li>
+                <p>
+                    State the definition of radian measure and convert an angle between degrees and radians.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Determine the quadrant containing the terminal side of an angle given in radians and compute the arc length spanned by an angle on a circle of a given radius.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
     <introduction>
         <p>
-            After completing this section, you should be able to do the following.
+            We are working toward defining the two important trigonometric functions <m>f(t) = \sin(t)</m> and <m>f(t) = \cos(t)</m>. These functions, referred to as the sine function and the cosine function respectively, are periodic functions which are commonly used in applied sciences to model periodic processes.
         </p>
+
+        <p>
+            The first step is to define the trigonometric ratios <m>\sin(\alpha)</m> and <m>\cos(\alpha)</m> for any angle <m>\alpha</m>, positive or negative.
+            We also have to learn how to measure angles in radians rather than in degrees. In this section we define positive and negative angles of any size and radian measure.
+        </p>
+
+        <p>
+            For a given angle, we designate one side as the <em>initial side</em> and the other as the <em>terminal side</em>. We imagine the angle being swept out starting from the initial side and ending at the terminal side, as shown below. When the rotation from the initial side to terminal side is counterclockwise, we say that the angle is positive; when the rotation is clockwise, we say that the angle is negative.
+        </p>
+
+        <sidebyside widths="40% 40%" margins="0% 0%" valigns="middle middle">
+            <figure xml:id="fig_8_2_angle1">
+            <caption>The angle <m>\theta = 45^\circ</m>, positive as rotation is counterclockwise.</caption>
+            <image width="48%" xml:id="fig_8_2_1">
+                <latex-image label="8_2_1_fig">
+                \begin{tikzpicture}[scale=0.7]
+                \coordinate[label=left:vertex] (C) at (0,0);
+                \coordinate (B) at (3,3);
+                \coordinate (A) at (4,0);
+                \draw[->,very thick] (C) -- (B) node[sloped,midway,above] {terminal side};
+                \draw[->,very thick] (C) -- (A) node[sloped,midway,below] {initial side};
+                \pic [my angle, "$\theta$", very thick, ->]  {angle=A--C--B};
+                \end{tikzpicture}
+                </latex-image>
+            </image>
+            </figure>
+
+            <figure xml:id="fig_8_2_angle2">
+            <caption>The angle <m>\theta = -45^\circ</m>, negative as rotation is clockwise.</caption>
+            <image width="48%" xml:id="fig_8_2_2">
+                <latex-image label="8_2_2_fig">
+                \begin{tikzpicture}[scale=0.7]
+                \coordinate[label=left:vertex] (C) at (0,0);
+                \coordinate (B) at (3,-3);
+                \coordinate (A) at (4,0);
+                \draw[->,very thick] (C) -- (B) node[sloped,midway,below] {terminal side};
+                \draw[->,very thick] (C) -- (A) node[sloped,midway,above] {initial side};
+                \pic [my angle, "$\theta$", very thick, &lt;-]  {angle=B--C--A};
+                \end{tikzpicture}
+                </latex-image>
+            </image>
+            </figure>
+        </sidebyside>
+
+        <p>
+            We say that an angle is in <em>standard position</em> if it is located on the <m>xy</m>-plane with the vertex at the origin <m>(0, 0)</m> and initial side aligned with the positive <m>x</m>-axis. Again, counterclockwise rotations generate positive angles while clockwise rotations yield negative angles:
+        </p>
+
+        <sidebyside widths="48% 48%" margins="0% 0%" valigns="middle middle">
+            <figure xml:id="fig_8_2_angle3">
+            <caption>The angle <m>\alpha = 60^\circ</m> in standard position</caption>
+            <image width="48%" xml:id="fig_8_2_3">
+                <latex-image label="8_2_3_fig">
+                \begin{tikzpicture}[scale=0.9]
+                \begin{axis}[grid=none,
+                xmin=-2,xmax=2,
+                ymin=-2,ymax=2,
+                xtick={-2,...,2},
+                ytick={-2,...,2},
+                minor tick={},
+                xlabel=\(x\), ylabel=\(y\)]
+                \coordinate (C) at (0,0);
+                \coordinate (B) at (1,1.732);
+                \coordinate (A) at (2,0);
+                \draw[->,very thick] (C) -- (B);
+                \pic[my angle, "$\alpha = 60^\circ$", very thick, ->, every pic quotes/.append style={xshift=40pt,yshift=10pt,font=\normalsize}]  {angle=A--C--B};
+                \end{axis}
+                \end{tikzpicture}
+                </latex-image>
+            </image>
+            </figure>
+
+            <figure xml:id="fig_8_2_angle4">
+            <caption>The angle <m>\beta = -210^\circ</m> in standard position</caption>
+            <image width="48%" xml:id="fig_8_2_4">
+                <latex-image label="8_2_4_fig">
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=none,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick={-2,...,2},
+ytick={-2,...,2},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\)]
+\coordinate (C) at (0,0);
+\coordinate (B) at (-1.732,1);
+\coordinate (A) at (2,0);
+\draw[->,very thick] (C) -- (B);
+\pic[my angle, "$\beta = -210^\circ$", very thick, &lt;-, every pic quotes/.append style={xshift=40pt,yshift=-20pt,font=\normalsize}]  {angle=B--C--A};
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            </image>
+</figure>
+        </sidebyside>
+
+        <p>
+            We can rotate around the origin as many times as we want and obtain angles greater than <m>360^{\circ}</m> and smaller than <m>-360^{\circ}</m>:
+        </p>
+
+        <sidebyside widths="48% 48%" margins="0% 0%" valigns="middle middle">
+            <figure xml:id="fig_8_2_angle5">
+            <caption>The angle <m>\theta = 600^\circ</m> in standard position</caption>
+            <image width="48%" xml:id="fig_8_2_5">
+                <latex-image label="8_2_5_fig">
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=none,
+xmin=-2,xmax=2,
+ymin=-2,ymax=2,
+xtick={-2,...,2},
+ytick={-2,...,2},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\)]
+\coordinate (C) at (0,0);
+\coordinate (B) at (-1,-1.732);
+\coordinate (A) at (2,0);
+\draw[->,very thick] (C) -- (B);
+\draw[->,domain=0:600,variable=\t,samples=200,red, very thick] plot ({(\t+600)/2*cos(\t)/(600)},{(\t+600)/2*sin(\t)/(600)}) node[black] at (1,1) {$\theta = 600^\circ$};
+\end{axis}
+\end{tikzpicture}
+                </latex-image>
+            </image>
+</figure>
+
+            <figure xml:id="fig_8_2_angle6">
+            <caption>The angle <m>\gamma = -760^\circ</m> in standard position</caption>
+            <image width="48%" xml:id="fig_8_2_6">
+                <latex-image label="8_2_6_fig">
+                \begin{tikzpicture}[scale=0.9]
+                \begin{axis}[grid=none,
+                xmin=-2,xmax=2,
+                ymin=-2,ymax=2,
+                xtick={-2,...,2},
+                ytick={-2,...,2},
+                minor tick={},
+                xlabel=\(x\), ylabel=\(y\)]
+                \coordinate (C) at (0,0);
+                \coordinate (B) at (1.532,-1.285);
+                \coordinate (A) at (2,0);
+                \draw[->,very thick] (C) -- (B);
+                \draw[->,domain=0:760,variable=\t,samples=200,red, very thick] plot ({(\t+760)/2*cos(\t)/(760)}, {-(\t+760)/2*sin(\t)/(760)}) node[black] at (1,1) {$\gamma = -760^\circ$};
+                \end{axis}
+                \end{tikzpicture}
+                </latex-image>
+            </image>
+</figure>
+        </sidebyside>
+
+
+
     </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+    <subsection>
+        <title>Definition of Radian Measure</title>
 
+        <p>
+            The <em>radian measure</em> of a positive angle <m>\alpha</m> is equal to the length of the arc spanned by the angle on the circle of radius <m>1</m> centered at the vertex of the angle:
+        </p>
 
+        <image width="50%" xml:id="fig_8_2_7">
+            <latex-image label="8_2_7_fig">
+\begin{tikzpicture}[scale=1]
+\begin{axis}[grid=none,
+xmin=-1.5,xmax=1.8,
+ymin=-1.5,ymax=1.5,
+xtick={-1,1},
+ytick={-1,1},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+axis equal,
+ticklabel style={fill=white},
+]
+\draw[blue,thick] (0,0) circle (1);
+\coordinate (C) at (0,0);
+\coordinate (B) at (0.707,0.707);
+\coordinate (A) at (1,0);
+\draw[very thick] (C) -- (B);
+\draw[very thick] (C) -- (A);
+\pic[my angle, "$\alpha$", very thick, ->,every pic quotes/.append style={xshift=20pt,yshift=5pt,font=\normalsize}]  {angle=A--C--B};
+\draw [green,very thick,domain=0:45,&lt;->] plot ({cos(\x)}, {sin(\x)});
+\node[font=\small,right] at (1,0.5) {arc length};
+\end{axis}
+\end{tikzpicture}
+            </latex-image>
+        </image>
 
-<xi:include href="exercises/ex_8_2.ptx"/>
+        <p>
+            The radian measure of a negative angle is equal to minus the length of the arc spanned by the angle.
+        </p>
 
+        <p>
+            Recall that the <em>unit circle</em> on the <m>xy</m>-plane is the circle of radius <m>1</m> centered at the origin <m>(0, 0)</m>. Here is the precise definition of one radian.
+        </p>
+
+        <definition>
+            <title>Radian Measure</title>
+
+            <statement>
+                <p>
+                    <ul>
+                        <li>An angle of <alert>1 radian</alert> is the angle in standard position, in the counterclockwise direction, which spans the arc of length <m>1</m> on the unit circle.</li>
+                        <li>An angle of <alert><m>-1</m> radian</alert> is the angle in standard position, in the clockwise direction, which spans the arc of length <m>1</m> on the unit circle.</li>
+                    </ul>
+                </p>
+
+                <p>
+                    The radius and the arc must be measured in the same units of length.
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            The angle of <m>1</m> radian spans the arc of length <m>1</m> on the unit circle<mdash/>the length of the arc and the length of the radius are the same. Imagine <q>picking up</q> the radius of the unit circle like a yardstick and wrapping it over a piece of the circle to obtain the arc of the same length as the radius. If you measure the arc of length equal to twice the radius, the arc will correspond to the angle of <m>2</m> radians, and so on:
+        </p>
+
+        <image width="50%" xml:id="fig_8_2_8">
+            <latex-image label="8_2_8_fig">
+\begin{tikzpicture}[scale=0.9]
+\begin{axis}[grid=none,
+xmin=-1.5,xmax=1.5,
+ymin=-1.5,ymax=1.5,
+xtick={-1,1},
+ytick={-1,1},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+axis equal,
+ticklabel style={fill=white},
+x post scale = 1.2,
+y post scale = 1.2,
+]
+\draw[blue,thick] (0,0) circle (1);
+\coordinate (C) at (0,0);
+\coordinate (B) at (-0.406,0.913);
+\coordinate (A) at (1,0);
+\draw[very thick] (C) -- (B);
+\draw[very thick] (C) -- (A);
+\pic[my angle, "2 radians", very thick, ->, every pic quotes/.append style={xshift=15pt,yshift=20pt,font=\small}]  {angle=A--C--B};
+\draw [green,very thick,domain=0:114,&lt;->] plot ({cos(\x)}, {sin(\x)});
+\node[font=\small,right] at (0.5,0.9) {arc length $=2$};
+\end{axis}
+\end{tikzpicture}
+            </latex-image>
+        </image>
+
+        <p>
+            The first thing we notice is that the angle of <m>1</m> radian, denoted by <m>1</m> rad, is a relatively large angle while the angle of <m>1^{\circ}</m> is a very small angle. To understand why this is, let's look at the full angle of <m>360^{\circ}</m> in terms of radians. The circumference of a circle of radius <m>r</m> is <m>C = 2\pi r</m>.
+            That means the circumference of the unit circle is simply <m>C = 2\pi</m>.
+            Therefore, the angle that spans the whole circle<mdash/>one complete counterclockwise revolution<mdash/>is the angle of <m>2\pi</m> radians, or <m>360^{\circ}</m>.
+            Hence, we have the following relationship between degrees and radians:
+            <md>
+                360^{\circ} = 2\pi \text{ radians}.
+            </md>
+            This gives the following <alert>conversion formulas</alert>:
+            <md>
+                1^\circ = \frac{\pi}{180} \text{ radians},  \quad 1 \text{ radian} = \frac{180}{\pi}^\circ.
+            </md>
+            Note that <m>1^{\circ} \approx 0.0175</m> rad and 1 rad <m>\approx 57.296^{\circ}</m>.
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Convert the following angles from degrees to radians.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>45^{\circ}</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>90^{\circ}</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>180^{\circ}</m>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>17^{\circ}</m>
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    We use conversion formulas:
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>45^{\circ} = 45 \cdot \frac{\pi}{180} = \frac{\pi}{4} \approx 0.785</m> rad.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>90^{\circ} = 90 \cdot \frac{\pi}{180} = \frac{\pi}{2} \approx 1.57</m> rad.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>180^{\circ} = 180 \cdot \frac{\pi}{180} = \pi \approx 3.142</m> rad.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>17^{\circ} = 17 \cdot \frac{\pi}{180} \approx 0.297</m> rad.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    Convert the following angles from radians to degrees.
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>-\frac{\pi}{3}</m> rad
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\frac{\pi}{6}</m> rad
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\frac{3\pi}{2}</m> rad
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>-2.5</m> rad
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    We use conversion formulas:
+                </p>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                <m>-\frac{\pi}{3}</m> rad <m>= -\frac{\pi}{3} \cdot \frac{180}{\pi} = -60^{\circ}</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\frac{\pi}{6}</m> rad <m>= \frac{\pi}{6} \cdot \frac{180}{\pi} = 30^{\circ}</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>\frac{3\pi}{2}</m> rad <m>= \frac{3\pi}{2} \cdot \frac{180}{\pi} = 270^{\circ}</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                <m>-2.5</m> rad <m>= -2.5 \cdot \frac{180}{\pi} \approx -143.24^{\circ}</m>.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            Here is a list of some frequently used angles and their measure in degrees and in radians.
+        </p>
+
+        <tabular left="minor" right="minor" bottom="minor" top="minor" halign="center">
+            <row>
+                <cell><alert>Degrees</alert></cell>
+                <cell><alert>Radians</alert></cell>
+                <cell><alert>Radians Approx.</alert></cell>
+            </row>
+
+            <row>
+                <cell><m>30^{\circ}</m></cell>
+                <cell><m>\frac{\pi}{6}</m></cell>
+                <cell><m>0.52</m></cell>
+            </row>
+
+            <row>
+                <cell><m>45^{\circ}</m></cell>
+                <cell><m>\frac{\pi}{4}</m></cell>
+                <cell><m>0.79</m></cell>
+            </row>
+
+            <row>
+                <cell><m>60^{\circ}</m></cell>
+                <cell><m>\frac{\pi}{3}</m></cell>
+                <cell><m>1.05</m></cell>
+            </row>
+
+            <row>
+                <cell><m>90^{\circ}</m></cell>
+                <cell><m>\frac{\pi}{2}</m></cell>
+                <cell><m>1.57</m></cell>
+            </row>
+
+            <row>
+                <cell><m>135^{\circ}</m></cell>
+                <cell><m>\frac{3\pi}{4}</m></cell>
+                <cell><m>2.36</m></cell>
+            </row>
+
+            <row>
+                <cell><m>180^{\circ}</m></cell>
+                <cell><m>\pi</m></cell>
+                <cell><m>3.14</m></cell>
+            </row>
+
+            <row>
+                <cell><m>225^{\circ}</m></cell>
+                <cell><m>\frac{5\pi}{4}</m></cell>
+                <cell><m>3.93</m></cell>
+            </row>
+
+            <row>
+                <cell><m>270^{\circ}</m></cell>
+                <cell><m>\frac{3\pi}{2}</m></cell>
+                <cell><m>4.71</m></cell>
+            </row>
+
+            <row>
+                <cell><m>315^{\circ}</m></cell>
+                <cell><m>\frac{7\pi}{4}</m></cell>
+                <cell><m>5.50</m></cell>
+            </row>
+
+            <row>
+                <cell><m>360^{\circ}</m></cell>
+                <cell><m>2\pi</m></cell>
+                <cell><m>6.28</m></cell>
+            </row>
+        </tabular>
+
+        <p>
+            The figure below shows a few angles on the unit circle together with their radian measure. From now on, you should try to get used to radian measure and think about angles in terms of radians rather than degrees.
+        </p>
+
+        <figure xml:id="fig_8_2_9">
+        <caption/>
+        <image width="70%" xml:id="fig_unit_circle">
+            <latex-image label="8_2_9_fig">
+\begin{tikzpicture}[scale=0.75]
+\draw[thick] (0,0) circle (5);
+\draw[->] (-6.5,0) -- (6.5,0) node[right] {$x$};
+\draw[->] (0,-6.5) -- (0,6.5) node[above] {$y$};
+\foreach \x in {30,45,60,120,135,150,210,225,240,300,315,330}{
+	%dots on circle
+	\filldraw[black] (\x:5) circle(2pt);
+	% draw each angle in deg
+	\draw (\x:3.46) node {$\x^\circ$};
+}
+\draw(0:3.46) node[above] {$0^\circ $};
+\filldraw[black] (180:5) circle(2pt);
+\draw(180:3.46) node[below] {$180^\circ $};
+\filldraw[black] (360:5) circle(2pt);
+\draw(360:3.46) node[below] {$360^\circ $};
+\filldraw[black] (90:5) circle(2pt);
+\draw(90:4.3) node[right] {$90^\circ $};
+\filldraw[black] (270:5) circle(2pt);
+\draw(270:4.3) node[right] {$270^\circ $};
+\foreach \x/\xtext in {
+	30/\frac{\pi}{6},
+	45/\frac{\pi}{4},
+	60/\frac{\pi}{3},
+	120/\frac{2\pi}{3},
+	135/\frac{3\pi}{4},
+	150/\frac{5\pi}{6},
+	210/\frac{7\pi}{6},
+	225/\frac{5\pi}{4},
+	240/\frac{4\pi}{3},
+	300/\frac{5\pi}{3},
+	315/\frac{7\pi}{4},
+	330/\frac{11\pi}{6}
+}
+\draw (\x:4.3) node {\large$\xtext$};
+\draw (180:4.3) node[below] {\large $\pi $};
+\draw (360:4.3) node[below] {\large $2\pi $};
+\draw (90:4.3) node[left] {\large $\frac{\pi}{2} $};
+\draw (270:4.3) node[left] {\large $\frac{3\pi}{2} $};
+\end{tikzpicture}
+            </latex-image>
+        </image>
+</figure>
+
+        <example>
+            <statement>
+                <p>
+                    In which quadrant is the angle of <m>2</m> radians? An angle of <m>5</m> radians? (In other words, in which quadrants are the terminal sides of these angles?)
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    Refer to <xref ref="fig_8_2_9"/>. The second quadrant includes angles between <m>\pi/2 \approx 1.57</m> radians and <m>\pi \approx 3.14</m> radians.
+                    The angle of <m>2</m> radians must lie in the second quadrant.
+                    The angle of <m>5</m> radians is between <m>3\pi/2 \approx 4.71</m> and <m>2\pi \approx 6.28</m> radians, so <m>5</m> radians is in the fourth quadrant.
+                </p>
+            </solution>
+        </example>
+
+        <p>
+            An angle of <m>p</m> radians spans an arc of length <m>p</m> on the unit circle. By similarity of circular sectors, the same angle of <m>p</m> radians spans the arc of length <m>p \cdot r</m> on the circle of radius <m>r</m>:
+        </p>
+
+        <image width="50%" xml:id="fig_8_2_10">
+            <latex-image label="8_2_10_fig">
+\begin{tikzpicture}[scale=1]
+\begin{axis}[grid=none,
+xmin=-1.6,xmax=5.4,
+ticklabel style={fill=white},
+set layers=axis on top,
+ymin=-1.6,ymax=3.5,
+xtick={-1.5,1.5,3},
+ytick={-1.5,1.5,3},
+xticklabels={-1,1,$r$},
+yticklabels={-1,1,$r$},
+minor tick={},
+xlabel=\(x\), ylabel=\(y\),
+axis equal,
+x post scale=1.6,
+y post scale=1.6,
+]
+\draw[blue,thick] (0,0) circle (1.5);
+\draw[blue,thick] (0,0) circle (3);
+\coordinate (C) at (0,0);
+\coordinate (B) at (0.707*1.5,0.707*1.5);
+\coordinate (B1) at (0.707*3,0.707*3);
+\coordinate (A) at (1.5,0);
+\draw[very thick] (C) -- (B1);
+\draw[very thick] (C) -- (A);
+\pic[my angle, "$p \text{ rad}$", very thick, ->, every pic quotes/.append style={xshift=25pt,yshift=5pt,font=\normalsize}]  {angle=A--C--B};
+\draw [green,very thick,domain=0:45,&lt;->] plot ({1.5*cos(\x)}, {1.5*sin(\x)});
+\node[font=\small,right] at (1.2,0.8) {arc length $=p$};
+\draw [orange,very thick,domain=0:45,&lt;->] plot ({3*cos(\x)}, {3*sin(\x)});
+\node[font=\small,right] at (2.7,1.5) {arc length $=p\cdot r$};
+\end{axis}
+\end{tikzpicture}
+            </latex-image>
+        </image>
+
+        <p>
+            The length, <m>s</m>, of the arc spanned in a circle of radius <m>r</m> by an angle of <m>p</m> radians is:
+            <md>
+                s = p \cdot r.
+            </md>
+        </p>
+
+        <example>
+            <statement>
+                <p>
+                    Find the arc length <m>s</m> spanned by an angle of <m>\pi/2</m> radians on the circle of radius 5 centimeters.
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    According to the formula above,
+                    <md>
+                        s = (\pi/2) \cdot 5 \approx 7.854
+                    </md>
+                    centimeters.
+                    Remember: The units of radius and arc length are the same.
+                </p>
+            </solution>
+        </example>
+    </subsection>
+
+    <xi:include href="exercises/ex_8_2.ptx"/>
 </section>

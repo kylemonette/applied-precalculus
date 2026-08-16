@@ -1,38 +1,303 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec_8_1">
+    <title>Periodic Functions</title>
 
+    <objectives>
+        <introduction>
+            <p>
+                After completing this section, you should be able to do the following.
+            </p>
+        </introduction>
 
-<title>Periodic Functions</title>
+        <ol>
+            <li>
+                <p>
+                    State the definition of a periodic function and identify the period of a periodic process or its graph.
+                </p>
+            </li>
 
-<objectives>
-    <introduction>
+            <li>
+                <p>
+                    Determine the amplitude, equilibrium, and midline of a periodic function from its graph or from its maximum and minimum values.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Apply the concepts of period, amplitude, equilibrium, and midline to real-life periodic processes.
+                </p>
+            </li>
+        </ol>
+    </objectives>
+
         <p>
-            After completing this section, you should be able to do the following.
+            Many functions encountered in mathematics and in real-life applications display oscillatory, wave-like, or cyclical behavior; that is, the same cycle of a constant duration keeps repeating over and over again. Examples of this include the volume of the air in your lungs as you breathe in and out, the temperature of a room that is regulated by a thermostat, the height of the water in a harbor between the tides, and so on. In mathematics such cyclical functions are called <em>periodic</em>.
         </p>
-    </introduction>
-    <ol>
-        <li>
-            <p>
-            First objective.
-            </p>
-        </li>
 
-        <li>
-            <p>
-        Second objective.
-            </p>
-        </li> 
-        <li>
-            <p>
-            Third objective.
-            </p>
-        </li>
-    </ol>
-</objectives>
+        <example xml:id="example-ch8-hare">
+            <statement>
+                <p>
+                    Each year a hare population, <m>H = H(t)</m>, in a national park changes with the seasons. The population is at its minimum of <m>1000</m> hares in January. In the summer, when the weather gets warm and the grass is green, the population grows in size to <m>5000</m>. By the following January, the population decreases again to <m>1000</m> hares. The same cycle repeats every year. Let <m>t</m> be measured in months and <m>t = 0</m> correspond to January. The graph of the population function <m>H(t)</m> is as follows:
+                </p>
 
+                <image width="50%" xml:id="fig_8_1_1">
+                    <latex-image label="8_1_1_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0,xmax=25,
+ymin=0,ymax=6,
+xtick={6,12,...,24},
+ytick={1,...,5},
+yticklabels={1000,2000,3000,4000,5000},
+minor tick={},
+xlabel=\(t\), ylabel=\(H(t)\),
+trig format plots = rad,
+]
+\addplot[domain=0:24] {-2*cos(2*pi/12*x)+3};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+            </statement>
 
+            <solution>
+                <p>
+                    The behavior of this population function is cyclical<mdash/>the function is periodic. The time needed for one full cycle to be executed is <m>12</m> months. We say the period of <m>H(t)</m> is <m>12</m> months. Note that for every time <m>t</m> the size of the population <m>12</m> months later, at time <m>t + 12</m>, is exactly the same as the population at <m>t</m>.
+                </p>
+            </solution>
+        </example>
 
-<xi:include href="exercises/ex_8_1.ptx"/>
+        <p>
+            A precise definition of a periodic function is as follows.
+        </p>
 
+        <definition>
+            <title>Periodic Function</title>
+
+            <statement>
+                <p>
+                    A nonconstant function <m>f</m> is called periodic if a positive number <m>P</m> exists such that
+                    <md>
+                        f(t) = f(t + P)
+                    </md>
+                    for all <m>t</m> in the domain of <m>f</m>. The smallest such <m>P</m> is called the period of <m>f</m>. If <m>t</m> is time, we can characterize the period as the shortest time needed for one full cycle of <m>f</m> to be executed.
+                </p>
+            </statement>
+        </definition>
+
+        <p>
+            The definition says that adding the period <m>P</m> to the input of the original function does not change the original output. In other words, the behavior of <m>f(t)</m> on the interval <m>0 \leq t \leq P</m> will be repeated on the interval <m>P \leq t \leq 2P</m>, and then again on the interval <m>2P \leq t \leq 3P</m>, and so on. The function executes the same cycle on every interval of duration <m>P</m>.
+        </p>
+
+        <p>
+            Besides the period, there are two other important numbers associated with a periodic function: the <em>amplitude</em> and the <em>equilibrium</em>. The latter is closely related to the concept of the <em>midline</em>.
+        </p>
+
+        <theorem>
+            <statement>
+                <p>
+                    Given a periodic function <m>y = f(t)</m>, let <m>y_\text{max}</m> and <m>y_\text{min}</m> be the largest and smallest possible values of <m>f</m>, respectively.
+                    The amplitude is given by:
+                    <md>
+                        \text{amplitude} = \frac{y_\text{max} - y_\text{min}}{2}.
+                    </md>
+                    The midpoint between <m>y_\text{max}</m> and <m>y_\text{min}</m> is called the <alert>equilibrium</alert> of a periodic function and is given by:
+                    <md>
+                        \text{equilibrium} = \frac{y_\text{max} + y_\text{min}}{2}.
+                    </md>
+                    The midline is the horizontal line through the point <m>(0, \frac{y_\text{max} + y_\text{min}}{2})</m> on the vertical axis; that is, the line with the equation:
+                    <md>
+                        y = \frac{y_\text{max} + y_\text{min}}{2}.
+                    </md>
+                    We say for short that the midline is the horizontal line through the equilibrium.
+                </p>
+            </statement>
+        </theorem>
+
+        <p>
+            In <xref ref="example-ch8-hare"/> the period is <m>12</m> months. The maximum value of <m>H</m> is <m>h_\text{max} = 5000</m> and the minimum value is <m>h_\text{min} = 1000</m>. Hence, the amplitude is
+            <md>
+                \frac{5000 - 1000}{2} = \frac{4000}{2} = 2000.
+            </md>
+            The equilibrium is
+            <md>
+                \frac{5000 + 1000}{2} = 3000.
+            </md>
+            The midline is the horizontal line through <m>3000</m>; that is, the line <m>H = 3000</m>. The graph of <m>H(t)</m> above illustrates all three concepts.
+        </p>
+
+        <p>
+            We can characterize the amplitude, equilibrium, and midline in intuitive terms as follows:
+        </p>
+
+        <theorem>
+            <statement>
+                <p>
+                    <ul>
+                        <li>If a periodic function attains its maximum once per cycle (that is, has one peak per cycle) then the period is the distance between consecutive peaks.</li>
+                        <li>The equilibrium is the value midway between the maximum and minimum values.</li>
+                        <li>The midline is the horizontal line through the equilibrium.</li>
+                        <li>The amplitude is the vertical distance from the midline to a peak.</li>
+                    </ul>
+                </p>
+            </statement>
+        </theorem>
+
+        <example>
+            <statement>
+                <p>
+                    Find the period, amplitude, equilibrium, and midline of the function <m>y = f(t)</m> whose graph is given below.
+                </p>
+
+                <image width="50%" xml:id="fig_8_1_2">
+                    <latex-image label="8_1_2_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=-5,xmax=9,
+ymin=-4,ymax=4,
+xtick={-4,...,8},
+ytick={-3,...,3},
+minor tick={},
+xlabel=\(t\), ylabel=\(f(t)\),
+x post scale = 1.2,
+trig format plots = rad,
+]
+\addplot[domain=-4:8] {-3*sin(2*pi/4*x)};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+            </statement>
+
+            <solution>
+                <p>
+                    At <m>t = 0</m> the function starts from the value <m>f(0) = 0</m>.
+                    As <m>t</m> increases, <m>f(t)</m> decreases all the way to <m>-3</m>.
+                    Then <m>f(t)</m> starts increasing, reaches <m>0</m> again at <m>t = 2</m>, continues increasing to the value <m>3</m>, and decreases back to <m>0</m> at <m>t = 4</m>. After <m>t = 4</m>, the same cycle repeats between <m>t = 4</m> to <m>t = 8</m>: decreasing to <m>-3</m>, increasing to <m>0</m>, increasing to <m>3</m>, decreasing back to <m>0</m>. The function executes the same cycle every <m>4</m> units of <m>t</m>.
+                </p>
+
+                <p>
+                    Hence, <m>f(t)</m> is periodic with the period <m>4</m>.
+                    To calculate the amplitude and the equilibrium, notice that <m>y_\text{min} = -3</m> and <m>y_\text{max} = 3</m>.
+                    Therefore,
+                    <md>
+                        <mrow>\text{period} \amp= 4</mrow>
+                        <mrow>\text{amplitude} \amp= \frac{y_\text{max} - y_\text{min}}{2} = \frac{3 - (-3)}{2} = \frac{3 + 3}{2} = 3</mrow>
+                        <mrow>\text{equilibrium} \amp= \frac{y_\text{max} + y_\text{min}}{2} = \frac{3 + (-3)}{2} = \frac{3 - 3}{2} = 0.</mrow>
+                    </md>
+                    The midline is the horizontal line through the equilibrium, which has equation
+                    <md>
+                        y = 0.
+                    </md>
+                    The function <m>f(t)</m> oscillates around the equilibrium <m>y = 0</m>, varying between <m>3</m> units down and <m>3</m> units up from the equilibrium; that is, with amplitude <m>3</m>. It executes one full cycle over any interval of duration <m>4</m>.
+                </p>
+            </solution>
+        </example>
+
+        <example>
+            <statement>
+                <p>
+                    The temperature of a room, <m>T(t)</m>, in <m>{}^{\circ} \mathrm{F}</m>, is regulated by a thermostat. The thermostat triggers the heat to go on when the temperature drops to <m>65^{\circ} \mathrm{F}</m> and shuts the heat at <m>70^{\circ} \mathrm{F}</m>. Below is the graph of the temperature function <m>T(t)</m>, <m>t</m> is measured in minutes.
+                </p>
+
+                <image width="50%" xml:id="fig_8_1_3">
+                    <latex-image label="8_1_3_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0, xmax=4.5,
+ymin=0, ymax=4.5,
+xtick={0.5,1,...,4},
+xticklabels={5,10,...,40},
+ytick={1,3},
+yticklabels={65,70},
+minor tick={},
+xlabel={$t$}, ylabel={$T$}]
+\addplot+[sharp plot, mark=none,mark options={color=blue}] plot coordinates {
+(0,1) (0.5,3) (2,1) (2.5,3) (4,1)
+};
+\end{axis}
+\end{tikzpicture}
+                    </latex-image>
+                </image>
+
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                Find the period, amplitude, equilibrium, and the midline.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Suppose that <m>t = 0</m> corresponds to 12 p.m. What is the temperature in the room at 12:45 p.m.?
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Sketch the midline on the graph of the function.
+                            </p>
+                        </li>
+                    </ol>
+                </p>
+            </statement>
+
+            <solution>
+                <p>
+                    <ol>
+                        <li>
+                            <p>
+                                The function <m>T(t)</m> reaches its peak once a cycle. The distance between two peaks is <m>20</m> minutes, so the period is <m>20</m> minutes. The maximum and minimum values of the temperature are <m>T_\text{max} = 70</m> and <m>T_\text{min} = 65</m> respectively.
+                                Therefore,
+                                <md>
+                                    <mrow>\text{period} \amp= 20</mrow>
+                                    <mrow>\text{amplitude} \amp= \frac{T_\text{max} - T_\text{min}}{2} = \frac{70 - 65}{2} = \frac{5}{2} = 2.5</mrow>
+                                    <mrow>\text{equilibrium} \amp= \frac{T_\text{max} + T_\text{min}}{2} = \frac{70 + 65}{2} = \frac{135}{2} = 67.5</mrow>
+                                </md>
+                                The midline is the horizontal line through the equilibrium; that is, the line with the equation <m>T = 67.5</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                Because the period is <m>20</m>, then <m>T(t + 20) = T(t)</m> for all values of <m>t</m>.
+                                The graph of the function reveals that <m>T(25) = 70^{\circ} \mathrm{F}</m>.
+                                Therefore, <m>T(45) = T(25 + 20) = T(25) = 70^\circ \mathrm{F}</m>.
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>
+                                We found the midline to be <m>T = 67.5</m>, which is shown in red on the following graph.
+                            </p>
+
+                            <image width="50%" xml:id="fig_8_1_4">
+                                <latex-image label="8_1_4_fig">
+\begin{tikzpicture}[scale=0.8]
+\begin{axis}[grid=both,
+xmin=0, xmax=4.5,
+ymin=0, ymax=4.5,
+xtick={0.5,1,...,4},
+xticklabels={5,10,...,40},
+ytick={1,3},
+yticklabels={65,70},
+minor tick={},
+xlabel={$t$}, ylabel={$T$}]
+\addplot+[sharp plot, mark=none,mark options={color=blue}] plot coordinates {
+(0,1) (0.5,3) (2,1) (2.5,3) (4,1)
+};
+\addplot[domain=0:4.5,red] {2};
+\end{axis}
+\end{tikzpicture}
+                                </latex-image>
+                            </image>
+                        </li>
+                    </ol>
+                </p>
+            </solution>
+        </example>
+
+    <xi:include href="exercises/ex_8_1.ptx"/>
 </section>

@@ -43,6 +43,7 @@
     \usepackage{pgfplotstable}
     \usetikzlibrary{positioning,matrix,arrows, arrows.meta, positioning}
     \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+    \usetikzlibrary{angles,quotes}
     \usetikzlibrary{decorations.markings}
     \pgfplotsset{
     soldot/.style={
@@ -60,7 +61,8 @@
     rcirc/.style={circle, fill=red, inner sep=2pt},
     rpoint with label/.style n args={1}{rcirc,label={#1}},
     gcirc/.style={circle, fill=green, inner sep=2pt},
-    gpoint with label/.style n args={1}{gcirc,label={#1}}
+    gpoint with label/.style n args={1}{gcirc,label={#1}},
+    my angle/.style={every pic quotes/.append style={text=black}, draw=red, angle radius=1cm}
     }
     <!-- \usepackage{pgffor}
     \pgfmathdeclarefunction{CubeRoot}{1}{%
