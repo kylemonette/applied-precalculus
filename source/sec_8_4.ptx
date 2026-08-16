@@ -205,7 +205,7 @@ x post scale = 1.2,
 
                 <solution>
                     <p>
-                        We learned in the previous chapter that multiplying the output by a constant corresponds to vertical scaling of the graph. Here are the graphs of the functions in (a), (b) and the original function <m>y = \sin(t)</m> in one coordinate system:
+                        We learned in the previous chapter that multiplying the output by a constant corresponds to vertical scaling of the graph. Here are the graphs of the functions in parts 1 and 2 and the original function <m>y = \sin(t)</m> in one coordinate system:
                     </p>
 
                     <image width="50%" xml:id="fig_8_4_3">
@@ -305,12 +305,12 @@ x post scale = 1.2,
 
                 <solution>
                     <p>
-                        For (a) the midline is <m>y = 1</m>.
+                        For part 1, the midline is <m>y = 1</m>.
                     </p>
 
                     <p>
-                        For (b), the midline is <m>y = -2</m>.
-                        Here are graphs of the functions in (a) and (b) as well as the cosine itself:
+                        For part 2, the midline is <m>y = -2</m>.
+                        Here are graphs of the functions in parts 1 and 2 as well as the cosine itself:
                     </p>
 
                     <image width="50%" xml:id="fig_8_4_5">

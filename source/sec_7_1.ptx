@@ -115,7 +115,7 @@ trig format plots = rad,
 ]
 \addplot[domain=0:3] {-cos(2*pi/4*x)+6} node[pos=0.8,above] {$f(t)$};
 \addplot[domain=0:3,red] {-cos(2*pi/4*x)+7.5} node[pos=0.8,above] {$H(t)$};
-\addplot[domain=0:3,orange] {-cos(2*pi/4*x)+2} node[pos=0.8,above] {$g(t)$};
+\addplot[domain=0:3,orange] {-cos(2*pi/4*x)+2} node[pos=0.8,above] {$G(t)$};
 \end{axis}
 \end{tikzpicture}
                     </latex-image>
@@ -418,7 +418,7 @@ x post scale = 1.5,
 
                         <li>
                             <p>
-                                the graph of <m>g(t) = \sqrt[3]{x}</m> is shifted down <m>4</m> units and to the right <m>3</m> units.
+                                the graph of <m>g(x) = \sqrt[3]{x}</m> is shifted down <m>4</m> units and to the right <m>3</m> units.
                             </p>
                         </li>
                     </ol>

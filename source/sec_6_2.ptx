@@ -333,7 +333,7 @@
             <md>
                 x = \frac{\log(5) - \log(3)}{\log(8) - \log(6)} = \dfrac{\log\left(\frac{5}{3}\right)}{\log\left(\frac{8}{6}\right)}.
             </md>
-            Indeed, the difference of logarithms correspond to the logarithm of a quotient by <xref ref="com-log-prop-4">Property</xref> . Hence, we obtained the same answer as before, but getting there required more steps.
+            Indeed, the difference of logarithms corresponds to the logarithm of a quotient by <xref ref="com-log-prop-4">Property</xref> . Hence, we obtained the same answer as before, but getting there required more steps.
         </p>
 
         <example>

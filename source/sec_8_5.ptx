@@ -73,7 +73,7 @@
 
                <p>Every function in the family <m>y = A\sin(Bt) + C</m> has its equilibrium value at <m>t = 0</m>.
                 If <m>A \gt 0</m>, the peak<mdash/>the maximum value<mdash/>comes first when we move toward the positive <m>t</m> direction.
-                Therefore, when <m>A \lt 0</m>, the minimum value comes first when we move toward the positive <m>t</m> direction.
+                Conversely, when <m>A \lt 0</m>, the minimum value comes first when we move toward the positive <m>t</m> direction.
         </p>
         </assemblage>
 

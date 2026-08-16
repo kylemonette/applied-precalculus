@@ -269,7 +269,7 @@ legend pos = south east,
 
                         <li>
                             <p>
-                                If the initial deposit is <m>\$5,000</m> instead <m>\$2,000</m>, then <m>B(t) = 5000 \cdot 1.045^t</m>.
+                                If the initial deposit is <m>\$5,000</m> instead of <m>\$2,000</m>, then <m>B(t) = 5000 \cdot 1.045^t</m>.
                                 To find the doubling time of this function, solve the equation
                                 <md>
                                     2 \cdot 5000 = 5000 \cdot 1.045^t.

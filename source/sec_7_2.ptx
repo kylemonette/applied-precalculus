@@ -39,7 +39,7 @@
         </p>
 
         <p>
-            What if we were to multiply by a negative number? The graph of <m>j(x) = - 4x^3</m> is the graph of <m>g(x) = x^3</m> <em>stretched vertically</em> by multiplying each of the original outputs of <m>f(x) = x^3</m> by <m>4</m>, but also <em>reflected over the <m>x</m>-axis</em>.
+            What if we were to multiply by a negative number? The graph of <m>j(x) = - 4x^3</m> is the graph of <m>f(x) = x^3</m> <em>stretched vertically</em> by multiplying each of the original outputs of <m>f(x) = x^3</m> by <m>4</m>, but also <em>reflected over the <m>x</m>-axis</em>.
         </p>
 
             <figure xml:id="fig_7_2_vert_scal">

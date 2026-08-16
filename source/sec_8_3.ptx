@@ -77,7 +77,7 @@
 
         <p>
             At this point, the angle <m>\alpha</m> can be measured in radians or in degrees, but we must always be aware and careful which measure we are using: <m>\sin(1^\circ)</m> and <m>\sin(1 \text{ rad})</m> have completely different values.
-            Indeed, according to the conversion formulas from the previous sections, <m>1</m> radian is approximately <m>57.3</m> degrees<mdash/>which are very different.
+            Indeed, according to the conversion formulas from the previous section, <m>1</m> radian is approximately <m>57.3</m> degrees<mdash/>which are very different.
         </p>
 
         <example>

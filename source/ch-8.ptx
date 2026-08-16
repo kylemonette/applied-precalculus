@@ -5,7 +5,11 @@
 
   <introduction>
     <p>
-        Intro about Chapter 8.
+        The rise and fall of the tides, the changing hours of daylight over the course of a year, the rhythm of a beating heart, and the vibration of a sound wave all repeat the same cycle over and over again. Quantities that behave this way are called <em>periodic</em>, and none of the functions studied in the previous chapters are capable of modeling this kind of repeating behavior. The <em>trigonometric functions</em> introduced in this chapter, the sine and cosine functions, are built specifically to describe periodic processes.
+    </p>
+
+    <p>
+        This chapter begins with the general concept of a periodic function and the related notions of period, amplitude, equilibrium, and midline. We then define angles of any size, positive or negative, and introduce radian measure, which is the natural way to measure angles in this context. Using the unit circle, we define the sine and cosine of any angle, and from there the sine and cosine functions themselves, along with their graphs. The chapter concludes by showing how the sine and cosine functions can be transformed to have any desired period, amplitude, and midline, so that they can be used to model real-life periodic processes.
     </p>
 </introduction>
 
