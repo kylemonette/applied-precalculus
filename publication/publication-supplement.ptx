@@ -121,7 +121,7 @@
         exercise-inline="no"
         exercise-divisional="no"
         exercise-worksheet="no"
-        exercise-readingquestion="no"
+        exercise-reading="no"
       />
       <webwork reading="dynamic" divisional="dynamic" inline="dynamic" worksheet="dynamic" />
 
