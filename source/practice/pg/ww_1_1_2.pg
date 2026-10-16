@@ -11,12 +11,19 @@ loadMacros(
 "parserPopUp.pl"
 );
 
+# DropDown that shows a blank line (not the list of choices) before "Activate".
+# Same arguments as DropDown; any options given override the default.
+sub DropDownBlank {
+  my ($choices, $answer, %options) = @_;
+  return DropDown($choices, $answer, showInStatic => 0, %options);
+}
+
 TEXT(beginproblem());
 Context('Numeric');
-$var_indp = PopUp(["?","t", "V", "g"],"t");
-$var_dep = PopUp(["?","t", "V", "g"],"V");
-$units_indp = PopUp(["?", "dollars", "years", "dollars/year"], "years");
-$units_dep = PopUp(["?", "dollars", "years", "dollars/year"], "dollars");
+$var_indp = DropDownBlank(["t", "V", "g"], "t");
+$var_dep = DropDownBlank(["t", "V", "g"], "V");
+$units_indp = DropDownBlank(["dollars", "years", "dollars/year"], "years");
+$units_dep = DropDownBlank(["dollars", "years", "dollars/year"], "dollars");
 
 ############################################################
 # Body

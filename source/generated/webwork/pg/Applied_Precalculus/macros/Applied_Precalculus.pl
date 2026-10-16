@@ -4,6 +4,46 @@
 #############################################################################
 
 
+TEXT(
+    MODES(
+        HTML => '<div style="display:none;">' . general_math_ev3(<<'EOF') . '</div>',
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\usepackage{xcolor,color}
+\newcommand{\aroc}{\text{ARC}}
+\newcommand{\pbr}[1]{\left( #1 \right)}
+\newcommand{\sbr}[1]{\left\{ #1 \right\}}
+\newcommand{\cbr}[1]{\left[ #1 \right]}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\markcell}[2]{
+\tikz[remember picture, baseline=(#1.base)] \node[inner sep=0pt] (#1) {#2};
+}
+\newcommand{\amp}{&}
+EOF
+        TeX => '\ifdefined\ptxmacros\else ' . <<'EOF'
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\usepackage{xcolor,color}
+\newcommand{\aroc}{\text{ARC}}
+\newcommand{\pbr}[1]{\left( #1 \right)}
+\newcommand{\sbr}[1]{\left\{ #1 \right\}}
+\newcommand{\cbr}[1]{\left[ #1 \right]}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\markcell}[2]{
+\tikz[remember picture, baseline=(#1.base)] \node[inner sep=0pt] (#1) {#2};
+}
+\newcommand{\amp}{&}
+\def\ptxmacros{}
+EOF
+. '\fi',
+        PTX => ''
+    )
+);
+
 # Return a string containing the latex-image-preamble contents.
 # To be used by LaTeXImage objects as in:
 # $image->addToPreamble(latexImagePreamble())
@@ -14,6 +54,7 @@ return <<'END_LATEX_IMAGE_PREAMBLE'
 \usepackage{pgfplotstable}
 \usetikzlibrary{positioning,matrix,arrows, arrows.meta, positioning}
 \usetikzlibrary{shapes,decorations,shadows,fadings,patterns}
+\usetikzlibrary{angles,quotes}
 \usetikzlibrary{decorations.markings}
 \pgfplotsset{
 soldot/.style={
@@ -31,8 +72,11 @@ standard/.style={
 rcirc/.style={circle, fill=red, inner sep=2pt},
 rpoint with label/.style n args={1}{rcirc,label={#1}},
 gcirc/.style={circle, fill=green, inner sep=2pt},
-gpoint with label/.style n args={1}{gcirc,label={#1}}
+gpoint with label/.style n args={1}{gcirc,label={#1}},
+my angle/.style={every pic quotes/.append style={text=black}, draw=red, angle radius=1cm}
 }
 
 END_LATEX_IMAGE_PREAMBLE
 }
+
+1;

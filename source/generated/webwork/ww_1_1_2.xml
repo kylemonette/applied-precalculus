@@ -2,40 +2,8 @@
 <webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-ww_1_1_2" assembly-id="ww_1_1_2">
   <static seed="2">
     <statement><p>The value of a car, <m>V</m>, in dollars, is a function of the number of years, <m>t</m>, since it was purchased; that is, <m>V=g(t)</m>.</p>
-<p>The independent variable is <ul form="popup" name="AnSwEr0001"><li>
-<p>?</p>
-</li><li>
-<p>t</p>
-</li><li>
-<p>V</p>
-</li><li>
-<p>g</p>
-</li></ul> with units <ul form="popup" name="AnSwEr0002"><li>
-<p>?</p>
-</li><li>
-<p>dollars</p>
-</li><li>
-<p>years</p>
-</li><li>
-<p>dollars/year</p>
-</li></ul>.</p>
-<p>The dependent variable is <ul form="popup" name="AnSwEr0003"><li>
-<p>?</p>
-</li><li>
-<p>t</p>
-</li><li>
-<p>V</p>
-</li><li>
-<p>g</p>
-</li></ul> with units <ul form="popup" name="AnSwEr0004"><li>
-<p>?</p>
-</li><li>
-<p>dollars</p>
-</li><li>
-<p>years</p>
-</li><li>
-<p>dollars/year</p>
-</li></ul>.</p>
+<p>The independent variable is <fillin name="AnSwEr0001"/> with units <fillin name="AnSwEr0002"/>.</p>
+<p>The dependent variable is <fillin name="AnSwEr0003"/> with units <fillin name="AnSwEr0004"/>.</p>
 </statement>
     <answer>
       <p>
@@ -75,12 +43,19 @@ loadMacros(
 "parserPopUp.pl"
 );
 
+# DropDown that shows a blank line (not the list of choices) before "Activate".
+# Same arguments as DropDown; any options given override the default.
+sub DropDownBlank {
+  my ($choices, $answer, %options) = @_;
+  return DropDown($choices, $answer, showInStatic => 0, %options);
+}
+
 TEXT(beginproblem());
 Context('Numeric');
-$var_indp = PopUp(["?","t", "V", "g"],"t");
-$var_dep = PopUp(["?","t", "V", "g"],"V");
-$units_indp = PopUp(["?", "dollars", "years", "dollars/year"], "years");
-$units_dep = PopUp(["?", "dollars", "years", "dollars/year"], "dollars");
+$var_indp = DropDownBlank(["t", "V", "g"], "t");
+$var_dep = DropDownBlank(["t", "V", "g"], "V");
+$units_indp = DropDownBlank(["dollars", "years", "dollars/year"], "years");
+$units_dep = DropDownBlank(["dollars", "years", "dollars/year"], "dollars");
 
 ############################################################
 # Body
